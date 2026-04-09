@@ -1,0 +1,39 @@
+{
+  "configVersion": "1.0",
+  "runId": "ontario_grade7_history_v1",
+  "source": {
+    "type": "pdf_url",
+    "url": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/f6f2efba-a7aa-4c70-94ce-f7593a7490ca/SocialStudiesHistoryGeography-AODA.pdf",
+    "subject": "History",
+    "grade": "7",
+    "jurisdiction": "Ontario",
+    "year": "2018",
+    "pages": "targeted — Grade 7 History section"
+  },
+  "outputPath": "outputs/ontario_grade7_history/",
+  "checkpointDb": "checkpoints/ontario_grade7_history.db",
+  "ltConstraints": {
+    "maxWords": 25,
+    "singleConstructOnly": true,
+    "noEmbeddedExamples": true,
+    "iCanFormat": true
+  },
+  "mcpServer": {
+    "url": "https://mcp-server-sigma-sooty.vercel.app/mcp",
+    "name": "claude-education-skills"
+  },
+  "outputStructure": {
+    "type": "grade_based",
+    "levels": [
+      {
+        "id": "grade_7",
+        "label": "Grade 7",
+        "age_range": "12-13",
+        "cognitive_demand": "transitional"
+      }
+    ],
+    "input_level_id": "grade_7",
+    "generate_adjacent": false,
+    "adjacent_count": 0
+  }
+}

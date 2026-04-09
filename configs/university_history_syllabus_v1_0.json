@@ -1,0 +1,39 @@
+{
+  "configVersion": "1.0",
+  "runId": "university_history_syllabus_v1",
+  "source": {
+    "type": "pdf_url",
+    "url": "https://ocw.mit.edu/courses/21h-101-american-history-to-1865-fall-2010/pages/syllabus/",
+    "subject": "History",
+    "grade": "Undergraduate",
+    "jurisdiction": "MIT OpenCourseWare",
+    "year": "2010",
+    "pages": "full syllabus — learning objectives, topics, assessments (21H.101; 21H.105 spring-2022 URL redirects/404 as of 2026)"
+  },
+  "outputPath": "outputs/university_history_syllabus/",
+  "checkpointDb": "checkpoints/university_history_syllabus.db",
+  "ltConstraints": {
+    "maxWords": 25,
+    "singleConstructOnly": true,
+    "noEmbeddedExamples": true,
+    "iCanFormat": true
+  },
+  "mcpServer": {
+    "url": "https://mcp-server-sigma-sooty.vercel.app/mcp",
+    "name": "claude-education-skills"
+  },
+  "outputStructure": {
+    "type": "grade_based",
+    "levels": [
+      {
+        "id": "undergraduate",
+        "label": "Undergraduate",
+        "age_range": "18-22",
+        "cognitive_demand": "abstract"
+      }
+    ],
+    "input_level_id": "undergraduate",
+    "generate_adjacent": false,
+    "adjacent_count": 0
+  }
+}

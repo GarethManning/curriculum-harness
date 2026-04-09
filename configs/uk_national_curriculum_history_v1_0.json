@@ -1,0 +1,51 @@
+{
+  "configVersion": "1.0",
+  "runId": "uk_nc_history_v1",
+  "source": {
+    "type": "pdf_url",
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c66d740f0b626628abcdd/SECONDARY_national_curriculum_-_History.pdf",
+    "subject": "History",
+    "grade": "Key Stage 3",
+    "jurisdiction": "UK National Curriculum",
+    "year": "2014",
+    "pages": "targeted — Key Stage 3 attainment targets and subject content"
+  },
+  "outputPath": "outputs/uk_nc_history/",
+  "checkpointDb": "checkpoints/uk_nc_history.db",
+  "ltConstraints": {
+    "maxWords": 25,
+    "singleConstructOnly": true,
+    "noEmbeddedExamples": true,
+    "iCanFormat": true
+  },
+  "mcpServer": {
+    "url": "https://mcp-server-sigma-sooty.vercel.app/mcp",
+    "name": "claude-education-skills"
+  },
+  "outputStructure": {
+    "type": "stage_based",
+    "levels": [
+      {
+        "id": "ks1",
+        "label": "Key Stage 1",
+        "age_range": "5-7",
+        "cognitive_demand": "concrete"
+      },
+      {
+        "id": "ks2",
+        "label": "Key Stage 2",
+        "age_range": "7-11",
+        "cognitive_demand": "transitional"
+      },
+      {
+        "id": "ks3",
+        "label": "Key Stage 3",
+        "age_range": "11-14",
+        "cognitive_demand": "abstract"
+      }
+    ],
+    "input_level_id": "ks3",
+    "generate_adjacent": true,
+    "adjacent_count": 1
+  }
+}

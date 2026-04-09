@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "curriculum-decomposer"
+version = "0.1.0"
+description = "LangGraph pipeline: curriculum documents → KUD framework and learning targets (Claude + Education Skills MCP)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "cryptography>=3.1",
+    "aiosqlite>=0.20.0",
+    "httpx>=0.27.0",
+    "langgraph>=0.2.0",
+    "langgraph-checkpoint-sqlite>=2.0.0",
+    "pypdf>=5.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["kaku_decomposer"]
+
+[tool.hatch.build.targets.sdist]
+include = ["kaku_decomposer", "configs", "README.md", "pyproject.toml"]
