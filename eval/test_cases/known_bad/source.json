@@ -1,0 +1,14 @@
+{
+  "description": "Known-bad fixture: source document containing one deliberately orphaned bullet (no LT in lt_set.json covers it). Plus four normal bullets matching the known-good set.",
+  "bullets": [
+    "Identify prime numbers and composite numbers within 100.",
+    "Find the prime factorisation of whole numbers up to 100.",
+    "Compute the greatest common divisor of two whole numbers.",
+    "Explain why the greatest common divisor is useful when simplifying fractions.",
+    "Solve word problems involving ratio and proportion in practical contexts."
+  ],
+  "expected_flags": {
+    "orphan_bullets": [4],
+    "notes": "Bullet 4 (ratio/proportion word problems) has no matching LT in lt_set.json. Gate validate_source_coverage.py must flag this bullet."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Known-bad fixture: LT set paired with known_bad/source.json. Contains: (a) an orphan LT on permutations/factorials that is NOT in the source — modelled on the felvételi factorial injection case (REVIEW.md §2); (b) the normal LTs covering bullets 0-3; (c) no LT covering the orphan bullet 4 (ratio/proportion word problems).",
+  "lts": [
+    "I can identify whether a whole number is prime or composite.",
+    "I can find the prime factorisation of whole numbers up to one hundred.",
+    "I can compute the greatest common divisor of two whole numbers.",
+    "I can explain how the greatest common divisor simplifies fractions.",
+    "I can use factorial notation to count permutations and arrangements."
+  ],
+  "expected_flags": {
+    "invented_lts": [4],
+    "notes": "LT 4 (factorial notation / permutations) has no source support — it is deliberately invented, modelled on the felvételi REVIEW.md §2 factorial-injection case. Gate validate_source_faithfulness.py must flag this LT as potentially invented."
+  }
+}
