@@ -282,4 +282,16 @@ def best_match(claim: str, corpus: Iterable[str]) -> Match | None:
     return results[0] if results else None
 
 
-__all__ = ["Match", "match", "best_match", "lemmatise", "DEFAULT_THRESHOLD"]
+EN_STOPWORDS = _STOPWORDS
+EN_TOKEN_RE = _TOKEN_RE
+
+
+__all__ = [
+    "Match",
+    "match",
+    "best_match",
+    "lemmatise",
+    "DEFAULT_THRESHOLD",
+    "EN_STOPWORDS",
+    "EN_TOKEN_RE",
+]

@@ -23,17 +23,37 @@ branches at entry:
 1. **Criterion grain.** Per-bullet KUDs still produce Phase 4 LTs and
    Phase 5 criteria at whatever grain those phases decide. This branch
    only pins KUD cardinality at entry.
-2. **Which phase handles dispositions.** Disposition items live in
-   `kud.do_dispositions`; Phase 4 and 5 decide LT type and format.
-   Nothing here forces a per-bullet mode to drop dispositions — v4.1's
-   "exam-spec mode refuses Understands and Dispositions" rule is
-   deferred to Session 3c per the brief.
-3. **Whether Understands are produced.** This branch neither adds nor
-   suppresses the `understand` array; downstream output-shape
-   discipline for exam-spec mode is Session 3c's work.
-4. **Source-faithfulness matching.** Orthogonal — still computed by
+2. **Source-faithfulness matching.** Orthogonal — still computed by
    ``_attach_source_faithfulness`` against the ``source_bullets``
    artefact after the KUD is generated, regardless of branch.
+
+## Exam-spec output-shape refusal (Session 3c, v4.1 discipline)
+
+When the profile resolves to ``per_bullet`` (bare-bullet exam spec per
+binding-specifications.md), Phase 3 post-processes the generated KUD
+to drop ``understand`` and ``do_dispositions`` items. v4.1 specifies
+that exam-spec mode produces an Assessed Demonstrations Map (know =
+assessed topics, do_skills = tested demonstrations), NOT a four-column
+KUD; pedagogical artefacts are refused.
+
+The refusal is structural: the fields are emptied here and marked in
+the run report. The output-node then writes the artefact under the
+``assessed_demonstrations_map_v1.json`` filename with those fields
+explicitly ``null``. ``state["output_mode"]`` is set so downstream
+phases and the run report can display which shape discipline fired.
+
+### Adjacent-mechanism declaration — refusal does NOT check
+
+1. **Content smuggled into the allowed columns.** A prompt that
+   emits disposition-like content dressed as a Do-Skill in exam-spec
+   mode slips past this gate. The gate only checks which mode is
+   active, not whether an item's content "fits" the column it landed
+   in. Separate failure mode; flagged here but not addressed in
+   Session 3c per the brief.
+2. **Cases where the exam source carries command words / mark
+   scheme.** Those profiles route to ``strand_aggregated`` and retain
+   full KUD output (intentional — richer exam specs get the four-
+   column treatment).
 """
 
 from __future__ import annotations
@@ -396,6 +416,19 @@ async def phase3_kud(state: DecomposerState) -> dict[str, Any]:
 
     kud, recall_filtered_count = _filter_recall_only_know(kud)
 
+    # Session 3c — exam-spec output-shape discipline (v4.1).
+    # per_bullet mode ⇒ bare-bullet exam spec ⇒ refuse Understand and
+    # Disposition items. Refusal is structural: the arrays are emptied
+    # here so downstream phases (Phase 4, Phase 5, output_node) see an
+    # exam-spec-shaped KUD without special-case branching.
+    exam_spec_refusals = {"understand_dropped": 0, "dispositions_dropped": 0}
+    if branch == "per_bullet":
+        exam_spec_refusals["understand_dropped"] = len(kud.understand)
+        exam_spec_refusals["dispositions_dropped"] = len(kud.do_dispositions)
+        kud.understand = []
+        kud.do_dispositions = []
+    output_mode = "exam_specification" if branch == "per_bullet" else "curriculum"
+
     faithfulness_flagged = _attach_source_faithfulness(kud, source_bullets)
     if not source_bullets:
         errs.append(
@@ -427,4 +460,6 @@ async def phase3_kud(state: DecomposerState) -> dict[str, Any]:
         "phase3_input_bullet_count": len(source_bullets),
         "phase3_output_kud_item_count": kud_item_count,
         "phase3_merge_events": merge_events,
+        "output_mode": output_mode,
+        "phase3_exam_spec_refusals": exam_spec_refusals,
     }

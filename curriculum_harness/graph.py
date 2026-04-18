@@ -94,6 +94,50 @@ def _resolve_phase5_artifact_paths(
     return (jpaths[0] if jpaths else None), (cpaths[0] if cpaths else None)
 
 
+def _write_kud_artefact(
+    out_dir: Path,
+    run_id: str,
+    kud: dict[str, Any],
+    output_mode: str,
+) -> tuple[Path, str]:
+    """Write the KUD / assessed-demonstrations-map artefact.
+
+    Session 3c — output-shape discipline. In curriculum mode the
+    artefact is written as ``<runId>_kud_v1.json`` with the legacy
+    bare-KUD top-level shape. In exam-spec mode the artefact is
+    written as ``<runId>_assessed_demonstrations_map_v1.json`` with an
+    explanatory wrapper that names the mode and nullifies the
+    pedagogical columns refused by Phase 3 (understandings,
+    dispositions, pedagogical_criteria).
+
+    Returns ``(written_path, artefact_kind)`` where ``artefact_kind``
+    is ``"kud"`` or ``"assessed_demonstrations_map"``.
+    """
+    if output_mode == "exam_specification":
+        path = next_available_artifact_path(
+            out_dir, run_id, "assessed_demonstrations_map", "json"
+        )
+        payload = {
+            "output_mode": "exam_specification",
+            "schema_version": "1.0",
+            "assessed_demonstrations_map": {
+                "assessed_topics": kud.get("know") or [],
+                "tested_demonstrations": kud.get("do_skills") or [],
+                "understandings": None,
+                "dispositions": None,
+                "pedagogical_criteria": None,
+            },
+        }
+        kind = "assessed_demonstrations_map"
+    else:
+        path = next_available_artifact_path(out_dir, run_id, "kud", "json")
+        payload = kud
+        kind = "kud"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    return path, kind
+
+
 def output_node(state: DecomposerState) -> dict[str, Any]:
     orp = str(state.get("output_path_resolved") or "").strip()
     out_dir = Path(orp).resolve() if orp else (REPO_ROOT / "outputs")
@@ -102,7 +146,6 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
 
     arch_path = next_available_artifact_path(out_dir, run_id, "architecture", "json")
     profile_path = next_available_artifact_path(out_dir, run_id, "curriculum_profile", "json")
-    kud_path = next_available_artifact_path(out_dir, run_id, "kud", "json")
     lt_path = next_available_artifact_path(out_dir, run_id, "learning_targets", "json")
     hr_path = next_available_artifact_path(out_dir, run_id, "human_review_queue", "json")
     report_path = next_available_artifact_path(out_dir, run_id, "run_report", "md")
@@ -112,6 +155,14 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
     kud = state.get("kud") or {}
     lts = state.get("learning_targets") or []
     reviews = state.get("human_review_queue") or []
+    output_mode = str(state.get("output_mode") or "curriculum")
+    regeneration_events = list(state.get("regeneration_events") or [])
+    human_review_required = list(state.get("human_review_required") or [])
+    exam_spec_refusals = dict(state.get("phase3_exam_spec_refusals") or {})
+    source_language = str(state.get("source_language") or "en")
+    source_language_signal = dict(state.get("source_language_signal") or {})
+
+    kud_path, kud_kind = _write_kud_artefact(out_dir, run_id, kud, output_mode)
     phase5_summary = state.get("phase5_summary") or {}
     phase5_json, phase5_csv = _resolve_phase5_artifact_paths(out_dir, run_id, phase5_summary)
     phase5_group_counts: dict[str, int] = {}
@@ -157,14 +208,34 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
     with open(profile_path, "w", encoding="utf-8") as f:
         json.dump(curriculum_profile, f, indent=2)
 
-    with open(kud_path, "w", encoding="utf-8") as f:
-        json.dump(kud, f, indent=2)
+    # kud_path already written by `_write_kud_artefact` — the file name
+    # (`kud_v1.json` vs `assessed_demonstrations_map_v1.json`) reflects
+    # output_mode. No second write here.
 
     with open(lt_path, "w", encoding="utf-8") as f:
         json.dump({"learning_targets": lts}, f, indent=2)
 
     with open(hr_path, "w", encoding="utf-8") as f:
         json.dump({"items": reviews}, f, indent=2)
+
+    # Regeneration events + human-review-required are written alongside
+    # the LT artefact so the validate_regenerate_loop gate can read them.
+    regen_path = next_available_artifact_path(
+        out_dir, run_id, "regeneration_events", "json"
+    )
+    with open(regen_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "regeneration_events": regeneration_events,
+                "human_review_required": human_review_required,
+                "source_language": source_language,
+                "source_language_signal": source_language_signal,
+                "output_mode": output_mode,
+            },
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
 
     type_counts: dict[int, int] = {1: 0, 2: 0, 3: 0}
     word_counts: list[int] = []
@@ -217,22 +288,63 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
         f"**Run ID:** {run_id}",
         f"**Output directory:** `{out_dir}`",
         "",
-        "## Source bullets",
+        "## Output-shape discipline (Session 3c)",
         "",
-        f"- Count: {len(source_bullets)}",
-        f"- Artefact: `{bullets_path}`",
-        "",
-        "## Curriculum profile",
-        "",
-        f"- document_family: {curriculum_profile.get('document_family', '')}",
-        f"- level_model: {curriculum_profile.get('level_model', '')}",
-        f"- scoping_strategy: {curriculum_profile.get('scoping_strategy', '')}",
-        f"- lt_statement_format (profile output_conventions): {lt_fmt}",
-        f"- lt_statement_format (resolved for pipeline): {lt_fmt_resolved}",
-        f"- recommended_adjacent_radius (product default ±1): {adj_r}",
-        f"- confidence: {curriculum_profile.get('confidence', '')}",
-        f"- Profile JSON: `{profile_path}`",
+        f"- **Output mode:** `{output_mode}`",
+        f"- KUD / map artefact kind: `{kud_kind}`",
+        f"- KUD / map artefact path: `{kud_path}`",
     ]
+    if output_mode == "exam_specification":
+        u_dropped = exam_spec_refusals.get("understand_dropped", 0)
+        d_dropped = exam_spec_refusals.get("dispositions_dropped", 0)
+        lines.extend(
+            [
+                "- Exam-spec discipline active: Understands and Dispositions "
+                "refused per v4.1.",
+                f"- Understand items dropped by Phase 3: {u_dropped}",
+                f"- Disposition items dropped by Phase 3: {d_dropped}",
+                "- Pedagogical criterion bank: NOT produced (not yet emitted "
+                "by any phase; exam-spec refusal is pre-emptive).",
+                "- Demonstration criterion bank: not yet produced (no "
+                "criterion phase in harness yet — tracked in VALIDITY.md §4).",
+            ]
+        )
+    else:
+        lines.append(
+            "- Curriculum mode: full KUD emitted (know, understand, "
+            "do_skills, do_dispositions)."
+        )
+    lines.extend(
+        [
+            "",
+            "## Source language (Session 3c)",
+            "",
+            f"- Detected language: `{source_language}`",
+            f"- Signal: {source_language_signal}",
+            (
+                "- Phase 4 regeneration loop skips `SOURCE_FAITHFULNESS_FAIL` "
+                "retries for non-en sources (English-only matcher)."
+                if source_language == "non-en"
+                else "- Phase 4 regeneration loop retries all FAIL_SET flags normally."
+            ),
+            "",
+            "## Source bullets",
+            "",
+            f"- Count: {len(source_bullets)}",
+            f"- Artefact: `{bullets_path}`",
+            "",
+            "## Curriculum profile",
+            "",
+            f"- document_family: {curriculum_profile.get('document_family', '')}",
+            f"- level_model: {curriculum_profile.get('level_model', '')}",
+            f"- scoping_strategy: {curriculum_profile.get('scoping_strategy', '')}",
+            f"- lt_statement_format (profile output_conventions): {lt_fmt}",
+            f"- lt_statement_format (resolved for pipeline): {lt_fmt_resolved}",
+            f"- recommended_adjacent_radius (product default ±1): {adj_r}",
+            f"- confidence: {curriculum_profile.get('confidence', '')}",
+            f"- Profile JSON: `{profile_path}`",
+        ]
+    )
     if profile_notes:
         lines.extend(["", f"_Classification notes:_ {profile_notes}", ""])
     else:
@@ -321,6 +433,35 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
         "",
         f"- Phase 3 KUD items flagged SOURCE_FAITHFULNESS_FAIL: {phase3_faithfulness_flagged}",
         f"- Phase 4 LTs flagged SOURCE_FAITHFULNESS_FAIL: {phase4_faithfulness_flagged}",
+        "",
+        "## Regeneration loop (Session 3c)",
+        "",
+        f"- Total LTs that entered regeneration: {len(regeneration_events)}",
+        f"- LTs that exhausted the retry budget: {len(human_review_required)}",
+        f"- Regeneration artefact: `{regen_path}`",
+        ]
+    )
+    if regeneration_events:
+        outcomes: dict[str, int] = {}
+        for ev in regeneration_events:
+            outcome = str(ev.get("outcome") or "unknown")
+            outcomes[outcome] = outcomes.get(outcome, 0) + 1
+        for k in sorted(outcomes):
+            lines.append(f"  - outcome `{k}`: {outcomes[k]}")
+    if human_review_required:
+        lines.append("")
+        lines.append("_Human-review entries (budget exhausted):_")
+        for entry in human_review_required[:12]:
+            sbid = ", ".join(entry.get("source_bullet_ids") or []) or "(no sb_ids)"
+            flags = ", ".join(entry.get("final_fail_flags") or [])
+            lines.append(
+                f"- `{sbid}` → flags: [{flags}]; outcome: {entry.get('outcome')}"
+            )
+        remainder = len(human_review_required) - 12
+        if remainder > 0:
+            lines.append(f"- _…and {remainder} more_")
+    lines.extend(
+        [
         "",
         "## Flags (unique)",
         "",

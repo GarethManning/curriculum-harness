@@ -1,4 +1,62 @@
-"""Phase 4 — learning targets via MCP learning-target-authoring-guide (per KUD item)."""
+"""Phase 4 — learning targets via MCP learning-target-authoring-guide (per KUD item).
+
+## Regeneration loop (Session 3c)
+
+After the initial LT is built and validated, any flag in ``FAIL_SET``
+triggers hard-fail regeneration with a bounded retry budget
+(``MAX_REGENERATION_RETRIES`` = 3). Each retry prompt carries the prior
+attempt's statement and flags, plus an instruction to address those
+flags specifically.
+
+### FAIL_SET — what triggers regeneration
+
+Flags that fire regeneration are genuine validation failures per v4.1:
+``SOURCE_FAITHFULNESS_FAIL``, ``EXCEEDS_WORD_LIMIT``, ``COMPOUND_TYPE``,
+``EMBEDDED_EXAMPLE``, ``DISPOSITION_RUBRIC_ERROR``,
+``MISSING_I_CAN_FORMAT``, ``MISSING_LT_STATEMENT``.
+
+Flags that are informational warnings — ``POSSIBLE_COMPOUND``,
+``LT_FORMAT_EXPECTATION_MISMATCH``, ``HE_DISPOSITION_INFERRED`` — are
+NOT in FAIL_SET. They ship on the LT as-is.
+
+### Budget-exhausted handling
+
+If the 3rd retry still has any FAIL_SET flag, the LT is NOT shipped
+as valid. Instead, the source bullet(s) backing that LT go into
+``state["human_review_required"]`` with the full retry history so a
+human can decide whether the source content itself is the problem.
+
+### Language-detection bypass
+
+``state["source_language"] == "non-en"`` skips regeneration for
+``SOURCE_FAITHFULNESS_FAIL`` specifically (other flags still retry).
+The English-only matcher cannot repair a Hungarian / other non-English
+source mismatch, and burning the retry budget on a flag the matcher
+can't fix produces no signal. Those LTs ship with the flag and a
+``SOURCE_LANGUAGE_BYPASS`` annotation in the regeneration-event log.
+
+### Adjacent-mechanism declaration — what the regen loop does NOT check
+
+1. **Semantic differentness of retries.** A near-identical retry
+   (same text, same flags) burns the retry budget silently. Mitigated
+   by a cosine-similarity check between retry N and retry N-1 — if
+   similarity >=0.90, a separate ``REGENERATION_NEAR_IDENTICAL`` flag
+   is attached and the LT ships to human review without further
+   retries.
+2. **New flags introduced by a retry.** A retry that fixes flag X
+   but introduces flag Y is detected: if retry N's flags contain any
+   flag absent from retry N-1's flags, a ``REGENERATION_INTRODUCED_
+   NEW_FLAG`` annotation is added to the retry record. Regeneration
+   still continues until budget is exhausted or all flags clear.
+3. **Source-content adequacy.** If an LT consistently fails the same
+   flag across all retries, the underlying source bullet may be
+   ill-formed or the flag definition may be wrong. The loop surfaces
+   the case rather than papering over it — the source goes to
+   ``human_review_required`` instead of shipping a flagged LT.
+4. **FAIL_SET membership.** The set is defined in code; it is NOT
+   tuned per-run to silence particular flags. Flag frequency is a
+   signal, not a nuisance.
+"""
 
 from __future__ import annotations
 
@@ -115,6 +173,71 @@ VERB_HINTS = (
 )
 
 ICAN_PREFIX = "I can "
+
+# Regeneration loop — see module docstring for what triggers retry.
+MAX_REGENERATION_RETRIES = 3
+REGENERATION_NEAR_IDENTICAL_THRESHOLD = 0.90
+REGEN_NEAR_IDENTICAL_FLAG = "REGENERATION_NEAR_IDENTICAL"
+REGEN_INTRODUCED_NEW_FLAG = "REGENERATION_INTRODUCED_NEW_FLAG"
+SOURCE_LANGUAGE_BYPASS_ANNOTATION = "SOURCE_LANGUAGE_BYPASS"
+
+# Flags in FAIL_SET trigger regeneration. Flags outside FAIL_SET are
+# informational warnings and ship on the LT as-is.
+FAIL_SET: frozenset[str] = frozenset({
+    SOURCE_FAITHFULNESS_FAIL_FLAG,
+    "EXCEEDS_WORD_LIMIT",
+    "COMPOUND_TYPE",
+    "EMBEDDED_EXAMPLE",
+    "DISPOSITION_RUBRIC_ERROR",
+    "MISSING_I_CAN_FORMAT",
+    "MISSING_LT_STATEMENT",
+})
+
+
+def _fail_flags(flags: list[str]) -> list[str]:
+    """Return the subset of ``flags`` that are in FAIL_SET, preserving order."""
+    return [f for f in flags if f in FAIL_SET]
+
+
+def _should_bypass_for_language(
+    fail_flags_on_lt: list[str], source_language: str
+) -> bool:
+    """Non-English source ⇒ skip retries when the ONLY failing flag is
+    SOURCE_FAITHFULNESS_FAIL. Other failing flags still trigger retry.
+
+    Rationale: the matcher is English-only (see
+    `eval/source_evidence_matcher.py` adjacent-mechanism #4). Retrying
+    an English LT against non-English bullets cannot repair the flag.
+    Other flags (word limit, compound type, etc.) are language-agnostic
+    and still warrant retry.
+    """
+    if source_language != "non-en":
+        return False
+    return set(fail_flags_on_lt) == {SOURCE_FAITHFULNESS_FAIL_FLAG}
+
+
+def _compose_retry_instruction(
+    prior_statement: str,
+    prior_flags: list[str],
+    attempt_idx: int,
+) -> str:
+    """Build the retry-specific instruction block for the LLM prompt.
+
+    ``attempt_idx`` is 1-based for the retry count (attempt 1 is the
+    first regeneration attempt; attempt 0 is the initial LT).
+    """
+    bullet_points = []
+    for flag in prior_flags:
+        bullet_points.append(f"- {flag}")
+    return (
+        f"REGENERATION ATTEMPT {attempt_idx} of {MAX_REGENERATION_RETRIES}.\n"
+        f"Prior attempt: {prior_statement!r}\n"
+        f"Prior attempt failed these validation flags:\n"
+        + "\n".join(bullet_points)
+        + "\nRewrite the learning target to specifically fix every listed "
+          "flag while still being faithful to the KUD element. Do NOT "
+          "produce the same statement again — it will be rejected."
+    )
 
 
 def _tokenize_for_cosine(s: str) -> list[str]:
@@ -393,6 +516,330 @@ async def _he_dispositional_supplement(
     return out
 
 
+def _build_initial_instruction(
+    assigned_type: int,
+    fmt: str,
+    exam_addon: str,
+    action_block: str,
+    hard: str,
+    arch_summary: str,
+) -> str:
+    return (
+        f"Call `{TOOL_NAME}` to author ONE learning target from this KUD element.\n\n"
+        f"{TYPE_FRAMEWORK_FOR_LT}\n\n"
+        f"{action_block}\n\n"
+        f"{hard}\n"
+        f"{exam_addon}\n"
+        f"This element has **assigned type {assigned_type}** from the KUD `knowledge_type` field — "
+        "generate wording consistent with that type only (do not choose a different type from the wording).\n"
+        f"Architecture context (summary): {arch_summary[:4000]}\n"
+        'Then output ONLY JSON: {"statement": str}'
+    )
+
+
+async def _one_llm_attempt(
+    *,
+    instruction: str,
+    kud_line: str,
+    bucket: str,
+    assigned_type: int,
+    fmt: str,
+    mcp_url: str,
+    mcp_name: str,
+    client: Any,
+) -> tuple[str, list[HumanReviewItem], list[str]]:
+    """Single LLM call (MCP first, direct Sonnet fallback).
+
+    Returns ``(statement, review_items_to_append, error_lines)``. An
+    empty statement with no review items indicates a clean skip
+    (e.g. initial call returned an explicit ``skip_rote`` sentinel).
+    Empty statement with a review item indicates a catastrophic failure
+    the caller should treat as "no LT for this item".
+    """
+    messages = [{
+        "role": "user",
+        "content": [
+            {"type": "text", "text": instruction},
+            {"type": "text", "text": kud_line},
+        ],
+    }]
+    resp: Any = None
+    stmt = ""
+    reviews: list[HumanReviewItem] = []
+    errors_out: list[str] = []
+    try:
+        resp = await beta_messages_create(
+            client,
+            model=SONNET_MODEL,
+            max_tokens=2048,
+            messages=messages,
+            label=f"phase4_mcp_lt_{bucket}",
+            mcp_servers=mcp_servers_param(mcp_url, mcp_name),
+            tools=[mcp_toolset_single_tool(mcp_name, TOOL_NAME)],
+        )
+        text = response_text_content(resp)
+        parsed = extract_json_object(text) or {}
+        stmt = str(parsed.get("statement", "")).strip()
+    except AnthropicCallTimeout:
+        errors_out.append(
+            f"phase4: timeout for KUD item {bucket}: {kud_line[:80]} (trying direct Sonnet)"
+        )
+        try:
+            fb = await _direct_lt(kud_line, assigned_type, fmt)
+            stmt = fb.statement
+        except Exception:
+            reviews.append(
+                HumanReviewItem(
+                    item_type="phase4_timeout",
+                    summary=f"{bucket}: {kud_line[:120]}",
+                    decision_needed="Re-run or author LT manually.",
+                )
+            )
+            return "", reviews, errors_out
+    except Exception as exc:
+        raw_dump = response_debug_dump(resp) if resp is not None else str(exc)
+        reviews.append(
+            HumanReviewItem(
+                item_type="phase4_mcp",
+                summary=f"{bucket}: {exc}"[:500],
+                decision_needed="MCP LT failure; attempting direct Sonnet.",
+            )
+        )
+        reviews.append(
+            HumanReviewItem(
+                item_type="phase4_mcp_raw",
+                summary="raw (truncated)",
+                decision_needed=raw_dump[:6000],
+            )
+        )
+        fb = await _direct_lt(kud_line, assigned_type, fmt)
+        stmt = fb.statement
+
+    if not stmt:
+        fb = await _direct_lt(kud_line, assigned_type, fmt)
+        stmt = fb.statement
+    return stmt, reviews, errors_out
+
+
+def _finalise_lt(
+    *,
+    stmt: str,
+    assigned_type: int,
+    compound: bool,
+    fmt: str,
+    item: KUDItem,
+    source_label: str,
+    kud_parents: list[dict],
+    source_bullets: list[dict],
+) -> LearningTarget:
+    """Build a LearningTarget from ``stmt`` and attach validation flags
+    + provenance (surface flags from `_validate_lt`, source-faithfulness
+    flag from the `source_bullets` corpus, kud / source provenance).
+    Returns the finalised LT.
+    """
+    lt = LearningTarget(
+        statement=stmt,
+        type=assigned_type,
+        knowledge_type=item.knowledge_type,
+        assessment_route=item.assessment_route,
+        kud_source=source_label,
+        word_count=len(stmt.split()),
+        lt_statement_format=fmt,
+    )
+    lt.flags = _validate_lt(lt, compound_type=compound, fmt=fmt)
+    kud_prov, _ = compute_parent_provenance(stmt, kud_parents, top_k=1)
+    src_prov, src_passed = compute_source_provenance(stmt, source_bullets)
+    lt.kud_provenance = kud_prov
+    lt.source_provenance = src_prov
+    if not src_passed and source_bullets:
+        if SOURCE_FAITHFULNESS_FAIL_FLAG not in lt.flags:
+            lt.flags.append(SOURCE_FAITHFULNESS_FAIL_FLAG)
+    return lt
+
+
+async def _generate_with_regen_loop(
+    *,
+    bucket: str,
+    item: KUDItem,
+    assigned_type: int,
+    compound: bool,
+    fmt: str,
+    exam_addon: str,
+    action_block: str,
+    hard: str,
+    arch_summary: str,
+    mcp_url: str,
+    mcp_name: str,
+    client: Any,
+    kud_parents: list[dict],
+    source_bullets: list[dict],
+    source_language: str,
+) -> tuple[
+    LearningTarget | None,
+    list[HumanReviewItem],
+    list[str],
+    dict[str, Any] | None,
+    dict[str, Any] | None,
+]:
+    """Generate ONE LT with bounded regeneration on FAIL_SET flags.
+
+    Returns (lt, reviews, errors, regen_event, human_review_entry).
+    See `_regenerate_loop` module docstring for the state machine.
+    """
+    kud_line = _format_kud_line(bucket, item)
+    source_label = f"{bucket}: {item.content[:120]}"
+    base_instruction = _build_initial_instruction(
+        assigned_type, fmt, exam_addon, action_block, hard, arch_summary
+    )
+
+    all_reviews: list[HumanReviewItem] = []
+    all_errors: list[str] = []
+    attempts: list[dict[str, Any]] = []
+    lt: LearningTarget | None = None
+    event_annotations: list[str] = []
+
+    for attempt_idx in range(MAX_REGENERATION_RETRIES + 1):
+        if attempt_idx == 0:
+            instruction = base_instruction
+        else:
+            prior = attempts[-1]
+            instruction = (
+                f"{base_instruction}\n\n"
+                + _compose_retry_instruction(
+                    prior_statement=prior["statement"],
+                    prior_flags=prior["fail_flags"],
+                    attempt_idx=attempt_idx,
+                )
+            )
+
+        stmt, reviews, errors_out = await _one_llm_attempt(
+            instruction=instruction,
+            kud_line=kud_line,
+            bucket=bucket,
+            assigned_type=assigned_type,
+            fmt=fmt,
+            mcp_url=mcp_url,
+            mcp_name=mcp_name,
+            client=client,
+        )
+        all_reviews.extend(reviews)
+        all_errors.extend(errors_out)
+
+        if not stmt:
+            # Catastrophic LLM failure; caller treats as "no LT for this item".
+            return None, all_reviews, all_errors, None, None
+
+        s_low = stmt.lower().strip()
+        if attempt_idx == 0 and (
+            "skip_rote" in s_low or s_low in ("skip", "skip_rote_recall_only")
+        ):
+            return None, all_reviews, all_errors, None, None
+
+        candidate = _finalise_lt(
+            stmt=stmt,
+            assigned_type=assigned_type,
+            compound=compound,
+            fmt=fmt,
+            item=item,
+            source_label=source_label,
+            kud_parents=kud_parents,
+            source_bullets=source_bullets,
+        )
+        fail_flags_this_attempt = _fail_flags(candidate.flags)
+
+        attempt_annotations: list[str] = []
+        similarity_to_prev: float | None = None
+        if attempt_idx > 0:
+            similarity_to_prev = cosine_similarity_text(
+                attempts[-1]["statement"], stmt
+            )
+            if similarity_to_prev >= REGENERATION_NEAR_IDENTICAL_THRESHOLD:
+                attempt_annotations.append(REGEN_NEAR_IDENTICAL_FLAG)
+            prior_flag_set = set(attempts[-1]["fail_flags"])
+            new_fail_flags = [
+                f for f in fail_flags_this_attempt if f not in prior_flag_set
+            ]
+            if new_fail_flags:
+                attempt_annotations.append(REGEN_INTRODUCED_NEW_FLAG)
+
+        attempts.append({
+            "attempt": attempt_idx,
+            "statement": stmt,
+            "flags": list(candidate.flags),
+            "fail_flags": fail_flags_this_attempt,
+            "annotations": attempt_annotations,
+            "similarity_to_prev": (
+                round(similarity_to_prev, 4)
+                if similarity_to_prev is not None
+                else None
+            ),
+        })
+        lt = candidate
+
+        if not fail_flags_this_attempt:
+            break
+        if _should_bypass_for_language(
+            fail_flags_this_attempt, source_language
+        ):
+            event_annotations.append(SOURCE_LANGUAGE_BYPASS_ANNOTATION)
+            break
+        if REGEN_NEAR_IDENTICAL_FLAG in attempt_annotations:
+            # Further retries on the same text burn the budget silently.
+            break
+        if attempt_idx == MAX_REGENERATION_RETRIES:
+            break
+
+    final_fail_flags: list[str] = _fail_flags(lt.flags) if lt else []
+    outcome: str
+    if not final_fail_flags:
+        outcome = (
+            "success@initial" if len(attempts) == 1
+            else f"success@retry_{len(attempts) - 1}"
+        )
+    elif SOURCE_LANGUAGE_BYPASS_ANNOTATION in event_annotations:
+        outcome = "language_bypass_ship_flagged"
+    elif (
+        attempts
+        and REGEN_NEAR_IDENTICAL_FLAG in (attempts[-1].get("annotations") or [])
+    ):
+        outcome = "near_identical_retry_abort"
+    else:
+        outcome = "exhausted_retries"
+
+    event: dict[str, Any] | None = None
+    if len(attempts) > 1 or final_fail_flags:
+        event = {
+            "source_label": source_label,
+            "bucket": bucket,
+            "kud_content": item.content,
+            "source_bullet_ids": list(
+                getattr(item, "source_bullet_ids", []) or []
+            ),
+            "attempts": attempts,
+            "outcome": outcome,
+            "annotations": list(dict.fromkeys(event_annotations)),
+        }
+
+    human_review_entry: dict[str, Any] | None = None
+    if final_fail_flags and outcome in (
+        "exhausted_retries",
+        "near_identical_retry_abort",
+    ):
+        human_review_entry = {
+            "source_label": source_label,
+            "kud_content": item.content,
+            "source_bullet_ids": list(
+                getattr(item, "source_bullet_ids", []) or []
+            ),
+            "final_fail_flags": final_fail_flags,
+            "outcome": outcome,
+            "attempt_count": len(attempts),
+            "attempts": attempts,
+        }
+
+    return lt, all_reviews, all_errors, event, human_review_entry
+
+
 async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
     errs = list(state.get("errors") or [])
     review_dicts = list(state.get("human_review_queue") or [])
@@ -402,6 +849,7 @@ async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
     profile = dict(state.get("curriculum_profile") or {})
     fmt = resolve_lt_statement_format(profile)
     doc_fam = str(profile.get("document_family", "")).strip().lower()
+    source_language = str(state.get("source_language") or "en")
 
     if not kud.all_items():
         errs.append("phase4: skipped — empty KUD")
@@ -409,109 +857,62 @@ async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
             "current_phase": "phase4:skipped",
             "errors": errs,
             "learning_targets": [],
+            "regeneration_events": [],
+            "human_review_required": [],
         }
 
     mcp_url = state.get("mcp_server_url") or ""
     mcp_name = state.get("mcp_server_name") or "claude-education-skills"
     arch_summary = str(arch)[:12000]
+    # NOTE: GCSE_AQA_EXAM_BLOCK is still attached on any
+    # exam_specification profile. VALIDITY.md foundation moment 3
+    # (validate_exam_block_scope) tracks the AQA-specific scoping bug;
+    # Session 3c does not change that gate's scope.
     exam_addon = GCSE_AQA_EXAM_BLOCK if doc_fam == "exam_specification" else ""
     hard = _hard_rules_for_format(fmt)
     action_block = _action_rules_for_format(fmt)
 
+    source_bullets = list(state.get("source_bullets") or [])
+    kud_parents = [
+        {"id": f"{bucket}[{idx}]", "content": it.content}
+        for idx, (bucket, it) in enumerate(kud.all_items())
+    ]
+
     targets: list[dict[str, Any]] = []
+    regeneration_events: list[dict[str, Any]] = []
+    human_review_required: list[dict[str, Any]] = []
     client = get_async_client()
 
     for bucket, item in kud.all_items():
         if bucket == "know" and is_recall_only_know_content(item.content):
             continue
         assigned_type, compound = _lt_type_and_compound(item)
-        kud_line = _format_kud_line(bucket, item)
-        instruction = (
-            f"Call `{TOOL_NAME}` to author ONE learning target from this KUD element.\n\n"
-            f"{TYPE_FRAMEWORK_FOR_LT}\n\n"
-            f"{action_block}\n\n"
-            f"{hard}\n"
-            f"{exam_addon}\n"
-            f"This element has **assigned type {assigned_type}** from the KUD `knowledge_type` field — "
-            "generate wording consistent with that type only (do not choose a different type from the wording).\n"
-            f"Architecture context (summary): {arch_summary[:4000]}\n"
-            'Then output ONLY JSON: {"statement": str}'
+
+        lt, reviews, errors_out, event, hr_entry = await _generate_with_regen_loop(
+            bucket=bucket,
+            item=item,
+            assigned_type=assigned_type,
+            compound=compound,
+            fmt=fmt,
+            exam_addon=exam_addon,
+            action_block=action_block,
+            hard=hard,
+            arch_summary=arch_summary,
+            mcp_url=mcp_url,
+            mcp_name=mcp_name,
+            client=client,
+            kud_parents=kud_parents,
+            source_bullets=source_bullets,
+            source_language=source_language,
         )
-        messages = [{
-            "role": "user",
-            "content": [
-                {"type": "text", "text": instruction},
-                {"type": "text", "text": kud_line},
-            ],
-        }]
-        resp: Any = None
-        stmt = ""
-        source = f"{bucket}: {item.content[:120]}"
-
-        try:
-            resp = await beta_messages_create(
-                client,
-                model=SONNET_MODEL,
-                max_tokens=2048,
-                messages=messages,
-                label=f"phase4_mcp_lt_{bucket}",
-                mcp_servers=mcp_servers_param(mcp_url, mcp_name),
-                tools=[mcp_toolset_single_tool(mcp_name, TOOL_NAME)],
-            )
-            text = response_text_content(resp)
-            parsed = extract_json_object(text) or {}
-            stmt = str(parsed.get("statement", "")).strip()
-        except AnthropicCallTimeout:
-            errs.append(f"phase4: timeout for KUD item {source[:80]} (trying direct Sonnet)")
-            try:
-                fb = await _direct_lt(kud_line, assigned_type, fmt)
-                stmt = fb.statement
-            except Exception:
-                review_dicts.append(
-                    HumanReviewItem(
-                        item_type="phase4_timeout",
-                        summary=source,
-                        decision_needed="Re-run or author LT manually.",
-                    ).to_dict(),
-                )
-                continue
-        except Exception as exc:
-            raw_dump = response_debug_dump(resp) if resp is not None else str(exc)
-            review_dicts.append(
-                HumanReviewItem(
-                    item_type="phase4_mcp",
-                    summary=f"{source}: {exc}"[:500],
-                    decision_needed="MCP LT failure; attempting direct Sonnet.",
-                ).to_dict(),
-            )
-            review_dicts.append(
-                HumanReviewItem(
-                    item_type="phase4_mcp_raw",
-                    summary="raw (truncated)",
-                    decision_needed=raw_dump[:6000],
-                ).to_dict(),
-            )
-            fb = await _direct_lt(kud_line, assigned_type, fmt)
-            stmt = fb.statement
-
-        if not stmt:
-            fb = await _direct_lt(kud_line, assigned_type, fmt)
-            stmt = fb.statement
-
-        s_low = stmt.lower().strip()
-        if "skip_rote" in s_low or s_low in ("skip", "skip_rote_recall_only"):
+        review_dicts.extend(r.to_dict() for r in reviews)
+        errs.extend(errors_out)
+        if event is not None:
+            regeneration_events.append(event)
+        if hr_entry is not None:
+            human_review_required.append(hr_entry)
+        if lt is None:
             continue
-
-        lt = LearningTarget(
-            statement=stmt,
-            type=assigned_type,
-            knowledge_type=item.knowledge_type,
-            assessment_route=item.assessment_route,
-            kud_source=source,
-            word_count=len(stmt.split()),
-            lt_statement_format=fmt,
-        )
-        lt.flags = _validate_lt(lt, compound_type=compound, fmt=fmt)
         targets.append(lt.to_dict())
 
     if doc_fam == "higher_ed_syllabus":
@@ -526,36 +927,25 @@ async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
                 existing_statements=existing_st,
             )
             for lt in extras:
+                # HE dispositional supplements are synthesised from
+                # the raw syllabus (no single source bullet), so they
+                # ship as best-effort provenance without regeneration.
+                stmt = lt.statement
+                kud_prov, _ = compute_parent_provenance(stmt, kud_parents, top_k=1)
+                src_prov, _src_passed = compute_source_provenance(
+                    stmt, source_bullets
+                )
+                lt.kud_provenance = kud_prov
+                lt.source_provenance = src_prov
                 targets.append(lt.to_dict())
         except Exception as exc:
             errs.append(f"phase4: HE disposition supplement failed: {exc}")
 
-    # Source faithfulness threading — Session 3a Step 7.
-    # Every LT is matched against (a) the KUD-item corpus for parent
-    # provenance, (b) the source_bullets corpus for source provenance.
-    # LTs whose best source match falls below the matcher's threshold
-    # are flagged SOURCE_FAITHFULNESS_FAIL and ship with the flag. No
-    # regeneration — Session 3b adds that. See
-    # `curriculum_harness/source_faithfulness.py` for the matcher's
-    # adjacent-mechanism declaration (grain, language boundary, etc.).
-    source_bullets = list(state.get("source_bullets") or [])
-    kud_parents = [
-        {"id": f"{bucket}[{idx}]", "content": it.content}
-        for idx, (bucket, it) in enumerate(kud.all_items())
-    ]
-    phase4_flagged = 0
-    for t in targets:
-        stmt = str(t.get("statement", ""))
-        kud_prov, _ = compute_parent_provenance(stmt, kud_parents, top_k=1)
-        src_prov, src_passed = compute_source_provenance(stmt, source_bullets)
-        t["kud_provenance"] = kud_prov
-        t["source_provenance"] = src_prov
-        if not src_passed and source_bullets:
-            flags = list(t.get("flags") or [])
-            if SOURCE_FAITHFULNESS_FAIL_FLAG not in flags:
-                flags.append(SOURCE_FAITHFULNESS_FAIL_FLAG)
-            t["flags"] = flags
-            phase4_flagged += 1
+    phase4_flagged = sum(
+        1
+        for t in targets
+        if SOURCE_FAITHFULNESS_FAIL_FLAG in (t.get("flags") or [])
+    )
     if not source_bullets:
         errs.append(
             "phase4: no source_bullets corpus available — "
@@ -568,4 +958,6 @@ async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
         "human_review_queue": review_dicts,
         "learning_targets": targets,
         "phase4_faithfulness_flagged_count": phase4_flagged,
+        "regeneration_events": regeneration_events,
+        "human_review_required": human_review_required,
     }

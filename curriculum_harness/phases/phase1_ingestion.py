@@ -13,6 +13,7 @@ from pypdf import PdfReader
 from curriculum_harness._anthropic import get_async_client, haiku_stream_text
 from curriculum_harness.source_bullets import extract_source_bullets
 from curriculum_harness.state import DecomposerState
+from eval.source_evidence_matcher import EN_STOPWORDS, EN_TOKEN_RE
 from curriculum_harness.types import (
     HAIKU_MODEL,
     extract_json_object,
@@ -23,6 +24,68 @@ from curriculum_harness.types import (
 # Full-document excerpt cap before Haiku scope pass (chars)
 _MAX_INPUT_FOR_SCOPE = 320_000
 _CLASSIFY_EXCERPT_CHARS = 40_000
+
+# Language detection — English stopword density.
+# Bullet corpora in English hit a stopword token at ~15-30% density;
+# Hungarian / Spanish / etc. bullet corpora hit English stopwords at
+# near-zero density (occasional loanwords). 0.05 is the conservative
+# cutoff — below that, the source is not English and Phase 4's
+# regeneration-on-SOURCE_FAITHFULNESS_FAIL is skipped because the
+# English-only matcher cannot repair the mismatch (see
+# eval/source_evidence_matcher.py adjacent-mechanism #4).
+_LANG_DETECT_MIN_TOKENS = 40
+_LANG_DETECT_EN_STOPWORD_RATIO = 0.05
+
+
+def _detect_source_language_from_bullets(
+    bullets: list[dict],
+) -> tuple[str, dict]:
+    """Classify the bullet corpus as English or non-English.
+
+    Rule-based stopword-density signal. Returns ``(language, signal)``
+    where language is ``"en"`` or ``"non-en"`` and ``signal`` records
+    the inputs to the decision so the run report can explain why.
+
+    Adjacent mechanism — what this does NOT decide:
+    - Which non-English language. Any sub-threshold stopword density is
+      reported as ``"non-en"``; consumers should not assume Hungarian,
+      French, etc.
+    - Mixed-language bullets. If half the bullets are English and half
+      Hungarian, this produces an aggregated ratio that may fall either
+      side of the threshold. A per-bullet language tag would be an
+      upgrade.
+    - Raw source text (pre-extraction). Only the bullet corpus is
+      sampled — if Phase 1 extraction dropped the non-English portions
+      and kept only English headings, this signal will say "en" when
+      the real source is not.
+    """
+    if not bullets:
+        return "en", {"status": "empty_bullet_corpus", "total_tokens": 0}
+    tokens: list[str] = []
+    for b in bullets:
+        text = (b.get("text") or "").strip()
+        if not text:
+            continue
+        tokens.extend(m.group(0).lower() for m in EN_TOKEN_RE.finditer(text))
+    total = len(tokens)
+    if total < _LANG_DETECT_MIN_TOKENS:
+        return "en", {
+            "status": "below_minimum_tokens",
+            "total_tokens": total,
+            "min_tokens": _LANG_DETECT_MIN_TOKENS,
+        }
+    stopword_hits = sum(1 for t in tokens if t in EN_STOPWORDS)
+    ratio = stopword_hits / total
+    signal = {
+        "status": "measured",
+        "total_tokens": total,
+        "en_stopword_hits": stopword_hits,
+        "en_stopword_ratio": round(ratio, 4),
+        "threshold": _LANG_DETECT_EN_STOPWORD_RATIO,
+    }
+    if ratio < _LANG_DETECT_EN_STOPWORD_RATIO:
+        return "non-en", signal
+    return "en", signal
 
 
 async def _fetch_bytes(url: str, timeout: float = 120.0) -> tuple[bytes, str | None]:
@@ -685,6 +748,8 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
         # zero bullets from a document that clearly contains outcomes.
         bullets = extract_source_bullets(raw_curriculum.strip())
 
+    source_language, source_language_signal = _detect_source_language_from_bullets(bullets)
+
     return {
         "current_phase": "phase1:complete",
         "errors": errs,
@@ -700,4 +765,6 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
             [p for p in classification_notes_parts if p],
         ).strip(),
         "source_bullets": bullets,
+        "source_language": source_language,
+        "source_language_signal": source_language_signal,
     }
