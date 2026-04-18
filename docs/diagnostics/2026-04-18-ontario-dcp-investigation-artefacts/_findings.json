@@ -1,0 +1,86 @@
+{
+  "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g7-history/strands",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "consent_modal": {
+    "visible": false
+  },
+  "spa_routing": {
+    "url_before": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g7-history/strands",
+    "url_after_click": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g7-history/strands"
+  },
+  "initial_http_status": 200,
+  "selectors": {
+    "toggle_probes": {
+      "aria-expanded buttons": {
+        "selector": "button[aria-expanded]",
+        "count": 0,
+        "sample_text": []
+      },
+      "details/summary": {
+        "selector": "details > summary",
+        "count": 0,
+        "sample_text": []
+      },
+      "aria-controls buttons": {
+        "selector": "button[aria-controls]",
+        "count": 0,
+        "sample_text": []
+      },
+      "heading-level buttons": {
+        "selector": "h2 button, h3 button, h4 button",
+        "count": 0,
+        "sample_text": []
+      }
+    },
+    "content_container_probes": {
+      "main": {
+        "found": true,
+        "inner_text_chars": 4710
+      },
+      "article": {
+        "found": false
+      },
+      "[role=main]": {
+        "found": false
+      },
+      ".curriculum-content": {
+        "found": false
+      },
+      ".strand": {
+        "found": false
+      },
+      ".strands": {
+        "found": false
+      },
+      "#content": {
+        "found": false
+      }
+    }
+  },
+  "click_timing": [
+    {
+      "note": "no_visible_aria_expanded_buttons_found"
+    }
+  ],
+  "network_activity_on_click": [],
+  "bot_detection": "none_detected",
+  "console_errors": [],
+  "url_patterns": [
+    {
+      "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g7-geography/strands",
+      "status": 200
+    },
+    {
+      "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g5-history/strands",
+      "status": 200
+    }
+  ],
+  "headings_found": [
+    "Expectations by strand",
+    "A. New France and British North America, 1713–1800",
+    "B. Canada, 1800–1850: Conflict and Challenges"
+  ]
+}
