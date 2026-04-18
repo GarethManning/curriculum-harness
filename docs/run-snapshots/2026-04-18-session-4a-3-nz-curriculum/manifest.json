@@ -1,0 +1,312 @@
+{
+  "acquisition_trace": [
+    {
+      "duration_ms": 14287,
+      "error": null,
+      "inputs": {
+        "browser_timeout_ms": 60000,
+        "dismiss_modal_selector": "button[aria-label*='cookie' i]",
+        "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p",
+        "wait_for_selector": "main"
+      },
+      "outputs_summary": {
+        "click_count": 0,
+        "console_error_count": 2,
+        "final_url": "https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p",
+        "http_status": 200,
+        "modal_dismissed": false,
+        "rendered_html_bytes": 522309,
+        "status": "ok",
+        "viewport": "1280x720"
+      },
+      "primitive": "fetch_via_browser",
+      "started_at": "2026-04-18T16:47:50.660391+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "dom_hash": "2669189a4f2679d92de6aa5cfc5ad623359e71373821240297111b04fb131d45",
+        "rendered_html_bytes": 522309
+      },
+      "primitive": "dom_hash",
+      "started_at": "2026-04-18T16:48:04.949120+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 21,
+      "error": null,
+      "inputs": {
+        "css_selector": "main"
+      },
+      "outputs_summary": {
+        "chars_out": 37245,
+        "match_count": 1,
+        "selector": "main",
+        "status": "ok"
+      },
+      "primitive": "extract_css_selector",
+      "started_at": "2026-04-18T16:48:04.950691+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 37245,
+        "checks": [
+          {
+            "flagged": false,
+            "name": "whitespace_runs",
+            "passed": true,
+            "threshold": 50,
+            "value": 0
+          }
+        ],
+        "line_count": 529,
+        "mode": "raw",
+        "verdict": "clean"
+      },
+      "primitive": "verify_raw_extraction",
+      "started_at": "2026-04-18T16:48:04.971876+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 1,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 37245,
+        "chars_out": 37245
+      },
+      "primitive": "normalise_whitespace",
+      "started_at": "2026-04-18T16:48:04.972426+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 12,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 37245,
+        "checks": [
+          {
+            "countable_lines": 479,
+            "docwide_failure": false,
+            "flagged": false,
+            "lines_flagged": 0,
+            "mean_flagged_ratio": 0.0,
+            "name": "character_doubling",
+            "passed": true,
+            "systematic_failure": false,
+            "threshold": 0.2,
+            "value": 0.0
+          },
+          {
+            "flagged": false,
+            "language_details": {
+              "english_hits": 1650,
+              "ratio": 0.2898,
+              "threshold": 0.03,
+              "total_words": 5693
+            },
+            "language_detected": "english_confident",
+            "name": "repeated_bigram",
+            "passed": true,
+            "threshold": 0.75,
+            "top_bigrams": [
+              [
+                "an",
+                758
+              ],
+              [
+                "in",
+                615
+              ],
+              [
+                "es",
+                514
+              ],
+              [
+                "nd",
+                499
+              ],
+              [
+                "th",
+                493
+              ]
+            ],
+            "total_bigrams": 30278,
+            "value": 0.167
+          },
+          {
+            "flagged": false,
+            "name": "empty_line_ratio",
+            "passed": true,
+            "threshold": 0.6000000000000001,
+            "value": 0.0
+          }
+        ],
+        "completeness_skipped_reason": "no source metadata (fetched_bytes or pages_extracted) available in executor accumulator",
+        "line_count": 529,
+        "mode": "normalised",
+        "verdict": "clean"
+      },
+      "primitive": "verify_normalised_extraction",
+      "started_at": "2026-04-18T16:48:04.973753+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "bytes": 37418,
+        "content_hash": "a01e288c63d217fb4f3fcf8e8e49294e9f9a176a416fd36e143717b861b8e44a"
+      },
+      "primitive": "content_hash",
+      "started_at": "2026-04-18T16:48:04.986190+00:00",
+      "user_interaction": null
+    }
+  ],
+  "content_files": [
+    "docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/rendered_state.png",
+    "docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/content.txt"
+  ],
+  "content_hash": "a01e288c63d217fb4f3fcf8e8e49294e9f9a176a416fd36e143717b861b8e44a",
+  "detection_hash": "93c2b031dad147939d684a8273376310b009a51e3ecc524b813ab5d2fcb92e5d",
+  "dom_hash": "2669189a4f2679d92de6aa5cfc5ad623359e71373821240297111b04fb131d45",
+  "encoding_detected": null,
+  "encoding_failure": null,
+  "investigation_memo_refs": [],
+  "known_pathology_handling": [],
+  "notes": null,
+  "phase0_version": "0.4.0",
+  "primitive_sequence": [
+    "fetch_via_browser",
+    "dom_hash",
+    "extract_css_selector",
+    "verify_raw_extraction",
+    "normalise_whitespace",
+    "verify_normalised_extraction",
+    "content_hash"
+  ],
+  "scope_acquired": {
+    "chars": 37245,
+    "verification_excerpt": {
+      "first_chars": "NZC \u2013 Social Sciences Phase 2 (Years 4\u20136)\nThis page provides the draft knowledge overview and teaching sequence for Phase 2 (Years 4\u20136) of the Social Sciences Learning Area. This is now available for ",
+      "last_chars": "Infosheet \u2013 Social Sciences Learning Area Years 0\u201310\nFile Downloads\nNo files available for download.",
+      "line_count": 529
+    }
+  },
+  "scope_requested": {
+    "browser_timeout_ms": 60000,
+    "click_sequence": null,
+    "css_selector": "main",
+    "dismiss_modal_selector": "button[aria-label*='cookie' i]",
+    "follow_links": false,
+    "heading_regex": false,
+    "heading_text": null,
+    "notes": "NZ Curriculum Online \u2014 Social Sciences Phase 2 (Years 4\u20136). Session 4a-3 Step 7 \u2014 generalisation test of js_rendered_progressive_disclosure primitive. Different jurisdiction, different framework (no SPA markers; heavy custom CMS), consent modal present (exercises dismiss_modal_selector).",
+    "page_range": null,
+    "pdf_dedup_coord_tolerance": 1,
+    "pdf_dedup_coords": false,
+    "section_heading": null,
+    "section_identifier": null,
+    "source_reference": "https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p",
+    "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p",
+    "wait_for_selector": "main"
+  },
+  "source_reference": "https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p",
+  "source_type": "js_rendered_progressive_disclosure",
+  "timestamp": "2026-04-18T16:47:50.660215+00:00",
+  "user_interactions": [],
+  "verification_trace": [
+    {
+      "checks_run": [
+        {
+          "flagged": false,
+          "name": "whitespace_runs",
+          "passed": true,
+          "threshold": 50,
+          "value": 0
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_raw_extraction",
+      "timestamp": "2026-04-18T16:48:04.972417+00:00",
+      "verdict": "clean"
+    },
+    {
+      "checks_run": [
+        {
+          "countable_lines": 479,
+          "docwide_failure": false,
+          "flagged": false,
+          "lines_flagged": 0,
+          "mean_flagged_ratio": 0.0,
+          "name": "character_doubling",
+          "passed": true,
+          "systematic_failure": false,
+          "threshold": 0.2,
+          "value": 0.0
+        },
+        {
+          "flagged": false,
+          "language_details": {
+            "english_hits": 1650,
+            "ratio": 0.2898,
+            "threshold": 0.03,
+            "total_words": 5693
+          },
+          "language_detected": "english_confident",
+          "name": "repeated_bigram",
+          "passed": true,
+          "threshold": 0.75,
+          "top_bigrams": [
+            [
+              "an",
+              758
+            ],
+            [
+              "in",
+              615
+            ],
+            [
+              "es",
+              514
+            ],
+            [
+              "nd",
+              499
+            ],
+            [
+              "th",
+              493
+            ]
+          ],
+          "total_bigrams": 30278,
+          "value": 0.167
+        },
+        {
+          "flagged": false,
+          "name": "empty_line_ratio",
+          "passed": true,
+          "threshold": 0.6000000000000001,
+          "value": 0.0
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_normalised_extraction",
+      "timestamp": "2026-04-18T16:48:04.986177+00:00",
+      "verdict": "clean"
+    }
+  ]
+}

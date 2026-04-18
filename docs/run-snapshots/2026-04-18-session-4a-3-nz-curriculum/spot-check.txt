@@ -1,0 +1,109 @@
+========================================================================
+Phase 0 manifest spot-check — docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/manifest.json
+========================================================================
+
+Source reference : https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p
+Source type      : js_rendered_progressive_disclosure
+Phase 0 version  : 0.4.0
+Timestamp        : 2026-04-18T16:47:50.660215+00:00
+Content hash     : a01e288c63d217fb4f3fcf8e8e49294e9f9a176a416fd36e143717b861b8e44a
+Detection hash   : 93c2b031dad147939d684a8273376310b009a51e3ecc524b813ab5d2fcb92e5d
+Encoding detected: None
+Pathologies      : (none)
+
+-- Scope requested --
+  browser_timeout_ms: 60000
+  css_selector: main
+  dismiss_modal_selector: button[aria-label*='cookie' i]
+  notes: NZ Curriculum Online — Social Sciences Phase 2 (Years 4–6). Session 4a-3 Step 7 — generalisation test of js_rendered_progressive_disclosure primitive. Differen…
+  pdf_dedup_coord_tolerance: 1
+  source_reference: https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p
+  url: https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p
+  wait_for_selector: main
+
+-- Scope acquired --
+  chars: 37245
+  verification_excerpt:
+    line_count : 529
+    first_chars: NZC – Social Sciences Phase 2 (Years 4–6)
+This page provides the draft knowledge overview and teaching sequence for Phase 2 (Years 4–6) of the Social Sciences Learning Area. This is now available for 
+    last_chars : Infosheet – Social Sciences Learning Area Years 0–10
+File Downloads
+No files available for download.
+
+-- Primitive sequence --
+  1. fetch_via_browser
+  2. dom_hash
+  3. extract_css_selector
+  4. verify_raw_extraction
+  5. normalise_whitespace
+  6. verify_normalised_extraction
+  7. content_hash
+
+-- Acquisition trace --
+  [1] fetch_via_browser  (14287 ms)
+      click_count: 0
+      console_error_count: 2
+      final_url: https://newzealandcurriculum.tahurangi.education.govt.nz/new-zealand-curriculum-online/nzc---social-sciences-years-4---6/5637290852.p
+      http_status: 200
+      modal_dismissed: False
+      rendered_html_bytes: 522309
+      status: ok
+      viewport: 1280x720
+  [2] dom_hash  (0 ms)
+      dom_hash: 2669189a4f2679d92de6aa5cfc5ad623359e71373821240297111b04fb131d45
+      rendered_html_bytes: 522309
+  [3] extract_css_selector  (21 ms)
+      chars_out: 37245
+      match_count: 1
+      selector: main
+      status: ok
+  [4] verify_raw_extraction  (0 ms)
+      chars_in: 37245
+      checks: [{'flagged': False, 'name': 'whitespace_runs', 'passed': True, 'threshold': 50, 'value': 0}]
+      line_count: 529
+      mode: raw
+      verdict: clean
+  [5] normalise_whitespace  (1 ms)
+      chars_in: 37245
+      chars_out: 37245
+  [6] verify_normalised_extraction  (12 ms)
+      chars_in: 37245
+      checks: [{'countable_lines': 479, 'docwide_failure': False, 'flagged': False, 'lines_flagged': 0, 'mean_flagged_ratio': 0.0, 'name': 'character_doubling', 'passed': Tr…
+      completeness_skipped_reason: no source metadata (fetched_bytes or pages_extracted) available in executor accumulator
+      line_count: 529
+      mode: normalised
+      verdict: clean
+  [7] content_hash  (0 ms)
+      bytes: 37418
+      content_hash: a01e288c63d217fb4f3fcf8e8e49294e9f9a176a416fd36e143717b861b8e44a
+
+-- Verification trace --
+  [1] verify_raw_extraction -> verdict: clean
+      whitespace_runs           value=0          threshold=50         [ok]
+  [2] verify_normalised_extraction -> verdict: clean
+      character_doubling        value=0.0        threshold=0.2        [ok]
+      repeated_bigram           value=0.167      threshold=0.75       [ok]
+      empty_line_ratio          value=0.0        threshold=0.6000000000000001 [ok]
+
+-- Content files --
+  docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/rendered_state.png
+  docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/content.txt
+
+-- Content preview --
+  docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/rendered_state.png  (3371911 bytes, .png — binary, preview skipped)
+  docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum/content.txt  (37245 chars)
+
+  --- first 500 chars ---
+  | NZC – Social Sciences Phase 2 (Years 4–6)
+  | This page provides the draft knowledge overview and teaching sequence for Phase 2 (Years 4–6) of the Social Sciences Learning Area. This is now available for wider feedback and familiarisation. The current Social Sciences curriculum remains in effect until 1 January 2027.
+  | About this resource
+  | This page provides the draft Phase 2 (Years 4–6) Social Sciences Learning Area. This is now available for wider feedback and familiarisation. The current Social Scie
+
+  --- last 200 chars ---
+  | d how people in the community work and earn income
+  | Links to Social Sciences supports and resources:
+  | Infosheet – Social Sciences Learning Area Years 0–10
+  | File Downloads
+  | No files available for download.
+
