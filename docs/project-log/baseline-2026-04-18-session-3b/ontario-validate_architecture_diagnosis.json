@@ -1,0 +1,113 @@
+{
+  "gate": "validate_architecture_diagnosis",
+  "run_dir": "outputs/ontario-session-3b-phase1-rebaseline",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_strands": 9,
+  "verifiable": 4,
+  "unverifiable_count": 5,
+  "verifiability_pct": 44.4,
+  "unverifiable": [
+    {
+      "strand_index": 2,
+      "label": "Primary Secondary Source Analysis",
+      "provenance": "architecture.strands[2].label",
+      "best_evidence_text": "secondary sources.",
+      "best_score": 0.3138
+    },
+    {
+      "strand_index": 3,
+      "label": "New France British North America",
+      "provenance": "architecture.strands[3].label",
+      "best_evidence_text": "inquiries and that they will apply in new contexts.",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 4,
+      "label": "Canada 1800 1850",
+      "provenance": "architecture.strands[4].label",
+      "best_evidence_text": "and of various contributions to heritage in Canada.",
+      "best_score": 0.25
+    },
+    {
+      "strand_index": 5,
+      "label": "Indigenous European Interactions",
+      "provenance": "architecture.strands[5].label",
+      "best_evidence_text": "interactions using a variety of technologies.",
+      "best_score": 0.1667
+    },
+    {
+      "strand_index": 7,
+      "label": "Historical Empathy Perspective",
+      "provenance": "architecture.strands[7].label",
+      "best_evidence_text": "developing historical",
+      "best_score": 0.25
+    }
+  ],
+  "per_strand": [
+    {
+      "strand_index": 0,
+      "label": "Historical Inquiry Process",
+      "provenance": "architecture.strands[0].label",
+      "best_evidence_text": "historical inquiry process.",
+      "best_score": 1.0
+    },
+    {
+      "strand_index": 1,
+      "label": "Historical Thinking Concepts",
+      "provenance": "architecture.strands[1].label",
+      "best_evidence_text": "that reflect the selected concept(s) of historical thinking",
+      "best_score": 0.5
+    },
+    {
+      "strand_index": 2,
+      "label": "Primary Secondary Source Analysis",
+      "provenance": "architecture.strands[2].label",
+      "best_evidence_text": "secondary sources.",
+      "best_score": 0.3138
+    },
+    {
+      "strand_index": 3,
+      "label": "New France British North America",
+      "provenance": "architecture.strands[3].label",
+      "best_evidence_text": "inquiries and that they will apply in new contexts.",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 4,
+      "label": "Canada 1800 1850",
+      "provenance": "architecture.strands[4].label",
+      "best_evidence_text": "and of various contributions to heritage in Canada.",
+      "best_score": 0.25
+    },
+    {
+      "strand_index": 5,
+      "label": "Indigenous European Interactions",
+      "provenance": "architecture.strands[5].label",
+      "best_evidence_text": "interactions using a variety of technologies.",
+      "best_score": 0.1667
+    },
+    {
+      "strand_index": 6,
+      "label": "Chronological Understanding",
+      "provenance": "architecture.strands[6].label",
+      "best_evidence_text": "understanding the",
+      "best_score": 0.5
+    },
+    {
+      "strand_index": 7,
+      "label": "Historical Empathy Perspective",
+      "provenance": "architecture.strands[7].label",
+      "best_evidence_text": "developing historical",
+      "best_score": 0.25
+    },
+    {
+      "strand_index": 8,
+      "label": "Critical Thinking Disposition",
+      "provenance": "architecture.strands[8].label",
+      "best_evidence_text": "critical thinking and problem solving",
+      "best_score": 0.4
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "gate": "validate_source_faithfulness",
+  "run_dir": "outputs/ontario-session-3b-phase1-rebaseline",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_lts": 14,
+  "faithful": 1,
+  "invented_count": 13,
+  "faithfulness_pct": 7.1,
+  "potentially_invented": [
+    {
+      "lt_index": 1,
+      "statement": "I can apply historical thinking concepts to analyze significance and consequence in historical evidence.",
+      "best_source_provenance": "source_bullets.sb_658 (marker_bullet)",
+      "best_source_text": "analyse evidence and information, applying the relevant concepts of historical thinking (see",
+      "best_score": 0.3077
+    },
+    {
+      "lt_index": 2,
+      "statement": "I can analyze how different groups held distinct viewpoints and experiences regarding the same historical events.",
+      "best_source_provenance": "source_bullets.sb_456 (topic_statement)",
+      "best_source_text": "to investigate and make judgements about issues, developments, and events of historical importance.",
+      "best_score": 0.1176
+    },
+    {
+      "lt_index": 3,
+      "statement": "I can recognize and reflect on my own biases and assumptions when studying historical events.",
+      "best_source_provenance": "source_bullets.sb_651 (marker_bullet)",
+      "best_source_text": "that reflect the selected concept(s) of historical thinking",
+      "best_score": 0.1818
+    },
+    {
+      "lt_index": 4,
+      "statement": "I can analyze how interactions among diverse communities created competing perspectives that shaped early Canadian development.",
+      "best_source_provenance": "source_bullets.sb_646 (topic_statement)",
+      "best_source_text": "perspectives on the same event, development, or issue.",
+      "best_score": 0.1429
+    },
+    {
+      "lt_index": 5,
+      "statement": "I can analyze how colonial policies created lasting consequences for Indigenous communities across multiple perspectives",
+      "best_source_provenance": "source_bullets.sb_455 (topic_statement)",
+      "best_source_text": "racism on Indigenous individuals and communities in Canada.",
+      "best_score": 0.1429
+    },
+    {
+      "lt_index": 6,
+      "statement": "I can interpret historical sources by evaluating different perspectives and the quality of evidence presented.",
+      "best_source_provenance": "source_bullets.sb_659 (marker_bullet)",
+      "best_source_text": "use different types of graphic organizers to help them interpret and/or analyse their evidence",
+      "best_score": 0.2
+    },
+    {
+      "lt_index": 7,
+      "statement": "I can appreciate that my capacity for historical empathy develops over time through practice.",
+      "best_source_provenance": "source_bullets.sb_420 (marker_bullet)",
+      "best_source_text": "developing historical",
+      "best_score": 0.2857
+    },
+    {
+      "lt_index": 8,
+      "statement": "I can apply systematic inquiry methods to investigate historical events and issues.",
+      "best_source_provenance": "source_bullets.sb_456 (topic_statement)",
+      "best_source_text": "to investigate and make judgements about issues, developments, and events of historical importance.",
+      "best_score": 0.3077
+    },
+    {
+      "lt_index": 9,
+      "statement": "I can analyze historical sources for perspective, bias, and reliability using evidence to support interpretations.",
+      "best_source_provenance": "source_bullets.sb_656 (marker_bullet)",
+      "best_source_text": "record the sources of the evidence and information they are using",
+      "best_score": 0.25
+    },
+    {
+      "lt_index": 10,
+      "statement": "I can construct historical interpretations by analyzing evidence and making reasoned arguments about causes, consequences, or significance.",
+      "best_source_provenance": "source_bullets.sb_603 (marker_bullet)",
+      "best_source_text": "to develop criteria that they will use in evaluating evidence and information, making",
+      "best_score": 0.1176
+    },
+    {
+      "lt_index": 11,
+      "statement": "I can organize historical information into clear, structured formats with appropriate conventions.",
+      "best_source_provenance": "source_bullets.sb_655 (marker_bullet)",
+      "best_source_text": "use a variety of methods to organize the evidence and information they have gathered",
+      "best_score": 0.1538
+    },
+    {
+      "lt_index": 12,
+      "statement": "I can engage respectfully with diverse historical experiences and viewpoints.",
+      "best_source_provenance": "source_bullets.sb_741 (topic_statement)",
+      "best_source_text": "experiences.",
+      "best_score": 0.1667
+    },
+    {
+      "lt_index": 13,
+      "statement": "I can habitually question sources, examine bias, and consider multiple interpretations when engaging with historical evidence.",
+      "best_source_provenance": "source_bullets.sb_656 (marker_bullet)",
+      "best_source_text": "record the sources of the evidence and information they are using",
+      "best_score": 0.1429
+    }
+  ],
+  "per_lt": [
+    {
+      "lt_index": 0,
+      "statement": "I can identify major First Nations, Métis, Inuit, French, and British communities by their geographical locations.",
+      "best_source_provenance": "source_bullets.sb_755 (numbered_outcome)",
+      "best_source_text": "A1.5 identify some of the ways in which First Nations, Métis, and Inuit individuals and communities are",
+      "best_score": 0.5
+    },
+    {
+      "lt_index": 1,
+      "statement": "I can apply historical thinking concepts to analyze significance and consequence in historical evidence.",
+      "best_source_provenance": "source_bullets.sb_658 (marker_bullet)",
+      "best_source_text": "analyse evidence and information, applying the relevant concepts of historical thinking (see",
+      "best_score": 0.3077
+    },
+    {
+      "lt_index": 2,
+      "statement": "I can analyze how different groups held distinct viewpoints and experiences regarding the same historical events.",
+      "best_source_provenance": "source_bullets.sb_456 (topic_statement)",
+      "best_source_text": "to investigate and make judgements about issues, developments, and events of historical importance.",
+      "best_score": 0.1176
+    },
+    {
+      "lt_index": 3,
+      "statement": "I can recognize and reflect on my own biases and assumptions when studying historical events.",
+      "best_source_provenance": "source_bullets.sb_651 (marker_bullet)",
+      "best_source_text": "that reflect the selected concept(s) of historical thinking",
+      "best_score": 0.1818
+    },
+    {
+      "lt_index": 4,
+      "statement": "I can analyze how interactions among diverse communities created competing perspectives that shaped early Canadian development.",
+      "best_source_provenance": "source_bullets.sb_646 (topic_statement)",
+      "best_source_text": "perspectives on the same event, development, or issue.",
+      "best_score": 0.1429
+    },
+    {
+      "lt_index": 5,
+      "statement": "I can analyze how colonial policies created lasting consequences for Indigenous communities across multiple perspectives",
+      "best_source_provenance": "source_bullets.sb_455 (topic_statement)",
+      "best_source_text": "racism on Indigenous individuals and communities in Canada.",
+      "best_score": 0.1429
+    },
+    {
+      "lt_index": 6,
+      "statement": "I can interpret historical sources by evaluating different perspectives and the quality of evidence presented.",
+      "best_source_provenance": "source_bullets.sb_659 (marker_bullet)",
+      "best_source_text": "use different types of graphic organizers to help them interpret and/or analyse their evidence",
+      "best_score": 0.2
+    },
+    {
+      "lt_index": 7,
+      "statement": "I can appreciate that my capacity for historical empathy develops over time through practice.",
+      "best_source_provenance": "source_bullets.sb_420 (marker_bullet)",
+      "best_source_text": "developing historical",
+      "best_score": 0.2857
+    },
+    {
+      "lt_index": 8,
+      "statement": "I can apply systematic inquiry methods to investigate historical events and issues.",
+      "best_source_provenance": "source_bullets.sb_456 (topic_statement)",
+      "best_source_text": "to investigate and make judgements about issues, developments, and events of historical importance.",
+      "best_score": 0.3077
+    },
+    {
+      "lt_index": 9,
+      "statement": "I can analyze historical sources for perspective, bias, and reliability using evidence to support interpretations.",
+      "best_source_provenance": "source_bullets.sb_656 (marker_bullet)",
+      "best_source_text": "record the sources of the evidence and information they are using",
+      "best_score": 0.25
+    },
+    {
+      "lt_index": 10,
+      "statement": "I can construct historical interpretations by analyzing evidence and making reasoned arguments about causes, consequences, or significance.",
+      "best_source_provenance": "source_bullets.sb_603 (marker_bullet)",
+      "best_source_text": "to develop criteria that they will use in evaluating evidence and information, making",
+      "best_score": 0.1176
+    },
+    {
+      "lt_index": 11,
+      "statement": "I can organize historical information into clear, structured formats with appropriate conventions.",
+      "best_source_provenance": "source_bullets.sb_655 (marker_bullet)",
+      "best_source_text": "use a variety of methods to organize the evidence and information they have gathered",
+      "best_score": 0.1538
+    },
+    {
+      "lt_index": 12,
+      "statement": "I can engage respectfully with diverse historical experiences and viewpoints.",
+      "best_source_provenance": "source_bullets.sb_741 (topic_statement)",
+      "best_source_text": "experiences.",
+      "best_score": 0.1667
+    },
+    {
+      "lt_index": 13,
+      "statement": "I can habitually question sources, examine bias, and consider multiple interpretations when engaging with historical evidence.",
+      "best_source_provenance": "source_bullets.sb_656 (marker_bullet)",
+      "best_source_text": "record the sources of the evidence and information they are using",
+      "best_score": 0.1429
+    }
+  ]
+}

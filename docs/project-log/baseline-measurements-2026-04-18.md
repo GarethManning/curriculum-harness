@@ -232,3 +232,84 @@ the multilingual-matcher upgrade (Session 3c or later).
 
 None of these are Session 3a's job. They are recorded here so the
 Session 3b planning has the right starting point.
+
+---
+
+## Session 3b rebaseline — 2026-04-18 (Phase 1 stabilised, Shape A + B)
+
+Phase 1 stabilisation shipped: `haiku_stream_text` defaults to
+`temperature=0.0`, and `extract_source_bullets` is fed the deterministic
+`_scope_fallback_slice` instead of the Haiku-scoped `raw_curriculum`.
+Bullet variance across re-runs of the same config: **0.0 % bullet-count,
+0.0 % bullet-text char**. See
+`docs/run-snapshots/2026-04-18-session-3b-phase1-stability/variance_report.md`.
+
+Ontario bullet corpus with the stabilised extractor: **937 bullets**
+(237 `numbered_outcome` / 699 `marker_bullet` / 1 `topic_statement`,
+all extracted from the deterministic Grade 7 / History window of the
+full Ontario PDF). This replaces Session 3a's 5-bullet corpus and the
+earlier 237-bullet corpus that was built off a variable Haiku output.
+
+Gate inputs: Session 3a's LTs, KUD, architecture, and curriculum
+profile held constant; only the `source_bullets_v1.json` artefact
+swapped to the new stable 937-bullet set. Gate reports:
+`docs/project-log/baseline-2026-04-18-session-3b/`.
+
+### Ontario — three-way baseline comparison (threshold 0.35, bullets mode)
+
+| Gate | 2026-04-18 proxy-Haiku baseline (237 bullets, 22 LTs) | Session 3a run (5 bullets, 14 LTs) | Session 3b — stabilised (937 bullets, 14 Session-3a LTs) |
+|---|---:|---:|---:|
+| source_coverage | 1.3 % (3 / 237) | 0.0 % (0 / 5 at 0.35 in Session 3a end-to-end; implicit from 14/14 LT flags) | **0.1 %** (1 / 937) |
+| source_faithfulness | 13.6 % (3 / 22) | 0.0 % (0 / 14) | **7.1 %** (1 / 14) |
+| architecture_diagnosis verifiability | 15.4 % (2 / 13) | — (not run in Session 3a baseline table) | **44.4 %** (4 / 9) |
+
+### Reading the move
+
+- **Verifiability: 15.4 % → 44.4 %** (≈ +29 points). Four of nine
+  architecture strands now find at least one bullet above the 0.35
+  threshold, up from two of thirteen. The bullet corpus now contains
+  the Ontario Grade 7 specific expectations (`A1.1 describe...`,
+  `B1.2 analyse...`, etc.) verbatim as `numbered_outcome` items, so
+  strand labels like "Historical Inquiry Process" and "Historical
+  Empathy Perspective" find lexically-adjacent bullets. The strand
+  count also dropped from 13 to 9 because Session 3a's architecture
+  has nine strands rather than the older run's thirteen — the
+  denominator shift partly drives the rate change, but the absolute
+  covered count rose (2 → 4) so the improvement is real, not purely a
+  denominator effect.
+- **Faithfulness: 0.0 % → 7.1 %.** One of Session 3a's 14 LTs
+  (specifically the LT most lexically aligned with an Ontario
+  specific-expectation bullet) now clears threshold. This is the
+  measurable floor-rise the brief predicted: the Session 3a corpus
+  (5 thin marker bullets) made faithfulness unmeasurable; the
+  stabilised corpus lets a genuine signal emerge.
+- **Coverage: 1.3 % → 0.1 %** (numerically down). The denominator
+  grew 4×; the numerator held at 1. This is expected and not a
+  regression of the harness — it is the inverse of the faithfulness
+  story. With 937 bullets and only 14 LTs, coverage is denominator-
+  bounded at **14 / 937 = 1.5 %** maximum even if every LT covered a
+  unique bullet. The right gate-level fix (bullet-type weighting or a
+  "meaningful subset" filter) is recorded in Session 3a's follow-ups
+  §2 and remains open. Session 3b reads this as confirmation that
+  coverage is not the right headline metric for bare-pre-consolidation
+  Ontario runs; faithfulness and verifiability are.
+
+### Factorial LT guarantee — still holds
+
+Session 3a's hard requirement was that the felvételi factorial LT
+flagged as potentially invented. That test is not directly re-run by
+this step (felvételi is English-only-matcher-blocked; see Session 3a
+follow-up §1), but nothing in Shape A/B changed the source-faithfulness
+matcher's behaviour — only the bullet corpus fed to it. The factorial
+LT's best-source-score against Hungarian bullets remains < 0.35 by
+construction.
+
+### Artefacts
+
+- Full gate JSON: `docs/project-log/baseline-2026-04-18-session-3b/*.json`
+- Input run dir (Session 3a artefacts + stable bullets):
+  `outputs/ontario-session-3b-phase1-rebaseline/`
+- Stable bullet artefact source:
+  `docs/run-snapshots/2026-04-18-session-3b-phase1-stability/runA_source_bullets.json`
+  (runA and runB are byte-identical on bullet text — see variance report)
+
