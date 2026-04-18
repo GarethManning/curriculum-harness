@@ -67,6 +67,7 @@ def build_initial_state(config_path: str, cfg: dict[str, Any]) -> DecomposerStat
         "recall_filtered_count": 0,
         "curriculum_profile": {},
         "curriculum_classification_notes": "",
+        "source_bullets": [],
     }
 
 
@@ -105,6 +106,7 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
     lt_path = next_available_artifact_path(out_dir, run_id, "learning_targets", "json")
     hr_path = next_available_artifact_path(out_dir, run_id, "human_review_queue", "json")
     report_path = next_available_artifact_path(out_dir, run_id, "run_report", "md")
+    bullets_path = next_available_artifact_path(out_dir, run_id, "source_bullets", "json")
 
     architecture = state.get("architecture_diagnosis") or {}
     kud = state.get("kud") or {}
@@ -146,6 +148,10 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
 
     with open(arch_path, "w", encoding="utf-8") as f:
         json.dump(architecture, f, indent=2)
+
+    source_bullets = state.get("source_bullets") or []
+    with open(bullets_path, "w", encoding="utf-8") as f:
+        json.dump({"source_bullets": source_bullets}, f, indent=2)
 
     curriculum_profile = state.get("curriculum_profile") or {}
     with open(profile_path, "w", encoding="utf-8") as f:
@@ -204,6 +210,11 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
         "",
         f"**Run ID:** {run_id}",
         f"**Output directory:** `{out_dir}`",
+        "",
+        "## Source bullets",
+        "",
+        f"- Count: {len(source_bullets)}",
+        f"- Artefact: `{bullets_path}`",
         "",
         "## Curriculum profile",
         "",

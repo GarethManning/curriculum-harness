@@ -11,6 +11,7 @@ import httpx
 from pypdf import PdfReader
 
 from curriculum_harness._anthropic import get_async_client, haiku_stream_text
+from curriculum_harness.source_bullets import extract_source_bullets
 from curriculum_harness.state import DecomposerState
 from curriculum_harness.types import (
     HAIKU_MODEL,
@@ -658,6 +659,11 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
     except Exception as exc:
         errs.append(f"phase1: Haiku metadata pass failed (non-fatal): {exc}")
 
+    # Source bullets — rule-based structural extraction on the scoped
+    # text. Adjacent-mechanism declaration in
+    # `curriculum_harness/source_bullets.py`.
+    bullets = extract_source_bullets(raw_curriculum.strip())
+
     return {
         "current_phase": "phase1:complete",
         "errors": errs,
@@ -672,4 +678,5 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
         "curriculum_classification_notes": " | ".join(
             [p for p in classification_notes_parts if p],
         ).strip(),
+        "source_bullets": bullets,
     }

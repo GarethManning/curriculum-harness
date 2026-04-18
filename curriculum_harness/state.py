@@ -30,3 +30,4 @@ class DecomposerState(TypedDict, total=False):
     recall_filtered_count: int
     curriculum_profile: dict[str, Any]
     curriculum_classification_notes: str
+    source_bullets: list[dict[str, Any]]
