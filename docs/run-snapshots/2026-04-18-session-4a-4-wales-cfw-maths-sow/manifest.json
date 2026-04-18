@@ -1,0 +1,354 @@
+{
+  "acquisition_trace": [
+    {
+      "duration_ms": 769,
+      "error": null,
+      "inputs": {
+        "url": "https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/"
+      },
+      "outputs_summary": {
+        "bytes": 121028,
+        "content_type": "text/html; charset=utf-8",
+        "declared_encoding": "utf-8",
+        "final_url": "https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/",
+        "http_status": 200,
+        "robots_reason": "allowed",
+        "status": "ok"
+      },
+      "primitive": "fetch_requests",
+      "started_at": "2026-04-18T17:54:49.157020+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 23,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chaos": 0.0,
+        "declared_encoding": "utf-8",
+        "encoding_detected": "utf_8",
+        "status": "detected"
+      },
+      "primitive": "encoding_detection",
+      "started_at": "2026-04-18T17:54:49.926369+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 16,
+      "error": null,
+      "inputs": {
+        "content_root_selector": "article#aole-v2",
+        "exclude_selectors": [
+          "nav",
+          ".tab-next-prev",
+          ".explore-links",
+          ".contents",
+          ".cookie-block",
+          ".breadcrumb"
+        ],
+        "include_details_content": true,
+        "preserve_headings": true
+      },
+      "outputs_summary": {
+        "chars_out": 3792,
+        "content_root_selector": "article#aole-v2",
+        "default_tags_stripped": 0,
+        "details_found": 0,
+        "details_summaries_kept": 0,
+        "exclude_counts": {
+          ".breadcrumb": 0,
+          ".contents": 0,
+          ".cookie-block": 0,
+          ".explore-links": 1,
+          ".tab-next-prev": 1,
+          "nav": 1
+        },
+        "root_match_count": 1,
+        "section_mechanism": "whole_root",
+        "status": "ok"
+      },
+      "primitive": "extract_nested_dom",
+      "started_at": "2026-04-18T17:54:49.950104+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 3792,
+        "checks": [
+          {
+            "flagged": false,
+            "name": "whitespace_runs",
+            "passed": true,
+            "threshold": 50,
+            "value": 0
+          }
+        ],
+        "line_count": 32,
+        "mode": "raw",
+        "verdict": "clean"
+      },
+      "primitive": "verify_raw_extraction",
+      "started_at": "2026-04-18T17:54:49.966913+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 3792,
+        "chars_out": 3792
+      },
+      "primitive": "normalise_whitespace",
+      "started_at": "2026-04-18T17:54:49.967051+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 2,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 3792,
+        "checks": [
+          {
+            "countable_lines": 25,
+            "docwide_failure": false,
+            "flagged": false,
+            "lines_flagged": 0,
+            "mean_flagged_ratio": 0.0,
+            "name": "character_doubling",
+            "passed": true,
+            "systematic_failure": false,
+            "threshold": 0.2,
+            "value": 0.0
+          },
+          {
+            "flagged": false,
+            "language_details": {
+              "english_hits": 193,
+              "ratio": 0.3642,
+              "threshold": 0.03,
+              "total_words": 530
+            },
+            "language_detected": "english_confident",
+            "name": "repeated_bigram",
+            "passed": true,
+            "threshold": 0.75,
+            "top_bigrams": [
+              [
+                "an",
+                81
+              ],
+              [
+                "in",
+                79
+              ],
+              [
+                "ti",
+                77
+              ],
+              [
+                "th",
+                67
+              ],
+              [
+                "at",
+                63
+              ]
+            ],
+            "total_bigrams": 3190,
+            "value": 0.203
+          },
+          {
+            "flagged": false,
+            "name": "empty_line_ratio",
+            "passed": true,
+            "threshold": 0.6000000000000001,
+            "value": 0.031
+          },
+          {
+            "chars_total": 3792,
+            "fetched_bytes": 121028,
+            "flagged": true,
+            "name": "completeness",
+            "passed": true,
+            "source_kind": "html",
+            "threshold": 0.05,
+            "value": 0.0313
+          }
+        ],
+        "line_count": 32,
+        "mode": "normalised",
+        "verdict": "suspicious"
+      },
+      "primitive": "verify_normalised_extraction",
+      "started_at": "2026-04-18T17:54:49.967282+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "bytes": 3794,
+        "content_hash": "e3a265920c2664bc12a1127e9d8c5623e59acac475bfda4fea0abaee6c1aff65"
+      },
+      "primitive": "content_hash",
+      "started_at": "2026-04-18T17:54:49.969540+00:00",
+      "user_interaction": null
+    }
+  ],
+  "content_files": [
+    "docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/content.txt"
+  ],
+  "content_hash": "e3a265920c2664bc12a1127e9d8c5623e59acac475bfda4fea0abaee6c1aff65",
+  "detection_hash": "dd14354a94113c8e4a04ff4baf01ec0c53c218c65be39b51eec4ac5993baef2c",
+  "dom_hash": null,
+  "encoding_detected": "utf_8",
+  "encoding_failure": null,
+  "investigation_memo_refs": [
+    "docs/diagnostics/2026-04-18-wales-cfw-mathematics-sow-investigation.md"
+  ],
+  "known_pathology_handling": [],
+  "notes": null,
+  "phase0_version": "0.5.0",
+  "primitive_sequence": [
+    "fetch_requests",
+    "encoding_detection",
+    "extract_nested_dom",
+    "verify_raw_extraction",
+    "normalise_whitespace",
+    "verify_normalised_extraction",
+    "content_hash"
+  ],
+  "scope_acquired": {
+    "chars": 3792,
+    "verification_excerpt": {
+      "first_chars": "AREA OF LEARNING AND EXPERIENCE\nMathematics and Numeracy\nGuidance to help schools and settings develop their own curriculum, enabling learners to develop towards the four purposes.\n\n2. Statements of w",
+      "last_chars": " analytical skills that are fundamental to enabling learners to make ethical and informed decisions.",
+      "line_count": 32
+    }
+  },
+  "scope_requested": {
+    "content_root_selector": "article#aole-v2",
+    "exclude_selectors": [
+      "nav",
+      ".tab-next-prev",
+      ".explore-links",
+      ".contents",
+      ".cookie-block",
+      ".breadcrumb"
+    ],
+    "include_details_content": true,
+    "notes": "Welsh Government / hwb.gov.wales \u2014 Curriculum for Wales, Mathematics and Numeracy Area of Learning and Experience, Statements of what matters. Session 4a-4 Step 9 \u2014 generalisation test of extract_nested_dom primitive against a structurally-distinct second source. Different platform (custom CMS vs GOV.UK Publishing), different container depth (5 vs 10), different scoping discipline (no anchor; in-container chrome stripping needed). See Step 2 investigation memo docs/diagnostics/2026-04-18-wales-cfw-mathematics-sow-investigation.md.",
+    "preserve_headings": true,
+    "section_anchor_selector": null,
+    "section_anchor_stop_selector": null,
+    "section_scope_selector": null,
+    "source_reference": "https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/",
+    "source_type": "html_nested_dom",
+    "url": "https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/"
+  },
+  "source_reference": "https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/",
+  "source_type": "html_nested_dom",
+  "timestamp": "2026-04-18T17:54:49.156842+00:00",
+  "user_interactions": [],
+  "verification_trace": [
+    {
+      "checks_run": [
+        {
+          "flagged": false,
+          "name": "whitespace_runs",
+          "passed": true,
+          "threshold": 50,
+          "value": 0
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_raw_extraction",
+      "timestamp": "2026-04-18T17:54:49.967036+00:00",
+      "verdict": "clean"
+    },
+    {
+      "checks_run": [
+        {
+          "countable_lines": 25,
+          "docwide_failure": false,
+          "flagged": false,
+          "lines_flagged": 0,
+          "mean_flagged_ratio": 0.0,
+          "name": "character_doubling",
+          "passed": true,
+          "systematic_failure": false,
+          "threshold": 0.2,
+          "value": 0.0
+        },
+        {
+          "flagged": false,
+          "language_details": {
+            "english_hits": 193,
+            "ratio": 0.3642,
+            "threshold": 0.03,
+            "total_words": 530
+          },
+          "language_detected": "english_confident",
+          "name": "repeated_bigram",
+          "passed": true,
+          "threshold": 0.75,
+          "top_bigrams": [
+            [
+              "an",
+              81
+            ],
+            [
+              "in",
+              79
+            ],
+            [
+              "ti",
+              77
+            ],
+            [
+              "th",
+              67
+            ],
+            [
+              "at",
+              63
+            ]
+          ],
+          "total_bigrams": 3190,
+          "value": 0.203
+        },
+        {
+          "flagged": false,
+          "name": "empty_line_ratio",
+          "passed": true,
+          "threshold": 0.6000000000000001,
+          "value": 0.031
+        },
+        {
+          "chars_total": 3792,
+          "fetched_bytes": 121028,
+          "flagged": true,
+          "name": "completeness",
+          "passed": true,
+          "source_kind": "html",
+          "threshold": 0.05,
+          "value": 0.0313
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_normalised_extraction",
+      "timestamp": "2026-04-18T17:54:49.969530+00:00",
+      "verdict": "suspicious"
+    }
+  ]
+}
