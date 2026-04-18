@@ -1,0 +1,124 @@
+========================================================================
+Phase 0 manifest spot-check — docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/manifest.json
+========================================================================
+
+Source reference : https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study
+Source type      : html_nested_dom
+Phase 0 version  : 0.5.0
+Timestamp        : 2026-04-18T17:52:59.601545+00:00
+Content hash     : 42231e74d2256d517b4d0bb9c94076d0dac5ccce381d6b67794cbe7c940d8ca9
+Detection hash   : 45052a26d2428740f6dee23fdd032b32723b6945e3304034a43fedddf16c9c88
+Encoding detected: utf_8
+Pathologies      : (none)
+Investigation memos:
+  - docs/diagnostics/2026-04-18-gov-uk-nc-maths-ks3-investigation.md
+
+-- Scope requested --
+  content_root_selector: .govspeak
+  exclude_selectors: []
+  include_details_content: True
+  notes: UK Department for Education / Department for Education and Skills — National Curriculum in England, Mathematics programmes of study, Key Stage 3 (England). gov…
+  preserve_headings: True
+  section_anchor_selector: #key-stage-3
+  source_reference: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes…
+  source_type: html_nested_dom
+  url: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes…
+
+-- Scope acquired --
+  chars: 12461
+  verification_excerpt:
+    line_count : 147
+    first_chars: Key stage 3
+
+Introduction
+
+Mathematics is an interconnected subject in which pupils need to be able to move fluently between representations of mathematical ideas. The programme of study for key stage
+    last_chars : bles (bivariate data) in observational and experimental contexts and illustrate using scatter graphs
+
+-- Primitive sequence --
+  1. fetch_requests
+  2. encoding_detection
+  3. extract_nested_dom
+  4. verify_raw_extraction
+  5. normalise_whitespace
+  6. verify_normalised_extraction
+  7. content_hash
+
+-- Acquisition trace --
+  [1] fetch_requests  (652 ms)
+      bytes: 302525
+      content_type: text/html; charset=utf-8
+      declared_encoding: utf-8
+      final_url: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes…
+      http_status: 200
+      robots_reason: allowed
+      status: ok
+  [2] encoding_detection  (27 ms)
+      chaos: 0.0
+      declared_encoding: utf-8
+      encoding_detected: utf_8
+      status: detected
+  [3] extract_nested_dom  (41 ms)
+      chars_out: 12463
+      content_root_selector: .govspeak
+      default_tags_stripped: 0
+      details_found: 0
+      details_summaries_kept: 0
+      exclude_counts: {}
+      root_match_count: 1
+      section_anchor_element_count: 62
+      section_anchor_match_count: 1
+      section_anchor_selector: #key-stage-3
+      section_anchor_stop_selector: h2
+      section_mechanism: heading_anchor
+      status: ok
+  [4] verify_raw_extraction  (0 ms)
+      chars_in: 12463
+      checks: [{'flagged': False, 'name': 'whitespace_runs', 'passed': True, 'threshold': 50, 'value': 0}]
+      line_count: 147
+      mode: raw
+      verdict: clean
+  [5] normalise_whitespace  (0 ms)
+      chars_in: 12463
+      chars_out: 12461
+  [6] verify_normalised_extraction  (5 ms)
+      chars_in: 12461
+      checks: [{'countable_lines': 109, 'docwide_failure': False, 'flagged': False, 'lines_flagged': 0, 'mean_flagged_ratio': 0.0, 'name': 'character_doubling', 'passed': Tr…
+      line_count: 147
+      mode: normalised
+      verdict: suspicious
+  [7] content_hash  (0 ms)
+      bytes: 12492
+      content_hash: 42231e74d2256d517b4d0bb9c94076d0dac5ccce381d6b67794cbe7c940d8ca9
+
+-- Verification trace --
+  [1] verify_raw_extraction -> verdict: clean
+      whitespace_runs           value=0          threshold=50         [ok]
+  [2] verify_normalised_extraction -> verdict: suspicious
+      character_doubling        value=0.0        threshold=0.2        [ok]
+      repeated_bigram           value=0.188      threshold=0.75       [ok]
+      empty_line_ratio          value=0.204      threshold=0.6000000000000001 [ok]
+      completeness              value=0.0412     threshold=0.05       [flag]
+  [3] manual_cross_validation -> verdict: pass_with_notes
+      structural_plausibility   value=None       threshold=None       [ok]
+      chrome_exclusion_reason_based value=None       threshold=None       [ok]
+      volume_sanity             value=None       threshold=None       [ok]
+      architectural_generalisation value=None       threshold=None       [ok]
+
+-- Content files --
+  docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/content.txt
+
+-- Content preview --
+  docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/content.txt  (12461 chars)
+
+  --- first 500 chars ---
+  | Key stage 3
+  | 
+  | Introduction
+  | 
+  | Mathematics is an interconnected subject in which pupils need to be able to move fluently between representations of mathematical ideas. The programme of study for key stage 3 is organised into apparently distinct domains, but pupils should build on key stage 2 and connections across mathematical ideas to develop fluency, mathematical reasoning and competence in solving increasingly sophisticated problems. They should also apply their mathematical knowledge in science,
+
+  --- last 200 chars ---
+  | for ungrouped and grouped numerical data
+  | describe simple mathematical relationships between 2 variables (bivariate data) in observational and experimental contexts and illustrate using scatter graphs
+

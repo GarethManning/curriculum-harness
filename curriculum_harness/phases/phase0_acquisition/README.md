@@ -11,6 +11,19 @@ Downstream phases never read raw URLs. They read:
   scope requested vs acquired, any user interactions.
 - `content.txt` (and siblings) — normalised UTF-8 text.
 
+## Phase 0 status: COMPLETE
+
+All five source types ship with a deterministic primitive sequence,
+type-detector routing, manifest schema 0.5.0, dual-mode verification,
+and a regression-tested extraction artefact. Architectural
+generalisation has been verified in two places: `extract_nested_dom`
+handles two structurally-distinct sites (gov.uk vs hwb.gov.wales —
+Session 4a-4 Steps 8/9) with scope-only differences;
+`fetch_via_browser` handles two structurally-distinct JS-rendered
+sites (Ontario DCP vs NZ Curriculum — Session 4a-3) with
+scope-only differences. Next: Session 4b — reference test corpus
+construction.
+
 ## Supported source types
 
 | Source type                          | Primitive sequence                                                                                                                                                                                                                                               | Status       |
@@ -19,9 +32,10 @@ Downstream phases never read raw URLs. They read:
 | `flat_pdf_linear`                    | `fetch_pdf_file → (extract_pdf_text \| extract_pdf_text_deduped) → verify_raw → normalise_whitespace → verify_normalised → content_hash`                                                                                                                        | implemented  |
 | `multi_section_pdf`                  | `fetch_pdf_file → detect_toc → resolve_section_scope → (extract_pdf_text \| extract_pdf_text_deduped) → verify_raw → normalise_whitespace → verify_normalised → content_hash`                                                                                   | implemented  |
 | `js_rendered_progressive_disclosure` | `fetch_via_browser → dom_hash → extract_css_selector → verify_raw → normalise_whitespace → verify_normalised → content_hash`                                                                                                                                     | implemented  |
-| `html_nested_dom`                    | pending                                                                                                                                                                                                                                                          | deferred     |
+| `html_nested_dom`                    | `fetch_requests → encoding_detection → extract_nested_dom → verify_raw → normalise_whitespace → verify_normalised → content_hash`                                                                                                                                | implemented  |
 
-Deferred types raise `Phase0Paused` with a user-in-the-loop request file.
+Future deferred types (none currently planned) would raise
+`Phase0Paused` with a user-in-the-loop request file.
 
 ## `flat_pdf_linear` primitive sequence
 
@@ -140,6 +154,89 @@ until a source with >1 confirmed pathology is observed.
   46,227 chars over 22 pages with clean grade boundaries. Session
   outcome PASS WITH NOTES (Check C threshold recalibration
   recommended).
+
+## `html_nested_dom` primitive sequence (Session 4a-4)
+
+For deeply-nested HTML curriculum pages whose content is rendered in
+the initial server response but distributed across a chrome-heavy DOM
+that needs structured selector-based scoping. Two structurally-
+distinct site shapes are validated:
+
+- **Hierarchical with section scoping** (gov.uk pattern). One deep
+  content container holds multiple co-equal sub-sections (Key Stages
+  1–4) demarcated by sibling `<h2>` headings; sub-section selection
+  uses the **heading-anchor** mechanism (`section_anchor_selector`
+  picks the start heading; the primitive walks following siblings
+  until a sibling matching `section_anchor_stop_selector` — defaults
+  to the anchor's own tag).
+- **Single main container with in-content chrome stripping** (Welsh
+  hwb pattern). One CSS-selectable container holds the entire scope;
+  no sub-section anchoring needed; in-page nav, prev/next links, and
+  related-content blocks live inside the container and must be
+  excluded explicitly via `exclude_selectors`.
+
+**Scope.** Required: `url`, `content_root_selector`. Optional:
+`exclude_selectors` (list of CSS selectors to strip — over-exclude
+posture); `section_scope_selector` OR `section_anchor_selector` +
+`section_anchor_stop_selector` (mutually exclusive scoping
+mechanisms); `include_details_content` (default True);
+`preserve_headings` (default True).
+
+**`extract_nested_dom` primitive.** Pure capability — BeautifulSoup-
+backed, deterministic, no model calls, no per-site branching:
+
+- **`<details>` elements are static HTML.** Their collapsed visual
+  state is a browser-level rendering default; the contained text is
+  present in the DOM regardless. `include_details_content=True`
+  preserves it (the default); `=False` keeps the `<summary>` and
+  drops the inner content. This is **fundamentally different from
+  JavaScript-rendered accordions** (`<div role="accordion">`,
+  `mat-expansion-panel`, custom-element disclosures) whose collapsed
+  content is *not* in the static HTML and requires
+  `fetch_via_browser` + `click_sequence`.
+- **Heading-anchor scoping.** For sites whose sub-sections are flat
+  siblings under a common parent (no dedicated container element
+  per sub-section), `section_anchor_selector` picks the start
+  heading and the primitive walks following siblings until a stop
+  element. Default stop is the anchor's own tag.
+- **Container scoping.** For sites where a sub-section IS in its own
+  CSS-selectable container, `section_scope_selector` picks it
+  directly. Mutually exclusive with `section_anchor_selector` —
+  setting both is a configuration error caught at construction time.
+- **Side effects.** None. The primitive only reads HTML strings from
+  the upstream encoding-detection step.
+
+**Site-specific choreography lives in the scope, not in the primitive.**
+If the primitive ever needs `if site == ...` to function, that is a
+design failure — refactor.
+
+**Test artefacts.**
+
+- `docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/` —
+  UK gov.uk National Curriculum (England) Mathematics KS3.
+  `section_anchor_selector="#key-stage-3"`. Triangulated verification
+  STRONG PASS on Check A (11/11 strands), STRONG PASS on Check B
+  (zero leakage from 13-item gov.uk chrome list per investigation
+  memo), PASS on Check C (12 461 chars in 3 000–20 000 range).
+  Pipeline `verify_normalised_extraction` `suspicious` due to
+  completeness check threshold not yet scope-aware (4.12% of 302KB
+  page is the KS3 sub-section — known calibration caveat).
+  Outcome: PASS WITH NOTES.
+- `docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/` —
+  Welsh hwb Curriculum for Wales Mathematics & Numeracy "Statements
+  of what matters". `content_root_selector="article#aole-v2"` plus
+  6-item `exclude_selectors`. Triangulated verification STRONG PASS
+  on Check A (4/4 mandatory statements), STRONG PASS on Check B
+  (zero leakage from 11-item hwb chrome list), PASS on Check C
+  (3 792 chars in 2 500–6 000 range). Same calibration caveat as
+  gov.uk. Outcome: PASS WITH NOTES.
+
+**Architectural generalisation — VALIDATED.** Same primitive code
+handled both sites with scope-only differences (gov.uk:
+`section_anchor_selector` heading-anchor; Wales: `exclude_selectors`
+list and no section anchor). Different platforms, different
+container depths (10 vs 5), different scoping disciplines, different
+chrome patterns. No `if site == ...` in the primitive.
 
 ## `js_rendered_progressive_disclosure` primitive sequence (Session 4a-3)
 
@@ -289,7 +386,27 @@ for the regression evidence that the upgrade is byte-stable.
 > for the current single-source posture and the rationale for
 > deferring composition.
 
-## Manifest schema (v0.4.0)
+## Manifest schema (v0.5.0)
+
+Session 4a-4 Step 3a refactored the scope schema into per-source-type
+**discriminated unions** bound by ``source_type`` literal (see
+``scope.py``). Each variant declares only the fields its primitive
+sequence needs; cross-type field smuggling
+(e.g. ``page_range`` on a JS-rendered scope) is rejected at
+construction time via ``extra="forbid"``. The manifest's
+``scope_requested`` field uses Pydantic's discriminator-based
+dispatch. A forward-compatible deserialiser upgrades 0.4.0
+flat-shaped scope dicts on load by copying the manifest-level
+``source_type`` into the scope dict before discriminator parsing —
+0.4.0 manifests round-trip byte-stably under 0.5.0.
+
+The 0.4.0 → 0.5.0 regression report
+(`docs/diagnostics/2026-04-18-session-4a-4-step-3b-regression-report.md`)
+captures field-level evidence that the refactor is behaviour-
+preserving. Adversarial tests live in
+`tests/phase0/test_scope_schema.py` (18 / 18 passing).
+
+## Manifest schema (v0.4.0 fields, retained in v0.5.0)
 
 - `content_hash` — SHA-256 of the final normalised content bytes.
 - `detection_hash` — SHA-256 of the `_detection.json` payload, so the
@@ -418,15 +535,21 @@ column-aware extraction primitive is shipped.
 
 ## Scheduled (next sessions)
 
-- Session 4a-4: `html_nested_dom` source-type primitive sequence
-  (UK gov.uk-style deeply nested / tabbed HTML).
+- **Session 4b**: reference test corpus. Per the failure-pattern
+  decision recorded after the 4a-3d Ontario diagnosis, every Phase 0
+  artefact going forward needs a human-authored reference output to
+  validate against. Phase 0 is structurally complete; correctness
+  needs reference grounding.
 - Session 4a-3.5 (optional): extended multi-source robustness test of
   the browser primitive against additional jurisdictions (Australian
-  Curriculum, Singapore MOE, US state standards).
-- Scope-aware volume thresholds so Check C in triangulated
-  verification can honour "overall-expectations-only" scopes without
-  flagging correctly-extracted content below the full-document
-  threshold (Session 4a-3 Step 6 caveat).
+  Curriculum, US state standards). The Welsh hwb Descriptions of
+  Learning page (JS-rendered accordion) is a candidate.
+- **Scope-aware volume thresholds** so the pipeline's completeness
+  check can honour sub-section scopes (KS3 from a five-key-stage
+  page; "overall-expectations-only" from a multi-section route)
+  without flagging correctly-extracted content below the full-
+  document threshold. Caveat hit on Session 4a-3 Ontario DCP and
+  Session 4a-4 gov.uk + Wales artefacts.
 - Column-aware extraction for dense multi-column pages (per-page
   bounding-box cropping or x-sorted column-band grouping).
 - Multi-pathology chained dedup (only when a source with >1
@@ -434,3 +557,7 @@ column-aware extraction primitive is shipped.
 - Multi-URL aggregation primitive for sites that split sections
   across SPA-routed sub-URLs (Ontario DCP specific-expectations
   use case).
+- Multi-source composition: `sources_catalog` data structure for
+  pages where multiple authoritative sources at different completeness
+  levels exist for the same curriculum reference (deferred to 4b
+  per the source-composition design note).

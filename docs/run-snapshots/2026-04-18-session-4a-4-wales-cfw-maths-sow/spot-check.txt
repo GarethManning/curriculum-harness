@@ -1,0 +1,119 @@
+========================================================================
+Phase 0 manifest spot-check — docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/manifest.json
+========================================================================
+
+Source reference : https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/
+Source type      : html_nested_dom
+Phase 0 version  : 0.5.0
+Timestamp        : 2026-04-18T17:54:49.156842+00:00
+Content hash     : e3a265920c2664bc12a1127e9d8c5623e59acac475bfda4fea0abaee6c1aff65
+Detection hash   : dd14354a94113c8e4a04ff4baf01ec0c53c218c65be39b51eec4ac5993baef2c
+Encoding detected: utf_8
+Pathologies      : (none)
+Investigation memos:
+  - docs/diagnostics/2026-04-18-wales-cfw-mathematics-sow-investigation.md
+
+-- Scope requested --
+  content_root_selector: article#aole-v2
+  exclude_selectors: ['nav', '.tab-next-prev', '.explore-links', '.contents', '.cookie-block', '.breadcrumb']
+  include_details_content: True
+  notes: Welsh Government / hwb.gov.wales — Curriculum for Wales, Mathematics and Numeracy Area of Learning and Experience, Statements of what matters. Session 4a-4 Ste…
+  preserve_headings: True
+  source_reference: https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/
+  source_type: html_nested_dom
+  url: https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/
+
+-- Scope acquired --
+  chars: 3792
+  verification_excerpt:
+    line_count : 32
+    first_chars: AREA OF LEARNING AND EXPERIENCE
+Mathematics and Numeracy
+Guidance to help schools and settings develop their own curriculum, enabling learners to develop towards the four purposes.
+
+2. Statements of w
+    last_chars :  analytical skills that are fundamental to enabling learners to make ethical and informed decisions.
+
+-- Primitive sequence --
+  1. fetch_requests
+  2. encoding_detection
+  3. extract_nested_dom
+  4. verify_raw_extraction
+  5. normalise_whitespace
+  6. verify_normalised_extraction
+  7. content_hash
+
+-- Acquisition trace --
+  [1] fetch_requests  (769 ms)
+      bytes: 121028
+      content_type: text/html; charset=utf-8
+      declared_encoding: utf-8
+      final_url: https://hwb.gov.wales/curriculum-for-wales/mathematics-and-numeracy/statements-of-what-matters/
+      http_status: 200
+      robots_reason: allowed
+      status: ok
+  [2] encoding_detection  (23 ms)
+      chaos: 0.0
+      declared_encoding: utf-8
+      encoding_detected: utf_8
+      status: detected
+  [3] extract_nested_dom  (16 ms)
+      chars_out: 3792
+      content_root_selector: article#aole-v2
+      default_tags_stripped: 0
+      details_found: 0
+      details_summaries_kept: 0
+      exclude_counts: {'.breadcrumb': 0, '.contents': 0, '.cookie-block': 0, '.explore-links': 1, '.tab-next-prev': 1, 'nav': 1}
+      root_match_count: 1
+      section_mechanism: whole_root
+      status: ok
+  [4] verify_raw_extraction  (0 ms)
+      chars_in: 3792
+      checks: [{'flagged': False, 'name': 'whitespace_runs', 'passed': True, 'threshold': 50, 'value': 0}]
+      line_count: 32
+      mode: raw
+      verdict: clean
+  [5] normalise_whitespace  (0 ms)
+      chars_in: 3792
+      chars_out: 3792
+  [6] verify_normalised_extraction  (2 ms)
+      chars_in: 3792
+      checks: [{'countable_lines': 25, 'docwide_failure': False, 'flagged': False, 'lines_flagged': 0, 'mean_flagged_ratio': 0.0, 'name': 'character_doubling', 'passed': Tru…
+      line_count: 32
+      mode: normalised
+      verdict: suspicious
+  [7] content_hash  (0 ms)
+      bytes: 3794
+      content_hash: e3a265920c2664bc12a1127e9d8c5623e59acac475bfda4fea0abaee6c1aff65
+
+-- Verification trace --
+  [1] verify_raw_extraction -> verdict: clean
+      whitespace_runs           value=0          threshold=50         [ok]
+  [2] verify_normalised_extraction -> verdict: suspicious
+      character_doubling        value=0.0        threshold=0.2        [ok]
+      repeated_bigram           value=0.203      threshold=0.75       [ok]
+      empty_line_ratio          value=0.031      threshold=0.6000000000000001 [ok]
+      completeness              value=0.0313     threshold=0.05       [flag]
+
+-- Content files --
+  docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/content.txt
+
+-- Content preview --
+  docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/content.txt  (3792 chars)
+
+  --- first 500 chars ---
+  | AREA OF LEARNING AND EXPERIENCE
+  | Mathematics and Numeracy
+  | Guidance to help schools and settings develop their own curriculum, enabling learners to develop towards the four purposes.
+  | 
+  | 2. Statements of what matters
+  | View these statements of what matters in British Sign Language (BSL).
+  | Curriculum
+  | Mandatory
+  | The number system is used to represent and compare relationships between numbers and quantities.
+  | Numbers are the symbol system for describing and comparing quantities. This will be the first
+  | abstra
+
+  --- last 200 chars ---
+  | ng with statistics and probability, and evaluating their reliability, develops critical thinking and analytical skills that are fundamental to enabling learners to make ethical and informed decisions.
+

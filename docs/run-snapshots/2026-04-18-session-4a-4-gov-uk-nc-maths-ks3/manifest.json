@@ -333,6 +333,135 @@
       "primitive": "verify_normalised_extraction",
       "timestamp": "2026-04-18T17:53:00.328803+00:00",
       "verdict": "suspicious"
+    },
+    {
+      "checks_run": [
+        {
+          "details": {
+            "expected_subject_content_count": 6,
+            "expected_working_mathematically_count": 3,
+            "introduction_heading_present": true,
+            "subject_content_heading_present": true,
+            "subject_content_strand_count": 6,
+            "subject_content_strands_present": true,
+            "working_mathematically_strand_count": 3,
+            "working_mathematically_strands_present": true
+          },
+          "name": "structural_plausibility",
+          "passed": true
+        },
+        {
+          "details": {
+            "chrome_selectors_referenced": [
+              ".govuk-skip-link",
+              ".govuk-cookie-banner",
+              ".gem-c-layout-super-navigation-header",
+              ".govuk-phase-banner",
+              ".govuk-breadcrumbs",
+              ".gem-c-devolved-nations",
+              ".gem-c-contents-list",
+              ".gem-c-print-link",
+              ".gem-c-feedback",
+              ".gem-c-share-links",
+              ".gem-c-related-navigation",
+              ".govuk-footer",
+              "noscript"
+            ],
+            "investigation_memo_chrome_list_size": 13,
+            "leakages_detected": 0,
+            "note": "Chrome catalogued in Step 1 investigation memo (13 selector classes). gov.uk chrome lives outside .govspeak so scoping to the content root plus heading-anchor section walking already excludes all 13 by construction. The text assertions are the verification.",
+            "reason_based_text_assertions": [
+              {
+                "fragment": "Skip to main content",
+                "origin": "skip link",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Cookies on GOV.UK",
+                "origin": "cookie banner heading",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Topics",
+                "origin": "super-nav menu label",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Print this page",
+                "origin": "print affordance",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Is this page useful?",
+                "origin": "feedback prompt",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Crown copyright",
+                "origin": "footer rights notice",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Open Government Licence",
+                "origin": "footer licence link",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Education, training and skills",
+                "origin": "breadcrumb",
+                "present_in_extracted": false
+              },
+              {
+                "fragment": "Applies to England",
+                "origin": "devolved-nations notice",
+                "present_in_extracted": false
+              }
+            ]
+          },
+          "flagged": false,
+          "name": "chrome_exclusion_reason_based",
+          "passed": true
+        },
+        {
+          "chars": 12461,
+          "flagged": false,
+          "name": "volume_sanity",
+          "note": "Inside the calibrated 3,000\u201320,000 range from the Step 1 investigation memo. The pipeline's completeness check separately flagged this run as suspicious because it is calibrated to a full-document expectation (12,461 / 302,525 = 4.12% < 5%); that is a known calibration caveat for sub-section scoped extractions, not an extraction defect.",
+          "passed": true,
+          "threshold_lower": 3000,
+          "threshold_upper": 20000
+        },
+        {
+          "details": {
+            "gov_uk_scope_summary": {
+              "classification": "hierarchical_with_scope",
+              "content_root_selector": ".govspeak",
+              "section_anchor_selector": "#key-stage-3"
+            },
+            "note": "Same extract_nested_dom primitive code handled both sources with scope-level differences only. No per-site branching in the primitive. Architectural generalisation claim of Session 4a-4 validated.",
+            "paired_artefact": "docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/",
+            "primitive": "extract_nested_dom",
+            "same_primitive": true,
+            "scope_only_differences": true,
+            "wales_scope_summary": {
+              "classification": "single_main_container",
+              "content_root_selector": "article#aole-v2",
+              "exclude_selectors_count": 6
+            }
+          },
+          "name": "architectural_generalisation",
+          "passed": true
+        }
+      ],
+      "details": {
+        "aggregate_verdict": "pass_with_notes",
+        "note": "No PDF cross-validation ground truth available for the gov.uk Mathematics KS3 page (the page IS the canonical statutory publication; there is no parallel PDF). Cross-validation here is structural-plus-chrome-plus-volume against the Step 1 investigation memo, plus the architectural generalisation check against the paired Wales SoW artefact.",
+        "session": "4a-4",
+        "step": 10
+      },
+      "primitive": "manual_cross_validation",
+      "timestamp": "2026-04-18T17:57:59.943445+00:00",
+      "verdict": "pass_with_notes"
     }
   ]
 }
