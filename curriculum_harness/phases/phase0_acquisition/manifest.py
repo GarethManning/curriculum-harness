@@ -16,7 +16,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 SourceType = Literal[
@@ -56,6 +56,42 @@ KnownPathology = Literal[
     "character_stream_doubling",
     "aoda_tagged_content_overlap",
 ]
+
+
+class ClickStepWaitFor(BaseModel):
+    """Signal a click step waits on before being considered complete.
+
+    ``selector_appears`` — wait for ``value`` (a CSS selector) to be
+    present and visible in the DOM.
+    ``network_idle`` — wait for the browser to hit a networkidle state
+    after the click; ``value`` is ignored and may be empty.
+
+    Session 4a-3 v3 intentionally has no ``timeout_ms`` enum member:
+    wait conditions fire on a signal. Timeouts are bounded at the click
+    step level and the primitive level, not here.
+    """
+
+    type: Literal["selector_appears", "network_idle"]
+    value: str = ""
+
+
+class ClickStep(BaseModel):
+    """One entry in the ``fetch_via_browser`` primitive's click_sequence.
+
+    Each click is recorded individually in the manifest trace for
+    observability. If a step fails and ``retry_on_fail`` is True, the
+    primitive retries the click once after a 1-second backoff before
+    pausing Phase 0.
+
+    ``timeout_ms`` bounds the whole step (the click + its wait_for). If
+    None, the primitive's overall ``browser_timeout_ms`` is used as the
+    bound.
+    """
+
+    selector: str
+    wait_for: ClickStepWaitFor
+    retry_on_fail: bool = True
+    timeout_ms: int | None = None
 
 
 class ScopeSpec(BaseModel):
@@ -132,6 +168,59 @@ class ScopeSpec(BaseModel):
             "Only read when ``pdf_dedup_coords`` is True."
         ),
     )
+    wait_for_selector: str | None = Field(
+        default=None,
+        description=(
+            "CSS selector that must appear (and be visible) before the "
+            "``fetch_via_browser`` primitive proceeds. Distinct from "
+            "``css_selector`` (which is the extraction selector) — the "
+            "two are often the same CSS string but mean different things "
+            "to different primitives. Required for ``fetch_via_browser``."
+        ),
+    )
+    dismiss_modal_selector: str | None = Field(
+        default=None,
+        description=(
+            "CSS selector for a consent modal / cookie banner to dismiss "
+            "before extraction. Optional on ``fetch_via_browser``. If the "
+            "element is not found or not visible, the primitive continues "
+            "without failing — the field is advisory."
+        ),
+    )
+    click_sequence: list[ClickStep] | None = Field(
+        default=None,
+        description=(
+            "Ordered list of clicks the browser primitive performs after "
+            "the initial render and modal dismissal. Each step declares a "
+            "wait condition (selector_appears or network_idle) that "
+            "signals readiness for the next step. One step per click "
+            "(observability beats terseness — the Session 4a-3 review "
+            "chose this explicitly)."
+        ),
+    )
+    browser_timeout_ms: int = Field(
+        default=30000,
+        description=(
+            "Overall timeout for ``fetch_via_browser`` in milliseconds. "
+            "Covers initial navigation, wait_for_selector, modal dismissal, "
+            "and per-click step bounds when a step has no explicit "
+            "timeout_ms."
+        ),
+    )
+
+    @field_validator("click_sequence", mode="before")
+    @classmethod
+    def _coerce_click_sequence(
+        cls, value: Any
+    ) -> list[ClickStep] | None:
+        if value is None:
+            return None
+        if isinstance(value, list):
+            return [
+                ClickStep.model_validate(item) if not isinstance(item, ClickStep) else item
+                for item in value
+            ]
+        raise TypeError("click_sequence must be a list")
 
 
 class UserInteraction(BaseModel):
