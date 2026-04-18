@@ -11,18 +11,20 @@ Downstream phases never read raw URLs. They read:
   scope requested vs acquired, any user interactions.
 - `content.txt` (and siblings) — normalised UTF-8 text.
 
-## Phase 0 status: COMPLETE
+## Phase 0 status: COMPLETE (schema 0.6.0)
 
 All five source types ship with a deterministic primitive sequence,
-type-detector routing, manifest schema 0.5.0, dual-mode verification,
-and a regression-tested extraction artefact. Architectural
-generalisation has been verified in two places: `extract_nested_dom`
-handles two structurally-distinct sites (gov.uk vs hwb.gov.wales —
-Session 4a-4 Steps 8/9) with scope-only differences;
-`fetch_via_browser` handles two structurally-distinct JS-rendered
-sites (Ontario DCP vs NZ Curriculum — Session 4a-3) with
-scope-only differences. Next: Session 4b — reference test corpus
-construction.
+type-detector routing, manifest schema 0.6.0, dual-mode verification,
+raw-content caching, and a regression-tested extraction artefact.
+Architectural generalisation has been verified in two places:
+`extract_nested_dom` handles two structurally-distinct sites
+(gov.uk vs hwb.gov.wales — Session 4a-4 Steps 8/9) with scope-only
+differences; `fetch_via_browser` handles two structurally-distinct
+JS-rendered sites (Ontario DCP vs NZ Curriculum — Session 4a-3)
+with scope-only differences. Raw-content caching (Session 4a-4.5)
+lets future regression tests re-run extraction against cached bytes
+rather than re-fetching from origins that may have become
+unavailable. Next: Session 4b — reference test corpus construction.
 
 ## Supported source types
 
@@ -385,6 +387,87 @@ for the regression evidence that the upgrade is byte-stable.
 > onwards). See the "Source composition and selection" section above
 > for the current single-source posture and the rationale for
 > deferring composition.
+
+## Raw-content caching (Session 4a-4.5)
+
+Every fetch primitive saves the raw fetched bytes alongside the
+extracted content in the run-snapshot directory. The manifest's
+`raw_content_files` field carries per-file `(path, hash, file_type,
+bytes)` records. Downstream regression tests re-run extraction
+against the cache rather than re-fetching from the source —
+essential because three corpus sources have become
+programmatically inaccessible (Common Core 7.RP behind Cloudflare;
+NZ Curriculum serving a bot-detection shell; AP CED blanket-
+disallowed by robots.txt since the source was first acquired).
+
+**Per fetch primitive:**
+
+- `fetch_requests` writes `raw.html` with `file_type: source_html`.
+- `fetch_pdf_file` (URL source) writes `raw.pdf` with
+  `file_type: source_pdf`.
+- `fetch_pdf_file` (local path) does **not** copy the file — it
+  records a `source_reference` entry with the absolute path and a
+  SHA-256 of the current bytes. Disk-space discipline: local PDFs
+  are often large and already archived, so duplicating wastes disk
+  and risks diverging copies. Regression tests re-hash at run
+  start to detect drift (`LocalSourceReferenceInvalid`, kind
+  `missing_path | hash_drift`).
+- `fetch_via_browser` writes `raw_rendered.html` with
+  `file_type: rendered_html` and `rendered_state.png` with
+  `file_type: rendered_screenshot`. The `dom_hash` primitive then
+  verifies its SHA-256 over the rendered HTML matches the raw-cache
+  entry's hash, raising `DomHashDivergenceError` (which halts the
+  pipeline) on disagreement.
+
+**Raw content for JS-rendered sources is the rendered DOM HTML, not
+the initial server response.** Downstream extraction consumes the
+post-JS DOM; the pre-JS response is never read by any primitive and
+is therefore not cached.
+
+**Per-run caching semantics.** Raw content is cached per Phase 0
+invocation. If the same source is extracted twice (e.g. two
+different section scopes against the same PDF), the raw content is
+cached twice — once in each run-snapshot directory. Deduplication
+across runs is deferred future work; not a problem at current
+corpus scale.
+
+**Known re-fetch gaps.** When a source cannot be re-fetched and no
+preserved raw bytes exist, the manifest sets
+`raw_content_unavailable: {value: true, reason: <string>,
+first_observed_at: <iso-timestamp>}`. The timestamp lets future
+sessions check whether a source has become available again. Two
+2026-04-18 gaps are documented:
+- Common Core 7.RP — Cloudflare challenge blocks programmatic
+  re-fetch.
+- NZ Curriculum — the live page returns a bot-detection shell
+  rather than curriculum content (fetch succeeds but extraction
+  yields zero chars; detected via the empty-hash check in the
+  regeneration runner).
+
+**Regression from cache.** `scripts/phase0/regression_from_cache.py`
+reads a 0.6.0 manifest, validates source-reference hashes at
+start, synthesises a fetch-shaped `PrimitiveResult` from the
+cached bytes, and replays the post-fetch primitive sequence. The
+canonical outcome is a regenerated `content_hash` byte-identical
+with the stored value; drift indicates a regression in the
+extraction chain. Report at
+`docs/project-log/phase0-cache-regression-2026-04-18.md`.
+
+## Manifest schema (v0.6.0)
+
+Session 4a-4.5 adds `raw_content_files: list[RawContentFile]` and
+`raw_content_unavailable: RawContentUnavailable | None`.
+
+- `RawContentFile` — `{path, hash, file_type, bytes}` where
+  `file_type` is one of `source_html | source_pdf | rendered_html
+  | rendered_screenshot | source_reference`. For cached files,
+  `path` is the cache-file path written alongside `content.txt`;
+  for `source_reference`, `path` is the original local filesystem
+  path (not copied).
+- `RawContentUnavailable` — `{value, reason, first_observed_at}`.
+  Set on manifests for known-gapped sources so the regression
+  utility can report them without running the replay.
+- `phase0_version` bumped from `0.5.0` to `0.6.0`.
 
 ## Manifest schema (v0.5.0)
 
