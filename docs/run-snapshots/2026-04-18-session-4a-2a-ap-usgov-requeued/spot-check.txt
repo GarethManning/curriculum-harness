@@ -1,14 +1,17 @@
 ========================================================================
-Phase 0 manifest spot-check — /Users/garethmanning/Github/curriculum-harness/docs/run-snapshots/2026-04-18-session-4a-2a-ap-usgov-requeued/manifest.json
+Phase 0 manifest spot-check — docs/run-snapshots/2026-04-18-session-4a-2a-ap-usgov-requeued/manifest.json
 ========================================================================
 
 Source reference : /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/_source.pdf
 Source type      : flat_pdf_linear
-Phase 0 version  : 0.3.0
+Phase 0 version  : 0.4.0
 Timestamp        : 2026-04-18T12:56:23.896108+00:00
 Content hash     : e6eea33806b8ab5ef1b17955d3417032ec549e602262c45f48d20b40c06f396d
 Detection hash   : 1798f5cb42351397d17814760e95fd23066c69ea98a0c5433d7e156a5be9ac87
 Encoding detected: None
+Pathologies      : coordinate_level_footer_overlap
+Investigation memos:
+  - docs/diagnostics/2026-04-18-ap-ced-doubling-investigation.md
 
 -- Scope requested --
   notes: AP US Government and Politics Course and Exam Description, Unit 1 'Foundations of American Democracy'. Origin URL: https://apcentral.collegeboard.org/media/pdf…
