@@ -31,6 +31,9 @@ from curriculum_harness.phases.phase0_acquisition.primitives.extract_pdf_text im
 from curriculum_harness.phases.phase0_acquisition.primitives.extract_pdf_text_deduped import (
     ExtractPdfTextDedupedPrimitive,
 )
+from curriculum_harness.phases.phase0_acquisition.primitives.detect_toc import (
+    DetectTocPrimitive,
+)
 from curriculum_harness.phases.phase0_acquisition.primitives.fetch_pdf_file import (
     FetchPdfFilePrimitive,
 )
@@ -39,6 +42,9 @@ from curriculum_harness.phases.phase0_acquisition.primitives.fetch_requests impo
 )
 from curriculum_harness.phases.phase0_acquisition.primitives.normalise_whitespace import (
     NormaliseWhitespacePrimitive,
+)
+from curriculum_harness.phases.phase0_acquisition.primitives.resolve_section_scope import (
+    ResolveSectionScopePrimitive,
 )
 from curriculum_harness.phases.phase0_acquisition.primitives.verify_extraction_quality import (
     VerifyExtractionQualityPrimitive,
@@ -115,7 +121,50 @@ def flat_pdf_linear_sequence(scope: ScopeSpec) -> list[Primitive]:
     ]
 
 
+def multi_section_pdf_sequence(scope: ScopeSpec) -> list[Primitive]:
+    """Build the ``multi_section_pdf`` primitive chain (Session 4a-2b).
+
+    Scope — one of the following must resolve to a page range:
+
+    - ``page_range`` (explicit wins).
+    - ``section_identifier`` (exact TOC-entry title match).
+    - ``section_heading`` (case-insensitive prefix / regex match).
+
+    If none is supplied and the TOC is detectable, the
+    ``resolve_section_scope`` primitive pauses with a user-in-the-loop
+    prompt listing the TOC entries. If none is supplied and no TOC,
+    the pause explains that the PDF has no section structure and asks
+    for ``page_range`` explicitly.
+
+    Multi-pathology handling (Step 8 resolution): Step 3's Ontario
+    pre-check found no coordinate-level pathology in the source, so
+    dedup defaults off. ``pdf_dedup_coords=True`` in the scope opts
+    into ``extract_pdf_text_deduped`` for sources that do exhibit one.
+    Chained multi-pathology dedup would require a new primitive and
+    is deferred until a source with multiple confirmed pathologies is
+    observed in the test corpus.
+    """
+
+    extractor: Primitive
+    if getattr(scope, "pdf_dedup_coords", False):
+        extractor = ExtractPdfTextDedupedPrimitive()
+    else:
+        extractor = ExtractPdfTextPrimitive()
+
+    return [
+        FetchPdfFilePrimitive(),
+        DetectTocPrimitive(),
+        ResolveSectionScopePrimitive(),
+        extractor,
+        VerifyExtractionQualityPrimitive(mode="raw"),
+        NormaliseWhitespacePrimitive(),
+        VerifyExtractionQualityPrimitive(mode="normalised"),
+        ContentHashPrimitive(),
+    ]
+
+
 SEQUENCE_BUILDERS = {
     "static_html_linear": static_html_linear_sequence,
     "flat_pdf_linear": flat_pdf_linear_sequence,
+    "multi_section_pdf": multi_section_pdf_sequence,
 }

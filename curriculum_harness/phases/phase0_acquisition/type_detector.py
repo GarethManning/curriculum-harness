@@ -43,6 +43,7 @@ from curriculum_harness.phases.phase0_acquisition.manifest import SourceType
 SUPPORTED_SOURCE_TYPES: tuple[SourceType, ...] = (
     "static_html_linear",
     "flat_pdf_linear",
+    "multi_section_pdf",
 )
 
 SUPPORTED_IN_SESSION_4A_0: tuple[SourceType, ...] = SUPPORTED_SOURCE_TYPES
@@ -173,10 +174,21 @@ def _classify_html(body: bytes) -> DetectionResult:
 def _classify_pdf(body: bytes) -> DetectionResult:
     """Distinguish flat_pdf_linear from multi_section_pdf by TOC shape.
 
-    Heuristic: look at the first few pages for structural TOC markers
-    (runs of dotted leaders, "Contents" / "Table of Contents", numbered
-    chapter/section listings). Multi-section: >=3 TOC-like lines with
-    page-number anchors.
+    Session 4a-2b Step 9 heuristic (stricter):
+
+    - PDF page count ≥ 50 AND embedded outline has ≥ 2 top-level
+      entries → ``multi_section_pdf``.
+    - PDF page count ≥ 50 AND no embedded outline but TOC-page
+      heuristic detects ≥ 3 dot-leader entries → ``multi_section_pdf``.
+    - Otherwise → ``flat_pdf_linear``.
+
+    Truncated-head inputs (URL detection reads ~200 KB of a multi-MB
+    PDF) are handled by the caller supplying full bytes for local
+    paths; for URL cases that fail parsing, we fall back to
+    ``flat_pdf_linear`` with low confidence. The live primitive
+    sequence re-opens the full file, so a misclassification here does
+    not corrupt content — at worst it skips the TOC-driven section
+    resolution.
     """
 
     signals: dict[str, Any] = {"bytes": len(body)}
@@ -187,60 +199,72 @@ def _classify_pdf(body: bytes) -> DetectionResult:
         n_pages = len(reader.pages)
         signals["n_pages"] = n_pages
 
+        # Count top-level outline entries (embedded bookmarks).
+        outline_top_level = 0
+        try:
+            for it in reader.outline or []:
+                if not isinstance(it, list):
+                    outline_top_level += 1
+        except Exception:  # noqa: BLE001 — outline optional
+            outline_top_level = 0
+        signals["outline_top_level_entries"] = outline_top_level
+
+        # TOC-page fallback signal from the first few pages.
         preview_pages = min(6, n_pages)
         preview = ""
         for i in range(preview_pages):
             try:
                 preview += (reader.pages[i].extract_text() or "") + "\n"
-            except Exception:  # noqa: BLE001 — PDF extraction is flaky
+            except Exception:  # noqa: BLE001 — per-page flaky
                 continue
-
         low = preview.lower()
         has_toc_heading = bool(
             re.search(r"\b(table of contents|contents)\b", low)
         )
         dot_leader_lines = len(re.findall(r"\.{4,}\s*\d+", preview))
-        numbered_sections = len(
-            re.findall(r"(?m)^\s*(?:\d+(?:\.\d+)+|[ivxlcdm]+\.)\s+\S", preview)
-        )
         signals.update(
             {
                 "has_toc_heading": has_toc_heading,
                 "dot_leader_lines": dot_leader_lines,
-                "numbered_sections": numbered_sections,
             }
         )
 
-        multi_section = (
-            (has_toc_heading and dot_leader_lines >= 3)
-            or dot_leader_lines >= 6
-            or numbered_sections >= 6
-        )
-        if multi_section or n_pages > 30:
+        long_enough = n_pages >= 50
+        if long_enough and outline_top_level >= 2:
+            return DetectionResult(
+                source_type="multi_section_pdf",
+                confidence="high",
+                rationale=(
+                    f"PDF has {n_pages} pages and an embedded outline "
+                    f"with {outline_top_level} top-level entries."
+                ),
+                signals=signals,
+                is_supported_now=True,
+            )
+        if long_enough and dot_leader_lines >= 3:
             return DetectionResult(
                 source_type="multi_section_pdf",
                 confidence="medium",
                 rationale=(
-                    "PDF with multi-section TOC markers or long page "
-                    f"count ({n_pages})."
+                    f"PDF has {n_pages} pages, no embedded outline, "
+                    f"but {dot_leader_lines} TOC-leader lines detected "
+                    "in the first few pages."
                 ),
                 signals=signals,
+                is_supported_now=True,
             )
-
         return DetectionResult(
             source_type="flat_pdf_linear",
             confidence="medium",
-            rationale="Short PDF with no multi-section TOC markers.",
+            rationale=(
+                f"PDF with {n_pages} pages and no multi-section "
+                "structure (outline + TOC signals below thresholds)."
+            ),
             signals=signals,
+            is_supported_now=True,
         )
     except Exception as exc:  # noqa: BLE001
         signals["pdf_parse_error"] = str(exc)
-        # Valid-PDF-magic body that pypdf cannot parse is usually a
-        # truncated head-fetch of a large PDF (detector reads ~200 KB;
-        # typical CED-sized PDFs are 5 MB+). Fall back to the
-        # conservative flat-PDF route with low confidence rather than
-        # ``unknown``, since the PDF bytes were recognised on fetch and
-        # the flat-PDF sequence fetches the full file itself.
         if body[:5] == b"%PDF-":
             return DetectionResult(
                 source_type="flat_pdf_linear",
@@ -248,8 +272,8 @@ def _classify_pdf(body: bytes) -> DetectionResult:
                 rationale=(
                     "PDF magic present but pypdf could not parse the "
                     f"truncated head fetch ({exc}). Defaulting to "
-                    "flat_pdf_linear; upgrade to multi_section_pdf in a "
-                    "later session."
+                    "flat_pdf_linear; caller can pass detection_override "
+                    "if the full file is known to be multi-section."
                 ),
                 signals=signals,
             )
@@ -339,12 +363,19 @@ def detect_source_type(source_reference: str) -> DetectionResult:
             rationale=f"Local path does not exist: {source_reference}",
         )
     with path.open("rb") as f:
-        body = f.read(200_000)
+        head = f.read(8)
     ext = path.suffix.lower()
-    if ext == ".pdf" or body[:5] == b"%PDF-":
+    if ext == ".pdf" or head[:5] == b"%PDF-":
+        # PDFs on disk: read the whole file so pypdf can parse the
+        # outline reliably. Disk I/O is cheap; this keeps detection
+        # deterministic for any local PDF size.
+        body = path.read_bytes()
         res = _classify_pdf(body)
         res.signals["extension"] = ext
         return res
+    # Non-PDF local: 200 KB head is enough for HTML classification.
+    with path.open("rb") as f:
+        body = f.read(200_000)
     if ext in {".html", ".htm"} or _looks_like_html(body):
         res = _classify_html(body)
         res.signals["extension"] = ext

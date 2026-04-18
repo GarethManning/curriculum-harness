@@ -197,7 +197,17 @@ class ExtractPdfTextPrimitive:
                 meta={"extract_failure": "input_not_bytes"},
             )
 
-        page_range = _parse_page_range(getattr(scope, "page_range", None))
+        # Prefer a resolved_page_range carried forward by a preceding
+        # resolve_section_scope primitive (multi_section_pdf path) over
+        # the scope-declared range. The resolved range is always [start, end]
+        # derived from the TOC and is the authoritative answer for scoped
+        # multi-section extractions.
+        resolved_range = (previous.meta or {}).get("resolved_page_range")
+        page_range = (
+            _parse_page_range(resolved_range)
+            if resolved_range is not None
+            else _parse_page_range(getattr(scope, "page_range", None))
+        )
         section_heading = getattr(scope, "section_heading", None)
         is_regex = bool(getattr(scope, "heading_regex", False))
 
