@@ -1,0 +1,126 @@
+========================================================================
+Phase 0 manifest spot-check — /Users/garethmanning/Github/curriculum-harness/docs/run-snapshots/2026-04-18-session-4a-2a-ap-usgov-requeued/manifest.json
+========================================================================
+
+Source reference : /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/_source.pdf
+Source type      : flat_pdf_linear
+Phase 0 version  : 0.3.0
+Timestamp        : 2026-04-18T12:56:23.896108+00:00
+Content hash     : e6eea33806b8ab5ef1b17955d3417032ec549e602262c45f48d20b40c06f396d
+Detection hash   : 1798f5cb42351397d17814760e95fd23066c69ea98a0c5433d7e156a5be9ac87
+Encoding detected: None
+
+-- Scope requested --
+  notes: AP US Government and Politics Course and Exam Description, Unit 1 'Foundations of American Democracy'. Origin URL: https://apcentral.collegeboard.org/media/pdf…
+  page_range: [40, 55]
+  pdf_dedup_coord_tolerance: 1
+  pdf_dedup_coords: True
+  section_heading: Foundations of American Democracy
+  source_reference: /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/_source.pdf
+
+-- Scope acquired --
+  chars: 24586
+  verification_excerpt:
+    line_count : 828
+    first_chars: AP U.S. GOVERNMENT
+AND POLITICS
+UNIT
+1
+Foundations
+of American
+Democracy
+15–22%
+AP EXAM WEIGHTING
+~16/~8
+CLASS PERIODS
+|
+AP U.S. Government and Politics Course and Exam Description Course Framework V.
+    last_chars : ourse and Exam Description Course Framework V.1  48
+Return to Table of Contents
+© 2023 College Board
+
+-- Primitive sequence --
+  1. fetch_pdf_file
+  2. extract_pdf_text_deduped
+  3. normalise_whitespace
+  4. verify_extraction_quality
+  5. content_hash
+
+-- Acquisition trace --
+  [1] fetch_pdf_file  (1 ms)
+      bytes: 11627002
+      pdf_magic_ok: True
+      source_kind: path
+      source_path: /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/_source.pdf
+      status: ok
+  [2] extract_pdf_text_deduped  (8226 ms)
+      chars_before_total: 26218
+      chars_out: 25075
+      chars_removed_total: 2067
+      coord_tolerance: 1
+      extraction_mode: page_range
+      heading_verification: {'heading_found': True, 'heading_line': 'Foundations of American Democracy', 'heading_line_index': 134, 'next_heading_line_index': 137}
+      pages_extracted: [40, 55]
+      pdfplumber_version: 0.11.9
+      source_page_count: 198
+      status: ok
+  [3] normalise_whitespace  (0 ms)
+      chars_in: 25075
+      chars_out: 24586
+  [4] verify_extraction_quality  (8 ms)
+      chars_in: 24586
+      checks: [{'countable_lines': 633, 'docwide_failure': False, 'flagged': False, 'lines_flagged': 0, 'mean_flagged_ratio': 0.0, 'name': 'character_doubling', 'passed': Tr…
+      line_count: 828
+      verdict: clean
+  [5] content_hash  (0 ms)
+      bytes: 24850
+      content_hash: e6eea33806b8ab5ef1b17955d3417032ec549e602262c45f48d20b40c06f396d
+
+-- Verification trace --
+  [1] verify_extraction_quality -> verdict: clean
+      character_doubling        value=0.0        threshold=0.2        [ok]
+      repeated_bigram           value=0.183      threshold=0.75       [ok]
+      whitespace_runs           value=0          threshold=50         [ok]
+      empty_line_ratio          value=0.021      threshold=0.6000000000000001 [ok]
+
+-- Content files --
+  /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/content.txt
+
+-- Content preview --
+  /Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ap-usgov-unit1-requeued-2026-04-18/content.txt  (24586 chars)
+
+  --- first 500 chars ---
+  | AP U.S. GOVERNMENT
+  | AND POLITICS
+  | UNIT
+  | 1
+  | Foundations
+  | of American
+  | Democracy
+  | 15–22%
+  | AP EXAM WEIGHTING
+  | ~16/~8
+  | CLASS PERIODS
+  | |
+  | AP U.S. Government and Politics Course and Exam Description Course Framework V.1  33
+  | Return to Table of Contents
+  | © 2023 College Board
+  | 
+  | Remember to go to AP Classroom
+  | to assign students the online
+  | Progress Check for this unit.
+  | Whether assigned as homework
+  | or completed in class, the Progress
+  | Check provides each student with
+  | immediate feedback related to this
+  | unit’s topics and sk
+
+  --- last 200 chars ---
+  | ined by the
+  | sharing of concurrent powers with state
+  | governments.
+  | |
+  | AP U.S. Government and Politics Course and Exam Description Course Framework V.1  48
+  | Return to Table of Contents
+  | © 2023 College Board
+

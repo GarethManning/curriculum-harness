@@ -1,0 +1,11 @@
+{
+  "confidence": "low",
+  "is_supported_now": false,
+  "rationale": "PDF magic present but pypdf could not parse the truncated head fetch (Stream has ended unexpectedly). Defaulting to flat_pdf_linear; upgrade to multi_section_pdf in a later session.",
+  "signals": {
+    "bytes": 200000,
+    "extension": ".pdf",
+    "pdf_parse_error": "Stream has ended unexpectedly"
+  },
+  "source_type": "flat_pdf_linear"
+}
