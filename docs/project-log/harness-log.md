@@ -705,5 +705,22 @@ the panel-review package at
 README (orienting panelists to the known Phase 1 scoping failure), source
 pointer, and verbatim panel questions. No code commits in this session.
 
-<!-- next session entry goes here -->
+## Session 4a-0 — Phase 0 acquisition layer scaffold + first primitive (2026-04-18)
+
+New upstream phase. Session 3e's Ontario failure traced to Phase 1 conflating acquisition with extraction; Session 4a-0 separates acquisition as a first-class concern. Work constrained by the binding architecture requirements from the 2026-04-18 panel review: composable primitives (not monolithic per-source modules), structured scope spec with per-primitive schemas, manifest JSON separate from content files, no model calls inside extraction primitives, hand-editable user-in-the-loop session state, SHA-256 content hashing, full acquisition trace, UTF-8-or-flag encoding handling.
+
+**Step 1 — base infrastructure** (commit `7cf0656`). Created `curriculum_harness/phases/phase0_acquisition/` with the Primitive protocol, `AcquisitionManifest` Pydantic schema, session-state pause/resume module (hand-editable `state.json` + `request.md` + `provided.txt|json`), and three deterministic primitives: `content_hash` (SHA-256), `normalise_whitespace` (UTF-8 + LF + collapse), `encoding_detection` (charset_normalizer with declared-encoding fallback and explicit failure flag). Executor threads primitives and records per-step trace entries.
+
+**Step 2 — type detector** (commit `b4a581a`). `type_detector.py` classifies sources into `static_html_linear` / `flat_pdf_linear` / `multi_section_pdf` / `js_rendered_progressive_disclosure` / `html_nested_dom` / `unknown` via JS-framework-marker + visible-text-ratio + div-density heuristics for HTML, and TOC-marker + page-count + dot-leader heuristics for PDFs. Model-call policy declared in docstring: the detector is the only place in Phase 0 where a model call is permitted (classification only). Session 4a-0 ships rule-only detection.
+
+**Step 3 — static_html_linear primitive sequence** (commit `dbad6b4`). Three primitives: `fetch_requests` (GET with identifying UA, per-host cached robots.txt check, raw bytes + declared encoding passed forward), `extract_css_selector` (BS4 selector extraction with chrome strip), `extract_heading_section` (sibling collection until next same-or-higher heading). Sequence: fetch → encoding → extract → normalise → hash. Top-level `acquire()` routes on detection result and pauses with a clear user-in-the-loop message for any deferred type.
+
+**Step 4 — Common Core 7.RP test** (commit `0b303e4`). Ran `acquire()` against `https://www.thecorestandards.org/Math/Content/7/RP/` with `css_selector='article section.content'` (verified by DOM inspection — wraps the whole cluster). Acquired 1,799 chars (SHA-256 `c48297f2…0162d3`): cluster heading, 7.RP.A.1 with embedded example, 7.RP.A.2 + sub-standards a/b/c/d, 7.RP.A.3. Navigation, footer, analytics, and unrelated clusters excluded as intended. Server declared ISO-8859-1; charset_normalizer detected UTF-8 (chaos 0.0) — manifest records both. Artefacts frozen at `docs/run-snapshots/2026-04-18-session-4a-0-phase0-test/`.
+
+**Step 5 — spot-check utility** (commit `6d5a1c4`). `scripts/phase0/spot_check.py` prints a human-readable manifest summary (source, scope requested/acquired, primitive trace with per-step outputs_summary, user interactions, content preview first 500 / last 200 chars). Ran against the 7.RP artefact; output captured at `docs/run-snapshots/.../spot-check.txt`. Inspection tool only — formal reference-comparison is Session 4b's scope.
+
+**Deviations from binding architecture.** None. All eight requirements honoured. Extraction primitives are deterministic; `acquire()` pauses with hand-editable state for unsupported types or missing scope fields; manifest and content are separate artefacts; content hashing on by default; full acquisition trace in every manifest.
+
+**Next session (4a-1).** Add the `flat_pdf_linear` primitive sequence (pypdf is already a dependency). Typed scope fields `page_range` and `section_identifier` are already in `ScopeSpec`; sequence builder goes in `sequences.py`; no manifest/executor changes required. Reserve `multi_section_pdf`, `js_rendered_progressive_disclosure`, and `html_nested_dom` for 4a-2 / 4a-3 / 4a-4.
+
 
