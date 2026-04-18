@@ -16,6 +16,7 @@ with pdfplumber.
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -103,6 +104,16 @@ class FetchPdfFilePrimitive:
             "pdf" in content_type.lower() or looks_like_pdf
         )
 
+        raw_hash = hashlib.sha256(content_bytes).hexdigest()
+        raw_filename = "raw.pdf"
+        raw_entry = {
+            "filename": raw_filename,
+            "bytes": content_bytes,
+            "file_type": "source_pdf",
+            "hash": raw_hash,
+            "bytes_count": len(content_bytes),
+        }
+
         return PrimitiveResult(
             output=content_bytes,
             summary={
@@ -115,6 +126,10 @@ class FetchPdfFilePrimitive:
                 "robots_reason": robots_reason,
                 "content_type_mismatch": content_type_mismatch,
                 "pdf_magic_ok": looks_like_pdf,
+                "raw_saved": True,
+                "raw_path": raw_filename,
+                "raw_hash": raw_hash,
+                "raw_bytes": len(content_bytes),
             },
             meta={
                 "source_kind": "url",
@@ -123,6 +138,7 @@ class FetchPdfFilePrimitive:
                 "content_type": content_type,
                 "content_type_mismatch": content_type_mismatch,
                 "pdf_magic_ok": looks_like_pdf,
+                "raw_content": [raw_entry],
             },
         )
 
@@ -134,6 +150,13 @@ class FetchPdfFilePrimitive:
             raise IsADirectoryError(f"PDF path is not a file: {path}")
         data = path.read_bytes()
         looks_like_pdf = data[:5] == _PDF_MAGIC
+        raw_hash = hashlib.sha256(data).hexdigest()
+        raw_entry = {
+            "path": str(path),
+            "file_type": "source_reference",
+            "hash": raw_hash,
+            "bytes_count": len(data),
+        }
         return PrimitiveResult(
             output=data,
             summary={
@@ -142,10 +165,15 @@ class FetchPdfFilePrimitive:
                 "source_path": str(path),
                 "bytes": len(data),
                 "pdf_magic_ok": looks_like_pdf,
+                "raw_saved": False,
+                "raw_reference_path": str(path),
+                "raw_hash": raw_hash,
+                "raw_bytes": len(data),
             },
             meta={
                 "source_kind": "path",
                 "source_path": str(path),
                 "pdf_magic_ok": looks_like_pdf,
+                "raw_content": [raw_entry],
             },
         )
