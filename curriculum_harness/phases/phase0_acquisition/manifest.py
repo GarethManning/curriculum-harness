@@ -29,6 +29,35 @@ SourceType = Literal[
 ]
 
 
+# Append-only enum of PDF pathologies Phase 0 knows how to handle.
+#
+# Adding a new value is a deliberate act: it means we have empirically
+# observed the pathology in a real source and have chosen a
+# deterministic primitive configuration that handles it. Do not add
+# speculative values. Manifests may only reference values in this
+# enum — the Pydantic model validates on write.
+#
+# - ``coordinate_level_footer_overlap`` — PDF renders header/footer
+#   glyphs twice at near-identical coordinates. Observed in the AP US
+#   Gov CED (Session 4a-2a). Handled by
+#   ``extract_pdf_text_deduped`` with
+#   ``pdf_dedup_coord_tolerance=1``.
+# - ``coordinate_level_general_overlap`` — coordinate-level glyph
+#   overlap beyond headers/footers (e.g. AODA PDFs with accessibility
+#   overlays rendering body text twice). Reserved; not yet observed.
+# - ``character_stream_doubling`` — doubling at the content-stream
+#   level (Mechanism C in the 4a-2a investigation memo). Reserved;
+#   not yet observed in any test source.
+# - ``aoda_tagged_content_overlap`` — AODA structure-tagging that
+#   produces invisible-text overlap alongside visible text. Reserved.
+KnownPathology = Literal[
+    "coordinate_level_footer_overlap",
+    "coordinate_level_general_overlap",
+    "character_stream_doubling",
+    "aoda_tagged_content_overlap",
+]
+
+
 class ScopeSpec(BaseModel):
     """Structured scope specification.
 
@@ -182,10 +211,26 @@ class AcquisitionManifest(BaseModel):
     encoding_detected: str | None = None
     encoding_failure: str | None = None
     user_interactions: list[UserInteraction] = Field(default_factory=list)
+    known_pathology_handling: list[KnownPathology] = Field(
+        default_factory=list,
+        description=(
+            "PDF pathologies the acquisition was configured to handle. "
+            "Values are drawn from the append-only ``KnownPathology`` "
+            "enum. Empty list if none."
+        ),
+    )
+    investigation_memo_refs: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Paths to diagnostic memos relevant to this acquisition "
+            "(e.g. a record of the investigation that identified a "
+            "pathology). Empty list if none."
+        ),
+    )
     timestamp: str = Field(
         default_factory=lambda: datetime.now(timezone.utc).isoformat(),
     )
-    phase0_version: str = "0.3.0"
+    phase0_version: str = "0.4.0"
     notes: str | None = None
 
     def append_trace(self, entry: PrimitiveTraceEntry) -> None:
