@@ -14,12 +14,18 @@ from curriculum_harness.source_faithfulness import (
 )
 
 
-def _bullet(bid: str, text: str, btype: str = "topic_statement") -> dict:
+def _bullet(
+    bid: str,
+    text: str,
+    bullet_type: str = "specific_expectation",
+    detector: str = "topic_statement",
+) -> dict:
     return {
         "id": bid,
         "text": text,
         "source_location": "",
-        "bullet_type": btype,
+        "detector": detector,
+        "bullet_type": bullet_type,
     }
 
 
@@ -59,7 +65,10 @@ def test_above_threshold_returns_pass_with_matching_bullet() -> None:
     assert prov
     assert prov[0]["bullet_id"] == "sb_001"
     assert prov[0]["score"] >= 0.35
-    assert prov[0]["bullet_type"] == "topic_statement"
+    # Session 3d — bullet_type in provenance entries is the semantic
+    # category, not the detector name. Default fixture is
+    # specific_expectation.
+    assert prov[0]["bullet_type"] == "specific_expectation"
 
 
 def test_provenance_records_top_k_matches() -> None:

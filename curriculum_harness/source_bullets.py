@@ -29,9 +29,59 @@ line:
    specifications that list topic areas without explicit markers (the
    felvételi source is the canonical case).
 
-Every bullet gets a stable `sb_NNN` ID, the detector it came from
-(`bullet_type`), a human-readable `source_location` (line number plus
-the introducing header text where applicable), and the bullet text.
+Each emitted bullet carries:
+
+- ``id`` — stable sb_NNN ID.
+- ``text`` — the bullet text (whitespace-normalised).
+- ``source_location`` — ``line N`` plus ``(under: HEADER)`` where
+  applicable.
+- ``detector`` — which of the three extractors caught it
+  (``marker_bullet | numbered_outcome | topic_statement``). Session 3d
+  renamed this from ``bullet_type`` to free that name for the semantic
+  classification below.
+- ``bullet_type`` (Session 3d) — a semantic category from the enum
+  below, used by the coverage gate to weight bullets.
+
+## Semantic bullet_type enum (Session 3d)
+
+The coverage gate is not well served by a 1:1 weighting of every line
+the detectors emit — a PDF's front-matter, sample questions, and
+teacher prompts all produce bullets indistinguishable from specific
+expectations at the detector level. `bullet_type` classifies each
+bullet into one of seven categories so the gate can weight them
+correctly.
+
+| Value                    | Coverage-gate role     |
+|--------------------------|------------------------|
+| ``specific_expectation`` | coverage-relevant      |
+| ``overall_expectation``  | coverage-relevant      |
+| ``sample_question``      | illustrative, excluded |
+| ``teacher_prompt``       | illustrative, excluded |
+| ``cross_grade``          | extraction error       |
+| ``front_matter``         | excluded by default    |
+| ``other``                | excluded by default    |
+
+Heuristics (applied in order, first match wins; see
+`docs/diagnostics/2026-04-18-ontario-bullet-classification.md` for the
+Ontario calibration that produced these):
+
+1. text ends with ``?`` → ``sample_question``.
+2. text begins with ``e.g.`` / ``e.g `` / ``(e.g.`` / ``for example``
+   → ``teacher_prompt``.
+3. text contains ``(Grade N`` where N is present and not the target
+   grade → ``cross_grade``. When no target grade is known to the
+   extractor, any ``(Grade N`` tag is treated as cross_grade only if
+   N ∈ {1..6, 8}. Target grade context is not yet threaded through to
+   the classifier; the classifier is intentionally decoupled from
+   config so the rule is static.
+4. detector == ``numbered_outcome`` → ``specific_expectation``.
+5. ``under: HEADER`` phrase matches a known front-matter header token
+   (Version history, as follows, The achievement chart, …) →
+   ``front_matter``.
+6. bullet line number is below ``_FRONT_MATTER_LINE_CUTOFF`` (8000)
+   → ``front_matter``. This rule is Ontario-PDF-shaped; see
+   adjacent-mechanism #9. Other documents will need calibration.
+7. otherwise → ``other``.
 
 ## Adjacent mechanisms — what this module does NOT do
 
@@ -66,14 +116,36 @@ Future readers should add to this list, not remove from it.
 8. **Confidence.** Every emitted bullet is treated equally; the
    detector cannot say "this one is a clear bullet" vs "this one is
    borderline". Thresholding is by line-length heuristics only.
+9. **Grade-grain verification** (Session 3d). The ``bullet_type``
+   classifier tags structurally. A bullet tagged
+   ``specific_expectation`` is guaranteed to be a detector-captured
+   numbered outcome, but **not** guaranteed to be at the target grade
+   of the run — Ontario's Grade 7 run captured Grade 1's A1.N
+   expectations because Phase 1 scoping under-narrowed. The classifier
+   has no target-grade context to tag those as cross_grade.
+10. **Curriculum-shape generalisation** (Session 3d). The bullet_type
+    heuristics are tuned to Ontario-shape documents. AP CED, IB, UK NC,
+    and felvételi PDFs will mis-tag until recalibrated against their
+    own corpora.
+11. **Overall-expectation detection** (Session 3d). Ontario's overall
+    expectations live in section headers the extractors don't emit as
+    bullets; ``overall_expectation`` is an enum value but currently
+    unreachable by these heuristics on Ontario-shape sources. A future
+    calibration pass will need a header-level detector.
+12. **Within-type importance weighting** (Session 3d). All 33 Ontario
+    specific_expectations count equally in the coverage gate even
+    though some are broader and more consequential than others.
 
 ## Public API
 
-- `extract_source_bullets(raw_text: str) -> list[dict]` — the flat
-  extraction. Returns `[]` on empty / trivially short input.
-- `SourceBullet` dict shape:
+- ``extract_source_bullets(raw_text: str) -> list[dict]`` — the flat
+  extraction. Returns ``[]`` on empty / trivially short input.
+- ``classify_bullet_type(text, source_location, detector) -> str`` —
+  the semantic classifier. Pure function over bullet fields.
+- ``SourceBullet`` dict shape:
   ``{"id": "sb_001", "text": "...", "source_location": "...",
-     "bullet_type": "marker_bullet|numbered_outcome|topic_statement"}``.
+     "detector": "marker_bullet|numbered_outcome|topic_statement",
+     "bullet_type": "<one of the enum values above>"}``.
 """
 
 from __future__ import annotations
@@ -98,12 +170,151 @@ _MIN_NUMBERED_OUTCOME_TEXT_CHARS = 25
 _MAX_TOPIC_BULLET_CHARS = 300
 _MAX_HEADER_CHARS = 200
 
+# Session 3d — bullet_type classifier constants.
+BULLET_TYPES = (
+    "specific_expectation",
+    "overall_expectation",
+    "sample_question",
+    "teacher_prompt",
+    "cross_grade",
+    "front_matter",
+    "other",
+)
 
-def extract_source_bullets(raw_text: str) -> list[dict]:
+# Lowercase header-token substrings that mark a bullet's parent section
+# as front-matter. Curated from the Ontario 2018 Social Studies /
+# History / Geography PDF — see
+# `docs/diagnostics/2026-04-18-ontario-bullet-classification.md`.
+# Heuristic; other documents need their own calibration.
+_FRONT_MATTER_HEADER_TOKENS = (
+    "version history",
+    "account. they focus",
+    "the following elements",
+    "the following components",
+    "as follows",
+    "follows",
+    "one of two distinct programs",
+    "the following questions",
+    "the achievement chart",
+    "the categories of knowledge and skills",
+    "options is appropriate",
+    "courses and programs",
+    "secondary program",
+    "equipment, as well as",
+    "meet with success",
+    "three types of accommodations",
+    "learning for all students",
+    "particular attention to these beliefs",
+    "students will learn skills to",
+    "mathematical literacy",
+    "students will work towards",
+    "citizenship education",
+    "the two grades are",
+    "the student",
+    "students",
+    "points within the process",
+    "topics covered in the two grades",
+    "by the end of grade 1",
+    "by the end of grade 2",
+    "by the end of grade 3",
+    "by the end of grade 4",
+    "by the end of grade 5",
+    "by the end of grade 6",
+    "further information on supporting english language",
+    "associations or government",
+    "in the classroom, teachers",
+    "in addition, teacher-librarians",
+    "website",
+)
+
+# Below this line number the Ontario PDF is front-matter (preamble,
+# program planning, assessment, equity). Above it, grade-specific
+# expectations. Calibrated on Session 3c Ontario corpus. See
+# adjacent-mechanism #9/#10 for the generalisation caveat.
+_FRONT_MATTER_LINE_CUTOFF = 8000
+
+_LINE_LOC_RE = re.compile(
+    r"line\s+(?P<line>\d+)(?:\s*\(under:\s*(?P<header>[^)]*)\s*\))?"
+)
+_GRADE_TAG_IN_TEXT_RE = re.compile(r"\(grade\s+(?P<grade>\d+)", re.IGNORECASE)
+
+
+def classify_bullet_type(
+    text: str,
+    source_location: str,
+    detector: str,
+    *,
+    target_grade: str = "",
+) -> str:
+    """Classify a bullet into the semantic enum.
+
+    See module docstring for heuristics. ``target_grade`` is currently
+    only used to distinguish ``cross_grade`` from a same-grade
+    sample-question tag; when the caller does not know the target
+    grade, pass ``""`` and the default set of cross-grade numbers
+    applies.
+    """
+    t = (text or "").strip()
+    if not t:
+        return "other"
+
+    lower = t.lower()
+
+    # 1. sample_question — a literal question.
+    if t.rstrip().endswith("?"):
+        return "sample_question"
+
+    # 2. teacher_prompt — example / prompt leads.
+    if lower.startswith(("e.g.", "e.g ", "(e.g.", "for example")):
+        return "teacher_prompt"
+
+    # 3. cross-grade signal in text itself (Ontario sample questions
+    # cross-referenced to specific grades).
+    m_grade = _GRADE_TAG_IN_TEXT_RE.search(lower)
+    if m_grade:
+        g = m_grade.group("grade")
+        if target_grade:
+            if g != str(target_grade).strip():
+                return "cross_grade"
+        else:
+            if g in {"1", "2", "3", "4", "5", "6", "8"}:
+                return "cross_grade"
+
+    # 4. numbered_outcome detector → specific_expectation (structural).
+    if detector == "numbered_outcome":
+        return "specific_expectation"
+
+    # 5. front_matter by header match.
+    header = ""
+    line_no: int | None = None
+    m_loc = _LINE_LOC_RE.match(source_location or "")
+    if m_loc:
+        line_no = int(m_loc.group("line"))
+        header = (m_loc.group("header") or "").strip().lower()
+    if header:
+        for tok in _FRONT_MATTER_HEADER_TOKENS:
+            if tok in header:
+                return "front_matter"
+
+    # 6. front_matter by line-position proxy (Ontario-shape).
+    if line_no is not None and line_no < _FRONT_MATTER_LINE_CUTOFF:
+        return "front_matter"
+
+    return "other"
+
+
+def extract_source_bullets(
+    raw_text: str, *, target_grade: str = ""
+) -> list[dict]:
     """Walk `raw_text` line by line and emit bullets per the rules above.
 
-    Returns a flat list of dicts: `{id, text, source_location, bullet_type}`.
-    Empty or too-short input returns `[]`.
+    Returns a flat list of dicts:
+    ``{id, text, source_location, detector, bullet_type}``.
+    Empty or too-short input returns ``[]``.
+
+    ``target_grade`` (optional) is passed to the bullet_type classifier
+    so cross-grade detection can use the run's target grade. When
+    omitted, the classifier falls back to a static cross-grade set.
     """
     if not raw_text or len(raw_text.strip()) < 100:
         return []
@@ -112,9 +323,8 @@ def extract_source_bullets(raw_text: str) -> list[dict]:
     seen_texts: set[str] = set()
     in_block = False
     block_header = ""
-    block_header_line = 0
 
-    def push(text: str, bullet_type: str, line_no: int, header: str = "") -> None:
+    def push(text: str, detector: str, line_no: int, header: str = "") -> None:
         text = text.strip()
         if len(text) < _MIN_BULLET_CHARS:
             return
@@ -129,12 +339,16 @@ def extract_source_bullets(raw_text: str) -> list[dict]:
             location = f"line {line_no} (under: {header[:80]})"
         else:
             location = f"line {line_no}"
+        btype = classify_bullet_type(
+            normalised, location, detector, target_grade=target_grade
+        )
         bullets.append(
             {
                 "id": f"sb_{len(bullets) + 1:03d}",
                 "text": normalised,
                 "source_location": location,
-                "bullet_type": bullet_type,
+                "detector": detector,
+                "bullet_type": btype,
             }
         )
 
@@ -164,7 +378,6 @@ def extract_source_bullets(raw_text: str) -> list[dict]:
         if line.endswith(":") and len(line) <= _MAX_HEADER_CHARS and not line.endswith("::"):
             in_block = True
             block_header = line.rstrip(":").strip()
-            block_header_line = line_no
             continue
 
         if in_block:
@@ -186,4 +399,4 @@ def extract_source_bullets(raw_text: str) -> list[dict]:
     return bullets
 
 
-__all__ = ["extract_source_bullets"]
+__all__ = ["BULLET_TYPES", "classify_bullet_type", "extract_source_bullets"]

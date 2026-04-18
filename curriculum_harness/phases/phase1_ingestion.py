@@ -740,13 +740,15 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
         jurisdiction,
         str(src.get("pages") or ""),
     )
-    bullets = extract_source_bullets(bullet_source)
+    bullets = extract_source_bullets(bullet_source, target_grade=str(grade or ""))
     if not bullets:
         # Fallback: if the deterministic slice yielded no bullets
         # (unusual — suggests a document with no structural markers),
         # retry on the Haiku-scoped text so the pipeline does not ship
         # zero bullets from a document that clearly contains outcomes.
-        bullets = extract_source_bullets(raw_curriculum.strip())
+        bullets = extract_source_bullets(
+            raw_curriculum.strip(), target_grade=str(grade or "")
+        )
 
     source_language, source_language_signal = _detect_source_language_from_bullets(bullets)
 

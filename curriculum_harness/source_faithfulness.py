@@ -11,7 +11,10 @@ shared helper so both phases compute provenance and the same
   source-evidence matcher against the bullet corpus, returns the
   top-k matches as a provenance list `[{bullet_id, score,
   matched_text, bullet_type}]` plus a pass/fail boolean for the
-  configured threshold.
+  configured threshold. ``bullet_type`` here is the Session-3d
+  semantic category (``specific_expectation``, ``sample_question``,
+  …) rather than the extractor name (which now lives on ``detector``
+  on the source-bullet dict).
 - `compute_parent_provenance(text, parent_texts, parent_ids)` → same
   shape but over an arbitrary parent corpus (used by Phase 4 to trace
   an LT back to its KUD item before the bullet check).

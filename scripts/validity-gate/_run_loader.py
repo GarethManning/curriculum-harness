@@ -168,6 +168,9 @@ def _build_bullet_corpus(bullets_doc: dict) -> list[SourceItem]:
     for b in bullets_doc.get("source_bullets") or []:
         text = (b.get("text") or "").strip()
         bid = (b.get("id") or "").strip()
+        # Session 3d — `bullet_type` is the semantic category; the
+        # detector name moved to `detector`. Provenance surfaces the
+        # semantic category so gate reports read cleanly.
         btype = (b.get("bullet_type") or "").strip()
         if not text or not bid:
             continue
