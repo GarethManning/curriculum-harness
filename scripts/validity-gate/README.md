@@ -19,8 +19,8 @@ See that file for the full claim, foundation moments, and pre-mortem.
 | `validate_source_coverage.py` | 1 — source → LT coverage | **implemented** |
 | `validate_source_faithfulness.py` | 1 — no-fabrication | **implemented** |
 | `validate_architecture_diagnosis.py` | 1 — architecture verifiable from source | **implemented** |
-| `validate_lt_surface_form.py` | 2 — word count / format / compound-check | pending |
-| `validate_regenerate_loop.py` | 2 — regenerate loop ran for any initial failure | pending (known gap) |
+| `validate_lt_surface_form.py` | 2 — word count / format / compound-check | **implemented** |
+| `validate_regenerate_loop.py` | 2 — regenerate loop ran for any initial failure | **implemented** |
 | `validate_exam_block_scope.py` | 3 — `GCSE_AQA_EXAM_BLOCK` only on AQA sources | pending (known bug) |
 | `validate_lt_criterion_coverage.py` | 4 — LT decomposes to ≥1 criterion | deferred |
 | `validate_prerequisite_dag.py` | 4 — prerequisite edges form a DAG | deferred |

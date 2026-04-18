@@ -3,10 +3,12 @@
 **Project:** Curriculum Harness (package `curriculum_harness`, formerly
 `curriculum-decomposer` / `kaku_decomposer`) — LangGraph pipeline that
 ingests a curriculum document and emits a KUD map + learning targets.
-**Last reviewed:** 2026-04-17 (Session 2 — foundation-moment-1 gates
-(a/b/c) promoted from `pending` to `implemented`; first baseline
-measurements captured in `docs/project-log/baseline-measurements-
-2026-04-17.md`).
+**Last reviewed:** 2026-04-18 (Session 3c — foundation-moment-2 gates
+(LT surface form + regenerate loop) promoted from `pending` to
+`implemented` now that Phase 4's hard-fail regeneration loop
+(FAIL_SET + bounded retry + `regeneration_events_v1.json` artefact)
+is in place. Earlier 2026-04-17 review (Session 2) promoted
+foundation-moment-1 gates (a/b/c).
 **Next quarterly review:** 2026-07-17.
 
 > **Quarterly review ritual.** On the date above, re-read this file
@@ -140,18 +142,35 @@ constructs with "and", that smuggle worked examples into the LT
 itself, or that use the wrong stem for the active
 `lt_statement_format`.
 
-**Gate scripts — status `pending`:**
+**Gate scripts — status `implemented` (Session 3c, 2026-04-18):**
 - `scripts/validity-gate/validate_lt_surface_form.py` — for each LT
-  in the output, check word count, format stem, single-construct (no
-  naive "and"-splitting of skill verbs), and no embedded example
-  markers.
-- `scripts/validity-gate/validate_regenerate_loop.py` — a **known
-  gap.** If any LT initially failed surface validation, Phase 4 is
-  supposed to regenerate it. At present, regeneration-on-failure is
-  not guaranteed to run. The gate script will assert, for any run
-  where Phase 4 emitted a regeneration event, that the final LT set
-  passes surface-form. Without regeneration, this gate will fail and
-  the loop becomes a tracked dev item.
+  in the output, checks word count (≤25), format stem
+  (`I can ` prefix for `i_can`; first-person rejection for
+  `outcome_statement` and `competency_descriptor`), single-construct
+  (naive "and"-splitting — acknowledged limit in the gate's
+  adjacent-mechanism declaration), and no embedded parenthetical
+  examples. FAIL_SET-gated so `POSSIBLE_COMPOUND` and
+  `LT_FORMAT_EXPECTATION_MISMATCH` ship as warnings, not failures.
+  Cross-references the regeneration-events artefact to identify
+  language-bypass cases — those still must pass surface-form (bypass
+  only excuses `SOURCE_FAITHFULNESS_FAIL`).
+- `scripts/validity-gate/validate_regenerate_loop.py` — reads
+  `<runId>_regeneration_events_v1.json` (Session 3c artefact) and
+  asserts every LT shipping with FAIL_SET flags has a matching
+  regeneration event with one of three outcomes: `success@*`
+  (cleaned by retry), `language_bypass_ship_flagged` (English-only
+  matcher on non-English source), or `exhausted_retries` /
+  `near_identical_retry_abort` (with matching entry in
+  `human_review_required`). Un-matched flagged LTs are surfaced as
+  gaps.
+
+Phase 4's regeneration loop backs both gates:
+`curriculum_harness/phases/phase4_lt_generation.py` defines
+`FAIL_SET`, `MAX_REGENERATION_RETRIES = 3`, and the
+`_generate_with_regen_loop` state machine. Retries carry prior
+attempt + fail flags into the prompt; near-identical retries abort
+early (`REGEN_NEAR_IDENTICAL_FLAG`); new flags introduced by a retry
+are surfaced (`REGEN_INTRODUCED_NEW_FLAG`).
 
 ### 3. Profile-conditional prompt scope
 
