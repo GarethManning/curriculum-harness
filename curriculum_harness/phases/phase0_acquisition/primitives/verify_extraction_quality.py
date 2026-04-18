@@ -185,8 +185,55 @@ _MODE_NAMES = {
 
 _RAW_CHECKS = frozenset({"whitespace_runs"})
 _NORMALISED_CHECKS = frozenset(
-    {"character_doubling", "repeated_bigram", "empty_line_ratio"}
+    {"character_doubling", "repeated_bigram", "empty_line_ratio", "completeness"}
 )
+
+
+def _completeness_check(
+    text: str, source_metrics: dict[str, Any]
+) -> dict[str, Any] | None:
+    """Compare extracted volume against a plausible expected range.
+
+    Returns a check entry, or ``None`` if no source metadata is
+    available to compute an expected range (in which case the check is
+    recorded in the verification trace as skipped by the caller).
+
+    HTML: expected chars scale with fetched byte count. Below 5 %
+    flagged, below 2 % failed. PDF: expected chars scale with pages
+    extracted, at 200 chars/page minimum; below 50 chars/page flagged,
+    below 20 chars/page failed.
+    """
+
+    chars = len(text)
+    pages = source_metrics.get("pages_extracted_count")
+    if pages is not None and pages > 0:
+        per_page = chars / pages
+        check = {
+            "name": "completeness",
+            "source_kind": "pdf",
+            "value": round(per_page, 1),
+            "threshold": 50,
+            "chars_total": chars,
+            "pages_extracted_count": pages,
+        }
+        check["passed"] = per_page >= 20
+        check["flagged"] = per_page < 50
+        return check
+    fetched_bytes = source_metrics.get("fetched_bytes")
+    if fetched_bytes is not None and fetched_bytes > 0:
+        ratio = chars / fetched_bytes
+        check = {
+            "name": "completeness",
+            "source_kind": "html",
+            "value": round(ratio, 4),
+            "threshold": 0.05,
+            "chars_total": chars,
+            "fetched_bytes": fetched_bytes,
+        }
+        check["passed"] = ratio >= 0.02
+        check["flagged"] = ratio < 0.05
+        return check
+    return None
 
 
 class VerifyExtractionQualityPrimitive:
@@ -372,6 +419,22 @@ class VerifyExtractionQualityPrimitive:
                 }
             )
 
+        completeness_skipped_reason: str | None = None
+        if self._runs_check("completeness"):
+            src_metrics = (
+                (previous.meta or {}).get("_source_metrics", {})
+                if previous is not None
+                else {}
+            )
+            c = _completeness_check(text, src_metrics)
+            if c is not None:
+                checks.append(c)
+            else:
+                completeness_skipped_reason = (
+                    "no source metadata (fetched_bytes or "
+                    "pages_extracted) available in executor accumulator"
+                )
+
         any_failed = any(not c["passed"] for c in checks)
         any_flagged = any(c.get("flagged") for c in checks)
 
@@ -391,6 +454,8 @@ class VerifyExtractionQualityPrimitive:
             "chars_in": len(text),
             "line_count": len(lines),
         }
+        if completeness_skipped_reason:
+            summary["completeness_skipped_reason"] = completeness_skipped_reason
         if sample_failures:
             summary["sample_failures"] = sample_failures
         meta: dict[str, Any] = {
@@ -399,6 +464,7 @@ class VerifyExtractionQualityPrimitive:
                 "mode": self.mode,
                 "checks": checks,
                 "sample_failures": sample_failures,
+                "completeness_skipped_reason": completeness_skipped_reason,
             }
         }
 

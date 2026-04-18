@@ -53,14 +53,17 @@ AP_4A1_CONTENT_HASH = (
 
 
 def _run_verifier(
-    text: str, **kwargs
+    text: str, *, source_metrics: dict | None = None, **kwargs
 ) -> PrimitiveResult:
     prim = VerifyExtractionQualityPrimitive(**kwargs)
 
     class _Scope:
         source_reference = "test"
 
-    return prim.run(_Scope(), PrimitiveResult(output=text))
+    previous = PrimitiveResult(output=text)
+    if source_metrics is not None:
+        previous.meta["_source_metrics"] = source_metrics
+    return prim.run(_Scope(), previous)
 
 
 def _check_by_name(checks: list[dict], name: str) -> dict:
@@ -183,6 +186,47 @@ def test_bigram_synthetic_failure() -> None:
     assert bg["passed"] is False, (
         "repeated_bigram must fail when a single word dominates the "
         "bigram distribution"
+    )
+
+
+def test_completeness_synthetic_html_extraction_too_thin() -> None:
+    # Construct the "extracted 20 chars out of a 10 KB HTML fetch" case.
+    # Under an expected-ratio threshold of 5 % flagged / 2 % failed on
+    # HTML sources, 20 chars ÷ 10,000 bytes = 0.2 % → failure.
+    text = "Unit 1 intro only."
+    src_metrics = {"fetched_bytes": 10_000}
+
+    result = _run_verifier(text, source_metrics=src_metrics, mode="normalised")
+
+    assert result.summary["verdict"] == "failed"
+    c = _check_by_name(result.summary["checks"], "completeness")
+    assert c["passed"] is False
+    assert c["source_kind"] == "html"
+
+
+def test_completeness_pdf_thin_extraction_fails() -> None:
+    # 10 chars extracted from a 20-page PDF = 0.5 chars/page, far below
+    # the 20-char/page failure threshold.
+    text = "Unit 1    "
+    src_metrics = {
+        "pages_extracted_count": 20,
+        "pages_extracted": [1, 20],
+    }
+
+    result = _run_verifier(text, source_metrics=src_metrics, mode="normalised")
+
+    assert result.summary["verdict"] == "failed"
+    c = _check_by_name(result.summary["checks"], "completeness")
+    assert c["passed"] is False
+    assert c["source_kind"] == "pdf"
+
+
+def test_completeness_skipped_when_no_source_metadata() -> None:
+    result = _run_verifier("Plenty of text here." * 50, mode="normalised")
+    names = [c["name"] for c in result.summary["checks"]]
+    assert "completeness" not in names
+    assert result.summary.get("completeness_skipped_reason"), (
+        "skip must be recorded in the verification trace"
     )
 
 

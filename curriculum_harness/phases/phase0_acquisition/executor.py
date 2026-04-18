@@ -88,8 +88,18 @@ def run_pipeline(
         detection_hash=detection_hash,
     )
 
+    # Running accumulator of source metrics sniffed from primitive
+    # summaries (fetched bytes, page counts). Injected into each
+    # primitive's ``previous.meta`` under ``_source_metrics`` so
+    # downstream primitives (notably ``verify_extraction_quality``'s
+    # completeness check) can consume them without every intervening
+    # primitive having to forward-propagate fields explicitly.
+    source_metrics: dict[str, Any] = {}
+
     previous: PrimitiveResult | None = None
     for prim in primitives:
+        if previous is not None:
+            previous.meta["_source_metrics"] = dict(source_metrics)
         entry = PrimitiveTraceEntry(
             primitive=prim.name,
             inputs=_primitive_inputs_summary(scope, prim),
@@ -144,6 +154,21 @@ def run_pipeline(
 
         entry.duration_ms = int((time.perf_counter() - t0) * 1000)
         entry.outputs_summary = dict(result.summary)
+
+        # Harvest source metrics from this primitive's summary so
+        # downstream primitives see an up-to-date accumulator.
+        summary = result.summary or {}
+        if "bytes" in summary and "fetched_bytes" not in source_metrics:
+            source_metrics["fetched_bytes"] = summary["bytes"]
+        if "pages_extracted" in summary:
+            pe = summary["pages_extracted"]
+            if isinstance(pe, (list, tuple)) and len(pe) == 2:
+                source_metrics["pages_extracted"] = list(pe)
+                source_metrics["pages_extracted_count"] = (
+                    int(pe[1]) - int(pe[0]) + 1
+                )
+        if "source_page_count" in summary:
+            source_metrics["source_page_count"] = summary["source_page_count"]
 
         if result.meta.get("encoding_detected") is not None:
             manifest.encoding_detected = result.meta["encoding_detected"]
