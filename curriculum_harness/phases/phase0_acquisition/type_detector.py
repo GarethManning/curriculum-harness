@@ -235,6 +235,24 @@ def _classify_pdf(body: bytes) -> DetectionResult:
         )
     except Exception as exc:  # noqa: BLE001
         signals["pdf_parse_error"] = str(exc)
+        # Valid-PDF-magic body that pypdf cannot parse is usually a
+        # truncated head-fetch of a large PDF (detector reads ~200 KB;
+        # typical CED-sized PDFs are 5 MB+). Fall back to the
+        # conservative flat-PDF route with low confidence rather than
+        # ``unknown``, since the PDF bytes were recognised on fetch and
+        # the flat-PDF sequence fetches the full file itself.
+        if body[:5] == b"%PDF-":
+            return DetectionResult(
+                source_type="flat_pdf_linear",
+                confidence="low",
+                rationale=(
+                    "PDF magic present but pypdf could not parse the "
+                    f"truncated head fetch ({exc}). Defaulting to "
+                    "flat_pdf_linear; upgrade to multi_section_pdf in a "
+                    "later session."
+                ),
+                signals=signals,
+            )
         return DetectionResult(
             source_type="unknown",
             confidence="low",
