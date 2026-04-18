@@ -1,0 +1,2841 @@
+{
+  "gate": "validate_source_coverage",
+  "run_dir": "outputs/ontario_grade7_history",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_source_items": 237,
+  "covered": 3,
+  "orphan_count": 234,
+  "coverage_pct": 1.3,
+  "orphans": [
+    {
+      "provenance": "source_bullets.sb_001 (marker_bullet)",
+      "text": "How did contact between Europeans and Indigenous peoples change the societies of both groups?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_002 (marker_bullet)",
+      "text": "What was the nature of relationships between different groups during this period?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_003 (marker_bullet)",
+      "text": "What were the impacts of colonialism on Indigenous peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_005 (marker_bullet)",
+      "text": "Constructing and analysing maps showing the routes of explorers and fur traders (see, e.g., A3.3)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_006 (marker_bullet)",
+      "text": "Using maps to understand the spatial relationships between different groups and regions (see, e.g., A3.4)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_007 (marker_bullet)",
+      "text": "Constructing maps to represent findings from historical inquiries (see, e.g., A2.5)",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_008 (marker_bullet)",
+      "text": "How did power dynamics and conflict shape the development of Canada between 1800 and 1850?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_009 (marker_bullet)",
+      "text": "How did different groups respond to the challenges they faced?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_010 (marker_bullet)",
+      "text": "What was the significance of Indigenous resistance movements during this period?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_011 (marker_bullet)",
+      "text": "Constructing and analysing maps showing the territories involved in conflicts and resistance movements (see, e.g., B3.2, B3.4)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_012 (marker_bullet)",
+      "text": "Using maps to understand the geographic context of historical events (see, e.g., B3.3)",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_013 (numbered_outcome)",
+      "text": "A1.1 describe some of the central values, world views, and ways of life of some First Nations, Métis, and Inuit peoples in what would eventually become Canada in the period prior to and around 1713 (e.g., spiritual beliefs and practices, relationships with the land and environment, forms of governance, social structures, gender roles, trade relationships, hunting and harvesting practices; examples could include the societies of the Haudenosaunee, Anishinaabe, Mi'kmaq, Tlingit, Kwakwaka'wakw, Inuit, or Métis)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1154
+    },
+    {
+      "provenance": "source_bullets.sb_014 (marker_bullet)",
+      "text": "What were some central values and world views of Inuit in the eighteenth century? What are some ways in which these values and world views are reflected in present-day Inuit communities?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_015 (marker_bullet)",
+      "text": "How did the Haudenosaunee govern themselves? What decisions were women make in their communities? What role did the longhouse play in Haudenosaunee society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_016 (marker_bullet)",
+      "text": "How did trade function within and among First Nations communities prior to European contact?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0952
+    },
+    {
+      "provenance": "source_bullets.sb_017 (marker_bullet)",
+      "text": "What was the significance of the buffalo/bison to the peoples of the Great Plains?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_018 (numbered_outcome)",
+      "text": "A1.2 describe some of the key aspects of European societies during the period from 1713 to approximately 1800 that influenced their interactions with Indigenous peoples (e.g., economic systems based on the accumulation of wealth and private property; political systems based on the concept of nation-states; religious beliefs, particularly those of Christian missionaries; technological advancements; the desire to expand territorial control; ideas about \"civilization\" and racial superiority)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0889
+    },
+    {
+      "provenance": "source_bullets.sb_019 (marker_bullet)",
+      "text": "What were some of the economic and political systems in Europe during this period that motivated European exploration and settlement in North America?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.2222
+    },
+    {
+      "provenance": "source_bullets.sb_020 (marker_bullet)",
+      "text": "How did European religious beliefs influence interactions between Europeans and Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_021 (marker_bullet)",
+      "text": "What ideas about \"civilization\" and \"progress\" did Europeans bring to North America? How did these ideas affect their interactions with Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_022 (numbered_outcome)",
+      "text": "A1.3 analyse the nature of early relationships and interactions between Indigenous peoples and French and British settlers in the period from 1713 to approximately 1800 (e.g., the fur trade, military alliances, the negotiation and signing of treaties, mixed marriages, shared knowledge and practices), and describe how these relationships changed over time",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.0645
+    },
+    {
+      "provenance": "source_bullets.sb_023 (marker_bullet)",
+      "text": "What was the nature of the fur trade? Who benefited most from the fur trade? How did the fur trade affect Indigenous societies?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_024 (marker_bullet)",
+      "text": "What role did Indigenous allies play in the conflicts between France and Britain in North America?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_025 (marker_bullet)",
+      "text": "How did relationships between Indigenous peoples and settlers change over time? Why did they change?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_026 (marker_bullet)",
+      "text": "What was the purpose of treaties? Who signed treaties and why? What did Indigenous peoples hope to gain from treaties?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_027 (numbered_outcome)",
+      "text": "A1.4 describe some of the impacts of European contact, colonization, and settlement on Indigenous peoples, their societies, and their environments (e.g., the introduction of new diseases, trade goods, and technologies; changes to hunting and harvesting practices; forced displacement from traditional territories; impacts on social and political structures; environmental degradation; the beginning of the residential school system; spiritual and cultural disruption; experiences of racism; loss of languages; loss of autonomy and self-determination)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.102
+    },
+    {
+      "provenance": "source_bullets.sb_028 (marker_bullet)",
+      "text": "What were some of the major short- and long-term consequences for the Haudenosaunee and Anishinaabe people of contact with European explorers and settlers?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0476
+    },
+    {
+      "provenance": "source_bullets.sb_029 (marker_bullet)",
+      "text": "How did the fur trade change the way Indigenous peoples hunted and harvested?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_030 (marker_bullet)",
+      "text": "How did colonization affect the relationship between Indigenous peoples and the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_031 (marker_bullet)",
+      "text": "What was the Indian Act? How did it affect Indigenous peoples' autonomy and self-determination?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_032 (numbered_outcome)",
+      "text": "A2.1 formulate questions to guide investigations into some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., What factors led to Pontiac's Resistance? How successful was this resistance? Why is it significant for First Nations? What were the causes and consequences of the fur trade for different groups? How did the British Conquest affect First Nations and French Canadians differently? Why is the Treaty of Niagara significant?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1522
+    },
+    {
+      "provenance": "source_bullets.sb_033 (marker_bullet)",
+      "text": "What questions about this period would help you understand the experiences of different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_034 (marker_bullet)",
+      "text": "What concepts of historical thinking might help guide your inquiry?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_035 (numbered_outcome)",
+      "text": "A2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., letters, diaries, fur trade documents, treaties, maps, paintings, photographs, oral histories from Elders or Knowledge Keepers, documentaries, websites created by First Nations, Métis, and Inuit communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1569
+    },
+    {
+      "provenance": "source_bullets.sb_036 (marker_bullet)",
+      "text": "What types of sources might help you understand the perspectives of different groups during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_037 (marker_bullet)",
+      "text": "How might you determine if a source is credible and reliable?",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0583
+    },
+    {
+      "provenance": "source_bullets.sb_038 (marker_bullet)",
+      "text": "What perspectives might be missing from the sources you have found?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_039 (numbered_outcome)",
+      "text": "A2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., determine the reliability and bias of sources; identify multiple perspectives on an event or issue; analyse the impacts of an event or development on different groups; make connections between historical events and present-day issues)",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.2667
+    },
+    {
+      "provenance": "source_bullets.sb_040 (marker_bullet)",
+      "text": "What does this source tell you about the beliefs and values of the person who created it?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_041 (marker_bullet)",
+      "text": "Whose perspective is represented in this source? Whose perspective might be missing?",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_042 (marker_bullet)",
+      "text": "How might the same event be described differently by people from different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_043 (numbered_outcome)",
+      "text": "A2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., make judgements about the significance of events; assess the validity of historical interpretations; reach conclusions supported by evidence)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.175
+    },
+    {
+      "provenance": "source_bullets.sb_044 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what conclusions can you draw about this historical event or issue?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_045 (marker_bullet)",
+      "text": "How might the conclusions of historians differ, and why?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0648
+    },
+    {
+      "provenance": "source_bullets.sb_046 (marker_bullet)",
+      "text": "What new questions does your investigation raise?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_047 (numbered_outcome)",
+      "text": "A2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats (e.g., an oral presentation; a written report; a map; a timeline; a poster; a dramatic presentation; a multimedia presentation)",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.0809
+    },
+    {
+      "provenance": "source_bullets.sb_048 (numbered_outcome)",
+      "text": "B1.1 describe some of the social attitudes that led to the forced removal and displacement of First Nations and Métis communities (e.g., beliefs in European/British superiority, the concept of terra nullius, the desire for territorial expansion, racism) and the impacts of these attitudes on Indigenous peoples and their environments",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_049 (marker_bullet)",
+      "text": "What social attitudes were reflected in the forced removal of First Nations and Métis communities on the arrival of Loyalists or European immigrants?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_050 (marker_bullet)",
+      "text": "What was \"terra nullius\" and how was this concept used to justify the displacement of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_051 (marker_bullet)",
+      "text": "How did colonial expansion affect the territories and ways of life of different Indigenous groups?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_052 (numbered_outcome)",
+      "text": "B1.2 describe the Indian Act and some of its major impacts on First Nations peoples (e.g., the imposition of the reserve system, restrictions on self-governance, the regulation of hunting and harvesting, the removal of children to residential schools, gender discrimination, the loss of Indian status through enfranchisement)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0857
+    },
+    {
+      "provenance": "source_bullets.sb_053 (marker_bullet)",
+      "text": "What was the Indian Act? When was it passed? How did it affect First Nations peoples' control over their territories and their ways of life?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1364
+    },
+    {
+      "provenance": "source_bullets.sb_054 (marker_bullet)",
+      "text": "How did the Indian Act restrict First Nations peoples' rights and freedoms?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_055 (marker_bullet)",
+      "text": "What was the residential school system? Why was it established? What impact did it have on First Nations peoples and their cultures?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_056 (numbered_outcome)",
+      "text": "B1.3 describe some of the ways in which Métis communities adapted to changes in the fur trade and territorial expansion (e.g., development of distinct cultural practices and identities, establishment of settlements, economic diversification, participation in the fur trade as middlemen)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0662
+    },
+    {
+      "provenance": "source_bullets.sb_057 (marker_bullet)",
+      "text": "How did Métis communities develop and maintain their distinct identities?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_058 (marker_bullet)",
+      "text": "How did Métis peoples respond to changes in the fur trade?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_059 (marker_bullet)",
+      "text": "What role did Métis peoples play in the fur trade and in settlement patterns in what would eventually become Canada?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_060 (numbered_outcome)",
+      "text": "B1.4 describe some of the experiences of Inuit in this period, including their interactions with European traders and whalers, and their responses to these interactions (e.g., trade relationships, disease, environmental changes, cultural adaptation, resistance)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_061 (marker_bullet)",
+      "text": "How did interactions with European whalers and traders affect Inuit societies?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_062 (marker_bullet)",
+      "text": "What were some of the impacts of the whaling industry on Inuit peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_063 (marker_bullet)",
+      "text": "How did Inuit adapt to and resist changes brought about by European contact?",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_064 (numbered_outcome)",
+      "text": "B2.1 formulate questions to guide investigations into some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850 (e.g., What were some of the key social, economic, and political issues that led to the Rebellions of 1837–38? What impact did the Indian Act have on different First Nations? How did the residential school system develop and what was its impact on Indigenous peoples? Why did the Métis resist colonial expansion?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1458
+    },
+    {
+      "provenance": "source_bullets.sb_065 (marker_bullet)",
+      "text": "What questions about conflict and resistance during this period would help you understand different groups' experiences?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_066 (marker_bullet)",
+      "text": "How might the concepts of historical thinking help guide your inquiry?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_067 (numbered_outcome)",
+      "text": "B2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.2121
+    },
+    {
+      "provenance": "source_bullets.sb_068 (marker_bullet)",
+      "text": "What types of sources might help you understand the causes and impacts of conflict during this period?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_069 (marker_bullet)",
+      "text": "How might you find sources that represent the perspectives of Indigenous peoples during this period?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_070 (numbered_outcome)",
+      "text": "B2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the causes and consequences of conflicts; identify the perspectives of different groups; understand the impact of policies and events on different communities; make connections to present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2414
+    },
+    {
+      "provenance": "source_bullets.sb_071 (marker_bullet)",
+      "text": "How might perspectives on a particular conflict or event differ depending on the group's position during the period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_072 (marker_bullet)",
+      "text": "What do these sources tell you about the values and beliefs of different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_073 (numbered_outcome)",
+      "text": "B2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.2333
+    },
+    {
+      "provenance": "source_bullets.sb_074 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major causes of conflict during this period?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_075 (marker_bullet)",
+      "text": "What were the short- and long-term impacts of these conflicts on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_076 (numbered_outcome)",
+      "text": "B2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_077 (numbered_outcome)",
+      "text": "B3.1 analyse the significance of some key events and developments of this period for different groups (e.g., the Rebellions of 1837–38, the passage of the Indian Act, the establishment of the residential school system, the negotiation of treaties)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_078 (marker_bullet)",
+      "text": "Why was the Battle of Saint-Eustache significant to French Canadians?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0153
+    },
+    {
+      "provenance": "source_bullets.sb_079 (marker_bullet)",
+      "text": "What impact did the Indian Act have on the long-term development of Canada and on Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_080 (numbered_outcome)",
+      "text": "B3.2 describe some of the ways in which Indigenous peoples resisted colonization and the loss of their territories and autonomy (e.g., Pontiac's Resistance, the Iroquois Confederacy's diplomatic efforts, the Métis resistance movements, the role of leaders like Joseph Brant, Tecumseh, and Gabriel Dumont)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_081 (marker_bullet)",
+      "text": "What strategies did Indigenous peoples use to resist colonial expansion?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_082 (marker_bullet)",
+      "text": "Why do you think Indigenous resistance was ultimately unsuccessful?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_083 (marker_bullet)",
+      "text": "What does Indigenous resistance tell us about Indigenous peoples' determination to maintain their ways of life?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_084 (numbered_outcome)",
+      "text": "B3.3 describe the experiences of different groups during this period, and explain how their experiences were shaped by factors such as gender, race, class, and geographic location (e.g., the experiences of enslaved and free African Americans in Upper Canada; the experiences of women in Indigenous and settler communities; the experiences of poor and wealthy settlers)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0857
+    },
+    {
+      "provenance": "source_bullets.sb_085 (marker_bullet)",
+      "text": "How did the experiences of women differ between Indigenous and settler communities?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_086 (marker_bullet)",
+      "text": "What were the experiences of people of African descent in Upper Canada during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_087 (marker_bullet)",
+      "text": "How did geographic location affect people's experiences and opportunities?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_088 (numbered_outcome)",
+      "text": "B3.4 make connections between historical developments and events of this period and contemporary Indigenous issues and concerns (e.g., connections between the Indian Act and contemporary issues of Indigenous governance and sovereignty; connections between residential schools and the Sixties Scoop; connections between the loss of traditional territories and contemporary land claims and environmental issues; connections between the disruption of cultures and contemporary health and social issues in Indigenous communities)",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1579
+    },
+    {
+      "provenance": "source_bullets.sb_089 (marker_bullet)",
+      "text": "How do the impacts of the Indian Act continue to affect First Nations peoples today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2667
+    },
+    {
+      "provenance": "source_bullets.sb_090 (marker_bullet)",
+      "text": "What connections can you make between residential schools and contemporary issues in Indigenous communities?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_091 (marker_bullet)",
+      "text": "How do historical land claims relate to contemporary environmental issues?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_092 (marker_bullet)",
+      "text": "What factors led to Confederation?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0272
+    },
+    {
+      "provenance": "source_bullets.sb_093 (marker_bullet)",
+      "text": "How did westward expansion affect different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_094 (marker_bullet)",
+      "text": "What was the significance of key events and developments during this period?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_095 (marker_bullet)",
+      "text": "Constructing and analysing maps showing territorial changes (see, e.g., A3.2)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_096 (marker_bullet)",
+      "text": "Using maps to show the progression of westward expansion (see, e.g., A3.3)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_097 (marker_bullet)",
+      "text": "How did industrialization and immigration change Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_098 (marker_bullet)",
+      "text": "What social movements and reforms emerged during this period?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_099 (marker_bullet)",
+      "text": "How did these changes affect different groups, including Indigenous peoples?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_100 (marker_bullet)",
+      "text": "Using maps to show patterns of immigration and settlement (see, e.g., B3.5)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_101 (numbered_outcome)",
+      "text": "A1.1 analyse some of the factors that led to Confederation, including political, economic, and social reasons, and assess the importance of these factors (e.g., desire for political stability, economic advantages of union, the threat of American expansion, internal conflicts within colonies, the desire to pursue westward expansion, British political pressure)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_102 (marker_bullet)",
+      "text": "What order of importance would you assign to the various factors that led to Confederation? What criteria would you use to determine the ranking of these factors?",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_103 (marker_bullet)",
+      "text": "How did the threat of American expansion influence the push for Confederation?",
+      "best_lt": "I can analyze how my cultural background and personal experiences influence my interpretation of historical events and sources.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_104 (marker_bullet)",
+      "text": "How did economic factors contribute to the decision to pursue Confederation?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_105 (numbered_outcome)",
+      "text": "A1.2 describe some of the different perspectives on Confederation held by various groups at the time (e.g., French Canadians, English Canadians, First Nations, Métis, women, business leaders, farmers, workers)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1613
+    },
+    {
+      "provenance": "source_bullets.sb_106 (marker_bullet)",
+      "text": "What were the different perspectives on Confederation among various groups in Canada?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_107 (marker_bullet)",
+      "text": "Why might different groups have had different views about Confederation?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_108 (marker_bullet)",
+      "text": "Were the concerns of all groups considered in the process of Confederation?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_109 (numbered_outcome)",
+      "text": "A1.3 analyse the impacts of Confederation and westward expansion on First Nations, Métis, and Inuit peoples (e.g., the imposition of the Indian Act, the reserve system, the residential school system, the loss of traditional territories, the disruption of traditional ways of life, the restriction of hunting and harvesting rights, the marginalization of Métis communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1795
+    },
+    {
+      "provenance": "source_bullets.sb_110 (marker_bullet)",
+      "text": "How did the Indian Act affect the lives of First Nations peoples?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_111 (marker_bullet)",
+      "text": "What was the residential school system and what were its impacts on Indigenous families and communities?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_112 (marker_bullet)",
+      "text": "How were Métis communities affected by westward expansion and the policies of the new Canadian government?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_113 (marker_bullet)",
+      "text": "How did colonialism affect the relationship between Indigenous peoples and the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1353
+    },
+    {
+      "provenance": "source_bullets.sb_114 (numbered_outcome)",
+      "text": "A1.4 describe some of the factors that contributed to the development of Canada as a nation during this period (e.g., the completion of the Canadian Pacific Railway, the expansion of settlements to the west, the negotiation of treaties, the development of a national government and institutions, the establishment of provincial governments)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_115 (marker_bullet)",
+      "text": "What role did the Canadian Pacific Railway play in the development of Canada?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.0341
+    },
+    {
+      "provenance": "source_bullets.sb_116 (marker_bullet)",
+      "text": "How did the negotiation of treaties contribute to the development of Canada?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_117 (marker_bullet)",
+      "text": "What institutions were established to govern the new nation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_118 (numbered_outcome)",
+      "text": "A2.1 formulate questions to guide investigations into some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., What order of importance would you assign to the various factors that led to Confederation? How did the colonialist policies of the new Canadian government have an impact on First Nations, Métis, and Inuit individuals and communities? What was the residential school system and what were its impacts?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_119 (marker_bullet)",
+      "text": "What questions about this period would help you understand how Canada developed as a nation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_120 (marker_bullet)",
+      "text": "What questions about the impacts of colonialism would help you understand the experiences of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_121 (numbered_outcome)",
+      "text": "A2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., government documents, letters, diaries, newspapers, photographs, maps, treaties, oral histories, documentaries, websites created by First Nations, Métis, and Inuit communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1591
+    },
+    {
+      "provenance": "source_bullets.sb_122 (marker_bullet)",
+      "text": "What types of sources would help you understand the perspectives of different groups during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_123 (marker_bullet)",
+      "text": "How might you find sources that represent the voices of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_124 (marker_bullet)",
+      "text": "What challenges might you face in finding diverse perspectives on historical events?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_125 (numbered_outcome)",
+      "text": "A2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the impacts of Confederation and westward expansion on different groups; identify multiple perspectives on the Indian Act and the residential school system; make connections between historical policies and present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_126 (marker_bullet)",
+      "text": "How do the sources you have found reflect different perspectives on Confederation or westward expansion?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_127 (marker_bullet)",
+      "text": "What do historical documents tell you about the attitudes and beliefs of people during this period?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_128 (numbered_outcome)",
+      "text": "A2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., assess the impacts of policies on different groups; reach conclusions about the significance of historical events; evaluate the validity of different historical interpretations)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_129 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major impacts of Confederation and westward expansion on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_130 (marker_bullet)",
+      "text": "What were the short- and long-term consequences of the policies implemented during this period?",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_131 (numbered_outcome)",
+      "text": "A2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats (e.g., a written report, an oral presentation, a map, a timeline, a poster, a dramatic presentation, a multimedia presentation)",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.0809
+    },
+    {
+      "provenance": "source_bullets.sb_132 (numbered_outcome)",
+      "text": "A3.1 describe the key features of Confederation and some of the ways in which the development of Canadian institutions and government reflected the values and interests of dominant groups in society (e.g., the role of the British monarchy, the federal system, the Constitution Act, 1867, the exclusion of Indigenous peoples from decision-making, the exclusion of women and non-property owners from political participation, the dominance of English and French languages in government and institutions)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.093
+    },
+    {
+      "provenance": "source_bullets.sb_133 (marker_bullet)",
+      "text": "What were the key features of Confederation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.022
+    },
+    {
+      "provenance": "source_bullets.sb_134 (marker_bullet)",
+      "text": "Whose values and interests were reflected in the structure of Canadian government?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_135 (marker_bullet)",
+      "text": "Who was excluded from participating in government and political life?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_136 (numbered_outcome)",
+      "text": "A3.2 describe the impacts of the numbered treaties on First Nations, Métis, and Inuit peoples, and analyse the continuing impacts of these treaties on Indigenous peoples today (e.g., the surrender of vast territories, the establishment of reserves, restrictions on hunting and harvesting, the promise of education and healthcare that was often not fulfilled, the impact on Indigenous sovereignty and self-determination, contemporary land claims and resource rights)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1364
+    },
+    {
+      "provenance": "source_bullets.sb_137 (marker_bullet)",
+      "text": "What were the key provisions of the numbered treaties?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_138 (marker_bullet)",
+      "text": "How did the treaties affect Indigenous peoples' relationship with the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_140 (marker_bullet)",
+      "text": "What are some of the contemporary issues related to treaties and Indigenous rights?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_141 (numbered_outcome)",
+      "text": "A3.3 describe some of the ways in which the residential school system was established and operated (e.g., the goals of assimilation and the \"killing of the Indian to save the child\" mentality; the separation of children from families and communities; the prohibition of Indigenous languages and cultural practices; the physical, emotional, and sexual abuse of children; the poor conditions in schools; the forced labour of students)",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_142 (marker_bullet)",
+      "text": "What were the goals of the residential school system?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1111
+    },
+    {
+      "provenance": "source_bullets.sb_143 (marker_bullet)",
+      "text": "What were the impacts of residential schools on Indigenous children and families?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_144 (marker_bullet)",
+      "text": "How did residential schools attempt to assimilate Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_145 (marker_bullet)",
+      "text": "What are some of the intergenerational impacts of the residential school system?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_146 (numbered_outcome)",
+      "text": "A3.4 analyse the significance of westward expansion for the development of Canada and its continuing impacts on Indigenous peoples (e.g., the displacement of Indigenous peoples from their territories, the destruction of ecosystems, the disruption of traditional ways of life, the establishment of agricultural settlements, the construction of railways, the exploitation of natural resources, the marginalization of Indigenous peoples in the new nation)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0842
+    },
+    {
+      "provenance": "source_bullets.sb_147 (marker_bullet)",
+      "text": "What was the significance of westward expansion in the development of Canada?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0292
+    },
+    {
+      "provenance": "source_bullets.sb_148 (marker_bullet)",
+      "text": "What were the impacts of westward expansion on Indigenous peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_149 (marker_bullet)",
+      "text": "How do the impacts of westward expansion continue to affect Indigenous communities today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_150 (numbered_outcome)",
+      "text": "A3.5 describe some of the ways in which Indigenous peoples resisted colonialism and the impacts of colonialism during this period (e.g., the refusal to accept imposed policies, the maintenance of cultural practices, the pursuit of education, the participation in political advocacy, the development of organizations to promote Indigenous rights, the role of leaders in resistance movements)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_151 (marker_bullet)",
+      "text": "How did Indigenous peoples resist the policies of the Canadian government during this period?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_152 (marker_bullet)",
+      "text": "What were some of the ways in which Indigenous peoples maintained their cultures and identities despite assimilation policies?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_153 (marker_bullet)",
+      "text": "What role did Indigenous leaders play in resistance movements?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_154 (numbered_outcome)",
+      "text": "B1.1 analyse some of the factors that contributed to social change during this period (e.g., industrialization, urbanization, immigration, the rise of labour movements, the emergence of women's movements, the expansion of education, technological advancements, changing attitudes about government's role in society)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_155 (marker_bullet)",
+      "text": "What were the major factors that contributed to social change during this period?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_156 (marker_bullet)",
+      "text": "How did industrialization transform Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_157 (marker_bullet)",
+      "text": "What role did immigration play in shaping Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_158 (numbered_outcome)",
+      "text": "B1.2 describe the experiences of various groups during this period, including First Nations, Métis, and Inuit peoples, and analyse the impacts of social change on these groups (e.g., the continued impacts of the residential school system, the restriction of Indigenous political participation, the exploitation of resources on Indigenous lands, the experiences of immigrant workers, the conditions of factory workers, the changing roles of women)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1591
+    },
+    {
+      "provenance": "source_bullets.sb_159 (marker_bullet)",
+      "text": "What were some of the educational experiences of First Nations people during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1765
+    },
+    {
+      "provenance": "source_bullets.sb_160 (marker_bullet)",
+      "text": "How were the educational experiences of First Nations people during this period similar to and different from those of First Nations people today?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.15
+    },
+    {
+      "provenance": "source_bullets.sb_161 (marker_bullet)",
+      "text": "What were the experiences of immigrant workers during this period of industrialization?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_162 (numbered_outcome)",
+      "text": "B1.3 describe some of the environmental challenges that different groups faced during this period, and analyse the impacts of industrial and agricultural development on the environment and on Indigenous peoples (e.g., deforestation, water pollution, the destruction of wildlife habitats, the impact on traditional hunting and harvesting, the building of dams, soil degradation, air pollution)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0789
+    },
+    {
+      "provenance": "source_bullets.sb_163 (marker_bullet)",
+      "text": "What challenges would Ukrainian immigrants have faced on the Prairies at the end of the nineteenth century?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0318
+    },
+    {
+      "provenance": "source_bullets.sb_164 (marker_bullet)",
+      "text": "How did climate and landforms affect settlement patterns?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_165 (marker_bullet)",
+      "text": "Do similar challenges still exist today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_166 (marker_bullet)",
+      "text": "How did industrial development affect the environment and Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_167 (numbered_outcome)",
+      "text": "B1.4 describe some of the key social and political movements that emerged during this period (e.g., labour movements, women's rights movements, temperance movements, conservation movements), and analyse their impacts on Canadian society",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.1111
+    },
+    {
+      "provenance": "source_bullets.sb_168 (marker_bullet)",
+      "text": "What were some of the major concerns of women's rights groups at the turn of the century?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_169 (marker_bullet)",
+      "text": "Which women did women's rights groups at this time represent?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_170 (marker_bullet)",
+      "text": "Who was included and who was excluded?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0278
+    },
+    {
+      "provenance": "source_bullets.sb_171 (marker_bullet)",
+      "text": "What were some of the goals of labour movements during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_172 (numbered_outcome)",
+      "text": "B2.1 formulate questions to guide investigations into some significant events, developments, and/or issues during the period from 1890 to 1914 (e.g., What impact did industrialization have on Canadian society? How did women's roles and rights change during this period? How did the residential school system continue to affect Indigenous communities? What were the experiences of immigrants during this period of rapid change?)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_173 (marker_bullet)",
+      "text": "What questions about this period would help you understand how Canadian society changed?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_174 (marker_bullet)",
+      "text": "What questions would help you understand the experiences of different groups during this period of change?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_175 (numbered_outcome)",
+      "text": "B2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues during the period from 1890 to 1914",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.1739
+    },
+    {
+      "provenance": "source_bullets.sb_176 (marker_bullet)",
+      "text": "What types of sources would help you understand how different groups experienced social change during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_177 (marker_bullet)",
+      "text": "How might you find sources that represent multiple perspectives on the issues of this period?",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_178 (numbered_outcome)",
+      "text": "B2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the causes and impacts of social change; identify multiple perspectives on issues; understand the experiences of different groups; make connections to present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_179 (marker_bullet)",
+      "text": "How might different groups have experienced and responded to industrialization?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_180 (numbered_outcome)",
+      "text": "B2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues during the period from 1890 to 1914",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.1765
+    },
+    {
+      "provenance": "source_bullets.sb_181 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major impacts of social change on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_182 (marker_bullet)",
+      "text": "What were the short- and long-term consequences of the social movements that emerged during this period?",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0623
+    },
+    {
+      "provenance": "source_bullets.sb_183 (numbered_outcome)",
+      "text": "B3.1 describe the continuing impacts of the residential school system on Indigenous peoples and communities today (e.g., the intergenerational trauma and health issues that result from the trauma experienced in residential schools, the loss of languages and cultural knowledge, the disruption of parenting practices and family relationships, the overrepresentation of Indigenous youth in the child welfare system, the overrepresentation of Indigenous peoples in the criminal justice system, ongoing efforts toward healing and reconciliation)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1136
+    },
+    {
+      "provenance": "source_bullets.sb_184 (marker_bullet)",
+      "text": "What were the long-term impacts of the residential school system on Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.3077
+    },
+    {
+      "provenance": "source_bullets.sb_185 (marker_bullet)",
+      "text": "How do the impacts of residential schools continue to affect Indigenous communities today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_186 (marker_bullet)",
+      "text": "What are some of the ways in which Indigenous communities are working toward healing and reconciliation?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_187 (numbered_outcome)",
+      "text": "B3.2 analyse the significance of key events and developments of this period for the development of Canada and for different groups in Canadian society (e.g., industrialization, urbanization, immigration, labour movements, women's rights movements, the role of the residential school system)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.129
+    },
+    {
+      "provenance": "source_bullets.sb_188 (marker_bullet)",
+      "text": "How did industrialization change Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_189 (marker_bullet)",
+      "text": "What was the significance of labour and women's rights movements?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0262
+    },
+    {
+      "provenance": "source_bullets.sb_190 (marker_bullet)",
+      "text": "How did immigration contribute to the development of Canada?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0336
+    },
+    {
+      "provenance": "source_bullets.sb_191 (numbered_outcome)",
+      "text": "B3.3 describe some of the ways in which individuals and groups responded to social change during this period through social movements and political action (e.g., labour organizations, women's suffrage movements, Indigenous resistance, immigrant communities establishing cultural institutions)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_192 (marker_bullet)",
+      "text": "How did workers respond to poor working conditions?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0287
+    },
+    {
+      "provenance": "source_bullets.sb_193 (marker_bullet)",
+      "text": "How did women organize to gain political rights?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_194 (marker_bullet)",
+      "text": "How did Indigenous peoples respond to the continued impacts of colonialism?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_195 (numbered_outcome)",
+      "text": "B3.4 explain some of the ways in which the developments, events, and issues of this period continue to affect Canadian society today (e.g., the structure and role of labour unions, gender roles and women's rights, Indigenous sovereignty and self-determination, immigration policy and multiculturalism, environmental protection, the role of government in society)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1081
+    },
+    {
+      "provenance": "source_bullets.sb_196 (marker_bullet)",
+      "text": "How do labour movements of the past continue to affect workers today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_197 (marker_bullet)",
+      "text": "How have women's rights and gender roles continued to evolve since this period?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0558
+    },
+    {
+      "provenance": "source_bullets.sb_198 (marker_bullet)",
+      "text": "How do historical injustices toward Indigenous peoples continue to affect them today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_199 (marker_bullet)",
+      "text": "How do immigration policies and attitudes from this period continue to influence Canada today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_200 (numbered_outcome)",
+      "text": "B3.5 describe some of the immigration patterns during this period and analyse the impacts of immigration on Canadian society (e.g., patterns of immigration to different regions, reasons for immigration, the contributions of immigrants to Canadian development, the discrimination and prejudice faced by immigrants, the establishment of immigrant communities and institutions)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_201 (marker_bullet)",
+      "text": "Where did immigrants come from during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_202 (marker_bullet)",
+      "text": "Why did they immigrate to Canada?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0262
+    },
+    {
+      "provenance": "source_bullets.sb_203 (marker_bullet)",
+      "text": "What were some of the contributions of immigrants to Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_204 (marker_bullet)",
+      "text": "What discrimination and prejudice did immigrants face?",
+      "best_lt": "I can analyze how my cultural background and personal experiences influence my interpretation of historical events and sources.",
+      "best_score": 0.035
+    },
+    {
+      "provenance": "source_bullets.sb_205 (marker_bullet)",
+      "text": "How did immigrant communities maintain their cultures and identities?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0528
+    },
+    {
+      "provenance": "source_bullets.sb_206 (numbered_outcome)",
+      "text": "B3.6 analyse the significance of key individuals and groups who contributed to shaping Canada during this period (e.g., business leaders, political leaders, labour organizers, women's rights advocates, Indigenous leaders, immigrant community leaders, environmental activists)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_207 (marker_bullet)",
+      "text": "What impact did Clifford Sifton's immigration policies and strategies have on Canadian heritage and identity?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_208 (marker_bullet)",
+      "text": "How did Indigenous leaders respond to and resist government policies?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_209 (marker_bullet)",
+      "text": "Who were some of the key figures in labour and women's rights movements?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.028
+    },
+    {
+      "provenance": "source_bullets.sb_210 (topic_statement)",
+      "text": "This section provides an overview of the history curriculum for Grades 7 and 8, outlining the key topics, concepts, and themes that students will explore during these grades.",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0623
+    },
+    {
+      "provenance": "source_bullets.sb_211 (marker_bullet)",
+      "text": "New France and British North America, 1713–1800",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0311
+    },
+    {
+      "provenance": "source_bullets.sb_212 (marker_bullet)",
+      "text": "Canada, 1800–1850: Conflict and Challenges",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0255
+    },
+    {
+      "provenance": "source_bullets.sb_213 (marker_bullet)",
+      "text": "Creating Canada, 1850–1890",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0267
+    },
+    {
+      "provenance": "source_bullets.sb_214 (marker_bullet)",
+      "text": "Canada, 1890–1914: A Changing Society",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_215 (marker_bullet)",
+      "text": "Colonialism and its impacts on Indigenous peoples",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_216 (marker_bullet)",
+      "text": "The development of Canada as a nation",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_217 (marker_bullet)",
+      "text": "Conflict and cooperation between diverse groups",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_218 (marker_bullet)",
+      "text": "Social change and reform movements",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_219 (marker_bullet)",
+      "text": "The importance of understanding diverse perspectives",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_220 (marker_bullet)",
+      "text": "The continuing impacts of historical events on contemporary society",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.3077
+    },
+    {
+      "provenance": "source_bullets.sb_221 (marker_bullet)",
+      "text": "Historical Significance: Understanding the importance of events, developments, and people in history",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_222 (marker_bullet)",
+      "text": "Cause and Consequence: Understanding the factors that led to events and their impacts",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_223 (marker_bullet)",
+      "text": "Continuity and Change: Understanding what has stayed the same and what has changed over time",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_225 (marker_bullet)",
+      "text": "Formulating questions",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_226 (marker_bullet)",
+      "text": "Gathering and organizing evidence",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_227 (marker_bullet)",
+      "text": "Analysing and interpreting evidence",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_228 (marker_bullet)",
+      "text": "Evaluating evidence and drawing conclusions",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_229 (marker_bullet)",
+      "text": "Communicating findings",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.0343
+    },
+    {
+      "provenance": "source_bullets.sb_230 (marker_bullet)",
+      "text": "The diversity of Indigenous peoples before European contact",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_231 (marker_bullet)",
+      "text": "The impacts of colonialism and the residential school system",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_232 (marker_bullet)",
+      "text": "Indigenous resistance and resilience",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_233 (marker_bullet)",
+      "text": "The continuing impacts of historical injustices",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_234 (marker_bullet)",
+      "text": "The importance of Indigenous ways of knowing and perspectives",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_235 (marker_bullet)",
+      "text": "Knowledge and Understanding",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_236 (marker_bullet)",
+      "text": "Communication",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0156
+    },
+    {
+      "provenance": "source_bullets.sb_237 (marker_bullet)",
+      "text": "Application",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0159
+    }
+  ],
+  "per_item": [
+    {
+      "provenance": "source_bullets.sb_001 (marker_bullet)",
+      "text": "How did contact between Europeans and Indigenous peoples change the societies of both groups?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_002 (marker_bullet)",
+      "text": "What was the nature of relationships between different groups during this period?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_003 (marker_bullet)",
+      "text": "What were the impacts of colonialism on Indigenous peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_004 (marker_bullet)",
+      "text": "Constructing and analysing maps showing the territories of different First Nations, Métis, and Inuit groups in 1713 and approximately 1800 (see, e.g., A3.3, A3.4)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.3636
+    },
+    {
+      "provenance": "source_bullets.sb_005 (marker_bullet)",
+      "text": "Constructing and analysing maps showing the routes of explorers and fur traders (see, e.g., A3.3)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_006 (marker_bullet)",
+      "text": "Using maps to understand the spatial relationships between different groups and regions (see, e.g., A3.4)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_007 (marker_bullet)",
+      "text": "Constructing maps to represent findings from historical inquiries (see, e.g., A2.5)",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_008 (marker_bullet)",
+      "text": "How did power dynamics and conflict shape the development of Canada between 1800 and 1850?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_009 (marker_bullet)",
+      "text": "How did different groups respond to the challenges they faced?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_010 (marker_bullet)",
+      "text": "What was the significance of Indigenous resistance movements during this period?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_011 (marker_bullet)",
+      "text": "Constructing and analysing maps showing the territories involved in conflicts and resistance movements (see, e.g., B3.2, B3.4)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_012 (marker_bullet)",
+      "text": "Using maps to understand the geographic context of historical events (see, e.g., B3.3)",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_013 (numbered_outcome)",
+      "text": "A1.1 describe some of the central values, world views, and ways of life of some First Nations, Métis, and Inuit peoples in what would eventually become Canada in the period prior to and around 1713 (e.g., spiritual beliefs and practices, relationships with the land and environment, forms of governance, social structures, gender roles, trade relationships, hunting and harvesting practices; examples could include the societies of the Haudenosaunee, Anishinaabe, Mi'kmaq, Tlingit, Kwakwaka'wakw, Inuit, or Métis)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1154
+    },
+    {
+      "provenance": "source_bullets.sb_014 (marker_bullet)",
+      "text": "What were some central values and world views of Inuit in the eighteenth century? What are some ways in which these values and world views are reflected in present-day Inuit communities?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_015 (marker_bullet)",
+      "text": "How did the Haudenosaunee govern themselves? What decisions were women make in their communities? What role did the longhouse play in Haudenosaunee society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_016 (marker_bullet)",
+      "text": "How did trade function within and among First Nations communities prior to European contact?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0952
+    },
+    {
+      "provenance": "source_bullets.sb_017 (marker_bullet)",
+      "text": "What was the significance of the buffalo/bison to the peoples of the Great Plains?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_018 (numbered_outcome)",
+      "text": "A1.2 describe some of the key aspects of European societies during the period from 1713 to approximately 1800 that influenced their interactions with Indigenous peoples (e.g., economic systems based on the accumulation of wealth and private property; political systems based on the concept of nation-states; religious beliefs, particularly those of Christian missionaries; technological advancements; the desire to expand territorial control; ideas about \"civilization\" and racial superiority)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0889
+    },
+    {
+      "provenance": "source_bullets.sb_019 (marker_bullet)",
+      "text": "What were some of the economic and political systems in Europe during this period that motivated European exploration and settlement in North America?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.2222
+    },
+    {
+      "provenance": "source_bullets.sb_020 (marker_bullet)",
+      "text": "How did European religious beliefs influence interactions between Europeans and Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_021 (marker_bullet)",
+      "text": "What ideas about \"civilization\" and \"progress\" did Europeans bring to North America? How did these ideas affect their interactions with Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_022 (numbered_outcome)",
+      "text": "A1.3 analyse the nature of early relationships and interactions between Indigenous peoples and French and British settlers in the period from 1713 to approximately 1800 (e.g., the fur trade, military alliances, the negotiation and signing of treaties, mixed marriages, shared knowledge and practices), and describe how these relationships changed over time",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.0645
+    },
+    {
+      "provenance": "source_bullets.sb_023 (marker_bullet)",
+      "text": "What was the nature of the fur trade? Who benefited most from the fur trade? How did the fur trade affect Indigenous societies?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_024 (marker_bullet)",
+      "text": "What role did Indigenous allies play in the conflicts between France and Britain in North America?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_025 (marker_bullet)",
+      "text": "How did relationships between Indigenous peoples and settlers change over time? Why did they change?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_026 (marker_bullet)",
+      "text": "What was the purpose of treaties? Who signed treaties and why? What did Indigenous peoples hope to gain from treaties?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_027 (numbered_outcome)",
+      "text": "A1.4 describe some of the impacts of European contact, colonization, and settlement on Indigenous peoples, their societies, and their environments (e.g., the introduction of new diseases, trade goods, and technologies; changes to hunting and harvesting practices; forced displacement from traditional territories; impacts on social and political structures; environmental degradation; the beginning of the residential school system; spiritual and cultural disruption; experiences of racism; loss of languages; loss of autonomy and self-determination)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.102
+    },
+    {
+      "provenance": "source_bullets.sb_028 (marker_bullet)",
+      "text": "What were some of the major short- and long-term consequences for the Haudenosaunee and Anishinaabe people of contact with European explorers and settlers?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0476
+    },
+    {
+      "provenance": "source_bullets.sb_029 (marker_bullet)",
+      "text": "How did the fur trade change the way Indigenous peoples hunted and harvested?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_030 (marker_bullet)",
+      "text": "How did colonization affect the relationship between Indigenous peoples and the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_031 (marker_bullet)",
+      "text": "What was the Indian Act? How did it affect Indigenous peoples' autonomy and self-determination?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_032 (numbered_outcome)",
+      "text": "A2.1 formulate questions to guide investigations into some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., What factors led to Pontiac's Resistance? How successful was this resistance? Why is it significant for First Nations? What were the causes and consequences of the fur trade for different groups? How did the British Conquest affect First Nations and French Canadians differently? Why is the Treaty of Niagara significant?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1522
+    },
+    {
+      "provenance": "source_bullets.sb_033 (marker_bullet)",
+      "text": "What questions about this period would help you understand the experiences of different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_034 (marker_bullet)",
+      "text": "What concepts of historical thinking might help guide your inquiry?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_035 (numbered_outcome)",
+      "text": "A2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., letters, diaries, fur trade documents, treaties, maps, paintings, photographs, oral histories from Elders or Knowledge Keepers, documentaries, websites created by First Nations, Métis, and Inuit communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1569
+    },
+    {
+      "provenance": "source_bullets.sb_036 (marker_bullet)",
+      "text": "What types of sources might help you understand the perspectives of different groups during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_037 (marker_bullet)",
+      "text": "How might you determine if a source is credible and reliable?",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0583
+    },
+    {
+      "provenance": "source_bullets.sb_038 (marker_bullet)",
+      "text": "What perspectives might be missing from the sources you have found?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_039 (numbered_outcome)",
+      "text": "A2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., determine the reliability and bias of sources; identify multiple perspectives on an event or issue; analyse the impacts of an event or development on different groups; make connections between historical events and present-day issues)",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.2667
+    },
+    {
+      "provenance": "source_bullets.sb_040 (marker_bullet)",
+      "text": "What does this source tell you about the beliefs and values of the person who created it?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_041 (marker_bullet)",
+      "text": "Whose perspective is represented in this source? Whose perspective might be missing?",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_042 (marker_bullet)",
+      "text": "How might the same event be described differently by people from different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_043 (numbered_outcome)",
+      "text": "A2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, in the period from 1713 to approximately 1800 (e.g., make judgements about the significance of events; assess the validity of historical interpretations; reach conclusions supported by evidence)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.175
+    },
+    {
+      "provenance": "source_bullets.sb_044 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what conclusions can you draw about this historical event or issue?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_045 (marker_bullet)",
+      "text": "How might the conclusions of historians differ, and why?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0648
+    },
+    {
+      "provenance": "source_bullets.sb_046 (marker_bullet)",
+      "text": "What new questions does your investigation raise?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_047 (numbered_outcome)",
+      "text": "A2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats (e.g., an oral presentation; a written report; a map; a timeline; a poster; a dramatic presentation; a multimedia presentation)",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.0809
+    },
+    {
+      "provenance": "source_bullets.sb_048 (numbered_outcome)",
+      "text": "B1.1 describe some of the social attitudes that led to the forced removal and displacement of First Nations and Métis communities (e.g., beliefs in European/British superiority, the concept of terra nullius, the desire for territorial expansion, racism) and the impacts of these attitudes on Indigenous peoples and their environments",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_049 (marker_bullet)",
+      "text": "What social attitudes were reflected in the forced removal of First Nations and Métis communities on the arrival of Loyalists or European immigrants?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_050 (marker_bullet)",
+      "text": "What was \"terra nullius\" and how was this concept used to justify the displacement of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_051 (marker_bullet)",
+      "text": "How did colonial expansion affect the territories and ways of life of different Indigenous groups?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_052 (numbered_outcome)",
+      "text": "B1.2 describe the Indian Act and some of its major impacts on First Nations peoples (e.g., the imposition of the reserve system, restrictions on self-governance, the regulation of hunting and harvesting, the removal of children to residential schools, gender discrimination, the loss of Indian status through enfranchisement)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0857
+    },
+    {
+      "provenance": "source_bullets.sb_053 (marker_bullet)",
+      "text": "What was the Indian Act? When was it passed? How did it affect First Nations peoples' control over their territories and their ways of life?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1364
+    },
+    {
+      "provenance": "source_bullets.sb_054 (marker_bullet)",
+      "text": "How did the Indian Act restrict First Nations peoples' rights and freedoms?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_055 (marker_bullet)",
+      "text": "What was the residential school system? Why was it established? What impact did it have on First Nations peoples and their cultures?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_056 (numbered_outcome)",
+      "text": "B1.3 describe some of the ways in which Métis communities adapted to changes in the fur trade and territorial expansion (e.g., development of distinct cultural practices and identities, establishment of settlements, economic diversification, participation in the fur trade as middlemen)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0662
+    },
+    {
+      "provenance": "source_bullets.sb_057 (marker_bullet)",
+      "text": "How did Métis communities develop and maintain their distinct identities?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_058 (marker_bullet)",
+      "text": "How did Métis peoples respond to changes in the fur trade?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_059 (marker_bullet)",
+      "text": "What role did Métis peoples play in the fur trade and in settlement patterns in what would eventually become Canada?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_060 (numbered_outcome)",
+      "text": "B1.4 describe some of the experiences of Inuit in this period, including their interactions with European traders and whalers, and their responses to these interactions (e.g., trade relationships, disease, environmental changes, cultural adaptation, resistance)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_061 (marker_bullet)",
+      "text": "How did interactions with European whalers and traders affect Inuit societies?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_062 (marker_bullet)",
+      "text": "What were some of the impacts of the whaling industry on Inuit peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_063 (marker_bullet)",
+      "text": "How did Inuit adapt to and resist changes brought about by European contact?",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_064 (numbered_outcome)",
+      "text": "B2.1 formulate questions to guide investigations into some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850 (e.g., What were some of the key social, economic, and political issues that led to the Rebellions of 1837–38? What impact did the Indian Act have on different First Nations? How did the residential school system develop and what was its impact on Indigenous peoples? Why did the Métis resist colonial expansion?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1458
+    },
+    {
+      "provenance": "source_bullets.sb_065 (marker_bullet)",
+      "text": "What questions about conflict and resistance during this period would help you understand different groups' experiences?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_066 (marker_bullet)",
+      "text": "How might the concepts of historical thinking help guide your inquiry?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_067 (numbered_outcome)",
+      "text": "B2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.2121
+    },
+    {
+      "provenance": "source_bullets.sb_068 (marker_bullet)",
+      "text": "What types of sources might help you understand the causes and impacts of conflict during this period?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_069 (marker_bullet)",
+      "text": "How might you find sources that represent the perspectives of Indigenous peoples during this period?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_070 (numbered_outcome)",
+      "text": "B2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the causes and consequences of conflicts; identify the perspectives of different groups; understand the impact of policies and events on different communities; make connections to present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2414
+    },
+    {
+      "provenance": "source_bullets.sb_071 (marker_bullet)",
+      "text": "How might perspectives on a particular conflict or event differ depending on the group's position during the period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_072 (marker_bullet)",
+      "text": "What do these sources tell you about the values and beliefs of different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_073 (numbered_outcome)",
+      "text": "B2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues related to diverse groups, including First Nations, Métis, and Inuit communities, during the period from 1800 to 1850",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.2333
+    },
+    {
+      "provenance": "source_bullets.sb_074 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major causes of conflict during this period?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_075 (marker_bullet)",
+      "text": "What were the short- and long-term impacts of these conflicts on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_076 (numbered_outcome)",
+      "text": "B2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_077 (numbered_outcome)",
+      "text": "B3.1 analyse the significance of some key events and developments of this period for different groups (e.g., the Rebellions of 1837–38, the passage of the Indian Act, the establishment of the residential school system, the negotiation of treaties)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_078 (marker_bullet)",
+      "text": "Why was the Battle of Saint-Eustache significant to French Canadians?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0153
+    },
+    {
+      "provenance": "source_bullets.sb_079 (marker_bullet)",
+      "text": "What impact did the Indian Act have on the long-term development of Canada and on Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_080 (numbered_outcome)",
+      "text": "B3.2 describe some of the ways in which Indigenous peoples resisted colonization and the loss of their territories and autonomy (e.g., Pontiac's Resistance, the Iroquois Confederacy's diplomatic efforts, the Métis resistance movements, the role of leaders like Joseph Brant, Tecumseh, and Gabriel Dumont)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_081 (marker_bullet)",
+      "text": "What strategies did Indigenous peoples use to resist colonial expansion?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_082 (marker_bullet)",
+      "text": "Why do you think Indigenous resistance was ultimately unsuccessful?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_083 (marker_bullet)",
+      "text": "What does Indigenous resistance tell us about Indigenous peoples' determination to maintain their ways of life?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_084 (numbered_outcome)",
+      "text": "B3.3 describe the experiences of different groups during this period, and explain how their experiences were shaped by factors such as gender, race, class, and geographic location (e.g., the experiences of enslaved and free African Americans in Upper Canada; the experiences of women in Indigenous and settler communities; the experiences of poor and wealthy settlers)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0857
+    },
+    {
+      "provenance": "source_bullets.sb_085 (marker_bullet)",
+      "text": "How did the experiences of women differ between Indigenous and settler communities?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_086 (marker_bullet)",
+      "text": "What were the experiences of people of African descent in Upper Canada during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_087 (marker_bullet)",
+      "text": "How did geographic location affect people's experiences and opportunities?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_088 (numbered_outcome)",
+      "text": "B3.4 make connections between historical developments and events of this period and contemporary Indigenous issues and concerns (e.g., connections between the Indian Act and contemporary issues of Indigenous governance and sovereignty; connections between residential schools and the Sixties Scoop; connections between the loss of traditional territories and contemporary land claims and environmental issues; connections between the disruption of cultures and contemporary health and social issues in Indigenous communities)",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1579
+    },
+    {
+      "provenance": "source_bullets.sb_089 (marker_bullet)",
+      "text": "How do the impacts of the Indian Act continue to affect First Nations peoples today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2667
+    },
+    {
+      "provenance": "source_bullets.sb_090 (marker_bullet)",
+      "text": "What connections can you make between residential schools and contemporary issues in Indigenous communities?",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_091 (marker_bullet)",
+      "text": "How do historical land claims relate to contemporary environmental issues?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_092 (marker_bullet)",
+      "text": "What factors led to Confederation?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0272
+    },
+    {
+      "provenance": "source_bullets.sb_093 (marker_bullet)",
+      "text": "How did westward expansion affect different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_094 (marker_bullet)",
+      "text": "What was the significance of key events and developments during this period?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_095 (marker_bullet)",
+      "text": "Constructing and analysing maps showing territorial changes (see, e.g., A3.2)",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_096 (marker_bullet)",
+      "text": "Using maps to show the progression of westward expansion (see, e.g., A3.3)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_097 (marker_bullet)",
+      "text": "How did industrialization and immigration change Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_098 (marker_bullet)",
+      "text": "What social movements and reforms emerged during this period?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_099 (marker_bullet)",
+      "text": "How did these changes affect different groups, including Indigenous peoples?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_100 (marker_bullet)",
+      "text": "Using maps to show patterns of immigration and settlement (see, e.g., B3.5)",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_101 (numbered_outcome)",
+      "text": "A1.1 analyse some of the factors that led to Confederation, including political, economic, and social reasons, and assess the importance of these factors (e.g., desire for political stability, economic advantages of union, the threat of American expansion, internal conflicts within colonies, the desire to pursue westward expansion, British political pressure)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_102 (marker_bullet)",
+      "text": "What order of importance would you assign to the various factors that led to Confederation? What criteria would you use to determine the ranking of these factors?",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_103 (marker_bullet)",
+      "text": "How did the threat of American expansion influence the push for Confederation?",
+      "best_lt": "I can analyze how my cultural background and personal experiences influence my interpretation of historical events and sources.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_104 (marker_bullet)",
+      "text": "How did economic factors contribute to the decision to pursue Confederation?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_105 (numbered_outcome)",
+      "text": "A1.2 describe some of the different perspectives on Confederation held by various groups at the time (e.g., French Canadians, English Canadians, First Nations, Métis, women, business leaders, farmers, workers)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1613
+    },
+    {
+      "provenance": "source_bullets.sb_106 (marker_bullet)",
+      "text": "What were the different perspectives on Confederation among various groups in Canada?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_107 (marker_bullet)",
+      "text": "Why might different groups have had different views about Confederation?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_108 (marker_bullet)",
+      "text": "Were the concerns of all groups considered in the process of Confederation?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_109 (numbered_outcome)",
+      "text": "A1.3 analyse the impacts of Confederation and westward expansion on First Nations, Métis, and Inuit peoples (e.g., the imposition of the Indian Act, the reserve system, the residential school system, the loss of traditional territories, the disruption of traditional ways of life, the restriction of hunting and harvesting rights, the marginalization of Métis communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1795
+    },
+    {
+      "provenance": "source_bullets.sb_110 (marker_bullet)",
+      "text": "How did the Indian Act affect the lives of First Nations peoples?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1053
+    },
+    {
+      "provenance": "source_bullets.sb_111 (marker_bullet)",
+      "text": "What was the residential school system and what were its impacts on Indigenous families and communities?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_112 (marker_bullet)",
+      "text": "How were Métis communities affected by westward expansion and the policies of the new Canadian government?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_113 (marker_bullet)",
+      "text": "How did colonialism affect the relationship between Indigenous peoples and the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1353
+    },
+    {
+      "provenance": "source_bullets.sb_114 (numbered_outcome)",
+      "text": "A1.4 describe some of the factors that contributed to the development of Canada as a nation during this period (e.g., the completion of the Canadian Pacific Railway, the expansion of settlements to the west, the negotiation of treaties, the development of a national government and institutions, the establishment of provincial governments)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_115 (marker_bullet)",
+      "text": "What role did the Canadian Pacific Railway play in the development of Canada?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.0341
+    },
+    {
+      "provenance": "source_bullets.sb_116 (marker_bullet)",
+      "text": "How did the negotiation of treaties contribute to the development of Canada?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_117 (marker_bullet)",
+      "text": "What institutions were established to govern the new nation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_118 (numbered_outcome)",
+      "text": "A2.1 formulate questions to guide investigations into some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., What order of importance would you assign to the various factors that led to Confederation? How did the colonialist policies of the new Canadian government have an impact on First Nations, Métis, and Inuit individuals and communities? What was the residential school system and what were its impacts?)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_119 (marker_bullet)",
+      "text": "What questions about this period would help you understand how Canada developed as a nation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_120 (marker_bullet)",
+      "text": "What questions about the impacts of colonialism would help you understand the experiences of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_121 (numbered_outcome)",
+      "text": "A2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., government documents, letters, diaries, newspapers, photographs, maps, treaties, oral histories, documentaries, websites created by First Nations, Métis, and Inuit communities)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1591
+    },
+    {
+      "provenance": "source_bullets.sb_122 (marker_bullet)",
+      "text": "What types of sources would help you understand the perspectives of different groups during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_123 (marker_bullet)",
+      "text": "How might you find sources that represent the voices of Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_124 (marker_bullet)",
+      "text": "What challenges might you face in finding diverse perspectives on historical events?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_125 (numbered_outcome)",
+      "text": "A2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the impacts of Confederation and westward expansion on different groups; identify multiple perspectives on the Indian Act and the residential school system; make connections between historical policies and present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_126 (marker_bullet)",
+      "text": "How do the sources you have found reflect different perspectives on Confederation or westward expansion?",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_127 (marker_bullet)",
+      "text": "What do historical documents tell you about the attitudes and beliefs of people during this period?",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_128 (numbered_outcome)",
+      "text": "A2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues during the period from 1850 to 1890 (e.g., assess the impacts of policies on different groups; reach conclusions about the significance of historical events; evaluate the validity of different historical interpretations)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_129 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major impacts of Confederation and westward expansion on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_130 (marker_bullet)",
+      "text": "What were the short- and long-term consequences of the policies implemented during this period?",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_131 (numbered_outcome)",
+      "text": "A2.5 communicate the results of their historical inquiry, using appropriate historical terminology and formats (e.g., a written report, an oral presentation, a map, a timeline, a poster, a dramatic presentation, a multimedia presentation)",
+      "best_lt": "I can approach historical investigation with sustained curiosity and systematic inquiry methods.",
+      "best_score": 0.0809
+    },
+    {
+      "provenance": "source_bullets.sb_132 (numbered_outcome)",
+      "text": "A3.1 describe the key features of Confederation and some of the ways in which the development of Canadian institutions and government reflected the values and interests of dominant groups in society (e.g., the role of the British monarchy, the federal system, the Constitution Act, 1867, the exclusion of Indigenous peoples from decision-making, the exclusion of women and non-property owners from political participation, the dominance of English and French languages in government and institutions)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.093
+    },
+    {
+      "provenance": "source_bullets.sb_133 (marker_bullet)",
+      "text": "What were the key features of Confederation?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.022
+    },
+    {
+      "provenance": "source_bullets.sb_134 (marker_bullet)",
+      "text": "Whose values and interests were reflected in the structure of Canadian government?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_135 (marker_bullet)",
+      "text": "Who was excluded from participating in government and political life?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_136 (numbered_outcome)",
+      "text": "A3.2 describe the impacts of the numbered treaties on First Nations, Métis, and Inuit peoples, and analyse the continuing impacts of these treaties on Indigenous peoples today (e.g., the surrender of vast territories, the establishment of reserves, restrictions on hunting and harvesting, the promise of education and healthcare that was often not fulfilled, the impact on Indigenous sovereignty and self-determination, contemporary land claims and resource rights)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1364
+    },
+    {
+      "provenance": "source_bullets.sb_137 (marker_bullet)",
+      "text": "What were the key provisions of the numbered treaties?",
+      "best_lt": "I can identify specific legal provisions within treaty documents.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_138 (marker_bullet)",
+      "text": "How did the treaties affect Indigenous peoples' relationship with the land?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_139 (marker_bullet)",
+      "text": "How do the impacts of treaties continue to affect Indigenous peoples today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.4167
+    },
+    {
+      "provenance": "source_bullets.sb_140 (marker_bullet)",
+      "text": "What are some of the contemporary issues related to treaties and Indigenous rights?",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_141 (numbered_outcome)",
+      "text": "A3.3 describe some of the ways in which the residential school system was established and operated (e.g., the goals of assimilation and the \"killing of the Indian to save the child\" mentality; the separation of children from families and communities; the prohibition of Indigenous languages and cultural practices; the physical, emotional, and sexual abuse of children; the poor conditions in schools; the forced labour of students)",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0526
+    },
+    {
+      "provenance": "source_bullets.sb_142 (marker_bullet)",
+      "text": "What were the goals of the residential school system?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1111
+    },
+    {
+      "provenance": "source_bullets.sb_143 (marker_bullet)",
+      "text": "What were the impacts of residential schools on Indigenous children and families?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_144 (marker_bullet)",
+      "text": "How did residential schools attempt to assimilate Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_145 (marker_bullet)",
+      "text": "What are some of the intergenerational impacts of the residential school system?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_146 (numbered_outcome)",
+      "text": "A3.4 analyse the significance of westward expansion for the development of Canada and its continuing impacts on Indigenous peoples (e.g., the displacement of Indigenous peoples from their territories, the destruction of ecosystems, the disruption of traditional ways of life, the establishment of agricultural settlements, the construction of railways, the exploitation of natural resources, the marginalization of Indigenous peoples in the new nation)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0842
+    },
+    {
+      "provenance": "source_bullets.sb_147 (marker_bullet)",
+      "text": "What was the significance of westward expansion in the development of Canada?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0292
+    },
+    {
+      "provenance": "source_bullets.sb_148 (marker_bullet)",
+      "text": "What were the impacts of westward expansion on Indigenous peoples and their environments?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_149 (marker_bullet)",
+      "text": "How do the impacts of westward expansion continue to affect Indigenous communities today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_150 (numbered_outcome)",
+      "text": "A3.5 describe some of the ways in which Indigenous peoples resisted colonialism and the impacts of colonialism during this period (e.g., the refusal to accept imposed policies, the maintenance of cultural practices, the pursuit of education, the participation in political advocacy, the development of organizations to promote Indigenous rights, the role of leaders in resistance movements)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_151 (marker_bullet)",
+      "text": "How did Indigenous peoples resist the policies of the Canadian government during this period?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_152 (marker_bullet)",
+      "text": "What were some of the ways in which Indigenous peoples maintained their cultures and identities despite assimilation policies?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1176
+    },
+    {
+      "provenance": "source_bullets.sb_153 (marker_bullet)",
+      "text": "What role did Indigenous leaders play in resistance movements?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_154 (numbered_outcome)",
+      "text": "B1.1 analyse some of the factors that contributed to social change during this period (e.g., industrialization, urbanization, immigration, the rise of labour movements, the emergence of women's movements, the expansion of education, technological advancements, changing attitudes about government's role in society)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_155 (marker_bullet)",
+      "text": "What were the major factors that contributed to social change during this period?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_156 (marker_bullet)",
+      "text": "How did industrialization transform Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_157 (marker_bullet)",
+      "text": "What role did immigration play in shaping Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_158 (numbered_outcome)",
+      "text": "B1.2 describe the experiences of various groups during this period, including First Nations, Métis, and Inuit peoples, and analyse the impacts of social change on these groups (e.g., the continued impacts of the residential school system, the restriction of Indigenous political participation, the exploitation of resources on Indigenous lands, the experiences of immigrant workers, the conditions of factory workers, the changing roles of women)",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1591
+    },
+    {
+      "provenance": "source_bullets.sb_159 (marker_bullet)",
+      "text": "What were some of the educational experiences of First Nations people during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.1765
+    },
+    {
+      "provenance": "source_bullets.sb_160 (marker_bullet)",
+      "text": "How were the educational experiences of First Nations people during this period similar to and different from those of First Nations people today?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.15
+    },
+    {
+      "provenance": "source_bullets.sb_161 (marker_bullet)",
+      "text": "What were the experiences of immigrant workers during this period of industrialization?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_162 (numbered_outcome)",
+      "text": "B1.3 describe some of the environmental challenges that different groups faced during this period, and analyse the impacts of industrial and agricultural development on the environment and on Indigenous peoples (e.g., deforestation, water pollution, the destruction of wildlife habitats, the impact on traditional hunting and harvesting, the building of dams, soil degradation, air pollution)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0789
+    },
+    {
+      "provenance": "source_bullets.sb_163 (marker_bullet)",
+      "text": "What challenges would Ukrainian immigrants have faced on the Prairies at the end of the nineteenth century?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0318
+    },
+    {
+      "provenance": "source_bullets.sb_164 (marker_bullet)",
+      "text": "How did climate and landforms affect settlement patterns?",
+      "best_lt": "I can recognise when historical content affects my emotions and values",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_165 (marker_bullet)",
+      "text": "Do similar challenges still exist today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_166 (marker_bullet)",
+      "text": "How did industrial development affect the environment and Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_167 (numbered_outcome)",
+      "text": "B1.4 describe some of the key social and political movements that emerged during this period (e.g., labour movements, women's rights movements, temperance movements, conservation movements), and analyse their impacts on Canadian society",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.1111
+    },
+    {
+      "provenance": "source_bullets.sb_168 (marker_bullet)",
+      "text": "What were some of the major concerns of women's rights groups at the turn of the century?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_169 (marker_bullet)",
+      "text": "Which women did women's rights groups at this time represent?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_170 (marker_bullet)",
+      "text": "Who was included and who was excluded?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0278
+    },
+    {
+      "provenance": "source_bullets.sb_171 (marker_bullet)",
+      "text": "What were some of the goals of labour movements during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_172 (numbered_outcome)",
+      "text": "B2.1 formulate questions to guide investigations into some significant events, developments, and/or issues during the period from 1890 to 1914 (e.g., What impact did industrialization have on Canadian society? How did women's roles and rights change during this period? How did the residential school system continue to affect Indigenous communities? What were the experiences of immigrants during this period of rapid change?)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_173 (marker_bullet)",
+      "text": "What questions about this period would help you understand how Canadian society changed?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_174 (marker_bullet)",
+      "text": "What questions would help you understand the experiences of different groups during this period of change?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2143
+    },
+    {
+      "provenance": "source_bullets.sb_175 (numbered_outcome)",
+      "text": "B2.2 gather and organize historical evidence and information from a variety of primary and secondary sources, including community sources, to investigate some significant events, developments, and/or issues during the period from 1890 to 1914",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.1739
+    },
+    {
+      "provenance": "source_bullets.sb_176 (marker_bullet)",
+      "text": "What types of sources would help you understand how different groups experienced social change during this period?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.1875
+    },
+    {
+      "provenance": "source_bullets.sb_177 (marker_bullet)",
+      "text": "How might you find sources that represent multiple perspectives on the issues of this period?",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_178 (numbered_outcome)",
+      "text": "B2.3 analyse and interpret historical evidence and information, using concepts of historical thinking (e.g., analyse the causes and impacts of social change; identify multiple perspectives on issues; understand the experiences of different groups; make connections to present-day issues)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.25
+    },
+    {
+      "provenance": "source_bullets.sb_179 (marker_bullet)",
+      "text": "How might different groups have experienced and responded to industrialization?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_180 (numbered_outcome)",
+      "text": "B2.4 evaluate historical evidence and information, and draw conclusions about some significant events, developments, and/or issues during the period from 1890 to 1914",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.1765
+    },
+    {
+      "provenance": "source_bullets.sb_181 (marker_bullet)",
+      "text": "Based on the evidence you have gathered, what were the major impacts of social change on different groups?",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.2
+    },
+    {
+      "provenance": "source_bullets.sb_182 (marker_bullet)",
+      "text": "What were the short- and long-term consequences of the social movements that emerged during this period?",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0623
+    },
+    {
+      "provenance": "source_bullets.sb_183 (numbered_outcome)",
+      "text": "B3.1 describe the continuing impacts of the residential school system on Indigenous peoples and communities today (e.g., the intergenerational trauma and health issues that result from the trauma experienced in residential schools, the loss of languages and cultural knowledge, the disruption of parenting practices and family relationships, the overrepresentation of Indigenous youth in the child welfare system, the overrepresentation of Indigenous peoples in the criminal justice system, ongoing efforts toward healing and reconciliation)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1136
+    },
+    {
+      "provenance": "source_bullets.sb_184 (marker_bullet)",
+      "text": "What were the long-term impacts of the residential school system on Indigenous peoples?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.3077
+    },
+    {
+      "provenance": "source_bullets.sb_185 (marker_bullet)",
+      "text": "How do the impacts of residential schools continue to affect Indigenous communities today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_186 (marker_bullet)",
+      "text": "What are some of the ways in which Indigenous communities are working toward healing and reconciliation?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_187 (numbered_outcome)",
+      "text": "B3.2 analyse the significance of key events and developments of this period for the development of Canada and for different groups in Canadian society (e.g., industrialization, urbanization, immigration, labour movements, women's rights movements, the role of the residential school system)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.129
+    },
+    {
+      "provenance": "source_bullets.sb_188 (marker_bullet)",
+      "text": "How did industrialization change Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_189 (marker_bullet)",
+      "text": "What was the significance of labour and women's rights movements?",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0262
+    },
+    {
+      "provenance": "source_bullets.sb_190 (marker_bullet)",
+      "text": "How did immigration contribute to the development of Canada?",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0336
+    },
+    {
+      "provenance": "source_bullets.sb_191 (numbered_outcome)",
+      "text": "B3.3 describe some of the ways in which individuals and groups responded to social change during this period through social movements and political action (e.g., labour organizations, women's suffrage movements, Indigenous resistance, immigrant communities establishing cultural institutions)",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0588
+    },
+    {
+      "provenance": "source_bullets.sb_192 (marker_bullet)",
+      "text": "How did workers respond to poor working conditions?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0287
+    },
+    {
+      "provenance": "source_bullets.sb_193 (marker_bullet)",
+      "text": "How did women organize to gain political rights?",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_194 (marker_bullet)",
+      "text": "How did Indigenous peoples respond to the continued impacts of colonialism?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2308
+    },
+    {
+      "provenance": "source_bullets.sb_195 (numbered_outcome)",
+      "text": "B3.4 explain some of the ways in which the developments, events, and issues of this period continue to affect Canadian society today (e.g., the structure and role of labour unions, gender roles and women's rights, Indigenous sovereignty and self-determination, immigration policy and multiculturalism, environmental protection, the role of government in society)",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1081
+    },
+    {
+      "provenance": "source_bullets.sb_196 (marker_bullet)",
+      "text": "How do labour movements of the past continue to affect workers today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1333
+    },
+    {
+      "provenance": "source_bullets.sb_197 (marker_bullet)",
+      "text": "How have women's rights and gender roles continued to evolve since this period?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0558
+    },
+    {
+      "provenance": "source_bullets.sb_198 (marker_bullet)",
+      "text": "How do historical injustices toward Indigenous peoples continue to affect them today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2857
+    },
+    {
+      "provenance": "source_bullets.sb_199 (marker_bullet)",
+      "text": "How do immigration policies and attitudes from this period continue to influence Canada today?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_200 (numbered_outcome)",
+      "text": "B3.5 describe some of the immigration patterns during this period and analyse the impacts of immigration on Canadian society (e.g., patterns of immigration to different regions, reasons for immigration, the contributions of immigrants to Canadian development, the discrimination and prejudice faced by immigrants, the establishment of immigrant communities and institutions)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0667
+    },
+    {
+      "provenance": "source_bullets.sb_201 (marker_bullet)",
+      "text": "Where did immigrants come from during this period?",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_202 (marker_bullet)",
+      "text": "Why did they immigrate to Canada?",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0262
+    },
+    {
+      "provenance": "source_bullets.sb_203 (marker_bullet)",
+      "text": "What were some of the contributions of immigrants to Canadian society?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0769
+    },
+    {
+      "provenance": "source_bullets.sb_204 (marker_bullet)",
+      "text": "What discrimination and prejudice did immigrants face?",
+      "best_lt": "I can analyze how my cultural background and personal experiences influence my interpretation of historical events and sources.",
+      "best_score": 0.035
+    },
+    {
+      "provenance": "source_bullets.sb_205 (marker_bullet)",
+      "text": "How did immigrant communities maintain their cultures and identities?",
+      "best_lt": "I can identify and categorise historical sources as primary or secondary based on their defining characteristics.",
+      "best_score": 0.0528
+    },
+    {
+      "provenance": "source_bullets.sb_206 (numbered_outcome)",
+      "text": "B3.6 analyse the significance of key individuals and groups who contributed to shaping Canada during this period (e.g., business leaders, political leaders, labour organizers, women's rights advocates, Indigenous leaders, immigrant community leaders, environmental activists)",
+      "best_lt": "I can analyse how different groups experienced and interpreted historical events based on their perspectives.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_207 (marker_bullet)",
+      "text": "What impact did Clifford Sifton's immigration policies and strategies have on Canadian heritage and identity?",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.0556
+    },
+    {
+      "provenance": "source_bullets.sb_208 (marker_bullet)",
+      "text": "How did Indigenous leaders respond to and resist government policies?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_209 (marker_bullet)",
+      "text": "Who were some of the key figures in labour and women's rights movements?",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.028
+    },
+    {
+      "provenance": "source_bullets.sb_210 (topic_statement)",
+      "text": "This section provides an overview of the history curriculum for Grades 7 and 8, outlining the key topics, concepts, and themes that students will explore during these grades.",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0623
+    },
+    {
+      "provenance": "source_bullets.sb_211 (marker_bullet)",
+      "text": "New France and British North America, 1713–1800",
+      "best_lt": "I can categorize historical sources by type and origin.",
+      "best_score": 0.0311
+    },
+    {
+      "provenance": "source_bullets.sb_212 (marker_bullet)",
+      "text": "Canada, 1800–1850: Conflict and Challenges",
+      "best_lt": "I can consistently connect historical events to contemporary issues and current events.",
+      "best_score": 0.0255
+    },
+    {
+      "provenance": "source_bullets.sb_213 (marker_bullet)",
+      "text": "Creating Canada, 1850–1890",
+      "best_lt": "I can analyze how multiple interacting causes produce historical events and evaluate their intended and unintended consequences.",
+      "best_score": 0.0267
+    },
+    {
+      "provenance": "source_bullets.sb_214 (marker_bullet)",
+      "text": "Canada, 1890–1914: A Changing Society",
+      "best_lt": "I can use maps to identify spatial relationships and analyze territorial changes accurately.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_215 (marker_bullet)",
+      "text": "Colonialism and its impacts on Indigenous peoples",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.2727
+    },
+    {
+      "provenance": "source_bullets.sb_216 (marker_bullet)",
+      "text": "The development of Canada as a nation",
+      "best_lt": "I can identify specific First Nations, Métis, and Inuit groups and locate their traditional territories on maps from pre-1713 periods.",
+      "best_score": 0.0625
+    },
+    {
+      "provenance": "source_bullets.sb_217 (marker_bullet)",
+      "text": "Conflict and cooperation between diverse groups",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_218 (marker_bullet)",
+      "text": "Social change and reform movements",
+      "best_lt": "I can analyse historical events using European social, economic, and political systems as interpretive frameworks.",
+      "best_score": 0.0714
+    },
+    {
+      "provenance": "source_bullets.sb_219 (marker_bullet)",
+      "text": "The importance of understanding diverse perspectives",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.1
+    },
+    {
+      "provenance": "source_bullets.sb_220 (marker_bullet)",
+      "text": "The continuing impacts of historical events on contemporary society",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.3077
+    },
+    {
+      "provenance": "source_bullets.sb_221 (marker_bullet)",
+      "text": "Historical Significance: Understanding the importance of events, developments, and people in history",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_222 (marker_bullet)",
+      "text": "Cause and Consequence: Understanding the factors that led to events and their impacts",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_223 (marker_bullet)",
+      "text": "Continuity and Change: Understanding what has stayed the same and what has changed over time",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_224 (marker_bullet)",
+      "text": "Historical Perspective: Understanding past actions and events within their historical context",
+      "best_lt": "I can seek to understand past people's actions within their historical context.",
+      "best_score": 0.5556
+    },
+    {
+      "provenance": "source_bullets.sb_225 (marker_bullet)",
+      "text": "Formulating questions",
+      "best_lt": "I can formulate historical inquiry questions that guide meaningful investigation of past events and experiences.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_226 (marker_bullet)",
+      "text": "Gathering and organizing evidence",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.0833
+    },
+    {
+      "provenance": "source_bullets.sb_227 (marker_bullet)",
+      "text": "Analysing and interpreting evidence",
+      "best_lt": "I can analyze historical sources to identify perspective, bias, and reliability using interpretive evidence.",
+      "best_score": 0.1818
+    },
+    {
+      "provenance": "source_bullets.sb_228 (marker_bullet)",
+      "text": "Evaluating evidence and drawing conclusions",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.0909
+    },
+    {
+      "provenance": "source_bullets.sb_229 (marker_bullet)",
+      "text": "Communicating findings",
+      "best_lt": "I can construct historical arguments by evaluating multiple sources and defending my position.",
+      "best_score": 0.0343
+    },
+    {
+      "provenance": "source_bullets.sb_230 (marker_bullet)",
+      "text": "The diversity of Indigenous peoples before European contact",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_231 (marker_bullet)",
+      "text": "The impacts of colonialism and the residential school system",
+      "best_lt": "I can analyze how colonial systems disrupted Indigenous societies and continue to impact Indigenous peoples today",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_232 (marker_bullet)",
+      "text": "Indigenous resistance and resilience",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.125
+    },
+    {
+      "provenance": "source_bullets.sb_233 (marker_bullet)",
+      "text": "The continuing impacts of historical injustices",
+      "best_lt": "I can analyze connections between historical events and contemporary Indigenous experiences to explain ongoing impacts.",
+      "best_score": 0.1538
+    },
+    {
+      "provenance": "source_bullets.sb_234 (marker_bullet)",
+      "text": "The importance of Indigenous ways of knowing and perspectives",
+      "best_lt": "I can interpret historical events through Indigenous worldviews to reveal different meanings and perspectives.",
+      "best_score": 0.1667
+    },
+    {
+      "provenance": "source_bullets.sb_235 (marker_bullet)",
+      "text": "Knowledge and Understanding",
+      "best_lt": "I can seek and honour Indigenous knowledge systems in my learning.",
+      "best_score": 0.1429
+    },
+    {
+      "provenance": "source_bullets.sb_236 (marker_bullet)",
+      "text": "Communication",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0156
+    },
+    {
+      "provenance": "source_bullets.sb_237 (marker_bullet)",
+      "text": "Application",
+      "best_lt": "I can construct accurate timelines showing chronological relationships between events.",
+      "best_score": 0.0159
+    }
+  ]
+}

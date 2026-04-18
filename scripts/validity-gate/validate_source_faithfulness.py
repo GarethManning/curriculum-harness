@@ -38,8 +38,9 @@ If it doesn't, the gate or the matcher is miscalibrated.
    of the source. An LT that faithfully derives from a bullet present
    in the raw source but absent from the proxy will be flagged as
    invented when it isn't. Baseline noise floor comes from this.
-5. **Threshold is shared with coverage gate (0.20).** If the two
-   gates ever need different thresholds, split them here.
+5. **Threshold shared with coverage gate** via
+   `source_evidence_matcher.DEFAULT_THRESHOLD` (0.35 since Session 3a).
+   If the two gates ever need different thresholds, split them here.
 """
 
 from __future__ import annotations
@@ -58,9 +59,9 @@ if str(ROOT) not in sys.path:
 
 from _run_loader import load_run  # noqa: E402
 
-from eval.source_evidence_matcher import best_match  # noqa: E402
+from eval.source_evidence_matcher import DEFAULT_THRESHOLD, best_match  # noqa: E402
 
-MATCH_THRESHOLD = 0.20
+MATCH_THRESHOLD = DEFAULT_THRESHOLD
 
 
 def run(run_dir: str) -> dict:

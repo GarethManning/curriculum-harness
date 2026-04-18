@@ -19,13 +19,15 @@ import json
 import sys
 from pathlib import Path
 
-from eval.source_evidence_matcher import best_match, match
+from eval.source_evidence_matcher import DEFAULT_THRESHOLD, best_match, match
 
-# Empirical threshold. Tuned so known-good pairs land above and
-# deliberately-invented or deliberately-orphaned pairs land below. If
-# future fixtures require moving this, update docs/project-log/ and
-# re-run all gate scripts so prior baselines remain comparable.
-MATCH_THRESHOLD: float = 0.20
+# Fixture-verification threshold mirrors the matcher's shared default
+# (source_evidence_matcher.DEFAULT_THRESHOLD). Known-good pairs must
+# land above and deliberately-invented / orphaned pairs must land
+# below. If future fixtures require a different value, change the
+# source of truth in source_evidence_matcher.py, re-run all gates,
+# and append a dated entry to docs/project-log/.
+MATCH_THRESHOLD: float = DEFAULT_THRESHOLD
 
 FIXTURE_DIR = Path(__file__).parent / "test_cases"
 

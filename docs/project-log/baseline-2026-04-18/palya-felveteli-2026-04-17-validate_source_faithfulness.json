@@ -1,0 +1,449 @@
+{
+  "gate": "validate_source_faithfulness",
+  "run_dir": "outputs/palya-felveteli-2026-04-17",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_lts": 31,
+  "faithful": 0,
+  "invented_count": 31,
+  "faithfulness_pct": 0.0,
+  "potentially_invented": [
+    {
+      "lt_index": 0,
+      "statement": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0073
+    },
+    {
+      "lt_index": 1,
+      "statement": "I can classify decimal representations as terminating, repeating, or non-repeating based on their mathematical properties.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0066
+    },
+    {
+      "lt_index": 2,
+      "statement": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0239
+    },
+    {
+      "lt_index": 3,
+      "statement": "I can identify the correct number system for given numbers using membership criteria.",
+      "best_source_provenance": "source_bullets.sb_001 (topic_statement)",
+      "best_source_text": "Elemi kombinatorika (összeszámolás, sorrendek száma, kiválasztás).",
+      "best_score": 0.0054
+    },
+    {
+      "lt_index": 4,
+      "statement": "I can identify variables, coefficients, terms, expressions, and equations in algebraic notation.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0223
+    },
+    {
+      "lt_index": 5,
+      "statement": "I can identify properties of geometric shapes and apply transformations according to established rules.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.047
+    },
+    {
+      "lt_index": 6,
+      "statement": "I can identify and calculate measures of central tendency and frequency from numerical data sets.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0058
+    },
+    {
+      "lt_index": 7,
+      "statement": "I can explain how operations with fractions preserve numerical relationships through worked examples.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.016
+    },
+    {
+      "lt_index": 8,
+      "statement": "I can explain how exponent rules extend arithmetic patterns using mathematical properties.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0072
+    },
+    {
+      "lt_index": 9,
+      "statement": "I can apply algebraic operations to both sides of equations while maintaining mathematical balance",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0215
+    },
+    {
+      "lt_index": 10,
+      "statement": "I can identify which properties are preserved by each geometric transformation.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.0573
+    },
+    {
+      "lt_index": 11,
+      "statement": "I can explain how mean, median and mode reveal different patterns in data sets.",
+      "best_source_provenance": "source_bullets.sb_018 (topic_statement)",
+      "best_source_text": "Átlag, módusz, medián.",
+      "best_score": 0.0161
+    },
+    {
+      "lt_index": 12,
+      "statement": "I can analyse how mathematical patterns connect across different content areas to construct logical reasoning",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0101
+    },
+    {
+      "lt_index": 13,
+      "statement": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.0233
+    },
+    {
+      "lt_index": 14,
+      "statement": "I can apply systematic counting methods to determine arrangements and selections.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0114
+    },
+    {
+      "lt_index": 15,
+      "statement": "I can execute addition, subtraction, multiplication and division operations with proper and improper fractions using correct procedures.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.005
+    },
+    {
+      "lt_index": 16,
+      "statement": "I can apply rounding rules accurately to decimal numbers and whole numbers.",
+      "best_source_provenance": "source_bullets.sb_014 (topic_statement)",
+      "best_source_text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_score": 0.005
+    },
+    {
+      "lt_index": 17,
+      "statement": "I can apply laws of exponents to calculate expressions with positive integer exponents.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0065
+    },
+    {
+      "lt_index": 18,
+      "statement": "I can find prime factorizations and use them to calculate greatest common divisors and least common multiples.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0055
+    },
+    {
+      "lt_index": 19,
+      "statement": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0296
+    },
+    {
+      "lt_index": 20,
+      "statement": "I can solve first-degree equations using systematic algebraic operations to isolate variables.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0221
+    },
+    {
+      "lt_index": 21,
+      "statement": "I can calculate percentages in multi-step scenarios involving percentage increase, decrease, and compound calculations.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.007
+    },
+    {
+      "lt_index": 22,
+      "statement": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_source_provenance": "source_bullets.sb_014 (topic_statement)",
+      "best_source_text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_score": 0.0177
+    },
+    {
+      "lt_index": 23,
+      "statement": "I can calculate mean, median, and mode from numerical data sets.",
+      "best_source_provenance": "source_bullets.sb_018 (topic_statement)",
+      "best_source_text": "Átlag, módusz, medián.",
+      "best_score": 0.0197
+    },
+    {
+      "lt_index": 24,
+      "statement": "I can apply geometric formulas to calculate perimeter, area, and volume accurately.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.0365
+    },
+    {
+      "lt_index": 25,
+      "statement": "I can analyze mathematical arguments for logical validity across different mathematical contexts.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0074
+    },
+    {
+      "lt_index": 26,
+      "statement": "I can evaluate graphs to identify mathematical patterns and explain the relationships they represent.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.0154
+    },
+    {
+      "lt_index": 27,
+      "statement": "I can construct mathematical arguments that connect claims to evidence through logical reasoning.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.007
+    },
+    {
+      "lt_index": 28,
+      "statement": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0073
+    },
+    {
+      "lt_index": 29,
+      "statement": "I can monitor own mathematical thinking and check work systematically.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0124
+    },
+    {
+      "lt_index": 30,
+      "statement": "I can approach mathematical problems with curiosity and willingness to explore multiple solution pathways.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0066
+    }
+  ],
+  "per_lt": [
+    {
+      "lt_index": 0,
+      "statement": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0073
+    },
+    {
+      "lt_index": 1,
+      "statement": "I can classify decimal representations as terminating, repeating, or non-repeating based on their mathematical properties.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0066
+    },
+    {
+      "lt_index": 2,
+      "statement": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0239
+    },
+    {
+      "lt_index": 3,
+      "statement": "I can identify the correct number system for given numbers using membership criteria.",
+      "best_source_provenance": "source_bullets.sb_001 (topic_statement)",
+      "best_source_text": "Elemi kombinatorika (összeszámolás, sorrendek száma, kiválasztás).",
+      "best_score": 0.0054
+    },
+    {
+      "lt_index": 4,
+      "statement": "I can identify variables, coefficients, terms, expressions, and equations in algebraic notation.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0223
+    },
+    {
+      "lt_index": 5,
+      "statement": "I can identify properties of geometric shapes and apply transformations according to established rules.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.047
+    },
+    {
+      "lt_index": 6,
+      "statement": "I can identify and calculate measures of central tendency and frequency from numerical data sets.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0058
+    },
+    {
+      "lt_index": 7,
+      "statement": "I can explain how operations with fractions preserve numerical relationships through worked examples.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.016
+    },
+    {
+      "lt_index": 8,
+      "statement": "I can explain how exponent rules extend arithmetic patterns using mathematical properties.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0072
+    },
+    {
+      "lt_index": 9,
+      "statement": "I can apply algebraic operations to both sides of equations while maintaining mathematical balance",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0215
+    },
+    {
+      "lt_index": 10,
+      "statement": "I can identify which properties are preserved by each geometric transformation.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.0573
+    },
+    {
+      "lt_index": 11,
+      "statement": "I can explain how mean, median and mode reveal different patterns in data sets.",
+      "best_source_provenance": "source_bullets.sb_018 (topic_statement)",
+      "best_source_text": "Átlag, módusz, medián.",
+      "best_score": 0.0161
+    },
+    {
+      "lt_index": 12,
+      "statement": "I can analyse how mathematical patterns connect across different content areas to construct logical reasoning",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0101
+    },
+    {
+      "lt_index": 13,
+      "statement": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.0233
+    },
+    {
+      "lt_index": 14,
+      "statement": "I can apply systematic counting methods to determine arrangements and selections.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0114
+    },
+    {
+      "lt_index": 15,
+      "statement": "I can execute addition, subtraction, multiplication and division operations with proper and improper fractions using correct procedures.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.005
+    },
+    {
+      "lt_index": 16,
+      "statement": "I can apply rounding rules accurately to decimal numbers and whole numbers.",
+      "best_source_provenance": "source_bullets.sb_014 (topic_statement)",
+      "best_source_text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_score": 0.005
+    },
+    {
+      "lt_index": 17,
+      "statement": "I can apply laws of exponents to calculate expressions with positive integer exponents.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0065
+    },
+    {
+      "lt_index": 18,
+      "statement": "I can find prime factorizations and use them to calculate greatest common divisors and least common multiples.",
+      "best_source_provenance": "source_bullets.sb_023 (topic_statement)",
+      "best_source_text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_score": 0.0055
+    },
+    {
+      "lt_index": 19,
+      "statement": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0296
+    },
+    {
+      "lt_index": 20,
+      "statement": "I can solve first-degree equations using systematic algebraic operations to isolate variables.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.0221
+    },
+    {
+      "lt_index": 21,
+      "statement": "I can calculate percentages in multi-step scenarios involving percentage increase, decrease, and compound calculations.",
+      "best_source_provenance": "source_bullets.sb_009 (topic_statement)",
+      "best_source_text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_score": 0.007
+    },
+    {
+      "lt_index": 22,
+      "statement": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_source_provenance": "source_bullets.sb_014 (topic_statement)",
+      "best_source_text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_score": 0.0177
+    },
+    {
+      "lt_index": 23,
+      "statement": "I can calculate mean, median, and mode from numerical data sets.",
+      "best_source_provenance": "source_bullets.sb_018 (topic_statement)",
+      "best_source_text": "Átlag, módusz, medián.",
+      "best_score": 0.0197
+    },
+    {
+      "lt_index": 24,
+      "statement": "I can apply geometric formulas to calculate perimeter, area, and volume accurately.",
+      "best_source_provenance": "source_bullets.sb_021 (topic_statement)",
+      "best_source_text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_score": 0.0365
+    },
+    {
+      "lt_index": 25,
+      "statement": "I can analyze mathematical arguments for logical validity across different mathematical contexts.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0074
+    },
+    {
+      "lt_index": 26,
+      "statement": "I can evaluate graphs to identify mathematical patterns and explain the relationships they represent.",
+      "best_source_provenance": "source_bullets.sb_019 (topic_statement)",
+      "best_source_text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_score": 0.0154
+    },
+    {
+      "lt_index": 27,
+      "statement": "I can construct mathematical arguments that connect claims to evidence through logical reasoning.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.007
+    },
+    {
+      "lt_index": 28,
+      "statement": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0073
+    },
+    {
+      "lt_index": 29,
+      "statement": "I can monitor own mathematical thinking and check work systematically.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0124
+    },
+    {
+      "lt_index": 30,
+      "statement": "I can approach mathematical problems with curiosity and willingness to explore multiple solution pathways.",
+      "best_source_provenance": "source_bullets.sb_002 (topic_statement)",
+      "best_source_text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_score": 0.0066
+    }
+  ]
+}

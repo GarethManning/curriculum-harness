@@ -30,9 +30,10 @@ both runId-prefixed and legacy plain filenames.
    the proxy is built from Phase 1/2 English output; raw source text
    is not used. The felvételi run (Hungarian source) runs in this
    proxy mode.
-4. **Threshold tuning.** The 0.20 threshold is empirical from
-   `eval/test_matcher.py`. Baseline measurements are captured under
-   this threshold; moving it invalidates prior baselines.
+4. **Threshold tuning.** The threshold is
+   `source_evidence_matcher.DEFAULT_THRESHOLD` (0.35 since Session 3a).
+   Baseline measurements are captured under this threshold; moving it
+   invalidates prior baselines.
 """
 
 from __future__ import annotations
@@ -52,9 +53,9 @@ if str(ROOT) not in sys.path:
 
 from _run_loader import load_run  # noqa: E402
 
-from eval.source_evidence_matcher import best_match  # noqa: E402
+from eval.source_evidence_matcher import DEFAULT_THRESHOLD, best_match  # noqa: E402
 
-MATCH_THRESHOLD = 0.20
+MATCH_THRESHOLD = DEFAULT_THRESHOLD
 
 
 def run(run_dir: str) -> dict:

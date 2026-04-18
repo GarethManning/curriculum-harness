@@ -60,9 +60,9 @@ if str(ROOT) not in sys.path:
 
 from _run_loader import load_run  # noqa: E402
 
-from eval.source_evidence_matcher import best_match  # noqa: E402
+from eval.source_evidence_matcher import DEFAULT_THRESHOLD, best_match  # noqa: E402
 
-MATCH_THRESHOLD = 0.20
+MATCH_THRESHOLD = DEFAULT_THRESHOLD
 
 
 def _strand_label_list(architecture: dict | None) -> list[tuple[str, str]]:

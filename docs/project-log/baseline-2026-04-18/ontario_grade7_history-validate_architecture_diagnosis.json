@@ -1,0 +1,183 @@
+{
+  "gate": "validate_architecture_diagnosis",
+  "run_dir": "outputs/ontario_grade7_history",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_strands": 13,
+  "verifiable": 2,
+  "unverifiable_count": 11,
+  "verifiability_pct": 15.4,
+  "unverifiable": [
+    {
+      "strand_index": 0,
+      "label": "Chronological Understanding and Timeline Mastery",
+      "provenance": "architecture.hierarchical_elements[0]",
+      "best_evidence_text": "Knowledge and Understanding",
+      "best_score": 0.2
+    },
+    {
+      "strand_index": 1,
+      "label": "Source Types and Analysis Skills Foundation",
+      "provenance": "architecture.hierarchical_elements[1]",
+      "best_evidence_text": "How might you determine if a source is credible and reliable?",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 2,
+      "label": "Geographic and Spatial Skills Progression",
+      "provenance": "architecture.hierarchical_elements[2]",
+      "best_evidence_text": "How did geographic location affect people's experiences and opportunities?",
+      "best_score": 0.1111
+    },
+    {
+      "strand_index": 3,
+      "label": "Colonial Concepts and Impact Comprehension",
+      "provenance": "architecture.hierarchical_elements[3]",
+      "best_evidence_text": "Colonialism and its impacts on Indigenous peoples",
+      "best_score": 0.1429
+    },
+    {
+      "strand_index": 4,
+      "label": "Indigenous Experiences and Cultural Perspectives",
+      "provenance": "architecture.horizontal_elements[0]",
+      "best_evidence_text": "The importance of Indigenous ways of knowing and perspectives",
+      "best_score": 0.2857
+    },
+    {
+      "strand_index": 5,
+      "label": "Colonial Contact and Settlement Dynamics",
+      "provenance": "architecture.horizontal_elements[1]",
+      "best_evidence_text": "How did climate and landforms affect settlement patterns?",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 6,
+      "label": "Nation Building and Confederation Politics",
+      "provenance": "architecture.horizontal_elements[2]",
+      "best_evidence_text": "What factors led to Confederation?",
+      "best_score": 0.1667
+    },
+    {
+      "strand_index": 7,
+      "label": "Conflict Cooperation and Resistance Strategies",
+      "provenance": "architecture.horizontal_elements[3]",
+      "best_evidence_text": "Conflict and cooperation between diverse groups",
+      "best_score": 0.2857
+    },
+    {
+      "strand_index": 9,
+      "label": "Historical Empathy and Multiple Perspective Taking",
+      "provenance": "architecture.dispositional_elements[0]",
+      "best_evidence_text": "Historical Perspective: Understanding past actions and events within their historical context",
+      "best_score": 0.2
+    },
+    {
+      "strand_index": 10,
+      "label": "Historical Inquiry and Evidence Analysis Capacity",
+      "provenance": "architecture.dispositional_elements[1]",
+      "best_evidence_text": "What concepts of historical thinking might help guide your inquiry?",
+      "best_score": 0.2222
+    },
+    {
+      "strand_index": 11,
+      "label": "Past Present Connections and Contemporary Relevance",
+      "provenance": "architecture.dispositional_elements[2]",
+      "best_evidence_text": "What connections can you make between residential schools and contemporary issues in Indigenous communities?",
+      "best_score": 0.1667
+    }
+  ],
+  "per_strand": [
+    {
+      "strand_index": 0,
+      "label": "Chronological Understanding and Timeline Mastery",
+      "provenance": "architecture.hierarchical_elements[0]",
+      "best_evidence_text": "Knowledge and Understanding",
+      "best_score": 0.2
+    },
+    {
+      "strand_index": 1,
+      "label": "Source Types and Analysis Skills Foundation",
+      "provenance": "architecture.hierarchical_elements[1]",
+      "best_evidence_text": "How might you determine if a source is credible and reliable?",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 2,
+      "label": "Geographic and Spatial Skills Progression",
+      "provenance": "architecture.hierarchical_elements[2]",
+      "best_evidence_text": "How did geographic location affect people's experiences and opportunities?",
+      "best_score": 0.1111
+    },
+    {
+      "strand_index": 3,
+      "label": "Colonial Concepts and Impact Comprehension",
+      "provenance": "architecture.hierarchical_elements[3]",
+      "best_evidence_text": "Colonialism and its impacts on Indigenous peoples",
+      "best_score": 0.1429
+    },
+    {
+      "strand_index": 4,
+      "label": "Indigenous Experiences and Cultural Perspectives",
+      "provenance": "architecture.horizontal_elements[0]",
+      "best_evidence_text": "The importance of Indigenous ways of knowing and perspectives",
+      "best_score": 0.2857
+    },
+    {
+      "strand_index": 5,
+      "label": "Colonial Contact and Settlement Dynamics",
+      "provenance": "architecture.horizontal_elements[1]",
+      "best_evidence_text": "How did climate and landforms affect settlement patterns?",
+      "best_score": 0.125
+    },
+    {
+      "strand_index": 6,
+      "label": "Nation Building and Confederation Politics",
+      "provenance": "architecture.horizontal_elements[2]",
+      "best_evidence_text": "What factors led to Confederation?",
+      "best_score": 0.1667
+    },
+    {
+      "strand_index": 7,
+      "label": "Conflict Cooperation and Resistance Strategies",
+      "provenance": "architecture.horizontal_elements[3]",
+      "best_evidence_text": "Conflict and cooperation between diverse groups",
+      "best_score": 0.2857
+    },
+    {
+      "strand_index": 8,
+      "label": "Social Change and Reform Movements",
+      "provenance": "architecture.horizontal_elements[4]",
+      "best_evidence_text": "Social change and reform movements",
+      "best_score": 1.0
+    },
+    {
+      "strand_index": 9,
+      "label": "Historical Empathy and Multiple Perspective Taking",
+      "provenance": "architecture.dispositional_elements[0]",
+      "best_evidence_text": "Historical Perspective: Understanding past actions and events within their historical context",
+      "best_score": 0.2
+    },
+    {
+      "strand_index": 10,
+      "label": "Historical Inquiry and Evidence Analysis Capacity",
+      "provenance": "architecture.dispositional_elements[1]",
+      "best_evidence_text": "What concepts of historical thinking might help guide your inquiry?",
+      "best_score": 0.2222
+    },
+    {
+      "strand_index": 11,
+      "label": "Past Present Connections and Contemporary Relevance",
+      "provenance": "architecture.dispositional_elements[2]",
+      "best_evidence_text": "What connections can you make between residential schools and contemporary issues in Indigenous communities?",
+      "best_score": 0.1667
+    },
+    {
+      "strand_index": 12,
+      "label": "Indigenous Ways of Knowing Integration",
+      "provenance": "architecture.dispositional_elements[3]",
+      "best_evidence_text": "The importance of Indigenous ways of knowing and perspectives",
+      "best_score": 0.5
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "gate": "validate_source_coverage",
+  "run_dir": "outputs/palya-felveteli-2026-04-17",
+  "threshold": 0.35,
+  "corpus_mode": "bullets",
+  "corpus_warning": "",
+  "total_source_items": 32,
+  "covered": 0,
+  "orphan_count": 32,
+  "coverage_pct": 0.0,
+  "orphans": [
+    {
+      "provenance": "source_bullets.sb_001 (topic_statement)",
+      "text": "Elemi kombinatorika (összeszámolás, sorrendek száma, kiválasztás).",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.015
+    },
+    {
+      "provenance": "source_bullets.sb_002 (topic_statement)",
+      "text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_lt": "I can monitor own mathematical thinking and check work systematically.",
+      "best_score": 0.0124
+    },
+    {
+      "provenance": "source_bullets.sb_003 (topic_statement)",
+      "text": "Műveletek törtekkel.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_004 (topic_statement)",
+      "text": "A tizedes törtek fajtái (véges, végtelen, végtelen szakaszos).",
+      "best_lt": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_score": 0.0055
+    },
+    {
+      "provenance": "source_bullets.sb_005 (topic_statement)",
+      "text": "A kerekítés szabályainak alkalmazása.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_006 (topic_statement)",
+      "text": "Pozitív egész kitevőjű hatványok ismerete, a velük végzett műveletek azonosságainak alkalmazása (azonos alapú hatványok szorzása, osztása, hatvány hatványozása, azonos kitevőjű hatványok szorzása, osztása).",
+      "best_lt": "I can analyze mathematical arguments for logical validity across different mathematical contexts.",
+      "best_score": 0.0034
+    },
+    {
+      "provenance": "source_bullets.sb_007 (topic_statement)",
+      "text": "Számrendszerek ismerete.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_008 (topic_statement)",
+      "text": "Összetett számok prímtényezős felbontása, osztó, többszörös, legnagyobb közös osztó, legkisebb közös többszörös.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_009 (topic_statement)",
+      "text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.0296
+    },
+    {
+      "provenance": "source_bullets.sb_010 (topic_statement)",
+      "text": "Elsőfokú egyenletek megoldása.",
+      "best_lt": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_score": 0.0067
+    },
+    {
+      "provenance": "source_bullets.sb_011 (topic_statement)",
+      "text": "Szöveges feladatok megoldása egyenlettel.",
+      "best_lt": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_score": 0.0059
+    },
+    {
+      "provenance": "source_bullets.sb_012 (topic_statement)",
+      "text": "Százalékérték, százalékláb és alap meghatározása összetett feladatokban.",
+      "best_lt": "I can construct mathematical arguments that connect claims to evidence through logical reasoning.",
+      "best_score": 0.0047
+    },
+    {
+      "provenance": "source_bullets.sb_013 (topic_statement)",
+      "text": "Két halmaz közötti hozzárendelések, alaphalmaz, képhalmaz fogalma, meghatározása egyszerű esetekben, egyértelmű, többértelmű hozzárendelés.",
+      "best_lt": "I can apply laws of exponents to calculate expressions with positive integer exponents.",
+      "best_score": 0.004
+    },
+    {
+      "provenance": "source_bullets.sb_014 (topic_statement)",
+      "text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_lt": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_score": 0.0177
+    },
+    {
+      "provenance": "source_bullets.sb_015 (topic_statement)",
+      "text": "Grafikonok értelmezése, elemzése, adatok leolvasása.",
+      "best_lt": "I can calculate percentages in multi-step scenarios involving percentage increase, decrease, and compound calculations.",
+      "best_score": 0.0052
+    },
+    {
+      "provenance": "source_bullets.sb_016 (topic_statement)",
+      "text": "Számpárok ábrázolása koordinátarendszerben.",
+      "best_lt": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_score": 0.0174
+    },
+    {
+      "provenance": "source_bullets.sb_017 (topic_statement)",
+      "text": "Szabály megállapítása grafikon és táblázat alapján.",
+      "best_lt": "I can evaluate graphs to identify mathematical patterns and explain the relationships they represent.",
+      "best_score": 0.005
+    },
+    {
+      "provenance": "source_bullets.sb_018 (topic_statement)",
+      "text": "Átlag, módusz, medián.",
+      "best_lt": "I can calculate mean, median, and mode from numerical data sets.",
+      "best_score": 0.0197
+    },
+    {
+      "provenance": "source_bullets.sb_019 (topic_statement)",
+      "text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_lt": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_score": 0.0233
+    },
+    {
+      "provenance": "source_bullets.sb_020 (topic_statement)",
+      "text": "A háromszögek csoportosítása, négyszögek, speciális négyszögek.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_021 (topic_statement)",
+      "text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_lt": "I can identify which properties are preserved by each geometric transformation.",
+      "best_score": 0.0573
+    },
+    {
+      "provenance": "source_bullets.sb_022 (topic_statement)",
+      "text": "Háromszögek egybevágósága.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_023 (topic_statement)",
+      "text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.0119
+    },
+    {
+      "provenance": "source_bullets.sb_024 (topic_statement)",
+      "text": "A középpontos tükrözés és tulajdonságai.",
+      "best_lt": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_score": 0.0066
+    },
+    {
+      "provenance": "source_bullets.sb_025 (topic_statement)",
+      "text": "A középpontos és a tengelyes szimmetria alkalmazása, szimmetrikus alakzatok.",
+      "best_lt": "I can identify which properties are preserved by each geometric transformation.",
+      "best_score": 0.0103
+    },
+    {
+      "provenance": "source_bullets.sb_026 (topic_statement)",
+      "text": "A paralelogramma, trapéz és a deltoid származtatása, tulajdonságai.",
+      "best_lt": "I can identify properties of geometric shapes and apply transformations according to established rules.",
+      "best_score": 0.0089
+    },
+    {
+      "provenance": "source_bullets.sb_027 (topic_statement)",
+      "text": "A háromszög, paralelogramma, trapéz és a deltoid kerülete, területe.",
+      "best_lt": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_score": 0.0055
+    },
+    {
+      "provenance": "source_bullets.sb_028 (topic_statement)",
+      "text": "Sokszögek fogalma.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_029 (topic_statement)",
+      "text": "A sokszögek szögeire, átlóira vonatkozó összefüggések.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_030 (topic_statement)",
+      "text": "A háromszög oldalai és szögei közötti elemi összefüggések.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_031 (topic_statement)",
+      "text": "A háromszög nevezetes vonalainak fogalma.",
+      "best_lt": "I can explain how mean, median and mode reveal different patterns in data sets.",
+      "best_score": 0.0064
+    },
+    {
+      "provenance": "source_bullets.sb_032 (topic_statement)",
+      "text": "A hasáb felszíne és térfogata.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    }
+  ],
+  "per_item": [
+    {
+      "provenance": "source_bullets.sb_001 (topic_statement)",
+      "text": "Elemi kombinatorika (összeszámolás, sorrendek száma, kiválasztás).",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.015
+    },
+    {
+      "provenance": "source_bullets.sb_002 (topic_statement)",
+      "text": "Matematikai állítások (igaz és hamis állítások megfogalmazása, állítások igazságának eldöntése, ha...akkor szószerkezetek megértése, alkalmazása, állítások tagadása).",
+      "best_lt": "I can monitor own mathematical thinking and check work systematically.",
+      "best_score": 0.0124
+    },
+    {
+      "provenance": "source_bullets.sb_003 (topic_statement)",
+      "text": "Műveletek törtekkel.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_004 (topic_statement)",
+      "text": "A tizedes törtek fajtái (véges, végtelen, végtelen szakaszos).",
+      "best_lt": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_score": 0.0055
+    },
+    {
+      "provenance": "source_bullets.sb_005 (topic_statement)",
+      "text": "A kerekítés szabályainak alkalmazása.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_006 (topic_statement)",
+      "text": "Pozitív egész kitevőjű hatványok ismerete, a velük végzett műveletek azonosságainak alkalmazása (azonos alapú hatványok szorzása, osztása, hatvány hatványozása, azonos kitevőjű hatványok szorzása, osztása).",
+      "best_lt": "I can analyze mathematical arguments for logical validity across different mathematical contexts.",
+      "best_score": 0.0034
+    },
+    {
+      "provenance": "source_bullets.sb_007 (topic_statement)",
+      "text": "Számrendszerek ismerete.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_008 (topic_statement)",
+      "text": "Összetett számok prímtényezős felbontása, osztó, többszörös, legnagyobb közös osztó, legkisebb közös többszörös.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_009 (topic_statement)",
+      "text": "Műveletek algebrai kifejezésekkel (zárójelfelbontások, összetett műveletek, a műveleti sorrend biztos ismerete, helyettesítési érték).",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.0296
+    },
+    {
+      "provenance": "source_bullets.sb_010 (topic_statement)",
+      "text": "Elsőfokú egyenletek megoldása.",
+      "best_lt": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_score": 0.0067
+    },
+    {
+      "provenance": "source_bullets.sb_011 (topic_statement)",
+      "text": "Szöveges feladatok megoldása egyenlettel.",
+      "best_lt": "I can persist through mathematical challenges and setbacks with emerging mathematical resilience.",
+      "best_score": 0.0059
+    },
+    {
+      "provenance": "source_bullets.sb_012 (topic_statement)",
+      "text": "Százalékérték, százalékláb és alap meghatározása összetett feladatokban.",
+      "best_lt": "I can construct mathematical arguments that connect claims to evidence through logical reasoning.",
+      "best_score": 0.0047
+    },
+    {
+      "provenance": "source_bullets.sb_013 (topic_statement)",
+      "text": "Két halmaz közötti hozzárendelések, alaphalmaz, képhalmaz fogalma, meghatározása egyszerű esetekben, egyértelmű, többértelmű hozzárendelés.",
+      "best_lt": "I can apply laws of exponents to calculate expressions with positive integer exponents.",
+      "best_score": 0.004
+    },
+    {
+      "provenance": "source_bullets.sb_014 (topic_statement)",
+      "text": "Megfeleltetés, arányos osztás, egyenes arányosság, koordináta-rendszer, pont koordinátái, grafikon.",
+      "best_lt": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_score": 0.0177
+    },
+    {
+      "provenance": "source_bullets.sb_015 (topic_statement)",
+      "text": "Grafikonok értelmezése, elemzése, adatok leolvasása.",
+      "best_lt": "I can calculate percentages in multi-step scenarios involving percentage increase, decrease, and compound calculations.",
+      "best_score": 0.0052
+    },
+    {
+      "provenance": "source_bullets.sb_016 (topic_statement)",
+      "text": "Számpárok ábrázolása koordinátarendszerben.",
+      "best_lt": "I can accurately plot coordinate points and interpret spatial relationships on the coordinate plane.",
+      "best_score": 0.0174
+    },
+    {
+      "provenance": "source_bullets.sb_017 (topic_statement)",
+      "text": "Szabály megállapítása grafikon és táblázat alapján.",
+      "best_lt": "I can evaluate graphs to identify mathematical patterns and explain the relationships they represent.",
+      "best_score": 0.005
+    },
+    {
+      "provenance": "source_bullets.sb_018 (topic_statement)",
+      "text": "Átlag, módusz, medián.",
+      "best_lt": "I can calculate mean, median, and mode from numerical data sets.",
+      "best_score": 0.0197
+    },
+    {
+      "provenance": "source_bullets.sb_019 (topic_statement)",
+      "text": "Gyakoriság és relatív gyakoriság, valószínűség és relatív gyakoriság kapcsolata.",
+      "best_lt": "I can analyse how mathematical models represent relationships in real-world contexts.",
+      "best_score": 0.0233
+    },
+    {
+      "provenance": "source_bullets.sb_020 (topic_statement)",
+      "text": "A háromszögek csoportosítása, négyszögek, speciális négyszögek.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_021 (topic_statement)",
+      "text": "Geometriai transzformációk megadása, alkalmazása.",
+      "best_lt": "I can identify which properties are preserved by each geometric transformation.",
+      "best_score": 0.0573
+    },
+    {
+      "provenance": "source_bullets.sb_022 (topic_statement)",
+      "text": "Háromszögek egybevágósága.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_023 (topic_statement)",
+      "text": "A tengelyes tükrözés és tulajdonságai.",
+      "best_lt": "I can apply distributive and combining rules to manipulate algebraic expressions correctly.",
+      "best_score": 0.0119
+    },
+    {
+      "provenance": "source_bullets.sb_024 (topic_statement)",
+      "text": "A középpontos tükrözés és tulajdonságai.",
+      "best_lt": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_score": 0.0066
+    },
+    {
+      "provenance": "source_bullets.sb_025 (topic_statement)",
+      "text": "A középpontos és a tengelyes szimmetria alkalmazása, szimmetrikus alakzatok.",
+      "best_lt": "I can identify which properties are preserved by each geometric transformation.",
+      "best_score": 0.0103
+    },
+    {
+      "provenance": "source_bullets.sb_026 (topic_statement)",
+      "text": "A paralelogramma, trapéz és a deltoid származtatása, tulajdonságai.",
+      "best_lt": "I can identify properties of geometric shapes and apply transformations according to established rules.",
+      "best_score": 0.0089
+    },
+    {
+      "provenance": "source_bullets.sb_027 (topic_statement)",
+      "text": "A háromszög, paralelogramma, trapéz és a deltoid kerülete, területe.",
+      "best_lt": "I can apply exponent laws to simplify algebraic expressions with exponential terms.",
+      "best_score": 0.0055
+    },
+    {
+      "provenance": "source_bullets.sb_028 (topic_statement)",
+      "text": "Sokszögek fogalma.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_029 (topic_statement)",
+      "text": "A sokszögek szögeire, átlóira vonatkozó összefüggések.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_030 (topic_statement)",
+      "text": "A háromszög oldalai és szögei közötti elemi összefüggések.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    },
+    {
+      "provenance": "source_bullets.sb_031 (topic_statement)",
+      "text": "A háromszög nevezetes vonalainak fogalma.",
+      "best_lt": "I can explain how mean, median and mode reveal different patterns in data sets.",
+      "best_score": 0.0064
+    },
+    {
+      "provenance": "source_bullets.sb_032 (topic_statement)",
+      "text": "A hasáb felszíne és térfogata.",
+      "best_lt": "I can calculate factorials and apply counting principles to solve mathematical problems.",
+      "best_score": 0.0
+    }
+  ]
+}

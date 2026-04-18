@@ -81,6 +81,16 @@ import re
 from dataclasses import dataclass
 from typing import Iterable
 
+# Default confidence threshold, shared by every gate script and the
+# matcher fixture tests. Raised from 0.20 → 0.35 in Session 3a
+# (2026-04-18) alongside the move to real source bullets. The 0.20
+# value was calibrated against strand-level proxy corpora where score
+# distributions were narrower; bullet-level matching produces a wider
+# distribution so 0.35 is a safer no-invention bar. Moving this
+# invalidates prior baselines — re-run the gates on all baseline-corpus
+# runs and append a dated entry to docs/project-log/ before changing.
+DEFAULT_THRESHOLD: float = 0.35
+
 # ---------------------------------------------------------------------------
 # Lemmatisation and tokenisation (English-only, rule-based).
 # ---------------------------------------------------------------------------
@@ -272,4 +282,4 @@ def best_match(claim: str, corpus: Iterable[str]) -> Match | None:
     return results[0] if results else None
 
 
-__all__ = ["Match", "match", "best_match", "lemmatise"]
+__all__ = ["Match", "match", "best_match", "lemmatise", "DEFAULT_THRESHOLD"]
