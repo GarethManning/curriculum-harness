@@ -65,7 +65,9 @@ class FetchRequestsPrimitive:
         check_required_scope(self.name, scope, self.required_scope_fields)
 
     def run(self, scope, previous: PrimitiveResult | None) -> PrimitiveResult:
-        url = scope.url or scope.source_reference
+        url = getattr(scope, "url", None) or getattr(
+            scope, "source_reference", None
+        )
 
         allowed, robots_reason = _robots_allows(url)
         if not allowed:

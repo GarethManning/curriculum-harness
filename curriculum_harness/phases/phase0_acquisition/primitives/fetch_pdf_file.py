@@ -67,7 +67,9 @@ class FetchPdfFilePrimitive:
             raise ScopeValidationError(self.name, ["source_reference"])
 
     def run(self, scope, previous: PrimitiveResult | None) -> PrimitiveResult:
-        reference = scope.url or scope.source_reference
+        # PDF scope variants in 0.5.0 only have ``source_reference``;
+        # legacy or HTML-typed scopes may also expose ``url``.
+        reference = getattr(scope, "url", None) or scope.source_reference
         if _is_url(reference):
             return self._run_url(reference)
         return self._run_path(reference)
