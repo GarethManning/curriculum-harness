@@ -156,8 +156,14 @@
   "detection_hash": "1798f5cb42351397d17814760e95fd23066c69ea98a0c5433d7e156a5be9ac87",
   "encoding_detected": null,
   "encoding_failure": null,
+  "investigation_memo_refs": [
+    "docs/diagnostics/2026-04-18-ap-ced-doubling-investigation.md"
+  ],
+  "known_pathology_handling": [
+    "coordinate_level_footer_overlap"
+  ],
   "notes": null,
-  "phase0_version": "0.3.0",
+  "phase0_version": "0.4.0",
   "primitive_sequence": [
     "fetch_pdf_file",
     "extract_pdf_text_deduped",
@@ -178,7 +184,7 @@
     "follow_links": false,
     "heading_regex": false,
     "heading_text": null,
-    "notes": "AP US Government and Politics Course and Exam Description, Unit 1 'Foundations of American Democracy'. Origin URL: https://apcentral.collegeboard.org/media/pdf/ap-us-government-and-politics-course-and-exam-description.pdf. Local-path acquisition used because College Board's robots.txt blanket-disallows all crawlers. Session 4a-2a requeue: pdf_dedup_coords=True enables the coordinate-deduplicating extractor to handle the PDF's overlaid-footer doubling (Mechanism B, documented in docs/diagnostics/2026-04-18-ap-ced-doubling-investigation.md).",
+    "notes": "AP US Government and Politics Course and Exam Description, Unit 1 'Foundations of American Democracy'. Origin URL: https://apcentral.collegeboard.org/media/pdf/ap-us-government-and-politics-course-and-exam-description.pdf. Local-path acquisition used because College Board's robots.txt blanket-disallows all crawlers.",
     "page_range": [
       40,
       55

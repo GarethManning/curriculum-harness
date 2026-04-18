@@ -57,6 +57,16 @@ def _render(manifest: dict[str, Any], manifest_path: Path) -> str:
     out.append(f"Encoding detected: {manifest.get('encoding_detected')}")
     if manifest.get("encoding_failure"):
         out.append(f"Encoding failure : {manifest['encoding_failure']}")
+    pathologies = manifest.get("known_pathology_handling") or []
+    if pathologies:
+        out.append(f"Pathologies      : {', '.join(pathologies)}")
+    else:
+        out.append("Pathologies      : (none)")
+    memos = manifest.get("investigation_memo_refs") or []
+    if memos:
+        out.append("Investigation memos:")
+        for ref in memos:
+            out.append(f"  - {ref}")
     if manifest.get("notes"):
         out.append(f"Notes            : {manifest['notes']}")
     out.append("")

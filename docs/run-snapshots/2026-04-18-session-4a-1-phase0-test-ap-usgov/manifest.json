@@ -81,8 +81,12 @@
   "detection_hash": "1798f5cb42351397d17814760e95fd23066c69ea98a0c5433d7e156a5be9ac87",
   "encoding_detected": null,
   "encoding_failure": null,
+  "investigation_memo_refs": [
+    "docs/diagnostics/2026-04-18-ap-ced-doubling-investigation.md"
+  ],
+  "known_pathology_handling": [],
   "notes": null,
-  "phase0_version": "0.2.0",
+  "phase0_version": "0.4.0",
   "primitive_sequence": [
     "fetch_pdf_file",
     "extract_pdf_text",
