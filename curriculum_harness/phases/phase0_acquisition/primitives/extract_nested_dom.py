@@ -57,6 +57,9 @@ from curriculum_harness.phases.phase0_acquisition.primitives.base import (
     PrimitiveResult,
     ScopeValidationError,
 )
+from curriculum_harness.phases.phase0_acquisition.session_state import (
+    PauseState,
+)
 
 
 # Tags whose textual content is removed by default (overridable via
@@ -346,6 +349,26 @@ class ExtractNestedDomPrimitive:
         soup = _to_soup(html)
         root = _resolve_root(soup, scope.content_root_selector)
         if root is None:
+            pause = PauseState(
+                primitive=self.name,
+                reason="content_root_no_match",
+                needed=(
+                    f"`extract_nested_dom`: `content_root_selector` "
+                    f"`{scope.content_root_selector}` matched no elements "
+                    "in the fetched HTML. Inspect the page in a browser "
+                    "(view-source) and pick a selector that does match. "
+                    "The investigation memo for this source should record "
+                    "the working selector chain."
+                ),
+                expected_format="scope_fields",
+                resume_hint=(
+                    "Edit `content_root_selector` in the scope and re-run."
+                ),
+                state_dir="_paused",
+                source_reference=getattr(scope, "url", "")
+                or getattr(scope, "source_reference", ""),
+                extra={"content_root_selector": scope.content_root_selector},
+            )
             return PrimitiveResult(
                 output="",
                 summary={
@@ -355,8 +378,13 @@ class ExtractNestedDomPrimitive:
                 },
                 meta={
                     "extract_nested_dom_root_match_count": 0,
+                    "pause_request": pause,
                 },
             )
+
+        # Surface multi-match for content_root in the trace as a soft
+        # signal — does not pause but the v3 review wanted it visible.
+        root_match_count = len(soup.select(scope.content_root_selector))
 
         elements, section_meta = _resolve_section(
             root,
@@ -367,6 +395,38 @@ class ExtractNestedDomPrimitive:
             ),
         )
         if not elements:
+            tried_selector = (
+                getattr(scope, "section_scope_selector", None)
+                or getattr(scope, "section_anchor_selector", None)
+            )
+            mech = section_meta.get("section_mechanism", "?")
+            pause = PauseState(
+                primitive=self.name,
+                reason="section_scope_no_match",
+                needed=(
+                    f"`extract_nested_dom`: section scoping ({mech}) with "
+                    f"selector `{tried_selector}` matched no elements "
+                    f"under content root `{scope.content_root_selector}`. "
+                    "Either the page structure shifted or the selector "
+                    "is wrong. Verify against view-source and update the "
+                    "scope. To extract the whole content root with no "
+                    "section narrowing, clear the section_* fields."
+                ),
+                expected_format="scope_fields",
+                resume_hint=(
+                    "Edit `section_scope_selector` or "
+                    "`section_anchor_selector` (one only) in the scope "
+                    "and re-run, OR clear both to extract the whole root."
+                ),
+                state_dir="_paused",
+                source_reference=getattr(scope, "url", "")
+                or getattr(scope, "source_reference", ""),
+                extra={
+                    "section_mechanism": mech,
+                    "section_selector": tried_selector,
+                    "content_root_selector": scope.content_root_selector,
+                },
+            )
             return PrimitiveResult(
                 output="",
                 summary={
@@ -375,7 +435,8 @@ class ExtractNestedDomPrimitive:
                     **section_meta,
                 },
                 meta={
-                    "extract_nested_dom_root_match_count": 1,
+                    "extract_nested_dom_root_match_count": root_match_count,
+                    "pause_request": pause,
                     **section_meta,
                 },
             )
@@ -395,6 +456,46 @@ class ExtractNestedDomPrimitive:
             preserve_headings=bool(getattr(scope, "preserve_headings", True)),
         )
 
+        # Empty extraction after exclusions is a recoverable error —
+        # the chrome list probably over-stripped.
+        if not text.strip():
+            pause = PauseState(
+                primitive=self.name,
+                reason="extracted_content_empty_after_exclusions",
+                needed=(
+                    "`extract_nested_dom`: extracted text is empty after "
+                    "`exclude_selectors` were applied. The chrome list "
+                    "is probably too aggressive — review the strip counts "
+                    f"in the trace ({excluded}) and tighten the "
+                    "exclude_selectors so they target only chrome, not "
+                    "the content body."
+                ),
+                expected_format="scope_fields",
+                resume_hint=(
+                    "Reduce `exclude_selectors` and re-run. The investigation "
+                    "memo for this source should be the source of truth for "
+                    "the chrome list."
+                ),
+                state_dir="_paused",
+                source_reference=getattr(scope, "url", "")
+                or getattr(scope, "source_reference", ""),
+                extra={"exclude_counts": excluded},
+            )
+            return PrimitiveResult(
+                output="",
+                summary={
+                    "status": "empty_after_exclusions",
+                    "exclude_counts": excluded,
+                    **details_meta,
+                    **section_meta,
+                },
+                meta={
+                    "extract_nested_dom_root_match_count": root_match_count,
+                    "pause_request": pause,
+                    "extract_nested_dom_excluded": excluded,
+                },
+            )
+
         return PrimitiveResult(
             output=text,
             summary={
@@ -403,11 +504,12 @@ class ExtractNestedDomPrimitive:
                 "chars_out": len(text),
                 "exclude_counts": excluded,
                 "default_tags_stripped": default_stripped,
+                "root_match_count": root_match_count,
                 **details_meta,
                 **section_meta,
             },
             meta={
-                "extract_nested_dom_root_match_count": 1,
+                "extract_nested_dom_root_match_count": root_match_count,
                 "extract_nested_dom_section_meta": section_meta,
                 "extract_nested_dom_excluded": excluded,
                 "extract_nested_dom_details": details_meta,

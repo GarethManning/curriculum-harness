@@ -28,6 +28,9 @@ from curriculum_harness.phases.phase0_acquisition.primitives.extract_heading_sec
 from curriculum_harness.phases.phase0_acquisition.primitives.extract_pdf_text import (
     ExtractPdfTextPrimitive,
 )
+from curriculum_harness.phases.phase0_acquisition.primitives.extract_nested_dom import (
+    ExtractNestedDomPrimitive,
+)
 from curriculum_harness.phases.phase0_acquisition.primitives.extract_pdf_text_deduped import (
     ExtractPdfTextDedupedPrimitive,
 )
@@ -213,6 +216,51 @@ def js_rendered_progressive_disclosure_sequence(
     ]
 
 
+def html_nested_dom_sequence(scope: ScopeSpec) -> list[Primitive]:
+    """Build the ``html_nested_dom`` primitive chain (Session 4a-4).
+
+    For HTML pages with content rendered in the initial server
+    response but distributed across a deep DOM with non-trivial
+    chrome and (sometimes) heading-anchored sub-section scoping.
+
+    Required scope:
+
+    - ``url``: target URL.
+    - ``content_root_selector``: CSS selector for the deep content
+      container (e.g. ``.govspeak`` for gov.uk pages, ``article#aole-v2``
+      for hwb.gov.wales pages).
+
+    Optional scope (mutually exclusive scoping mechanisms):
+
+    - ``section_scope_selector``: CSS selector that uniquely picks a
+      sub-section container.
+    - ``section_anchor_selector`` (+ ``section_anchor_stop_selector``):
+      heading-anchor scoping for sites whose sub-sections are
+      delimited by sibling headings rather than dedicated containers.
+    - ``exclude_selectors``: CSS selectors for elements to strip
+      before extraction (over-exclude posture).
+    - ``include_details_content`` (default True): preserve <details>
+      static-HTML content; the docstring on the primitive names this
+      vs JS-rendered accordions explicitly.
+    - ``preserve_headings`` (default True): emit heading markers in
+      the extracted text for downstream section detection.
+
+    Site-specific choreography lives in the scope, not in the
+    primitive. If the sequence requires branching on target site to
+    succeed, the architecture is wrong — refactor or escalate.
+    """
+
+    return [
+        FetchRequestsPrimitive(),
+        EncodingDetectionPrimitive(),
+        ExtractNestedDomPrimitive(),
+        VerifyExtractionQualityPrimitive(mode="raw"),
+        NormaliseWhitespacePrimitive(),
+        VerifyExtractionQualityPrimitive(mode="normalised"),
+        ContentHashPrimitive(),
+    ]
+
+
 SEQUENCE_BUILDERS = {
     "static_html_linear": static_html_linear_sequence,
     "flat_pdf_linear": flat_pdf_linear_sequence,
@@ -220,4 +268,5 @@ SEQUENCE_BUILDERS = {
     "js_rendered_progressive_disclosure": (
         js_rendered_progressive_disclosure_sequence
     ),
+    "html_nested_dom": html_nested_dom_sequence,
 }

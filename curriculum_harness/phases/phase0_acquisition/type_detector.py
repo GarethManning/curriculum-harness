@@ -45,6 +45,7 @@ SUPPORTED_SOURCE_TYPES: tuple[SourceType, ...] = (
     "flat_pdf_linear",
     "multi_section_pdf",
     "js_rendered_progressive_disclosure",
+    "html_nested_dom",
 )
 
 SUPPORTED_IN_SESSION_4A_0: tuple[SourceType, ...] = SUPPORTED_SOURCE_TYPES
@@ -151,20 +152,53 @@ def _classify_html(body: bytes) -> DetectionResult:
             is_supported_now=True,
         )
 
-    # Nested-DOM heuristic: high tag density, many <div> layers.
+    # Nested-DOM heuristic. Two signals push toward html_nested_dom:
+    #   (a) very deep div nesting + thin visible-text ratio (the
+    #       Session 4a-0 heuristic, retained), OR
+    #   (b) presence of static <details> disclosures alongside
+    #       substantial chrome (header + footer + nav siblings of the
+    #       main content), which is the gov.uk / hwb pattern that
+    #       benefits from the html_nested_dom primitive's heading-
+    #       anchor scoping and explicit details handling.
+    # Both signals are conservative — most plain HTML still routes to
+    # static_html_linear, which works fine for shallow pages. Callers
+    # who know better can force-route via detection_override.
     tag_count = len(re.findall(rb"<[a-zA-Z]", body))
     div_count = len(re.findall(rb"<div\b", body, flags=re.I))
+    details_count = len(re.findall(rb"<details\b", body, flags=re.I))
+    has_header = bool(re.search(rb"<header\b", body, flags=re.I))
+    has_footer = bool(re.search(rb"<footer\b", body, flags=re.I))
+    has_nav = bool(re.search(rb"<nav\b", body, flags=re.I))
+    chrome_trio = sum([has_header, has_footer, has_nav])
     signals["tag_count"] = tag_count
     signals["div_count"] = div_count
+    signals["details_count"] = details_count
+    signals["chrome_trio"] = chrome_trio
+
     if div_count > 1500 and text_ratio < 0.18:
         return DetectionResult(
             source_type="html_nested_dom",
             confidence="medium",
             rationale=(
                 "Very high div count with thin visible-text ratio — "
-                "nested / tabbed DOM likely; linear extraction risky."
+                "nested DOM likely; linear extraction risky."
             ),
             signals=signals,
+            is_supported_now=True,
+        )
+
+    if details_count >= 1 and chrome_trio >= 2 and div_count >= 200:
+        return DetectionResult(
+            source_type="html_nested_dom",
+            confidence="medium",
+            rationale=(
+                f"Static <details> elements ({details_count}) alongside "
+                f"chrome trio ({chrome_trio}/3) and {div_count} divs — "
+                "nested-DOM primitive's heading-anchor scoping and "
+                "explicit details handling is the right default."
+            ),
+            signals=signals,
+            is_supported_now=True,
         )
 
     return DetectionResult(
