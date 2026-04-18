@@ -14,6 +14,10 @@ from curriculum_harness._anthropic import (
     response_debug_dump,
     response_text_content,
 )
+from curriculum_harness.source_faithfulness import (
+    SOURCE_FAITHFULNESS_FAIL_FLAG,
+    compute_source_provenance,
+)
 from curriculum_harness.state import DecomposerState
 from curriculum_harness.types import (
     HumanReviewItem,
@@ -64,6 +68,29 @@ def _filter_recall_only_know(kud: KUD) -> tuple[KUD, int]:
             kept.append(item)
     kud.know = kept
     return kud, removed
+
+
+def _attach_source_faithfulness(kud: KUD, source_bullets: list[dict]) -> int:
+    """Attach source_provenance + SOURCE_FAITHFULNESS_FAIL flag to every
+    KUD item. Returns the count of items flagged below threshold.
+
+    Items ship with the flag rather than being dropped — Session 3b
+    will add a regeneration loop. See
+    ``curriculum_harness/source_faithfulness.py`` for the matcher's
+    adjacent-mechanism declaration, including language-boundary and
+    grain-appropriateness limits.
+    """
+    flagged = 0
+    for _bucket, item in kud.all_items():
+        provenance, passed = compute_source_provenance(
+            item.content, source_bullets
+        )
+        item.source_provenance = provenance
+        if not passed:
+            if SOURCE_FAITHFULNESS_FAIL_FLAG not in item.flags:
+                item.flags.append(SOURCE_FAITHFULNESS_FAIL_FLAG)
+            flagged += 1
+    return flagged
 
 
 SYSTEM_DIRECT = """You map curriculum expectations into KUD lists. Output ONLY valid JSON:
@@ -190,10 +217,19 @@ async def phase3_kud(state: DecomposerState) -> dict[str, Any]:
 
     kud, recall_filtered_count = _filter_recall_only_know(kud)
 
+    source_bullets = list(state.get("source_bullets") or [])
+    faithfulness_flagged = _attach_source_faithfulness(kud, source_bullets)
+    if not source_bullets:
+        errs.append(
+            "phase3: no source_bullets corpus available — "
+            "SOURCE_FAITHFULNESS_FAIL flags suppressed for this run"
+        )
+
     return {
         "current_phase": "phase3:complete" if used_mcp else "phase3:fallback",
         "errors": errs,
         "human_review_queue": review_dicts,
         "kud": kud.to_dict(),
         "recall_filtered_count": recall_filtered_count,
+        "phase3_faithfulness_flagged_count": faithfulness_flagged,
     }

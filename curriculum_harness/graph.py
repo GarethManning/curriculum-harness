@@ -189,6 +189,12 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
         )
 
     recall_filtered = int(state.get("recall_filtered_count") or 0)
+    phase3_faithfulness_flagged = int(
+        state.get("phase3_faithfulness_flagged_count") or 0
+    )
+    phase4_faithfulness_flagged = int(
+        state.get("phase4_faithfulness_flagged_count") or 0
+    )
 
     profile_notes = str(state.get("curriculum_classification_notes") or "").strip()
     oc = curriculum_profile.get("output_conventions") or {}
@@ -279,6 +285,11 @@ def output_node(state: DecomposerState) -> dict[str, Any]:
         "## Phase 3 recall filter",
         "",
         f"- recall_filtered_count: {recall_filtered}",
+        "",
+        "## Source faithfulness flagging (Session 3a)",
+        "",
+        f"- Phase 3 KUD items flagged SOURCE_FAITHFULNESS_FAIL: {phase3_faithfulness_flagged}",
+        f"- Phase 4 LTs flagged SOURCE_FAITHFULNESS_FAIL: {phase4_faithfulness_flagged}",
         "",
         "## Flags (unique)",
         "",

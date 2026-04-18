@@ -31,3 +31,5 @@ class DecomposerState(TypedDict, total=False):
     curriculum_profile: dict[str, Any]
     curriculum_classification_notes: str
     source_bullets: list[dict[str, Any]]
+    phase3_faithfulness_flagged_count: int
+    phase4_faithfulness_flagged_count: int

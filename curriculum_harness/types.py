@@ -386,6 +386,18 @@ class KUDItem:
     knowledge_type: str = ""
     assessment_route: str = ""
     notes: str = ""
+    # Session 3a — source faithfulness threading.
+    # source_provenance: list of {bullet_id, score, matched_text,
+    # bullet_type} entries; empty when Phase 3 ran without a
+    # source_bullets corpus. Populated in phases/phase3_kud.py after
+    # the MCP / fallback call returns.
+    source_provenance: list[dict[str, Any]] = field(default_factory=list)
+    # flags: validation / faithfulness flags attached at emission
+    # time. Includes SOURCE_FAITHFULNESS_FAIL when best-match score is
+    # below the matcher's DEFAULT_THRESHOLD. Items ship with the flag
+    # rather than being dropped (Session 3b will add a regeneration
+    # loop).
+    flags: list[str] = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> KUDItem:
@@ -394,6 +406,8 @@ class KUDItem:
             knowledge_type=str(data.get("knowledge_type", "")),
             assessment_route=str(data.get("assessment_route", "")),
             notes=str(data.get("notes", "")),
+            source_provenance=list(data.get("source_provenance") or []),
+            flags=list(data.get("flags") or []),
         )
 
     def to_dict(self) -> dict[str, Any]:
