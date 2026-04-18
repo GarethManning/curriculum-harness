@@ -1,0 +1,9 @@
+{
+  "confidence": "high",
+  "is_supported_now": true,
+  "rationale": "Session 4a-4 Step 8 deterministic override \u2014 gov.uk's .govspeak container is structurally a html_nested_dom source even though it does not trip the conservative heuristic (no <details>, div_count < 1500).",
+  "signals": {
+    "override_source": "session_4a_4_step_8_runner"
+  },
+  "source_type": "html_nested_dom"
+}

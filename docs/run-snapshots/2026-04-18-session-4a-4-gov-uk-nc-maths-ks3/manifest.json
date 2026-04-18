@@ -1,0 +1,338 @@
+{
+  "acquisition_trace": [
+    {
+      "duration_ms": 652,
+      "error": null,
+      "inputs": {
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
+      },
+      "outputs_summary": {
+        "bytes": 302525,
+        "content_type": "text/html; charset=utf-8",
+        "declared_encoding": "utf-8",
+        "final_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+        "http_status": 200,
+        "robots_reason": "allowed",
+        "status": "ok"
+      },
+      "primitive": "fetch_requests",
+      "started_at": "2026-04-18T17:52:59.601721+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 27,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chaos": 0.0,
+        "declared_encoding": "utf-8",
+        "encoding_detected": "utf_8",
+        "status": "detected"
+      },
+      "primitive": "encoding_detection",
+      "started_at": "2026-04-18T17:53:00.254014+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 41,
+      "error": null,
+      "inputs": {
+        "content_root_selector": ".govspeak",
+        "exclude_selectors": [],
+        "include_details_content": true,
+        "preserve_headings": true,
+        "section_anchor_selector": "#key-stage-3"
+      },
+      "outputs_summary": {
+        "chars_out": 12463,
+        "content_root_selector": ".govspeak",
+        "default_tags_stripped": 0,
+        "details_found": 0,
+        "details_summaries_kept": 0,
+        "exclude_counts": {},
+        "root_match_count": 1,
+        "section_anchor_element_count": 62,
+        "section_anchor_match_count": 1,
+        "section_anchor_selector": "#key-stage-3",
+        "section_anchor_stop_selector": "h2",
+        "section_mechanism": "heading_anchor",
+        "status": "ok"
+      },
+      "primitive": "extract_nested_dom",
+      "started_at": "2026-04-18T17:53:00.281157+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 12463,
+        "checks": [
+          {
+            "flagged": false,
+            "name": "whitespace_runs",
+            "passed": true,
+            "threshold": 50,
+            "value": 0
+          }
+        ],
+        "line_count": 147,
+        "mode": "raw",
+        "verdict": "clean"
+      },
+      "primitive": "verify_raw_extraction",
+      "started_at": "2026-04-18T17:53:00.322939+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 12463,
+        "chars_out": 12461
+      },
+      "primitive": "normalise_whitespace",
+      "started_at": "2026-04-18T17:53:00.323177+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 5,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 12461,
+        "checks": [
+          {
+            "countable_lines": 109,
+            "docwide_failure": false,
+            "flagged": false,
+            "lines_flagged": 0,
+            "mean_flagged_ratio": 0.0,
+            "name": "character_doubling",
+            "passed": true,
+            "systematic_failure": false,
+            "threshold": 0.2,
+            "value": 0.0
+          },
+          {
+            "flagged": false,
+            "language_details": {
+              "english_hits": 545,
+              "ratio": 0.31,
+              "threshold": 0.03,
+              "total_words": 1758
+            },
+            "language_detected": "english_confident",
+            "name": "repeated_bigram",
+            "passed": true,
+            "threshold": 0.75,
+            "top_bigrams": [
+              [
+                "an",
+                260
+              ],
+              [
+                "in",
+                238
+              ],
+              [
+                "nd",
+                215
+              ],
+              [
+                "ti",
+                213
+              ],
+              [
+                "at",
+                189
+              ]
+            ],
+            "total_bigrams": 10320,
+            "value": 0.188
+          },
+          {
+            "flagged": false,
+            "name": "empty_line_ratio",
+            "passed": true,
+            "threshold": 0.6000000000000001,
+            "value": 0.204
+          },
+          {
+            "chars_total": 12461,
+            "fetched_bytes": 302525,
+            "flagged": true,
+            "name": "completeness",
+            "passed": true,
+            "source_kind": "html",
+            "threshold": 0.05,
+            "value": 0.0412
+          }
+        ],
+        "line_count": 147,
+        "mode": "normalised",
+        "verdict": "suspicious"
+      },
+      "primitive": "verify_normalised_extraction",
+      "started_at": "2026-04-18T17:53:00.323720+00:00",
+      "user_interaction": null
+    },
+    {
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "bytes": 12492,
+        "content_hash": "42231e74d2256d517b4d0bb9c94076d0dac5ccce381d6b67794cbe7c940d8ca9"
+      },
+      "primitive": "content_hash",
+      "started_at": "2026-04-18T17:53:00.328810+00:00",
+      "user_interaction": null
+    }
+  ],
+  "content_files": [
+    "docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/content.txt"
+  ],
+  "content_hash": "42231e74d2256d517b4d0bb9c94076d0dac5ccce381d6b67794cbe7c940d8ca9",
+  "detection_hash": "45052a26d2428740f6dee23fdd032b32723b6945e3304034a43fedddf16c9c88",
+  "dom_hash": null,
+  "encoding_detected": "utf_8",
+  "encoding_failure": null,
+  "investigation_memo_refs": [
+    "docs/diagnostics/2026-04-18-gov-uk-nc-maths-ks3-investigation.md"
+  ],
+  "known_pathology_handling": [],
+  "notes": null,
+  "phase0_version": "0.5.0",
+  "primitive_sequence": [
+    "fetch_requests",
+    "encoding_detection",
+    "extract_nested_dom",
+    "verify_raw_extraction",
+    "normalise_whitespace",
+    "verify_normalised_extraction",
+    "content_hash"
+  ],
+  "scope_acquired": {
+    "chars": 12461,
+    "verification_excerpt": {
+      "first_chars": "Key stage 3\n\nIntroduction\n\nMathematics is an interconnected subject in which pupils need to be able to move fluently between representations of mathematical ideas. The programme of study for key stage",
+      "last_chars": "bles (bivariate data) in observational and experimental contexts and illustrate using scatter graphs",
+      "line_count": 147
+    }
+  },
+  "scope_requested": {
+    "content_root_selector": ".govspeak",
+    "exclude_selectors": [],
+    "include_details_content": true,
+    "notes": "UK Department for Education / Department for Education and Skills \u2014 National Curriculum in England, Mathematics programmes of study, Key Stage 3 (England). gov.uk-published HTML; KS3 is interleaved with KS1/KS2/KS4 inside .govspeak, scoped via heading-anchor (#key-stage-3) \u2014 see Step 1 investigation memo docs/diagnostics/2026-04-18-gov-uk-nc-maths-ks3-investigation.md.",
+    "preserve_headings": true,
+    "section_anchor_selector": "#key-stage-3",
+    "section_anchor_stop_selector": null,
+    "section_scope_selector": null,
+    "source_reference": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+    "source_type": "html_nested_dom",
+    "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
+  },
+  "source_reference": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+  "source_type": "html_nested_dom",
+  "timestamp": "2026-04-18T17:52:59.601545+00:00",
+  "user_interactions": [],
+  "verification_trace": [
+    {
+      "checks_run": [
+        {
+          "flagged": false,
+          "name": "whitespace_runs",
+          "passed": true,
+          "threshold": 50,
+          "value": 0
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_raw_extraction",
+      "timestamp": "2026-04-18T17:53:00.323168+00:00",
+      "verdict": "clean"
+    },
+    {
+      "checks_run": [
+        {
+          "countable_lines": 109,
+          "docwide_failure": false,
+          "flagged": false,
+          "lines_flagged": 0,
+          "mean_flagged_ratio": 0.0,
+          "name": "character_doubling",
+          "passed": true,
+          "systematic_failure": false,
+          "threshold": 0.2,
+          "value": 0.0
+        },
+        {
+          "flagged": false,
+          "language_details": {
+            "english_hits": 545,
+            "ratio": 0.31,
+            "threshold": 0.03,
+            "total_words": 1758
+          },
+          "language_detected": "english_confident",
+          "name": "repeated_bigram",
+          "passed": true,
+          "threshold": 0.75,
+          "top_bigrams": [
+            [
+              "an",
+              260
+            ],
+            [
+              "in",
+              238
+            ],
+            [
+              "nd",
+              215
+            ],
+            [
+              "ti",
+              213
+            ],
+            [
+              "at",
+              189
+            ]
+          ],
+          "total_bigrams": 10320,
+          "value": 0.188
+        },
+        {
+          "flagged": false,
+          "name": "empty_line_ratio",
+          "passed": true,
+          "threshold": 0.6000000000000001,
+          "value": 0.204
+        },
+        {
+          "chars_total": 12461,
+          "fetched_bytes": 302525,
+          "flagged": true,
+          "name": "completeness",
+          "passed": true,
+          "source_kind": "html",
+          "threshold": 0.05,
+          "value": 0.0412
+        }
+      ],
+      "details": {
+        "sample_failures": []
+      },
+      "primitive": "verify_normalised_extraction",
+      "timestamp": "2026-04-18T17:53:00.328803+00:00",
+      "verdict": "suspicious"
+    }
+  ]
+}
