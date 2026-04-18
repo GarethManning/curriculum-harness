@@ -297,6 +297,17 @@ class AcquisitionManifest(BaseModel):
     content_files: list[str] = Field(default_factory=list)
     content_hash: str | None = None
     detection_hash: str | None = None
+    dom_hash: str | None = Field(
+        default=None,
+        description=(
+            "SHA-256 of the rendered DOM HTML at extraction time — only "
+            "set for JS-rendered source types. ``content_hash`` hashes "
+            "the normalised extracted text; ``dom_hash`` hashes the raw "
+            "rendered HTML the primitive saw, so downstream consumers can "
+            "detect whether the page shape changed even when the "
+            "extracted text is stable. Null for non-JS source types."
+        ),
+    )
     encoding_detected: str | None = None
     encoding_failure: str | None = None
     user_interactions: list[UserInteraction] = Field(default_factory=list)

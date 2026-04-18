@@ -176,6 +176,21 @@ def run_pipeline(
             manifest.encoding_failure = result.meta["encoding_failure"]
         if result.meta.get("content_hash"):
             manifest.content_hash = result.meta["content_hash"]
+        if result.meta.get("dom_hash"):
+            manifest.dom_hash = result.meta["dom_hash"]
+
+        side_artefacts = result.meta.get("side_artefacts") or []
+        for artefact in side_artefacts:
+            filename = artefact.get("filename")
+            payload = artefact.get("bytes")
+            if not filename or not isinstance(payload, (bytes, bytearray)):
+                continue
+            target = out_dir / filename
+            target.write_bytes(bytes(payload))
+            if artefact.get("list_in_content_files"):
+                rel = str(target)
+                if rel not in manifest.content_files:
+                    manifest.content_files.append(rel)
         if result.meta.get("verification"):
             v = result.meta["verification"]
             manifest.append_verification(
