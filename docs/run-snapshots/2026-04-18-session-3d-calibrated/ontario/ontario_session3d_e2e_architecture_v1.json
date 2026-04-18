@@ -1,0 +1,99 @@
+{
+  "architecture_type": "Mixed Horizontal-Hierarchical",
+  "proportions": {
+    "horizontal": 0.55,
+    "hierarchical": 0.3,
+    "dispositional": 0.15
+  },
+  "hierarchical_elements": [
+    "Chronological Knowledge Progression",
+    "Cause Consequence Analysis"
+  ],
+  "horizontal_elements": [
+    "Historical Thinking And Inquiry",
+    "Source Analysis And Evaluation",
+    "Historical Concepts Thinking"
+  ],
+  "dispositional_elements": [
+    "Historical Empathy Development"
+  ],
+  "strands": [
+    {
+      "id": "historical-thinking-inquiry",
+      "label": "Historical Thinking And Inquiry",
+      "lane": "horizontal_analytical",
+      "expected_lt_types": [
+        2
+      ],
+      "values_basis": "Cross-cutting inquiry framework that applies to all historical content through formulating questions, gathering evidence, analysis, and communication."
+    },
+    {
+      "id": "source-analysis-evaluation",
+      "label": "Source Analysis And Evaluation",
+      "lane": "horizontal_analytical",
+      "expected_lt_types": [
+        2
+      ],
+      "values_basis": "Subject-wide skill for critically examining primary and secondary sources, assessing credibility and limitations across all historical topics."
+    },
+    {
+      "id": "historical-concepts-thinking",
+      "label": "Historical Concepts Thinking",
+      "lane": "horizontal_analytical",
+      "expected_lt_types": [
+        2
+      ],
+      "values_basis": "Analytical frameworks including Historical Significance, Cause and Consequence, and Continuity and Change that operate as interpretive lenses across content."
+    },
+    {
+      "id": "chronological-knowledge-progression",
+      "label": "Chronological Knowledge Progression",
+      "lane": "hierarchical",
+      "expected_lt_types": [
+        1
+      ],
+      "values_basis": "Sequential understanding of historical periods where knowledge of 1713-1800 events provides necessary context for comprehending 1800-1850 developments."
+    },
+    {
+      "id": "cause-consequence-chains",
+      "label": "Cause Consequence Analysis",
+      "lane": "hierarchical",
+      "expected_lt_types": [
+        1
+      ],
+      "values_basis": "Building understanding of how earlier events create conditions for later developments, requiring mastery of prior causal relationships."
+    },
+    {
+      "id": "new-france-period",
+      "label": "New France Era Content",
+      "lane": "content_theme",
+      "expected_lt_types": [],
+      "values_basis": "Specific historical period content (1713-1800) that serves as curriculum coverage but does not define learning target types."
+    },
+    {
+      "id": "early-canada-period",
+      "label": "Early Canada Era Content",
+      "lane": "content_theme",
+      "expected_lt_types": [],
+      "values_basis": "Specific historical period content (1800-1850) covering distinct themes and events for curriculum completeness."
+    },
+    {
+      "id": "indigenous-perspectives",
+      "label": "Indigenous Perspectives Integration",
+      "lane": "content_theme",
+      "expected_lt_types": [],
+      "values_basis": "Thematic focus on First Nations, M\u00e9tis, and Inuit experiences across both time periods rather than a skill framework."
+    },
+    {
+      "id": "historical-empathy-perspective",
+      "label": "Historical Empathy Development",
+      "lane": "dispositional",
+      "expected_lt_types": [
+        3
+      ],
+      "values_basis": "Growing capacity to understand multiple perspectives and experiences of different groups in historical contexts, developed through sustained practice."
+    }
+  ],
+  "structural_flaw": "Period-based organization creates artificial separation between interconnected historical processes and may fragment development of analytical thinking skills across content boundaries.",
+  "auto_assessable_pct": 0.25
+}

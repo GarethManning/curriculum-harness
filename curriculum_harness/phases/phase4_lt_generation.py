@@ -872,7 +872,53 @@ async def phase4_lt_generation(state: DecomposerState) -> dict[str, Any]:
     hard = _hard_rules_for_format(fmt)
     action_block = _action_rules_for_format(fmt)
 
-    source_bullets = list(state.get("source_bullets") or [])
+    # Session 3d — Phase 4's per-LT faithfulness check must run against
+    # coverage-relevant bullets only (specific_expectation +
+    # overall_expectation). Illustrative bullets (sample_question,
+    # teacher_prompt), front_matter, other, and cross_grade extraction
+    # errors are structural noise: an LT that only "matches" a sample
+    # question or front-matter line is not demonstrably faithful. This
+    # mirrors the gate-level filter applied in `_run_loader.py`.
+    # Backwards-compat: bullets without a bullet_type field (pre-Session-
+    # 3d runs) are treated as coverage-relevant so legacy behaviour is
+    # preserved.
+    _raw_bullets = list(state.get("source_bullets") or [])
+    _COVERAGE_RELEVANT_BTYPES = {
+        "specific_expectation",
+        "overall_expectation",
+    }
+    _has_btype_field = any(("bullet_type" in b) for b in _raw_bullets)
+    if _has_btype_field:
+        # Determine whether the bullet_type field uses the Session-3d
+        # semantic enum or the pre-Session-3d detector name. If any
+        # bullet carries a semantic value, treat the whole set as
+        # Session-3d shape and filter.
+        _semantic_shape = any(
+            (b.get("bullet_type") in _COVERAGE_RELEVANT_BTYPES)
+            or b.get("bullet_type")
+            in {"sample_question", "teacher_prompt", "cross_grade", "front_matter", "other"}
+            for b in _raw_bullets
+        )
+        if _semantic_shape:
+            source_bullets = [
+                b for b in _raw_bullets
+                if b.get("bullet_type") in _COVERAGE_RELEVANT_BTYPES
+            ]
+        else:
+            source_bullets = _raw_bullets
+    else:
+        source_bullets = _raw_bullets
+    if _raw_bullets and not source_bullets:
+        # Filter produced an empty set from a non-empty raw list. Fall
+        # back to the full list so Phase 4 does not run blind. The log
+        # line calls out the condition so the run report surfaces it.
+        errs.append(
+            "phase4: bullet_type filter collapsed source_bullets to zero "
+            f"coverage-relevant bullets from {len(_raw_bullets)} total — "
+            "falling back to unfiltered corpus; Phase 1 scoping likely "
+            "missed the target grade."
+        )
+        source_bullets = _raw_bullets
     kud_parents = [
         {"id": f"{bucket}[{idx}]", "content": it.content}
         for idx, (bucket, it) in enumerate(kud.all_items())
