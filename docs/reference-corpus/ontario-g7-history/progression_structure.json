@@ -1,0 +1,25 @@
+{
+  "band_labels": [
+    "Grade 7"
+  ],
+  "band_count": 1,
+  "age_range_hint": "ages 12-13 (Ontario Ministry of Education K-12 schedule)",
+  "source_type": "ontario_grade",
+  "detection_confidence": "high",
+  "detection_rationale": "Source slug '5-ontario-k8-g7-history-pdf' matches Ontario pattern; grade 7 extracted. Single-grade source — band_count=1.",
+  "band_self_reflection_prompts": {
+    "Grade 7": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
+  },
+  "band_details": [
+    {
+      "label": "Grade 7",
+      "approximate_age_range": "ages 12-13",
+      "approximate_grade_year": "Grade 7",
+      "developmental_descriptor": "Grade 7 learners are in the first year of the Intermediate level (Grades 7-8). In History, they examine social, political, economic, and legal changes in Canada between 1713 and 1850, including New France and British North America. They apply disciplinary historical-thinking concepts (Continuity and Change, Cause and Consequence, Historical Perspective, Historical Significance) and inquiry skills to analyse primary and secondary sources."
+    }
+  ],
+  "progression_philosophy": "Grade-level expectations published at grade-level granularity. Each grade's curriculum is designed to be met by learners in that grade by year's end. Ontario does not define sub-grade progression bands within curriculum documents; within-year sequencing is a school and teacher decision. Single-band output reflects the source's own granularity.",
+  "source_reference": "/Users/garethmanning/Github/curriculum-harness/outputs/phase0-test-ontario-g7-history-2026-04-18/_source.pdf",
+  "source_slug": "5-ontario-k8-g7-history-pdf",
+  "detection_module_version": "0.1.0"
+}

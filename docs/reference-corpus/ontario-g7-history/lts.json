@@ -1,0 +1,1441 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "5-ontario-k8-g7-history-pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Historical Evidence Analysis and Source Evaluation",
+      "lt_name": "Evaluating Source Credibility and Perspective",
+      "lt_definition": "I can assess the credibility of historical sources by analysing perspective, bias, authenticity, purpose, context, and author expertise.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0083_item_01",
+        "blk_0191_item_01",
+        "blk_0192_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Perspective",
+            "Analysing Evidence from Diverse Source Types"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Perspective",
+            "Analysing and Interpreting Primary Sources",
+            "Locating and Cross-Referencing Multiple Sources"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Bias",
+            "Analysing Primary Sources for Evidence"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 2, (3, ('Type 2', 'Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Historical Evidence Analysis and Source Evaluation",
+      "lt_name": "Analysing Evidence from Diverse Source Types",
+      "lt_definition": "I can gather and critically analyse evidence from primary sources of different types to form and justify conclusions about historical events and issues.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0004_item_01",
+        "blk_0078_item_01",
+        "blk_0080_item_01",
+        "blk_0091_item_01",
+        "blk_0093_item_01",
+        "blk_0190_item_01"
+      ],
+      "prerequisite_lts": [
+        "Evaluating Source Credibility and Perspective"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Perspective",
+            "Analysing Evidence from Diverse Source Types"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Perspective",
+            "Analysing and Interpreting Primary Sources",
+            "Locating and Cross-Referencing Multiple Sources"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Source Credibility and Bias",
+            "Analysing Primary Sources for Evidence"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 2, (3, ('Type 2', 'Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Cartographic Analysis and Map Use",
+      "lt_name": "Interpreting Maps to Analyse Spatial Patterns",
+      "lt_definition": "I can analyse maps to identify and explain historical patterns of displacement, settlement, and spatial relationships.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0039_item_02",
+        "blk_0086_item_01",
+        "blk_0086_item_02",
+        "blk_0088_item_01",
+        "blk_0090_item_01",
+        "blk_0193_item_02",
+        "blk_0194_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 1', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Cartographic Analysis and Map Use",
+      "lt_name": "Creating and Designing Maps for Historical Investigation",
+      "lt_definition": "I can create maps using paper or digital tools to represent historical events, displacement patterns, and settlement trends.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0039_item_01",
+        "blk_0039_item_03",
+        "blk_0086_item_03",
+        "blk_0193_item_02",
+        "blk_0194_item_02",
+        "blk_0199_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 1', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_02_lt_03",
+      "cluster_id": "cluster_02",
+      "competency_name": "Cartographic Analysis and Map Use",
+      "lt_name": "Justifying Map Design Choices for Historical Inquiry",
+      "lt_definition": "I can identify and justify what information and map types are needed to represent historical alliances, conflicts, and spatial relationships.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0089_item_01",
+        "blk_0194_item_04",
+        "blk_0197_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Interpreting Maps to Analyse Spatial Patterns",
+            "Creating and Designing Maps for Historical Investigation",
+            "Justifying Map Design Choices for Historical Inquiry"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 1', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Contextual Understanding and Anti-Presentism",
+      "lt_name": "Understanding Historical Actors in Context",
+      "lt_definition": "The student sustains a default orientation to understand historical actors' and communities' decisions, perspectives, and actions within their own context's values, beliefs, knowledge, and constraints, resisting presentism across all historical encounters.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0044_item_03",
+        "blk_0062_item_02",
+        "blk_0066_item_02",
+        "blk_0155_item_02",
+        "blk_0168_item_02",
+        "blk_0173_item_01",
+        "blk_0192_item_02",
+        "blk_0206_item_02",
+        "blk_0223_item_02",
+        "blk_0228_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors in Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors Within Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors in Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Contextual Understanding and Anti-Presentism",
+      "lt_name": "Attending to Perspective and Change Over Time",
+      "lt_definition": "The student sustains an orientation to notice continuity and change across multiple dimensions, seek diverse perspectives including Indigenous voices, question whose perspectives are represented in sources, and consult multiple sources by default when examining historical material.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0044_item_02",
+        "blk_0081_item_01",
+        "blk_0082_item_01",
+        "blk_0084_item_01",
+        "blk_0088_item_02",
+        "blk_0258_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors in Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors Within Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Historical Actors in Context",
+            "Attending to Perspective and Change Over Time"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Displacement and Forced Migration in Canadian History",
+      "lt_name": "Analysing Causes and Contexts of Displacement",
+      "lt_definition": "I can analyse the causes, contexts, and multiple perspectives underlying displacement events for various groups in Canadian history between 1713 and 1850.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0056_item_01",
+        "blk_0058_item_01",
+        "blk_0064_item_01",
+        "blk_0169_item_01",
+        "blk_0170_item_03",
+        "blk_0171_item_01",
+        "blk_0172_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Comparative Consequences",
+            "Understanding Displacement Narratives and Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Multiple Perspectives"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Understanding Displacement Experiences and Responses",
+            "Comparing Historical and Contemporary Displacement"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Displacement and Forced Migration in Canadian History",
+      "lt_name": "Evaluating Responses and Comparative Consequences",
+      "lt_definition": "I can evaluate how displaced groups responded to displacement and compare displacement experiences across different historical periods and communities.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0056_item_02",
+        "blk_0062_item_01",
+        "blk_0171_item_01",
+        "blk_0172_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Comparative Consequences",
+            "Understanding Displacement Narratives and Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Multiple Perspectives"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Understanding Displacement Experiences and Responses",
+            "Comparing Historical and Contemporary Displacement"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_05_lt_03",
+      "cluster_id": "cluster_05",
+      "competency_name": "Displacement and Forced Migration in Canadian History",
+      "lt_name": "Understanding Displacement Narratives and Contexts",
+      "lt_definition": "I can identify and describe the displacement experiences of Indigenous peoples, Acadians, Loyalists, enslaved people, and immigrants, and explain the social attitudes and conditions that shaped these experiences.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0048_item_01",
+        "blk_0059_item_01",
+        "blk_0170_item_01",
+        "blk_0170_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Comparative Consequences",
+            "Understanding Displacement Narratives and Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Evaluating Responses and Multiple Perspectives"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Causes and Contexts of Displacement",
+            "Understanding Displacement Experiences and Responses",
+            "Comparing Historical and Contemporary Displacement"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "cluster_id": "cluster_06",
+      "competency_name": "Continuity and Change Across Time Periods",
+      "lt_name": "Analysing Continuity and Change Across Dimensions",
+      "lt_definition": "I can analyse similarities and differences in social, environmental, and lived experiences across different historical periods and identify key reasons for change.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0046_item_01",
+        "blk_0054_item_01",
+        "blk_0055_item_01",
+        "blk_0057_item_02"
+      ],
+      "prerequisite_lts": [
+        "Identifying Historical Sources and Contexts"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "cluster_id": "cluster_06",
+      "competency_name": "Continuity and Change Across Time Periods",
+      "lt_name": "Identifying Historical Sources and Contexts",
+      "lt_definition": "I can identify types and sources of evidence from specific historical periods, including Indigenous knowledge and practices.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0057_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Continuity and Change Across Dimensions",
+            "Identifying Historical Sources and Contexts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "cluster_id": "cluster_07",
+      "competency_name": "Multiple Perspectives and Historical Interpretation",
+      "lt_name": "Analysing Multiple Perspectives on Historical Events",
+      "lt_definition": "I can analyse historical events by identifying multiple perspectives held by different groups, distinguishing their interests and reasoning, and evaluating the validity and limitations of each viewpoint.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0071_item_01",
+        "blk_0096_item_01",
+        "blk_0102_item_02",
+        "blk_0106_item_02",
+        "blk_0111_item_01",
+        "blk_0113_item_03",
+        "blk_0115_item_02",
+        "blk_0116_item_02",
+        "blk_0119_item_02",
+        "blk_0120_item_02",
+        "blk_0121_item_02",
+        "blk_0132_item_02",
+        "blk_0143_item_02",
+        "blk_0144_item_02",
+        "blk_0158_item_01",
+        "blk_0159_item_01",
+        "blk_0161_item_01",
+        "blk_0166_item_01",
+        "blk_0167_item_01",
+        "blk_0168_item_01",
+        "blk_0183_item_01",
+        "blk_0184_item_01",
+        "blk_0199_item_02",
+        "blk_0202_item_01",
+        "blk_0203_item_01",
+        "blk_0206_item_01",
+        "blk_0209_item_01",
+        "blk_0225_item_01",
+        "blk_0226_item_01",
+        "blk_0227_item_01",
+        "blk_0228_item_01",
+        "blk_0229_item_02",
+        "blk_0230_item_01",
+        "blk_0235_item_01",
+        "blk_0236_item_01",
+        "blk_0237_item_01",
+        "blk_0241_item_01",
+        "blk_0242_item_01",
+        "blk_0243_item_01",
+        "blk_0248_item_01",
+        "blk_0249_item_01",
+        "blk_0250_item_01",
+        "blk_0256_item_01",
+        "blk_0257_item_02",
+        "blk_0258_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Multiple Perspectives on Historical Events",
+            "Gathering and Interpreting Evidence Across Perspectives"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Multiple Perspectives on Historical Events",
+            "Gathering and Interpreting Evidence Across Sources"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "cluster_id": "cluster_07",
+      "competency_name": "Multiple Perspectives and Historical Interpretation",
+      "lt_name": "Gathering and Interpreting Evidence Across Perspectives",
+      "lt_definition": "I can formulate investigative questions, locate and gather evidence from diverse primary and secondary sources representing different communities, and use graphic organisers to compare and interpret multiple perspectives on historical events.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0072_item_01",
+        "blk_0073_item_01",
+        "blk_0074_item_01",
+        "blk_0077_item_01",
+        "blk_0091_item_02",
+        "blk_0091_item_03",
+        "blk_0102_item_01",
+        "blk_0173_item_02",
+        "blk_0177_item_01",
+        "blk_0182_item_01",
+        "blk_0186_item_01",
+        "blk_0187_item_01",
+        "blk_0198_item_01",
+        "blk_0199_item_03",
+        "blk_0244_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Multiple Perspectives on Historical Events",
+            "Gathering and Interpreting Evidence Across Perspectives"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Multiple Perspectives on Historical Events",
+            "Gathering and Interpreting Evidence Across Sources"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "cluster_id": "cluster_08",
+      "competency_name": "Factual Knowledge of Key Events, Treaties, and Policies",
+      "lt_name": "Identifying Key Events, Treaties, and Policies",
+      "lt_definition": "I can identify and describe significant events, treaties, and political-legal changes that shaped Canada between 1713 and 1850.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0104_item_01",
+        "blk_0106_item_01",
+        "blk_0107_item_01",
+        "blk_0110_item_01",
+        "blk_0113_item_01",
+        "blk_0113_item_02",
+        "blk_0114_item_01",
+        "blk_0115_item_01",
+        "blk_0117_item_01",
+        "blk_0193_item_01",
+        "blk_0194_item_01",
+        "blk_0199_item_01",
+        "blk_0210_item_01",
+        "blk_0229_item_01",
+        "blk_0232_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Understanding Social-Economic Developments and Historical Actors",
+            "Analysing Historical Causation and Turning Points"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events and Treaties",
+            "Understanding Social and Economic Developments",
+            "Analysing Historical Turning Points"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Recognizing Social, Economic, and Cultural Developments",
+            "Analysing Historical Causation and Significance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "cluster_id": "cluster_08",
+      "competency_name": "Factual Knowledge of Key Events, Treaties, and Policies",
+      "lt_name": "Understanding Social-Economic Developments and Historical Actors",
+      "lt_definition": "I can describe social and economic developments, key historical figures and groups, and their roles in shaping Canada between 1713 and 1850.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0112_item_01",
+        "blk_0112_item_02",
+        "blk_0116_item_01",
+        "blk_0118_item_01",
+        "blk_0119_item_01",
+        "blk_0120_item_01",
+        "blk_0121_item_01",
+        "blk_0127_item_01",
+        "blk_0130_item_01",
+        "blk_0132_item_01",
+        "blk_0141_item_01",
+        "blk_0143_item_01",
+        "blk_0144_item_01",
+        "blk_0146_item_01",
+        "blk_0160_item_01",
+        "blk_0163_item_01",
+        "blk_0164_item_01",
+        "blk_0164_item_02",
+        "blk_0165_item_01",
+        "blk_0223_item_01",
+        "blk_0238_item_01",
+        "blk_0254_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Understanding Social-Economic Developments and Historical Actors",
+            "Analysing Historical Causation and Turning Points"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events and Treaties",
+            "Understanding Social and Economic Developments",
+            "Analysing Historical Turning Points"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Recognizing Social, Economic, and Cultural Developments",
+            "Analysing Historical Causation and Significance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "cluster_id": "cluster_08",
+      "competency_name": "Factual Knowledge of Key Events, Treaties, and Policies",
+      "lt_name": "Analysing Historical Causation and Turning Points",
+      "lt_definition": "I can analyse why major events are seen as turning points, distinguishing immediate triggers from underlying conditions.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0104_item_02"
+      ],
+      "prerequisite_lts": [
+        "Identifying Key Events, Treaties, and Policies"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Understanding Social-Economic Developments and Historical Actors",
+            "Analysing Historical Causation and Turning Points"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events and Treaties",
+            "Understanding Social and Economic Developments",
+            "Analysing Historical Turning Points"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Key Events, Treaties, and Policies",
+            "Recognizing Social, Economic, and Cultural Developments",
+            "Analysing Historical Causation and Significance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "cluster_id": "cluster_09",
+      "competency_name": "Historical Communication and Vocabulary",
+      "lt_name": "Using Historical Vocabulary Accurately",
+      "lt_definition": "I can use historical vocabulary appropriately when communicating about colonial North America and early Canadian history.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0097_item_01",
+        "blk_0210_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "cluster_id": "cluster_09",
+      "competency_name": "Historical Communication and Vocabulary",
+      "lt_name": "Communicating Historical Findings to Audiences",
+      "lt_definition": "I can communicate the results of historical inquiries using formats and vocabulary appropriate for specific audiences and historical contexts.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0097_item_02",
+        "blk_0210_item_02"
+      ],
+      "prerequisite_lts": [
+        "Using Historical Vocabulary Accurately"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Using Historical Vocabulary Accurately",
+            "Communicating Historical Findings to Audiences"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_10_lt_01",
+      "cluster_id": "cluster_10",
+      "competency_name": "Fur Trade, Economic Systems, and Social Change",
+      "lt_name": "Analysing Fur Trade Economic Competition",
+      "lt_definition": "I can analyse how fur trade competition shaped economic opportunities and constraints for Indigenous peoples, Métis, and settler communities.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0122_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structures and Cultural Adaptation"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structures and Cultural Adaptation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structure Integration"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_10_lt_02",
+      "cluster_id": "cluster_10",
+      "competency_name": "Fur Trade, Economic Systems, and Social Change",
+      "lt_name": "Understanding Social Structures and Cultural Adaptation",
+      "lt_definition": "I can explain how social structures and cultural practices, including kinship systems, reflected and negotiated relationships between Indigenous, Métis, and European communities.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0126_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structures and Cultural Adaptation"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structures and Cultural Adaptation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Fur Trade Economic Competition",
+            "Understanding Social Structure Integration"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_11_lt_01",
+      "cluster_id": "cluster_11",
+      "competency_name": "Immigration, Settlement, and Community Formation",
+      "lt_name": "Analysing Immigrant Settlement Roles",
+      "lt_definition": "I can analyse how immigrant groups played different roles in Canadian settlement across regions and historical periods.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0257_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_11_lt_02",
+      "cluster_id": "cluster_11",
+      "competency_name": "Immigration, Settlement, and Community Formation",
+      "lt_name": "Evaluating Immigrant Contributions and Impacts",
+      "lt_definition": "I can evaluate the contributions and impacts of immigrant and settler groups on Canadian heritage, identities, and Indigenous communities.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0257_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Immigrant Settlement Roles",
+            "Evaluating Immigrant Contributions and Impacts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ],
+  "halted_clusters": [
+    {
+      "cluster_id": "cluster_04",
+      "competency_name": "Indigenous Experiences and Perspectives in Colonial Canada (1713–1800)",
+      "halt_reason": "lt_set_unreliable",
+      "diagnostic": "only 0/3 runs produced parseable output",
+      "valid_runs": 0
+    }
+  ]
+}

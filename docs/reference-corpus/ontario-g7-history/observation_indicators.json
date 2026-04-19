@@ -1,0 +1,148 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "5-ontario-k8-g7-history-pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_03_lt_01",
+      "bands": [
+        {
+          "band": "Grade 7",
+          "observable_behaviours": [
+            "The student asks questions about what people in the past believed, valued, or knew rather than immediately judging their choices by today's standards.",
+            "The student identifies constraints or conditions that shaped a historical actor's decisions and explains how those circumstances differed from the present.",
+            "The student resists labelling historical figures or groups as simply right or wrong, instead describing the competing pressures and information available to them at the time."
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
+        }
+      ],
+      "parent_prompts": [
+        "When your child talks about a historical event or person from school, does he or she ask why people made those choices given what they knew then, rather than saying the choice was obviously wrong?",
+        "Have you noticed your child mentioning the rules, beliefs, or dangers that existed in a time period to explain why someone acted a certain way?",
+        "Does your child seem curious about understanding different perspectives from the past, or does he or she tend to judge people quickly based on today's values?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss specific moments when the student resisted presentism—instances where the student asked about historical context, identified constraints, or suspended judgment—and reflect on how understanding the past on its own terms deepens historical thinking.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "bands": [
+        {
+          "band": "Grade 7",
+          "observable_behaviours": [
+            "The student asks questions about who created a source and what perspectives might be missing when examining historical documents, images, or accounts in class.",
+            "The student consults more than one source when investigating a historical event or period and notes differences in how the same event is described across sources.",
+            "The student identifies examples of how a community, practice, or belief has changed over time and recognizes that people in the past held different viewpoints than people today."
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
+        }
+      ],
+      "parent_prompts": [
+        "When your child talks about something they learned in history or social studies, do they mention checking multiple sources or wondering whose story is being told?",
+        "Have you noticed your child asking questions like 'Why did people think that way back then?' or 'What would someone else say about this?'",
+        "Does your child comment on differences between how events are described in different books, videos, or accounts they encounter?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss specific moments when the student questioned perspective, consulted multiple sources, or noticed change over time, focusing on what prompted the curiosity and how the student's thinking shifted.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": []
+}
