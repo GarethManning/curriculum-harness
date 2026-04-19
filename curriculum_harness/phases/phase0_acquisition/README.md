@@ -24,7 +24,81 @@ JS-rendered sites (Ontario DCP vs NZ Curriculum — Session 4a-3)
 with scope-only differences. Raw-content caching (Session 4a-4.5)
 lets future regression tests re-run extraction against cached bytes
 rather than re-fetching from origins that may have become
-unavailable. Next: Session 4b — reference test corpus construction.
+unavailable. Domain coverage reaches all three curriculum domain
+types — hierarchical, horizontal, dispositional — after Session
+4a-5 added a dispositional-domain source using existing primitives
+unchanged. Next: Session 4b — reference test corpus construction.
+
+## Domain coverage in the extracted corpus
+
+Phase 0's mandate is to handle curriculum sources across the three
+domain types the project vision commits to: **hierarchical** (strong
+prerequisite ordering, e.g. most mathematics and the sciences),
+**horizontal** (broad thematic organisation without strict
+prerequisite ordering, e.g. history, humanities), and
+**dispositional** (framed around sustained orientations, enabled
+capabilities, and occasion-prompted behaviours, e.g. wellbeing,
+character, regeneration).
+
+As of Session 4a-5 (2026-04-19), the extracted corpus covers all
+three domain types. This is the precondition Session 4b's reference
+corpus design requires.
+
+| Domain type    | Source                                              | Primitive sequence                 | Run snapshot                                                                                |
+| -------------- | --------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------- |
+| hierarchical   | Common Core 7.RP                                    | `static_html_linear`               | `docs/run-snapshots/2026-04-18-session-4a-2a-regression-common-core-7rp/`                    |
+| hierarchical   | UK DfE KS3 Maths (statutory PDF)                    | `flat_pdf_linear`                  | `docs/run-snapshots/2026-04-18-session-4a-1-phase0-test-dfe-ks3/`                            |
+| hierarchical   | UK gov.uk National Curriculum Maths KS3             | `html_nested_dom`                  | `docs/run-snapshots/2026-04-18-session-4a-4-gov-uk-nc-maths-ks3/`                            |
+| hierarchical   | Welsh CfW Maths & Numeracy SoW                      | `html_nested_dom`                  | `docs/run-snapshots/2026-04-18-session-4a-4-wales-cfw-maths-sow/`                            |
+| horizontal     | Ontario Grade 7 History (K-8 PDF)                   | `multi_section_pdf`                | `docs/run-snapshots/2026-04-18-session-4a-2b-ontario-g7-history/`                            |
+| horizontal     | Ontario Grade 7 History (DCP site)                  | `js_rendered_progressive_disclosure` | `docs/run-snapshots/2026-04-18-session-4a-3-ontario-dcp-g7-history/`                       |
+| horizontal     | AP US Government Unit 1 (CED PDF)                   | `flat_pdf_linear`                  | `docs/run-snapshots/2026-04-18-session-4a-2a-ap-usgov-requeued/`                             |
+| dispositional  | Welsh CfW Health and Well-being SoW (source_archetype: `rich_dispositional`) | `html_nested_dom` | `docs/run-snapshots/2026-04-19-session-4a-5-wales-cfw-health-wellbeing-sow/`                 |
+
+**Session 4a-5 architectural finding.** The dispositional-domain
+source was extracted using the `html_nested_dom` primitive sequence
+unchanged from Session 4a-4 Step 9. Scope fields are structurally
+isomorphic to the Welsh Maths SoW run: identical
+`content_root_selector="article#aole-v2"`, identical
+`exclude_selectors`, no section scoping. Only the URL differs. This
+is confirming evidence that Phase 0 primitives generalise across
+**curriculum domain types**, not merely across **website structural
+types**. The architecture handled a dispositional-domain source
+without modification; the "no site-specific `if` branches in the
+primitive" discipline held.
+
+**Check B outcome.** Welsh CfW Health and Well-being SoW classified
+as `rich_dispositional` (source_archetype recorded in
+`verification_trace.dispositional_content_distribution`). Sampled
+distribution: Category 1 = 4 / Category 2 = 3 / Category 3 = 2 /
+Uncertain = 1 (sample size 10). All three categories are present;
+two lines classified as Category 3 (sustained operating states)
+establish visible dispositional-as-enacted content beyond mere
+propositional claims about dispositions. The five mandatory
+Statements of what matters in their surface form are propositional
+claims about dispositions (Category 1), but the explanatory
+paragraphs carry occasion-prompted skills (Category 2) and
+sustained-orientation framing (Category 3).
+
+**Scope note — extraction success ≠ harness validation.** This
+session validates that Phase 0 can **acquire** dispositional-domain
+content. It does **not** validate Phase 1+ harness behaviour on
+dispositional content — the KUD extractor, Learning Target generator,
+and surface-form gates have not yet been exercised on a
+dispositional-domain source. That work belongs to Session 4b and
+onwards.
+
+**4b planning hint — operational underspecification.** Even for
+`rich_dispositional` sources, dispositional content often carries
+operational underspecification: the Statements of what matters
+surface as propositional claims whose intended operationalisation
+depends on teacher interpretation. Reference writers for 4b will
+face the question of what's authorised when the source
+underspecifies a construct — invent specificity (injection,
+forbidden), preserve the underspecification (may leave the reference
+too vague to assess), or annotate the gap explicitly. This is a 4b
+design decision, not a 4a-5 decision, but flagged here so it is
+visible in 4b planning.
 
 ## Supported source types
 
