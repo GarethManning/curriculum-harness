@@ -4,23 +4,25 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
-**Session 4c-2b** — 2026-04-19 — head `6d44042 [gen] Secondary RSHE 2025 — 4c-2b fresh run (gate-calibrated)`.
+**Session 4c-3a** — 2026-04-19 — head `b714e7a [4c-3a] Adversarial tests (8/8) + detector refinements`.
 
-Gate recalibration session. Three gate fixes delivered: Commit A (19 transfer/integration verbs added to OBSERVABLE_VERBS and _VERB_BUCKETS), Commit B (_topic_lemmas() lemmatisation fix — single_construct morphology-aware), Fix 1 (six additional verbs: attempt, acknowledge, validate, discuss, locate, determine). All three are pure additive changes; no gate ceiling loosened.
+Strand detection build session. Delivered: hand-curated ground truth (committed before detection ran), detection module with written specification, adversarial test suite (8/8 pass), verification runs on all three ground-truth sources with perfect precision/recall.
 
-4c-2b gate counts before/after on Secondary RSHE 2025 fresh run:
-- `observable_verb`: 17 → 0 (fixed by Commit A + Fix 1)
-- `single_construct`: 6 → 2 (fixed by Commit B; 2 residual are genuine lemmatiser-gap artefacts)
-- `competent_framing_regex`: 1 → 1 (unchanged)
+Commits this session:
+- `88bfda4` — ground truth document (DfE KS3 Maths: 6 strands; NZ SS: 4 strands; Welsh CfW H&W: single-strand)
+- `e05fad8` — detection module (`curriculum_harness/reference_authoring/strand/detect_strands.py`) with spec
+- `b714e7a` — adversarial tests (8 cases) + detector refinements (bullet-density window stops at heading candidates; cross-cutting pattern expansions)
 
-3 persistent single_construct false positives identified as lemmatiser-gap artefacts (vocabulary depth-shift pattern; `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling not covered by current `_lemmatise()`). cluster_06_lt_02 and cluster_14_lt_01 persist in fresh run. Flagged for teacher review. Scoped to 4c-2c.
+Ground-truth precision/recall:
+- DfE KS3 Maths: 6 TP, 0 FP, 0 FN (precision=1.00, recall=1.00)
+- NZ Curriculum Social Sciences: 4 TP, 0 FP, 0 FN (precision=1.00, recall=1.00)
+- Welsh CfW Health & Wellbeing: single_strand (correct)
 
-RSHE 2025 fresh run (4c-2b): 66 LTs / 26 clusters / 62 rubrics (10 gate-fail, 7 gen-fail) / 44 supporting components / ~$7.64. Gate improvements significantly reduced gate-fail count (4c-2a: 26 gate-fail → 4c-2b: 10 gate-fail). Supporting components increased from 28 to 44 as a result.
-
-Methodological lesson captured in VALIDITY.md: in-memory gate re-validation against fixed rubrics predicts gate logic correctness but not gate coverage on fresh generations.
+No flags raised by detector on any ground-truth source. Full test suite: 109 pass, 3 skipped (pre-existing integration skips), 0 fail.
 
 ## 2. Verified working
 
+- **Strand detection module — complete (4c-3a).** `curriculum_harness/reference_authoring/strand/detect_strands.py`. Domain-agnostic structural detector with written specification. Adversarial suite: 8/8 pass. Ground-truth precision/recall: 1.00/1.00 on both DfE KS3 Maths (6 strands) and NZ SS (4 strands). Welsh CfW H&W correctly identified as single-strand (lens-heading detection path).
 - **Phase 0 acquisition layer — complete.** Five source-type primitives at `curriculum_harness/phases/phase0_acquisition/sequences.py`; manifest schema 0.6.0 at `manifest.py:280`; ten ingestion artefacts under `docs/run-snapshots/` (nine prior + secondary-rshe-2025) covering all three domain types.
 - **Welsh CfW Health & Wellbeing reference — complete.** `docs/reference-corpus/welsh-cfw-health-wellbeing/` — pre-4c-1 note applies (criteria.json predates halts-to-flags refactor).
 - **Common Core 7.RP reference — complete.** `docs/reference-corpus/common-core-g7-rp/` — same pre-4c-1 note.
@@ -53,11 +55,9 @@ Methodological lesson captured in VALIDITY.md: in-memory gate re-validation agai
 
 ## 5. Next session
 
-**Recommendation: 4c-3a (strand detection)** — higher value to harness completion than 4c-2c (lemmatiser improvements). The 2 residual single_construct false positives are lemmatiser-gap artefacts flagged for teacher review; they are not blocking production use. Strand detection unlocks DfE KS3 Maths and multi-strand sources, which are the key gap in corpus breadth.
+**4c-3b — Sub-run orchestration and stitching.** Strand detection is complete and verified. Next step: wire `detect_strands()` into the pipeline so that each detected strand is run as a sub-run through Phases 1-5. Stitch sub-run outputs into a unified reference corpus with strand-level provenance preserved. See `docs/plans/curriculum-harness-remaining-build-plan-v5.md` for full spec.
 
-**4c-3a — Strand detection.** Multi-strand sources (DfE KS3 Maths, NZ Curriculum Social Sciences) halt at the `artefact_count_ratio` gate. Build strand detection: identify top-level divisions in a source so the pipeline can sub-run each strand separately. See `docs/plans/curriculum-harness-remaining-build-plan-v5.md` for full spec.
-
-**4c-2c (deferred) — Lemmatiser improvements.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling. Covered by existing adversarial tests; estimated under 30 lines. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
+**4c-2c (deferred) — Lemmatiser improvements.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
 
 Invocation:
 ```
@@ -75,4 +75,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-19 at end of Session 4c-2b. Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-19 at end of Session 4c-3a. Update at end of every session per `docs/process/state-md-discipline.md`.*
