@@ -116,9 +116,11 @@ def _validate_parsed(
             if not s:
                 return None
             if s in seen_ids:
-                # An item assigned twice → malformed run.
-                return None
+                # Duplicate assignment — drop the extra; do not reject the run.
+                logger.info("clustering: duplicate item %s in run (skipped)", s)
+                continue
             if s not in expected_item_ids:
+                # Hallucinated id → structural failure, reject run.
                 return None
             seen_ids.add(s)
             norm_ids.append(s)
@@ -133,9 +135,30 @@ def _validate_parsed(
                 "source_section_label": str(c.get("source_section_label", "")).strip(),
             }
         )
-    # Every expected id must be covered.
-    if seen_ids != expected_item_ids:
-        return None
+    # Every expected id must be covered.  For large KUDs the model
+    # occasionally drops ≤3 items at the tail of the response.  Auto-assign
+    # those stragglers to the cluster that already holds sibling items from
+    # the same source block; if no sibling exists, assign to the last cluster.
+    # Runs with >3 missing items are genuinely malformed and are rejected.
+    missing_ids = expected_item_ids - seen_ids
+    if missing_ids:
+        if len(missing_ids) > 3:
+            return None
+        block_to_cluster_idx: dict[str, int] = {}
+        for idx, c in enumerate(clean):
+            for iid in c["kud_item_ids"]:
+                block = iid.rsplit("_item_", 1)[0]
+                block_to_cluster_idx.setdefault(block, idx)
+        for missing_id in sorted(missing_ids):
+            block = missing_id.rsplit("_item_", 1)[0]
+            target = block_to_cluster_idx.get(block, len(clean) - 1)
+            clean[target]["kud_item_ids"].append(missing_id)
+            logger.info(
+                "auto-assigned missing item %s to cluster %d (%s)",
+                missing_id,
+                target,
+                clean[target]["competency_name"],
+            )
     return clean
 
 
