@@ -1,27 +1,31 @@
 """Export a reference corpus as three source-prefixed CSV files.
 
 Reads ``kud.json``, ``lts.json``, ``band_statements.json``,
-``observation_indicators.json``, and ``competency_clusters.json``
-from a reference-corpus directory and produces three CSVs in the
-same directory:
+``observation_indicators.json``, ``competency_clusters.json``, and
+``progression_structure.json`` from a reference-corpus directory and
+produces three CSVs in the same directory:
 
 1. ``<prefix>-kud.csv`` — one row per KUD item; halted blocks
    appended at the bottom with ``kud_column = HALTED``.
 2. ``<prefix>-learning-targets.csv`` — one row per LT, with band
    statements inlined for Type 1/2 LTs and left empty for Type 3 LTs
    (Type 3 LTs carry observation indicators in the third file).
+   Band columns use the source's native band labels (Progression Step
+   1-5 for Welsh CfW; Grade 7 for a single-grade Common Core or
+   Ontario source; etc.). Multi-band sources produce one column per
+   band; single-band sources produce one band column.
 3. ``<prefix>-observation-indicators.csv`` — one row per (Type-3 LT,
-   band) combination, so each Type 3 LT produces four rows. Parent
-   prompts and developmental-conversation protocol appear on the
-   Band A row only to avoid redundancy.
+   band) combination. For multi-band sources each Type 3 LT produces
+   one row per band; for single-band sources each Type 3 LT produces
+   one row. Parent prompts and developmental-conversation protocol
+   appear on the FIRST band row per LT only to avoid redundancy.
 
 The export is a pure view over the corpus JSON; it runs no pipeline
 stages and does not modify any source artefact.
 
 Encoding is UTF-8. Commas and quotes inside cell values are handled
 by the stdlib csv module (double-quote wrapping). Newlines inside
-cells are replaced with ``;  `` for readability (per session-prompt
-rule for Welsh CfW export).
+cells are replaced with ``;  `` for readability.
 
 Usage:
 
@@ -38,6 +42,11 @@ import json
 import os
 import sys
 from typing import Any
+
+from curriculum_harness.reference_authoring.progression import (
+    band_label_slug,
+    load_progression_structure,
+)
 
 
 NEWLINE_REPLACEMENT = ";  "
@@ -203,6 +212,7 @@ def export_lts(
     clusters: dict[str, Any] | None,
     lts: dict[str, Any],
     band_sets: dict[str, Any] | None,
+    band_labels: list[str],
     out_path: str,
 ) -> int:
     cluster_by_id: dict[str, dict[str, Any]] = {}
@@ -214,71 +224,64 @@ def export_lts(
         for s in band_sets.get("sets", []):
             bands_by_lt[s.get("lt_id", "")] = s
 
+    band_columns = [band_label_slug(label) for label in band_labels]
+
     rows_written = 0
     with open(out_path, "w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh, quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(
-            [
-                "competency_cluster",
-                "lt_id",
-                "lt_name",
-                "lt_definition",
-                "knowledge_type",
-                "assessment_route",
-                "lt_stability",
-                "kud_items_covered",
-                "prerequisites",
-                "band_A",
-                "band_B",
-                "band_C",
-                "band_D",
-                "band_statements_stability",
-                "band_gate_status",
-            ]
-        )
+        header: list[str] = [
+            "competency_cluster",
+            "lt_id",
+            "lt_name",
+            "lt_definition",
+            "knowledge_type",
+            "assessment_route",
+            "lt_stability",
+            "kud_items_covered",
+            "prerequisites",
+        ]
+        header.extend(band_columns)
+        header.extend(["band_statements_stability", "band_gate_status"])
+        writer.writerow(header)
         for lt in lts.get("lts", []):
             cluster = cluster_by_id.get(lt.get("cluster_id", ""), {})
             competency_label = _cluster_label(cluster) if cluster else _clean(
                 lt.get("competency_name", "")
             )
             kt = lt.get("knowledge_type", "")
+            band_cells: list[str] = []
             if kt == "Type 3":
-                band_a = band_b = band_c = band_d = ""
+                band_cells = ["" for _ in band_labels]
                 band_stability = ""
                 gate_status = "N/A (Type 3)"
             else:
                 bset = bands_by_lt.get(lt.get("lt_id", ""))
                 if bset is None:
-                    band_a = band_b = band_c = band_d = ""
+                    band_cells = ["" for _ in band_labels]
                     band_stability = "missing"
                     gate_status = "missing"
                 else:
-                    by_band = {s.get("band", ""): s.get("statement", "") for s in bset.get("statements", [])}
-                    band_a = by_band.get("A", "")
-                    band_b = by_band.get("B", "")
-                    band_c = by_band.get("C", "")
-                    band_d = by_band.get("D", "")
+                    by_band: dict[str, str] = {
+                        s.get("band", ""): s.get("statement", "")
+                        for s in bset.get("statements", [])
+                    }
+                    band_cells = [_clean(by_band.get(label, "")) for label in band_labels]
                     band_stability = bset.get("stability_flag", "")
                     gate_status = "PASS" if bset.get("quality_gate_passed", True) else "FAIL"
-            writer.writerow(
-                [
-                    _clean(competency_label),
-                    _clean(lt.get("lt_id")),
-                    _clean(lt.get("lt_name")),
-                    _clean(lt.get("lt_definition")),
-                    _clean(kt),
-                    _clean(lt.get("assessment_route")),
-                    _clean(lt.get("stability_flag")),
-                    _join_list(lt.get("kud_item_ids")),
-                    _join_list(lt.get("prerequisite_lts")),
-                    _clean(band_a),
-                    _clean(band_b),
-                    _clean(band_c),
-                    _clean(band_d),
-                    _clean(band_stability),
-                    _clean(gate_status),
-                ]
-            )
+            row: list[str] = [
+                _clean(competency_label),
+                _clean(lt.get("lt_id")),
+                _clean(lt.get("lt_name")),
+                _clean(lt.get("lt_definition")),
+                _clean(kt),
+                _clean(lt.get("assessment_route")),
+                _clean(lt.get("stability_flag")),
+                _join_list(lt.get("kud_item_ids")),
+                _join_list(lt.get("prerequisite_lts")),
+            ]
+            row.extend(band_cells)
+            row.extend([_clean(band_stability), _clean(gate_status)])
+            writer.writerow(row)
             rows_written += 1
     return rows_written
 
@@ -288,6 +291,7 @@ def export_observation_indicators(
     clusters: dict[str, Any] | None,
     lts: dict[str, Any],
     indicator_coll: dict[str, Any] | None,
+    band_labels: list[str],
     out_path: str,
 ) -> int:
     cluster_by_id: dict[str, dict[str, Any]] = {}
@@ -297,6 +301,8 @@ def export_observation_indicators(
     lt_by_id: dict[str, dict[str, Any]] = {}
     for lt in lts.get("lts", []):
         lt_by_id[lt.get("lt_id", "")] = lt
+
+    band_order: dict[str, int] = {label: i for i, label in enumerate(band_labels)}
 
     rows_written = 0
     with open(out_path, "w", encoding="utf-8", newline="") as fh:
@@ -331,7 +337,7 @@ def export_observation_indicators(
             parents = parent_prompts + [""] * (3 - len(parent_prompts))
             band_entries = sorted(
                 iset.get("bands", []),
-                key=lambda b: {"A": 0, "B": 1, "C": 2, "D": 3}.get(b.get("band", ""), 99),
+                key=lambda b: band_order.get(b.get("band", ""), 99),
             )
             for idx, band in enumerate(band_entries):
                 behaviours = band.get("observable_behaviours", []) or []
@@ -385,6 +391,31 @@ def main(argv: list[str] | None = None) -> int:
     band_sets = _load(os.path.join(args.corpus, "band_statements.json"))
     indicator_coll = _load(os.path.join(args.corpus, "observation_indicators.json"))
 
+    progression_path = os.path.join(args.corpus, "progression_structure.json")
+    if not os.path.exists(progression_path):
+        print(
+            f"[csv-export] missing progression_structure.json at {progression_path}; "
+            "the band columns require source-native progression labels and the "
+            "exporter does NOT default to A-D. Re-run the pipeline (or copy the "
+            "structure file) before exporting.",
+            flush=True,
+        )
+        return 2
+    progression = load_progression_structure(progression_path)
+    band_labels = list(progression.band_labels)
+    if not band_labels:
+        print(
+            f"[csv-export] progression_structure.json at {progression_path} has no "
+            "band_labels; cannot build LT or indicator CSVs.",
+            flush=True,
+        )
+        return 2
+    print(
+        f"[csv-export] progression: {progression.source_type} | "
+        f"{progression.band_count} band(s) | confidence={progression.detection_confidence}",
+        flush=True,
+    )
+
     kud_path = os.path.join(args.corpus, f"{args.prefix}-kud.csv")
     lt_path = os.path.join(args.corpus, f"{args.prefix}-learning-targets.csv")
     ind_path = os.path.join(args.corpus, f"{args.prefix}-observation-indicators.csv")
@@ -394,7 +425,11 @@ def main(argv: list[str] | None = None) -> int:
 
     if lts is not None:
         lt_rows = export_lts(
-            clusters=clusters, lts=lts, band_sets=band_sets, out_path=lt_path
+            clusters=clusters,
+            lts=lts,
+            band_sets=band_sets,
+            band_labels=band_labels,
+            out_path=lt_path,
         )
         print(f"[csv-export] {lt_path}: {lt_rows} rows", flush=True)
     else:
@@ -402,7 +437,11 @@ def main(argv: list[str] | None = None) -> int:
 
     if lts is not None and indicator_coll is not None:
         ind_rows = export_observation_indicators(
-            clusters=clusters, lts=lts, indicator_coll=indicator_coll, out_path=ind_path
+            clusters=clusters,
+            lts=lts,
+            indicator_coll=indicator_coll,
+            band_labels=band_labels,
+            out_path=ind_path,
         )
         print(f"[csv-export] {ind_path}: {ind_rows} rows", flush=True)
     else:
