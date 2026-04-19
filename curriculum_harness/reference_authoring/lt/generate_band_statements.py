@@ -254,6 +254,18 @@ async def _generate_for_lt(
             }
         )
 
+    # Gate failures HALT the band-statement set per the session 4b-2
+    # spec — no paper-overs, specific diagnostic.
+    if failures:
+        return None, {
+            "lt_id": lt.lt_id,
+            "lt_name": lt.lt_name,
+            "halt_reason": "band_statements_gate_failed",
+            "diagnostic": f"{len(failures)} format/quality failures",
+            "failures": failures,
+            "statements": [{"band": x["band"], "statement": x["statement"]} for x in majority_run],
+        }
+
     band_set = BandStatementSet(
         lt_id=lt.lt_id,
         knowledge_type=lt.knowledge_type,
@@ -263,8 +275,8 @@ async def _generate_for_lt(
         stability_diagnostics=(
             [] if stability == "stable" else [f"signature_counts={dict(sig_counts)}"]
         ),
-        quality_gate_passed=not failures,
-        quality_gate_failures=failures,
+        quality_gate_passed=True,
+        quality_gate_failures=[],
     )
     return band_set, None
 
