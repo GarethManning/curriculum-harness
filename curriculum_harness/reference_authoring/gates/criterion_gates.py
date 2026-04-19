@@ -135,11 +135,21 @@ def _word_count(text: str) -> int:
 
 
 def _topic_lemmas(text: str) -> set[str]:
-    return {
-        m.group(0).lower()
-        for m in _TOPIC_WORD_RE.finditer(text)
-        if m.group(0).lower() not in _STOPWORDS
-    }
+    """Return the union of candidate lemmas for every non-stopword topic word.
+
+    Each matched word contributes all stems produced by _lemmatise(), so
+    "victims" and "victim" both produce the candidate "victim" and therefore
+    count as matching. This fixes a false-positive class where pluralisation
+    alone caused adjacent levels to appear as if they addressed different
+    constructs (4c-2b, 2026-04-19).
+    """
+    result: set[str] = set()
+    for m in _TOPIC_WORD_RE.finditer(text):
+        raw = m.group(0).lower()
+        if raw in _STOPWORDS:
+            continue
+        result |= _lemmatise(raw)
+    return result
 
 
 _INFLECTION_SUFFIXES = ("ies", "ing", "ed", "es", "s", "d")

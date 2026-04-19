@@ -301,21 +301,15 @@ class TestCaseE:
     flips — see test_passes_after_lemmatisation_fix.
     """
 
-    def test_currently_fails_due_to_lemmatisation_bug(self):
+    def test_passes_after_commit_b(self):
         """
-        Documents the pre-fix behaviour: 'victims' != 'victim' in raw string
-        comparison, so _topic_lemmas produces no overlap between emerging and
-        developing descriptors. Gate incorrectly fails.
-
-        This test is EXPECTED TO FAIL after Commit B — that failure is the
-        signal that the fix worked. At that point, rename/invert this test.
+        After Commit B: 'victims' and 'victim' lemmatise to the same stem.
+        Gate must pass — no false positive on plural-only mismatch.
         """
         result = _gate_single_construct(CASE_E)
-        # Pre-fix: gate fails due to 'victims'/'victim' mismatch.
-        # Post-fix: gate should pass — if this assertion fails, Commit B worked.
-        assert not result.passed, (
-            "CASE_E: pre-fix baseline — gate should currently fail on 'victims'/'victim' "
-            "mismatch. If this assertion fails, Commit B (lemmatisation) has been applied."
+        assert result.passed, (
+            f"CASE_E: 'victims'/'victim' share lemma 'victim' after Commit B — gate must pass. "
+            f"Pairs without overlap: {result.details['pairs_without_overlap']}"
         )
 
     def test_observable_verb_passes(self):
@@ -371,15 +365,19 @@ class TestCaseG:
     requirement is not so loose that genuinely different constructs pass.
     """
 
-    def test_currently_fails_on_vocabulary_depth_shift(self):
+    def test_passes_after_commit_b(self):
         """
-        Pre-fix baseline: pairwise check fails on at least one pair.
-        If this assertion fails after Commit C, the fix worked.
+        After Commit B: 'source' (competent) and 'sources' (extending) lemmatise
+        to the same stem. Gate must pass — no false positive on plural-only mismatch.
+
+        Note: the 'vocabulary depth-shift' in CASE_G turned out to be a lemmatisation
+        bug (source/sources), not a true vocabulary shift. Commit B (lemmatisation in
+        _topic_lemmas) resolved it without needing a separate logic change.
         """
         result = _gate_single_construct(CASE_G)
-        assert not result.passed, (
-            "CASE_G: pre-fix baseline — vocabulary depth-shift causes pairwise failure. "
-            "If this assertion fails, Commit C (adjacency-with-lemmatisation) has been applied."
+        assert result.passed, (
+            f"CASE_G: 'source'/'sources' share lemma after Commit B — gate must pass. "
+            f"Pairs without overlap: {result.details['pairs_without_overlap']}"
         )
 
     def test_observable_verb_passes(self):
