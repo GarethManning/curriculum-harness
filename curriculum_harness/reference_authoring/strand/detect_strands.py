@@ -171,6 +171,15 @@ CROSS_CUTTING_PATTERNS = [
     re.compile(r"^skills\s*$", re.IGNORECASE),
     re.compile(r"^understanding\s*$", re.IGNORECASE),
     re.compile(r"^(assessment|pedagogy|curriculum)\s*$", re.IGNORECASE),
+    # Document structure labels used in Ontario/US-style curriculum documents
+    re.compile(r"^overall expectations?\s*$", re.IGNORECASE),
+    re.compile(r"^specific expectations?\s*$", re.IGNORECASE),
+    re.compile(r"^cluster\s*$", re.IGNORECASE),
+    re.compile(r"^(strands?|domains?)\s*$", re.IGNORECASE),
+    # Framework/jurisdiction branding lines (appear in Scottish, Australian, etc.)
+    re.compile(r"^curriculum for excellence\s*$", re.IGNORECASE),
+    re.compile(r"^australian curriculum\s*$", re.IGNORECASE),
+    re.compile(r"^national curriculum\s*$", re.IGNORECASE),
     # Website UI navigation elements (appear in JS-rendered curriculum sites)
     re.compile(r"^add to\b", re.IGNORECASE),
     re.compile(r"^download\b", re.IGNORECASE),
@@ -342,14 +351,23 @@ def _teaching_point_score(lines: list[str], heading_idx: int) -> tuple[float, li
                 break
 
     # --- Bullet density pass (wider lookahead, only if no explicit marker) ---
+    # The window is truncated at the first line that looks like another heading
+    # candidate, so bullets belonging to the NEXT strand are not counted against
+    # the current heading. Without this, a heading like "Venn diagrams" (a
+    # wrapped bullet continuation) would pick up bullet density from the
+    # Statistics strand that starts 3 lines below it.
     if score < 0.70:
         wide_end = min(heading_idx + BULLET_DENSITY_LOOKAHEAD + 1, len(lines))
-        wide_window = lines[heading_idx + 1 : wide_end]
-        bullet_count = sum(1 for ln in wide_window if _is_bullet_line(ln))
+        truncated_window: list[str] = []
+        for ln in lines[heading_idx + 1 : wide_end]:
+            if _looks_like_heading(ln) and not _is_cross_cutting(ln) and not _is_page_header(ln):
+                break  # Stop at the next heading candidate
+            truncated_window.append(ln)
+        bullet_count = sum(1 for ln in truncated_window if _is_bullet_line(ln))
         if bullet_count >= MIN_BULLET_LINES:
-            density = bullet_count / max(len(wide_window), 1)
+            density = bullet_count / max(len(truncated_window), 1)
             if density >= BULLET_DENSITY_THRESHOLD:
-                signals.append(f"bullet_density: {bullet_count}/{len(wide_window)} lines")
+                signals.append(f"bullet_density: {bullet_count}/{len(truncated_window)} lines")
                 score = max(score, 0.70)
 
     return score, signals
