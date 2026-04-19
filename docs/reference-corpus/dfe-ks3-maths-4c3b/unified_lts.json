@@ -1,0 +1,1847 @@
+{
+  "lts": [
+    {
+      "lt_id": "number_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Number Systems and Operations",
+      "lt_name": "Understanding Number Properties and Representations",
+      "lt_definition": "I can explain place value, prime factorisation, and relationships between different number forms including fractions, decimals, and percentages.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_03",
+        "blk_0002_item_06",
+        "blk_0002_item_09",
+        "blk_0002_item_10",
+        "blk_0002_item_11"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "number_",
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Number Systems and Operations",
+      "lt_name": "Performing Operations with Number Systems",
+      "lt_definition": "I can apply the four operations, order of operations, powers, roots, and standard form to calculate with integers, fractions, decimals, and negative numbers.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_02",
+        "blk_0002_item_04",
+        "blk_0002_item_05",
+        "blk_0002_item_07",
+        "blk_0002_item_08"
+      ],
+      "prerequisite_lts": [
+        "Understanding Number Properties and Representations"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Number Properties and Representations",
+            "Performing Operations with Number Systems"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "number_",
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Measurement and Approximation",
+      "lt_name": "Using Standard Units and Rounding",
+      "lt_definition": "I can use standard units of measurement and round numbers to appropriate degrees of accuracy.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_01",
+        "blk_0003_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximating and Calculating with Technology"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Assisted Calculation and Number Systems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Enhanced Numerical Calculations"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 1, (3, ('Type 1', 'Type 1', 'Type 1')): 2}"
+      ],
+      "source_cluster_id": "number_",
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Measurement and Approximation",
+      "lt_name": "Approximation and Error Calculation",
+      "lt_definition": "I can use approximation to estimate answers and calculate possible errors using inequality notation.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximating and Calculating with Technology"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Assisted Calculation and Number Systems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Enhanced Numerical Calculations"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 1, (3, ('Type 1', 'Type 1', 'Type 1')): 2}"
+      ],
+      "source_cluster_id": "number_",
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_03",
+      "cluster_id": "cluster_02",
+      "competency_name": "Measurement and Approximation",
+      "lt_name": "Technology-Assisted Calculation and Number Systems",
+      "lt_definition": "I can use calculators and other technologies to calculate accurately and understand the infinite nature of number sets.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_04",
+        "blk_0003_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximating and Calculating with Technology"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Assisted Calculation and Number Systems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Using Standard Units and Rounding",
+            "Approximation and Error Calculation",
+            "Technology-Enhanced Numerical Calculations"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 1, (3, ('Type 1', 'Type 1', 'Type 1')): 2}"
+      ],
+      "source_cluster_id": "number_",
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Algebraic Notation and Expression Manipulation",
+      "lt_name": "Interpreting and Using Algebraic Notation",
+      "lt_definition": "I can use and interpret algebraic notation including coefficients, powers, brackets, and standard conventions.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_02",
+        "blk_0002_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions and Formulae",
+            "Applying Algebra to Problem Solving"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions and Formulae"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 1, (2, ('Type 1', 'Type 1')): 2}"
+      ],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Algebraic Notation and Expression Manipulation",
+      "lt_name": "Manipulating Algebraic Expressions",
+      "lt_definition": "I can simplify and manipulate algebraic expressions by collecting terms, expanding brackets, and factoring.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_04",
+        "blk_0002_item_05",
+        "blk_0002_item_06",
+        "blk_0002_item_07"
+      ],
+      "prerequisite_lts": [
+        "Interpreting and Using Algebraic Notation"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions and Formulae",
+            "Applying Algebra to Problem Solving"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Interpreting and Using Algebraic Notation",
+            "Manipulating Algebraic Expressions and Formulae"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 1, (2, ('Type 1', 'Type 1')): 2}"
+      ],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Graphical Representation and Coordinate Geometry",
+      "lt_name": "Creating and Manipulating Coordinate Graphs",
+      "lt_definition": "I can work with coordinates, sketch graphs of functions, and manipulate linear equations to standard form.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_08",
+        "blk_0002_item_09",
+        "blk_0003_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Graphical Representation and Coordinate Geometry",
+      "lt_name": "Interpreting Mathematical Relationships from Graphs",
+      "lt_definition": "I can analyze gradients and intercepts, estimate values from graphs, and solve problems using graphical representations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_10",
+        "blk_0003_item_02",
+        "blk_0003_item_03",
+        "blk_0003_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Creating and Manipulating Coordinate Graphs",
+            "Interpreting Mathematical Relationships from Graphs"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Sequences and Patterns",
+      "lt_name": "Generating Sequence Terms",
+      "lt_definition": "I can generate terms of a sequence using term-to-term or position-to-term rules.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Sequences and Patterns",
+      "lt_name": "Recognizing and Analyzing Sequences",
+      "lt_definition": "I can recognize arithmetic and geometric sequences and find their nth terms.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_06",
+        "blk_0003_item_07"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Generating Sequence Terms",
+            "Recognizing and Analyzing Sequences"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "algebra_",
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "ratio-proportion-and-rates-of-change_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Ratio, Proportion and Rates of Change",
+      "lt_name": "Working with Ratios and Proportional Relationships",
+      "lt_definition": "I can use ratios, fractions, and proportional reasoning to solve problems involving multiplicative relationships between quantities.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_03",
+        "blk_0002_item_04",
+        "blk_0002_item_05",
+        "blk_0002_item_06",
+        "blk_0002_item_07",
+        "blk_0002_item_09"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Changes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Change"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Change"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "ratio-proportion-and-rates-of-change_",
+      "strand": {
+        "strand_name": "Ratio, proportion and rates of change",
+        "strand_slug": "ratio-proportion-and-rates-of-change",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "ratio-proportion-and-rates-of-change_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Ratio, Proportion and Rates of Change",
+      "lt_name": "Applying Rates and Percentage Changes",
+      "lt_definition": "I can solve problems involving rates, percentage changes, and compound units in real-world contexts.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_02",
+        "blk_0002_item_08",
+        "blk_0002_item_10"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Changes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Change"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Working with Ratios and Proportional Relationships",
+            "Applying Rates and Percentage Change"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "ratio-proportion-and-rates-of-change_",
+      "strand": {
+        "strand_name": "Ratio, proportion and rates of change",
+        "strand_slug": "ratio-proportion-and-rates-of-change",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Measurement and Calculation of Geometric Properties",
+      "lt_name": "Calculating Areas and Perimeters",
+      "lt_definition": "I can calculate perimeters and areas of triangles, parallelograms, trapezia, circles, and composite shapes.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Areas and Perimeters",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Areas and Perimeters",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Perimeters and Areas",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Measurement and Calculation of Geometric Properties",
+      "lt_name": "Calculating Volumes of Three-Dimensional Shapes",
+      "lt_definition": "I can calculate volumes of cuboids, cubes, and other prisms including cylinders.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Areas and Perimeters",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Areas and Perimeters",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Calculating Perimeters and Areas",
+            "Calculating Volumes of Three-Dimensional Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Geometric Construction and Drawing",
+      "lt_name": "Drawing and Measuring Geometric Figures",
+      "lt_definition": "I can draw and measure line segments and angles in geometric figures using conventional methods and interpret scale drawings.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Ruler and Compass Constructions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 2, (2, ('Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Geometric Construction and Drawing",
+      "lt_name": "Standard Ruler and Compass Constructions",
+      "lt_definition": "I can perform standard ruler and compass constructions and apply the concept of perpendicular distance from a point to a line.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Ruler and Compass Constructions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 2, (2, ('Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_03",
+      "cluster_id": "cluster_02",
+      "competency_name": "Geometric Construction and Drawing",
+      "lt_name": "Describing and Sketching Geometric Shapes",
+      "lt_definition": "I can describe, sketch and draw geometric shapes using conventional terms and notations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Ruler and Compass Constructions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Drawing and Measuring Geometric Figures",
+            "Standard Ruler and Compass Constructions",
+            "Describing and Sketching Geometric Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 2, (2, ('Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Properties and Relationships of Geometric Figures",
+      "lt_name": "Identifying Geometric Properties and Congruence",
+      "lt_definition": "I can identify and apply properties of triangles, quadrilaterals, and circles, including congruence criteria.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_06",
+        "blk_0002_item_07"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures",
+            "Deriving Geometric Properties Through Investigation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Properties and Relationships of Geometric Figures",
+      "lt_name": "Constructing and Transforming Geometric Figures",
+      "lt_definition": "I can construct congruent triangles and create similar shapes through enlargement using various methods.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_09"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures",
+            "Deriving Geometric Properties Through Investigation"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Geometric Properties and Congruence",
+            "Constructing and Transforming Geometric Figures"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Transformations and Spatial Reasoning",
+      "lt_name": "Applying Geometric Transformations",
+      "lt_definition": "I can identify properties of and describe the results of translations, rotations and reflections applied to given figures.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_08"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Transformations and Spatial Reasoning",
+      "lt_name": "Working with Three-Dimensional Shapes",
+      "lt_definition": "I can use the properties of faces, surfaces, edges and vertices of three-dimensional shapes to solve problems.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_15"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Geometric Transformations",
+            "Working with Three-Dimensional Shapes"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Angle Relationships and Geometric Reasoning",
+      "lt_name": "Applying Angle Properties and Relationships",
+      "lt_definition": "I can apply properties of angles at points, on straight lines, with parallel lines, and in polygons to solve problems.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_10",
+        "blk_0002_item_11",
+        "blk_0002_item_12"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Geometric Proof and Advanced Problem Solving"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Deriving and Proving Geometric Relationships",
+            "Solving Right Triangle Problems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Geometric Proof and Advanced Problem Solving"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Angle Relationships and Geometric Reasoning",
+      "lt_name": "Geometric Proof and Advanced Problem Solving",
+      "lt_definition": "I can use geometric theorems, congruence, similarity, and trigonometric relationships to derive results and construct proofs.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_13",
+        "blk_0002_item_14",
+        "blk_0002_item_16"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Geometric Proof and Advanced Problem Solving"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Deriving and Proving Geometric Relationships",
+            "Solving Right Triangle Problems"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Applying Angle Properties and Relationships",
+            "Geometric Proof and Advanced Problem Solving"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ],
+      "source_cluster_id": "geometry-and-measures_",
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "probability_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Probability Analysis and Set Operations",
+      "lt_name": "Conducting Probability Experiments",
+      "lt_definition": "I can record, describe and analyse the frequency of outcomes in probability experiments using appropriate language and the 0-1 probability scale.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "probability_",
+      "strand": {
+        "strand_name": "Probability",
+        "strand_slug": "probability",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "probability_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Probability Analysis and Set Operations",
+      "lt_name": "Systematic Set Operations",
+      "lt_definition": "I can enumerate sets and their unions and intersections systematically using tables and grids.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Conducting Probability Experiments",
+            "Systematic Set Operations"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "probability_",
+      "strand": {
+        "strand_name": "Probability",
+        "strand_slug": "probability",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Statistical Analysis and Data Representation",
+      "lt_name": "Analyzing Single Variable Distributions",
+      "lt_definition": "I can describe, interpret and compare distributions of single variables using appropriate graphs and measures of central tendency and spread.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "statistics_",
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Statistical Analysis and Data Representation",
+      "lt_name": "Constructing Data Representations",
+      "lt_definition": "I can construct and interpret appropriate tables, charts and diagrams for categorical and numerical data.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "statistics_",
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_03",
+      "cluster_id": "cluster_01",
+      "competency_name": "Statistical Analysis and Data Representation",
+      "lt_name": "Analyzing Bivariate Relationships",
+      "lt_definition": "I can describe mathematical relationships between two variables and illustrate them using scatter graphs.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Analyzing Single Variable Distributions",
+            "Constructing Data Representations",
+            "Analyzing Bivariate Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "source_cluster_id": "statistics_",
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    }
+  ],
+  "halted_clusters": []
+}

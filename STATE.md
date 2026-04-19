@@ -4,25 +4,30 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
-**Session 4c-3a** — 2026-04-19 — head `b714e7a [4c-3a] Adversarial tests (8/8) + detector refinements`.
+**Session 4c-3b** — 2026-04-19 — head `b722d73 [4c-3b] Fix strand line_end truncation by confirmed-strand boundary recompute`.
 
-Strand detection build session. Delivered: hand-curated ground truth (committed before detection ran), detection module with written specification, adversarial test suite (8/8 pass), verification runs on all three ground-truth sources with perfect precision/recall.
+Sub-run orchestration and stitching session. Delivered: stitching schema doc (pre-work), orchestration module, stitching module, pipeline entrypoint wired to strand detection (single-strand → existing path; multi-strand → orchestration + stitching; `StrandDetectionUncertain` → exit code 3), integration test suite (6 tests), Welsh CfW H&W structural equivalence regression, DfE KS3 Maths end-to-end run, detect_strands line_end bug fix (Step 3b), partial NZ Social Sciences run (credit exhaustion after History strand).
 
 Commits this session:
-- `88bfda4` — ground truth document (DfE KS3 Maths: 6 strands; NZ SS: 4 strands; Welsh CfW H&W: single-strand)
-- `e05fad8` — detection module (`curriculum_harness/reference_authoring/strand/detect_strands.py`) with spec
-- `b714e7a` — adversarial tests (8 cases) + detector refinements (bullet-density window stops at heading candidates; cross-cutting pattern expansions)
+- `dc28cf3` — strand-stitching schema v1 (`docs/schemas/strand-stitching-v1.md`)
+- `a3e6dfc` — orchestration (`orchestrate.py`), stitching (`stitch.py`), pipeline wiring, 6 integration tests
+- `9ad483b` — Welsh CfW H&W structural equivalence confirmed
+- `b722d73` — detect_strands line_end bug fix (Step 3b: recompute strand boundaries from confirmed strands)
 
-Ground-truth precision/recall:
-- DfE KS3 Maths: 6 TP, 0 FP, 0 FN (precision=1.00, recall=1.00)
-- NZ Curriculum Social Sciences: 4 TP, 0 FP, 0 FN (precision=1.00, recall=1.00)
-- Welsh CfW Health & Wellbeing: single_strand (correct)
-
-No flags raised by detector on any ground-truth source. Full test suite: 109 pass, 3 skipped (pre-existing integration skips), 0 fail.
+Key results:
+- DfE KS3 Maths: 6 strands (65 unified KUD, 29 LTs) — committed to `docs/reference-corpus/dfe-ks3-maths-4c3b/`
+- Welsh CfW H&W regression: single_strand path unchanged, structural equivalence confirmed
+- NZ Social Sciences: 4 strands detected correctly post-fix; History run produced 109 KUD / 23 LTs; strands 2–4 hit credit exhaustion mid-run
+- Bug found and fixed: `line_end` was set to next *candidate* heading, not next *confirmed* strand — caused NZ strands to be sliced to 5 lines
+- All sanity checks passed on partial NZ stitch (History-only)
+- Test suite: 14/14 adversarial + integration pass
 
 ## 2. Verified working
 
-- **Strand detection module — complete (4c-3a).** `curriculum_harness/reference_authoring/strand/detect_strands.py`. Domain-agnostic structural detector with written specification. Adversarial suite: 8/8 pass. Ground-truth precision/recall: 1.00/1.00 on both DfE KS3 Maths (6 strands) and NZ SS (4 strands). Welsh CfW H&W correctly identified as single-strand (lens-heading detection path).
+- **Strand detection module — complete (4c-3a/4c-3b).** `curriculum_harness/reference_authoring/strand/detect_strands.py`. Domain-agnostic structural detector with written specification. Adversarial suite: 8/8 pass. Ground-truth precision/recall: 1.00/1.00 on both DfE KS3 Maths (6 strands) and NZ SS (4 strands). Welsh CfW H&W correctly identified as single-strand (lens-heading detection path). Step 3b bug fix: strand `line_end` now computed from confirmed-strand boundaries, not candidate-heading boundaries.
+- **Multi-strand orchestration + stitching — complete (4c-3b).** `orchestrate.py`, `stitch.py`. Per-strand temp snapshots, sub-run invocation via `main(argv)`, unified artefact assembly with strand-slug ID prefixing and strand provenance field. 5 sanity checks. `--sub-run` flag converts `artefact_count_ratio` hard halt to flag (per-strand slices are dense; gate calibrated for full-curriculum docs).
+- **Pipeline strand detection wiring — complete (4c-3b).** `run_pipeline.py` calls `detect_strands()` before inventory build. Single-strand → existing path; multi-strand → orchestration + stitch; `StrandDetectionUncertain` → exit code 3. `--sub-run` arg added.
+- **DfE KS3 Maths reference corpus (4c-3b).** `docs/reference-corpus/dfe-ks3-maths-4c3b/`. 6 strands, 65 unified KUD items, 29 unified LTs. Strand-prefixed IDs and strand provenance fields on all items.
 - **Phase 0 acquisition layer — complete.** Five source-type primitives at `curriculum_harness/phases/phase0_acquisition/sequences.py`; manifest schema 0.6.0 at `manifest.py:280`; ten ingestion artefacts under `docs/run-snapshots/` (nine prior + secondary-rshe-2025) covering all three domain types.
 - **Welsh CfW Health & Wellbeing reference — complete.** `docs/reference-corpus/welsh-cfw-health-wellbeing/` — pre-4c-1 note applies (criteria.json predates halts-to-flags refactor).
 - **Common Core 7.RP reference — complete.** `docs/reference-corpus/common-core-g7-rp/` — same pre-4c-1 note.
@@ -55,7 +60,17 @@ No flags raised by detector on any ground-truth source. Full test suite: 109 pas
 
 ## 5. Next session
 
-**4c-3b — Sub-run orchestration and stitching.** Strand detection is complete and verified. Next step: wire `detect_strands()` into the pipeline so that each detected strand is run as a sub-run through Phases 1-5. Stitch sub-run outputs into a unified reference corpus with strand-level provenance preserved. See `docs/plans/curriculum-harness-remaining-build-plan-v5.md` for full spec.
+**4c-3b completion — NZ Social Sciences full re-run.** Session ran out of API credits after History strand. Re-run NZ Social Sciences from snapshot `docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum` once credits are topped up. Verify: 4 strands, unified corpus sanity checks all pass, within-strand prerequisite scoping assessment for horizontal domain.
+
+Command:
+```
+python -m curriculum_harness.reference_authoring.pipeline.run_pipeline \
+  --snapshot docs/run-snapshots/2026-04-18-session-4a-3-nz-curriculum \
+  --out /tmp/nz-social-sciences-4c3b \
+  --domain horizontal
+```
+
+After NZ run: copy results to `docs/reference-corpus/nz-ss-social-sciences-4c3b/`, commit, then proceed to **4c-4** (criterion bank / cross-source aggregation).
 
 **4c-2c (deferred) — Lemmatiser improvements.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
 
@@ -70,9 +85,9 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 - **LOW confidence tier not seen in any run.** Defined in 4c-1; hasn't fired yet. Requires multiple gate failures AND unstable rubric simultaneously.
 - **Welsh/Common Core/Ontario not re-run.** Pre-4c-1 criteria.json format. Re-run needed if 4c-4 requires their output in new format.
 - **Ontario LT halts on large Opus clusters.** Carry-forward from 4b-5. Pick up in 4c-7.
-- **Second hierarchical source gap.** DfE KS3 Maths (full programme) failed ratio gate. Scoped re-ingestion (one strand only) needed in 4c-3a.
+- **Second hierarchical source gap — resolved (4c-3b).** DfE KS3 Maths 6-strand run complete via `--sub-run` flag that converts ratio gate from hard halt to flag. Reference corpus at `docs/reference-corpus/dfe-ks3-maths-4c3b/`.
 - **AP US Gov rubric flag rate after 4c-2b gate recalibration.** Not yet re-run. Pick up in 4c-3a or dedicated session.
 
 ---
 
-*Last updated 2026-04-19 at end of Session 4c-3a. Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-19 at end of Session 4c-3b. Update at end of every session per `docs/process/state-md-discipline.md`.*

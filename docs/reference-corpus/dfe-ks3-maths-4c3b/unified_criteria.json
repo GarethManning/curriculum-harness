@@ -1,0 +1,4546 @@
+{
+  "rubrics": [
+    {
+      "lt_id": "number_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain number properties or representations.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some number properties but explanations are incomplete or inaccurate.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Explains basic place value and some number relationships but struggles with prime factorisation or conversions.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently explains place value, prime factorisation, and relationships between fractions, decimals, and percentages accurately.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies understanding to complex number forms and explains sophisticated relationships between different representations.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt at numerical operations.",
+          "word_count": 5
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Performs basic operations with whole numbers but makes frequent errors with fractions or negatives.",
+          "word_count": 14
+        },
+        {
+          "name": "developing",
+          "descriptor": "Accurately performs most operations but struggles with order of operations or standard form calculations.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Accurately applies four operations, order of operations, powers, roots, and standard form across integers, fractions, decimals, and negative numbers.",
+          "word_count": 19
+        },
+        {
+          "name": "extending",
+          "descriptor": "Fluently combines multiple operations and number systems to solve complex multi-step problems efficiently.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding number representations is essential before performing operations across different number forms."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 19
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'none'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated with 'accurately applies' and covers all elements of the learning target without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": true,
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to use standard units or round numbers.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some standard units or attempts basic rounding with errors.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Uses standard units and rounds numbers but makes occasional errors or needs prompting.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently uses appropriate standard units of measurement and rounds numbers to suitable degrees of accuracy.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies unit conversion and sophisticated rounding strategies across unfamiliar measurement contexts.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding place value is essential for rounding to appropriate degrees of accuracy."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt at approximation or error calculation.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts basic approximation but produces inaccurate estimates or errors.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently estimates answers using approximation but struggles with systematic error calculation using inequalities.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently uses approximation to estimate answers and calculates possible errors accurately using inequality notation.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies approximation and error analysis to complex multi-step problems or unfamiliar contexts.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Rounding skills are essential for meaningful approximation techniques."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Basic calculation fluency supports confidence in estimation and error work."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently uses' and 'calculates accurately', showing complete mastery of the learning target without hedging language.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "number_cluster_02_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to use technology for calculations.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Uses calculator with support but produces inaccurate results or limited understanding.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Uses calculator accurately for basic operations but struggles with number set concepts.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Uses calculators and technology accurately to calculate and demonstrates understanding of infinite number sets.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies technology strategically across contexts and explores advanced number set properties.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot use technology for calculations without understanding basic operations and number systems."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding accuracy and rounding typically precedes technology-assisted calculation work."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": true,
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to use algebraic notation.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Uses basic algebraic notation with support but makes frequent errors.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Uses algebraic notation correctly in simple contexts but struggles with complex expressions.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Uses and interprets algebraic notation including coefficients, powers, brackets, and standard conventions accurately and independently.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies algebraic notation fluently in unfamiliar contexts and complex multi-step expressions.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated accurately and independently, matching the learning target's level of demand without hedging language.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt at algebraic manipulation.",
+          "word_count": 5
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts basic term collection but makes frequent errors.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently collects like terms and expands simple brackets with occasional errors.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently simplifies algebraic expressions by collecting terms, expanding brackets, and factoring accurately.",
+          "word_count": 12
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies manipulation techniques to complex expressions involving multiple operations and nested structures.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot manipulate algebraic expressions without understanding algebraic notation and conventions."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 12
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 12
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb",
+        "level_progression"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_02_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to work with coordinates or graphs.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, plots some points or attempts basic coordinate work with errors.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Plots coordinates and sketches simple graphs but struggles with linear equation manipulation.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently works with coordinates, sketches function graphs accurately, and manipulates linear equations to standard form.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies coordinate skills to complex functions or connects graphical and algebraic representations fluently.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot manipulate linear equations without understanding algebraic notation and conventions."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_02_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to interpret graphs or analyze relationships.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic features but makes errors interpreting gradients or intercepts.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently reads values from graphs but struggles with gradient analysis or problem solving.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently analyzes gradients and intercepts, estimates values accurately, and solves problems using graphical representations.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies graphical analysis to complex scenarios and connects multiple mathematical representations fluently.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot interpret graphs without understanding coordinates and graph creation."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Algebraic notation understanding supports interpreting equations from graphical features."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently at the learning target's level of demand without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to generate sequence terms.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Generates some terms with heavy support but makes frequent errors.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Generates terms correctly in simple cases but struggles with complex rules.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently generates terms of sequences using both term-to-term and position-to-term rules accurately.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Generates terms for complex sequences and creates original sequences with given properties.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Position-to-term rules require understanding algebraic notation and substitution."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently and accurately demonstrates the complete capability described in the learning target.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "algebra_cluster_03_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify sequence types or patterns.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some sequence patterns but cannot determine types or formulas.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently recognizes arithmetic or geometric sequences but struggles to find nth terms consistently.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently recognizes arithmetic and geometric sequences and accurately determines their nth term formulas.",
+          "word_count": 13
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies sequence recognition to complex patterns or derives formulas for non-standard sequence types.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must understand sequence generation before analyzing sequence types and finding general terms."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Nth term formulas require algebraic notation with variables, coefficients, and powers."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently demonstrates the full capability without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "ratio-proportion-and-rates-of-change_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to work with ratios or proportional relationships.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some ratios but makes errors in proportional reasoning.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Uses ratios and fractions correctly in familiar contexts but struggles with complex problems.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Uses ratios, fractions, and proportional reasoning accurately to solve problems involving multiplicative relationships between quantities.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies proportional reasoning flexibly across unfamiliar contexts and connects multiple mathematical concepts.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated accurately and independently, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Ratio, proportion and rates of change",
+        "strand_slug": "ratio-proportion-and-rates-of-change",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "ratio-proportion-and-rates-of-change_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to solve rate or percentage problems.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts rate or percentage calculations but produces inaccurate results.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Solves basic rate or percentage problems independently but struggles with compound units.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently solves problems involving rates, percentage changes, and compound units in real-world contexts accurately.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies rate and percentage concepts to complex multi-step problems or unfamiliar contexts.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Proportional reasoning is fundamental to understanding rates and percentage changes."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently and accurately demonstrates the capability described in the learning target without any hedging language or implications of incompleteness.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Ratio, proportion and rates of change",
+        "strand_slug": "ratio-proportion-and-rates-of-change",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to calculate areas or perimeters.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Calculates areas or perimeters with significant support or produces inaccurate results.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Calculates areas and perimeters for simple shapes but struggles with composite shapes.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently calculates perimeters and areas of triangles, parallelograms, trapezia, circles, and composite shapes accurately.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies area and perimeter calculations to solve complex multi-step problems involving multiple shapes.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Measuring geometric figures typically precedes calculating their properties."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding geometric shape terminology supports area and perimeter calculations."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently and accurately demonstrates the complete capability described in the learning target.",
+      "propositional_lt_rubric_thin_flag": true,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to calculate volumes.",
+          "word_count": 5
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Attempts volume calculations with significant errors or requires substantial support.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Calculates volumes of simple shapes but makes errors with complex prisms.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently calculates volumes of cuboids, cubes, and other prisms including cylinders accurately.",
+          "word_count": 12
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies volume calculations to composite shapes or real-world problem contexts.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Area calculation is required for volume formulas of prisms."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding three-dimensional shape properties supports volume calculation concepts."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 12
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt at ruler and compass constructions.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Attempts basic constructions with significant errors or requires extensive guidance throughout.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Performs some standard constructions correctly but struggles with precision or complex procedures.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Accurately performs standard ruler and compass constructions and applies perpendicular distance from point to line.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Combines multiple constructions fluently or creates novel geometric solutions using construction principles.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Drawing and measuring skills are essential for accurate ruler and compass constructions."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding geometric terminology and notation supports construction procedures."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated with 'accurately performs' and 'applies', indicating the learning target is fully met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to describe or sketch geometric shapes.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts to describe or sketch shapes using incomplete or incorrect terminology.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently describes and sketches basic shapes but uses imprecise terminology or conventional notations.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently describes and sketches geometric shapes accurately using appropriate conventional terms and notations consistently.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies conventional terminology and notation to describe complex composite or three-dimensional geometric configurations.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Drawing and measuring skills typically precede describing and sketching with conventional notation."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' and 'accurately' and 'consistently', positioning Competent as complete success at meeting the learning target.",
+      "propositional_lt_rubric_thin_flag": true,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify geometric properties or congruence.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some basic properties but applies congruence criteria inaccurately.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies most properties of triangles, quadrilaterals, and circles but inconsistently applies congruence criteria.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies and applies properties of triangles, quadrilaterals, and circles, including congruence criteria accurately and consistently.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies geometric properties and congruence criteria to solve complex problems involving multiple shapes.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must know conventional terms and notations to identify geometric properties."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Drawing and measuring skills typically established before identifying abstract properties."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently with accuracy and consistency, clearly indicating the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_03_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to construct triangles or create enlargements.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts basic constructions but produces inaccurate or incomplete figures.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently constructs some congruent triangles and creates enlargements with minor inaccuracies or gaps.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently constructs congruent triangles using appropriate methods and creates accurate similar shapes through enlargement.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies construction and enlargement techniques to solve complex problems or unfamiliar contexts.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Ruler and compass constructions are essential methods for constructing congruent triangles."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding congruence criteria is necessary to construct congruent triangles."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Basic drawing and measuring skills typically precede construction techniques."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and can stand alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_04_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify or describe geometric transformations.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some transformation types but describes results inaccurately or incompletely.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies transformation types and describes some results but misses key properties or details.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies properties of translations, rotations and reflections and accurately describes their results on given figures.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies transformation knowledge to predict combined effects or solve complex geometric problems involving multiple transformations.",
+          "word_count": 15
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must understand geometric shape terminology and notation to describe transformation results."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding geometric properties helps recognize what remains invariant under transformations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_04_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify three-dimensional shape properties.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Identifies some faces, edges or vertices with support but applies inaccurately.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Identifies properties of three-dimensional shapes but struggles to apply them systematically.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Uses properties of faces, surfaces, edges and vertices of three-dimensional shapes to solve problems independently.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies three-dimensional shape properties to solve complex or unfamiliar geometric problems.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Describing geometric shapes establishes vocabulary needed for three-dimensional shape properties."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently at the learning target's level of demand without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_05_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to apply angle properties.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Identifies some angle properties but applies them incorrectly or with support.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Applies basic angle properties correctly but struggles with complex configurations or reasoning.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently applies properties of angles at points, on lines, with parallels, and in polygons to solve problems.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers angle properties to unfamiliar contexts or combines multiple geometric relationships fluently.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot apply angle properties without ability to measure and identify angles."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Understanding geometric shapes and notation typically precedes applying their angle properties."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Knowledge of geometric properties provides foundation for understanding angle relationships."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently applies all the required angle properties to solve problems, demonstrating complete mastery of the learning target.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_05_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt at geometric proof or theorem application.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some geometric properties but produces incomplete or inaccurate reasoning.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently applies basic theorems but struggles with multi-step proofs or complex relationships.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently constructs geometric proofs using theorems, congruence, similarity, and trigonometric relationships to derive results accurately.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers proof techniques to novel contexts or integrates multiple geometric concepts in sophisticated reasoning.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot construct proofs without understanding geometric properties and congruence criteria."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Angle properties form the foundation for geometric reasoning and proof construction."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Geometric notation and terminology are typically established before formal proof work."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding similarity through construction supports similarity proofs and reasoning."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 1}"
+      ],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "geometry-and-measures_cluster_02_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')), (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')), (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped'))]",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "probability_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to conduct probability experiments.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Records outcomes but uses inaccurate language or incorrect probability scale.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Records and describes outcomes accurately but analysis lacks depth or precision.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Records, describes and analyses frequency of outcomes using appropriate probability language and 0-1 scale accurately.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies probability analysis to complex scenarios or connects findings to theoretical predictions.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with accurate execution of all required elements, standing alone as evidence the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Probability",
+        "strand_slug": "probability",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "probability_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to enumerate sets or operations.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some set elements but produces incomplete or inaccurate operations.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently enumerates simple sets but struggles with systematic union and intersection operations.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Systematically enumerates sets and accurately determines their unions and intersections using tables and grids.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies systematic set operations to complex scenarios or combines multiple operations fluently.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb",
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with systematic enumeration and accurate determination of unions and intersections, meeting the learning target without hedging language.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Probability",
+        "strand_slug": "probability",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyze distributions.",
+          "word_count": 5
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic features but produces inaccurate interpretations.",
+          "word_count": 9
+        },
+        {
+          "name": "developing",
+          "descriptor": "Describes distributions using some appropriate measures but lacks complete analysis.",
+          "word_count": 10
+        },
+        {
+          "name": "competent",
+          "descriptor": "Describes, interprets and compares single variable distributions using appropriate graphs and measures of central tendency and spread.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers distribution analysis to complex datasets or connects multiple statistical concepts fluently.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot analyze distributions without ability to construct and interpret appropriate data representations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 18
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly states the learner can perform all components of the learning target without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to construct data representations.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Constructs basic representations with support but contains significant errors or omissions.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Constructs appropriate representations independently but with minor errors in labeling or scaling.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Constructs and interprets appropriate tables, charts and diagrams accurately for categorical and numerical data.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Selects optimal representations and justifies choices based on data characteristics and purpose.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "lt_id": "statistics_cluster_01_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyze relationships between variables.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some patterns but produces inaccurate scatter graphs.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Creates scatter graphs independently but describes relationships with limited mathematical precision.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently describes mathematical relationships between two variables and accurately illustrates them using scatter graphs.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes complex bivariate relationships and evaluates correlation strength using mathematical terminology.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot construct scatter graphs without understanding how to construct data representations."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently describes' and 'accurately illustrates', indicating complete mastery of the learning target.",
+      "propositional_lt_rubric_thin_flag": false,
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    }
+  ],
+  "halted_lts": []
+}

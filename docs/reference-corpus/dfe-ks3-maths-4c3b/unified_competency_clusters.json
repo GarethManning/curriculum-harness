@@ -1,0 +1,856 @@
+{
+  "clusters": [
+    {
+      "cluster_id": "number_cluster_01",
+      "competency_name": "Number Systems and Operations",
+      "competency_definition": "The ability to understand, manipulate, and operate with various number types and their representations.",
+      "kud_item_ids": [
+        "number_blk_0002_item_01",
+        "number_blk_0002_item_02",
+        "number_blk_0002_item_03",
+        "number_blk_0002_item_04",
+        "number_blk_0002_item_05",
+        "number_blk_0002_item_06",
+        "number_blk_0002_item_07",
+        "number_blk_0002_item_08",
+        "number_blk_0002_item_09",
+        "number_blk_0002_item_10",
+        "number_blk_0002_item_11"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 11
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Number Systems and Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0002_item_11"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Number Systems and Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0002_item_11"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Number Systems and Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0002_item_11"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "number_cluster_02",
+      "competency_name": "Measurement and Approximation",
+      "competency_definition": "The ability to work with measurements, approximations, and technological tools for numerical calculations.",
+      "kud_item_ids": [
+        "number_blk_0003_item_01",
+        "number_blk_0003_item_02",
+        "number_blk_0003_item_03",
+        "number_blk_0003_item_04",
+        "number_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 31,
+      "source_position_end": 31,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 5
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Measurement and Approximation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Measurement and Approximation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Measurement and Approximation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Number",
+        "strand_slug": "number",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "algebra_cluster_01",
+      "competency_name": "Algebraic Notation and Expression Manipulation",
+      "competency_definition": "The ability to use algebraic notation, manipulate expressions, and work with formulae to solve mathematical problems.",
+      "kud_item_ids": [
+        "algebra_blk_0002_item_01",
+        "algebra_blk_0002_item_02",
+        "algebra_blk_0002_item_03",
+        "algebra_blk_0002_item_04",
+        "algebra_blk_0002_item_05",
+        "algebra_blk_0002_item_06",
+        "algebra_blk_0002_item_07"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Algebraic Notation and Expression Manipulation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Algebraic Notation and Expression Manipulation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Algebraic Notation and Expression Manipulation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "algebra_cluster_02",
+      "competency_name": "Graphical Representation and Coordinate Geometry",
+      "competency_definition": "The ability to work with coordinates, create and interpret graphs, and analyze mathematical relationships graphically.",
+      "kud_item_ids": [
+        "algebra_blk_0002_item_08",
+        "algebra_blk_0002_item_09",
+        "algebra_blk_0002_item_10",
+        "algebra_blk_0003_item_01",
+        "algebra_blk_0003_item_02",
+        "algebra_blk_0003_item_03",
+        "algebra_blk_0003_item_04"
+      ],
+      "source_block_ids": [
+        "blk_0002",
+        "blk_0003"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 32,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Graphical Representation and Coordinate Geometry",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Coordinate Geometry and Graphical Analysis",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Graphical Representation and Interpretation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_09",
+            "blk_0002_item_10",
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "algebra_cluster_03",
+      "competency_name": "Sequences and Patterns",
+      "competency_definition": "The ability to generate, recognize, and work with arithmetic and geometric sequences and other mathematical patterns.",
+      "kud_item_ids": [
+        "algebra_blk_0003_item_05",
+        "algebra_blk_0003_item_06",
+        "algebra_blk_0003_item_07"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 32,
+      "source_position_end": 32,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Sequences and Patterns",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_05",
+            "blk_0003_item_06",
+            "blk_0003_item_07"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Sequences and Patterns",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_05",
+            "blk_0003_item_06",
+            "blk_0003_item_07"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Sequences and Patterns",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_05",
+            "blk_0003_item_06",
+            "blk_0003_item_07"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Algebra",
+        "strand_slug": "algebra",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "ratio-proportion-and-rates-of-change_cluster_01",
+      "competency_name": "Ratio, Proportion and Rates of Change",
+      "competency_definition": "The ability to work with multiplicative relationships between quantities using ratios, proportions, percentages, and rates.",
+      "kud_item_ids": [
+        "ratio-proportion-and-rates-of-change_blk_0002_item_01",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_02",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_03",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_04",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_05",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_06",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_07",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_08",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_09",
+        "ratio-proportion-and-rates-of-change_blk_0002_item_10"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 10
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Ratio, Proportion and Rates of Change",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Ratio, Proportion and Rates of Change",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Ratio, Proportion and Rates of Change",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09",
+            "blk_0002_item_10"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Ratio, proportion and rates of change",
+        "strand_slug": "ratio-proportion-and-rates-of-change",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "geometry-and-measures_cluster_01",
+      "competency_name": "Measurement and Calculation of Geometric Properties",
+      "competency_definition": "The ability to derive, apply, and use formulae to calculate perimeters, areas, and volumes of geometric shapes.",
+      "kud_item_ids": [
+        "geometry-and-measures_blk_0002_item_01",
+        "geometry-and-measures_blk_0002_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Measurement and Calculation of Geometric Properties",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Measurement and Calculation of Geometric Properties",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Measurement and Calculation of Geometric Properties",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "geometry-and-measures_cluster_02",
+      "competency_name": "Geometric Construction and Drawing",
+      "competency_definition": "The ability to draw, measure, and construct geometric figures using conventional methods and notations.",
+      "kud_item_ids": [
+        "geometry-and-measures_blk_0002_item_03",
+        "geometry-and-measures_blk_0002_item_04",
+        "geometry-and-measures_blk_0002_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Geometric Construction and Drawing",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Geometric Construction and Drawing",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05",
+            "blk_0002_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Geometric Construction and Drawing",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0002_item_04",
+            "blk_0002_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "geometry-and-measures_cluster_03",
+      "competency_name": "Properties and Relationships of Geometric Figures",
+      "competency_definition": "The ability to identify, derive, and apply properties of triangles, quadrilaterals, circles, and other geometric figures.",
+      "kud_item_ids": [
+        "geometry-and-measures_blk_0002_item_06",
+        "geometry-and-measures_blk_0002_item_07",
+        "geometry-and-measures_blk_0002_item_09"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Properties and Relationships of Geometric Figures",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_09"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Geometric Properties and Transformations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_07",
+            "blk_0002_item_08",
+            "blk_0002_item_09"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Properties and Relationships of Geometric Figures",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_06",
+            "blk_0002_item_07",
+            "blk_0002_item_09"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "geometry-and-measures_cluster_04",
+      "competency_name": "Transformations and Spatial Reasoning",
+      "competency_definition": "The ability to identify, describe, and apply geometric transformations and work with three-dimensional shapes.",
+      "kud_item_ids": [
+        "geometry-and-measures_blk_0002_item_08",
+        "geometry-and-measures_blk_0002_item_15"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Transformations and Spatial Reasoning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_08",
+            "blk_0002_item_15"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Three-Dimensional Geometry and Mathematical Interpretation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_15",
+            "blk_0002_item_16"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Geometric Transformations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_08"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "geometry-and-measures_cluster_05",
+      "competency_name": "Angle Relationships and Geometric Reasoning",
+      "competency_definition": "The ability to apply angle properties, prove geometric relationships, and solve problems using geometric theorems.",
+      "kud_item_ids": [
+        "geometry-and-measures_blk_0002_item_10",
+        "geometry-and-measures_blk_0002_item_11",
+        "geometry-and-measures_blk_0002_item_12",
+        "geometry-and-measures_blk_0002_item_13",
+        "geometry-and-measures_blk_0002_item_14",
+        "geometry-and-measures_blk_0002_item_16"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Angle Relationships and Geometric Reasoning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_10",
+            "blk_0002_item_11",
+            "blk_0002_item_12",
+            "blk_0002_item_13",
+            "blk_0002_item_14",
+            "blk_0002_item_16"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Angle Relationships and Geometric Reasoning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_10",
+            "blk_0002_item_11",
+            "blk_0002_item_12",
+            "blk_0002_item_13",
+            "blk_0002_item_14"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Angle Properties and Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_10",
+            "blk_0002_item_11",
+            "blk_0002_item_12"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Geometry and measures",
+        "strand_slug": "geometry-and-measures",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "probability_cluster_01",
+      "competency_name": "Probability Analysis and Set Operations",
+      "competency_definition": "The ability to conduct probability experiments, analyze outcomes, and systematically work with sets and their relationships.",
+      "kud_item_ids": [
+        "probability_blk_0002_item_01",
+        "probability_blk_0002_item_02",
+        "probability_blk_0002_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Probability Analysis and Set Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Probability Analysis and Set Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Probability Analysis and Set Operations",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Probability",
+        "strand_slug": "probability",
+        "detection_confidence": 0.85
+      }
+    },
+    {
+      "cluster_id": "statistics_cluster_01",
+      "competency_name": "Statistical Analysis and Data Representation",
+      "competency_definition": "The ability to analyze, represent, and interpret statistical data using appropriate graphical and numerical methods.",
+      "kud_item_ids": [
+        "statistics_blk_0002_item_01",
+        "statistics_blk_0002_item_02",
+        "statistics_blk_0002_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0002"
+      ],
+      "source_position_start": 2,
+      "source_position_end": 2,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Statistical Analysis and Data Representation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Statistical Analysis and Data Representation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Statistical Analysis and Data Representation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0002_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "Statistics",
+        "strand_slug": "statistics",
+        "detection_confidence": 0.85
+      }
+    }
+  ]
+}

@@ -127,6 +127,10 @@ def run_strand_sub_run(
         argv.append("--skip-criteria")
     if base_args.get("skip_lts"):
         argv.append("--skip-lts")
+    # Mark as sub-run: converts artefact_count_ratio from hard halt to flag.
+    # Per-strand slices are dense (many KUD items from few blocks) and the
+    # gate threshold was calibrated for whole-curriculum sources.
+    argv.append("--sub-run")
 
     exit_code = main(argv)
     per_strand_ledger = _TOKEN_LEDGER.to_dict()

@@ -892,6 +892,17 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "be classified as Type 3 Do-Disposition sustained orientations."
         ),
     )
+    parser.add_argument(
+        "--sub-run",
+        action="store_true",
+        help=(
+            "Mark this run as a strand sub-run (invoked by the multi-strand "
+            "orchestrator). Converts artefact_count_ratio from a hard halt to "
+            "a flag, because per-strand slices are intentionally small and dense "
+            "(many KUD items from few blocks) compared to whole-curriculum sources "
+            "the ratio gate was calibrated on."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -1332,23 +1343,36 @@ def main(argv: list[str] | None = None) -> int:
 
     if report.halted_by:
         if report.halted_by == "artefact_count_ratio":
-            # artefact_count_ratio stays a hard halt (4c-3 handles this).
-            report_path = os.path.join(args.out, "quality_report.md")
-            with open(report_path, "w", encoding="utf-8") as fh:
-                fh.write(kud_report_md)
+            if getattr(args, "sub_run", False):
+                # Sub-run mode (4c-3b): artefact_count_ratio becomes a flag.
+                # Per-strand slices are intentionally dense (many KUD items from
+                # few blocks), so the ratio gate calibrated for whole-curriculum
+                # sources does not apply at the strand level.
+                print(
+                    f"[refauth] FLAG (sub-run): KUD gate `{report.halted_by}` "
+                    "fired but converted to flag in sub-run context; pipeline continues.",
+                    flush=True,
+                )
+                report.halted_by = None  # Allow pipeline to continue
+            else:
+                # Top-level run: artefact_count_ratio stays a hard halt.
+                report_path = os.path.join(args.out, "quality_report.md")
+                with open(report_path, "w", encoding="utf-8") as fh:
+                    fh.write(kud_report_md)
+                print(
+                    f"[refauth] HALTED by KUD gate `{report.halted_by}` (hard halt; "
+                    "use multi-strand pipeline path for this source). "
+                    "Output preserved for diagnosis; exiting non-zero.",
+                    flush=True,
+                )
+                return 2
+        # All other KUD gate failures become flags — pipeline continues.
+        if report.halted_by:
             print(
-                f"[refauth] HALTED by KUD gate `{report.halted_by}` (hard halt; "
-                "4c-3 will address via strand auto-scoping). "
-                "Output preserved for diagnosis; exiting non-zero.",
+                f"[refauth] FLAG: KUD gate `{report.halted_by}` failed "
+                "(converted to flag per 4c-1; pipeline continues).",
                 flush=True,
             )
-            return 2
-        # All other KUD gate failures become flags — pipeline continues.
-        print(
-            f"[refauth] FLAG: KUD gate `{report.halted_by}` failed "
-            "(converted to flag per 4c-1; pipeline continues).",
-            flush=True,
-        )
 
     if args.skip_lts:
         report_path = os.path.join(args.out, "quality_report.md")

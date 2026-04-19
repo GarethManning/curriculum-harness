@@ -1,0 +1,426 @@
+{
+  "strand_detection": {
+    "is_multi_strand": true,
+    "overall_confidence": 0.85,
+    "strands": [
+      {
+        "name": "Number",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      },
+      {
+        "name": "Algebra",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      },
+      {
+        "name": "Ratio, proportion and rates of change",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      },
+      {
+        "name": "Geometry and measures",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      },
+      {
+        "name": "Probability",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      },
+      {
+        "name": "Statistics",
+        "confidence": 0.85,
+        "signals": [
+          "teaching_point_marker: Pupils should be taught to:"
+        ]
+      }
+    ],
+    "flags": []
+  },
+  "per_strand_counts": {
+    "number": {
+      "strand_name": "Number",
+      "kud_items": 16,
+      "halted_blocks": 1,
+      "clusters": 2,
+      "lts": 5,
+      "rubrics": 5,
+      "rubric_gate_fail": 1,
+      "rubric_gen_fail": 0,
+      "supporting_components": 1
+    },
+    "algebra": {
+      "strand_name": "Algebra",
+      "kud_items": 17,
+      "halted_blocks": 1,
+      "clusters": 3,
+      "lts": 6,
+      "rubrics": 6,
+      "rubric_gate_fail": 3,
+      "rubric_gen_fail": 0,
+      "supporting_components": 3
+    },
+    "ratio-proportion-and-rates-of-change": {
+      "strand_name": "Ratio, proportion and rates of change",
+      "kud_items": 10,
+      "halted_blocks": 3,
+      "clusters": 1,
+      "lts": 2,
+      "rubrics": 2,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 2
+    },
+    "geometry-and-measures": {
+      "strand_name": "Geometry and measures",
+      "kud_items": 16,
+      "halted_blocks": 3,
+      "clusters": 5,
+      "lts": 11,
+      "rubrics": 11,
+      "rubric_gate_fail": 5,
+      "rubric_gen_fail": 1,
+      "supporting_components": 4
+    },
+    "probability": {
+      "strand_name": "Probability",
+      "kud_items": 3,
+      "halted_blocks": 1,
+      "clusters": 1,
+      "lts": 2,
+      "rubrics": 2,
+      "rubric_gate_fail": 1,
+      "rubric_gen_fail": 0,
+      "supporting_components": 1
+    },
+    "statistics": {
+      "strand_name": "Statistics",
+      "kud_items": 3,
+      "halted_blocks": 3,
+      "clusters": 1,
+      "lts": 3,
+      "rubrics": 3,
+      "rubric_gate_fail": 1,
+      "rubric_gen_fail": 0,
+      "supporting_components": 2
+    }
+  },
+  "unified_counts": {
+    "kud_items": 65,
+    "clusters": 13,
+    "lts": 29,
+    "rubrics": 29,
+    "supporting_components": 13
+  },
+  "sanity_checks": {
+    "passed": true,
+    "failure_count": 0,
+    "failures": []
+  },
+  "token_usage": {
+    "total_input_tokens": 542138,
+    "total_output_tokens": 98552,
+    "estimated_cost_usd": null,
+    "by_strand": {
+      "number": {
+        "total_input_tokens": 94211,
+        "total_output_tokens": 20498,
+        "per_stage": {
+          "band_statements": {
+            "input": 10212,
+            "output": 812,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 8139,
+            "output": 1112,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 22206,
+            "output": 6717,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 11436,
+            "output": 2079,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 28023,
+            "output": 3038,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 1694,
+            "output": 198,
+            "calls": 5,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 12501,
+            "output": 6542,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "algebra": {
+        "total_input_tokens": 103073,
+        "total_output_tokens": 20487,
+        "per_stage": {
+          "band_statements": {
+            "input": 12270,
+            "output": 933,
+            "calls": 18,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 8169,
+            "output": 1544,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 22113,
+            "output": 6538,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 14889,
+            "output": 2669,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 34290,
+            "output": 3580,
+            "calls": 18,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 2018,
+            "output": 222,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 9324,
+            "output": 5001,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "ratio-proportion-and-rates-of-change": {
+        "total_input_tokens": 61409,
+        "total_output_tokens": 10319,
+        "per_stage": {
+          "band_statements": {
+            "input": 4119,
+            "output": 315,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 6048,
+            "output": 680,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 28344,
+            "output": 3727,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 5529,
+            "output": 1003,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 10428,
+            "output": 999,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 680,
+            "output": 82,
+            "calls": 2,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 6261,
+            "output": 3513,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "geometry-and-measures": {
+        "total_input_tokens": 175786,
+        "total_output_tokens": 33298,
+        "per_stage": {
+          "band_statements": {
+            "input": 22605,
+            "output": 1800,
+            "calls": 33,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 8571,
+            "output": 2078,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 29274,
+            "output": 6258,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 21723,
+            "output": 4346,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 71370,
+            "output": 8354,
+            "calls": 33,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 3424,
+            "output": 394,
+            "calls": 10,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 18819,
+            "output": 10068,
+            "calls": 18,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "probability": {
+        "total_input_tokens": 40849,
+        "total_output_tokens": 5355,
+        "per_stage": {
+          "band_statements": {
+            "input": 4077,
+            "output": 318,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 4314,
+            "output": 410,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 14097,
+            "output": 1398,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 4221,
+            "output": 759,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 10368,
+            "output": 806,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 673,
+            "output": 86,
+            "calls": 2,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 3099,
+            "output": 1578,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "statistics": {
+        "total_input_tokens": 66810,
+        "total_output_tokens": 8595,
+        "per_stage": {
+          "band_statements": {
+            "input": 6096,
+            "output": 456,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 4968,
+            "output": 423,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 28326,
+            "output": 1773,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 4371,
+            "output": 1032,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_generation": {
+            "input": 15885,
+            "output": 1490,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "rubric_judge": {
+            "input": 999,
+            "output": 118,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "supporting_components": {
+            "input": 6165,
+            "output": 3303,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      }
+    }
+  }
+}
