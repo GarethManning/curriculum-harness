@@ -1,0 +1,285 @@
+{
+  "source_slug": "welsh-cfw-health-wellbeing",
+  "pass1_failed_lts": [],
+  "dag_validation": {
+    "passed": true,
+    "errors": [],
+    "primary_agreement_rate": 1.0,
+    "secondary_agreement_rate": 0.8889,
+    "hand_curated_edges_total": 9,
+    "primary_edges_recovered": 9,
+    "secondary_edges_recovered": 8,
+    "unrecovered_edges": [],
+    "tag_mismatch_edges": [
+      {
+        "lt_a": "cluster_09_lt_01",
+        "lt_b": "cluster_09_lt_02",
+        "curated_tag": "pedagogical_sequencing",
+        "generated_tag": "ontological_prerequisite"
+      }
+    ]
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 25,
+    "sample_size": 5,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 14,
+    "audit_rows": [
+      {
+        "lt_id": "cluster_01_lt_01",
+        "lt_name": "Understanding Health and Well-being Factors",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0001",
+          "welsh-cfw-health-wellbeing_crit_0002",
+          "welsh-cfw-health-wellbeing_crit_0003"
+        ],
+        "decomposition_rationale": "Physical activity represents a distinct health factor with separable assessment scenarios from nutrition and sleep factors."
+      },
+      {
+        "lt_id": "cluster_01_lt_02",
+        "lt_name": "Demonstrating Physical Movement Competence",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0004"
+        ],
+        "decomposition_rationale": "Single criterion as this represents one unified competency domain of physical movement performance, with no separable sub-skills that would have distinct failure modes in assessment."
+      },
+      {
+        "lt_id": "cluster_02_lt_02",
+        "lt_name": "Understanding Self-Care Impact",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0005"
+        ],
+        "decomposition_rationale": "Single criterion as the LT contains one action verb (explain) targeting a unified concept about self-care behaviours' impact on well-being. No separable cognitive operations or distinct domains present."
+      },
+      {
+        "lt_id": "cluster_03_lt_01",
+        "lt_name": "Connecting Experiences to Emotional Well-being",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0006",
+          "welsh-cfw-health-wellbeing_crit_0007"
+        ],
+        "decomposition_rationale": "Single criterion as the LT involves one cognitive operation (explain) applied to one unified concept domain (experience-mental health connections)."
+      },
+      {
+        "lt_id": "cluster_04_lt_01",
+        "lt_name": "Communicating Feelings Appropriately",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0008"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one unified skill of contextually appropriate emotional communication without separable sub-components."
+      },
+      {
+        "lt_id": "cluster_05_lt_01",
+        "lt_name": "Analysing Decision Impacts and Influencing Factors",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0009",
+          "welsh-cfw-health-wellbeing_crit_0010"
+        ],
+        "decomposition_rationale": "This represents a single analytical skill focused on examining decision impacts across different spheres (self, others, society)."
+      },
+      {
+        "lt_id": "cluster_05_lt_02",
+        "lt_name": "Evaluating Implications and Risks in Decisions",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0011",
+          "welsh-cfw-health-wellbeing_crit_0012"
+        ],
+        "decomposition_rationale": "This criterion captures the foundational skill of recognizing what could happen as a result of decisions, which is prerequisite to evaluation."
+      },
+      {
+        "lt_id": "cluster_06_lt_01",
+        "lt_name": "Identifying Consequences of Career Choices",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0013"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive operation (identify) applied to one knowledge domain (career consequences). The three domains (personal, financial, social) are examples within the same identification task, not separate cognitive operations."
+      },
+      {
+        "lt_id": "cluster_06_lt_02",
+        "lt_name": "Making Informed Career Pathway Decisions",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0014",
+          "welsh-cfw-health-wellbeing_crit_0015"
+        ],
+        "decomposition_rationale": "This criterion captures the analytical component of evaluating career options, which is a distinct cognitive operation from the justification process."
+      },
+      {
+        "lt_id": "cluster_07_lt_01",
+        "lt_name": "Identifying Social Influences on Identity",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0016"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive operation (identify) applied to one unified concept domain of social influences and their effects."
+      },
+      {
+        "lt_id": "cluster_07_lt_02",
+        "lt_name": "Analysing Cultural Development of Norms",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0017",
+          "welsh-cfw-health-wellbeing_crit_0018",
+          "welsh-cfw-health-wellbeing_crit_0019"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on understanding norm development within individual cultural contexts, which is a distinct analytical skill from cross-cultural comparison."
+      },
+      {
+        "lt_id": "cluster_08_lt_01",
+        "lt_name": "Understanding Healthy Relationships and Belonging",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0020",
+          "welsh-cfw-health-wellbeing_crit_0021"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on explaining the causal relationship between healthy relationships and overall wellbeing/health outcomes."
+      },
+      {
+        "lt_id": "cluster_09_lt_01",
+        "lt_name": "Analysing Relationship Dynamics for Warning Signs",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0022",
+          "welsh-cfw-health-wellbeing_crit_0023"
+        ],
+        "decomposition_rationale": "Analysis of relationship dynamics and identification of warning signs are distinct cognitive operations that can be assessed separately, as students might understand relationship patterns without recognizing danger signals."
+      },
+      {
+        "lt_id": "cluster_09_lt_02",
+        "lt_name": "Evaluating Support Resources and Safety Strategies",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "welsh-cfw-health-wellbeing_crit_0024",
+          "welsh-cfw-health-wellbeing_crit_0025"
+        ],
+        "decomposition_rationale": "This criterion captures the evaluation component focused specifically on support resources, requiring analytical reasoning about their appropriateness and effectiveness."
+      }
+    ],
+    "flags": []
+  },
+  "token_usage": {
+    "total_input_tokens": 17550,
+    "total_output_tokens": 8217,
+    "per_stage": {
+      "other": {
+        "input": 17550,
+        "output": 8217,
+        "calls": 15,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_result": {
+    "status": "ok",
+    "pre_count": 12,
+    "post_count": 12,
+    "pre_gate_fail": 1,
+    "post_gate_fail": 1,
+    "pre_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "post_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "regression_ok": true
+  },
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 12,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "cluster_04_lt_01": [
+        "cluster_03_lt_01"
+      ],
+      "cluster_05_lt_01": [
+        "cluster_01_lt_01",
+        "cluster_02_lt_02"
+      ],
+      "cluster_05_lt_02": [
+        "cluster_05_lt_01"
+      ],
+      "cluster_06_lt_02": [
+        "cluster_06_lt_01"
+      ],
+      "cluster_07_lt_02": [
+        "cluster_07_lt_01",
+        "cluster_08_lt_01"
+      ],
+      "cluster_09_lt_01": [
+        "cluster_08_lt_01"
+      ],
+      "cluster_09_lt_02": [
+        "cluster_09_lt_01"
+      ]
+    }
+  },
+  "manual_corrections": {
+    "reason": "decomposition_audit_post_generation_review",
+    "removed_criteria": [
+      {
+        "id": "welsh-cfw-health-wellbeing_crit_0002",
+        "reason": "over-decomposition: physical activity, nutrition, sleep are enumerated examples of health factors (Rule 4), not separately assessable sub-criteria. Merged into crit_0001."
+      },
+      {
+        "id": "welsh-cfw-health-wellbeing_crit_0003",
+        "reason": "over-decomposition: same as crit_0002 issue. Merged into crit_0001."
+      },
+      {
+        "id": "welsh-cfw-health-wellbeing_crit_0019",
+        "reason": "out-of-scope hallucination: criterion_statement references personal social influence analysis not present in cluster_07_lt_02 LT definition."
+      }
+    ],
+    "total_criteria_after_fix": 22,
+    "dag_revalidation": "PASSED",
+    "agreement_recomputed": {
+      "primary": 1.0,
+      "secondary": 0.89
+    }
+  }
+}

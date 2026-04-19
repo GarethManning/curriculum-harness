@@ -1,0 +1,688 @@
+{
+  "schema_version": "v1",
+  "source_slug": "welsh-cfw-health-wellbeing",
+  "source_name": "Welsh Curriculum for Wales \u2014 Health and Well-being",
+  "strand": "single_strand",
+  "total_criteria": 22,
+  "criteria": [
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0001",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how factors including physical activity, nutrition, sleep, and other influences support physical health and well-being outcomes.",
+      "criterion_label": "Explaining health and well-being factors",
+      "source_provenance": [
+        "blk_0007_item_01",
+        "blk_0010_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not attempt to explain any health factors.",
+        "emerging": "Names one factor but does not explain how it supports well-being.",
+        "developing": "Explains how one or two factors support well-being with some gaps.",
+        "competent": "Explains clearly how multiple factors together support physical health and well-being independently.",
+        "extending": "Explains interactions between factors and analyses how combined effects vary across individuals or contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0004",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can perform movement skills appropriate to my age and context with increasing competence.",
+      "criterion_label": "Movement Skills Performance",
+      "source_provenance": [
+        "blk_0010_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of age-appropriate movement skills.",
+        "emerging": "Attempts basic movement skills with significant support and guidance needed.",
+        "developing": "Performs some movement skills appropriately with occasional support or prompting required.",
+        "competent": "Consistently performs a range of movement skills appropriate to age and context independently.",
+        "extending": "Demonstrates refined movement skills and adapts techniques to different contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0005",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how positive, informed behaviours that care for and respect self and others support well-being and sense of self-worth.",
+      "criterion_label": "Self-Care Impact Explanation",
+      "source_provenance": [
+        "blk_0009_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of self-care behaviours' impact.",
+        "emerging": "Basic mention of self-care behaviours with minimal connection to well-being.",
+        "developing": "Explains some connections between self-care behaviours and well-being with simple reasoning.",
+        "competent": "Clearly explains how positive self-care behaviours support well-being and self-worth with sound reasoning.",
+        "extending": "Comprehensively explains self-care impact with nuanced understanding of interconnections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0006",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how experiences influence mental health and well-being.",
+      "criterion_label": "Experience-Mental Health Connection",
+      "source_provenance": [
+        "blk_0011_item_01",
+        "blk_0012_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of experience-mental health connections.",
+        "emerging": "Basic recognition that experiences affect mental health.",
+        "developing": "Simple explanations of how some experiences influence mental health.",
+        "competent": "Clear explanations of how various experiences connect to mental health outcomes.",
+        "extending": "Detailed explanations with specific examples of experience-mental health links."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0007",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how emotional responses influence mental health and well-being.",
+      "criterion_label": "Emotional Response Impact",
+      "source_provenance": [
+        "blk_0011_item_01",
+        "blk_0012_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of emotional response impacts.",
+        "emerging": "Basic recognition that emotions affect mental health.",
+        "developing": "Simple explanations of how emotional responses influence well-being.",
+        "competent": "Clear explanations of how emotional responses connect to mental health outcomes.",
+        "extending": "Detailed explanations with specific examples of emotional response impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0008",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can communicate my feelings in ways that are appropriate to the context and audience.",
+      "criterion_label": "Appropriate Feeling Communication",
+      "source_provenance": [
+        "blk_0014_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to communicate feelings appropriately.",
+        "emerging": "Basic attempts to express feelings with limited context awareness.",
+        "developing": "Generally communicates feelings appropriately with some context consideration.",
+        "competent": "Consistently communicates feelings in ways well-suited to context and audience needs.",
+        "extending": "Skillfully adapts feeling communication across diverse contexts and audiences."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0006",
+        "welsh-cfw-health-wellbeing_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0006",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0008",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding how experiences influence mental health provides conceptual foundation for communicating feelings appropriately."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0007",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0008",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding how emotional responses influence well-being precedes effective communication of those feelings."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0009",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse how decisions and actions impact myself, others, and society.",
+      "criterion_label": "Analysing Decision Impacts",
+      "source_provenance": [
+        "blk_0015_item_01",
+        "blk_0016_item_01",
+        "blk_0016_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of decision impacts shown.",
+        "emerging": "Basic recognition that decisions have some impacts on self or others.",
+        "developing": "Simple analysis of how decisions affect self, others, or society with limited detail.",
+        "competent": "Clear analysis of how decisions impact self, others, and society with relevant examples and reasoning.",
+        "extending": "Sophisticated analysis connecting decision impacts across multiple contexts and timeframes."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0001",
+        "welsh-cfw-health-wellbeing_crit_0005"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0001",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0009",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Knowledge of how physical activity supports health is prerequisite content for analyzing health-affecting decisions."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0005",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0009",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding positive self-care behaviors provides domain knowledge for analyzing decisions that impact well-being."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0010",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the factors that influence decision-making.",
+      "criterion_label": "Identifying Influencing Factors",
+      "source_provenance": [
+        "blk_0016_item_02",
+        "blk_0016_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No factors identified.",
+        "emerging": "Names one or two basic factors that influence decisions.",
+        "developing": "Identifies several factors with simple explanations of their influence on decisions.",
+        "competent": "Identifies multiple relevant factors and explains how they influence decision-making processes effectively.",
+        "extending": "Identifies complex interacting factors and analyses their relative influence comprehensively."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0011",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify possible implications and risks of decisions for myself and others.",
+      "criterion_label": "Identifying Decision Implications",
+      "source_provenance": [
+        "blk_0017_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify decision implications or risks.",
+        "emerging": "Identifies obvious immediate implications with prompting.",
+        "developing": "Identifies some implications and risks for self and others.",
+        "competent": "Systematically identifies multiple implications and risks for self and others across different scenarios.",
+        "extending": "Identifies subtle long-term implications and interconnected risks."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0009",
+        "welsh-cfw-health-wellbeing_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0009",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0011",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Analyzing how decisions impact others is logically required before identifying specific implications and risks of those decisions."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0010",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0011",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding factors that influence decision-making is conceptually required before identifying implications and risks of decisions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0012",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate the significance and likelihood of identified implications and risks before making decisions.",
+      "criterion_label": "Evaluating Risk Significance",
+      "source_provenance": [
+        "blk_0017_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot evaluate implications or risks.",
+        "emerging": "Makes basic judgments about obvious risks with support.",
+        "developing": "Evaluates some implications using simple criteria like severity.",
+        "competent": "Systematically evaluates implications using multiple criteria including likelihood, severity, and impact on others.",
+        "extending": "Weighs complex trade-offs and competing priorities effectively."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0011"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0011",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0012",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying implications and risks is logically prerequisite to evaluating their significance and likelihood."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0013",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify significant lifelong consequences of career pathway decisions.",
+      "criterion_label": "Identify Career Consequences",
+      "source_provenance": [
+        "blk_0018_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any career consequences.",
+        "emerging": "Identifies basic immediate consequences of career choices.",
+        "developing": "Identifies some lifelong consequences across different life areas.",
+        "competent": "Clearly identifies significant lifelong consequences of career decisions across personal, financial, and social domains.",
+        "extending": "Identifies complex interconnected consequences and their long-term implications."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0014",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate multiple career pathways by systematically analyzing their characteristics, requirements, and outcomes.",
+      "criterion_label": "Evaluate Career Pathways",
+      "source_provenance": [
+        "blk_0018_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of career pathways attempted.",
+        "emerging": "Basic comparison of obvious career features with limited analysis.",
+        "developing": "Systematic evaluation of some pathway characteristics with developing analytical depth.",
+        "competent": "Thorough evaluation of multiple pathways analyzing requirements, outcomes, and key characteristics systematically.",
+        "extending": "Sophisticated evaluation incorporating nuanced pathway analysis and future trend considerations."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0013"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0013",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0014",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying consequences of career decisions is conceptually required before systematically analyzing multiple pathways."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0015",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can justify my career pathway choices by reasoning about their alignment with my values, abilities, and long-term goals.",
+      "criterion_label": "Justify Career Choices",
+      "source_provenance": [
+        "blk_0018_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No justification of career choices provided.",
+        "emerging": "Simple justification referencing basic personal preferences or single factors.",
+        "developing": "Developing justification connecting some personal factors to career choices with emerging reasoning.",
+        "competent": "Clear justification demonstrating reasoned connections between values, abilities, goals and career pathway choices.",
+        "extending": "Sophisticated justification with nuanced reasoning about complex personal-pathway alignments."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0013",
+        "welsh-cfw-health-wellbeing_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0013",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0015",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding lifelong consequences is prerequisite to justifying career choices based on alignment with goals."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0014",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0015",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Systematic analysis of career pathways should precede justification of specific choices."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0016",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify how social influences shape identity, values, behaviours and well-being.",
+      "criterion_label": "Identifying Social Influence Impact",
+      "source_provenance": [
+        "blk_0019_item_01",
+        "blk_0020_item_01",
+        "blk_0020_item_02",
+        "blk_0020_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify social influences or their effects.",
+        "emerging": "Identifies basic social influences with limited understanding of effects.",
+        "developing": "Identifies several social influences and describes some effects on identity or behaviour.",
+        "competent": "Clearly identifies multiple social influences and explains how they shape identity, values, behaviours and well-being.",
+        "extending": "Identifies complex social influences and their interconnected effects across multiple domains."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0017",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse how norms and values develop within specific cultural contexts.",
+      "criterion_label": "Intra-cultural Norm Development",
+      "source_provenance": [
+        "blk_0021_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of cultural norm development shown.",
+        "emerging": "Basic identification of some norms within cultures.",
+        "developing": "Simple analysis of how norms develop in familiar cultures.",
+        "competent": "Clear analysis of norm development processes within specific cultural contexts with supporting evidence.",
+        "extending": "Sophisticated analysis connecting multiple factors in cultural norm development."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0016",
+        "welsh-cfw-health-wellbeing_crit_0020",
+        "welsh-cfw-health-wellbeing_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0016",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0017",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding how social influences shape identity and values is conceptually required before analyzing how norms develop within cultures."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0020",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0017",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "low",
+          "rationale": "Understanding healthy relationships provides concrete examples for examining cultural norms about relationships."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0021",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0017",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "low",
+          "rationale": "Understanding belonging and connection provides context for analyzing how cultural norms develop around relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0018",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse how norms and values develop across different cultural contexts.",
+      "criterion_label": "Cross-cultural Norm Development",
+      "source_provenance": [
+        "blk_0021_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No cross-cultural analysis of norms shown.",
+        "emerging": "Basic recognition of differences between cultural norms.",
+        "developing": "Simple comparison of norm development across cultures.",
+        "competent": "Clear analysis of how norms develop differently across cultural contexts with comparative evidence.",
+        "extending": "Nuanced analysis of complex cross-cultural norm development patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0016"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0016",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0018",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding social influences on identity is prerequisite to analyzing norm development across different cultures."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0020",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain why healthy relationships are fundamental to wellbeing and health.",
+      "criterion_label": "Healthy Relationships Impact",
+      "source_provenance": [
+        "blk_0022_item_01",
+        "blk_0026_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of relationship-wellbeing connection provided.",
+        "emerging": "Basic recognition that relationships affect wellbeing somehow.",
+        "developing": "Simple explanation of how healthy relationships support wellbeing.",
+        "competent": "Clear explanation of why healthy relationships are fundamental to physical and mental wellbeing.",
+        "extending": "Detailed explanation with specific examples of relationship-wellbeing connections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0021",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain why belonging and connection are fundamental to wellbeing and health.",
+      "criterion_label": "Belonging and Connection Impact",
+      "source_provenance": [
+        "blk_0023_item_01",
+        "blk_0025_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of belonging-wellbeing connection provided.",
+        "emerging": "Basic recognition that belonging affects how people feel.",
+        "developing": "Simple explanation of how belonging supports wellbeing.",
+        "competent": "Clear explanation of why feelings of belonging and connection are fundamental to health and wellbeing.",
+        "extending": "Detailed explanation with examples of belonging's powerful effects on wellbeing."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0022",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse relationship dynamics to understand patterns of interaction and behaviour between people.",
+      "criterion_label": "Analyse Relationship Dynamics",
+      "source_provenance": [
+        "blk_0024_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of relationship patterns shown.",
+        "emerging": "Basic recognition of some relationship interactions with limited analysis.",
+        "developing": "Identifies key relationship patterns with some analytical reasoning about dynamics.",
+        "competent": "Systematically analyses relationship dynamics, explaining patterns of interaction and their underlying causes.",
+        "extending": "Sophisticated analysis connecting multiple relationship dynamics with nuanced understanding."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0020",
+        "welsh-cfw-health-wellbeing_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0020",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0022",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding why healthy relationships are fundamental provides the conceptual foundation for analyzing relationship dynamics."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0021",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0022",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding belonging and connection as fundamental provides context for analyzing relationship interaction patterns."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0023",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify warning signs that indicate a relationship is unhealthy or potentially harmful.",
+      "criterion_label": "Identify Warning Signs",
+      "source_provenance": [
+        "blk_0024_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify relationship warning signs.",
+        "emerging": "Recognises obvious warning signs with prompting or examples provided.",
+        "developing": "Identifies clear warning signs independently with basic reasoning about risks.",
+        "competent": "Accurately identifies multiple warning signs and explains why they indicate unhealthy relationships.",
+        "extending": "Identifies subtle warning signs and explains complex risk patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0020",
+        "welsh-cfw-health-wellbeing_crit_0022"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0020",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0023",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding what constitutes healthy relationships is required to identify warning signs of unhealthy ones."
+        },
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0022",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0023",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Analyzing relationship dynamics provides skills for identifying warning signs of unhealthy patterns."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0024",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate the appropriateness and effectiveness of different support resources for unhealthy relationship situations.",
+      "criterion_label": "Evaluating Support Resources",
+      "source_provenance": [
+        "blk_0024_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of support resources attempted.",
+        "emerging": "Basic identification of some support resources with minimal evaluation.",
+        "developing": "Evaluates support resources with some consideration of appropriateness and effectiveness.",
+        "competent": "Systematically evaluates multiple support resources, clearly assessing their appropriateness and effectiveness for specific situations.",
+        "extending": "Critically evaluates resources, considering context-specific factors and potential limitations."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0023"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0023",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0024",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying that a relationship is unhealthy is logically required before evaluating support resources for such situations."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "welsh-cfw-health-wellbeing_crit_0025",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate and select appropriate safety strategies to keep safe when relationships are unhealthy.",
+      "criterion_label": "Evaluating Safety Strategies",
+      "source_provenance": [
+        "blk_0024_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of safety strategies attempted.",
+        "emerging": "Basic identification of safety strategies with minimal evaluation of appropriateness.",
+        "developing": "Evaluates safety strategies with some consideration of their effectiveness and suitability.",
+        "competent": "Systematically evaluates and selects safety strategies, demonstrating clear reasoning about their appropriateness for specific contexts.",
+        "extending": "Critically evaluates strategies, considering multiple factors and potential consequences in selection."
+      },
+      "prerequisite_criterion_ids": [
+        "welsh-cfw-health-wellbeing_crit_0023"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "welsh-cfw-health-wellbeing_crit_0023",
+          "to_criterion_id": "welsh-cfw-health-wellbeing_crit_0025",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing warning signs of unhealthy relationships is prerequisite to selecting appropriate safety strategies."
+        }
+      ],
+      "schema_version": "v1"
+    }
+  ]
+}
