@@ -180,7 +180,9 @@
       "kud_item_ids": [
         "blk_0017_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -294,7 +296,9 @@
       "kud_item_ids": [
         "blk_0028_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_03_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -354,9 +358,7 @@
         "blk_0023_item_01",
         "blk_0025_item_02"
       ],
-      "prerequisite_lts": [
-        "Understanding Equality and Self-Worth"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -535,9 +537,7 @@
       "kud_item_ids": [
         "blk_0030_item_04"
       ],
-      "prerequisite_lts": [
-        "Recognising Bullying and Seeking Help"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -949,7 +949,9 @@
         "blk_0054_item_03",
         "blk_0056_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_07_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1008,9 +1010,7 @@
       "kud_item_ids": [
         "blk_0052_item_03"
       ],
-      "prerequisite_lts": [
-        "Understanding Legal Risks of Image Sharing"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1134,7 +1134,9 @@
         "blk_0061_item_02",
         "blk_0068_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_08_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1310,7 +1312,9 @@
         "blk_0073_item_04",
         "blk_0075_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_09_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1423,7 +1427,9 @@
         "blk_0081_item_01",
         "blk_0081_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_10_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1604,7 +1610,9 @@
         "blk_0085_item_01",
         "blk_0085_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_11_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1663,9 +1671,7 @@
       "kud_item_ids": [
         "blk_0085_item_05"
       ],
-      "prerequisite_lts": [
-        "Assessing Trustworthiness and Relationship Safety"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1955,7 +1961,10 @@
       "kud_item_ids": [
         "blk_0111_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_13_lt_01",
+        "cluster_13_lt_02"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -2076,7 +2085,9 @@
         "blk_0119_item_02",
         "blk_0119_item_03"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_14_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -2261,7 +2272,9 @@
         "blk_0134_item_01",
         "blk_0136_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_15_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -2445,7 +2458,9 @@
         "blk_0150_item_02",
         "blk_0146_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_16_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -2506,7 +2521,9 @@
         "blk_0144_item_01",
         "blk_0153_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_16_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -3027,7 +3044,9 @@
         "blk_0195_item_01",
         "blk_0198_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_20_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -3644,7 +3663,9 @@
       "kud_item_ids": [
         "blk_0245_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_25_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -3815,7 +3836,9 @@
       "kud_item_ids": [
         "blk_0248_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_26_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {

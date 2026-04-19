@@ -1,0 +1,2869 @@
+{
+  "schema_version": "v1",
+  "source_slug": "secondary-rshe-2025",
+  "source_name": "Secondary RSHE 2025",
+  "total_criteria": 108,
+  "strand_summaries": [
+    {
+      "strand": "single_strand",
+      "criteria_count": 109,
+      "edge_count": 43,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "criteria": [
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0001",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain the legal differences between marriage, civil partnership, and cohabitation including their respective rights and protections.",
+      "criterion_label": "Legal Relationship Status Differences",
+      "source_provenance": [
+        "blk_0008_item_01",
+        "blk_0010_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of legal relationship differences shown.",
+        "emerging": "Basic awareness that different relationship types exist legally.",
+        "developing": "Identifies some legal differences between marriage, civil partnership, and cohabitation.",
+        "competent": "Clearly explains legal differences between relationship types and their respective rights and protections.",
+        "extending": "Comprehensively compares legal frameworks with specific examples of rights and protections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0002",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Describe how families and relationships change over time through various life events.",
+      "criterion_label": "Family Change Dynamics",
+      "source_provenance": [
+        "blk_0013_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of family changes provided.",
+        "emerging": "Basic awareness that families change over time.",
+        "developing": "Describes some ways families change with limited detail.",
+        "competent": "Clearly describes multiple ways families change through birth, death, separation and new relationships.",
+        "extending": "Comprehensive analysis of family change patterns and impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0003",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify characteristics of successful parenting and explain the importance of early childhood development.",
+      "criterion_label": "Parenting and Development",
+      "source_provenance": [
+        "blk_0015_item_01",
+        "blk_0015_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No parenting characteristics or development knowledge shown.",
+        "emerging": "Basic awareness of some parenting qualities.",
+        "developing": "Identifies several parenting characteristics with limited development understanding.",
+        "competent": "Clearly identifies successful parenting characteristics and explains early childhood brain development importance.",
+        "extending": "Comprehensive understanding linking parenting practices to developmental outcomes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0004",
+      "associated_lt_ids": [
+        "cluster_02_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the role of consent, trust, respect, and ethical behaviour in maintaining healthy romantic relationships.",
+      "criterion_label": "Healthy Relationship Principles",
+      "source_provenance": [
+        "blk_0021_item_01",
+        "blk_0034_item_01",
+        "blk_0034_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of relationship principles shown.",
+        "emerging": "Basic awareness of some relationship principles like consent or respect.",
+        "developing": "Explains several principles but connections to healthy relationships unclear.",
+        "competent": "Clearly explains how consent, trust, respect, and ethical behaviour maintain healthy romantic relationships.",
+        "extending": "Explains principles with nuanced understanding of interconnections and ethical complexities."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0005",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Judge when a relationship is unsafe based on warning signs and risk factors.",
+      "criterion_label": "Assess Relationship Safety",
+      "source_provenance": [
+        "blk_0017_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify unsafe relationship indicators.",
+        "emerging": "Recognises obvious signs of unsafe relationships with prompting.",
+        "developing": "Identifies clear warning signs but misses subtle indicators.",
+        "competent": "Accurately judges relationship safety using multiple warning signs and risk factors.",
+        "extending": "Evaluates complex relationship dynamics with nuanced safety assessment."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0004"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0004",
+          "to_criterion_id": "secondary-rshe-2025_crit_0005",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding healthy relationship foundations is necessary to recognize when relationships become unsafe."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0006",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify appropriate sources of help when concerned about relationship safety.",
+      "criterion_label": "Identify Help Sources",
+      "source_provenance": [
+        "blk_0017_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help sources for relationship concerns.",
+        "emerging": "Names basic help sources with significant prompting.",
+        "developing": "Identifies some appropriate help sources but lacks specificity.",
+        "competent": "Accurately identifies multiple appropriate help sources for different relationship safety concerns.",
+        "extending": "Strategically matches specific help sources to particular safety situations."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0005"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0005",
+          "to_criterion_id": "secondary-rshe-2025_crit_0006",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Recognizing unsafe relationships must precede knowing how to seek help."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0007",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain legal rights and responsibilities regarding equality and that everyone is unique and equal.",
+      "criterion_label": "Legal Equality Rights",
+      "source_provenance": [
+        "blk_0023_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of equality rights shown.",
+        "emerging": "Basic awareness that equality laws exist.",
+        "developing": "Explains some legal rights regarding equality with gaps.",
+        "competent": "Clearly explains legal equality rights and responsibilities, recognizing everyone's unique but equal status.",
+        "extending": "Explains equality laws with real-world applications."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0008",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the importance of self-esteem and independence in supporting healthy relationships with others.",
+      "criterion_label": "Self-Worth and Relationships",
+      "source_provenance": [
+        "blk_0025_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No connection made between self-worth and relationships.",
+        "emerging": "Basic awareness that self-esteem matters in relationships.",
+        "developing": "Explains some connections between self-worth and healthy relationships.",
+        "competent": "Clearly explains how self-esteem and independence support healthy relationships with others.",
+        "extending": "Explains self-worth concepts with detailed relationship examples."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0007",
+          "to_criterion_id": "secondary-rshe-2025_crit_0008",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding legal rights and equality is foundational to developing self-esteem and independence in relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0009",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain what it means to be treated with respect by others.",
+      "criterion_label": "Respectful Treatment Understanding",
+      "source_provenance": [
+        "blk_0025_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of respectful treatment shown.",
+        "emerging": "Basic awareness that respect matters in relationships.",
+        "developing": "Explains some aspects of respectful treatment with gaps.",
+        "competent": "Clearly explains what respectful treatment looks like in interpersonal interactions.",
+        "extending": "Explains respectful treatment with specific behavioral examples."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0008"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0008",
+          "to_criterion_id": "secondary-rshe-2025_crit_0009",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Self-esteem and independence are prerequisites for understanding what respectful treatment means."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0010",
+      "associated_lt_ids": [
+        "cluster_03_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply communication strategies that demonstrate respect in relationships and conflict situations.",
+      "criterion_label": "Respectful Communication Skills",
+      "source_provenance": [
+        "blk_0028_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No respectful communication strategies demonstrated.",
+        "emerging": "Shows basic awareness of respectful communication but inconsistent application.",
+        "developing": "Applies some respectful communication strategies with guidance in familiar situations.",
+        "competent": "Consistently applies effective respectful communication strategies in relationships and conflict situations.",
+        "extending": "Adapts communication strategies skillfully across diverse relationship and conflict contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0009"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0009",
+          "to_criterion_id": "secondary-rshe-2025_crit_0010",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding respect must precede applying respectful communication strategies."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0011",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify different types of bullying including online bullying.",
+      "criterion_label": "Identify Bullying Types",
+      "source_provenance": [
+        "blk_0030_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any bullying types.",
+        "emerging": "Identifies one or two basic bullying types.",
+        "developing": "Identifies several bullying types but misses online forms.",
+        "competent": "Accurately identifies multiple bullying types including online bullying with clear examples.",
+        "extending": "Identifies comprehensive range including subtle bullying forms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0012",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain the impact of bullying on individuals and communities.",
+      "criterion_label": "Explain Bullying Impact",
+      "source_provenance": [
+        "blk_0030_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain bullying impacts.",
+        "emerging": "States basic emotional effects of bullying.",
+        "developing": "Explains some personal impacts but limited community effects.",
+        "competent": "Clearly explains multiple impacts on individuals and broader community effects.",
+        "extending": "Explains complex interconnected impacts with nuanced understanding."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0011"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0011",
+          "to_criterion_id": "secondary-rshe-2025_crit_0012",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Identifying bullying types is necessary before understanding their impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0013",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Describe how and where to get help regarding bullying situations.",
+      "criterion_label": "Describe Help-Seeking",
+      "source_provenance": [
+        "blk_0030_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe help-seeking options.",
+        "emerging": "Identifies one basic help source like teachers.",
+        "developing": "Describes several help sources but unclear on processes.",
+        "competent": "Clearly describes multiple help sources and specific steps to access support.",
+        "extending": "Describes comprehensive help-seeking strategies for various scenarios."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0012"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0012",
+          "to_criterion_id": "secondary-rshe-2025_crit_0013",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding bullying impacts motivates learning about help-seeking."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0014",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply appropriate skills and strategies to end relationships or friendships with kindness and respect.",
+      "criterion_label": "Kind Relationship Endings",
+      "source_provenance": [
+        "blk_0032_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of ending relationships kindly.",
+        "emerging": "Shows basic awareness of need for kindness when ending relationships.",
+        "developing": "Applies some appropriate skills to end relationships with consideration for others.",
+        "competent": "Consistently applies effective strategies to end relationships kindly, showing respect and empathy for all involved.",
+        "extending": "Models exemplary relationship ending skills and supports others through difficult transitions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0015",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can manage and cope with difficult feelings that arise from relationship endings, including disappointment, hurt, or frustration.",
+      "criterion_label": "Managing Ending Emotions",
+      "source_provenance": [
+        "blk_0032_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evidence of managing difficult relationship ending emotions.",
+        "emerging": "Shows basic recognition of difficult feelings from relationship endings.",
+        "developing": "Uses some strategies to cope with disappointment, hurt, or frustration from endings.",
+        "competent": "Effectively manages difficult emotions from relationship endings using appropriate coping strategies and self-care techniques.",
+        "extending": "Demonstrates sophisticated emotional regulation and helps others process relationship ending emotions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0016",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how stereotypes damage relationships and normalise harmful behaviours.",
+      "criterion_label": "Stereotype Impact Analysis",
+      "source_provenance": [
+        "blk_0036_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of stereotype impacts provided.",
+        "emerging": "Basic recognition that stereotypes can cause harm.",
+        "developing": "Explains some ways stereotypes damage relationships or normalise harm.",
+        "competent": "Clearly explains how stereotypes damage relationships and normalise harmful behaviours with relevant examples.",
+        "extending": "Analyses complex stereotype mechanisms and their widespread relational impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0017",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how power inequalities impact behaviour within relationships.",
+      "criterion_label": "Power Imbalance Analysis",
+      "source_provenance": [
+        "blk_0038_item_01",
+        "blk_0040_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of power inequality impacts provided.",
+        "emerging": "Basic recognition that power differences affect relationships.",
+        "developing": "Explains some ways power inequalities influence relationship behaviours.",
+        "competent": "Clearly explains how power inequalities impact behaviour in relationships, including sexual relationships and autonomy.",
+        "extending": "Analyses complex power dynamics and their effects across multiple relationship contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0018",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify prejudice including misogyny and other forms of discrimination.",
+      "criterion_label": "Identifying Prejudice",
+      "source_provenance": [
+        "blk_0036_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify prejudice in examples.",
+        "emerging": "Identifies obvious prejudice with prompting.",
+        "developing": "Identifies clear examples of prejudice including misogyny.",
+        "competent": "Consistently identifies various forms of prejudice and discrimination in different contexts.",
+        "extending": "Identifies subtle prejudice and explains underlying assumptions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0019",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse how subcultures and media influence sexual attitudes and behaviours.",
+      "criterion_label": "Analysing Cultural Influences",
+      "source_provenance": [
+        "blk_0042_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain cultural influences on attitudes.",
+        "emerging": "Identifies that subcultures influence attitudes with support.",
+        "developing": "Explains basic ways subcultures shape sexual attitudes.",
+        "competent": "Analyses how specific subcultures and media influence sexual attitudes and behaviours.",
+        "extending": "Evaluates complex interactions between multiple cultural influences."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0020",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate privacy settings for online platforms and accounts.",
+      "criterion_label": "Privacy Settings Identification",
+      "source_provenance": [
+        "blk_0048_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any privacy settings.",
+        "emerging": "Identifies basic privacy settings with significant support.",
+        "developing": "Identifies some appropriate privacy settings independently.",
+        "competent": "Consistently identifies appropriate privacy settings across different platforms and contexts.",
+        "extending": "Evaluates and optimizes privacy settings for maximum protection."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0021",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain when personal information should not be shared online.",
+      "criterion_label": "Information Sharing Decisions",
+      "source_provenance": [
+        "blk_0048_item_01",
+        "blk_0048_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain sharing decisions.",
+        "emerging": "Explains basic sharing rules with prompting.",
+        "developing": "Explains some situations where information shouldn't be shared.",
+        "competent": "Clearly explains when and why personal information should not be shared online.",
+        "extending": "Analyzes complex scenarios and explains nuanced sharing decisions."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0020"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0020",
+          "to_criterion_id": "secondary-rshe-2025_crit_0021",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding privacy settings is foundational to knowing when not to share personal information."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0022",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify potential fake social media accounts and recognize signs that content may be artificially generated or inauthentic.",
+      "criterion_label": "Identifying Fake Accounts",
+      "source_provenance": [
+        "blk_0050_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify fake accounts or AI-generated content.",
+        "emerging": "Recognizes some obvious signs of fake accounts with guidance.",
+        "developing": "Identifies clear indicators of fake accounts and AI-generated content independently.",
+        "competent": "Systematically evaluates account authenticity using multiple verification strategies and recognizes AI-generated content.",
+        "extending": "Analyzes sophisticated deception techniques and explains verification methods to others."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0023",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how social media content may be misleading through exaggeration, idealization, or extreme presentation.",
+      "criterion_label": "Explaining Content Misleadingness",
+      "source_provenance": [
+        "blk_0050_item_02",
+        "blk_0050_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain how content misleads users.",
+        "emerging": "Recognizes that some content may be exaggerated with prompting.",
+        "developing": "Explains basic ways content can mislead through exaggeration or idealization.",
+        "competent": "Clearly explains multiple ways social media content misleads users through extreme presentation and idealized profiles.",
+        "extending": "Analyzes psychological and social factors behind misleading content creation."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0022"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0022",
+          "to_criterion_id": "secondary-rshe-2025_crit_0023",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Identifying fake accounts builds toward understanding broader content manipulation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0024",
+      "associated_lt_ids": [
+        "cluster_06_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how behavioural expectations apply consistently across online and offline contexts.",
+      "criterion_label": "Consistent Behavioural Expectations",
+      "source_provenance": [
+        "blk_0046_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of behavioural expectations.",
+        "emerging": "Limited awareness that behaviour matters online.",
+        "developing": "Recognises some behavioural expectations apply online.",
+        "competent": "Clearly explains how behavioural expectations apply consistently across online and offline contexts.",
+        "extending": "Analyses nuanced applications of consistent behavioural expectations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0025",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the legal consequences of sharing intimate images online, including criminal charges and penalties.",
+      "criterion_label": "Legal Consequences Knowledge",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0054_item_02",
+        "blk_0054_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any legal consequences of image sharing.",
+        "emerging": "Identifies that sharing intimate images might have legal consequences.",
+        "developing": "Explains some specific legal consequences like criminal charges for sharing intimate images.",
+        "competent": "Clearly explains legal consequences including criminal charges, penalties, and imprisonment for sharing intimate images without consent.",
+        "extending": "Explains comprehensive legal framework including age-specific laws and consent requirements for image sharing."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0026",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the serious risks of sharing intimate images online, including loss of control and circulation.",
+      "criterion_label": "Image Sharing Risks",
+      "source_provenance": [
+        "blk_0052_item_01",
+        "blk_0052_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify risks of sharing intimate images online.",
+        "emerging": "Identifies that sharing intimate images online involves some risks.",
+        "developing": "Explains that shared images can be circulated beyond intended recipients.",
+        "competent": "Clearly explains that online images can be uncontrollably circulated and the serious personal risks this creates.",
+        "extending": "Explains comprehensive risks including permanent circulation, reputational damage, and psychological impact of image sharing."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0027",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can determine appropriate actions when concerned about circulated material including personal information, images or videos.",
+      "criterion_label": "Determining Appropriate Actions",
+      "source_provenance": [
+        "blk_0056_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any appropriate actions for concerning material.",
+        "emerging": "Identifies basic actions but lacks understanding of appropriateness.",
+        "developing": "Identifies some appropriate actions but reasoning is incomplete or unclear.",
+        "competent": "Clearly determines appropriate actions based on sound reasoning about the nature and severity of concerns.",
+        "extending": "Determines nuanced, context-specific actions with sophisticated reasoning."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0025",
+        "secondary-rshe-2025_crit_0026"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0025",
+          "to_criterion_id": "secondary-rshe-2025_crit_0027",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding legal consequences provides context for appropriate response actions."
+        },
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0026",
+          "to_criterion_id": "secondary-rshe-2025_crit_0027",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding risks of sharing intimate images is necessary before learning response actions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0028",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify and follow appropriate reporting procedures when concerned about circulated material.",
+      "criterion_label": "Following Reporting Procedures",
+      "source_provenance": [
+        "blk_0056_item_01",
+        "blk_0054_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any reporting procedures or support options.",
+        "emerging": "Identifies basic reporting options but procedures are unclear.",
+        "developing": "Identifies appropriate reporting channels but lacks procedural detail.",
+        "competent": "Clearly identifies and follows appropriate reporting procedures including seeking support without fear of trouble.",
+        "extending": "Demonstrates sophisticated understanding of multiple reporting pathways and contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0027"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0027",
+          "to_criterion_id": "secondary-rshe-2025_crit_0028",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Determining appropriate actions precedes following specific reporting procedures."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0029",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify deepfakes and distinguish them from authentic digital content.",
+      "criterion_label": "Deepfake Identification",
+      "source_provenance": [
+        "blk_0058_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify deepfakes or distinguish from authentic content.",
+        "emerging": "Shows basic awareness of deepfakes but struggles to identify them consistently.",
+        "developing": "Can identify obvious deepfakes using some visual or audio cues.",
+        "competent": "Reliably identifies deepfakes using multiple detection techniques and understands their characteristics.",
+        "extending": "Expertly identifies sophisticated deepfakes and explains detection methods to others."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0030",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise various forms of harmful online content including illegal material and distorted representations.",
+      "criterion_label": "Harmful Content Recognition",
+      "source_provenance": [
+        "blk_0060_item_01",
+        "blk_0065_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot recognise harmful or inappropriate online content.",
+        "emerging": "Shows basic awareness that harmful content exists online.",
+        "developing": "Can identify some obvious forms of harmful content with guidance.",
+        "competent": "Consistently recognises various forms of harmful content including illegal material and abusive behaviour.",
+        "extending": "Expertly identifies subtle harmful content and understands its broader impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0031",
+      "associated_lt_ids": [
+        "cluster_08_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how deepfakes and online content can be misused maliciously and the various harms they can cause to individuals and society.",
+      "criterion_label": "Technology Misuse and Harms",
+      "source_provenance": [
+        "blk_0058_item_01",
+        "blk_0058_item_02",
+        "blk_0058_item_03",
+        "blk_0061_item_02",
+        "blk_0068_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of technology misuse or harms.",
+        "emerging": "Basic awareness that technology can be misused harmfully.",
+        "developing": "Explains some ways technology is misused and basic harms caused.",
+        "competent": "Clearly explains multiple forms of technology misuse and comprehensively describes resulting individual and societal harms.",
+        "extending": "Analyses complex interconnections between technology misuse and wide-ranging societal impacts."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0029",
+        "secondary-rshe-2025_crit_0030"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0029",
+          "to_criterion_id": "secondary-rshe-2025_crit_0031",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying deepfakes is necessary to understand how they can be misused maliciously."
+        },
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0030",
+          "to_criterion_id": "secondary-rshe-2025_crit_0031",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing harmful content is prerequisite to understanding its malicious uses."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0032",
+      "associated_lt_ids": [
+        "cluster_08_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate sources of advice and support when encountering concerning online content or experiences.",
+      "criterion_label": "Identifying Online Support Sources",
+      "source_provenance": [
+        "blk_0061_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any support sources for online concerns.",
+        "emerging": "Identifies basic support sources like parents or teachers for online concerns.",
+        "developing": "Identifies multiple appropriate support sources including trusted adults and helplines for online concerns.",
+        "competent": "Accurately identifies range of appropriate support sources and knows when to use each for different online concerns.",
+        "extending": "Evaluates most appropriate support sources based on specific online concern contexts and urgency."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0033",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify online scams including fake websites, fraudulent emails, and sextortion attempts.",
+      "criterion_label": "Identify Online Scams",
+      "source_provenance": [
+        "blk_0073_item_01",
+        "blk_0073_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any online scam indicators.",
+        "emerging": "Recognises obvious scam features with significant support.",
+        "developing": "Identifies common scam characteristics with some guidance needed.",
+        "competent": "Independently identifies various online scams including fake websites, fraudulent emails, and sextortion attempts.",
+        "extending": "Analyses sophisticated scam techniques and explains deception methods."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0034",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify data sharing practices and commercial use of personal information by websites.",
+      "criterion_label": "Identify Privacy Risks",
+      "source_provenance": [
+        "blk_0071_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify data sharing practices.",
+        "emerging": "Recognises basic data collection with significant support.",
+        "developing": "Identifies common data sharing practices with some guidance.",
+        "competent": "Independently identifies how websites share personal data and use information for commercial purposes like targeted advertising.",
+        "extending": "Analyses complex data monetisation strategies and privacy implications."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0035",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify risks posed by emerging technologies such as AI chatbots.",
+      "criterion_label": "Identify Technology Risks",
+      "source_provenance": [
+        "blk_0075_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify emerging technology risks.",
+        "emerging": "Recognises basic AI risks with significant support.",
+        "developing": "Identifies some AI chatbot risks with guidance needed.",
+        "competent": "Independently identifies risks from AI chatbots including fake intimacy and harmful advice potential.",
+        "extending": "Analyses broader implications of rapidly developing AI technologies."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0036",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can critically evaluate new technologies for potential risks and threats.",
+      "criterion_label": "Technology Risk Evaluation",
+      "source_provenance": [
+        "blk_0075_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of technology risks demonstrated.",
+        "emerging": "Basic awareness that new technologies might pose risks.",
+        "developing": "Identifies some obvious risks in familiar technologies with guidance.",
+        "competent": "Systematically evaluates new technologies for multiple risk types using clear criteria.",
+        "extending": "Anticipates emerging risks and evaluates complex technology implications."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0035"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0035",
+          "to_criterion_id": "secondary-rshe-2025_crit_0036",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Identifying specific technology risks precedes critical evaluation skills."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0037",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify online scams and exploitation attempts, particularly those relating to sexual content.",
+      "criterion_label": "Scam Identification",
+      "source_provenance": [
+        "blk_0073_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify obvious scam indicators.",
+        "emerging": "Recognizes some basic scam warning signs with prompting.",
+        "developing": "Identifies common scam patterns in familiar contexts reliably.",
+        "competent": "Accurately identifies various scam types including sexual exploitation attempts across platforms.",
+        "extending": "Recognizes sophisticated and emerging scam techniques quickly."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0033"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0033",
+          "to_criterion_id": "secondary-rshe-2025_crit_0037",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "General scam identification builds toward recognizing sexual exploitation attempts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0038",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can respond appropriately when encountering scams or exploitation, including seeking support.",
+      "criterion_label": "Threat Response",
+      "source_provenance": [
+        "blk_0073_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No appropriate response to threats demonstrated.",
+        "emerging": "Shows basic understanding that help should be sought.",
+        "developing": "Takes some appropriate actions but may miss key steps.",
+        "competent": "Implements comprehensive response including documentation, reporting, and seeking appropriate support.",
+        "extending": "Responds strategically while supporting others and preventing escalation."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0039",
+      "associated_lt_ids": [
+        "cluster_10_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise consent and boundaries in relationships including romantic and sexual contexts.",
+      "criterion_label": "Recognising Consent and Boundaries",
+      "source_provenance": [
+        "blk_0079_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify consent or boundary indicators.",
+        "emerging": "Identifies basic consent signals in simple relationship scenarios.",
+        "developing": "Recognises consent and boundaries in most relationship contexts with guidance.",
+        "competent": "Consistently recognises consent and boundaries across romantic and sexual relationship contexts.",
+        "extending": "Analyses subtle consent and boundary dynamics in complex relationship situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0040",
+      "associated_lt_ids": [
+        "cluster_10_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can respect consent and boundaries in relationships including romantic and sexual contexts.",
+      "criterion_label": "Respecting Consent and Boundaries",
+      "source_provenance": [
+        "blk_0079_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not demonstrate respect for boundaries.",
+        "emerging": "Shows basic respect for clear boundaries in simple situations.",
+        "developing": "Generally respects consent and boundaries with occasional prompting needed.",
+        "competent": "Consistently demonstrates respect for consent and boundaries in all relationship contexts.",
+        "extending": "Models exemplary respect and helps others understand boundary importance."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0039"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0039",
+          "to_criterion_id": "secondary-rshe-2025_crit_0040",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing consent and boundaries is logically required before respecting them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0041",
+      "associated_lt_ids": [
+        "cluster_10_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can communicate consent and boundaries in relationships including romantic and sexual contexts.",
+      "criterion_label": "Communicating Consent and Boundaries",
+      "source_provenance": [
+        "blk_0079_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot express personal boundaries or consent.",
+        "emerging": "Communicates basic boundaries in straightforward situations with support.",
+        "developing": "Expresses most consent and boundary needs clearly in familiar contexts.",
+        "competent": "Effectively communicates consent and boundaries across all relationship contexts including difficult conversations.",
+        "extending": "Demonstrates sophisticated communication skills and supports others in boundary discussions."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0039"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0039",
+          "to_criterion_id": "secondary-rshe-2025_crit_0041",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing consent and boundaries is necessary before communicating them effectively."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0042",
+      "associated_lt_ids": [
+        "cluster_10_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify and resist pressure from others in relationships, including sexual pressure.",
+      "criterion_label": "Identifying and Resisting Pressure",
+      "source_provenance": [
+        "blk_0081_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify relationship pressure or resistance strategies.",
+        "emerging": "Recognises obvious pressure but struggles with resistance strategies.",
+        "developing": "Identifies most pressure situations and demonstrates some resistance techniques.",
+        "competent": "Consistently identifies various forms of relationship pressure and effectively applies resistance strategies.",
+        "extending": "Analyses subtle pressure dynamics and models effective resistance for others."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0040"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0040",
+          "to_criterion_id": "secondary-rshe-2025_crit_0042",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Respecting boundaries provides foundation for resisting pressure from others."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0043",
+      "associated_lt_ids": [
+        "cluster_10_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can avoid putting pressure on others in relationships.",
+      "criterion_label": "Avoiding Pressuring Others",
+      "source_provenance": [
+        "blk_0081_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Shows no awareness of own pressuring behaviours.",
+        "emerging": "Recognises obvious pressuring behaviours but struggles to modify them.",
+        "developing": "Identifies most pressuring behaviours and demonstrates some self-regulation.",
+        "competent": "Consistently monitors own behaviour and avoids putting pressure on others in relationships.",
+        "extending": "Models respectful relationship behaviour and helps others recognise pressuring dynamics."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0041"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0041",
+          "to_criterion_id": "secondary-rshe-2025_crit_0043",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Communicating boundaries helps understand how to avoid pressuring others."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0044",
+      "associated_lt_ids": [
+        "cluster_10_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain that kindness and care for others requires more than just consent.",
+      "criterion_label": "Care Beyond Consent",
+      "source_provenance": [
+        "blk_0079_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of care beyond consent.",
+        "emerging": "Basic awareness that relationships involve more than consent.",
+        "developing": "Identifies some aspects of care beyond consent with guidance.",
+        "competent": "Clearly explains how kindness and care extend beyond consent in relationships.",
+        "extending": "Articulates nuanced understanding of comprehensive care in relationships."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0045",
+      "associated_lt_ids": [
+        "cluster_11_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate whether people are trustworthy using appropriate reasoning strategies.",
+      "criterion_label": "Evaluating Personal Trustworthiness",
+      "source_provenance": [
+        "blk_0083_item_01",
+        "blk_0085_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of trustworthiness attempted.",
+        "emerging": "Basic recognition that some people may not be trustworthy.",
+        "developing": "Uses simple indicators to assess trustworthiness with some reasoning.",
+        "competent": "Systematically evaluates trustworthiness using multiple appropriate reasoning strategies including recognizing deceptive appearances.",
+        "extending": "Applies sophisticated reasoning to assess complex trustworthiness scenarios."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0046",
+      "associated_lt_ids": [
+        "cluster_11_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate whether relationships are safe using appropriate reasoning strategies.",
+      "criterion_label": "Evaluating Relationship Safety",
+      "source_provenance": [
+        "blk_0083_item_01",
+        "blk_0085_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of relationship safety attempted.",
+        "emerging": "Basic recognition that some relationships may be unsafe.",
+        "developing": "Uses simple indicators to assess relationship safety with basic reasoning.",
+        "competent": "Systematically evaluates relationship safety using appropriate reasoning strategies and applies safety measures in various contexts.",
+        "extending": "Applies nuanced reasoning to complex relationship safety scenarios."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0045"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0045",
+          "to_criterion_id": "secondary-rshe-2025_crit_0046",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Evaluating trustworthiness is a component of evaluating relationship safety."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0047",
+      "associated_lt_ids": [
+        "cluster_11_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate ways to seek help and report concerns about harmful behaviour when needed.",
+      "criterion_label": "Help-Seeking and Reporting",
+      "source_provenance": [
+        "blk_0083_item_02",
+        "blk_0085_item_01",
+        "blk_0085_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help-seeking methods or reporting procedures.",
+        "emerging": "Identifies basic help-seeking options but unclear about reporting procedures.",
+        "developing": "Identifies several appropriate help-seeking methods and basic reporting procedures.",
+        "competent": "Clearly identifies multiple appropriate ways to seek help and report concerns about harmful behaviour.",
+        "extending": "Identifies comprehensive help-seeking strategies and understands safety considerations."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0046"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0046",
+          "to_criterion_id": "secondary-rshe-2025_crit_0047",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Evaluating relationship safety precedes knowing when and how to seek help."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0048",
+      "associated_lt_ids": [
+        "cluster_12_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify different forms of sexual harassment, sexual violence, and exploitative behaviors.",
+      "criterion_label": "Identifying harmful behaviors",
+      "source_provenance": [
+        "blk_0089_item_01",
+        "blk_0092_item_01",
+        "blk_0098_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any forms of harmful sexual behaviors.",
+        "emerging": "Identifies some obvious forms of sexual harassment or violence.",
+        "developing": "Identifies multiple forms of sexual harassment, violence, and exploitation.",
+        "competent": "Accurately identifies comprehensive range of sexual harassment, violence, and exploitative behaviors including subtle forms.",
+        "extending": "Identifies behaviors and explains interconnections between different forms of harm."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0049",
+      "associated_lt_ids": [
+        "cluster_12_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the legal definitions of sexual harassment, sexual violence, and exploitative behaviors.",
+      "criterion_label": "Legal definitions knowledge",
+      "source_provenance": [
+        "blk_0089_item_01",
+        "blk_0092_item_01",
+        "blk_0098_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe any legal definitions of harmful behaviors.",
+        "emerging": "Describes basic legal concepts related to sexual harassment.",
+        "developing": "Describes legal definitions for most forms of harassment and violence.",
+        "competent": "Accurately describes comprehensive legal definitions including exploitation, grooming, and abuse concepts.",
+        "extending": "Describes legal definitions and explains how laws protect different groups."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0048"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0048",
+          "to_criterion_id": "secondary-rshe-2025_crit_0049",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Identifying forms of sexual harassment precedes understanding legal definitions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0050",
+      "associated_lt_ids": [
+        "cluster_12_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain domestic abuse concepts and relevant legislation including the Domestic Abuse Act 2021.",
+      "criterion_label": "Domestic Abuse Legal Framework",
+      "source_provenance": [
+        "blk_0094_item_01",
+        "blk_0102_item_01",
+        "blk_0102_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify domestic abuse concepts or legislation.",
+        "emerging": "Identifies basic domestic abuse concepts with limited legal understanding.",
+        "developing": "Explains some domestic abuse concepts and mentions relevant legislation with gaps.",
+        "competent": "Clearly explains domestic abuse concepts and accurately describes the Domestic Abuse Act 2021 provisions.",
+        "extending": "Comprehensively explains concepts and legislation with detailed statutory guidance understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0051",
+      "associated_lt_ids": [
+        "cluster_12_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the impact of domestic abuse on victims including children.",
+      "criterion_label": "Domestic Abuse Impact",
+      "source_provenance": [
+        "blk_0087_item_01",
+        "blk_0102_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe impacts of domestic abuse.",
+        "emerging": "Identifies basic impacts with limited understanding of victim experiences.",
+        "developing": "Explains some impacts on victims with developing awareness of children's experiences.",
+        "competent": "Clearly explains comprehensive impacts on all victims including children's specific vulnerabilities and experiences.",
+        "extending": "Demonstrates nuanced understanding of complex impacts across different victim groups."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0050"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0050",
+          "to_criterion_id": "secondary-rshe-2025_crit_0051",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding domestic abuse concepts precedes understanding its impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0052",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the legal status and requirements regarding FGM, strangulation, and related harmful practices.",
+      "criterion_label": "Legal Framework Knowledge",
+      "source_provenance": [
+        "blk_0104_item_01",
+        "blk_0106_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify legal requirements for harmful practices.",
+        "emerging": "Identifies some basic legal requirements but with significant gaps.",
+        "developing": "Identifies most legal requirements for harmful practices with minor inaccuracies.",
+        "competent": "Accurately identifies legal status and requirements regarding FGM, strangulation, and related harmful practices.",
+        "extending": "Demonstrates comprehensive understanding of legal frameworks with nuanced application."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0053",
+      "associated_lt_ids": [
+        "cluster_13_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Describe the serious physical dangers associated with strangulation and harmful practices depicted in pornography.",
+      "criterion_label": "Physical Dangers Description",
+      "source_provenance": [
+        "blk_0107_item_01",
+        "blk_0109_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of physical dangers shown.",
+        "emerging": "Limited awareness of some physical risks.",
+        "developing": "Basic understanding of dangers but lacks detail.",
+        "competent": "Clear description of serious physical dangers including strangulation risks and harmful pornographic practices.",
+        "extending": "Comprehensive explanation with specific health consequences."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0054",
+      "associated_lt_ids": [
+        "cluster_13_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate sources of support for harmful or abusive behaviors.",
+      "criterion_label": "Identifying Support Sources",
+      "source_provenance": [
+        "blk_0111_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any support sources.",
+        "emerging": "Identifies very few or inappropriate support sources.",
+        "developing": "Identifies some appropriate support sources with gaps.",
+        "competent": "Identifies multiple appropriate support sources including trusted adults, helplines, and services.",
+        "extending": "Identifies comprehensive support networks with specific contact details."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0052",
+        "secondary-rshe-2025_crit_0053"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0052",
+          "to_criterion_id": "secondary-rshe-2025_crit_0054",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding legal status of harmful practices informs support-seeking."
+        },
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0053",
+          "to_criterion_id": "secondary-rshe-2025_crit_0054",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding physical dangers motivates learning about support sources."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0055",
+      "associated_lt_ids": [
+        "cluster_13_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate reporting mechanisms for harmful or abusive behaviors.",
+      "criterion_label": "Identifying Reporting Mechanisms",
+      "source_provenance": [
+        "blk_0111_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify reporting mechanisms.",
+        "emerging": "Identifies very few or inappropriate reporting options.",
+        "developing": "Identifies some reporting mechanisms with limited understanding.",
+        "competent": "Identifies appropriate reporting mechanisms including police, safeguarding services, and online platforms.",
+        "extending": "Identifies comprehensive reporting pathways with procedural understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0056",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain that sex can be positive and enjoyable for consenting adults.",
+      "criterion_label": "Positive Sexual Experiences",
+      "source_provenance": [
+        "blk_0115_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of positive sexual experiences.",
+        "emerging": "Basic awareness that sex can be positive for adults.",
+        "developing": "Explains that sex can be positive and enjoyable for adults.",
+        "competent": "Clearly explains that sex can be positive and enjoyable for consenting adults who feel ready.",
+        "extending": "Articulates nuanced understanding of positive sexual experiences and readiness."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0057",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Recognize that intimate relationships can exist without sex.",
+      "criterion_label": "Non-Sexual Intimate Relationships",
+      "source_provenance": [
+        "blk_0117_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No recognition of non-sexual intimate relationships.",
+        "emerging": "Basic awareness that relationships can exist without sex.",
+        "developing": "Recognizes that intimate relationships don't require sex.",
+        "competent": "Clearly recognizes that people of all ages can enjoy intimate relationships without sex.",
+        "extending": "Demonstrates sophisticated understanding of diverse relationship models and timing choices."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0058",
+      "associated_lt_ids": [
+        "cluster_14_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe how sexual consent can be given, withheld or removed at any time.",
+      "criterion_label": "Understanding Consent Dynamics",
+      "source_provenance": [
+        "blk_0119_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe consent dynamics",
+        "emerging": "Basic awareness that consent can change",
+        "developing": "Describes consent as changeable with some detail",
+        "competent": "Clearly describes how consent can be given, withheld or removed at any time",
+        "extending": "Explains consent dynamics with nuanced understanding"
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0056"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0056",
+          "to_criterion_id": "secondary-rshe-2025_crit_0058",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding positive aspects of sex provides context for consent discussions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0059",
+      "associated_lt_ids": [
+        "cluster_14_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify considerations people might take into account before sexual activity.",
+      "criterion_label": "Pre-Activity Considerations",
+      "source_provenance": [
+        "blk_0119_item_02",
+        "blk_0119_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify relevant considerations",
+        "emerging": "Identifies one or two basic considerations",
+        "developing": "Identifies several considerations with some explanation",
+        "competent": "Identifies multiple considerations including legal, ethical and personal factors",
+        "extending": "Comprehensively identifies and explains diverse considerations"
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0058"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0058",
+          "to_criterion_id": "secondary-rshe-2025_crit_0059",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding consent precedes considering broader decision-making factors."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0060",
+      "associated_lt_ids": [
+        "cluster_14_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how choices in sex and relationships can positively or negatively affect all aspects of health and wellbeing.",
+      "criterion_label": "Health Impacts of Sexual Choices",
+      "source_provenance": [
+        "blk_0121_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of health impacts provided.",
+        "emerging": "Basic awareness that sexual choices affect health.",
+        "developing": "Explains some health impacts with limited detail or scope.",
+        "competent": "Clearly explains how sexual choices affect multiple health aspects with relevant examples.",
+        "extending": "Comprehensive analysis of health impacts across all wellbeing dimensions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0061",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe contraceptive options including their efficacy and availability.",
+      "criterion_label": "Contraceptive Knowledge",
+      "source_provenance": [
+        "blk_0124_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any contraceptive methods.",
+        "emerging": "Names some contraceptive methods with limited detail.",
+        "developing": "Describes several contraceptive options with basic efficacy information.",
+        "competent": "Accurately describes range of contraceptive choices including efficacy rates and availability options.",
+        "extending": "Compares contraceptive methods with detailed efficacy and suitability analysis."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0062",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe pregnancy choices and sources of support for each option.",
+      "criterion_label": "Pregnancy Options Knowledge",
+      "source_provenance": [
+        "blk_0126_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify pregnancy options.",
+        "emerging": "Names some pregnancy choices with minimal detail.",
+        "developing": "Describes pregnancy options with basic information about support.",
+        "competent": "Accurately describes all pregnancy options with appropriate support sources and legal information.",
+        "extending": "Provides comprehensive pregnancy option information with detailed support pathways."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0063",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe STI prevention methods including safer sex practices and prophylaxis options.",
+      "criterion_label": "STI Prevention Knowledge",
+      "source_provenance": [
+        "blk_0128_item_01",
+        "blk_0129_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify STI prevention methods.",
+        "emerging": "Names basic prevention methods like condoms.",
+        "developing": "Describes safer sex practices and some prophylaxis options.",
+        "competent": "Accurately describes comprehensive STI prevention including condoms, PrEP, PEP and access information.",
+        "extending": "Provides detailed prevention strategies with specific access and usage guidance."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0064",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the importance of regular STI testing and understand the role of stigma.",
+      "criterion_label": "STI Testing Understanding",
+      "source_provenance": [
+        "blk_0129_item_02",
+        "blk_0129_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain testing importance.",
+        "emerging": "Shows basic awareness of testing benefits.",
+        "developing": "Explains testing importance with some understanding of stigma.",
+        "competent": "Clearly explains regular testing importance and demonstrates understanding of stigma's impact on health.",
+        "extending": "Provides comprehensive testing rationale with detailed stigma analysis."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0063"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0063",
+          "to_criterion_id": "secondary-rshe-2025_crit_0064",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding STI prevention methods precedes understanding testing importance."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0066",
+      "associated_lt_ids": [
+        "cluster_15_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify where to access sexual health services and support for relationship concerns including sexual violence.",
+      "criterion_label": "Sexual Health Service Access",
+      "source_provenance": [
+        "blk_0134_item_01",
+        "blk_0136_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any sexual health services or support.",
+        "emerging": "Identifies very few or vague sexual health service options.",
+        "developing": "Identifies some sexual health services but with limited detail or accuracy.",
+        "competent": "Accurately identifies multiple sexual health services, support options, and confidential advice sources.",
+        "extending": "Comprehensively maps sexual health service pathways and specialized support options."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0061"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0061",
+          "to_criterion_id": "secondary-rshe-2025_crit_0066",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding contraceptive options precedes knowing where to access services."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0067",
+      "associated_lt_ids": [
+        "cluster_15_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate the reliability and accuracy of sexual health information sources.",
+      "criterion_label": "Evaluate Information Reliability",
+      "source_provenance": [
+        "blk_0124_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot assess information quality.",
+        "emerging": "Identifies some basic reliability indicators inconsistently.",
+        "developing": "Applies multiple criteria to assess source credibility with guidance.",
+        "competent": "Systematically evaluates sexual health information using medical accuracy and source credibility criteria.",
+        "extending": "Critically analyses complex information quality across multiple sources."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0068",
+      "associated_lt_ids": [
+        "cluster_15_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can signpost others toward reliable sexual health information for decision-making.",
+      "criterion_label": "Signpost Reliable Information",
+      "source_provenance": [
+        "blk_0124_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot direct others to resources.",
+        "emerging": "Suggests basic resources without clear rationale.",
+        "developing": "Recommends appropriate sources with simple explanations of their value.",
+        "competent": "Effectively guides others to medically accurate sexual health resources with clear reasoning.",
+        "extending": "Tailors signposting to individual needs and decision-making contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0069",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Describe emotions accurately using appropriate vocabulary.",
+      "criterion_label": "Emotional Vocabulary",
+      "source_provenance": [
+        "blk_0142_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name or describe emotions.",
+        "emerging": "Uses basic emotion words with limited accuracy.",
+        "developing": "Uses some appropriate emotion vocabulary with occasional inaccuracy.",
+        "competent": "Consistently describes emotions using accurate and appropriate vocabulary.",
+        "extending": "Uses sophisticated emotional vocabulary with nuanced distinctions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0070",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain what influences personal wellbeing.",
+      "criterion_label": "Wellbeing Influences",
+      "source_provenance": [
+        "blk_0146_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify wellbeing influences.",
+        "emerging": "Identifies few basic influences on wellbeing.",
+        "developing": "Explains some influences on wellbeing with basic reasoning.",
+        "competent": "Clearly explains multiple influences on personal wellbeing with sound reasoning.",
+        "extending": "Analyzes complex wellbeing influences with sophisticated understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0071",
+      "associated_lt_ids": [
+        "cluster_16_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can distinguish between normal emotional experiences and mental health conditions.",
+      "criterion_label": "Normal vs Mental Health Distinction",
+      "source_provenance": [
+        "blk_0146_item_02",
+        "blk_0148_item_01",
+        "blk_0150_item_01",
+        "blk_0150_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot distinguish normal feelings from mental health conditions.",
+        "emerging": "Shows basic awareness that feelings and mental health conditions differ.",
+        "developing": "Identifies some differences between normal emotions and mental health conditions with support.",
+        "competent": "Clearly distinguishes normal emotional experiences from mental health conditions using appropriate criteria.",
+        "extending": "Confidently explains nuanced distinctions with detailed understanding of prevalence and characteristics."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0069"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0069",
+          "to_criterion_id": "secondary-rshe-2025_crit_0071",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Describing emotions accurately is necessary to distinguish normal experiences from mental health conditions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0072",
+      "associated_lt_ids": [
+        "cluster_16_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how wellbeing enhancement strategies (participation, kindness, overcoming activity barriers) contribute to mental wellbeing.",
+      "criterion_label": "Wellbeing Enhancement Strategies",
+      "source_provenance": [
+        "blk_0144_item_01",
+        "blk_0153_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of wellbeing strategies provided.",
+        "emerging": "Basic mention of strategies with minimal connection to wellbeing.",
+        "developing": "Simple explanations of how some strategies support mental wellbeing.",
+        "competent": "Clear explanations of how participation, kindness, and overcoming barriers enhance mental wellbeing with relevant examples.",
+        "extending": "Detailed analysis connecting multiple strategies to wellbeing outcomes."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0070"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0070",
+          "to_criterion_id": "secondary-rshe-2025_crit_0072",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding wellbeing influences precedes learning enhancement strategies."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0073",
+      "associated_lt_ids": [
+        "cluster_17_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify how gambling affects mental health including anxiety, depression, and suicide risks.",
+      "criterion_label": "Gambling Mental Health Effects",
+      "source_provenance": [
+        "blk_0155_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify gambling's mental health impacts.",
+        "emerging": "Identifies some basic mental health effects of gambling.",
+        "developing": "Identifies multiple mental health impacts including anxiety and depression.",
+        "competent": "Clearly identifies how gambling leads to anxiety, depression, and suicide risks.",
+        "extending": "Explains mechanisms linking gambling to serious mental health harms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0074",
+      "associated_lt_ids": [
+        "cluster_17_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how mental health problems can increase the risk of substance use.",
+      "criterion_label": "Mental Health to Substance Risk",
+      "source_provenance": [
+        "blk_0157_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of mental health influencing substance use.",
+        "emerging": "Basic awareness that mental health affects substance use risk.",
+        "developing": "Simple explanation of how mental health problems lead to substance use.",
+        "competent": "Clear explanation of mechanisms by which mental health problems increase substance use risk.",
+        "extending": "Detailed analysis of pathways linking mental health conditions to substance use."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0075",
+      "associated_lt_ids": [
+        "cluster_17_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how substance use can trigger or worsen mental health problems.",
+      "criterion_label": "Substance Use to Mental Health",
+      "source_provenance": [
+        "blk_0157_item_01",
+        "blk_0157_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of substance effects on mental health.",
+        "emerging": "Basic awareness that substances affect mental health negatively.",
+        "developing": "Simple explanation of how substance use worsens mental health problems.",
+        "competent": "Clear explanation of how substances trigger or exacerbate mental health conditions with examples.",
+        "extending": "Comprehensive analysis of substance impacts on mental health including recovery benefits."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0074"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0074",
+          "to_criterion_id": "secondary-rshe-2025_crit_0075",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding how mental health affects substance use precedes understanding reverse causation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0076",
+      "associated_lt_ids": [
+        "cluster_18_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how excessive screen time and digital behaviors impact mental and physical wellbeing.",
+      "criterion_label": "Screen Time Impact",
+      "source_provenance": [
+        "blk_0161_item_01",
+        "blk_0163_item_01",
+        "blk_0163_item_02",
+        "blk_0163_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify digital wellbeing impacts.",
+        "emerging": "Names basic effects of screen time on health.",
+        "developing": "Describes some impacts of excessive digital use on wellbeing.",
+        "competent": "Clearly explains how screen time and digital behaviors affect mental and physical health.",
+        "extending": "Analyzes complex relationships between digital habits and wellbeing outcomes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0077",
+      "associated_lt_ids": [
+        "cluster_18_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the risks of harmful online content including misinformation, gambling, illegal content, and self-harm material.",
+      "criterion_label": "Harmful Content Risks",
+      "source_provenance": [
+        "blk_0161_item_01",
+        "blk_0167_item_01",
+        "blk_0169_item_01",
+        "blk_0169_item_03",
+        "blk_0171_item_01",
+        "blk_0173_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify harmful online content.",
+        "emerging": "Names some types of dangerous online content.",
+        "developing": "Describes risks of specific harmful content categories.",
+        "competent": "Clearly explains various risks from harmful online content and targeted information.",
+        "extending": "Analyzes how different harmful content types create specific wellbeing risks."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0078",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can assess the reliability of online information by evaluating source credibility, evidence quality, and potential bias.",
+      "criterion_label": "Assess Information Reliability",
+      "source_provenance": [
+        "blk_0169_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify reliable sources or evidence quality.",
+        "emerging": "Recognises some obvious reliability indicators like website type.",
+        "developing": "Evaluates multiple reliability factors but may miss subtle bias indicators.",
+        "competent": "Systematically assesses source credibility, evidence quality, and identifies potential bias in online information.",
+        "extending": "Critically analyses complex reliability factors and cross-references multiple sources."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0079",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the intent behind online content to recognise misinformation and targeted messaging.",
+      "criterion_label": "Identify Content Intent",
+      "source_provenance": [
+        "blk_0169_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot recognise content intent or targeting strategies.",
+        "emerging": "Identifies obvious promotional or misleading content with guidance.",
+        "developing": "Recognises common misinformation patterns and some targeting techniques.",
+        "competent": "Effectively identifies content intent, recognises misinformation tactics, and understands targeted messaging strategies.",
+        "extending": "Analyses sophisticated manipulation techniques and algorithmic targeting methods."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0078"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0078",
+          "to_criterion_id": "secondary-rshe-2025_crit_0079",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Evaluating source credibility precedes identifying content intent and bias."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0080",
+      "associated_lt_ids": [
+        "cluster_18_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate reporting mechanisms for harmful online content or behaviors.",
+      "criterion_label": "Identifying Reporting Mechanisms",
+      "source_provenance": [
+        "blk_0165_item_01",
+        "blk_0173_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any reporting mechanisms.",
+        "emerging": "Identifies basic reporting options with significant gaps.",
+        "developing": "Identifies some appropriate reporting mechanisms with minor inaccuracies.",
+        "competent": "Accurately identifies multiple appropriate reporting mechanisms for various harmful online situations.",
+        "extending": "Systematically identifies optimal reporting pathways for complex scenarios."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0081",
+      "associated_lt_ids": [
+        "cluster_18_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate support services when encountering harmful online content or behaviors.",
+      "criterion_label": "Identifying Support Services",
+      "source_provenance": [
+        "blk_0165_item_01",
+        "blk_0173_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any support services.",
+        "emerging": "Identifies basic support services with significant limitations.",
+        "developing": "Identifies some appropriate support services with minor gaps.",
+        "competent": "Accurately identifies multiple appropriate support services for various harmful online situations.",
+        "extending": "Strategically identifies comprehensive support networks for complex situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0082",
+      "associated_lt_ids": [
+        "cluster_19_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the links between poor dietary choices and specific health risks including tooth decay, unhealthy weight gain, and cardiovascular disease.",
+      "criterion_label": "Diet-Health Risk Connections",
+      "source_provenance": [
+        "blk_0183_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify diet-health connections.",
+        "emerging": "Identifies some basic diet-health links with prompting.",
+        "developing": "Identifies several diet-health connections but may lack detail.",
+        "competent": "Clearly identifies links between poor dietary choices and specific health risks including tooth decay, weight gain, and cardiovascular disease.",
+        "extending": "Identifies comprehensive diet-health connections with detailed explanations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0083",
+      "associated_lt_ids": [
+        "cluster_19_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognize that unhealthy weight gain increases risks of cancer, type 2 diabetes, and cardiovascular disease.",
+      "criterion_label": "Weight-Disease Risk Recognition",
+      "source_provenance": [
+        "blk_0185_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify weight-related health risks.",
+        "emerging": "Identifies some general health risks but unclear connections to weight.",
+        "developing": "Recognizes weight affects health but identifies only one or two specific diseases.",
+        "competent": "Clearly recognizes that unhealthy weight gain increases risks of cancer, diabetes, and heart disease.",
+        "extending": "Explains mechanisms linking weight gain to multiple disease risks."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0084",
+      "associated_lt_ids": [
+        "cluster_20_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the health risks associated with illegal drugs, alcohol, tobacco, and vaping.",
+      "criterion_label": "Identifying Health Risks",
+      "source_provenance": [
+        "blk_0190_item_01",
+        "blk_0193_item_01",
+        "blk_0198_item_01",
+        "blk_0200_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any health risks of substances.",
+        "emerging": "Identifies basic health risks for some substances with prompting.",
+        "developing": "Identifies several health risks across different substance categories with minor gaps.",
+        "competent": "Accurately identifies comprehensive health risks for illegal drugs, alcohol, tobacco, and vaping including specific harms.",
+        "extending": "Identifies health risks and explains connections between substances and specific health conditions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0085",
+      "associated_lt_ids": [
+        "cluster_20_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the legal status and safety concerns associated with illegal drugs, alcohol, tobacco, and vaping.",
+      "criterion_label": "Identifying Legal Status",
+      "source_provenance": [
+        "blk_0190_item_01",
+        "blk_0193_item_01",
+        "blk_0198_item_01",
+        "blk_0200_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify legal status of substances.",
+        "emerging": "Identifies basic legal information for some substances with support.",
+        "developing": "Identifies legal status and some safety concerns across substance categories with guidance.",
+        "competent": "Accurately identifies legal status, age restrictions, and safety concerns for all substance categories including synthetic drugs.",
+        "extending": "Identifies legal frameworks and explains how legal status relates to safety and harm reduction."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0086",
+      "associated_lt_ids": [
+        "cluster_20_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe strategies to reduce personal harm and increase safety when encountering alcohol, tobacco, and substance use situations.",
+      "criterion_label": "Harm Reduction Strategies",
+      "source_provenance": [
+        "blk_0193_item_02",
+        "blk_0195_item_01",
+        "blk_0198_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No harm reduction strategies described.",
+        "emerging": "Basic safety strategies mentioned with limited detail.",
+        "developing": "Some relevant harm reduction strategies described with general understanding.",
+        "competent": "Clear description of multiple effective harm reduction strategies for alcohol, tobacco, and substance situations.",
+        "extending": "Comprehensive strategies with nuanced understanding of risk contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0084",
+          "to_criterion_id": "secondary-rshe-2025_crit_0086",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding health and legal risks is necessary before learning harm reduction strategies."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0087",
+      "associated_lt_ids": [
+        "cluster_21_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain treatment and prevention methods for infections and the role of antibiotics.",
+      "criterion_label": "Infection Treatment Prevention",
+      "source_provenance": [
+        "blk_0204_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of infection treatment or prevention.",
+        "emerging": "Basic awareness of some infection treatments or prevention methods.",
+        "developing": "Explains some infection treatments and prevention methods with limited detail.",
+        "competent": "Clearly explains multiple infection treatment and prevention methods including appropriate antibiotic use.",
+        "extending": "Comprehensively explains infection management with detailed prevention strategies."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0088",
+      "associated_lt_ids": [
+        "cluster_21_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain vaccination, immunisation processes and antimicrobial resistance using scientific evidence.",
+      "criterion_label": "Vaccination Antimicrobial Resistance",
+      "source_provenance": [
+        "blk_0212_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of vaccination or antimicrobial resistance.",
+        "emerging": "Basic awareness of vaccination or antimicrobial resistance concepts.",
+        "developing": "Explains vaccination or antimicrobial resistance with some scientific understanding.",
+        "competent": "Clearly explains vaccination processes and antimicrobial resistance using relevant scientific evidence.",
+        "extending": "Comprehensively explains immunisation and resistance mechanisms with detailed scientific reasoning."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0089",
+      "associated_lt_ids": [
+        "cluster_21_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe dental health practices and the benefits of good oral hygiene.",
+      "criterion_label": "Dental Health Practices",
+      "source_provenance": [
+        "blk_0206_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of dental health practices shown.",
+        "emerging": "Basic awareness of some dental health practices.",
+        "developing": "Describes several dental health practices with some benefits.",
+        "competent": "Clearly describes comprehensive dental health practices and explains their benefits for oral hygiene.",
+        "extending": "Explains dental practices with detailed understanding of prevention mechanisms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0090",
+      "associated_lt_ids": [
+        "cluster_21_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the benefits of regular self-examination and screening.",
+      "criterion_label": "Health Screening Benefits",
+      "source_provenance": [
+        "blk_0210_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of screening benefits shown.",
+        "emerging": "Basic awareness that screening can be beneficial.",
+        "developing": "Describes some benefits of regular health screening.",
+        "competent": "Clearly explains the benefits of regular self-examination and screening for health maintenance.",
+        "extending": "Demonstrates detailed understanding of how screening prevents health problems."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0091",
+      "associated_lt_ids": [
+        "cluster_22_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain sleep hygiene practices that promote good-quality sleep.",
+      "criterion_label": "Sleep Hygiene Practices",
+      "source_provenance": [
+        "blk_0214_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No sleep hygiene practices identified.",
+        "emerging": "Names one or two basic sleep practices.",
+        "developing": "Explains several sleep hygiene practices with basic reasoning.",
+        "competent": "Clearly explains multiple sleep hygiene practices and why they promote good sleep quality.",
+        "extending": "Explains comprehensive sleep hygiene strategies with detailed rationale."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0092",
+      "associated_lt_ids": [
+        "cluster_22_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how sleep affects physical and mental wellbeing.",
+      "criterion_label": "Sleep Health Impacts",
+      "source_provenance": [
+        "blk_0214_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of sleep's health effects.",
+        "emerging": "Identifies one basic effect of poor sleep.",
+        "developing": "Explains some effects of sleep on health with basic connections.",
+        "competent": "Clearly explains how sleep affects weight, mood, learning ability and other wellbeing aspects.",
+        "extending": "Explains comprehensive sleep-health relationships with detailed mechanisms."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0091"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0091",
+          "to_criterion_id": "secondary-rshe-2025_crit_0092",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding sleep hygiene practices precedes understanding sleep's health effects."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0093",
+      "associated_lt_ids": [
+        "cluster_22_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the importance of pre-conception health practices including folic acid supplementation.",
+      "criterion_label": "Pre-conception Health Knowledge",
+      "source_provenance": [
+        "blk_0216_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify pre-conception health practices.",
+        "emerging": "Names basic pre-conception practices with limited understanding.",
+        "developing": "Describes some pre-conception health practices including folic acid benefits.",
+        "competent": "Clearly explains importance of pre-conception health practices and folic acid supplementation.",
+        "extending": "Comprehensively describes pre-conception health with detailed rationale."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0094",
+      "associated_lt_ids": [
+        "cluster_22_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the importance of pelvic floor health.",
+      "criterion_label": "Pelvic Floor Health",
+      "source_provenance": [
+        "blk_0216_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify pelvic floor health concepts.",
+        "emerging": "Shows basic awareness of pelvic floor health.",
+        "developing": "Describes some aspects of pelvic floor health importance.",
+        "competent": "Clearly explains the importance of maintaining pelvic floor health.",
+        "extending": "Comprehensively describes pelvic floor health with detailed understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0095",
+      "associated_lt_ids": [
+        "cluster_22_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe information about miscarriage and pregnancy loss including how to access care and support.",
+      "criterion_label": "Pregnancy Loss Support",
+      "source_provenance": [
+        "blk_0216_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify pregnancy loss support information.",
+        "emerging": "Shows basic awareness of pregnancy loss concepts.",
+        "developing": "Describes some aspects of miscarriage and available support options.",
+        "competent": "Clearly explains miscarriage information and how to access appropriate care and support.",
+        "extending": "Comprehensively describes pregnancy loss with detailed support pathways."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0096",
+      "associated_lt_ids": [
+        "cluster_22_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate healthcare services for different health needs and situations.",
+      "criterion_label": "Healthcare Service Navigation",
+      "source_provenance": [
+        "blk_0218_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any healthcare services.",
+        "emerging": "Identifies basic healthcare services with significant gaps.",
+        "developing": "Identifies most healthcare services but may confuse appropriate usage.",
+        "competent": "Accurately identifies appropriate healthcare services and when to use them.",
+        "extending": "Comprehensively explains healthcare service options and optimal usage."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0097",
+      "associated_lt_ids": [
+        "cluster_22_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain medical consent principles for different age groups and capacity situations.",
+      "criterion_label": "Medical Consent Principles",
+      "source_provenance": [
+        "blk_0220_item_01",
+        "blk_0221_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain medical consent principles.",
+        "emerging": "Shows basic awareness of consent but lacks detail.",
+        "developing": "Explains some consent principles but may miss key details.",
+        "competent": "Clearly explains consent principles for different ages and capacity situations.",
+        "extending": "Thoroughly explains consent complexities and applies to varied scenarios."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0096"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0096",
+          "to_criterion_id": "secondary-rshe-2025_crit_0097",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Identifying healthcare services precedes understanding consent principles for accessing them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0098",
+      "associated_lt_ids": [
+        "cluster_23_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify personal safety risks across different environments and independent situations.",
+      "criterion_label": "Risk Identification",
+      "source_provenance": [
+        "blk_0225_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify safety risks in any environment.",
+        "emerging": "Identifies obvious safety risks in familiar environments only.",
+        "developing": "Identifies most safety risks across familiar and some unfamiliar environments.",
+        "competent": "Consistently identifies safety risks across diverse environments including roads, railways, water, and unfamiliar social settings.",
+        "extending": "Anticipates complex or subtle safety risks across all environments."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0099",
+      "associated_lt_ids": [
+        "cluster_23_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can manage personal safety risks effectively in independent situations across different environments.",
+      "criterion_label": "Risk Management",
+      "source_provenance": [
+        "blk_0225_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot manage safety risks independently.",
+        "emerging": "Manages basic safety risks with significant guidance needed.",
+        "developing": "Manages most safety risks independently in familiar situations.",
+        "competent": "Effectively manages safety risks independently across diverse environments including roads, railways, water, and unfamiliar settings.",
+        "extending": "Adapts risk management strategies flexibly to novel situations."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0098"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0098",
+          "to_criterion_id": "secondary-rshe-2025_crit_0099",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying safety risks is logically required before managing them effectively."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0100",
+      "associated_lt_ids": [
+        "cluster_23_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise peer influence and pressure in various contexts including online environments.",
+      "criterion_label": "Recognising Peer Influence",
+      "source_provenance": [
+        "blk_0227_item_01",
+        "blk_0229_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify peer influence situations.",
+        "emerging": "Identifies obvious peer pressure in familiar contexts.",
+        "developing": "Recognises peer influence in multiple contexts including some online situations.",
+        "competent": "Consistently identifies peer influence and pressure across face-to-face and digital environments.",
+        "extending": "Analyses subtle forms of peer influence and their potential impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0101",
+      "associated_lt_ids": [
+        "cluster_23_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can respond appropriately to peer influence, pressure, and conflict situations using effective strategies.",
+      "criterion_label": "Responding to Peer Situations",
+      "source_provenance": [
+        "blk_0227_item_01",
+        "blk_0229_item_01",
+        "blk_0229_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot demonstrate appropriate responses to peer situations.",
+        "emerging": "Shows basic response strategies in simple peer situations.",
+        "developing": "Uses appropriate responses to peer influence with some guidance needed.",
+        "competent": "Consistently applies effective strategies to manage peer influence, pressure, and conflict situations.",
+        "extending": "Adapts sophisticated response strategies to complex peer dynamics."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0100"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0100",
+          "to_criterion_id": "secondary-rshe-2025_crit_0101",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing peer influence and pressure is necessary before responding appropriately."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0102",
+      "associated_lt_ids": [
+        "cluster_24_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain how misconceptions about weapon prevalence lead to false beliefs about needing protection.",
+      "criterion_label": "Weapon Misconception Analysis",
+      "source_provenance": [
+        "blk_0233_item_01",
+        "blk_0233_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of weapon misconceptions provided.",
+        "emerging": "Basic awareness that weapon misconceptions exist but unclear explanation.",
+        "developing": "Partial explanation of how misconceptions about weapons create false protection beliefs.",
+        "competent": "Clear explanation of how misconceptions about weapon prevalence lead to false beliefs about needing protection.",
+        "extending": "Detailed analysis connecting weapon misconceptions to protection beliefs with supporting evidence."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0103",
+      "associated_lt_ids": [
+        "cluster_24_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate sources of help when concerned about grooming or exploitation.",
+      "criterion_label": "Identifying Help Sources",
+      "source_provenance": [
+        "blk_0235_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help sources for exploitation concerns.",
+        "emerging": "Identifies basic help sources with significant gaps or misconceptions.",
+        "developing": "Identifies some appropriate help sources but misses key options or shows uncertainty.",
+        "competent": "Accurately identifies multiple appropriate help sources including trusted adults, services, and reporting mechanisms.",
+        "extending": "Identifies comprehensive help sources and explains when different options are most suitable."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0104",
+      "associated_lt_ids": [
+        "cluster_25_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify common menstrual health conditions and describe their key characteristics.",
+      "criterion_label": "Menstrual Health Condition Identification",
+      "source_provenance": [
+        "blk_0245_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any menstrual health conditions.",
+        "emerging": "Identifies one or two basic menstrual conditions with minimal detail.",
+        "developing": "Identifies several menstrual conditions with some accurate characteristics described.",
+        "competent": "Accurately identifies multiple menstrual health conditions and describes their key characteristics clearly.",
+        "extending": "Comprehensively identifies conditions with detailed, nuanced characteristic descriptions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0105",
+      "associated_lt_ids": [
+        "cluster_25_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can determine when to seek healthcare support for menstrual and reproductive health concerns.",
+      "criterion_label": "Healthcare Support Decision-Making",
+      "source_provenance": [
+        "blk_0245_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify when healthcare support is needed.",
+        "emerging": "Identifies some obvious situations requiring healthcare support.",
+        "developing": "Recognises most situations where healthcare support is appropriate.",
+        "competent": "Accurately determines when to seek healthcare support for various menstrual and reproductive health concerns.",
+        "extending": "Evaluates complex scenarios and prioritises healthcare needs effectively."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0104"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0104",
+          "to_criterion_id": "secondary-rshe-2025_crit_0105",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying menstrual health conditions is necessary to determine when to seek healthcare support."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0106",
+      "associated_lt_ids": [
+        "cluster_25_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain fertility, menopause, and lifestyle impacts on reproductive health.",
+      "criterion_label": "Reproductive Health Factors",
+      "source_provenance": [
+        "blk_0247_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of reproductive health factors shown.",
+        "emerging": "Basic awareness of fertility or menopause with minimal detail.",
+        "developing": "Explains some reproductive health factors with limited connections to lifestyle impacts.",
+        "competent": "Clearly explains fertility, menopause, and how lifestyle choices affect reproductive health for both men and women.",
+        "extending": "Comprehensive explanation linking multiple lifestyle factors to reproductive health outcomes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0107",
+      "associated_lt_ids": [
+        "cluster_26_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify when CPR or basic first aid is needed in emergency situations.",
+      "criterion_label": "Emergency Situation Recognition",
+      "source_provenance": [
+        "blk_0248_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify emergency situations requiring intervention.",
+        "emerging": "Identifies obvious life-threatening emergencies but misses subtle situations.",
+        "developing": "Identifies most emergency situations but uncertain about intervention timing.",
+        "competent": "Accurately identifies when CPR or first aid is needed across various emergency scenarios.",
+        "extending": "Rapidly assesses complex emergencies and prioritizes multiple intervention needs."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0108",
+      "associated_lt_ids": [
+        "cluster_26_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can demonstrate proper CPR techniques following established protocols.",
+      "criterion_label": "CPR Technique Demonstration",
+      "source_provenance": [
+        "blk_0248_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No CPR technique demonstrated.",
+        "emerging": "Attempts CPR with major technique errors.",
+        "developing": "Demonstrates CPR with some technique errors.",
+        "competent": "Demonstrates proper CPR technique following established protocols accurately.",
+        "extending": "Demonstrates expert CPR technique with adaptations."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0107"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0107",
+          "to_criterion_id": "secondary-rshe-2025_crit_0108",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying when CPR is needed is logically required before demonstrating proper techniques."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "secondary-rshe-2025_crit_0109",
+      "associated_lt_ids": [
+        "cluster_26_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can perform basic first aid procedures correctly.",
+      "criterion_label": "Basic First Aid Performance",
+      "source_provenance": [
+        "blk_0248_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No first aid procedures demonstrated.",
+        "emerging": "Attempts first aid with major procedural errors.",
+        "developing": "Performs first aid with some procedural errors.",
+        "competent": "Performs basic first aid procedures correctly following proper protocols.",
+        "extending": "Performs advanced first aid with expert technique."
+      },
+      "prerequisite_criterion_ids": [
+        "secondary-rshe-2025_crit_0107"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "secondary-rshe-2025_crit_0107",
+          "to_criterion_id": "secondary-rshe-2025_crit_0109",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying when first aid is needed is logically required before performing procedures."
+        }
+      ],
+      "schema_version": "v1"
+    }
+  ]
+}

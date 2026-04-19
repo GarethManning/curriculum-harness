@@ -1,0 +1,449 @@
+{
+  "source_slug": "secondary-rshe-2025",
+  "strand_summaries": [
+    {
+      "strand": "single_strand",
+      "criteria_count": 109,
+      "edge_count": 43,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "dag_validation": {
+    "passed": true,
+    "errors": []
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 109,
+    "sample_size": 20,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 20,
+    "audit_rows": [
+      {
+        "lt_id": "cluster_03_lt_02",
+        "lt_name": "Respectful Communication Skills",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0010"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act - applying communication strategies - within a unified domain of respectful interpersonal interaction."
+      },
+      {
+        "lt_id": "cluster_08_lt_01",
+        "lt_name": "Identifying Deepfakes and Harmful Content",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0029",
+          "secondary-rshe-2025_crit_0030"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the technical skill of deepfake identification, which requires distinct visual and audio analysis capabilities separate from general harmful content recognition."
+      },
+      {
+        "lt_id": "cluster_17_lt_02",
+        "lt_name": "Substance Use Mental Health Relationships",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0074",
+          "secondary-rshe-2025_crit_0075"
+        ],
+        "decomposition_rationale": "The bidirectional relationship contains two distinct causal pathways that can be independently assessed and demonstrated."
+      },
+      {
+        "lt_id": "cluster_12_lt_01",
+        "lt_name": "Defining Sexual Harassment and Violence",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0048",
+          "secondary-rshe-2025_crit_0049"
+        ],
+        "decomposition_rationale": "Single criterion as both 'identify' and 'describe' operate on the same knowledge domain of harmful behaviors, with description being a natural extension of identification rather than a separate cognitive skill."
+      },
+      {
+        "lt_id": "cluster_16_lt_03",
+        "lt_name": "Recognising Wellbeing Enhancement Strategies",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0072"
+        ],
+        "decomposition_rationale": "Single criterion as the LT involves one cognitive act (explain) applied to enumerated examples of wellbeing strategies within the same domain of mental health enhancement."
+      },
+      {
+        "lt_id": "cluster_26_lt_01",
+        "lt_name": "Recognizing Emergency Situations",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0107"
+        ],
+        "decomposition_rationale": "Single criterion as the LT contains one cognitive act (identify) applied to one domain (emergency situation assessment). No separable sub-skills present."
+      },
+      {
+        "lt_id": "cluster_17_lt_01",
+        "lt_name": "Gambling Mental Health Impacts",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0073"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act (identify) applied to gambling's mental health impacts and risk differentiation across products, representing unified knowledge within the same domain."
+      },
+      {
+        "lt_id": "cluster_08_lt_03",
+        "lt_name": "Seeking Support for Online Concerns",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0032"
+        ],
+        "decomposition_rationale": "This LT involves a single cognitive act (identify) applied to one knowledge domain (support sources for online concerns). No separable sub-skills or distinct cognitive operations are present."
+      },
+      {
+        "lt_id": "cluster_13_lt_01",
+        "lt_name": "Legal Framework for Harmful Practices",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0052"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act (identify) applied to a unified knowledge domain of legal requirements for harmful practices."
+      },
+      {
+        "lt_id": "cluster_08_lt_02",
+        "lt_name": "Understanding Technology Misuse and Harms",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0031"
+        ],
+        "decomposition_rationale": "This LT involves a single cognitive act (explain) applied to related content domains around technology misuse and harms. The enumerated examples (deepfakes, online content distortion, pornography) are illustrative scope within the same explanatory task, not separately assessable sub-skills."
+      },
+      {
+        "lt_id": "cluster_24_lt_01",
+        "lt_name": "Understanding Weapon Misconceptions",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0102"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act (explaining) applied to one unified concept - the causal relationship between weapon misconceptions and false protection beliefs."
+      },
+      {
+        "lt_id": "cluster_15_lt_01",
+        "lt_name": "Sexual Health Knowledge and Prevention",
+        "knowledge_type": "Type 1",
+        "criteria_count": 5,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0061",
+          "secondary-rshe-2025_crit_0062",
+          "secondary-rshe-2025_crit_0063",
+          "secondary-rshe-2025_crit_0064",
+          "secondary-rshe-2025_crit_0065"
+        ],
+        "decomposition_rationale": "Contraceptive knowledge represents a distinct domain of sexual health information that can be assessed independently from other sexual health topics."
+      },
+      {
+        "lt_id": "cluster_01_lt_01",
+        "lt_name": "Legal Status of Relationships",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0001"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act (explain) applied to interconnected legal concepts that form a coherent knowledge domain about relationship legal status."
+      },
+      {
+        "lt_id": "cluster_11_lt_02",
+        "lt_name": "Seeking Help and Reporting Concerns",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0047"
+        ],
+        "decomposition_rationale": "This LT contains a single cognitive act (identify) applied to related knowledge domains (help-seeking and reporting) that would be assessed together in realistic scenarios."
+      },
+      {
+        "lt_id": "cluster_23_lt_02",
+        "lt_name": "Responding to Peer Influence and Conflict",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0100",
+          "secondary-rshe-2025_crit_0101"
+        ],
+        "decomposition_rationale": "Recognition and response represent distinct cognitive operations - identifying peer influence requires different skills than managing appropriate responses to it."
+      },
+      {
+        "lt_id": "cluster_13_lt_03",
+        "lt_name": "Support Seeking for Harmful Behaviors",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0054",
+          "secondary-rshe-2025_crit_0055"
+        ],
+        "decomposition_rationale": "This is one criterion as it involves a single cognitive act of identifying support sources, with the KUD item covering both personal and witnessed harmful behaviors as scope rather than separate skills."
+      },
+      {
+        "lt_id": "cluster_20_lt_02",
+        "lt_name": "Applying Harm Reduction Strategies",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0086"
+        ],
+        "decomposition_rationale": "This is one criterion as it involves a single cognitive act (describe strategies) applied to a unified domain of harm reduction across substance use situations. The enumerated substances (alcohol, tobacco, substances) are illustrative examples within the same safety framework, not separately assessable skills."
+      },
+      {
+        "lt_id": "cluster_01_lt_02",
+        "lt_name": "Family Dynamics and Parenting",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0002",
+          "secondary-rshe-2025_crit_0003"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on understanding family dynamics and change processes, which is a distinct knowledge domain from parenting characteristics."
+      },
+      {
+        "lt_id": "cluster_13_lt_02",
+        "lt_name": "Physical Dangers and Health Risks",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0053"
+        ],
+        "decomposition_rationale": "Single criterion as both KUD items relate to describing physical dangers - one focuses on strangulation specifically, the other on harmful practices in pornography, but both require the same cognitive act of describing physical risks."
+      },
+      {
+        "lt_id": "cluster_06_lt_02",
+        "lt_name": "Evaluating Social Media Content Critically",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "secondary-rshe-2025_crit_0022",
+          "secondary-rshe-2025_crit_0023"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the identification skill for fake accounts and AI-generated content, which requires distinct recognition abilities."
+      }
+    ],
+    "flags": [
+      "cluster_15_lt_01: 5 criteria \u2014 possible over-decomposition, review"
+    ]
+  },
+  "scope_drift_check": {
+    "sample_size": 10,
+    "flags_found": 0,
+    "flags": [],
+    "rows": [
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0040",
+        "lt_id": "cluster_10_lt_01",
+        "overlap_word_count": 8,
+        "overlap_sample": [
+          "boundaries",
+          "consent",
+          "contexts",
+          "including",
+          "relationships"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0018",
+        "lt_id": "cluster_05_lt_02",
+        "overlap_word_count": 2,
+        "overlap_sample": [
+          "identify",
+          "prejudice"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0042",
+        "lt_id": "cluster_10_lt_02",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "identify",
+          "others",
+          "pressure",
+          "relationships",
+          "resist"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0081",
+        "lt_id": "cluster_18_lt_03",
+        "overlap_word_count": 9,
+        "overlap_sample": [
+          "appropriate",
+          "behaviors",
+          "content",
+          "encountering",
+          "harmful"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0097",
+        "lt_id": "cluster_22_lt_03",
+        "overlap_word_count": 7,
+        "overlap_sample": [
+          "age",
+          "consent",
+          "different",
+          "explain",
+          "groups"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0075",
+        "lt_id": "cluster_17_lt_02",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "explain",
+          "health",
+          "mental",
+          "problems",
+          "substance"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0108",
+        "lt_id": "cluster_26_lt_02",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "cpr",
+          "demonstrate",
+          "proper",
+          "techniques"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0034",
+        "lt_id": "cluster_09_lt_01",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "data",
+          "identify",
+          "practices",
+          "sharing"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0070",
+        "lt_id": "cluster_16_lt_01",
+        "overlap_word_count": 3,
+        "overlap_sample": [
+          "explain",
+          "influences",
+          "wellbeing"
+        ]
+      },
+      {
+        "criterion_id": "secondary-rshe-2025_crit_0006",
+        "lt_id": "cluster_02_lt_02",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "appropriate",
+          "help",
+          "identify",
+          "relationship",
+          "safety"
+        ]
+      }
+    ]
+  },
+  "token_usage": {
+    "total_input_tokens": 155345,
+    "total_output_tokens": 29398,
+    "per_stage": {
+      "other": {
+        "input": 155345,
+        "output": 29398,
+        "calls": 63,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_results": [
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 62,
+      "post_count": 62,
+      "pre_gate_fail": 10,
+      "post_gate_fail": 10,
+      "regression_ok": true
+    }
+  ],
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 20,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "cluster_02_lt_02": [
+        "cluster_02_lt_01"
+      ],
+      "cluster_03_lt_02": [
+        "cluster_03_lt_01"
+      ],
+      "cluster_07_lt_02": [
+        "cluster_07_lt_01"
+      ],
+      "cluster_08_lt_02": [
+        "cluster_08_lt_01"
+      ],
+      "cluster_09_lt_02": [
+        "cluster_09_lt_01"
+      ],
+      "cluster_10_lt_02": [
+        "cluster_10_lt_01"
+      ],
+      "cluster_11_lt_02": [
+        "cluster_11_lt_01"
+      ],
+      "cluster_13_lt_03": [
+        "cluster_13_lt_01",
+        "cluster_13_lt_02"
+      ],
+      "cluster_14_lt_02": [
+        "cluster_14_lt_01"
+      ],
+      "cluster_15_lt_02": [
+        "cluster_15_lt_01"
+      ],
+      "cluster_15_lt_03": [
+        "cluster_15_lt_01"
+      ],
+      "cluster_16_lt_02": [
+        "cluster_16_lt_01"
+      ],
+      "cluster_16_lt_03": [
+        "cluster_16_lt_01"
+      ],
+      "cluster_20_lt_02": [
+        "cluster_20_lt_01"
+      ],
+      "cluster_25_lt_02": [
+        "cluster_25_lt_01"
+      ],
+      "cluster_26_lt_02": [
+        "cluster_26_lt_01"
+      ]
+    }
+  },
+  "post_generation_manual_corrections": [
+    {
+      "action": "removed",
+      "criterion_id": "secondary-rshe-2025_crit_0065",
+      "reason": "scope drift \u2014 introduced STI prevalence/health impact/treatment content not present in LT definition",
+      "lt_id": "cluster_15_lt_01"
+    }
+  ],
+  "total_criteria_after_corrections": 108
+}

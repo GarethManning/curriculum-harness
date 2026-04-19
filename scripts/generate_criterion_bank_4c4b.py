@@ -393,16 +393,32 @@ async def generate_pass2_for_strand(
     strand_name: str,
     client: Any,
 ) -> list[dict]:
-    """Run Pass 2 for a strand's criteria. Returns validated edge list."""
+    """Run Pass 2 for a strand's criteria. Returns validated edge list.
+
+    max_tokens scales with bank size: ~120 tokens per criterion for edges
+    (empirical), minimum 4096, capped at 16000 (Sonnet output limit).
+    """
     criterion_ids = {c["criterion_id"] for c in criteria}
     label = f"refauth_critbank_4c4b_pass2 {strand_name}"
+    # Scale max_tokens with number of criteria to avoid truncation on large banks.
+    # Cap at 8192 (Sonnet output limit). For very large banks, the PASS2_SYSTEM
+    # instructs focus on strongest edges — the output should remain tractable.
+    max_tokens = min(8192, max(4096, len(criteria) * 100))
     # Pass 2 gets no curated edges for 4c-4b sources.
     pass2_user = build_pass2_user(criteria, f"{source_name} — {strand_name}", curated_lt_edges=[])
+    # For large banks, add a sparsity note to prevent over-generation.
+    if len(criteria) > 60:
+        pass2_user += (
+            "\n\nNOTE: This is a large criterion bank. Generate only the "
+            "STRONGEST and most educationally necessary prerequisite edges "
+            "(max ~3 per criterion). Omit weak or marginal edges to keep "
+            "the output tractable. Quality over completeness."
+        )
     try:
         text = await haiku_stream_text(
             client,
             model=SONNET_MODEL,
-            max_tokens=4096,
+            max_tokens=max_tokens,
             system=PASS2_SYSTEM,
             user_blocks=[{"type": "text", "text": pass2_user}],
             label=label,
