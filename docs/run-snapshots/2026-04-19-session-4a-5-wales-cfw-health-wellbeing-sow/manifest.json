@@ -363,6 +363,92 @@
       "primitive": "verify_normalised_extraction",
       "timestamp": "2026-04-19T03:40:13.069593+00:00",
       "verdict": "suspicious"
+    },
+    {
+      "checks_run": [
+        {
+          "category_1_count": 4,
+          "category_2_count": 3,
+          "category_3_count": 2,
+          "classified_examples": [
+            {
+              "category": "uncertain",
+              "line_number": 3,
+              "rationale": "Meta-curriculum framing describing what the guidance document does. Not content about human capacities, not an enabling skill, not a sustained state. Doesn't fit the three-category taxonomy.",
+              "text": "Guidance to help schools and settings develop their own curriculum, enabling learners to develop towards the four purposes."
+            },
+            {
+              "category": "category_3",
+              "line_number": 11,
+              "rationale": "'Care for and respect themselves and others' describes a sustained default orientation, not a triggered act. 'Sense of self-worth, overall mood and energy levels' are sustained operating states, not occasion-prompted behaviours.",
+              "text": "From this understanding, learners can develop positive, informed behaviours that encourage them both to care for and respect themselves and others. These behaviours support learners' sense of self-worth, their overall mood and energy levels."
+            },
+            {
+              "category": "category_1",
+              "line_number": 13,
+              "rationale": "Surface form is a propositional claim about a causal relationship (processing affects mental health). Stated as a fact to be understood, not as a skill to deploy or an orientation to hold. Even though the statement could be internalised as sustained awareness, the surface content is propositional.",
+              "text": "How we process and respond to our experiences affects our mental health and emotional well-being."
+            },
+            {
+              "category": "category_3",
+              "line_number": 15,
+              "rationale": "'Having an awareness of our own feelings and emotions' describes a sustained default orientation, not a discrete act triggered by a specific occasion. Ongoing self-awareness is the paradigm example of Category 3.",
+              "text": "Having an awareness of our own feelings and emotions is the foundation upon which [empathy can be developed]."
+            },
+            {
+              "category": "category_2",
+              "line_number": 23,
+              "rationale": "'Learning how to communicate their feelings' is an enabling skill deployed when the learner has feelings to communicate \u2014 occasion-prompted. The aim (a normalised culture) is Category 3, but the skill-development content itself is Category 2.",
+              "text": "By learning how to communicate their feelings, learners will be better placed to create a culture where talking about mental health and emotional well-being is normalised."
+            },
+            {
+              "category": "category_2",
+              "line_number": 26,
+              "rationale": "'Critical-thinking skills applied to decision-making' is an enabling skill deployed when a decision is being made \u2014 occasion-prompted. The skills are not described as a sustained orientation that operates without a decision at hand.",
+              "text": "Learning and experience in this Area can enable learners to develop the critical-thinking skills necessary to consider their decision-making in terms of possible implications, including risks, for themselves and others."
+            },
+            {
+              "category": "category_1",
+              "line_number": 27,
+              "rationale": "Propositional claim stating a fact about career decisions. Neither a skill deployment nor a sustained orientation.",
+              "text": "A key decision that affects learners for life is around their career pathways."
+            },
+            {
+              "category": "category_1",
+              "line_number": 39,
+              "rationale": "Propositional claim about how social influences operate on us. Content to be understood, not a skill or disposition to enact.",
+              "text": "[Social influences] affect our identity, values, behaviours and health and well-being, and often do so without our being aware of it."
+            },
+            {
+              "category": "category_2",
+              "line_number": 43,
+              "rationale": "'Recognise when relationships are unhealthy' is triggered by encountering an unhealthy relationship \u2014 occasion-prompted. 'Seek support' likewise is deployed when safety is at risk. Classic Category 2 enabling-skill cluster.",
+              "text": "Learners need to recognise when relationships are unhealthy and need to be aware of how to keep safe, and seek support for themselves and others."
+            },
+            {
+              "category": "category_1",
+              "line_number": 45,
+              "rationale": "'See how... are vital' is propositional understanding \u2014 knowledge about the relationship between healthy relationships and well-being, not a skill or orientation.",
+              "text": "As a result, they will see how healthy relationships are vital for a healthy body and mind, allowing us to thrive."
+            }
+          ],
+          "diagnostic": "prompt_dependence: occasion_prompted -> category_2; sustained_default_orientation -> category_3",
+          "name": "three_category_content_classification",
+          "passed": true,
+          "sample_size": 10,
+          "sampling_rule": "one line per 500 chars of extracted content; floor 10 ceiling 25; lines that are headings, list markers, all-uppercase labels, section-numbered, or fewer than five words are skipped",
+          "source_archetype": "rich_dispositional",
+          "uncertain_count": 1
+        }
+      ],
+      "details": {
+        "check": "B",
+        "notes": "Informational only \u2014 source_archetype does not block session closure. Session prompt \u00a7Step 4 specifies Gareth judges 4b sufficiency from the recorded distribution.",
+        "session": "4a-5"
+      },
+      "primitive": "dispositional_content_distribution",
+      "timestamp": "2026-04-19T03:43:26.632803+00:00",
+      "verdict": "clean"
     }
   ]
 }
