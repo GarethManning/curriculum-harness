@@ -24,9 +24,18 @@ STABILITY_FLAGS = (
     "classification_unreliable",
 )
 
-REFERENCE_AUTHORING_VERSION = "0.2.0"
+REFERENCE_AUTHORING_VERSION = "0.3.0"
 
-BANDS = ("A", "B", "C", "D")
+# Note: there is no global BANDS constant here. The reference-
+# authoring pipeline does not impose any single school's band
+# framework on the outputs it produces from external curriculum
+# sources. Each source's native progression structure (Welsh
+# Progression Steps 1-5, US/Ontario single grade levels, Scottish CfE
+# Levels, etc.) is detected by
+# ``curriculum_harness.reference_authoring.progression.detect_progression``
+# and propagated into downstream stages. Single-band sources are
+# first-class — band_count = 1 means "produce a single statement per
+# LT at the source's grade level", not a band progression.
 CLUSTER_STABILITY_FLAGS = (
     "stable",
     "cluster_unstable",
@@ -276,7 +285,13 @@ class BandStatement:
 
 @dataclass
 class BandStatementSet:
-    """Band progression A-D for a single Type 1/2 LT."""
+    """Band progression for a single Type 1/2 LT, in the source's native bands.
+
+    For a multi-band source (e.g. Welsh CfW Progression Steps 1-5)
+    ``statements`` carries one BandStatement per band label, in
+    developmental order. For a single-band source (band_count == 1)
+    ``statements`` carries a single entry at the source's grade level.
+    """
 
     lt_id: str
     knowledge_type: str
@@ -314,7 +329,12 @@ class BandStatementCollection:
 
 @dataclass
 class ObservationBand:
-    """Observable indicators for one band of a Type 3 LT."""
+    """Observable indicators for one band of a Type 3 LT.
+
+    The band label is the source's native band name (e.g.
+    "Progression Step 3" for Welsh CfW, "Grade 7" for a single-band
+    Common Core or Ontario source).
+    """
 
     band: str
     observable_behaviours: list[str] = field(default_factory=list)
@@ -365,17 +385,13 @@ class ObservationIndicatorCollection:
         }
 
 
-# Mode 3 generic developmental self-reflection prompts, calibrated by
-# band (per LT authoring skill). These are generic across ALL Type 3
-# LTs — the LT-specific tailoring happens in the observable-behaviour
-# indicators and the parent prompts, not in these developmental
-# prompts.
-MODE3_SELF_REFLECTION_PROMPTS: dict[str, str] = {
-    "A": "Name a moment this term when you tried something hard. What happened, and how did it feel?",
-    "B": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?",
-    "C": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?",
-    "D": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?",
-}
+# Mode 3 self-reflection prompts now live on each source's
+# ProgressionStructure (band_self_reflection_prompts), keyed by the
+# source's own band labels. The previous A-D global was REAL School
+# Budapest's calibration imported as if it were a universal default —
+# that was the framework error fixed in Session 4b-2.5. See
+# curriculum_harness.reference_authoring.progression.detect_progression
+# for per-jurisdiction calibration.
 
 
 def dump_json(obj: Any, path: str) -> None:

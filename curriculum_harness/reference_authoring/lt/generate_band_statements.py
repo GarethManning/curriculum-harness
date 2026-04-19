@@ -1,15 +1,21 @@
 """Type 1/2 band-statement generator with 3x self-consistency and quality gate.
 
-For each Type 1 / Type 2 LT, generates band statements A-D per the LT
-authoring skill. Type 3 LTs are skipped (they get observation
+For each Type 1 / Type 2 LT, generates band statements against the
+SOURCE'S OWN native progression structure (Welsh Progression Steps
+1-5, US/Ontario single grade, Scottish CfE Levels, England Key
+Stages, NZ Levels). Type 3 LTs are skipped (they get observation
 indicators via a separate module — the LT skill's absolute no-rubric
 rule).
+
+Single-band sources (band_count == 1) produce ONE band statement per
+LT at the source's grade level. Multi-band sources produce one
+statement per band label, in the source's developmental order.
 
 SELF-CONSISTENCY
 
 Each LT's band set is generated 3x at temperature 0.3. Stability:
 
-- 3/3: matching band count (4) AND each band's statement preserved
+- 3/3: matching band count AND each band's statement preserved
   across runs (length-class-aware equivalence check) → ``stable``.
 - 2/3: majority run retained, flagged ``band_statements_unstable``.
 - ≤1/3 valid parses → halted, flagged ``band_statements_unreliable``.
@@ -32,11 +38,13 @@ from collections import Counter
 from typing import Any
 
 from curriculum_harness.reference_authoring.lt.band_prompts import (
-    SYSTEM_PROMPT,
+    build_system_prompt,
     build_user_prompt,
 )
+from curriculum_harness.reference_authoring.progression import (
+    ProgressionStructure,
+)
 from curriculum_harness.reference_authoring.types import (
-    BANDS,
     BandStatement,
     BandStatementCollection,
     BandStatementSet,
@@ -94,26 +102,32 @@ BANNED_SUBSTRINGS = (
 )
 
 
-def _validate_run(obj: dict[str, Any] | None) -> list[dict[str, str]] | None:
+def _validate_run(
+    obj: dict[str, Any] | None,
+    *,
+    progression: ProgressionStructure,
+) -> list[dict[str, str]] | None:
     if not isinstance(obj, dict):
         return None
     raw = obj.get("band_statements")
-    if not isinstance(raw, list) or len(raw) != len(BANDS):
+    if not isinstance(raw, list) or len(raw) != progression.band_count:
         return None
+    expected_labels = list(progression.band_labels)
     out: list[dict[str, str]] = []
-    for i, b in enumerate(BANDS):
+    for i, expected_label in enumerate(expected_labels):
         if not isinstance(raw[i], dict):
             return None
-        band = str(raw[i].get("band", "")).strip().upper()
+        band = str(raw[i].get("band", "")).strip()
         statement = str(raw[i].get("statement", "")).strip()
-        if band != b:
+        # Accept exact match (case-insensitive on label text).
+        if band.lower() != expected_label.lower():
             return None
         if not statement.lower().startswith("i can "):
             return None
         # Normalise "i can" → "I can"
         if statement[:5].lower() == "i can":
             statement = "I can " + statement[6:]
-        out.append({"band": band, "statement": statement})
+        out.append({"band": expected_label, "statement": statement})
     return out
 
 
@@ -159,6 +173,8 @@ async def _one_run(
     model: str,
     temperature: float,
     lt: LearningTarget,
+    progression: ProgressionStructure,
+    system_prompt: str,
     run_idx: int,
 ) -> list[dict[str, str]] | None:
     user_prompt = build_user_prompt(
@@ -166,6 +182,7 @@ async def _one_run(
         lt_definition=lt.lt_definition,
         knowledge_type=lt.knowledge_type,
         competency_name=lt.competency_name,
+        progression=progression,
     )
     label = f"refauth_band {lt.lt_id} run{run_idx}"
     try:
@@ -173,7 +190,7 @@ async def _one_run(
             client,
             model=model,
             max_tokens=DEFAULT_MAX_TOKENS,
-            system=SYSTEM_PROMPT,
+            system=system_prompt,
             user_blocks=[{"type": "text", "text": user_prompt}],
             label=label,
             temperature=temperature,
@@ -185,7 +202,7 @@ async def _one_run(
         logger.exception("band generation error: %s", label)
         return None
     parsed = extract_json_object(text)
-    validated = _validate_run(parsed)
+    validated = _validate_run(parsed, progression=progression)
     if validated is None:
         logger.warning("band generation parse/validation failed: %s", label)
     return validated
@@ -197,6 +214,8 @@ async def _generate_for_lt(
     model: str,
     temperature: float,
     lt: LearningTarget,
+    progression: ProgressionStructure,
+    system_prompt: str,
     runs: int,
 ) -> tuple[BandStatementSet | None, dict[str, Any] | None]:
     if lt.knowledge_type == "Type 3":
@@ -208,6 +227,8 @@ async def _generate_for_lt(
             model=model,
             temperature=temperature,
             lt=lt,
+            progression=progression,
+            system_prompt=system_prompt,
             run_idx=i + 1,
         )
         for i in range(runs)
@@ -283,6 +304,7 @@ async def _generate_for_lt(
 
 async def generate_band_statements(
     lt_set: LearningTargetSet,
+    progression: ProgressionStructure,
     *,
     model: str = DEFAULT_MODEL,
     temperature: float = DEFAULT_TEMPERATURE,
@@ -291,6 +313,7 @@ async def generate_band_statements(
 ) -> BandStatementCollection:
     client = get_async_client()
     sem = asyncio.Semaphore(concurrency)
+    system_prompt = build_system_prompt(progression)
 
     async def _bounded(lt: LearningTarget):
         async with sem:
@@ -299,6 +322,8 @@ async def generate_band_statements(
                 model=model,
                 temperature=temperature,
                 lt=lt,
+                progression=progression,
+                system_prompt=system_prompt,
                 runs=runs,
             )
 
@@ -321,6 +346,7 @@ async def generate_band_statements(
 
 def generate_band_statements_sync(
     lt_set: LearningTargetSet,
+    progression: ProgressionStructure,
     **kwargs: Any,
 ) -> BandStatementCollection:
-    return asyncio.run(generate_band_statements(lt_set, **kwargs))
+    return asyncio.run(generate_band_statements(lt_set, progression, **kwargs))

@@ -61,6 +61,10 @@ from curriculum_harness.reference_authoring.lt.generate_band_statements import (
 from curriculum_harness.reference_authoring.lt.generate_observation_indicators import (
     generate_observation_indicators_sync,
 )
+from curriculum_harness.reference_authoring.progression import (
+    ProgressionDetectionError,
+    detect_progression,
+)
 from curriculum_harness.reference_authoring.types import (
     ContentBlock,
     HaltedBlock,
@@ -155,6 +159,7 @@ def _load_kud(path: str) -> ReferenceKUD:
 def _stage_summary_markdown(
     *,
     kud_report_md: str,
+    progression: Any,
     cluster_set: Any,
     lt_set: Any,
     band_coll: Any,
@@ -162,6 +167,24 @@ def _stage_summary_markdown(
 ) -> str:
     lines: list[str] = []
     lines.append(kud_report_md.rstrip())
+    lines.append("")
+    lines.append("## Stage: source-native progression structure")
+    lines.append("")
+    lines.append(f"- source type: `{progression.source_type}`")
+    lines.append(f"- band count: **{progression.band_count}**")
+    lines.append(
+        f"- band labels: {', '.join(progression.band_labels)}"
+        if progression.band_labels
+        else "- band labels: (none)"
+    )
+    lines.append(f"- age range hint: {progression.age_range_hint}")
+    lines.append(f"- detection confidence: `{progression.detection_confidence}`")
+    if progression.uncertain():
+        lines.append(
+            "- **flag:** `progression_structure_uncertain` — band framework "
+            "may need human verification."
+        )
+    lines.append(f"- detection rationale: {progression.detection_rationale}")
     lines.append("")
     lines.append("## Stage: competency clustering")
     lines.append("")
@@ -269,6 +292,27 @@ def main(argv: list[str] | None = None) -> int:
             flush=True,
         )
 
+    print("[refauth] detecting source-native progression structure", flush=True)
+    try:
+        progression = detect_progression(inventory)
+    except ProgressionDetectionError as e:
+        print(f"[refauth] HALTED: {e}", flush=True)
+        return 2
+    progression_path = os.path.join(args.out, "progression_structure.json")
+    dump_json(progression.to_dict(), progression_path)
+    print(
+        f"[refauth] progression: {progression.source_type} | "
+        f"{progression.band_count} band(s) | confidence={progression.detection_confidence} "
+        f"→ {progression_path}",
+        flush=True,
+    )
+    if progression.uncertain():
+        print(
+            "[refauth] WARNING: progression_structure_uncertain — band framework "
+            "inferred from source text; human verification recommended.",
+            flush=True,
+        )
+
     source_domain = args.domain or ("dispositional" if args.dispositional else "hierarchical")
     print(
         f"[refauth] KUD gates (dispositional={args.dispositional}, domain={source_domain})",
@@ -331,16 +375,24 @@ def main(argv: list[str] | None = None) -> int:
             fh.write(kud_report_md)
         return 2
 
-    print("[refauth] Type 1/2 band statements (3x self-consistency)", flush=True)
-    band_coll = generate_band_statements_sync(lt_set, runs=args.runs)
+    print(
+        f"[refauth] Type 1/2 band statements (3x self-consistency) — "
+        f"bands: {progression.band_labels}",
+        flush=True,
+    )
+    band_coll = generate_band_statements_sync(lt_set, progression, runs=args.runs)
     dump_json(band_coll.to_dict(), os.path.join(args.out, "band_statements.json"))
     print(
         f"[refauth] band sets: {len(band_coll.sets)} (halted: {len(band_coll.halted_lts)})",
         flush=True,
     )
 
-    print("[refauth] Type 3 observation indicators (3x self-consistency)", flush=True)
-    indicator_coll = generate_observation_indicators_sync(lt_set, runs=args.runs)
+    print(
+        f"[refauth] Type 3 observation indicators (3x self-consistency) — "
+        f"bands: {progression.band_labels}",
+        flush=True,
+    )
+    indicator_coll = generate_observation_indicators_sync(lt_set, progression, runs=args.runs)
     dump_json(indicator_coll.to_dict(), os.path.join(args.out, "observation_indicators.json"))
     print(
         f"[refauth] indicator sets: {len(indicator_coll.sets)} "
@@ -350,6 +402,7 @@ def main(argv: list[str] | None = None) -> int:
 
     extended_md = _stage_summary_markdown(
         kud_report_md=kud_report_md,
+        progression=progression,
         cluster_set=cluster_set,
         lt_set=lt_set,
         band_coll=band_coll,
