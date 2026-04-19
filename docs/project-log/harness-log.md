@@ -1244,3 +1244,174 @@ Common Core and Welsh CfW Type 1 LTs. May also include: re-run of
 Ontario clustering with a higher-capacity model (Sonnet) to reduce
 instability on the 188-item KUD.
 
+---
+
+## Session 4b-4 — 2026-04-19 — Type 1/2 criterion generator + supporting components
+
+**Goal.** Build the Type 1/2 criterion generator (five-level rubrics:
+No Evidence / Emerging / Developing / Competent / Extending) and
+supporting-components generator (co-construction plan + student
+rubric + feedback guide) per the rubric-logic skill; wire them into
+the pipeline behind halting quality gates; run both on Common Core
+G7 RP (hierarchical) and Welsh CfW HWB (dispositional); update
+exporters, renderer, and cross-source summary to surface the new
+artefacts.
+
+### What was built
+
+1. `curriculum_harness/reference_authoring/criterion/generate_criteria.py`
+   — five-level rubric generator, 3x self-consistency at temperature
+   0.3. Signature = dominant-verb bucket + within-limit word-count
+   class + binary Competent-scope class. Competent = "I can"
+   declarative demonstrated independently at the LT's band; the four
+   other levels slide along the progression levers (independence,
+   complexity, scope, precision) with asymmetric word caps
+   (10/15/20/25/20).
+2. `curriculum_harness/reference_authoring/criterion/generate_supporting_components.py`
+   — runs only on rubrics that pass halting gates. Produces
+   co-construction stages + student prompts + anchor-examples guidance,
+   a student-facing rubric (5 levels + self-check prompts), and a
+   feedback guide (moves per level; no Extending moves by design).
+3. `curriculum_harness/reference_authoring/gates/criterion_gates.py`
+   — halting gates (five-level presence, Competent-framing judge,
+   per-level word caps, observable verbs Emerging+, banned phrasing,
+   single-construct scope); informational `propositional_thin` flag
+   for factual Type 1 LTs that necessarily compress at Emerging/Developing.
+4. Pipeline wiring (`pipeline/run_pipeline.py`): criterion + gate +
+   supporting-components stages run after the band-statement / indicator
+   stages on Type 1/2 LTs; halted rubrics skip supporting components.
+5. Standalone runner `scripts/reference_authoring/run_criteria.py` —
+   adds criterion + supporting artefacts to a corpus whose upstream
+   KUD / cluster / LT / band outputs were produced before the criterion
+   stage existed (the case for Common Core G7 RP and Welsh CfW HWB).
+6. CSV exporter: two new files per corpus (`*-criteria.csv`,
+   `*-supporting-components.csv`). Renderer: rubric + supporting-
+   components sections injected inside Type 1/2 LT blocks; halted
+   rubric / supporting LTs surfaced under "Halted items". Cross-source
+   summary: new "Criterion rubrics (Type 1/2)" section.
+
+### Pipeline runs completed
+
+*Common Core Grade 7 Ratios & Proportional Relationships.*
+7 Type 1/2 LTs produced a rubric; 6/7 pass the criterion gate
+(single `single_construct` fail on a bundled Type 2 LT); 4 rubrics
+stable, 3 `rubric_unstable`, 2 carry `propositional_thin`. 1 Type 1/2
+LT halted as `rubric_unreliable` (`cluster_01_lt_02`, Haiku JSON
+emission reliability). 4 supporting-components sets produced; 2
+halted at the supporting stage.
+
+*Welsh CfW Health and Well-being.*
+12 Type 1/2 LTs produced a rubric; 11/12 pass the criterion gate
+(single `single_construct` fail); 5 rubrics stable, 7 `rubric_unstable`,
+2 carry `propositional_thin`. 2 Type 1/2 LTs halted as
+`rubric_unreliable` (`cluster_06_lt_02`, `cluster_09_lt_02`, parse
+reliability). 9 supporting-components sets produced; 2 halted at the
+supporting stage.
+
+### Code fixes driven by this session
+
+- `48bd304` — `[fix] Relax rubric self-consistency signature`:
+  within-limit word-count bins (thin/target/full) collapsed to
+  `within_limit`; Competent scope class reduced to binary
+  `scoped`/`unscoped`. The hard word-limit gate is unchanged so
+  validity is preserved. Fix for Step 5 halts where the verbs were
+  stable across runs but vocabulary-surface noise
+  (`22 words` vs `25 words`, `accuracy` vs `range`) was being
+  double-counted as structural disagreement.
+- `47fe000` — `[fix] Sync _dominant_verb_bucket to use _lemmatise`:
+  generator's dominant-verb matcher used a raw regex that missed
+  `ies`/`es` inflections (`identifies`, `applies`, `distinguishes`)
+  so descriptors with those verbs fell into the `none` bucket and
+  looked like structural disagreement. Rewritten to tokenise +
+  lemmatise with the same logic as the gate's `_has_observable_verb`.
+  Correctness fix, not a threshold move.
+- `542db1a` — `[fix] Sync gate OBSERVABLE_VERBS with generator
+  _VERB_BUCKETS`: the gate's observable-verbs list was a subset of
+  the generator's verb bucket map; Haiku used `name`/`recall`/
+  `contrast`/`critique` consistently at Emerging on Welsh CfW and
+  tripped the observable-verb gate (8/10 initial failures). Synced
+  both lists + added inflected forms to the gate's `_STOPWORDS`.
+  Reduced gate failures 8→1 on Welsh CfW.
+- (Reverted mid-session.) An earlier dictionary-expansion attempt
+  ("add 18 common verbs to `_VERB_BUCKETS`") *reduced* convergence
+  from 5/8 to 2/8 on Common Core because the dominant-bucket
+  signature becomes less stable when more verbs compete inside a
+  single descriptor, and stopword-expansion broke `single_construct`
+  by filtering legitimate topic words like `model`. Reverted via
+  `git checkout HEAD --` before commit; replaced with the
+  correctness-fix above.
+
+### Gate revisions
+
+- `docs/plans/session-4b-gate-revisions-v1.md` §4b-4 Step 5 documents
+  the signature relaxation as a gate-revisions entry (not a threshold
+  change — the underlying word-count gate is unchanged).
+
+### Commits (chronological)
+
+- `f44ad91` [gen] Type 1/2 criterion generator (4b-4 step 1)
+- `ba993c5` [gen] Supporting-components generator (4b-4 step 2)
+- `c4d6882` [gen] Criterion quality gates (4b-4 step 3)
+- `cfa27c7` [pipe] Wire criterion + supporting components into pipeline (4b-4 step 4)
+- `48bd304` [fix] Relax rubric self-consistency signature (Step 5)
+- `7fefbc4` [gen] Common Core 7.RP criterion artefacts + prompt tightening
+- `47fe000` [fix] Sync `_dominant_verb_bucket` to use `_lemmatise`
+- `c0de07e` [gen] Regenerate Common Core 7.RP criterion artefacts with fixed verb matcher (6/8 baseline)
+- `542db1a` [fix] Sync gate OBSERVABLE_VERBS with generator _VERB_BUCKETS
+- `80b65a0` [gen] Regenerate Common Core + Welsh CfW criterion artefacts after gate sync
+- `ef677a8` [gen] CSV exporter, review renderer, cross-source summary updated for criteria; includes standalone run_criteria.py runner
+- `<this commit>` [docs] Session 4b-4 log and state snapshot
+
+### Artefacts produced
+
+- `docs/reference-corpus/common-core-g7-rp/{criteria.json,criteria_quality_report.{json,md},supporting_components.json}`
+- `docs/reference-corpus/welsh-cfw-health-wellbeing/{criteria.json,criteria_quality_report.{json,md},supporting_components.json}`
+- Per-corpus `*-criteria.csv` and `*-supporting-components.csv`
+- Updated `reference-review.md` in both corpora
+- Updated `docs/reference-corpus/_cross-source-summary.md` (new
+  "Criterion rubrics (Type 1/2)" section + pipeline counts rows)
+- `docs/plans/session-4b-gate-revisions-v1.md` §4b-4 Step 5
+
+### Success criteria
+
+- ✅ Criterion generator produces five-level rubrics with Competent =
+  "I can" declarative, demonstrated independently at the LT's band;
+  asymmetric word caps observed across corpora.
+- ✅ Supporting-components generator runs only on passing rubrics and
+  produces co-construction + student rubric + feedback-guide in the
+  expected shape (no Extending feedback moves by design).
+- ✅ Criterion halting gates implemented; informational
+  `propositional_thin` flag fires on factual Type 1 LTs as expected.
+- ✅ Pipeline end-to-end: Common Core G7 RP and Welsh CfW HWB both
+  produced rubrics + supporting components; halts are documented
+  failures of specific LTs, not bulk halts.
+- ✅ Exporter / renderer / cross-source summary all show the new
+  artefacts.
+
+### Deviations from binding architecture
+
+None. The three code fixes are correctness/sync fixes, not threshold
+moves: the signature relaxation removes double-counting of vocabulary-
+surface noise (hard gate unchanged); the lemmatiser sync fixes a
+matching bug in the generator; the OBSERVABLE_VERBS sync removes an
+asymmetry between generator and gate. No ceilings were loosened.
+
+### Known unreliable LTs (documented, not blocking)
+
+- Common Core `cluster_01_lt_02` — Haiku failed to emit strict JSON
+  on 2/3 runs; halted as `rubric_unreliable`.
+- Welsh CfW `cluster_06_lt_02`, `cluster_09_lt_02` — parse-reliability
+  failures; halted as `rubric_unreliable`.
+- These are minority halts with distinct failure modes (JSON emission
+  stochasticity on specific LTs), not a class problem with the
+  generator. Per user direction the session did not block on
+  diagnosing them further.
+
+### Next session (4b-5, pending)
+
+Per the 4b arc plan v3: pipeline runs on DfE KS3 Maths (second
+hierarchical comparator) and AP US Gov Unit 1 (second horizontal
+comparator). Both already extracted. Would also be appropriate time
+to run Ontario G7 History through the criterion stage (queued from
+4b-4).
+

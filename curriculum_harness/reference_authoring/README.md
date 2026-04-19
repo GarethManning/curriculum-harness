@@ -119,12 +119,30 @@ default; Session 4b-2.5 corrected the pipeline.
   + indicators → extended report. `--resume-from-kud` skips inventory
   + classify; progression detection still runs against the loaded
   inventory. Writes `progression_structure.json` to the corpus.
-- `criterion/` (stub) — Type 1/2 criterion generator (five-level
-  rubrics per the rubric logic skill) for session 4b-3.
+- `criterion/generate_criteria.py` — Type 1/2 criterion generator.
+  Five-level rubric (No Evidence / Emerging / Developing / Competent
+  / Extending) per the rubric logic skill, with Competent = pass
+  criterion ("I can" declarative, demonstrated independently at the
+  LT's band). 3x self-consistency at temperature 0.3. Structural
+  signature (collapsed within-limit word-count class + binary
+  scope + dominant verb bucket) determines rubric stability. Verb
+  matching uses the same `_lemmatise` logic as the gate module.
+- `criterion/generate_supporting_components.py` — for each rubric
+  that passes halting gates: co-construction plan (stages + student
+  prompts + anchor-examples guidance), student-facing rubric
+  (5 levels + self-check prompts), and feedback guide (moves per
+  level, no moves for Extending).
+- `gates/criterion_gates.py` — criterion quality gates. Halting:
+  five-level present, Competent-framing judge, asymmetric word
+  limits (10/15/20/25/20), observable verbs at Emerging+, banned
+  phrasing, single-construct scope. Informational: propositional-
+  thin flag for factual Type 1 LTs where the rubric necessarily
+  compresses at Emerging/Developing. The gate's `OBSERVABLE_VERBS`
+  list is kept in sync with the generator's `_VERB_BUCKETS`.
 
 ## Implementation status
 
-After session 4b-3:
+After session 4b-4:
 
 - inventory: **implemented** (4b-1)
 - KUD classifier: **implemented** (4b-1); `source_context` parameter
@@ -153,13 +171,29 @@ After session 4b-3:
 - Type 3 observation-indicator generator: **implemented** with source-native
   bands and per-source self-reflection prompt calibration (4b-2)
 - CSV exporter: **implemented** (4b-2); progression metadata section added
-  (4b-3)
+  (4b-3); criteria + supporting-components CSVs added (4b-4)
 - review renderer: **implemented** (4b-2); per-band developmental index
-  table added (4b-3)
+  table added (4b-3); rubric tables + supporting-components sections
+  added inside Type 1/2 LT blocks (4b-4)
 - Reference corpus: 3 sources through full pipeline — Welsh CfW HWB
   (dispositional, 5 bands), Common Core G7 RP (hierarchical, 1 band),
-  Ontario G7 History (horizontal, 1 band, FOCUS ON priming)
-- Type 1/2 criterion generator (five-level rubrics): **not yet** — 4b-4
+  Ontario G7 History (horizontal, 1 band, FOCUS ON priming). Welsh CfW
+  HWB and Common Core G7 RP additionally through the 4b-4 criterion +
+  supporting-components stage.
+- Type 1/2 criterion generator (five-level rubrics): **implemented**
+  (4b-4) with structural-signature self-consistency; signature
+  relaxation (within-limit word-count class collapsed; scope binary)
+  and lemmatiser sync between generator + gate documented in
+  `docs/plans/session-4b-gate-revisions-v1.md` §4b-4.
+- Type 1/2 supporting components (co-construction plan + student
+  rubric + feedback guide): **implemented** (4b-4), runs after the
+  criterion gate on passing rubrics only.
+- standalone criterion-only runner: `scripts/reference_authoring/run_criteria.py`
+  — reads an existing corpus's `lts.json` + `progression_structure.json`,
+  runs the criterion generator + gates + supporting-components stage,
+  writes `criteria.json` / `criteria_quality_report.{json,md}` /
+  `supporting_components.json`. Appropriate tool for adding criterion
+  artefacts to a corpus generated before the criterion stage existed.
 - comparison pipeline: **not here** — session 4b-6
 
 ## Running
@@ -192,6 +226,15 @@ python -m curriculum_harness.reference_authoring.pipeline.run_pipeline \
     --out docs/reference-corpus/<slug>/ \
     --domain horizontal \
     --focus-on-priming
+```
+
+Run the criterion stage only (adds Type 1/2 five-level rubrics +
+supporting components to a corpus whose inventory / KUD / LTs / bands
+are already generated; does NOT touch any upstream artefact):
+
+```bash
+python -m scripts.reference_authoring.run_criteria \
+    --corpus docs/reference-corpus/<source-slug>/
 ```
 
 Render the full reference for human review:
