@@ -65,7 +65,7 @@ from curriculum_harness.reference_authoring.types import (
     RubricCollection,
     RubricLevel,
 )
-from curriculum_harness.types import HAIKU_MODEL, extract_json_object
+from curriculum_harness.types import SONNET_MODEL, extract_json_object
 from curriculum_harness._anthropic import (
     AnthropicCallTimeout,
     get_async_client,
@@ -74,7 +74,7 @@ from curriculum_harness._anthropic import (
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_MODEL = HAIKU_MODEL
+DEFAULT_MODEL = SONNET_MODEL
 DEFAULT_TEMPERATURE = 0.3
 DEFAULT_RUNS = 3
 DEFAULT_MAX_TOKENS = 2048

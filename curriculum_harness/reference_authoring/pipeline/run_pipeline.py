@@ -839,7 +839,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--model",
         default=DEFAULT_MODEL,
-        help=f"Model ID for KUD classification (default {DEFAULT_MODEL})",
+        help=f"Model ID for all per-item stages: KUD classification, LT generation, band statements, observation indicators, rubrics, supporting components (default {DEFAULT_MODEL})",
     )
     parser.add_argument(
         "--runs",
@@ -1285,7 +1285,7 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     print("[refauth] LT generation (3x self-consistency)", flush=True)
-    lt_set = generate_lts_sync(kud, cluster_set, runs=args.runs)
+    lt_set = generate_lts_sync(kud, cluster_set, runs=args.runs, model=args.model)
     dump_json(lt_set.to_dict(), os.path.join(args.out, "lts.json"))
     print(
         f"[refauth] LTs: {len(lt_set.lts)} (halted clusters: {len(lt_set.halted_clusters)})",
@@ -1318,7 +1318,7 @@ def main(argv: list[str] | None = None) -> int:
             f"bands: {progression.band_labels}",
             flush=True,
         )
-        band_coll = generate_band_statements_sync(lt_set, progression, runs=args.runs)
+        band_coll = generate_band_statements_sync(lt_set, progression, runs=args.runs, model=args.model)
         dump_json(band_coll.to_dict(), os.path.join(args.out, "band_statements.json"))
         print(
             f"[refauth] band sets: {len(band_coll.sets)} (halted: {len(band_coll.halted_lts)})",
@@ -1330,7 +1330,7 @@ def main(argv: list[str] | None = None) -> int:
             f"bands: {progression.band_labels}",
             flush=True,
         )
-        indicator_coll = generate_observation_indicators_sync(lt_set, progression, runs=args.runs)
+        indicator_coll = generate_observation_indicators_sync(lt_set, progression, runs=args.runs, model=args.model)
         dump_json(indicator_coll.to_dict(), os.path.join(args.out, "observation_indicators.json"))
         print(
             f"[refauth] indicator sets: {len(indicator_coll.sets)} "
@@ -1349,7 +1349,7 @@ def main(argv: list[str] | None = None) -> int:
                 f"{type12_count} Type 1/2 LTs",
                 flush=True,
             )
-            rubric_coll = generate_criteria_sync(lt_set, progression, runs=args.runs)
+            rubric_coll = generate_criteria_sync(lt_set, progression, runs=args.runs, model=args.model)
             print(
                 f"[refauth] rubrics: {len(rubric_coll.rubrics)} "
                 f"(halted: {len(rubric_coll.halted_lts)})",
@@ -1442,7 +1442,7 @@ def main(argv: list[str] | None = None) -> int:
                 runs=rubric_coll.runs,
             )
             supporting_coll = generate_supporting_components_sync(
-                lt_set, passing_coll, runs=args.runs
+                lt_set, passing_coll, runs=args.runs, model=args.model
             )
             # Record skipped rubrics as flagged halts in supporting_coll.
             for r in skipped_rubrics:
