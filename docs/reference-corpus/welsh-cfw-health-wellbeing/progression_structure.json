@@ -1,0 +1,24 @@
+{
+  "band_labels": [
+    "Progression Step 1",
+    "Progression Step 2",
+    "Progression Step 3",
+    "Progression Step 4",
+    "Progression Step 5"
+  ],
+  "band_count": 5,
+  "age_range_hint": "ages 3-16 (Welsh Government Curriculum for Wales overview, statutory under the Curriculum and Assessment (Wales) Act 2021)",
+  "source_type": "welsh_cfw_aole",
+  "detection_confidence": "high",
+  "detection_rationale": "URL host hwb.gov.wales with /curriculum-for-wales path — Welsh Curriculum for Wales uses Progression Steps 1-5 across ages 3-16 per Welsh Government statutory specification.",
+  "band_self_reflection_prompts": {
+    "Progression Step 1": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?",
+    "Progression Step 2": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?",
+    "Progression Step 3": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?",
+    "Progression Step 4": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?",
+    "Progression Step 5": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+  },
+  "source_reference": "https://hwb.gov.wales/curriculum-for-wales/health-and-well-being/statements-of-what-matters/",
+  "source_slug": "wales-cfw-health-wellbeing-sow",
+  "detection_module_version": "0.1.0"
+}

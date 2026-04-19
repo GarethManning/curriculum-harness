@@ -1,0 +1,145 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "wales-cfw-health-wellbeing-sow",
+  "halted_by": null,
+  "summary": {
+    "source_domain": "dispositional",
+    "inventory_blocks_total": 26,
+    "inventory_non_heading_blocks": 24,
+    "kud_items_total": 33,
+    "halted_blocks_total": 6,
+    "halted_severe": 4,
+    "halted_unreliable": 2,
+    "knowledge_type_distribution": {
+      "Type 1": 21,
+      "Type 3": 7,
+      "Type 2": 5
+    },
+    "kud_column_distribution": {
+      "understand": 18,
+      "do_disposition": 7,
+      "know": 1,
+      "do_skill": 7
+    },
+    "stability_distribution": {
+      "classification_unstable": 17,
+      "stable": 16
+    },
+    "underspecification_distribution": {
+      "moderate": 20,
+      "null": 7,
+      "mild": 6
+    }
+  },
+  "gate_results": [
+    {
+      "name": "source_coverage",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "all non-severe, non-unreliable inventory blocks produced ≥1 KUD item",
+      "details": {
+        "required_blocks": [
+          "blk_0007",
+          "blk_0009",
+          "blk_0010",
+          "blk_0011",
+          "blk_0012",
+          "blk_0014",
+          "blk_0015",
+          "blk_0016",
+          "blk_0017",
+          "blk_0018",
+          "blk_0019",
+          "blk_0020",
+          "blk_0021",
+          "blk_0022",
+          "blk_0023",
+          "blk_0024",
+          "blk_0025",
+          "blk_0026"
+        ],
+        "covered_blocks": [
+          "blk_0007",
+          "blk_0009",
+          "blk_0010",
+          "blk_0011",
+          "blk_0012",
+          "blk_0014",
+          "blk_0015",
+          "blk_0016",
+          "blk_0017",
+          "blk_0018",
+          "blk_0019",
+          "blk_0020",
+          "blk_0021",
+          "blk_0022",
+          "blk_0023",
+          "blk_0024",
+          "blk_0025",
+          "blk_0026"
+        ],
+        "missing_blocks": [],
+        "severely_halted_blocks": [
+          "blk_0002",
+          "blk_0003",
+          "blk_0005",
+          "blk_0006"
+        ],
+        "unreliable_halted_blocks": [
+          "blk_0008",
+          "blk_0013"
+        ]
+      }
+    },
+    {
+      "name": "traceability",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item has a valid source_block_id",
+      "details": {
+        "total_items": 33,
+        "untraceable_count": 0,
+        "untraceable_items": []
+      }
+    },
+    {
+      "name": "artefact_count_ratio",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "KUD items / expected-yield blocks = 33/20 = 1.650 (denominator excludes 4 severely-underspecified blocks) within dispositional-domain target [0.8, 2.2] (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional source may re-trigger review)",
+      "details": {
+        "kud_item_count": 33,
+        "non_heading_block_count": 24,
+        "severely_halted_block_count": 4,
+        "expected_yield_block_count": 20,
+        "ratio": 1.65,
+        "source_domain": "dispositional",
+        "target_min": 0.8,
+        "target_max": 2.2,
+        "dispositional_provisional": true
+      }
+    },
+    {
+      "name": "type3_distribution",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "Type 3 items = 7/33 = 21.2% (≥20% expected for dispositional domain)",
+      "details": {
+        "type3_count": 7,
+        "total_items": 33,
+        "pct": 0.2121,
+        "expected_min_pct": 0.2,
+        "flag": null
+      }
+    },
+    {
+      "name": "no_compound_unsplit",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item carries a single knowledge type with consistent column and route",
+      "details": {
+        "offenders": []
+      }
+    }
+  ]
+}
