@@ -1,0 +1,926 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "components": [
+    {
+      "lt_id": "cluster_02_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_02_lt_02",
+        "stages": [
+          "Show students a simple proportional relationship and ask them to name all the different ways they could show it.",
+          "Guide students to sort their ideas into categories: tables, graphs, equations, and other forms.",
+          "Work together to describe what makes each representation correct or incomplete.",
+          "Build level descriptors by asking students what they notice about accuracy and independence at each level.",
+          "Collect student-generated anchor examples that match each level."
+        ],
+        "student_prompts": [
+          "If you had to show that the cost of apples is proportional to the number of apples, what are all the ways you could represent that?",
+          "Which of these representations are easiest to understand, and which are hardest? Why?",
+          "What would it look like if someone represented a proportional relationship but made a mistake in one form?",
+          "How would you know if two different representations are actually showing the same proportional relationship?"
+        ],
+        "anchor_examples_guidance": "Choose examples that show a single proportional relationship represented in different forms, with some examples containing deliberate errors or partial work to illustrate the emerging and developing levels. Select examples where students can clearly see the difference between one correct representation and multiple accurate representations."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_02_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to represent a proportional relationship in any form.",
+            "word_count": 13
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can represent a proportional relationship in one form with help, but my representation may have errors or be incomplete.",
+            "word_count": 20
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can independently represent a proportional relationship in two different forms, but the forms may not match each other perfectly.",
+            "word_count": 20
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can independently represent a proportional relationship accurately using tables, graphs, equations, and other forms that all match.",
+            "word_count": 18
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can move fluidly between multiple representations and explain why different forms show the same proportional relationship.",
+            "word_count": 17
+          }
+        ],
+        "self_check_prompts": [
+          "Can I show this proportional relationship in at least two different ways, and do they tell the same story?",
+          "Did I check that my table values, graph points, and equation all match each other?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_02_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to choose one representation form and model how to start filling it in together.",
+            "Provide a partially completed representation and ask the student to finish it with your support."
+          ],
+          "emerging": [
+            "Ask the student to create a second representation of the same relationship and compare the two.",
+            "Point out one specific error in their representation and ask them to fix it independently."
+          ],
+          "developing": [
+            "Ask the student to check if a value from one representation appears correctly in the other representation.",
+            "Suggest they create a third representation and verify it matches the first two."
+          ],
+          "competent": [
+            "Ask the student to explain why switching from one representation to another doesn't change the proportional relationship.",
+            "Challenge them to represent the same relationship in a form they haven't used before and justify its accuracy."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_03_lt_01",
+        "stages": [
+          "Show students a simple proportional relationship in one representation and ask them to name what stays the same.",
+          "Guide students to find that same 'staying the same' number in a second representation of the same relationship.",
+          "Have students predict where the constant appears in a third representation and test their prediction.",
+          "Collect student language about consistency and accuracy, then co-author level descriptors together.",
+          "Review anchor examples as a class and agree on which level each one matches."
+        ],
+        "student_prompts": [
+          "What number or ratio stays the same no matter how we look at this relationship?",
+          "Can you find that same number in this table, graph, equation, or diagram?",
+          "If we describe this relationship in words, where do you hear or see the constant?",
+          "What does it mean to identify the constant accurately versus making a mistake?",
+          "How do you know you've found the constant in every form of this relationship?"
+        ],
+        "anchor_examples_guidance": "Choose anchor examples that show the constant of proportionality in at least two different representations so students can see consistency across forms. Include one example with a common error so students can distinguish accurate identification from partial or incorrect work."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_03_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to identify the constant of proportionality.",
+            "word_count": 11
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify the constant of proportionality in one representation with help, but I may make mistakes or be unsure.",
+            "word_count": 20
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify the constant of proportionality on my own in tables and graphs, but I struggle when it appears in equations, diagrams, or words.",
+            "word_count": 25
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify the constant of proportionality accurately in tables, graphs, equations, diagrams, and verbal descriptions.",
+            "word_count": 16
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can identify the constant of proportionality and explain why it stays the same across all different representations of the same relationship.",
+            "word_count": 22
+          }
+        ],
+        "self_check_prompts": [
+          "Have I found the constant in more than one representation of this relationship?",
+          "Does the constant I found make sense when I check it in a different form?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_03_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to point to two numbers in a table or graph and describe what they notice about their relationship.",
+            "Provide a simple proportional relationship in one representation and ask the student to find the constant with you step by step."
+          ],
+          "emerging": [
+            "Have the student find the constant in the representation where they succeeded, then guide them to locate it in a second representation.",
+            "Ask the student to check their constant by testing it with another pair of values in the same representation."
+          ],
+          "developing": [
+            "Show the student how the constant appears in an equation or diagram by connecting it to a table or graph they already understand.",
+            "Give the student a verbal description and ask them to translate it into a table or graph first, then identify the constant."
+          ],
+          "competent": [
+            "Ask the student to explain why the constant must be the same across all representations of the same proportional relationship.",
+            "Challenge the student to find or create a relationship where the constant appears in an unusual or less obvious form."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_04_lt_01",
+        "stages": [
+          "Show students a real-world multistep percent problem and ask them to identify what they notice and what they need to find.",
+          "Guide students to sort example problems by difficulty and number of steps, then discuss what makes some problems harder than others.",
+          "Have students generate their own descriptions of what each level looks like by working through sample solutions together.",
+          "Ask students to identify which level matches each worked example and explain their reasoning."
+        ],
+        "student_prompts": [
+          "What information do you have and what are you trying to find in this problem?",
+          "How many steps does it take to solve this problem, and what operation comes first?",
+          "What does it mean to solve a problem 'independently' versus 'with support'?",
+          "Which problems feel familiar to you, and which ones are new or tricky?"
+        ],
+        "anchor_examples_guidance": "Choose anchor examples that span real contexts students recognize (store discounts, restaurant tips, bank interest) and vary in the number of steps and familiarity; include one straightforward single-step problem and one that combines two or more percent operations."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_04_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to solve a multistep ratio or percent problem.",
+            "word_count": 13
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify one operation or apply a single percent procedure, but I need help and may make mistakes.",
+            "word_count": 19
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can solve straightforward problems on my own, but I struggle when there are multiple steps or unfamiliar percent situations.",
+            "word_count": 20
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can solve multistep ratio and percent problems on my own across different real-world contexts like interest, tax, markup, markdown, gratuity, commission, fee, and percent change.",
+            "word_count": 26
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can solve complex multistep problems that combine multiple percent or ratio operations and explain why my strategy works.",
+            "word_count": 19
+          }
+        ],
+        "self_check_prompts": [
+          "Did I identify all the steps needed to solve this problem, and did I complete each step correctly?",
+          "Can I explain what each operation does and why I used it in this order?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_04_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to read the problem aloud and underline what they are trying to find.",
+            "Guide them to identify the first operation they need to perform and work through it together."
+          ],
+          "emerging": [
+            "Have the student solve the first step independently, then check it before moving to the second step.",
+            "Ask them to explain what percent or ratio operation they used and why it makes sense in this context."
+          ],
+          "developing": [
+            "Present a problem with one additional step or a less familiar context and ask them to plan all steps before solving.",
+            "Encourage them to connect the new problem to a familiar one they have solved successfully."
+          ],
+          "competent": [
+            "Pose a problem that combines two different percent operations and ask them to justify the order of their steps.",
+            "Invite them to create their own multistep problem and solve it, then explain their reasoning to a peer."
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_04_lt_02",
+        "stages": [
+          "Show students a real-world scenario involving proportional relationships and ask them to identify what stays constant and what changes.",
+          "Guide students to distinguish between incomplete attempts and attempts that show all steps and reasoning.",
+          "Have students sort work samples into levels based on accuracy, completeness, and justification of proportional reasoning.",
+          "Collaboratively refine level descriptors so students own the language of what each level means."
+        ],
+        "student_prompts": [
+          "What quantities in this problem are connected proportionally, and how do you know?",
+          "What would it look like if someone solved this problem but skipped a step or didn't explain their thinking?",
+          "How is solving a proportional problem with one step different from solving one that needs multiple steps?",
+          "When might you need to use more than one way to represent or solve a proportional relationship?"
+        ],
+        "anchor_examples_guidance": "Choose work samples that show a clear progression from no attempt, to identifying a relationship but making errors, to solving accurately with one missing step, to solving multistep problems with full justification, and finally to applying the concept in an unfamiliar context or combining multiple strategies. Ensure samples reflect real-world scenarios relevant to students' lives."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_04_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to use proportional relationships to solve a problem.",
+            "word_count": 13
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify a proportional relationship with help, but I apply it with mistakes or leave out parts of the solution.",
+            "word_count": 21
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can apply proportional relationships to solve a problem on my own, but I may miss a step or not fully explain my reasoning.",
+            "word_count": 24
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can apply proportional relationships to solve multistep real-world problems correctly and explain why my solution makes sense.",
+            "word_count": 18
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can apply proportional relationships to new situations and use multiple ways to solve or represent the problem.",
+            "word_count": 18
+          }
+        ],
+        "self_check_prompts": [
+          "Did I identify all the quantities that are proportional and show every step of my solution?",
+          "Can I explain in words or with a diagram why my answer is correct and how the proportional relationship helped me?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_04_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to point out which two quantities in the problem might be connected and whether one always changes the same way when the other changes.",
+            "Provide a partially worked example and ask the student to complete the next step using the proportional relationship."
+          ],
+          "emerging": [
+            "Have the student check their work by testing their proportional relationship with a second pair of values to see if it holds.",
+            "Guide the student to write out each step and label what they are calculating at each stage."
+          ],
+          "developing": [
+            "Ask the student to reread the problem and identify any information they have not yet used in their solution.",
+            "Prompt the student to write a sentence explaining what the proportional relationship tells them and how it connects to their answer."
+          ],
+          "competent": [
+            "Present a similar problem with additional information or constraints and ask the student to decide which proportional relationships are relevant.",
+            "Invite the student to represent the same proportional relationship using a different method and compare the two approaches."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_03_lt_02",
+      "lt_name": "Using the Constant in Proportional Equations",
+      "halt_reason": "supporting_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+    }
+  ]
+}

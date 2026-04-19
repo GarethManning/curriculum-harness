@@ -42,11 +42,23 @@ The rubric describes the SAME capability (the LT) at five observable-evidence le
 
 THE FIVE LEVELS — IN ORDER — EACH HARD WORD LIMIT
 
-- no_evidence (≤10 words): No observable attempt on the LT's demand, or work that does not engage with the capability.
-- emerging (≤15 words): Partial, heavily-supported, or inaccurate attempt; key features of the capability are not yet visible.
-- developing (≤20 words): Unprompted attempt that demonstrates the capability with an identifiable gap (e.g. inconsistent, requires prompting, holds only in familiar contexts).
-- competent (≤25 words): The target performance described by the LT. The learner demonstrates the capability as the LT defines it, independently, in context.
-- extending (≤20 words): Demonstration that goes beyond the LT's demand — more sophisticated, more independent, transferred to new contexts, or synthesised with related capabilities.
+- no_evidence (STRICTLY ≤10 words): No observable attempt on the LT's demand.
+- emerging (STRICTLY ≤15 words): Partial, heavily-supported, or inaccurate attempt.
+- developing (STRICTLY ≤20 words): Unprompted attempt with an identifiable gap.
+- competent (STRICTLY ≤25 words): The target performance described by the LT, demonstrated independently.
+- extending (STRICTLY ≤20 words): Demonstration that goes beyond the LT's demand.
+
+WORD LIMITS ARE HARD — COUNT YOUR WORDS
+
+Count the words in each descriptor before emitting it. If a descriptor is over its limit by even one word, rewrite it shorter. Cut examples, qualifiers, and restatements. A 10-word no_evidence is achievable: "No attempt on the task's demand." (7 words). An 18-word emerging is NOT acceptable — revise it to ≤15. An over-limit run will be rejected and wasted.
+
+TERSE EXEMPLARS — for calibration only, do not copy verbatim
+
+- no_evidence (7 words): "No attempt on the task's demand."
+- emerging (13 words): "With heavy support, names some features but produces inaccurate or partial work."
+- developing (17 words): "Independently demonstrates the capability in familiar contexts but stops short when prompting or novelty is required."
+- competent (18 words): "Independently demonstrates the capability accurately and consistently in the contexts the LT defines."
+- extending (16 words): "Transfers the capability to unfamiliar contexts or integrates it with related capabilities fluently."
 
 COMPETENT IS SUCCESS — LOAD-BEARING RULE
 
@@ -96,11 +108,15 @@ Respond with ONE JSON object (no prose, no fences):
 CONSTRAINTS
 
 - The "levels" object MUST contain all five keys: no_evidence, emerging, developing, competent, extending.
-- Descriptors obey their respective word limits.
+- Descriptors obey their respective word limits STRICTLY — count before emitting.
 - "competent" is written as success (no hedging language).
 - "prerequisite_edges" is a (possibly empty) list.
 - "kind" is exactly one of the two literals shown.
-- "confidence" is exactly one of "high", "medium", "low"."""
+- "confidence" is exactly one of "high", "medium", "low".
+
+SELF-CHECK BEFORE EMITTING
+
+Silently count the words in each descriptor. If any count exceeds its limit, rewrite that descriptor shorter BEFORE emitting the JSON object. Cutting adjectives, qualifiers ("heavily", "extremely", "fluently"), and restatements is the fastest path to compliance."""
 
 
 def build_system_prompt(progression: ProgressionStructure) -> str:

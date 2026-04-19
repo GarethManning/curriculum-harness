@@ -1,0 +1,868 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "rubrics": [
+    {
+      "lt_id": "cluster_02_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to represent proportional relationships.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, represents proportional relationships in one form with errors or incompleteness.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently represents proportional relationships in two forms but inconsistencies appear across representations.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently represents proportional relationships accurately using tables, graphs, equations, and other forms.",
+          "word_count": 12
+        },
+        {
+          "name": "extending",
+          "descriptor": "Fluidly translates between multiple representations and justifies equivalence across different forms.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot represent a proportional relationship without first identifying whether one exists."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Identifying the constant of proportionality is essential to writing equations and constructing accurate representations."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding unit rate concepts supports interpretation of proportional relationships in tables and equations."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 12
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 12
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'describe'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'none'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'none'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently at the LT's level of demand, using 'accurately' and 'represents' without hedging language or incompleteness markers.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify the constant of proportionality.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies the constant in one representation but inconsistently or with errors.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies the constant in familiar representations but struggles across multiple forms.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Identifies the constant of proportionality accurately across tables, graphs, equations, diagrams, and verbal descriptions.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Identifies the constant and explains how it remains invariant across different representations of the same relationship.",
+          "word_count": 16
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Computing unit rates is the foundational skill; the constant of proportionality is the unit rate in a proportional relationship."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Recognizing proportional relationships must precede identifying the constant; the constant only exists in proportional contexts."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Representing proportional relationships in multiple forms supports identifying the constant across those same forms."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately across all required contexts, standing alone as evidence the LT is met without hedging or incompleteness language.",
+      "propositional_lt_rubric_thin_flag": true
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to use constant of proportionality.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, uses constant to write or interpret one equation or ordered pair incompletely.",
+          "word_count": 14
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently writes equations or interprets ordered pairs using constant but inconsistently applies it across contexts.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently uses constant of proportionality to write equations and interpret ordered pairs in proportional relationships accurately.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Uses constant to write and interpret equations and ordered pairs, then applies reasoning to new or complex proportional situations.",
+          "word_count": 19
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot use the constant in equations without first identifying what it is across representations."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must recognize proportional relationships exist before using their constant in equations."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Unit rate computation is the foundation for understanding and using the constant of proportionality."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'analyse'), ('developing', 'within_limit', 'analyse'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'analyse'), ('developing', 'within_limit', 'analyse'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares independent capability to use the constant of proportionality to write equations and interpret ordered pairs accurately, which directly matches the LT's level of demand and stands alone as success.",
+      "propositional_lt_rubric_thin_flag": true
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt on the multistep ratio or percent problem.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies one operation or applies a single percent procedure incompletely or inaccurately.",
+          "word_count": 14
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently solves straightforward single-context problems but struggles with multiple steps or unfamiliar percent scenarios.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently solves multistep ratio and percent problems across contexts including interest, tax, markup, markdown, gratuity, commission, fee, and percent change.",
+          "word_count": 20
+        },
+        {
+          "name": "extending",
+          "descriptor": "Solves complex multistep problems combining multiple percent or ratio operations and justifies solution strategies.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Computing unit rates is foundational to understanding ratios and solving ratio-based problems."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Recognizing proportional relationships is essential to applying proportional reasoning in multistep real-world problems."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Using the constant of proportionality in equations supports solving proportional relationship problems, though not all percent problems require it."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "none"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 20
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "none"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 20
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "none"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 21
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'none'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'none'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares independent capability to solve multistep ratio and percent problems across the specified contexts, matching the LT's level of demand without hedging or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to apply proportional relationships to a problem.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies a proportional relationship but applies it incompletely or with errors.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Applies proportional relationships to solve a problem independently but misses a step or reasoning gap.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Applies proportional relationships to solve multistep real-world problems accurately and justifies reasoning.",
+          "word_count": 13
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies proportional relationships to novel contexts and integrates multiple solution strategies or representations.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Computing unit rates is foundational; proportional problem-solving relies on fluent unit rate calculation."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot apply a proportional relationship without first recognizing whether one exists in the problem."
+        },
+        {
+          "from_lt_id": "cluster_03_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Using the constant of proportionality in equations is essential to solving multistep proportional problems."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Multistep ratio and percent problems share solution structure; mastering them supports broader proportional reasoning."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "none"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'none'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'none'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated ('Applies...accurately') and can stand alone as evidence the LT is met, with no hedging language or framing of Competent as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "lt_name": "Computing Unit Rates from Ratios",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')), (('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped'))]"
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "lt_name": "Understanding Unit Rate Concepts",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "only 1/3 runs produced parseable output"
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "lt_name": "Recognizing Proportional Relationships",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'analyse'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'none'), ('competent_scope', 'scoped')), (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'describe'), ('developing', 'within_limit', 'analyse'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'scoped')), (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'analyse'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'scoped'))]"
+    }
+  ]
+}
