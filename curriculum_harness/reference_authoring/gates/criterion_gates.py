@@ -437,6 +437,11 @@ def run_criterion_gates(
     collection has ``quality_gate_passed`` and ``quality_gate_failures``
     set, and ``propositional_lt_rubric_thin_flag`` set per the
     informational gate.
+
+    Rubrics that already carry ``"rubric_generation_failed"`` in their
+    ``quality_gate_failures`` list are generation-halt placeholders — no
+    semantic gates are meaningful on empty descriptors, so they are
+    counted but skipped.
     """
     all_gates: list[GateResult] = []
     halted_any = False
@@ -445,6 +450,11 @@ def run_criterion_gates(
     stability_counter: Counter[str] = Counter()
 
     for rubric in collection.rubrics:
+        # Skip semantic gates for generation-halt placeholders.
+        if "rubric_generation_failed" in (rubric.quality_gate_failures or []):
+            stability_counter[rubric.stability_flag] += 1
+            halted_any = True
+            continue
         gates, passed, failures = _run_rubric_gates(rubric)
         all_gates.extend(gates)
         rubric.quality_gate_passed = passed

@@ -87,10 +87,654 @@ from curriculum_harness.reference_authoring.types import (
     HaltedBlock,
     KUDItem,
     ReferenceKUD,
+    Rubric,
     RubricCollection,
     SourceInventory,
     dump_json,
 )
+
+
+# ---------------------------------------------------------------------------
+# Flag explanation data and confidence tier logic (Session 4c-1).
+# ---------------------------------------------------------------------------
+
+# Per-gate explanation layers. Keys match gate name prefixes (before ":lt_id").
+# Each entry carries:
+#   technical  — what the gate was actually checking
+#   pedagogical — why a teacher reviewing the output might care
+#   horizontal_note — (optional) conditional prompt for horizontal-domain sources
+_GATE_EXPLANATIONS: dict[str, dict[str, str]] = {
+    "classification_unreliable": {
+        "technical": (
+            "The KUD classifier ran 3 times on this source block; fewer than 2/3 "
+            "runs agreed on the knowledge type (Type 1 / 2 / 3). The block was "
+            "halted rather than forced into an uncertain classification."
+        ),
+        "pedagogical": (
+            "If the classifier can't agree on whether this is declarative knowledge, "
+            "a skill, or a disposition, the LT derived from it may not accurately "
+            "reflect the source intent. A teacher should check the original source "
+            "block and decide the classification manually before using this LT."
+        ),
+        "horizontal_note": (
+            "In horizontal domains, a single source block may legitimately describe "
+            "both a cognitive skill (Type 2) and a dispositional orientation (Type 3). "
+            "The classification disagreement may reflect genuine domain complexity "
+            "rather than an error."
+        ),
+    },
+    "source_coverage": {
+        "technical": (
+            "The source_coverage gate checks that every non-heading inventory block "
+            "that was not halted for severe underspecification produced at least one "
+            "KUD item. A block that produced no items was silently dropped."
+        ),
+        "pedagogical": (
+            "Source content that was skipped without explanation means the KUD may "
+            "not fully represent the curriculum. A teacher relying on this KUD to "
+            "plan learning targets may be missing competencies from those blocks."
+        ),
+    },
+    "traceability": {
+        "technical": (
+            "The traceability gate checks that every KUD item's source_block_id "
+            "refers to a real inventory block. An untraceable item cannot be verified "
+            "against the original source."
+        ),
+        "pedagogical": (
+            "A KUD item that cannot be traced to a source block may have been "
+            "hallucinated or injected from model priors. Teachers should not use "
+            "untraceable items as the basis for learning targets without source verification."
+        ),
+    },
+    "no_compound_unsplit": {
+        "technical": (
+            "The no_compound_unsplit gate checks that each KUD item carries a single "
+            "knowledge type (Type 1, 2, or 3) with a consistent kud_column and "
+            "assessment_route. Inconsistent triples indicate a compound item that "
+            "was not split during classification."
+        ),
+        "pedagogical": (
+            "A KUD item that mixes knowledge types will produce an LT that is "
+            "genuinely ambiguous about what kind of learning it targets. This makes "
+            "assessment route selection (rubric vs. observation vs. reasoning) unreliable."
+        ),
+    },
+    "cluster_unstable": {
+        "technical": (
+            "The cluster_unstable flag means the clustering model's output varied "
+            "across runs — cluster count or member assignment differed across 3 "
+            "self-consistency runs. The canonical cluster set was retained using "
+            "the majority-vote result, but alternative groupings exist."
+        ),
+        "pedagogical": (
+            "Cluster instability means the competency groupings may not be the only "
+            "reasonable arrangement. A teacher reviewing these LTs should check "
+            "whether each LT genuinely represents one distinct capability, or whether "
+            "some LTs could reasonably be grouped differently."
+        ),
+        "horizontal_note": (
+            "Horizontal-domain knowledge tends to form denser semantic networks where "
+            "competency boundaries are legitimately less distinct than in hierarchical "
+            "domains. This flag may reflect genuine domain complexity rather than "
+            "a clustering error."
+        ),
+    },
+    "cluster_unreliable": {
+        "technical": (
+            "The cluster_unreliable flag means fewer than 2/3 clustering runs agreed "
+            "on a stable cluster structure. No reliable canonical cluster set could "
+            "be extracted; the pipeline continues with whatever clusters were produced "
+            "in the first run."
+        ),
+        "pedagogical": (
+            "Without stable clusters, the LTs may not accurately group related "
+            "competencies. The competency structure visible in these LTs may not "
+            "reflect the source's actual organisation. Human review of the source "
+            "material and the resulting LT set is strongly recommended."
+        ),
+        "horizontal_note": (
+            "In horizontal domains, the entire source may form one tightly-connected "
+            "semantic network. If clusters are genuinely unstable, consider running "
+            "the pipeline on a smaller subsection of the source."
+        ),
+    },
+    "count_differs": {
+        "technical": (
+            "The count_differs diagnostic means the number of clusters varied across "
+            "runs. This is a sub-type of cluster instability — the model did not "
+            "consistently choose the same number of competency groups."
+        ),
+        "pedagogical": (
+            "The number of LTs generated may not be the only defensible count. "
+            "A smaller number of broader LTs or a larger number of narrower LTs "
+            "may both be reasonable representations of the source curriculum."
+        ),
+        "horizontal_note": (
+            "Horizontal domains often support multiple valid granularities of "
+            "competency description. The count variation may reflect legitimate "
+            "domain flexibility rather than an error."
+        ),
+    },
+    "lt_set_unreliable": {
+        "technical": (
+            "The LT generator ran 3 times on this cluster; fewer than 2/3 runs "
+            "produced parseable LT output with a consistent count and knowledge-type "
+            "distribution. No LTs were produced for this cluster."
+        ),
+        "pedagogical": (
+            "The source content in this competency cluster did not produce stable "
+            "learning targets. The content may be too loosely specified, or the "
+            "cluster may contain content from multiple distinct competencies. "
+            "A teacher should review the cluster's KUD items and consider manual LT authoring."
+        ),
+        "horizontal_note": (
+            "In horizontal domains, large clusters containing conceptually dense "
+            "content are more prone to LT generation instability. This may reflect "
+            "genuine conceptual depth rather than a pipeline error."
+        ),
+    },
+    "lt_set_unstable": {
+        "technical": (
+            "The LT generator reached 2/3 agreement on a majority signature, but "
+            "not 3/3 stability. The LT set was retained using the majority result."
+        ),
+        "pedagogical": (
+            "The learning targets in this set are the most consistent description "
+            "produced, but alternative valid descriptions exist. A teacher reviewing "
+            "these LTs should be aware that the boundaries between LTs may have "
+            "shifted in different runs."
+        ),
+        "horizontal_note": (
+            "LT instability is more common in horizontal domains where conceptual "
+            "overlap between adjacent LTs is normal. The instability may reflect "
+            "legitimate conceptual continuity rather than a generation error."
+        ),
+    },
+    "band_statements_unreliable": {
+        "technical": (
+            "The band statement generator ran 3 times; fewer than 2/3 runs produced "
+            "parseable output with a consistent signature. No band statements were "
+            "produced for this LT."
+        ),
+        "pedagogical": (
+            "Without band statements, teachers cannot use this LT to assess learners "
+            "across the source's progression bands. The content may need manual "
+            "authoring of band-level descriptors."
+        ),
+    },
+    "band_statements_unstable": {
+        "technical": (
+            "Band statement generation reached 2/3 agreement but not 3/3 stability. "
+            "The majority-vote statements were retained."
+        ),
+        "pedagogical": (
+            "The band-level statements may be rephrased differently in alternative "
+            "valid runs. The substance is stable but specific wording should be "
+            "reviewed by a teacher before use."
+        ),
+    },
+    "observation_indicators_unreliable": {
+        "technical": (
+            "The observation indicator generator ran 3 times; fewer than 2/3 runs "
+            "produced parseable output with a consistent signature. No indicators "
+            "were produced for this Type 3 LT."
+        ),
+        "pedagogical": (
+            "Without observation indicators, this disposition cannot be assessed "
+            "using the multi-informant observation route the LT requires. The "
+            "source content may need review before indicators can be authored."
+        ),
+        "horizontal_note": (
+            "Type 3 dispositional LTs in horizontal domains often describe rich, "
+            "multi-faceted orientations that are difficult to reduce to a consistent "
+            "indicator set. This may reflect genuine construct complexity."
+        ),
+    },
+    "rubric_generation_failed": {
+        "technical": (
+            "The rubric generator ran 3 times; fewer than 2/3 runs produced "
+            "parseable output with a consistent level-signature. No rubric was "
+            "produced for this LT. This entry is a placeholder flag — no descriptor "
+            "text is available."
+        ),
+        "pedagogical": (
+            "Without a rubric, this LT cannot be used for criterion-referenced "
+            "assessment. The LT exists in the output and represents a real "
+            "competency from the source; a teacher can author a rubric manually "
+            "using the LT name and definition as the starting point."
+        ),
+        "horizontal_note": (
+            "Rubric instability is more common in horizontal-domain sources where "
+            "political, social, or contested vocabulary is used. The generator may "
+            "be producing legitimately different-but-valid rubric formulations "
+            "across runs rather than disagreeing about the construct."
+        ),
+    },
+    "single_construct": {
+        "technical": (
+            "The single_construct gate checks that adjacent applied levels (Emerging, "
+            "Developing, Competent, Extending) share at least one topic-lemma. No "
+            "topic-lemma overlap between adjacent levels is a signal that the rubric "
+            "may be describing two different things across the progression."
+        ),
+        "pedagogical": (
+            "A rubric where adjacent levels use entirely different vocabulary may "
+            "be assessing different capabilities at different levels, rather than "
+            "the same capability at different depths. A teacher reviewing this rubric "
+            "should check whether the construct is genuinely the same across all levels."
+        ),
+        "horizontal_note": (
+            "In horizontal domains, legitimate conceptual deepening often introduces "
+            "new vocabulary as the learner moves to higher levels. A single_construct "
+            "flag may reflect authentic progression rather than construct drift. "
+            "A teacher should judge whether the vocabulary shift represents deepening "
+            "the same construct or introducing a different one."
+        ),
+    },
+    "observable_verb": {
+        "technical": (
+            "The observable_verb gate checks that each applied level descriptor "
+            "contains at least one verb from the observable-action-verb list "
+            "(identify, describe, compare, explain, analyse, evaluate, apply, etc.). "
+            "No observable verb means the level cannot be reliably assessed."
+        ),
+        "pedagogical": (
+            "A rubric level with no observable action verb describes a state of "
+            "being rather than a demonstrable performance. Teachers need observable "
+            "verbs to assess whether a learner has met each level — without them, "
+            "the assessment criteria become subjective."
+        ),
+        "horizontal_note": (
+            "Horizontal-domain content sometimes uses relational or orientational "
+            "language rather than action verbs. A flag here may indicate that the "
+            "rubric is using legitimately different (but observable) language that "
+            "the gate's verb list does not include."
+        ),
+    },
+    "competent_framing_judge": {
+        "technical": (
+            "An LLM-as-judge was asked to verify that the Competent descriptor "
+            "reads as a success statement (the learner can do X) rather than "
+            "an 'acceptable-but-deficient' statement (the learner almost does X "
+            "but not quite). The judge returned a fail verdict."
+        ),
+        "pedagogical": (
+            "Competent must always read as success, not as 'barely adequate'. "
+            "If Competent sounds like 'the learner struggles but manages' rather "
+            "than 'the learner can do this independently', the rubric sends a "
+            "deficit message to learners and misrepresents what the grade means."
+        ),
+    },
+    "competent_framing_regex": {
+        "technical": (
+            "The competent_framing_regex gate checks the Competent descriptor for "
+            "deficit hedge-phrases (e.g. 'with limited', 'not yet', 'struggles to', "
+            "'approaching', 'but fails'). One or more such phrases were found."
+        ),
+        "pedagogical": (
+            "Deficit language in the Competent descriptor sends learners the wrong "
+            "message: that 'meeting expectations' means being almost-but-not-quite "
+            "adequate. Competent should describe what learners CAN do, not what "
+            "they cannot."
+        ),
+    },
+    "level_progression": {
+        "technical": (
+            "The level_progression gate checks that Competent does not borrow "
+            "hedge-phrasing that belongs to Developing, and that Developing "
+            "contains at least one qualifier or gap-marker that distinguishes it "
+            "from Competent. A violation means adjacent levels are not clearly "
+            "differentiated."
+        ),
+        "pedagogical": (
+            "If Developing and Competent use the same kind of language, teachers "
+            "and learners cannot tell them apart. Clear level differentiation "
+            "is essential for the rubric to function as an assessment tool."
+        ),
+    },
+    "word_limit": {
+        "technical": (
+            "The word_limit gate checks that each level descriptor falls within "
+            "its asymmetric word limit (Competent ≤25 words; others smaller). "
+            "A descriptor that is too long or empty fails this gate."
+        ),
+        "pedagogical": (
+            "Long rubric descriptors are harder for teachers and students to "
+            "apply consistently. Concise descriptors reduce assessment variability."
+        ),
+    },
+    "no_inline_examples": {
+        "technical": (
+            "The no_inline_examples gate rejects descriptors that contain "
+            "inline example phrasing ('such as', 'for example', 'e.g.', "
+            "parenthetical content). Examples embedded in descriptors narrow "
+            "the scope of what counts as evidence for that level."
+        ),
+        "pedagogical": (
+            "Inline examples anchor assessment to specific instances, making the "
+            "rubric context-dependent rather than transferable. Rubric descriptors "
+            "should describe the capability, not list specific instances of it."
+        ),
+    },
+    "propositional_thin_flag": {
+        "technical": (
+            "The propositional_thin_flag is informational — it fires when a Type 1 "
+            "LT rubric uses only one verb bucket across all four applied levels. "
+            "Structurally valid, but differentiation may rely only on degree "
+            "(e.g. scope or independence) rather than qualitatively different operations."
+        ),
+        "pedagogical": (
+            "A rubric that uses the same kind of cognitive operation at every level "
+            "may make it hard for teachers to distinguish what Developing vs Competent "
+            "actually look like in practice. A reviewer should check whether the "
+            "levels are genuinely differentiated even if the verb type is the same."
+        ),
+    },
+    "supporting_unreliable": {
+        "technical": (
+            "The supporting components generator (co-construction plan, student rubric, "
+            "feedback guide) ran 3 times; fewer than 2/3 runs produced parseable "
+            "output with a consistent signature."
+        ),
+        "pedagogical": (
+            "The supporting materials help teachers introduce the rubric to students "
+            "and give actionable feedback. Without stable supporting components, "
+            "teachers will need to author these materials manually."
+        ),
+    },
+    "supporting_skipped_gate_fail": {
+        "technical": (
+            "Supporting components were not generated for this LT because the "
+            "rubric failed one or more semantic quality gates. A rubric with "
+            "gate failures is not a stable anchor for co-construction materials."
+        ),
+        "pedagogical": (
+            "The rubric for this LT has known quality issues (listed under the "
+            "rubric's gate failures). Generating student-facing materials from "
+            "a flawed rubric risks amplifying those issues. Resolve the rubric "
+            "quality flags before generating supporting components."
+        ),
+    },
+    "supporting_skipped_gen_fail": {
+        "technical": (
+            "Supporting components were not generated for this LT because the "
+            "rubric generator itself failed (rubric_generation_failed). There is "
+            "no rubric content to base co-construction materials on."
+        ),
+        "pedagogical": (
+            "No rubric was produced for this LT, so supporting materials cannot "
+            "be generated. A teacher would need to author a rubric manually first."
+        ),
+    },
+}
+
+
+def _confidence_tier(failure_count: int, stability_flag: str) -> str:
+    """Compute HIGH / MEDIUM / LOW confidence tier per 4c-1 taxonomy.
+
+    HIGH:   single gate failure; output stable across re-runs.
+    MEDIUM: multiple gate failures on the same artefact OR output unstable.
+    LOW:    multiple gate failures AND output unstable.
+    """
+    unstable_flags = {
+        "rubric_unreliable", "rubric_unstable",
+        "lt_set_unreliable", "lt_set_unstable",
+        "cluster_unreliable", "cluster_unstable",
+        "band_statements_unreliable", "band_statements_unstable",
+        "observation_indicators_unreliable", "observation_indicators_unstable",
+        "supporting_unreliable", "supporting_unstable",
+        "classification_unreliable", "classification_unstable",
+    }
+    is_unstable = stability_flag in unstable_flags
+    if failure_count > 1 and is_unstable:
+        return "LOW"
+    if failure_count > 1 or is_unstable:
+        return "MEDIUM"
+    return "HIGH"
+
+
+def _explain_gate(gate_name: str) -> dict[str, str]:
+    """Return explanation layers for a gate, falling back to generic."""
+    prefix = gate_name.split(":")[0]
+    return _GATE_EXPLANATIONS.get(
+        prefix,
+        {
+            "technical": f"Gate `{prefix}` fired; see diagnostic above.",
+            "pedagogical": "Review the gate diagnostic and the artefact content.",
+        },
+    )
+
+
+def _flag_row(
+    *,
+    artefact: str,
+    stage: str,
+    gate: str,
+    confidence: str,
+    explanation: dict[str, str],
+    source_domain: str,
+) -> list[str]:
+    """Render one flag as a markdown block."""
+    lines = [
+        f"### `{artefact}` — `{gate}` — **{confidence}**",
+        "",
+        f"**Stage:** {stage}",
+        "",
+        f"**Technical:** {explanation['technical']}",
+        "",
+        f"**Pedagogical:** {explanation['pedagogical']}",
+    ]
+    if source_domain == "horizontal" and "horizontal_note" in explanation:
+        lines += [
+            "",
+            f"**Horizontal-domain note:** {explanation['horizontal_note']}",
+        ]
+    lines.append("")
+    return lines
+
+
+def _flags_section_markdown(
+    *,
+    kud: "ReferenceKUD",
+    kud_report: "QualityReport",
+    cluster_set: Any,
+    lt_set: Any,
+    band_coll: Any,
+    indicator_coll: Any,
+    rubric_coll: Any,
+    supporting_coll: Any,
+    source_domain: str,
+) -> str:
+    """Render the ## Flags section for the quality report."""
+    lines: list[str] = ["## Flags", ""]
+    flag_count = 0
+
+    # KUD classification_unreliable blocks
+    for h in kud.halted_blocks:
+        if h.halt_reason == "classification_unreliable":
+            exp = _explain_gate("classification_unreliable")
+            confidence = _confidence_tier(1, "classification_unreliable")
+            lines += _flag_row(
+                artefact=h.block_id,
+                stage="KUD classification",
+                gate="classification_unreliable",
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # KUD halting gate failures (non-artefact_count_ratio)
+    for g in kud_report.gate_results:
+        if not g.passed and g.halting and g.name != "artefact_count_ratio":
+            exp = _explain_gate(g.name)
+            confidence = _confidence_tier(1, "stable")
+            lines += _flag_row(
+                artefact="kud",
+                stage="KUD gates",
+                gate=g.name,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # Clustering flags
+    overall_flag = getattr(cluster_set, "overall_stability_flag", "stable")
+    if overall_flag != "stable":
+        diagnostics = getattr(cluster_set, "overall_stability_diagnostics", [])
+        gate_key = "cluster_unreliable" if overall_flag == "cluster_unreliable" else "cluster_unstable"
+        diag_str = "; ".join(diagnostics) if diagnostics else overall_flag
+        exp = _explain_gate(gate_key)
+        confidence = _confidence_tier(1, overall_flag)
+        lines += _flag_row(
+            artefact="competency_clusters",
+            stage="competency clustering",
+            gate=f"{gate_key} ({diag_str})",
+            confidence=confidence,
+            explanation=exp,
+            source_domain=source_domain,
+        )
+        flag_count += 1
+
+    # Per-cluster instability
+    for c in getattr(cluster_set, "clusters", []):
+        if c.stability_flag != "stable":
+            exp = _explain_gate("cluster_unstable")
+            confidence = _confidence_tier(1, c.stability_flag)
+            lines += _flag_row(
+                artefact=c.cluster_id,
+                stage="competency clustering",
+                gate=c.stability_flag,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # LT generation halts (halted clusters)
+    for h in getattr(lt_set, "halted_clusters", []):
+        exp = _explain_gate("lt_set_unreliable")
+        confidence = _confidence_tier(1, "lt_set_unreliable")
+        lines += _flag_row(
+            artefact=h.get("cluster_id", "(unknown)"),
+            stage="LT generation",
+            gate=f"lt_set_unreliable — {h.get('diagnostic', '')}",
+            confidence=confidence,
+            explanation=exp,
+            source_domain=source_domain,
+        )
+        flag_count += 1
+
+    # Unstable LTs
+    for lt in getattr(lt_set, "lts", []):
+        if lt.stability_flag not in ("stable", ""):
+            exp = _explain_gate(lt.stability_flag)
+            confidence = _confidence_tier(1, lt.stability_flag)
+            lines += _flag_row(
+                artefact=lt.lt_id,
+                stage="LT generation",
+                gate=lt.stability_flag,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # Band statement halts
+    for h in getattr(band_coll, "halted_lts", []):
+        exp = _explain_gate("band_statements_unreliable")
+        confidence = _confidence_tier(1, "band_statements_unreliable")
+        lines += _flag_row(
+            artefact=h.get("lt_id", "(unknown)"),
+            stage="band statements",
+            gate=f"band_statements_unreliable — {h.get('diagnostic', '')}",
+            confidence=confidence,
+            explanation=exp,
+            source_domain=source_domain,
+        )
+        flag_count += 1
+
+    # Unstable band statements
+    for bs in getattr(band_coll, "sets", []):
+        if bs.stability_flag not in ("stable", ""):
+            exp = _explain_gate(bs.stability_flag)
+            confidence = _confidence_tier(1, bs.stability_flag)
+            lines += _flag_row(
+                artefact=bs.lt_id,
+                stage="band statements",
+                gate=bs.stability_flag,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # Observation indicator halts
+    for h in getattr(indicator_coll, "halted_lts", []):
+        exp = _explain_gate("observation_indicators_unreliable")
+        confidence = _confidence_tier(1, "observation_indicators_unreliable")
+        lines += _flag_row(
+            artefact=h.get("lt_id", "(unknown)"),
+            stage="observation indicators",
+            gate=f"observation_indicators_unreliable — {h.get('diagnostic', '')}",
+            confidence=confidence,
+            explanation=exp,
+            source_domain=source_domain,
+        )
+        flag_count += 1
+
+    # Rubric flags
+    if rubric_coll is not None:
+        for r in rubric_coll.rubrics:
+            failures = r.quality_gate_failures or []
+            if not failures and r.stability_flag == "stable":
+                continue
+            # Determine gate label
+            if "rubric_generation_failed" in failures:
+                gate = "rubric_generation_failed"
+                failure_count = 1
+                stability = "rubric_unreliable"
+            else:
+                gate = ", ".join(failures) if failures else "gate_unknown"
+                failure_count = len(failures)
+                stability = r.stability_flag
+            exp = _explain_gate(failures[0] if failures else "rubric_generation_failed")
+            confidence = _confidence_tier(failure_count, stability)
+            lines += _flag_row(
+                artefact=r.lt_id,
+                stage="criterion rubrics",
+                gate=gate,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    # Supporting component halts
+    if supporting_coll is not None:
+        for h in getattr(supporting_coll, "halted_lts", []):
+            gate = h.get("halt_reason", "supporting_unreliable")
+            exp = _explain_gate(gate)
+            confidence = _confidence_tier(1, "supporting_unreliable")
+            lines += _flag_row(
+                artefact=h.get("lt_id", "(unknown)"),
+                stage="supporting components",
+                gate=gate,
+                confidence=confidence,
+                explanation=exp,
+                source_domain=source_domain,
+            )
+            flag_count += 1
+
+    if flag_count == 0:
+        lines.append("No flags raised. All stages passed with stable output.")
+        lines.append("")
+    else:
+        lines.insert(1, f"Total flags: **{flag_count}**\n")
+
+    return "\n".join(lines) + "\n"
 
 
 # Classifier priming for Ontario FOCUS ON historical-thinking concepts.
@@ -590,15 +1234,24 @@ def main(argv: list[str] | None = None) -> int:
     dump_json(report.to_dict(), report_json_path)
 
     if report.halted_by:
-        report_path = os.path.join(args.out, "quality_report.md")
-        with open(report_path, "w", encoding="utf-8") as fh:
-            fh.write(kud_report_md)
+        if report.halted_by == "artefact_count_ratio":
+            # artefact_count_ratio stays a hard halt (4c-3 handles this).
+            report_path = os.path.join(args.out, "quality_report.md")
+            with open(report_path, "w", encoding="utf-8") as fh:
+                fh.write(kud_report_md)
+            print(
+                f"[refauth] HALTED by KUD gate `{report.halted_by}` (hard halt; "
+                "4c-3 will address via strand auto-scoping). "
+                "Output preserved for diagnosis; exiting non-zero.",
+                flush=True,
+            )
+            return 2
+        # All other KUD gate failures become flags — pipeline continues.
         print(
-            f"[refauth] HALTED by KUD gate `{report.halted_by}`. "
-            "Output preserved for diagnosis; exiting non-zero.",
+            f"[refauth] FLAG: KUD gate `{report.halted_by}` failed "
+            "(converted to flag per 4c-1; pipeline continues).",
             flush=True,
         )
-        return 2
 
     if args.skip_lts:
         report_path = os.path.join(args.out, "quality_report.md")
@@ -624,11 +1277,12 @@ def main(argv: list[str] | None = None) -> int:
         flush=True,
     )
     if cluster_set.overall_stability_flag == "cluster_unreliable":
-        print("[refauth] HALTED: clustering unreliable.", flush=True)
-        report_path = os.path.join(args.out, "quality_report.md")
-        with open(report_path, "w", encoding="utf-8") as fh:
-            fh.write(kud_report_md)
-        return 2
+        # Flag and continue — pipeline produces what it can from the first-run clusters.
+        print(
+            "[refauth] FLAG: clustering unreliable (converted to flag per 4c-1; "
+            "pipeline continues with first-run clusters).",
+            flush=True,
+        )
 
     print("[refauth] LT generation (3x self-consistency)", flush=True)
     lt_set = generate_lts_sync(kud, cluster_set, runs=args.runs)
@@ -638,118 +1292,188 @@ def main(argv: list[str] | None = None) -> int:
         flush=True,
     )
     if not lt_set.lts:
-        print("[refauth] HALTED: no LTs produced.", flush=True)
-        report_path = os.path.join(args.out, "quality_report.md")
-        with open(report_path, "w", encoding="utf-8") as fh:
-            fh.write(kud_report_md)
-        return 2
+        # Flag and emit quality report — downstream LT-dependent stages are skipped.
+        print(
+            "[refauth] FLAG: no LTs produced (converted to flag per 4c-1; "
+            "skipping downstream LT-dependent stages).",
+            flush=True,
+        )
 
-    print(
-        f"[refauth] Type 1/2 band statements (3x self-consistency) — "
-        f"bands: {progression.band_labels}",
-        flush=True,
-    )
-    band_coll = generate_band_statements_sync(lt_set, progression, runs=args.runs)
-    dump_json(band_coll.to_dict(), os.path.join(args.out, "band_statements.json"))
-    print(
-        f"[refauth] band sets: {len(band_coll.sets)} (halted: {len(band_coll.halted_lts)})",
-        flush=True,
+    # Guard: if no LTs produced, skip all LT-dependent downstream stages.
+    from curriculum_harness.reference_authoring.types import (
+        BandStatementCollection,
+        ObservationIndicatorCollection,
+        SupportingComponentsCollection,
     )
 
-    print(
-        f"[refauth] Type 3 observation indicators (3x self-consistency) — "
-        f"bands: {progression.band_labels}",
-        flush=True,
-    )
-    indicator_coll = generate_observation_indicators_sync(lt_set, progression, runs=args.runs)
-    dump_json(indicator_coll.to_dict(), os.path.join(args.out, "observation_indicators.json"))
-    print(
-        f"[refauth] indicator sets: {len(indicator_coll.sets)} "
-        f"(halted: {len(indicator_coll.halted_lts)})",
-        flush=True,
-    )
-
+    band_coll = BandStatementCollection(source_slug=kud.source_slug)
+    indicator_coll = ObservationIndicatorCollection(source_slug=kud.source_slug)
     rubric_coll = None
     rubric_report_md = None
     supporting_coll = None
-    if args.skip_criteria:
-        print("[refauth] --skip-criteria set; skipping rubric + supporting stages.", flush=True)
+
+    if lt_set.lts:
+        print(
+            f"[refauth] Type 1/2 band statements (3x self-consistency) — "
+            f"bands: {progression.band_labels}",
+            flush=True,
+        )
+        band_coll = generate_band_statements_sync(lt_set, progression, runs=args.runs)
+        dump_json(band_coll.to_dict(), os.path.join(args.out, "band_statements.json"))
+        print(
+            f"[refauth] band sets: {len(band_coll.sets)} (halted: {len(band_coll.halted_lts)})",
+            flush=True,
+        )
+
+        print(
+            f"[refauth] Type 3 observation indicators (3x self-consistency) — "
+            f"bands: {progression.band_labels}",
+            flush=True,
+        )
+        indicator_coll = generate_observation_indicators_sync(lt_set, progression, runs=args.runs)
+        dump_json(indicator_coll.to_dict(), os.path.join(args.out, "observation_indicators.json"))
+        print(
+            f"[refauth] indicator sets: {len(indicator_coll.sets)} "
+            f"(halted: {len(indicator_coll.halted_lts)})",
+            flush=True,
+        )
+
+        if args.skip_criteria:
+            print("[refauth] --skip-criteria set; skipping rubric + supporting stages.", flush=True)
+        else:
+            type12_count = sum(
+                1 for lt in lt_set.lts if lt.knowledge_type in ("Type 1", "Type 2")
+            )
+            print(
+                f"[refauth] Type 1/2 criterion rubrics (3x self-consistency) — "
+                f"{type12_count} Type 1/2 LTs",
+                flush=True,
+            )
+            rubric_coll = generate_criteria_sync(lt_set, progression, runs=args.runs)
+            print(
+                f"[refauth] rubrics: {len(rubric_coll.rubrics)} "
+                f"(halted: {len(rubric_coll.halted_lts)})",
+                flush=True,
+            )
+
+            # --- Halts-to-flags (4c-1): convert rubric generation halts to
+            # flagged Rubric placeholder entries so criteria.json carries an
+            # entry for EVERY Type 1/2 LT, not just the ones that generated.
+            lt_by_id = {lt.lt_id: lt for lt in lt_set.lts}
+            gen_halt_lt_ids: set[str] = set()
+            for halt_entry in rubric_coll.halted_lts:
+                lt_id = halt_entry.get("lt_id", "")
+                lt_obj = lt_by_id.get(lt_id)
+                kt = lt_obj.knowledge_type if lt_obj else "Type 1"
+                flagged_rubric = Rubric(
+                    lt_id=lt_id,
+                    knowledge_type=kt,
+                    levels=[],
+                    stability_flag="rubric_unreliable",
+                    quality_gate_passed=False,
+                    quality_gate_failures=["rubric_generation_failed"],
+                    competent_framing_flag="error",
+                    competent_framing_judge_rationale=halt_entry.get(
+                        "diagnostic", "rubric generation failed — fewer than 2/3 runs parseable"
+                    ),
+                )
+                rubric_coll.rubrics.append(flagged_rubric)
+                gen_halt_lt_ids.add(lt_id)
+            if gen_halt_lt_ids:
+                print(
+                    f"[refauth] {len(gen_halt_lt_ids)} rubric-generation halt(s) "
+                    "converted to flagged placeholder entries.",
+                    flush=True,
+                )
+            # Clear halted_lts — they are now represented as flagged rubrics.
+            rubric_coll.halted_lts = []
+
+            dump_json(
+                rubric_coll.to_dict(), os.path.join(args.out, "criteria.json")
+            )
+
+            rubric_report, rubric_coll = run_criterion_gates(rubric_coll)
+            dump_json(
+                rubric_report.to_dict(),
+                os.path.join(args.out, "criteria_quality_report.json"),
+            )
+            rubric_report_md = criterion_report_to_markdown(rubric_report)
+            with open(
+                os.path.join(args.out, "criteria_quality_report.md"),
+                "w",
+                encoding="utf-8",
+            ) as fh:
+                fh.write(rubric_report_md)
+            # Re-dump criteria.json with gate-result fields populated on each rubric.
+            dump_json(
+                rubric_coll.to_dict(), os.path.join(args.out, "criteria.json")
+            )
+            gate_failed = sum(
+                1 for r in rubric_coll.rubrics if not r.quality_gate_passed
+            )
+            gen_failed = sum(
+                1 for r in rubric_coll.rubrics
+                if "rubric_generation_failed" in (r.quality_gate_failures or [])
+            )
+            print(
+                f"[refauth] criterion gates: {gate_failed} rubric(s) with failures "
+                f"({gen_failed} generation-failed placeholders, "
+                f"{gate_failed - gen_failed} semantic gate failures); judge_fail="
+                f"{sum(1 for r in rubric_coll.rubrics if (r.competent_framing_flag or '').lower() == 'fail')}",
+                flush=True,
+            )
+
+            # Supporting components — only for rubrics whose halting gates passed
+            # and that were actually generated (not generation-halt placeholders).
+            # Flag skipped LTs explicitly in supporting_coll.halted_lts.
+            passing_rubrics = [r for r in rubric_coll.rubrics if r.quality_gate_passed]
+            skipped_rubrics = [r for r in rubric_coll.rubrics if not r.quality_gate_passed]
+            print(
+                f"[refauth] supporting components (3x self-consistency) — "
+                f"{len(passing_rubrics)} passing rubric(s)",
+                flush=True,
+            )
+            passing_coll = RubricCollection(
+                source_slug=rubric_coll.source_slug,
+                rubrics=passing_rubrics,
+                halted_lts=[],
+                model=rubric_coll.model,
+                temperature=rubric_coll.temperature,
+                runs=rubric_coll.runs,
+            )
+            supporting_coll = generate_supporting_components_sync(
+                lt_set, passing_coll, runs=args.runs
+            )
+            # Record skipped rubrics as flagged halts in supporting_coll.
+            for r in skipped_rubrics:
+                if "rubric_generation_failed" in (r.quality_gate_failures or []):
+                    halt_reason = "supporting_skipped_gen_fail"
+                else:
+                    halt_reason = "supporting_skipped_gate_fail"
+                supporting_coll.halted_lts.append({
+                    "lt_id": r.lt_id,
+                    "halt_reason": halt_reason,
+                    "diagnostic": (
+                        f"rubric generation failed for {r.lt_id}; no content to build from"
+                        if halt_reason == "supporting_skipped_gen_fail"
+                        else f"rubric has gate failures {r.quality_gate_failures}; "
+                             "not a stable anchor for supporting materials"
+                    ),
+                })
+            dump_json(
+                supporting_coll.to_dict(),
+                os.path.join(args.out, "supporting_components.json"),
+            )
+            print(
+                f"[refauth] supporting components: {len(supporting_coll.components)} "
+                f"(halted/skipped: {len(supporting_coll.halted_lts)})",
+                flush=True,
+            )
     else:
-        type12_count = sum(
-            1 for lt in lt_set.lts if lt.knowledge_type in ("Type 1", "Type 2")
-        )
-        print(
-            f"[refauth] Type 1/2 criterion rubrics (3x self-consistency) — "
-            f"{type12_count} Type 1/2 LTs",
-            flush=True,
-        )
-        rubric_coll = generate_criteria_sync(lt_set, progression, runs=args.runs)
-        dump_json(
-            rubric_coll.to_dict(), os.path.join(args.out, "criteria.json")
-        )
-        print(
-            f"[refauth] rubrics: {len(rubric_coll.rubrics)} "
-            f"(halted: {len(rubric_coll.halted_lts)})",
-            flush=True,
-        )
-
-        rubric_report, rubric_coll = run_criterion_gates(rubric_coll)
-        dump_json(
-            rubric_report.to_dict(),
-            os.path.join(args.out, "criteria_quality_report.json"),
-        )
-        rubric_report_md = criterion_report_to_markdown(rubric_report)
-        with open(
-            os.path.join(args.out, "criteria_quality_report.md"),
-            "w",
-            encoding="utf-8",
-        ) as fh:
-            fh.write(rubric_report_md)
-        # Re-dump criteria.json with gate-result fields populated on each rubric.
-        dump_json(
-            rubric_coll.to_dict(), os.path.join(args.out, "criteria.json")
-        )
-        gate_failed = sum(
-            1 for r in rubric_coll.rubrics if not r.quality_gate_passed
-        )
-        print(
-            f"[refauth] criterion gates: {gate_failed} rubric(s) with halting "
-            f"failures; judge_fail="
-            f"{sum(1 for r in rubric_coll.rubrics if (r.competent_framing_flag or '').lower() == 'fail')}",
-            flush=True,
-        )
-
-        # Supporting components — only for rubrics whose halting gates
-        # passed. A failing rubric is not a stable anchor for the
-        # supporting artefacts.
-        passing_rubrics = [
-            r for r in rubric_coll.rubrics if r.quality_gate_passed
-        ]
-        print(
-            f"[refauth] supporting components (3x self-consistency) — "
-            f"{len(passing_rubrics)} passing rubric(s)",
-            flush=True,
-        )
-        passing_coll = RubricCollection(
-            source_slug=rubric_coll.source_slug,
-            rubrics=passing_rubrics,
-            halted_lts=list(rubric_coll.halted_lts),
-            model=rubric_coll.model,
-            temperature=rubric_coll.temperature,
-            runs=rubric_coll.runs,
-        )
-        supporting_coll = generate_supporting_components_sync(
-            lt_set, passing_coll, runs=args.runs
-        )
-        dump_json(
-            supporting_coll.to_dict(),
-            os.path.join(args.out, "supporting_components.json"),
-        )
-        print(
-            f"[refauth] supporting components: {len(supporting_coll.components)} "
-            f"(halted: {len(supporting_coll.halted_lts)})",
-            flush=True,
-        )
+        # No LTs — write empty stubs for artefacts that downstream expects.
+        print("[refauth] skipping band/indicator/rubric stages (no LTs).", flush=True)
+        dump_json(band_coll.to_dict(), os.path.join(args.out, "band_statements.json"))
+        dump_json(indicator_coll.to_dict(), os.path.join(args.out, "observation_indicators.json"))
 
     focus_on_verification = None
     if getattr(args, "focus_on_priming", False):
@@ -775,6 +1499,21 @@ def main(argv: list[str] | None = None) -> int:
         supporting_coll=supporting_coll,
         focus_on_verification=focus_on_verification,
     )
+
+    # Append the flags section (4c-1: every flag with confidence tier + layered explanation).
+    flags_md = _flags_section_markdown(
+        kud=kud,
+        kud_report=report,
+        cluster_set=cluster_set,
+        lt_set=lt_set,
+        band_coll=band_coll,
+        indicator_coll=indicator_coll,
+        rubric_coll=rubric_coll,
+        supporting_coll=supporting_coll,
+        source_domain=source_domain,
+    )
+    extended_md = extended_md + "\n" + flags_md
+
     report_path = os.path.join(args.out, "quality_report.md")
     with open(report_path, "w", encoding="utf-8") as fh:
         fh.write(extended_md)
