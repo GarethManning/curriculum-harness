@@ -1,13 +1,16 @@
 """KUD quality gates for the reference-authoring pipeline.
 
-Gates (per session 4b-1 prompt and arc plan v3):
+Gates (per session 4b-1 prompt and arc plan v3, revised in 4b-2):
 
 1. source_coverage — every non-heading inventory block not halted for
    severe underspecification maps to ≥1 KUD item.
 2. traceability — every KUD item's source_block_id refers to a real
    inventory block.
 3. artefact_count_ratio — KUD item count / non-heading inventory block
-   count lands in [0.8, 1.5] (vision v4.1).
+   count lands in a domain-aware target band:
+     - hierarchical: [0.8, 1.5] (vision v4.1 default)
+     - horizontal:   [0.8, 1.5] (vision v4.1 default)
+     - dispositional: [0.8, 2.2] (4b-2 PROVISIONAL revision)
 4. type3_distribution — for dispositional-domain sources, ≥20% of KUD
    items are Type 3. Informational only.
 5. no_compound_unsplit — every KUD item's (kud_column, knowledge_type)
@@ -16,6 +19,20 @@ Gates (per session 4b-1 prompt and arc plan v3):
 Halting gates (source_coverage, traceability, artefact_count_ratio,
 no_compound_unsplit) surface specific diagnostics and halt output.
 type3_distribution emits an informational flag.
+
+Dispositional-ceiling provisionality (4b-2).
+The dispositional ceiling was raised from 1.5 to 2.2 on the basis of
+one real-corpus extraction (Welsh CfW Health and Well-being, session
+4b-1) which landed at 1.65. Panel review confirmed the compound-split
+output was correct: prose dispositional sources legitimately bundle
+multiple capabilities per bullet, and the LT authoring skill requires
+splitting by knowledge type regardless of source-bullet count. 2.2
+provides headroom above Welsh CfW without being unbounded. This
+ceiling is PROVISIONAL: the next dispositional source run through the
+pipeline (e.g. Scottish CfE Health and Wellbeing) may land at a ratio
+that challenges it. The ceiling is reviewed and potentially re-revised
+against each new dispositional source until a stable pattern emerges
+across the domain.
 """
 
 from __future__ import annotations
@@ -30,6 +47,17 @@ from curriculum_harness.reference_authoring.types import (
     SourceInventory,
 )
 
+SOURCE_DOMAINS = ("hierarchical", "horizontal", "dispositional")
+
+# Domain-aware ratio bands. Hierarchical and horizontal inherit vision v4.1
+# defaults; dispositional is the PROVISIONAL 4b-2 revision documented above.
+RATIO_BANDS: dict[str, tuple[float, float]] = {
+    "hierarchical": (0.8, 1.5),
+    "horizontal": (0.8, 1.5),
+    "dispositional": (0.8, 2.2),
+}
+# Legacy aliases — kept so callers that still reference the old constants
+# continue to resolve. New code should use RATIO_BANDS[domain].
 RATIO_MIN = 0.8
 RATIO_MAX = 1.5
 TYPE3_MIN_PCT = 0.20
@@ -113,15 +141,29 @@ def _gate_traceability(
 
 
 def _gate_artefact_count_ratio(
-    inventory: SourceInventory, kud: ReferenceKUD
+    inventory: SourceInventory,
+    kud: ReferenceKUD,
+    *,
+    source_domain: str,
 ) -> GateResult:
+    if source_domain not in RATIO_BANDS:
+        raise ValueError(
+            f"source_domain must be one of {SOURCE_DOMAINS}, got {source_domain!r}"
+        )
+    r_min, r_max = RATIO_BANDS[source_domain]
     non_heading = _non_heading_block_ids(inventory)
     severely = _severely_halted_ids(kud)
     expected_blocks = [b for b in non_heading if b not in severely]
     denom = len(expected_blocks)
     numer = len(kud.items)
     ratio = (numer / denom) if denom else 0.0
-    passed = denom > 0 and RATIO_MIN <= ratio <= RATIO_MAX
+    passed = denom > 0 and r_min <= ratio <= r_max
+    provisional_note = (
+        " (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional "
+        "source may re-trigger review)"
+        if source_domain == "dispositional"
+        else ""
+    )
     base = (
         f"KUD items / expected-yield blocks = {numer}/{denom} = {ratio:.3f} "
         f"(denominator excludes {len(severely)} severely-underspecified blocks)"
@@ -131,9 +173,9 @@ def _gate_artefact_count_ratio(
         passed=passed,
         halting=not passed,
         diagnostic=(
-            f"{base} within target [{RATIO_MIN}, {RATIO_MAX}] per vision v4.1"
+            f"{base} within {source_domain}-domain target [{r_min}, {r_max}]{provisional_note}"
             if passed
-            else f"{base} outside target band [{RATIO_MIN}, {RATIO_MAX}] per vision v4.1"
+            else f"{base} outside {source_domain}-domain target band [{r_min}, {r_max}]{provisional_note}"
         ),
         details={
             "kud_item_count": numer,
@@ -141,8 +183,10 @@ def _gate_artefact_count_ratio(
             "severely_halted_block_count": len(severely),
             "expected_yield_block_count": denom,
             "ratio": round(ratio, 4),
-            "target_min": RATIO_MIN,
-            "target_max": RATIO_MAX,
+            "source_domain": source_domain,
+            "target_min": r_min,
+            "target_max": r_max,
+            "dispositional_provisional": source_domain == "dispositional",
         },
     )
 
@@ -254,12 +298,26 @@ def run_kud_gates(
     kud: ReferenceKUD,
     *,
     source_is_dispositional: bool,
+    source_domain: str | None = None,
 ) -> QualityReport:
-    """Run the full KUD gate suite and return a QualityReport."""
+    """Run the full KUD gate suite and return a QualityReport.
+
+    ``source_domain`` selects the artefact-count-ratio band: one of
+    ``"hierarchical"``, ``"horizontal"``, ``"dispositional"``. If not
+    provided, it is inferred from ``source_is_dispositional`` — True →
+    ``"dispositional"``, False → ``"hierarchical"`` (the safe default).
+    Callers with a horizontal source must pass ``source_domain`` explicitly.
+    """
+    if source_domain is None:
+        source_domain = "dispositional" if source_is_dispositional else "hierarchical"
+    if source_domain not in RATIO_BANDS:
+        raise ValueError(
+            f"source_domain must be one of {SOURCE_DOMAINS}, got {source_domain!r}"
+        )
     gates: list[GateResult] = [
         _gate_source_coverage(inventory, kud),
         _gate_traceability(inventory, kud),
-        _gate_artefact_count_ratio(inventory, kud),
+        _gate_artefact_count_ratio(inventory, kud, source_domain=source_domain),
         _gate_type3_distribution(kud, source_is_dispositional=source_is_dispositional),
         _gate_no_compound_unsplit(kud),
     ]
@@ -269,6 +327,7 @@ def run_kud_gates(
             halted_by = g.name
             break
     summary = {
+        "source_domain": source_domain,
         "inventory_blocks_total": len(inventory.content_blocks),
         "inventory_non_heading_blocks": len(_non_heading_block_ids(inventory)),
         "kud_items_total": len(kud.items),

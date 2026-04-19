@@ -53,7 +53,13 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--dispositional",
         action="store_true",
-        help="Declare the source as a dispositional-domain anchor (enables Type 3 distribution check).",
+        help="Declare the source as a dispositional-domain anchor (enables Type 3 distribution check; also sets domain to 'dispositional' if --domain is unset).",
+    )
+    parser.add_argument(
+        "--domain",
+        choices=("hierarchical", "horizontal", "dispositional"),
+        default=None,
+        help="Source domain for the artefact-count-ratio gate. If omitted, inferred from --dispositional (True → dispositional, False → hierarchical).",
     )
     parser.add_argument(
         "--model",
@@ -106,14 +112,16 @@ def main(argv: list[str] | None = None) -> int:
         flush=True,
     )
 
+    source_domain = args.domain or ("dispositional" if args.dispositional else "hierarchical")
     print(
-        f"[refauth] running quality gates (dispositional={args.dispositional})",
+        f"[refauth] running quality gates (dispositional={args.dispositional}, domain={source_domain})",
         flush=True,
     )
     report = run_kud_gates(
         inventory,
         kud,
         source_is_dispositional=args.dispositional,
+        source_domain=source_domain,
     )
     report_md = quality_report_to_markdown(report)
     report_path = os.path.join(args.out, "quality_report.md")

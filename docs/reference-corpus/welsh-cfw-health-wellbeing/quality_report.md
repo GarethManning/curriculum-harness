@@ -1,10 +1,10 @@
 # KUD quality report — wales-cfw-health-wellbeing-sow
 
-**Overall:** HALTED
-**Halted by gate:** `artefact_count_ratio`
+**Overall:** PASSED
 
 ## Summary
 
+- **source_domain:** dispositional
 - **inventory_blocks_total:** 26
 - **inventory_non_heading_blocks:** 24
 - **kud_items_total:** 33
@@ -26,9 +26,9 @@ all non-severe, non-unreliable inventory blocks produced ≥1 KUD item
 
 every KUD item has a valid source_block_id
 
-### `artefact_count_ratio` — FAIL (halts)
+### `artefact_count_ratio` — PASS
 
-KUD items / expected-yield blocks = 33/20 = 1.650 (denominator excludes 4 severely-underspecified blocks) outside target band [0.8, 1.5] per vision v4.1
+KUD items / expected-yield blocks = 33/20 = 1.650 (denominator excludes 4 severely-underspecified blocks) within dispositional-domain target [0.8, 2.2] (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional source may re-trigger review)
 
 ### `type3_distribution` — PASS
 

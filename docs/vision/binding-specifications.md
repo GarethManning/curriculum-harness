@@ -21,7 +21,7 @@ Exam specifications: felvételi, GCSE content lists, érettségi specs. Output l
 - **Source-faithfulness matching:** 0.35 (lemma Jaccard + char-4gram, Session 2 matcher). Provisional; recalibrate after three test-corpus runs complete. English-only in v4.1; multilingual upgrade deferred.
 - **Classifier confidence:** >=0.80 silent routing; 0.60-0.80 warned routing; <0.60 halts pipeline for human review.
 - **Self-consistency variance:** artefact count variance >=15% OR content drift >=20% (lemma-overlap <0.50) flags a phase as unreliable. Sample size 3 minimum; 5 when compute allows.
-- **Artefact-count targets (curriculum mode):** KUD 0.8-1.5x source bullets; LTs ~1:1 with KUD +/-20%; criteria 2-4 per LT hierarchical / 1-3 per LT horizontal.
+- **Artefact-count targets (curriculum mode):** KUD 0.8-1.5x source bullets for hierarchical and horizontal domains; KUD 0.8-2.2x source bullets for dispositional domains (PROVISIONAL, 4b-2 revision — see `docs/plans/session-4b-gate-revisions-v1.md`). First real-corpus data from 4b-1 revised the dispositional ceiling from 1.5 to 2.2 provisionally; re-review against next dispositional source. LTs ~1:1 with KUD +/-20%; criteria 2-4 per LT hierarchical / 1-3 per LT horizontal.
 - **Artefact-count targets (exam-spec mode):** assessed topics 1:1 with source bullets (strict); tested demonstrations 1:1 with assessed topics; demonstration criteria 1-3 per tested demonstration (upper bound watched).
 
 ## Schema versioning

@@ -1,8 +1,9 @@
 {
   "reference_authoring_version": "0.1.0",
   "source_slug": "wales-cfw-health-wellbeing-sow",
-  "halted_by": "artefact_count_ratio",
+  "halted_by": null,
   "summary": {
+    "source_domain": "dispositional",
     "inventory_blocks_total": 26,
     "inventory_non_heading_blocks": 24,
     "kud_items_total": 33,
@@ -103,17 +104,19 @@
     },
     {
       "name": "artefact_count_ratio",
-      "passed": false,
-      "halting": true,
-      "diagnostic": "KUD items / expected-yield blocks = 33/20 = 1.650 (denominator excludes 4 severely-underspecified blocks) outside target band [0.8, 1.5] per vision v4.1",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "KUD items / expected-yield blocks = 33/20 = 1.650 (denominator excludes 4 severely-underspecified blocks) within dispositional-domain target [0.8, 2.2] (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional source may re-trigger review)",
       "details": {
         "kud_item_count": 33,
         "non_heading_block_count": 24,
         "severely_halted_block_count": 4,
         "expected_yield_block_count": 20,
         "ratio": 1.65,
+        "source_domain": "dispositional",
         "target_min": 0.8,
-        "target_max": 1.5
+        "target_max": 2.2,
+        "dispositional_provisional": true
       }
     },
     {
