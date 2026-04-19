@@ -1,0 +1,1630 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "snapshot_path": "docs/run-snapshots/2026-04-18-session-4a-2a-regression-common-core-7rp",
+  "classification_model": "claude-haiku-4-5-20251001",
+  "classification_temperature": 0.3,
+  "self_consistency_runs": 3,
+  "items": [
+    {
+      "item_id": "blk_0002_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Proportional relationships and their properties.",
+      "source_block_id": "blk_0002",
+      "classification_rationale": "The block requires learners to hold conceptual knowledge of what proportional relationships are and how they work before they can analyze or apply them. This is foundational propositional content with a prerequisite role in the hierarchy.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0002_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Analyze proportional relationships to identify their characteristics and structure.",
+      "source_block_id": "blk_0002",
+      "classification_rationale": "Analyzing proportional relationships is a procedural skill with a fixed method (identify constant of proportionality, verify linearity, etc.). It is deployed on specific occasions when a proportional relationship is presented, and success is measured against clear criteria.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [
+        "Proportional relationships and their properties."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0002_item_03",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Use proportional relationships to solve real-world and mathematical problems.",
+      "source_block_id": "blk_0002",
+      "classification_rationale": "Solving real-world problems using proportional relationships requires reasoning about which relationships apply to a given situation, how to set up and interpret the model, and whether the solution makes sense in context. Multiple valid approaches and interpretations are possible; assessment depends on reasoning quality and transfer, not a single correct procedure.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [
+        "Proportional relationships and their properties.",
+        "Analyze proportional relationships to identify their characteristics and structure."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0004_item_01",
+      "kud_column": "know",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Unit rates associated with ratios of fractions",
+      "source_block_id": "blk_0004",
+      "classification_rationale": "Propositional knowledge with a fixed conceptual prerequisite sequence: understanding ratios precedes understanding ratios of fractions, which precedes computing unit rates from such ratios. This is hierarchical knowledge assessed via knowledge test or rubric.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0004_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Compute unit rates associated with ratios of fractions, including ratios of lengths, areas and other quantities measured in like or different units",
+      "source_block_id": "blk_0004",
+      "classification_rationale": "Procedural skill with a fixed sequence of prerequisite operations: learner must understand ratios, fractions, and unit rates before executing the computation. The skill is occasion-triggered (when given a ratio of fractions, compute its unit rate) but the underlying knowledge is hierarchical. Assessed via rubric with clear procedural criteria.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0005_item_01",
+      "kud_column": "know",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "A unit rate is computed by dividing a quantity by a time interval, expressed as a complex fraction and simplified to a single-unit denominator.",
+      "source_block_id": "blk_0005",
+      "classification_rationale": "This is propositional knowledge about what a unit rate is and how it is calculated. It describes a factual concept with a fixed procedural sequence: form the complex fraction, then simplify. This is hierarchical knowledge — understanding the definition and structure of unit rates is prerequisite to applying the procedure.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0005_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Compute a unit rate by expressing a quantity and time interval as a complex fraction and simplifying to a rate per single unit of time.",
+      "source_block_id": "blk_0005",
+      "classification_rationale": "This is a procedural skill with a fixed sequence: identify the quantity and time interval, form the complex fraction in the order quantity/time, then simplify using division of fractions. The steps must be performed in order; errors in fraction division propagate to an incorrect rate. This is Type 1 procedural knowledge.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "division of fractions",
+        "complex fraction simplification"
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0007_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Proportional relationships between quantities and how they are structured.",
+      "source_block_id": "blk_0007",
+      "classification_rationale": "Decision tree branch 1: This is propositional/conceptual knowledge with a fixed foundation. Understanding what proportional relationships are (the concept, the defining properties, the mathematical structure) is a prerequisite to recognizing or representing them. This is hierarchical knowledge that must be in place before the skill can be deployed.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0007_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Recognize proportional relationships between quantities in given contexts or data.",
+      "source_block_id": "blk_0007",
+      "classification_rationale": "Decision tree branch 1: This is a procedural skill with clear criteria for correctness. Recognition of proportional relationships follows a fixed logical sequence: the learner must identify whether a relationship satisfies the defining properties of proportionality. The skill is occasion-triggered (deployed when examining data or a scenario) but the underlying logic is hierarchical and rule-based.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [
+        "Proportional relationships between quantities and how they are structured."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0007_item_03",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Represent proportional relationships between quantities using tables, graphs, equations, or other mathematical forms.",
+      "source_block_id": "blk_0007",
+      "classification_rationale": "Decision tree branch 1: This is a procedural skill with clear criteria for correctness. Representation of proportional relationships follows fixed conventions and rules for translating between forms. The skill is occasion-triggered (deployed when asked to represent a relationship) but the underlying logic is hierarchical—each representation form has specific rules and prerequisites.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [
+        "Proportional relationships between quantities and how they are structured.",
+        "Recognize proportional relationships between quantities in given contexts or data."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0009_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Proportional relationships: two quantities are in a proportional relationship when their ratios are equivalent.",
+      "source_block_id": "blk_0009",
+      "classification_rationale": "Propositional/conceptual content with a fixed definition. This is foundational knowledge that must be understood before the decision procedure can be applied. Decision tree branch 1: hard prerequisite sequence.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0009_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Test for equivalent ratios in a table to decide whether two quantities are in a proportional relationship.",
+      "source_block_id": "blk_0009",
+      "classification_rationale": "Procedural skill with a specific, occasion-triggered method. Learner performs this when presented with a table and asked to determine proportionality. Type 1 procedural skill. Decision tree branch 1: prerequisite sequence (must understand proportional relationship first).",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "Proportional relationships: two quantities are in a proportional relationship when their ratios are equivalent."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0009_item_03",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Graph two quantities on a coordinate plane and observe whether the graph is a straight line through the origin to decide whether they are in a proportional relationship.",
+      "source_block_id": "blk_0009",
+      "classification_rationale": "Procedural skill with a specific, occasion-triggered method. Learner performs this when presented with data and asked to determine proportionality graphically. Type 1 procedural skill. Decision tree branch 1: prerequisite sequence (must understand proportional relationship first).",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "Proportional relationships: two quantities are in a proportional relationship when their ratios are equivalent."
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0011_item_01",
+      "kud_column": "know",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The constant of proportionality (unit rate) is the constant ratio between two proportional quantities.",
+      "source_block_id": "blk_0011",
+      "classification_rationale": "Propositional knowledge: learner must understand what the constant of proportionality is as a concept before identifying it. This is foundational factual/conceptual content with a clear definition.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0011_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships.",
+      "source_block_id": "blk_0011",
+      "classification_rationale": "Procedural skill: learner must perform a specific, repeatable operation (identifying the constant) across multiple representational formats. This is a Type 1 procedural skill with a fixed method and clear correct answer, assessable against a rubric with explicit criteria.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "The constant of proportionality (unit rate) is the constant ratio between two proportional quantities."
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0013_item_01",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Represent proportional relationships by equations.",
+      "source_block_id": "blk_0013",
+      "classification_rationale": "This is a procedural skill with a fixed sequence of steps: identify the constant of proportionality, select an equation form (y = kx or equivalent), and write it correctly. Errors in identifying the constant or applying the form propagate to incorrect representation. The skill is occasion-triggered (deployed when given a proportional relationship to represent) and assessable against clear criteria for correctness of the equation and its derivation.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [
+        "Understanding of proportional relationships and the constant of proportionality",
+        "Familiarity with equation notation and variable conventions"
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0014_item_01",
+      "kud_column": "know",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The relationship between total cost, number of items, and constant price can be expressed as t = pn, where t is total cost, p is the constant price per item, and n is the number of items purchased.",
+      "source_block_id": "blk_0014",
+      "classification_rationale": "This is propositional knowledge about a mathematical relationship and formula. It is a factual claim about how to express proportional relationships algebraically. It has no prerequisite chain within this block but is foundational for applying proportional reasoning to cost scenarios. Decision tree branch 1: hard prerequisite sequence exists (understanding the symbolic representation is necessary before using it in calculations).",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "What a point (x, y) on the graph of a proportional relationship means in terms of the situation",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "This is propositional/conceptual knowledge about the meaning of coordinate pairs in a proportional relationship. It is a fixed, transferable concept that must be understood before applying it to specific points. Decision tree branch 1: hard prerequisite sequence exists (understanding the general meaning precedes interpreting specific points).",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_02",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The meaning of the point (0, 0) on the graph of a proportional relationship in terms of the situation",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "This is propositional knowledge about a specific point's meaning. It is a fixed concept that builds on understanding proportional relationships. Decision tree branch 1: prerequisite knowledge about proportional relationships must be in place.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "What a point (x, y) on the graph of a proportional relationship means in terms of the situation"
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_03",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The meaning of the point (1, r) where r is the unit rate on the graph of a proportional relationship in terms of the situation",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "This is propositional knowledge about a specific point's meaning and its relationship to the unit rate. It is a fixed concept that builds on understanding proportional relationships and unit rate. Decision tree branch 1: prerequisite knowledge about proportional relationships and unit rate must be in place.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "What a point (x, y) on the graph of a proportional relationship means in terms of the situation"
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0018_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Proportional relationships and their use in solving multistep ratio and percent problems",
+      "source_block_id": "blk_0018",
+      "classification_rationale": "This is propositional/conceptual knowledge about how proportional relationships function in ratio and percent contexts. It builds on foundational understanding of ratios and proportions and is prerequisite to applying them in specific problem types. Decision tree branch 1: hard prerequisite sequence exists.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0018_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Solve multistep ratio and percent problems including simple interest, tax, markups and markdowns, gratuities and commissions, fees, percent increase and decrease, and percent error",
+      "source_block_id": "blk_0018",
+      "classification_rationale": "This is a procedural skill with a defined sequence of steps and clear success criteria. The learner applies proportional reasoning to specific problem types with correct computational outcomes. Decision tree branch 1: procedural knowledge with prerequisite understanding of proportional relationships.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [
+        "Proportional relationships and their use in solving multistep ratio and percent problems"
+      ],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "halted_blocks": [
+    {
+      "block_id": "blk_0001",
+      "source_block_raw_text": "Standards in this domain: CCSS.Math.Content.7.RP.A.1 CCSS.Math.Content.7.RP.A.2 CCSS.Math.Content.7.RP.A.3",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0003",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.1",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0006",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.2",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0008",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.2.a",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0010",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.2.b",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0012",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.2.c",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0015",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.2.d",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0017",
+      "source_block_raw_text": "CCSS.Math.Content.7.RP.A.3",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can explain how a unit rate describes the relationship between two quantities in a ratio."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can explain how a unit rate describes the relationship between two quantities in a ratio."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can explain what a unit rate is and describe how it represents a ratio of two quantities."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can explain how a unit rate describes the relationship between two quantities in a ratio."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can identify proportional relationships by testing equivalent ratios or analyzing graphs."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify proportional relationships by testing equivalent ratios or analyzing graphs."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify proportional relationships by testing equivalent ratios or analyzing graphs."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify proportional relationships by testing equivalent ratios or analyzing graphs."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can represent proportional relationships using tables, graphs, and equations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can represent proportional relationships using tables, graphs, and equations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can represent proportional relationships using tables, graphs, equations, and ordered pairs."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can represent proportional relationships using tables, graphs, and equations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can identify the constant of proportionality from tables, graphs, equations, and verbal descriptions."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify the constant of proportionality from tables, graphs, equations, and verbal descriptions."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify the constant of proportionality from tables, graphs, equations, and verbal descriptions."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can identify the constant of proportionality from tables, graphs, equations, and verbal descriptions."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can use the constant of proportionality to write equations representing proportional relationships."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "short"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can write and solve proportional equations using the constant of proportionality."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can use the constant of proportionality to write equations representing proportional relationships."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can use the constant of proportionality to write equations representing proportional relationships."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Grade 7', 'short'),): 1, (('Grade 7', 'medium'),): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can solve multi-step real-world problems by applying proportional relationships and reasoning about the results."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can solve multi-step real-world problems by applying proportional relationships and reasoning about the results."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can solve multi-step real-world problems using proportional relationships and justify my reasoning."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can solve multi-step real-world problems by applying proportional relationships and reasoning about quantities."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "lt_name": "Computing Unit Rates from Ratios",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Grade 7:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can compute unit rates from ratios involving quantities with different units."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "lt_name": "Solving Multistep Ratio and Percent Problems",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Grade 7:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can solve multistep problems involving ratios, percents, and percent change in real-world contexts."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "band_labels": [
+    "Grade 7"
+  ],
+  "band_count": 1,
+  "age_range_hint": "ages 12-13 (Common Core State Standards Initiative; CCSSO grade alignment)",
+  "source_type": "us_common_core_grade",
+  "detection_confidence": "high",
+  "detection_rationale": "Common Core source detected (host=thecorestandards.org, slug=2a-regression-common-core-7rp); grade 7 extracted. Single-grade source — band_count=1.",
+  "band_self_reflection_prompts": {
+    "Grade 7": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
+  },
+  "band_details": [
+    {
+      "label": "Grade 7",
+      "approximate_age_range": "ages 12-13",
+      "approximate_grade_year": "Grade 7",
+      "developmental_descriptor": "Grade 7 learners extend proportional reasoning from Grades 5-6 to analyse proportional relationships using equations, tables, and graphs, and apply them to multi-step ratio and percent problems. This domain is foundational for linear algebra and functional thinking in Grade 8."
+    }
+  ],
+  "progression_philosophy": "Grade-level standards published at grade-level granularity only. Each standard is expected to be mastered by the end of the named grade. Sub-grade progression (quarterly, monthly) is a pedagogical decision made by districts and schools, not by the standards themselves. The presence of a single band in this reference output reflects the source's own granularity, not an absence of internal structure within the teaching year.",
+  "source_reference": "https://www.thecorestandards.org/Math/Content/7/RP/",
+  "source_slug": "2a-regression-common-core-7rp",
+  "detection_module_version": "0.1.0"
+}

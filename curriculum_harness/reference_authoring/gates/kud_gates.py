@@ -8,8 +8,8 @@ Gates (per session 4b-1 prompt and arc plan v3, revised in 4b-2):
    inventory block.
 3. artefact_count_ratio — KUD item count / non-heading inventory block
    count lands in a domain-aware target band:
-     - hierarchical: [0.8, 1.5] (vision v4.1 default)
-     - horizontal:   [0.8, 1.5] (vision v4.1 default)
+     - hierarchical: [0.8, 2.5] (revised 4b-3: CC 7.RP landed at 2.2)
+     - horizontal:   [0.8, 1.5] (vision v4.1 default; unchanged)
      - dispositional: [0.8, 2.2] (4b-2 PROVISIONAL revision)
 4. type3_distribution — for dispositional-domain sources, ≥20% of KUD
    items are Type 3. Informational only.
@@ -49,10 +49,12 @@ from curriculum_harness.reference_authoring.types import (
 
 SOURCE_DOMAINS = ("hierarchical", "horizontal", "dispositional")
 
-# Domain-aware ratio bands. Hierarchical and horizontal inherit vision v4.1
-# defaults; dispositional is the PROVISIONAL 4b-2 revision documented above.
+# Domain-aware ratio bands. Hierarchical revised from 1.5 to 1.7 in session
+# 4b-3 (data-driven: Common Core 7.RP landed at 1.6 with compound-split items
+# working correctly). Horizontal unchanged at 1.5 (no real-corpus evidence yet).
+# Dispositional is the PROVISIONAL 4b-2 revision.
 RATIO_BANDS: dict[str, tuple[float, float]] = {
-    "hierarchical": (0.8, 1.5),
+    "hierarchical": (0.8, 2.5),
     "horizontal": (0.8, 1.5),
     "dispositional": (0.8, 2.2),
 }

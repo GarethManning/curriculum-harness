@@ -1,0 +1,125 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "halted_by": null,
+  "summary": {
+    "source_domain": "hierarchical",
+    "inventory_blocks_total": 18,
+    "inventory_non_heading_blocks": 18,
+    "kud_items_total": 22,
+    "halted_blocks_total": 8,
+    "halted_severe": 8,
+    "halted_unreliable": 0,
+    "knowledge_type_distribution": {
+      "Type 1": 21,
+      "Type 2": 1
+    },
+    "kud_column_distribution": {
+      "understand": 7,
+      "do_skill": 11,
+      "know": 4
+    },
+    "stability_distribution": {
+      "classification_unstable": 9,
+      "stable": 13
+    },
+    "underspecification_distribution": {
+      "mild": 7,
+      "null": 15
+    }
+  },
+  "gate_results": [
+    {
+      "name": "source_coverage",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "all non-severe, non-unreliable inventory blocks produced ≥1 KUD item",
+      "details": {
+        "required_blocks": [
+          "blk_0002",
+          "blk_0004",
+          "blk_0005",
+          "blk_0007",
+          "blk_0009",
+          "blk_0011",
+          "blk_0013",
+          "blk_0014",
+          "blk_0016",
+          "blk_0018"
+        ],
+        "covered_blocks": [
+          "blk_0002",
+          "blk_0004",
+          "blk_0005",
+          "blk_0007",
+          "blk_0009",
+          "blk_0011",
+          "blk_0013",
+          "blk_0014",
+          "blk_0016",
+          "blk_0018"
+        ],
+        "missing_blocks": [],
+        "severely_halted_blocks": [
+          "blk_0001",
+          "blk_0003",
+          "blk_0006",
+          "blk_0008",
+          "blk_0010",
+          "blk_0012",
+          "blk_0015",
+          "blk_0017"
+        ],
+        "unreliable_halted_blocks": []
+      }
+    },
+    {
+      "name": "traceability",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item has a valid source_block_id",
+      "details": {
+        "total_items": 22,
+        "untraceable_count": 0,
+        "untraceable_items": []
+      }
+    },
+    {
+      "name": "artefact_count_ratio",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "KUD items / expected-yield blocks = 22/10 = 2.200 (denominator excludes 8 severely-underspecified blocks) within hierarchical-domain target [0.8, 2.5]",
+      "details": {
+        "kud_item_count": 22,
+        "non_heading_block_count": 18,
+        "severely_halted_block_count": 8,
+        "expected_yield_block_count": 10,
+        "ratio": 2.2,
+        "source_domain": "hierarchical",
+        "target_min": 0.8,
+        "target_max": 2.5,
+        "dispositional_provisional": false
+      }
+    },
+    {
+      "name": "type3_distribution",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "type3_distribution gate skipped — source is not marked as dispositional-domain",
+      "details": {
+        "type3_count": 0,
+        "total_items": 22,
+        "pct": 0.0
+      }
+    },
+    {
+      "name": "no_compound_unsplit",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item carries a single knowledge type with consistent column and route",
+      "details": {
+        "offenders": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-regression-common-core-7rp",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "overall_stability_flag": "cluster_unstable",
+  "overall_stability_diagnostics": [
+    "dominant_type_drift_run2: canonical cluster 3 (Type 2) → run2 cluster 3 (Type 1)",
+    "dominant_type_drift_run3: canonical cluster 3 (Type 2) → run3 cluster 3 (Type 1)"
+  ],
+  "unassigned_kud_item_ids": [],
+  "clusters": [
+    {
+      "cluster_id": "cluster_01",
+      "competency_name": "Computing Unit Rates",
+      "competency_definition": "The ability to compute unit rates from ratios of quantities, including fractions and different units.",
+      "kud_item_ids": [
+        "blk_0004_item_01",
+        "blk_0004_item_02",
+        "blk_0005_item_01",
+        "blk_0005_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0004",
+        "blk_0005"
+      ],
+      "source_position_start": 7,
+      "source_position_end": 8,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Computing Unit Rates",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0004_item_01",
+            "blk_0004_item_02",
+            "blk_0005_item_01",
+            "blk_0005_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Computing Unit Rates",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0004_item_01",
+            "blk_0004_item_02",
+            "blk_0005_item_01",
+            "blk_0005_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Computing Unit Rates",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0004_item_01",
+            "blk_0004_item_02",
+            "blk_0005_item_01",
+            "blk_0005_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_02",
+      "competency_name": "Recognizing and Representing Proportional Relationships",
+      "competency_definition": "The ability to recognize, represent, and analyze proportional relationships between quantities using multiple representations.",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0002_item_02",
+        "blk_0007_item_01",
+        "blk_0007_item_02",
+        "blk_0007_item_03",
+        "blk_0009_item_01",
+        "blk_0009_item_02",
+        "blk_0009_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0002",
+        "blk_0007",
+        "blk_0009"
+      ],
+      "source_position_start": 5,
+      "source_position_end": 17,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 8
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Recognizing and Representing Proportional Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Recognizing and Representing Proportional Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Recognizing and Representing Proportional Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_01",
+            "blk_0002_item_02",
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_03",
+      "competency_name": "Identifying and Using the Constant of Proportionality",
+      "competency_definition": "The ability to identify the constant of proportionality across representations and use it to express proportional relationships.",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0011_item_02",
+        "blk_0013_item_01",
+        "blk_0014_item_01",
+        "blk_0016_item_01",
+        "blk_0016_item_02",
+        "blk_0016_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0011",
+        "blk_0013",
+        "blk_0014",
+        "blk_0016"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 25,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Identifying and Using the Constant of Proportionality",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0013_item_01",
+            "blk_0014_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Identifying and Using the Constant of Proportionality",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0013_item_01",
+            "blk_0014_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Identifying and Using the Constant of Proportionality",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0013_item_01",
+            "blk_0014_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_04",
+      "competency_name": "Solving Real-World Proportional Relationship Problems",
+      "competency_definition": "The ability to apply proportional relationships to solve multistep ratio and percent problems in real-world contexts.",
+      "kud_item_ids": [
+        "blk_0002_item_03",
+        "blk_0018_item_01",
+        "blk_0018_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0002",
+        "blk_0018"
+      ],
+      "source_position_start": 5,
+      "source_position_end": 33,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 1,
+        "Type 1": 2
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Solving Real-World Proportional Relationship Problems",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0018_item_01",
+            "blk_0018_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Solving Real-World Ratio and Percent Problems",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0018_item_01",
+            "blk_0018_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Solving Real-World Proportional Reasoning Problems",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0002_item_03",
+            "blk_0018_item_01",
+            "blk_0018_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run2: Type 2→Type 1",
+        "dominant_type_drift_run3: Type 2→Type 1"
+      ]
+    }
+  ]
+}
