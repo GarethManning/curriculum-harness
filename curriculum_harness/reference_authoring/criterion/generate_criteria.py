@@ -137,6 +137,13 @@ _VERB_BUCKETS: dict[str, str] = {
     "facilitate": "apply",
     "mentor": "apply",
     "help": "apply",
+    # Fix 1 additions (4c-2b, 2026-04-19)
+    "attempt": "recognise",
+    "acknowledge": "recognise",
+    "locate": "recognise",
+    "discuss": "describe",
+    "validate": "evaluate",
+    "determine": "evaluate",
 }
 
 _OBSERVABLE_VERBS = set(_VERB_BUCKETS.keys())

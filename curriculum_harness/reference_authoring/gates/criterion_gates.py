@@ -69,6 +69,9 @@ OBSERVABLE_VERBS = {
     "transfer", "connect", "guide", "model", "advise", "notice", "assess",
     "adapt", "integrate", "signpost", "state", "help", "articulate",
     "anticipate", "provide", "synthesize", "synthesise", "facilitate", "mentor",
+    # Additional observable verbs — Fix 1 (4c-2b, 2026-04-19).
+    # Appear in RSHE/horizontal-domain descriptors; all clearly measurable.
+    "attempt", "acknowledge", "validate", "discuss", "locate", "determine",
 }
 
 BANNED_SUBSTRINGS = (
