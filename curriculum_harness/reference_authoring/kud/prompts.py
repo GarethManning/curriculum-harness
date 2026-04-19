@@ -111,14 +111,20 @@ def build_user_prompt(
     heading_path: list[str],
     block_type: str,
     raw_text: str,
+    source_context: str = "",
 ) -> str:
     heading_line = " > ".join(heading_path) if heading_path else "(none)"
+    context_section = (
+        f"\nSOURCE-SPECIFIC CONTEXT (apply when classifying this block):\n{source_context}\n"
+        if source_context.strip()
+        else ""
+    )
     return f"""SOURCE BLOCK TO CLASSIFY
 
 block_id: {block_id}
 block_type: {block_type}
 heading_path: {heading_line}
-
+{context_section}
 CONTENT (verbatim):
 \"\"\"
 {raw_text}

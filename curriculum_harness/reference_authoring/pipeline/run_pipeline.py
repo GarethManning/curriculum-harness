@@ -75,6 +75,76 @@ from curriculum_harness.reference_authoring.types import (
 )
 
 
+# Classifier priming for Ontario FOCUS ON historical-thinking concepts.
+# Drawn from Seixas and Morton, "The Big Six Historical Thinking Concepts"
+# (Nelson Education, 2013) — the research basis Ontario's FOCUS ON tags
+# descend from. These descriptions calibrate the classifier to produce
+# Type 3 indicators that reflect what historical-thinking research says
+# these orientations look like as sustained dispositions, not just
+# paraphrases of the tag names.
+FOCUS_ON_PRIMING = """ONTARIO FOCUS ON HISTORICAL-THINKING CONCEPTS — PRIMING FOR THIS SOURCE
+
+Ontario curriculum documents mark certain content with a "FOCUS ON" tag to
+indicate a historical-thinking concept that should receive sustained emphasis
+throughout the course. These concepts are SUSTAINED ORIENTATIONS in the sense
+of the LT authoring skill's Type 3 definition — they operate by default across
+all historical contexts the learner encounters, not merely when a specific
+situation calls for them.
+
+The four FOCUS ON concepts for Ontario Grade 7 History are defined below as
+sustained orientations per Seixas and Morton's Big Six Historical Thinking
+Concepts framework (Nelson Education, 2013):
+
+FOCUS ON: Continuity and Change
+A sustained orientation to notice what persists and what transforms across time,
+resisting both "everything changes" and "nothing really changes" as default
+framings. The learner by default attends to rate and scale of change across
+different dimensions (political, social, economic, cultural) rather than
+treating change as all-or-nothing. This is NOT merely a skill deployed when
+asked to compare two time periods; it is an orientation that shapes HOW the
+learner reads ALL historical material by default.
+→ Classification: Type 3 Do-Disposition, multi_informant_observation.
+
+FOCUS ON: Cause and Consequence
+A sustained orientation to look for multiple contributing causes rather than
+single causes; distinguishing immediate triggers from underlying conditions;
+resisting monocausal or deterministic explanation as a default response to
+historical events. The learner by default asks "what else contributed?" and
+attends to intended vs unintended consequences. This is NOT merely a skill
+deployed when asked "what caused X?"; it shapes HOW the learner interprets
+ALL historical events by default.
+→ Classification: Type 3 Do-Disposition, multi_informant_observation.
+
+FOCUS ON: Historical Perspective
+A sustained orientation to understand historical actors' decisions within their
+own context's values, beliefs, knowledge, and constraints, rather than judging
+them by present-day frames. The learner by default resists presentism — the
+impulse to evaluate the past by today's standards — across all historical
+encounters. This is NOT an occasion-triggered analytical skill; it is a
+default orientation to HOW the learner reads accounts of historical actors.
+→ Classification: Type 3 Do-Disposition, multi_informant_observation.
+
+FOCUS ON: Historical Significance
+A sustained orientation to recognise that significance is constructed, varies
+across communities and historical traditions, and changes over time. The
+learner by default resists the assumption that what appears in the textbook
+is inherently what mattered, and sustains this across all historical content.
+→ Classification: Type 3 Do-Disposition, multi_informant_observation.
+
+IMPORTANT: When you encounter a content block that explicitly invokes one of
+these FOCUS ON concepts (e.g., "FOCUS ON: Continuity and Change" or content
+describing what students should develop in relation to one of these concepts),
+apply Type 3 classification UNLESS the block describes ONLY a one-time
+analytical task (e.g., "compare these two events using Cause and Consequence"),
+in which case it may be Type 2 Do-Skill. Record your reasoning in
+classification_rationale so the pipeline can record agreement/disagreement
+with this placement rule.
+
+Other Ontario curriculum content (specific historical events, facts, inquiry
+skills) should be classified normally using the standard decision tree.
+"""
+
+
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -126,6 +196,16 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="Stop after KUD gates (legacy 4b-1 behaviour).",
     )
+    parser.add_argument(
+        "--focus-on-priming",
+        action="store_true",
+        help=(
+            "Prime the KUD classifier with Seixas/Morton Big Six developmental "
+            "descriptions for Ontario FOCUS ON historical-thinking concepts. "
+            "Use when running Ontario History sources where FOCUS ON tags should "
+            "be classified as Type 3 Do-Disposition sustained orientations."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -156,6 +236,64 @@ def _load_kud(path: str) -> ReferenceKUD:
     )
 
 
+_FOCUS_ON_KEYWORDS = [
+    "continuity and change",
+    "cause and consequence",
+    "historical perspective",
+    "historical significance",
+    "focus on",
+]
+
+
+def _verify_focus_on_classification(kud: Any) -> dict:
+    """Check FOCUS ON items against Type 3 Do-Disposition placement rule.
+
+    Returns a dict with:
+      - focus_on_items: list of item_ids whose content_statement or
+        source_block_id is FOCUS ON content
+      - agrees: items correctly classified as Type 3 Do-Disposition
+      - disagrees: items classified as Type 1 or Type 2 (placement rule disagrees)
+      - unstable: items with classification_unstable flag
+      - outcome: 'all_agree' | 'disagree' | 'unstable' | 'no_focus_on_items'
+    """
+    focus_items = []
+    for item in kud.items:
+        text = (item.content_statement or "").lower()
+        if any(kw in text for kw in _FOCUS_ON_KEYWORDS):
+            focus_items.append(item)
+
+    if not focus_items:
+        return {"focus_on_items": [], "agrees": [], "disagrees": [], "unstable": [], "outcome": "no_focus_on_items"}
+
+    agrees = []
+    disagrees = []
+    unstable = []
+    for item in focus_items:
+        if item.stability_flag in ("classification_unstable", "classification_unreliable"):
+            unstable.append(item.item_id)
+        elif item.kud_column == "do_disposition" and item.knowledge_type == "Type 3":
+            agrees.append(item.item_id)
+        else:
+            disagrees.append({"item_id": item.item_id, "actual": f"{item.kud_column}/{item.knowledge_type}", "rationale": item.classification_rationale})
+
+    if unstable:
+        outcome = "unstable"
+    elif disagrees:
+        outcome = "disagree"
+    elif agrees:
+        outcome = "all_agree"
+    else:
+        outcome = "no_focus_on_items"
+
+    return {
+        "focus_on_items": [i.item_id for i in focus_items],
+        "agrees": agrees,
+        "disagrees": disagrees,
+        "unstable": unstable,
+        "outcome": outcome,
+    }
+
+
 def _stage_summary_markdown(
     *,
     kud_report_md: str,
@@ -164,6 +302,7 @@ def _stage_summary_markdown(
     lt_set: Any,
     band_coll: Any,
     indicator_coll: Any,
+    focus_on_verification: dict | None = None,
 ) -> str:
     lines: list[str] = []
     lines.append(kud_report_md.rstrip())
@@ -244,6 +383,25 @@ def _stage_summary_markdown(
         for h in indicator_coll.halted_lts:
             lines.append(f"  - `{h.get('lt_id')}`: {h.get('halt_reason')} — {h.get('diagnostic', '')}")
     lines.append("")
+
+    if focus_on_verification is not None:
+        lines.append("## Stage: FOCUS ON placement-rule verification (Ontario)")
+        lines.append("")
+        outcome = focus_on_verification.get("outcome", "no_focus_on_items")
+        lines.append(f"- **outcome:** `{outcome}`")
+        lines.append(f"- focus_on_items identified: {focus_on_verification.get('focus_on_items', [])}")
+        lines.append(f"- agrees (Type 3 Do-Disposition): {focus_on_verification.get('agrees', [])}")
+        disagrees = focus_on_verification.get("disagrees", [])
+        if disagrees:
+            lines.append("- **disagrees (classifier routed differently — placement rule not silently overridden):**")
+            for d in disagrees:
+                lines.append(f"  - `{d['item_id']}` classified as {d['actual']}: {d['rationale']}")
+        else:
+            lines.append("- disagrees: none")
+        unstable = focus_on_verification.get("unstable", [])
+        if unstable:
+            lines.append(f"- **unstable:** {unstable}")
+        lines.append("")
     return "\n".join(lines) + "\n"
 
 
@@ -280,11 +438,15 @@ def main(argv: list[str] | None = None) -> int:
             f"[refauth] classifying with model={args.model} runs={args.runs} temperature={args.temperature}",
             flush=True,
         )
+        source_context = FOCUS_ON_PRIMING if getattr(args, "focus_on_priming", False) else ""
+        if source_context:
+            print("[refauth] FOCUS ON priming active (Ontario historical-thinking concepts)", flush=True)
         kud = classify_inventory_sync(
             inventory,
             model=args.model,
             temperature=args.temperature,
             runs=args.runs,
+            source_context=source_context,
         )
         dump_json(kud.to_dict(), kud_path)
         print(
@@ -400,6 +562,18 @@ def main(argv: list[str] | None = None) -> int:
         flush=True,
     )
 
+    focus_on_verification = None
+    if getattr(args, "focus_on_priming", False):
+        focus_on_verification = _verify_focus_on_classification(kud)
+        outcome = focus_on_verification.get("outcome", "")
+        print(f"[refauth] FOCUS ON verification outcome: {outcome}", flush=True)
+        if focus_on_verification.get("disagrees"):
+            print(
+                f"[refauth] NOTE: {len(focus_on_verification['disagrees'])} FOCUS ON item(s) "
+                "classified differently from placement rule. See quality_report.md.",
+                flush=True,
+            )
+
     extended_md = _stage_summary_markdown(
         kud_report_md=kud_report_md,
         progression=progression,
@@ -407,6 +581,7 @@ def main(argv: list[str] | None = None) -> int:
         lt_set=lt_set,
         band_coll=band_coll,
         indicator_coll=indicator_coll,
+        focus_on_verification=focus_on_verification,
     )
     report_path = os.path.join(args.out, "quality_report.md")
     with open(report_path, "w", encoding="utf-8") as fh:

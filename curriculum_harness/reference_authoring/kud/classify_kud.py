@@ -163,12 +163,14 @@ async def _single_classification(
     block_type: str,
     raw_text: str,
     run_idx: int,
+    source_context: str = "",
 ) -> dict[str, Any] | None:
     user_prompt = build_user_prompt(
         block_id=block_id,
         heading_path=heading_path,
         block_type=block_type,
         raw_text=raw_text,
+        source_context=source_context,
     )
     label = f"refauth_kud {block_id} run{run_idx}"
     try:
@@ -205,6 +207,7 @@ async def _classify_single_block(
     runs: int,
     block_idx: int,
     total_blocks: int,
+    source_context: str = "",
 ) -> tuple[str, list[KUDItem], HaltedBlock | None, list[dict[str, Any]]]:
     """Returns (stability_flag, items, halted_block_or_none, per_run_records)."""
     print(
@@ -222,6 +225,7 @@ async def _classify_single_block(
             block_type=block.block_type,
             raw_text=block.raw_text,
             run_idx=i + 1,
+            source_context=source_context,
         )
         for i in range(runs)
     ]
@@ -331,6 +335,7 @@ async def classify_inventory(
     temperature: float = DEFAULT_TEMPERATURE,
     runs: int = DEFAULT_RUNS,
     concurrency: int = BLOCK_CONCURRENCY,
+    source_context: str = "",
 ) -> ReferenceKUD:
     """Classify every content block in the inventory into a ReferenceKUD."""
     client = get_async_client()
@@ -346,6 +351,7 @@ async def classify_inventory(
                 runs=runs,
                 block_idx=block_idx,
                 total_blocks=len(inventory.content_blocks),
+                source_context=source_context,
             )
 
     classifiable = [

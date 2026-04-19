@@ -1132,3 +1132,115 @@ single-grade sources that exercise the band_count=1 path through the
 band-statement and observation-indicator generators. 4b-3 will also
 build the Type 1/2 criterion generator (five-level rubrics per the
 rubric logic skill).
+
+---
+
+## Session 4b-3 — 2026-04-19
+
+**Goal.** Run the full reference-authoring pipeline on two new sources
+(Common Core Grade 7 Ratios & Proportional Relationships, hierarchical;
+Ontario Grade 7 History, horizontal), complete CSV exports and review
+renders for all three corpus sources, and produce a cross-source
+descriptive summary.
+
+**Pipeline runs completed.**
+
+*Common Core Grade 7 Ratios & Proportional Relationships.*
+18 inventory blocks → 22 KUD items (8 severely underspecified — CCSS
+label-only lines) → artefact-count ratio=2.2/10=2.200. Triggered 4b-3
+hierarchical ceiling revision (raised from 1.5 to 2.5; documented in
+`docs/plans/session-4b-gate-revisions-v1.md` §4b-3). Resumed with
+`--resume-from-kud` after ceiling fix. 4 clusters (cluster_unstable),
+8 LTs (Type 1=7, Type 2=1), 6 band-statement sets (Grade 7),
+0 observation indicators. All KUD gates passed.
+
+*Ontario Grade 7 History (horizontal, FOCUS ON priming).*
+259 inventory blocks → 188 KUD items (129 halted: 118 severe, 11
+unreliable) → artefact-count ratio=1.333, within horizontal [0.8, 1.5];
+all KUD gates passed. Pipeline ran with `--focus-on-priming`
+(Seixas/Morton Big Six descriptions injected via `source_context`).
+11 clusters (cluster_unstable; run-2 produced 15 clusters), 23 LTs
+(1 halted cluster: cluster_04 Indigenous Experiences, lt_set_unreliable),
+21 band-statement sets, 2 observation indicator sets. FOCUS ON
+verification outcome: `unstable` — 1 disagree (blk_0102_item_02:
+Historical Significance classified Type 2 Do-Skill by classifier),
+6 unstable. No silent override; disagreement preserved in
+quality_report.md.
+
+**Code fixes driven by this session.**
+
+- `dbcb857`: Clustering max_tokens 4096→8192; skip source_blocks for
+  >80-item KUDs. Ontario's 188-item KUD was larger than the 4096-token
+  output budget; 0/3 clustering runs were valid before fix.
+- `cee3aae`: Clustering validator: recover duplicates and ≤3 missing
+  items. Ontario runs produced 1 duplicate assignment and 1 missing item;
+  strict validator rejected them as malformed. Fixed by: (a) skip
+  duplicate (item already in another cluster), (b) auto-assign missing
+  items to sibling-block cluster.
+
+**ProgressionStructure extension (carried from 4b-2.5).**
+
+`band_details` and `progression_philosophy` fields added to
+`ProgressionStructure` dataclass; per-jurisdiction constants added for
+Welsh CfW, Scottish CfE, England NC, NZ Curriculum, and helpers for
+Common Core and Ontario grade sources. CSV exporter and review renderer
+updated to surface the new fields. Welsh CfW `progression_structure.json`
+regenerated.
+
+**FOCUS ON source_context threading (new this session).**
+
+`source_context` parameter threaded through
+`classify_kud._single_classification`, `._classify_single_block`,
+`.classify_inventory`, `.classify_inventory_sync`; added to
+`prompts.build_user_prompt`. `run_pipeline.py` adds `FOCUS_ON_PRIMING`
+constant, `--focus-on-priming` flag, `_verify_focus_on_classification()`
+post-classification check, and FOCUS ON section in quality_report.md.
+
+**Artefacts produced.**
+- `docs/reference-corpus/common-core-g7-rp/`: full pipeline output +
+  CSVs + reference-review.md
+- `docs/reference-corpus/ontario-g7-history/`: full pipeline output +
+  CSVs + reference-review.md
+- `docs/reference-corpus/_cross-source-summary.md`: quantitative
+  comparison across all three corpus sources
+- `docs/plans/session-4b-gate-revisions-v1.md` §4b-3: hierarchical
+  ceiling revision documented
+
+**Commits this session (chronological).**
+- `c7fc7e5` (inherited from 4b-2.5): docs state snapshot
+- `d634764`, `788e5bc`: Welsh CfW regeneration with native band labels
+- `dbcb857`: clustering fix (max_tokens, large-KUD source_blocks)
+- `cee3aae`: clustering validator (duplicate/missing recovery)
+- `698fcd0`: Ontario G7 History reference output
+- `fe96038`: CSVs, review renders, cross-source summary
+
+**Success criteria.**
+- ✅ Pipeline runs end-to-end on both new sources with `--resume-from-kud`
+  fallback working correctly.
+- ✅ Source-native progression detected (single-band for both Grade 7
+  sources; per-band developmental index in `band_details`).
+- ✅ KUD gates pass for all three corpus sources.
+- ✅ FOCUS ON priming active; verification-flag-disagreement discipline
+  working (1 disagree recorded, not silently overridden).
+- ✅ CSV exports for all three sources using source-native band labels.
+- ✅ Review renders for all three sources; FOCUS ON outcome visible in
+  Ontario review.
+- ✅ Regression: Welsh CfW counts unchanged (33 items, 20 LTs, 5 PS
+  bands).
+- ✅ Cross-source summary covering pipeline counts, KT distributions,
+  ratio gate history, cluster stability notes.
+
+**Deviations from binding architecture.** The Ontario clustering
+produced `cluster_unstable` with high membership drift (43%). This is
+a data-driven outcome of the source's structure (many fine-grained
+specific expectations with no strong top-level organising schema) and
+is flagged, not papered over. The cluster_04 (Indigenous Experiences)
+LT halt is similarly preserved as a real halt. No paper-overs
+introduced.
+
+**Next session (4b-4, pending).** Type 1/2 criterion generator
+(five-level rubrics per the rubric-logic skill); criterion sets for
+Common Core and Welsh CfW Type 1 LTs. May also include: re-run of
+Ontario clustering with a higher-capacity model (Sonnet) to reduce
+instability on the 188-item KUD.
+

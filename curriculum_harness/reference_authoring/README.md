@@ -124,28 +124,42 @@ default; Session 4b-2.5 corrected the pipeline.
 
 ## Implementation status
 
-After session 4b-2.5:
+After session 4b-3:
 
 - inventory: **implemented** (4b-1)
-- KUD classifier: **implemented** (4b-1)
+- KUD classifier: **implemented** (4b-1); `source_context` parameter
+  added (4b-3) to support classifier priming (Ontario FOCUS ON)
 - KUD quality gates: **implemented** (4b-1); domain-aware
-  `artefact_count_ratio` **revised** (4b-2, dispositional PROVISIONAL)
-- progression detection: **implemented** (4b-2.5) with curated
-  jurisdiction lookup, source-text fallback, halt-on-no-match,
-  single-band first-class
+  `artefact_count_ratio` **revised twice**: dispositional ceiling 1.5→2.2
+  PROVISIONAL (4b-2), hierarchical ceiling 1.5→2.5 (4b-3 — CC 7.RP
+  landed at 2.2); documented in
+  `docs/plans/session-4b-gate-revisions-v1.md`
+- FOCUS ON priming: **implemented** (4b-3) — `--focus-on-priming` flag
+  injects Seixas/Morton Big Six descriptions; post-classification
+  verification records agree/disagree/unstable per placement rule without
+  silent override
+- progression detection: **implemented** (4b-2.5); `band_details` and
+  `progression_philosophy` fields added (4b-3); all curated jurisdiction
+  constants updated
 - pipeline orchestration: **implemented**, full sequence including
   progression detection, LT + band + indicator stages, `--resume-from-kud`
-  supported (4b-2; 4b-2.5 added progression detection step)
-- competency clustering: **implemented** with operationalised
-  stability check (4b-2)
+  supported
+- competency clustering: **implemented** with operationalised stability
+  check (4b-2); large-KUD fixes: max_tokens 4096→8192, skip source_blocks
+  for >80-item KUDs, duplicate/missing-item recovery (4b-3)
 - LT generator: **implemented** (4b-2)
-- Type 1/2 band-statement generator: **implemented** with
-  source-native bands (4b-2; 4b-2.5 removed hardcoded A-D)
-- Type 3 observation-indicator generator: **implemented** with
-  source-native bands and per-source self-reflection prompt
-  calibration (4b-2; 4b-2.5 removed hardcoded A-D)
-- Type 1/2 criterion generator (five-level rubrics): **stubbed** —
-  session 4b-3 (Common Core / Ontario)
+- Type 1/2 band-statement generator: **implemented** with source-native
+  bands (4b-2; 4b-2.5 removed hardcoded A-D)
+- Type 3 observation-indicator generator: **implemented** with source-native
+  bands and per-source self-reflection prompt calibration (4b-2)
+- CSV exporter: **implemented** (4b-2); progression metadata section added
+  (4b-3)
+- review renderer: **implemented** (4b-2); per-band developmental index
+  table added (4b-3)
+- Reference corpus: 3 sources through full pipeline — Welsh CfW HWB
+  (dispositional, 5 bands), Common Core G7 RP (hierarchical, 1 band),
+  Ontario G7 History (horizontal, 1 band, FOCUS ON priming)
+- Type 1/2 criterion generator (five-level rubrics): **not yet** — 4b-4
 - comparison pipeline: **not here** — session 4b-6
 
 ## Running
@@ -159,14 +173,25 @@ python -m curriculum_harness.reference_authoring.pipeline.run_pipeline \
     --domain dispositional   # or hierarchical / horizontal
 ```
 
-Resume from an existing KUD:
+Resume from an existing KUD (skips inventory + KUD re-classification):
 
 ```bash
 python -m curriculum_harness.reference_authoring.pipeline.run_pipeline \
     --resume-from-kud \
     --out docs/reference-corpus/<source-slug>/ \
-    --dispositional \
-    --domain dispositional
+    --domain dispositional   # or hierarchical / horizontal
+```
+
+Ontario History sources with FOCUS ON tags (primes classifier with
+Seixas/Morton Big Six descriptions; records agree/disagree/unstable
+per placement rule in quality_report.md):
+
+```bash
+python -m curriculum_harness.reference_authoring.pipeline.run_pipeline \
+    --snapshot docs/run-snapshots/<session>-ontario-<slug>/ \
+    --out docs/reference-corpus/<slug>/ \
+    --domain horizontal \
+    --focus-on-priming
 ```
 
 Render the full reference for human review:
