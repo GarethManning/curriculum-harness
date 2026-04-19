@@ -4,48 +4,52 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
-**Session 4c-3b (completion)** — 2026-04-19 — head `3c10f17 [4c-3b] NZ Social Sciences reference corpus (4 strands, unified)`.
+**Session 4c-4 (anchor sources)** — 2026-04-19 — head `3cd7831 [4c-4] Criterion bank generation and adversarial test scripts`.
 
-NZ Social Sciences resume run. History reused from prior session (credits exhausted after History in original 4c-3b run). Strands 2–4 ran with topped-up credits via one-off resume script. All 5 sanity checks passed. Case I adversarial test added (strand content-span assignment regression).
+Criterion bank produced for three anchor sources: Welsh CfW H&W, Common Core 7.RP, Ontario G7 History. Pre-work committed first (schema docs, decomposition rules, DAG validation rules, hand-curated validation sets). Two-pass generation (decompose+describe per LT, then prerequisite edges whole-bank). Post-generation scope reviews on Welsh and Ontario identified and removed 7 criteria total (4 Ontario, 3 Welsh — over-decomposition and scope drift). All three pass DAG validation and meet the 50% agreement-rate floor.
 
-Commits this session (continuation):
-- `49f7f64` — Case I adversarial test (strand content-span regression for line_end bug)
-- `02807a6` — resume script `scripts/resume_nz_ss_strands_2_4.py`
-- `3c10f17` — NZ Social Sciences reference corpus (4 strands, 326 KUD, 59 LTs, 57 rubrics)
+Commits this session:
+- `af22afa` — Pre-work: criterion-bank-v1.md updated (strand field), criterion-decomposition-rules-v1.md, dag-validation-rules-v1.md, hand-curated-prerequisite-edges-v1.md
+- `ef8fa15` — Welsh CfW H&W criterion bank (22 criteria, DAG validated)
+- `a689bd7` — Common Core 7.RP criterion bank (16 criteria, DAG validated)
+- `d8a4d16` — Ontario G7 History criterion bank (26 criteria, DAG validated)
+- `3cd7831` — Generation and adversarial test scripts
 
 Key results:
-- NZ Social Sciences: 4 strands, 326 unified KUD / 25 clusters / 59 LTs / 57 rubrics / 18 supporting. All 5 sanity checks passed.
-- Per-strand: History 109/23, Civics 50/8, Geography 127/16, Economic Activity 40/12.
-- Actual cost (3 new strands): Civics $2.56, Geography $5.45, Economic Activity $2.42, total $10.44.
-- Within-strand prerequisite scoping (horizontal domain): 4/326 items have prerequisite_lts (free-text, not ID refs). 0 cross-strand ID edges. Scoping adequate — sparse prerequisites expected for horizontal domain. Not a 4c-4 blocker.
-- Test suite: 9/9 adversarial pass (including new Case I).
+- Welsh CfW H&W: 22 criteria / 14 Type 1+2 LTs / DAG pass / primary agreement 100% (9/9) / secondary 89% / actual cost $0.18
+- Common Core 7.RP: 16 criteria / 8 LTs / DAG pass / primary 92% (11/12) / secondary 92% / actual cost $0.12
+- Ontario G7 History: 26 criteria / 11 Type 1+2 LTs / DAG pass / primary 100% (12/12) / secondary 92% / actual cost $0.22
+- Total actual cost: $0.52 across 3 sources (well under $30 ceiling)
+- Adversarial tests: 8/8 pass
+- criteria.json → rubrics.json rename: OK on all 3 sources (same keys, counts, gate-fail counts)
+- LT-level prerequisite_lts regenerated from criterion bank on all 3 sources; 0 lossy cases
 
-Prior session (4c-3b main):
-- `dc28cf3` — strand-stitching schema v1
-- `a3e6dfc` — orchestration, stitching, pipeline wiring, 6 integration tests
-- `9ad483b` — Welsh CfW H&W structural equivalence confirmed
-- `b722d73` — detect_strands line_end bug fix
+Post-generation scope corrections (not auto-fixed — manual review):
+- Welsh: 3 removed (crit_0002/0003 merged into 0001 for enumerated-examples violation; crit_0019 hallucinated content)
+- Common Core: 2 orphan criteria had missing prerequisites added manually (crit_0014, crit_0015)
+- Ontario: 4 removed (scope drift / conceptual drift per horizontal spot-check); 1 statement fixed (causes removed from recall LT); 1 direct edge added (recall→consequence). Spot-check approved by Gareth Manning.
+
+Recurring pattern: generator consistently over-decomposes recall/explanatory LTs that enumerate examples (e.g. "physical activity, nutrition, sleep"), splitting examples into separate criteria. Decomposition rules correctly prohibit this but prompt does not reliably prevent it. Flag for 4c-4b: tighten Pass 1 prompt with explicit example.
 
 ## 2. Verified working
 
-- **Strand detection module — complete (4c-3a/4c-3b).** `curriculum_harness/reference_authoring/strand/detect_strands.py`. Domain-agnostic structural detector with written specification. Adversarial suite: 8/8 pass. Ground-truth precision/recall: 1.00/1.00 on both DfE KS3 Maths (6 strands) and NZ SS (4 strands). Welsh CfW H&W correctly identified as single-strand (lens-heading detection path). Step 3b bug fix: strand `line_end` now computed from confirmed-strand boundaries, not candidate-heading boundaries.
-- **Multi-strand orchestration + stitching — complete (4c-3b).** `orchestrate.py`, `stitch.py`. Per-strand temp snapshots, sub-run invocation via `main(argv)`, unified artefact assembly with strand-slug ID prefixing and strand provenance field. 5 sanity checks. `--sub-run` flag converts `artefact_count_ratio` hard halt to flag (per-strand slices are dense; gate calibrated for full-curriculum docs).
-- **Pipeline strand detection wiring — complete (4c-3b).** `run_pipeline.py` calls `detect_strands()` before inventory build. Single-strand → existing path; multi-strand → orchestration + stitch; `StrandDetectionUncertain` → exit code 3. `--sub-run` arg added.
-- **NZ Social Sciences reference corpus (4c-3b).** `docs/reference-corpus/nz-ss-social-sciences-4c3b/`. 4 strands, 326 unified KUD / 59 LTs / 57 rubrics. All 5 sanity checks pass. Within-strand prerequisite scoping adequate (4/326 items, free-text only).
-- **DfE KS3 Maths reference corpus (4c-3b).** `docs/reference-corpus/dfe-ks3-maths-4c3b/`. 6 strands, 65 unified KUD items, 29 unified LTs. Strand-prefixed IDs and strand provenance fields on all items.
-- **Phase 0 acquisition layer — complete.** Five source-type primitives at `curriculum_harness/phases/phase0_acquisition/sequences.py`; manifest schema 0.6.0 at `manifest.py:280`; ten ingestion artefacts under `docs/run-snapshots/` (nine prior + secondary-rshe-2025) covering all three domain types.
-- **Welsh CfW Health & Wellbeing reference — complete.** `docs/reference-corpus/welsh-cfw-health-wellbeing/` — pre-4c-1 note applies (criteria.json predates halts-to-flags refactor).
-- **Common Core 7.RP reference — complete.** `docs/reference-corpus/common-core-g7-rp/` — same pre-4c-1 note.
-- **Ontario G7 History reference — complete (4b-5).** `docs/reference-corpus/ontario-g7-history/` — same pre-4c-1 note.
-- **AP US Gov CED Unit 1 reference — complete (4c-1 re-run).** `docs/reference-corpus/ap-usgov-ced-unit1/` — 26 LTs / 26 rubrics (10 pass / 9 gate-fail / 7 gen-fail) / 50 flags / 5 CSVs.
-- **Secondary RSHE 2025 reference — complete (4c-2b).** `docs/reference-corpus/secondary-rshe-2025/` — 149 KUD / 26 clusters / 66 LTs / band sets / 4 obs indicator sets / 62 rubrics (10 gate-fail, 7 gen-fail) / 44 supporting components / 5 CSVs. `england_rshe_secondary` progression type (single-band "End of Secondary", ages 11-16). Gate-calibrated: obs=0, sc=2, comp=1. 2 persistent single_construct false positives (lemmatiser-gap; flagged for teacher review).
-- **Reference-authoring criterion gates — recalibrated (4c-2b).** `criterion_gates.py` OBSERVABLE_VERBS expanded to 44 verbs (19 transfer/integration verbs Commit A + 6 additional verbs Fix 1). `_topic_lemmas()` lemmatisation-aware (Commit B). `generate_criteria.py` _VERB_BUCKETS kept in sync. Adversarial suite: 16/16 pass.
-- **Reference-authoring pipeline — Sonnet default (4c-2a).** `DEFAULT_MODEL = SONNET_MODEL` in all 7 per-item stages. `--model` flag propagates through to all stages. `--cluster-model` Opus escalation unchanged.
-- **Token logging — complete (4c-2a).** `curriculum_harness/_anthropic.py`: `TokenLedger`, `LEDGER`, cost constants (Haiku/Sonnet/Opus).
-- **`detect_progression.py` — `england_rshe_secondary` added (4c-2a).** Curated entry for DfE RSHE statutory guidance.
-- **Reference-authoring pipeline v0.6 — halts-to-flags shipped (4c-1).** Unchanged from 4c-1.
-- **Criterion bank schema v1.** `docs/schemas/criterion-bank-v1.md` — target schema for 4c-4.
-- **VALIDITY.md populated.** Seven validator scripts plus `run_all.py` driver in `scripts/validity-gate/`. Methodological lesson added: in-memory gate validation is not a substitute for fresh-run validation.
+- **Criterion bank — 3 anchor sources complete (4c-4).** Welsh CfW H&W (22 criteria), Common Core 7.RP (16 criteria), Ontario G7 History (26 criteria). Schema v1. DAG validated on all 3. `scripts/generate_criterion_bank.py`, `scripts/test_criterion_bank_adversarial.py`.
+- **Criterion bank schema v1 — updated (4c-4).** `docs/schemas/criterion-bank-v1.md` — `strand` field now mandatory; `"single_strand"` sentinel for single-strand sources.
+- **Criterion decomposition rules v1 — written (4c-4).** `docs/schemas/criterion-decomposition-rules-v1.md`.
+- **DAG validation rules v1 — written (4c-4).** `docs/schemas/dag-validation-rules-v1.md`. Two-level agreement (primary floor 50%, secondary diagnostic).
+- **Hand-curated prerequisite edges — approved (4c-4).** `docs/validation/hand-curated-prerequisite-edges-v1.md`. 9 Welsh + 12 Common Core + 12 Ontario edges. Approved by Gareth Manning 2026-04-19.
+- **Strand detection module — complete (4c-3a/4c-3b).** `curriculum_harness/reference_authoring/strand/detect_strands.py`. Adversarial suite: 8/8 pass. Ground-truth precision/recall: 1.00/1.00 on DfE KS3 Maths and NZ SS.
+- **Multi-strand orchestration + stitching — complete (4c-3b).** `orchestrate.py`, `stitch.py`.
+- **Pipeline strand detection wiring — complete (4c-3b).** `run_pipeline.py`.
+- **NZ Social Sciences reference corpus (4c-3b).** `docs/reference-corpus/nz-ss-social-sciences-4c3b/`. 4 strands, 326 KUD / 59 LTs / 57 rubrics.
+- **DfE KS3 Maths reference corpus (4c-3b).** `docs/reference-corpus/dfe-ks3-maths-4c3b/`. 6 strands, 65 KUD / 29 LTs.
+- **Phase 0 acquisition layer — complete.** Five source-type primitives; manifest schema 0.6.0; ten ingestion artefacts.
+- **AP US Gov CED Unit 1 reference — complete (4c-1 re-run).** 26 LTs / 26 rubrics / 50 flags.
+- **Secondary RSHE 2025 reference — complete (4c-2b).** 149 KUD / 26 clusters / 66 LTs / 62 rubrics.
+- **Reference-authoring criterion gates — recalibrated (4c-2b).** OBSERVABLE_VERBS expanded to 44. Adversarial suite: 16/16 pass.
+- **Reference-authoring pipeline — Sonnet default (4c-2a).** Token logging complete.
+- **Reference-authoring pipeline v0.6 — halts-to-flags shipped (4c-1).**
+- **VALIDITY.md populated.** Seven validator scripts plus `run_all.py` driver.
 
 ## 3. Verified broken
 
@@ -53,21 +57,22 @@ Prior session (4c-3b main):
 - **Hardcoded GCSE_AQA_EXAM_BLOCK in Phase 4.** `curriculum_harness/phases/phase4_lt_generation.py:132-138`.
 - **Phase 5 strand routing.** `curriculum_harness/phases/phase5_formatting.py:70-86`.
 - **Phase 3 flag-and-continue for `classification_unreliable`.** Phase 3 still emits items without a regeneration loop.
-- **Welsh/Common Core/Ontario criteria.json predate 4c-1.** Rubric gen halts remain in `halted_lts`. Re-run not required but would update format.
-- **`_lemmatise()` derivational morphology.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling not resolved. Causes 2 persistent single_construct false positives on RSHE 2025. Scoped to 4c-2c.
+- **`_lemmatise()` derivational morphology.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling. Causes 2 persistent single_construct false positives on RSHE 2025. Scoped to 4c-2c.
+- **Criterion bank Pass 1 prompt: enumerated-example over-decomposition.** Generator consistently splits "explain how [A, B, C]" LTs into per-example criteria, violating decomposition Rule 4. Required manual fix on Welsh and would likely recur on 4c-4b sources. Prompt tightening needed before 4c-4b.
 
 ## 4. Unverified
 
-- **RSHE 2025 Type 3 rate (3.4%).** RSHE uses propositional framing ("pupils should know that...") for outcomes that are pedagogically dispositional. Whether 3.4% is a classification limitation or genuinely reflects the source's framing is unresolved. Teacher review needed to assess.
+- **RSHE 2025 Type 3 rate (3.4%).** Teacher review needed to confirm whether this reflects the source's propositional framing or a classification limitation.
 - **Phase 3 consolidation collapse on felvételi.** Observable only in a Phase 3 run output.
-- **Reference-authoring gate pass rates for Welsh CfW / Common Core under a fresh re-run.** Not re-verified since 4c-1.
-- **AP US Gov rubric flag rate after gate recalibration.** 4c-2b gate improvements not yet applied to an AP US Gov re-run. Expected improvement; not verified.
+- **Reference-authoring gate pass rates for Welsh CfW / Common Core under a fresh re-run.** Not re-verified since 4c-1. Now superseded: rubrics.json is the renamed artefact.
+- **AP US Gov rubric flag rate after gate recalibration.** Not yet re-run.
+- **4c-4b criterion banks (4 remaining sources).** AP US Gov, Secondary RSHE 2025, DfE KS3 Maths, NZ Social Sciences. Not yet generated.
 
 ## 5. Next session
 
-**4c-4 — Criterion bank / cross-source aggregation.** NZ Social Sciences complete. Proceed to criterion bank design per `docs/schemas/criterion-bank-v1.md`.
+**4c-4b — Criterion bank for remaining 4 sources.** Before running generation, tighten Pass 1 prompt to prevent enumerated-example over-decomposition (add explicit example showing "physical activity, nutrition, sleep → 1 criterion, not 3"). DfE KS3 Maths and NZ Social Sciences are multi-strand — set `strand` field to the strand slug, not `"single_strand"`. RSHE 2025 is predominantly Type 3 — confirm which LTs are Type 1/2 and eligible before generation.
 
-**4c-2c (deferred) — Lemmatiser improvements.** `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
+**4c-2c (deferred) — Lemmatiser improvements.** Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
 
 Invocation:
 ```
@@ -76,14 +81,12 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ## 6. Open questions
 
-- **RSHE KUD count (149 vs expected 30-55).** The briefed expectation was 30-55 items post-filtering. Actual: 149. The higher count is defensible — RSHE numbered bullets contain multiple distinct "should know" sub-items; the classifier correctly splits them. Not a gate failure but worth noting for future sources with similarly verbose numbered lists.
-- **LOW confidence tier not seen in any run.** Defined in 4c-1; hasn't fired yet. Requires multiple gate failures AND unstable rubric simultaneously.
-- **Welsh/Common Core/Ontario not re-run.** Pre-4c-1 criteria.json format. Re-run needed if 4c-4 requires their output in new format.
+- **Enumerated-example over-decomposition in Pass 1.** Confirmed pattern across Welsh and Ontario. Fix: add explicit counter-example to Pass 1 prompt before 4c-4b. Decomposition rules correctly prohibit this; prompt enforcement is what's needed.
+- **RSHE KUD count (149 vs expected 30-55).** Defensible — RSHE bullets contain multiple sub-items. Not a gate failure.
+- **LOW confidence tier not seen in any run.** Defined in 4c-1; hasn't fired yet.
 - **Ontario LT halts on large Opus clusters.** Carry-forward from 4b-5. Pick up in 4c-7.
-- **Second hierarchical source gap — resolved (4c-3b).** DfE KS3 Maths 6-strand run complete via `--sub-run` flag that converts ratio gate from hard halt to flag. Reference corpus at `docs/reference-corpus/dfe-ks3-maths-4c3b/`.
-- **NZ Social Sciences horizontal multi-strand — resolved (4c-3b).** 4 strands, 326 KUD, 59 LTs. Within-strand prerequisite scoping confirmed adequate. Reference corpus at `docs/reference-corpus/nz-ss-social-sciences-4c3b/`.
-- **AP US Gov rubric flag rate after 4c-2b gate recalibration.** Not yet re-run. Pick up in 4c-3a or dedicated session.
+- **AP US Gov rubric flag rate after 4c-2b gate recalibration.** Not yet re-run. Pick up in 4c-4b or dedicated session.
 
 ---
 
-*Last updated 2026-04-19 at end of Session 4c-3b (completion). Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-19 at end of Session 4c-4 (anchor sources). Update at end of every session per `docs/process/state-md-discipline.md`.*
