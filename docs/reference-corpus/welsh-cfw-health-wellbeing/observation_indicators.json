@@ -11,50 +11,50 @@
         {
           "band": "A",
           "observable_behaviours": [
-            "The student engages in physical activity when prompted by an adult and continues for the duration of a structured lesson or session.",
-            "The student attempts new movement activities with adult encouragement and expresses willingness to try again after initial attempts.",
-            "The student participates in familiar physical activities during scheduled times and shows reduced hesitation compared to earlier in the term."
+            "The student engages in a physical activity when prompted by an adult and continues for a short period before needing encouragement to persist.",
+            "The student expresses willingness to try a new movement or sport after direct invitation, though may hesitate or require reassurance.",
+            "The student recalls a physical activity they enjoyed and mentions wanting to do it again when reminded by a peer or adult."
           ],
           "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
         },
         {
           "band": "B",
           "observable_behaviours": [
-            "The student initiates participation in physical activities during designated times without adult prompting and sustains effort across multiple sessions.",
-            "The student volunteers to try new movement challenges and seeks feedback from adults about how to improve their performance.",
-            "The student chooses active options during free time and encourages peers to join in physical activities alongside them."
+            "The student initiates participation in familiar physical activities during free time and sustains effort for an extended period without adult prompting.",
+            "The student volunteers to join group movement or sports activities and shows visible confidence when attempting movements they have practised before.",
+            "The student talks about a physical activity they enjoy and seeks opportunities to repeat it across different days or settings."
           ],
           "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
         },
         {
           "band": "C",
           "observable_behaviours": [
-            "The student independently pursues physical activities across different settings and weathers, maintaining consistent participation over weeks.",
-            "The student adapts their approach when facing difficulty in a physical activity and demonstrates persistence by trying alternative strategies rather than withdrawing.",
-            "The student speaks positively about their own physical capabilities and expresses interest in learning new skills or taking on greater challenges in active pursuits."
+            "The student regularly chooses active pursuits during unstructured time and maintains engagement even when facing minor difficulty or fatigue.",
+            "The student attempts unfamiliar physical activities with visible confidence and adapts their approach when an initial attempt does not succeed.",
+            "The student discusses their own physical goals or preferences and makes independent choices about which activities to pursue across home, school, and community contexts."
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
         },
         {
           "band": "D",
           "observable_behaviours": [
-            "The student sustains engagement in physical activity across unfamiliar contexts, different social groups, and varying environmental conditions without adult reminders or external motivation.",
-            "The student actively seeks out new physical challenges, reflects on their progress, and adjusts their goals and strategies independently to maintain growth.",
-            "The student models confidence in active living for others, mentors peers in physical activities, and demonstrates resilience by returning to challenging activities after setbacks or periods of inactivity."
+            "The student sustains participation in physical activities across varied contexts and over extended periods, seeking new challenges and adjusting intensity or type based on personal interest and circumstance.",
+            "The student demonstrates self-directed motivation to maintain or improve physical capability, pursuing activities independently and encouraging peers to join without adult direction.",
+            "The student articulates reasons for valuing physical activity and makes deliberate choices to incorporate movement into daily routines across home, school, and community, even when competing demands exist."
           ],
           "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
         }
       ],
       "parent_prompts": [
-        "What have you noticed about your child's willingness to try physical activities at home or in the community, and do they seem more or less hesitant than they were a few months ago?",
-        "When your child faces difficulty during a physical activity—such as not being able to do something right away—how do they typically respond, and have you seen changes in whether they want to keep trying?",
-        "Does your child talk about their own physical abilities or activities they enjoy doing, and have you noticed them choosing active options during their free time without being asked?"
+        "What physical activities or movement does your child choose to do on their own at home or in the neighbourhood, and how often do they return to these activities?",
+        "When your child tries a new sport or physical activity, what do you notice about their confidence and willingness to keep trying if something feels difficult?",
+        "How does your child talk about their body and physical abilities—do they mention goals they want to achieve, or activities they want to get better at?"
       ],
       "prerequisite_lts": [
-        "Understanding Health and Activity Factors",
-        "Demonstrating Movement and Exercise Competence"
+        "Understanding Health and Well-being Factors",
+        "Demonstrating Physical Movement Competence"
       ],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss patterns of physical activity initiation and persistence across different contexts, the student's self-perception of their physical capabilities, and strategies the student uses to maintain motivation when facing new or difficult activities.",
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss patterns of physical activity choice and persistence across contexts, the student's confidence in facing new or challenging movement, and the reasons the student values or seeks out active engagement. The conversation surfaces whether motivation is sustained across time and whether the student self-initiates or relies on external prompting.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -146,47 +146,47 @@
         {
           "band": "A",
           "observable_behaviours": [
-            "The student accepts reminders to wash hands, use tissues, or manage personal hygiene without resistance.",
-            "The student notices when a peer is upset or hurt and alerts an adult or offers a simple gesture like handing them a tissue.",
-            "The student follows a familiar routine for tidying their own space or belongings when prompted by an adult."
+            "The student accepts reminders to wash hands or manage personal hygiene and follows through with adult support.",
+            "The student responds positively when an adult points out that someone else is upset and accepts a suggestion to offer help.",
+            "The student uses basic courtesies like please and thank you when prompted by an adult in familiar routines."
           ],
           "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
         },
         {
           "band": "B",
           "observable_behaviours": [
-            "The student initiates personal care routines such as washing hands before eating or after outdoor play without being asked.",
-            "The student checks in with a peer who appears sad or frustrated and offers comfort or help, such as sitting nearby or suggesting an activity together.",
-            "The student takes responsibility for keeping their own materials and workspace organized and notices when shared spaces need tidying."
+            "The student initiates personal care routines like using the bathroom, washing hands, or tidying their own space without being asked.",
+            "The student notices when a peer is struggling or hurt and offers help or tells an adult, showing awareness of others' needs.",
+            "The student greets familiar people and uses respectful language consistently in structured settings like classroom or home."
           ],
           "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
         },
         {
           "band": "C",
           "observable_behaviours": [
-            "The student maintains consistent personal care habits across different settings and anticipates their own needs, such as bringing a water bottle or managing fatigue.",
-            "The student actively listens to peers' concerns, remembers details about their experiences, and follows up with them over time.",
-            "The student contributes to the care of shared spaces and resources without being assigned, and gently reminds peers to do the same."
+            "The student maintains personal hygiene and organisation across different settings and adjusts care routines based on context without prompting.",
+            "The student actively checks in with peers or family members who seem upset, listens to their concerns, and offers practical support.",
+            "The student demonstrates respect through attentive listening, acknowledging others' ideas, and adjusting their tone and language based on who they are with."
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
         },
         {
           "band": "D",
           "observable_behaviours": [
-            "The student models self-care as a natural part of daily life across unfamiliar contexts and teaches younger or newer peers how to manage their own wellbeing.",
-            "The student anticipates the needs of others, offers support before being asked, and adapts their care to suit different people's preferences and circumstances.",
-            "The student takes initiative to improve shared spaces and systems, involves others in caring for the community, and sustains these practices over time even when adults are not present."
+            "The student models self-care as a natural habit across unfamiliar and varied contexts, and encourages or supports others to do the same.",
+            "The student anticipates others' needs before being asked, responds with empathy to distress or conflict, and takes initiative to repair relationships or support peers.",
+            "The student demonstrates sustained respect and care in challenging or emotionally charged situations, maintaining composure and treating others with dignity even when frustrated or disagreeing."
           ],
           "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
         }
       ],
       "parent_prompts": [
-        "What have you noticed about how your child manages their own personal care routines at home, such as washing up, getting dressed, or tidying their belongings? Do they do these things without reminding, or do they need prompts?",
-        "When your child is with family members or friends who are upset, hurt, or struggling, what do you see them do? Do they notice and respond, or do they seem unaware?",
-        "How does your child treat shared spaces and belongings at home? Do they help keep things tidy, care for family items, and notice when things need attention?"
+        "What have you noticed about how your child manages their own personal care at home—such as remembering to wash hands, brush teeth, or keep their space tidy—and whether they do these things without being reminded?",
+        "When your child sees a family member or friend who is sad, hurt, or struggling, what do they do or say? Can you give an example of a time they showed care or concern?",
+        "How does your child treat family members and others in your home when things are going well, and how do they behave when they are frustrated or disagree with someone?"
       ],
       "prerequisite_lts": [],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent reflect together on specific moments when the student showed care for themselves or others, exploring what prompted that care, what it looked like, and how it felt. The conversation identifies patterns of care across different contexts and considers what conditions help the student sustain this orientation.",
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent reflect together on patterns of self-care and respect observed across home and school contexts, identifying which settings bring out sustained care-oriented behaviour and what supports or barriers affect the student's ability to enact care as a default orientation.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -278,49 +278,49 @@
         {
           "band": "A",
           "observable_behaviours": [
-            "The student names a feeling they are experiencing in the moment and, when prompted, acknowledges that it might change soon.",
-            "The student notices when their emotional state shifts during a single activity and mentions this shift to an adult or peer.",
-            "The student accepts an adult's observation that their mood has changed from earlier in the day without resistance."
+            "The student names a different emotion they felt at different times during the same day when prompted by an adult.",
+            "The student acknowledges that their mood changed after a specific event or activity, with adult support.",
+            "The student notices aloud that they felt one way before an activity and another way after it."
           ],
           "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
         },
         {
           "band": "B",
           "observable_behaviours": [
-            "The student spontaneously describes how their feeling about a situation has shifted over the course of an hour or a day without prompting.",
-            "The student recognises that they felt one way during an activity but feel differently now, and can articulate what changed.",
-            "The student observes that a peer's emotional state has shifted and comments on it naturally during conversation."
+            "The student spontaneously describes how their emotional state shifted across different settings or times without prompting.",
+            "The student explains that the same situation triggered different feelings on different occasions.",
+            "The student recognises that a peer or family member might feel differently about the same event than they do."
           ],
           "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
         },
         {
           "band": "C",
           "observable_behaviours": [
-            "The student reflects on how their emotional response to a familiar situation has varied across different occasions and discusses the variability.",
-            "The student anticipates that their current strong feeling may not persist and adjusts their expectations or plans accordingly.",
-            "The student notices emotional fluidity in others and uses this observation to interpret or respond to peers' behaviour with flexibility."
+            "The student articulates how their emotional response to a recurring situation has changed over time or varies depending on their state.",
+            "The student reflects that emotions they experience are not permanent and can shift within minutes or hours.",
+            "The student demonstrates flexibility in their emotional expectations, accepting that they may feel differently about something tomorrow than today."
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
         },
         {
           "band": "D",
           "observable_behaviours": [
-            "The student independently recognises emotional fluidity across unfamiliar contexts and applies this understanding to make sense of their own or others' responses in new situations.",
-            "The student demonstrates sustained awareness that emotions are temporary and variable, using this orientation to regulate their own responses and support peers through emotional transitions.",
-            "The student articulates a coherent understanding of emotional fluidity as a principle and references it when reflecting on past experiences, current feelings, or future possibilities."
+            "The student independently applies the understanding that emotions are fluid when navigating unfamiliar social or academic challenges, adjusting their expectations accordingly.",
+            "The student models for peers or younger students that feelings change across contexts and time, using concrete examples from their own experience.",
+            "The student sustains the orientation that emotions are changeable across multiple weeks or months, visibly drawing on this understanding to manage frustration, disappointment, or uncertainty in new situations."
           ],
           "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
         }
       ],
       "parent_prompts": [
-        "Have you noticed your child talking about their feelings changing throughout the day or across different days, or commenting that something that upset them before doesn't bother them as much now?",
-        "When your child has felt strongly about something—excited, frustrated, or worried—have you seen them recognise that this feeling shifted or might shift, rather than assuming it would stay the same?",
-        "Does your child notice when you or other family members seem to feel differently than you did earlier, and do they mention or ask about these shifts in mood or emotion?"
+        "What have you noticed about how your child's mood or feelings shift throughout the day or across different activities at home?",
+        "When your child experiences disappointment or frustration, have you observed them mention or show signs that they felt differently about something at another time?",
+        "How does your child respond when you remind them that feelings can change? Do they seem to accept or resist the idea that they might feel differently about something later?"
       ],
       "prerequisite_lts": [
         "Connecting Experiences to Emotional Well-being"
       ],
-      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent explores specific moments when the student has noticed their own or others' emotions shifting, and examines how recognising this fluidity has influenced their understanding of themselves and their relationships.",
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss specific moments when the student's emotions shifted across contexts or time, exploring what the student noticed about the fluidity of their feelings and how this understanding helps them navigate emotional experiences in familiar and new situations.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -412,49 +412,49 @@
         {
           "band": "A",
           "observable_behaviours": [
-            "The student mentions their own feelings or emotional state in conversation with peers when prompted or supported by an adult.",
-            "The student listens without visible discomfort when a peer or adult shares about their emotional experience or mental health.",
-            "The student uses basic feeling words in response to direct questions about how they or others are doing."
+            "The student mentions their own feelings or emotional state in peer conversations when directly prompted or supported by an adult.",
+            "The student listens without visible discomfort when a peer shares about their emotions or mental health.",
+            "The student uses basic emotional vocabulary in response to questions about how they or others are feeling."
           ],
           "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
         },
         {
           "band": "B",
           "observable_behaviours": [
-            "The student initiates brief conversations with peers about how they are feeling or what is bothering them without adult prompting.",
-            "The student responds to a peer's mention of emotional difficulty by acknowledging it as normal or understandable rather than dismissing or changing the subject.",
-            "The student asks a peer a follow-up question about their emotional experience or well-being in a natural, non-clinical way."
+            "The student initiates brief conversations with peers about feelings or emotional experiences without adult prompting.",
+            "The student responds to a peer's emotional disclosure by acknowledging it or asking a follow-up question.",
+            "The student references their own emotional experiences or mental health in small-group settings when the topic arises naturally."
           ],
           "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
         },
         {
           "band": "C",
           "observable_behaviours": [
-            "The student brings up their own mental health or emotional well-being in peer conversations across different settings, treating it as a routine topic.",
-            "The student validates a peer's emotional experience by naming it as something others experience or by sharing a related experience of their own.",
-            "The student notices when a peer seems upset or withdrawn and opens a conversation about it without making it feel like a formal check-in."
+            "The student brings up mental health or emotional well-being topics with peers in informal settings, normalising such conversation as part of regular interaction.",
+            "The student demonstrates comfort discussing their own emotional struggles or challenges without shame or minimisation.",
+            "The student encourages or validates a peer's emotional expression by treating mental health talk as ordinary and important."
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
         },
         {
           "band": "D",
           "observable_behaviours": [
-            "The student consistently weaves talk about emotions, stress, or mental health into everyday peer interactions across unfamiliar groups and community settings.",
-            "The student actively creates space for peers to discuss their emotional or mental health concerns by normalising vulnerability and demonstrating non-judgmental listening.",
-            "The student models talking about their own mental health challenges or coping strategies in ways that encourage peers to do the same, without seeking reassurance or validation."
+            "The student sustains normalised mental health talk across multiple peer contexts and unfamiliar social situations, treating emotional well-being as a routine part of conversation.",
+            "The student models openness about their own mental health and emotional experiences in ways that invite others to do the same.",
+            "The student actively works to shift peer or community norms by consistently framing mental health discussion as natural and destigmatised, even when others show initial hesitation."
           ],
           "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
         }
       ],
       "parent_prompts": [
-        "What have you noticed about how your child talks about their feelings or emotions at home? Do they bring up how they are feeling without being asked, or do they seem hesitant to talk about emotions?",
-        "When your child talks about a friend or family member who is struggling emotionally, how do they respond? Do they seem curious about what that person is experiencing, or do they change the subject?",
-        "Have you noticed your child using words like stressed, anxious, sad, or overwhelmed in everyday conversation, or do they tend to avoid talking about difficult feelings?"
+        "What have you noticed about how your child talks about feelings or emotions at home? Do they bring up their own emotional experiences or ask about yours?",
+        "When your child talks about friends or school, do they mention other people's feelings or emotional well-being, or do they seem comfortable when emotions come up in conversation?",
+        "Have you noticed your child treating mental health or emotional struggles as something normal to discuss, or do they seem to avoid or feel uncomfortable with that kind of talk?"
       ],
       "prerequisite_lts": [
         "Communicating Feelings Appropriately"
       ],
-      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent explores the student's comfort and frequency in bringing up mental health and emotions as a normal part of peer and family talk, and identifies contexts where the student feels safe normalising these conversations.",
+      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent explores the student's comfort and initiation patterns in normalising mental health talk across home and peer contexts, identifying which settings feel safer and what support might help extend this orientation to less familiar social situations.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -541,55 +541,324 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_07_lt_03",
+      "lt_id": "cluster_05_lt_03",
       "bands": [
         {
           "band": "A",
           "observable_behaviours": [
-            "The student seeks out or accepts invitations to spend time with peers or adults they trust, even when prompted or encouraged by others.",
-            "The student checks in with a familiar person about their wellbeing or asks for help when a relationship feels uncomfortable, with adult scaffolding.",
-            "The student notices when someone has treated them kindly and mentions it to an adult or peer."
+            "The student contributes a response or idea when directly invited to participate in a group decision-making activity.",
+            "The student listens to at least one other person's perspective before offering their own view in a collective decision.",
+            "The student asks a clarifying question about the decision being made when prompted by the teacher or peer."
           ],
           "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
         },
         {
           "band": "B",
           "observable_behaviours": [
-            "The student initiates conversation or shared activity with peers or trusted adults without prompting, showing consistent preference for their company.",
-            "The student independently raises concerns about a relationship dynamic with a trusted adult when something feels off, without waiting to be asked.",
-            "The student chooses to spend free time with people who listen to them and treat them with respect, and avoids or limits time with those who do not."
+            "The student volunteers a contribution to a group decision without waiting to be called on, and references at least one factor that affects the decision.",
+            "The student acknowledges another person's viewpoint by name or idea before presenting a different perspective in the same discussion.",
+            "The student stays engaged in a collective decision-making conversation for the full duration, even when the topic shifts or becomes complex."
           ],
           "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
         },
         {
           "band": "C",
           "observable_behaviours": [
-            "The student actively maintains relationships across different contexts by remembering details about others' lives, following up on conversations, and showing genuine interest in their wellbeing.",
-            "The student reflects aloud or in writing about what makes a relationship feel safe or unsafe, and uses that reflection to guide their choices about who to trust with different kinds of information.",
-            "The student demonstrates reciprocal care by offering support, listening without judgment, and respecting others' boundaries in both familiar and new social situations."
+            "The student initiates a question or observation that deepens the group's understanding of the decision at hand, drawing on prior analysis of impacts or influencing factors.",
+            "The student builds on another person's contribution by adding relevant information or a connected idea that moves the collective thinking forward.",
+            "The student proposes a way to include a perspective or voice that has not yet been heard in the decision-making process."
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
         },
         {
           "band": "D",
           "observable_behaviours": [
-            "The student proactively nurtures relationships by creating opportunities for connection, checking in with others during difficult times, and sustaining friendships across changing circumstances or physical distance.",
-            "The student models healthy relationship practices for peers by naming what makes interactions respectful, addressing conflict directly and calmly, and helping others recognise unhealthy dynamics in their own relationships.",
-            "The student consistently chooses to engage with people and communities that align with their values, and confidently declines or exits relationships that are disrespectful or unsafe, even when social pressure exists to maintain them."
+            "The student independently identifies and articulates how a decision might affect different stakeholders, and uses this analysis to shape their own contribution to the group's deliberation.",
+            "The student seeks out opportunities to participate in collective decision-making across different contexts and groups, and sustains meaningful contribution over time.",
+            "The student models inclusive participation by actively inviting quieter peers to contribute, synthesising multiple viewpoints, and helping the group reach a decision that reflects shared reasoning."
           ],
           "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
         }
       ],
       "parent_prompts": [
-        "What have you noticed about who your child chooses to spend time with, and how they talk about those relationships at home?",
-        "When your child has had a conflict or felt uncomfortable with someone, how have they handled it, and did they come to you or another trusted adult?",
-        "In what ways does your child show care or interest in the people around them, and do you see them maintaining friendships or connections over time?"
+        "When your child is part of a family decision or discussion, what have you noticed about whether they share their own ideas and listen to what others think?",
+        "Have you seen your child ask questions or bring up something important that helps the family understand a decision better, rather than just going along with what others say?",
+        "In situations where your child disagrees with a family choice, how do they express their view—do they explain their thinking in a way that shows they've thought about how the decision affects people?"
       ],
       "prerequisite_lts": [
-        "Recognising Unhealthy Relationship Dynamics",
-        "Seeking Support for Relationship Safety"
+        "Analysing Decision Impacts Across Contexts",
+        "Evaluating Influencing Factors and Implications"
       ],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss the student's pattern of relationship choices across contexts, the quality of their interactions with peers and adults, and how they recognise and respond to healthy versus unhealthy dynamics in real time.",
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent reflect together on the student's patterns of contribution in collective decisions: what prompts or contexts bring out their participation, how they listen to and build on others' ideas, and what support or practice might help them sustain meaningful involvement across unfamiliar decision-making groups.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "bands": [
+        {
+          "band": "A",
+          "observable_behaviours": [
+            "The student asks clarifying questions about a career option when prompted by an adult, such as what daily tasks or required qualifications are involved.",
+            "The student pauses to consider how a career choice might affect their daily life or family when an adult points out a connection.",
+            "The student identifies one or two factors that matter to them in a career when given a structured list to choose from."
+          ],
+          "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
+        },
+        {
+          "band": "B",
+          "observable_behaviours": [
+            "The student initiates questions about multiple aspects of a career pathway, including work environment, required education, and personal fit, without prompting.",
+            "The student compares two career options by noting differences in responsibilities, schedules, or lifestyle impact without adult direction.",
+            "The student explains why a particular career appeals to them by referencing specific personal values or interests they have identified."
+          ],
+          "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
+        },
+        {
+          "band": "C",
+          "observable_behaviours": [
+            "The student systematically gathers information about career pathways through conversations, research, or informational interviews, and organises findings to evaluate options.",
+            "The student weighs trade-offs between career options by discussing how different choices align with or conflict with their priorities and long-term goals.",
+            "The student revises their thinking about a career pathway after encountering new information or perspectives, explaining what changed their view."
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
+        },
+        {
+          "band": "D",
+          "observable_behaviours": [
+            "The student independently pursues in-depth exploration of multiple career pathways across different contexts and timeframes, synthesising evidence to articulate a reasoned career direction.",
+            "The student applies their understanding of personal consequences and career realities to evaluate emerging or unfamiliar career options with the same deliberation they show for familiar ones.",
+            "The student engages peers or younger students in thoughtful career planning conversations, modelling how to ask probing questions and consider multiple dimensions of a pathway."
+          ],
+          "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child talks about or thinks through different job or career ideas at home? Do they ask questions, consider how a choice might affect them, or seem to weigh options?",
+        "When your child mentions a career they are interested in, what kinds of details do they focus on or ask about? Do they think about what the day-to-day work would be like, the training needed, or how it fits with their life?",
+        "Have you seen your child change their mind about a career path after learning something new or talking to someone in that field? What prompted the shift in their thinking?"
+      ],
+      "prerequisite_lts": [
+        "Identifying Consequences of Career Choices"
+      ],
+      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent examines the depth and breadth of the student's career exploration, the quality of questions they ask, and how they weigh personal values and real-world consequences when evaluating pathways. The conversation surfaces whether reflection is prompted or self-initiated, and whether the student applies deliberate consideration across familiar and unfamiliar career contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              3
+            ],
+            [
+              "B",
+              3
+            ],
+            [
+              "C",
+              3
+            ],
+            [
+              "D",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "bands": [
+        {
+          "band": "A",
+          "observable_behaviours": [
+            "The student initiates contact with a peer or familiar adult after being prompted or encouraged to do so.",
+            "The student accepts invitations to join group activities and remains engaged for the duration with adult support.",
+            "The student asks a simple question about another person's experience or feelings when reminded to do so."
+          ],
+          "self_reflection_prompt": "Name a moment this term when you tried something hard. What happened, and how did it feel?"
+        },
+        {
+          "band": "B",
+          "observable_behaviours": [
+            "The student regularly seeks out specific peers or adults to spend time with and initiates simple conversations without prompting.",
+            "The student notices when a peer seems upset and offers basic support such as sitting nearby or sharing materials.",
+            "The student remembers details about a peer's interests or experiences and refers to them in subsequent interactions."
+          ],
+          "self_reflection_prompt": "Describe one pattern you have noticed in yourself this term. When does it show up, and when does it not?"
+        },
+        {
+          "band": "C",
+          "observable_behaviours": [
+            "The student actively maintains contact with multiple peers across different contexts and adjusts their communication style to suit different relationships.",
+            "The student recognises tension or conflict in a relationship and takes steps to address it through conversation or seeking help from a trusted adult.",
+            "The student demonstrates care by checking in with peers over time, following up on previous conversations, and offering support during challenges."
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher has observed. Where do the two accounts agree, and where do they differ?"
+        },
+        {
+          "band": "D",
+          "observable_behaviours": [
+            "The student sustains meaningful relationships across unfamiliar or changing contexts by consistently showing interest, reliability, and emotional responsiveness.",
+            "The student proactively reflects on the health of their relationships and makes deliberate choices to strengthen connections or respectfully distance from unhealthy dynamics.",
+            "The student models healthy relationship practices for others by demonstrating respect, boundaries, and reciprocal care in both one-to-one and group settings."
+          ],
+          "self_reflection_prompt": "Analyse a pattern you see in yourself across two or more different contexts. What has shifted, and what do you think caused the shift?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child chooses to spend time with friends or family members, and whether they seem to value those connections?",
+        "When your child has had a disagreement or difficulty with a peer or family member, how have you seen them respond or try to work through it?",
+        "In what ways have you noticed your child showing care or interest in the wellbeing of others, and how often do they do this without being asked?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Healthy Relationships",
+        "Recognising and Responding to Unhealthy Dynamics"
+      ],
+      "developmental_conversation_protocol": "The teacher, student, and optionally parent reflect together on the student's patterns of initiating, maintaining, and navigating relationships across home and school contexts, identifying which relationships feel healthy and what actions support their wellbeing.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {

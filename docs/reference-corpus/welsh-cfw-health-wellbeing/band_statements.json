@@ -11,19 +11,19 @@
       "statements": [
         {
           "band": "A",
-          "statement": "I can identify how physical activity and nutrition support physical health with prompting."
+          "statement": "I can identify how physical activity and nutrition support health with prompting."
         },
         {
           "band": "B",
-          "statement": "I can describe how physical activity, nutrition, and sleep each contribute to physical health."
+          "statement": "I can describe how physical activity, nutrition, and sleep each support physical health independently."
         },
         {
           "band": "C",
-          "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support overall well-being."
+          "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support well-being outcomes."
         },
         {
           "band": "D",
-          "statement": "I can justify how multiple health and activity factors work together to support well-being across different life situations."
+          "statement": "I can justify how combinations of health factors support well-being across different life contexts and circumstances."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -33,7 +33,7 @@
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
@@ -45,25 +45,25 @@
             ],
             [
               "D",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify how physical activity and nutrition support physical health with prompting."
+              "statement": "I can identify how physical activity and nutrition support health with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe how physical activity, nutrition, and sleep each contribute to physical health."
+              "statement": "I can describe how physical activity, nutrition, and sleep each support physical health independently."
             },
             {
               "band": "C",
-              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support overall well-being."
+              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support well-being outcomes."
             },
             {
               "band": "D",
-              "statement": "I can justify how multiple health and activity factors work together to support well-being across different life situations."
+              "statement": "I can justify how combinations of health factors support well-being across different life contexts and circumstances."
             }
           ]
         },
@@ -84,7 +84,7 @@
             ],
             [
               "D",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
@@ -94,15 +94,15 @@
             },
             {
               "band": "B",
-              "statement": "I can describe how physical activity, nutrition, and sleep each contribute to physical health."
+              "statement": "I can describe how physical activity, nutrition, and sleep each contribute to physical health independently."
             },
             {
               "band": "C",
-              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support overall well-being."
+              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support well-being outcomes."
             },
             {
               "band": "D",
-              "statement": "I can justify how multiple health and activity factors work together to support well-being across different life contexts."
+              "statement": "I can justify how combinations of health factors support well-being across different life contexts and circumstances."
             }
           ]
         },
@@ -111,7 +111,7 @@
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
@@ -129,7 +129,7 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify how physical activity and nutrition support physical health with prompting."
+              "statement": "I can identify how physical activity and nutrition support health with prompting."
             },
             {
               "band": "B",
@@ -137,17 +137,17 @@
             },
             {
               "band": "C",
-              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support well-being."
+              "statement": "I can explain how physical activity, nutrition, sleep, and other factors interact to support well-being outcomes."
             },
             {
               "band": "D",
-              "statement": "I can justify how multiple health factors work together to support well-being in different life contexts."
+              "statement": "I can justify how specific combinations of health factors support well-being across different life contexts and circumstances."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 1}"
+        "signature_counts={(('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 1}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
@@ -158,19 +158,19 @@
       "statements": [
         {
           "band": "A",
-          "statement": "I can perform basic movement and exercise skills with adult guidance and demonstration."
+          "statement": "I can perform basic movement skills with adult support and clear instruction."
         },
         {
           "band": "B",
-          "statement": "I can perform familiar movement and exercise skills with increasing control and consistency."
+          "statement": "I can perform familiar exercise skills with increasing control and minimal prompting."
         },
         {
           "band": "C",
-          "statement": "I can independently perform a range of movement and exercise skills with proficiency and accuracy."
+          "statement": "I can perform age-appropriate exercise skills independently with consistent control and confidence."
         },
         {
           "band": "D",
-          "statement": "I can perform complex movement and exercise skills across varied contexts and justify my technique choices."
+          "statement": "I can perform complex movement sequences independently and adapt skills confidently across different contexts."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -180,85 +180,7 @@
           "signature": [
             [
               "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can perform basic movement and exercise skills with adult guidance and demonstration."
-            },
-            {
-              "band": "B",
-              "statement": "I can perform familiar movement and exercise skills with increasing control and consistency."
-            },
-            {
-              "band": "C",
-              "statement": "I can independently perform a range of movement and exercise skills with proficiency and accuracy."
-            },
-            {
-              "band": "D",
-              "statement": "I can perform complex movement and exercise skills across varied contexts and justify my technique choices."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can perform basic movement and exercise skills with adult guidance and demonstration."
-            },
-            {
-              "band": "B",
-              "statement": "I can perform familiar movement and exercise skills independently with increasing control and coordination."
-            },
-            {
-              "band": "C",
-              "statement": "I can perform a range of movement and exercise skills independently with proficiency in varied contexts."
-            },
-            {
-              "band": "D",
-              "statement": "I can perform complex movement and exercise skills independently, adapting technique across unfamiliar contexts and justifying choices."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "A",
-              "medium"
+              "short"
             ],
             [
               "B",
@@ -276,25 +198,103 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can perform basic movement and exercise skills with adult guidance and demonstration."
+              "statement": "I can perform basic movement skills with adult support and clear instruction."
             },
             {
               "band": "B",
-              "statement": "I can perform familiar movement and exercise skills independently with consistent technique."
+              "statement": "I can perform familiar exercise skills with increasing control and minimal prompting."
             },
             {
               "band": "C",
-              "statement": "I can perform a range of movement and exercise skills independently and adapt them to different contexts."
+              "statement": "I can perform age-appropriate exercise skills independently with consistent control and confidence."
             },
             {
               "band": "D",
-              "statement": "I can perform complex movement and exercise skills independently, analyse my technique, and transfer skills across unfamiliar activities."
+              "statement": "I can perform complex movement sequences independently and adapt skills confidently across different contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "short"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can perform basic movement skills with adult support and demonstration."
+            },
+            {
+              "band": "B",
+              "statement": "I can perform familiar exercise skills with increasing control and minimal prompting."
+            },
+            {
+              "band": "C",
+              "statement": "I can perform a range of age-appropriate exercise skills independently with consistent control."
+            },
+            {
+              "band": "D",
+              "statement": "I can perform complex movement sequences independently and adapt skills confidently across different contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              "medium"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can perform basic movement skills with adult support and guidance in familiar settings."
+            },
+            {
+              "band": "B",
+              "statement": "I can perform age-appropriate exercise skills with increasing control in structured activities and contexts."
+            },
+            {
+              "band": "C",
+              "statement": "I can independently perform a range of movement skills with control and confidence in familiar environments."
+            },
+            {
+              "band": "D",
+              "statement": "I can apply movement skills with precision and confidence across varied and unfamiliar physical contexts and activities."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 1}"
+        "signature_counts={(('A', 'short'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 1}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
@@ -309,18 +309,18 @@
         },
         {
           "band": "B",
-          "statement": "I can describe several self-care behaviours and explain how each supports my well-being."
+          "statement": "I can describe multiple self-care behaviours and explain how each supports my well-being."
         },
         {
           "band": "C",
-          "statement": "I can explain how self-care and respect for others strengthen both well-being and self-worth."
+          "statement": "I can explain how self-care and respect for others strengthen both personal well-being and self-worth."
         },
         {
           "band": "D",
           "statement": "I can justify how informed self-care choices support well-being across different personal and social contexts."
         }
       ],
-      "stability_flag": "band_statements_unstable",
+      "stability_flag": "stable",
       "per_run_signatures": [
         {
           "run": 1,
@@ -349,11 +349,11 @@
             },
             {
               "band": "B",
-              "statement": "I can describe several self-care behaviours and explain how each supports my well-being."
+              "statement": "I can describe multiple self-care behaviours and explain how each supports my well-being."
             },
             {
               "band": "C",
-              "statement": "I can explain how self-care and respect for others strengthen both well-being and self-worth."
+              "statement": "I can explain how self-care and respect for others strengthen both personal well-being and self-worth."
             },
             {
               "band": "D",
@@ -378,7 +378,7 @@
             ],
             [
               "D",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
@@ -392,11 +392,11 @@
             },
             {
               "band": "C",
-              "statement": "I can explain how positive self-care and respectful behaviours toward others strengthen well-being and self-worth."
+              "statement": "I can explain how self-care and respect for others strengthen both personal well-being and self-worth."
             },
             {
               "band": "D",
-              "statement": "I can justify how informed self-care choices and respect for others build resilience and well-being across different contexts."
+              "statement": "I can justify how informed self-care choices support well-being across different contexts and relationships."
             }
           ]
         },
@@ -440,9 +440,7 @@
           ]
         }
       ],
-      "stability_diagnostics": [
-        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 1}"
-      ],
+      "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
@@ -460,11 +458,11 @@
         },
         {
           "band": "C",
-          "statement": "I can explain how different experiences and my responses to them influence my emotional well-being."
+          "statement": "I can explain how different experiences and my reactions to them influence my mental health."
         },
         {
           "band": "D",
-          "statement": "I can justify how managing responses to varied experiences supports long-term emotional well-being and mental health."
+          "statement": "I can justify how patterns in my experiences and responses shape my emotional well-being across different contexts."
         }
       ],
       "stability_flag": "stable",
@@ -500,11 +498,11 @@
             },
             {
               "band": "C",
-              "statement": "I can explain how different experiences and my responses to them influence my emotional well-being."
+              "statement": "I can explain how different experiences and my reactions to them influence my mental health."
             },
             {
               "band": "D",
-              "statement": "I can justify how managing responses to varied experiences supports long-term emotional well-being and mental health."
+              "statement": "I can justify how patterns in my experiences and responses shape my emotional well-being across different contexts."
             }
           ]
         },
@@ -531,7 +529,7 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify how a specific experience made me feel with prompting."
+              "statement": "I can identify how a single experience made me feel with prompting."
             },
             {
               "band": "B",
@@ -539,11 +537,11 @@
             },
             {
               "band": "C",
-              "statement": "I can explain how different experiences and my reactions to them influence my emotional well-being."
+              "statement": "I can explain how different experiences and my responses to them influence my mental health."
             },
             {
               "band": "D",
-              "statement": "I can justify how patterns in my experiences and responses shape my mental health across different contexts."
+              "statement": "I can justify how managing my responses to varied experiences supports long-term emotional well-being across contexts."
             }
           ]
         },
@@ -578,11 +576,11 @@
             },
             {
               "band": "C",
-              "statement": "I can explain how different experiences and my responses to them influence my emotional well-being."
+              "statement": "I can explain how different experiences and my reactions to them influence my mental health."
             },
             {
               "band": "D",
-              "statement": "I can justify how managing responses to varied experiences supports long-term emotional well-being and mental health."
+              "statement": "I can justify how managing my responses to varied experiences supports long-term emotional well-being."
             }
           ]
         }
@@ -601,18 +599,18 @@
         },
         {
           "band": "B",
-          "statement": "I can describe my feelings and choose appropriate words for different people and settings."
+          "statement": "I can describe my feelings and choose appropriate words for different people independently."
         },
         {
           "band": "C",
-          "statement": "I can communicate my feelings independently using language suited to the context and audience."
+          "statement": "I can communicate my feelings clearly and adjust my approach based on context and audience."
         },
         {
           "band": "D",
-          "statement": "I can communicate my feelings across unfamiliar contexts, adjusting tone and detail to support understanding."
+          "statement": "I can communicate complex feelings thoughtfully, reasoning about why different approaches suit different contexts."
         }
       ],
-      "stability_flag": "stable",
+      "stability_flag": "band_statements_unstable",
       "per_run_signatures": [
         {
           "run": 1,
@@ -623,7 +621,7 @@
             ],
             [
               "B",
-              "medium"
+              "short"
             ],
             [
               "C",
@@ -641,59 +639,20 @@
             },
             {
               "band": "B",
-              "statement": "I can describe my feelings and choose appropriate words for different people and settings."
+              "statement": "I can describe my feelings appropriately to trusted adults in everyday contexts."
             },
             {
               "band": "C",
-              "statement": "I can communicate my feelings independently using language suited to the context and audience."
+              "statement": "I can communicate my feelings independently using language suited to different audiences and settings."
             },
             {
               "band": "D",
-              "statement": "I can communicate my feelings across unfamiliar contexts, adjusting tone and detail to support understanding."
+              "statement": "I can justify my choice of how to express feelings by analysing what the context and audience require."
             }
           ]
         },
         {
           "run": 2,
-          "signature": [
-            [
-              "A",
-              "short"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can identify and name my feelings with prompting in familiar settings."
-            },
-            {
-              "band": "B",
-              "statement": "I can describe my feelings using appropriate words for different people and situations."
-            },
-            {
-              "band": "C",
-              "statement": "I can independently communicate my feelings in ways suited to the context and audience."
-            },
-            {
-              "band": "D",
-              "statement": "I can justify my communication choices by explaining how context and audience shape appropriate expression of feelings."
-            }
-          ]
-        },
-        {
-          "run": 3,
           "signature": [
             [
               "A",
@@ -723,16 +682,57 @@
             },
             {
               "band": "C",
-              "statement": "I can communicate my feelings clearly using language suited to the context and audience."
+              "statement": "I can communicate my feelings clearly and adjust my approach based on context and audience."
             },
             {
               "band": "D",
-              "statement": "I can communicate my feelings with precision and adapt my approach across unfamiliar contexts and relationships."
+              "statement": "I can communicate complex feelings thoughtfully, reasoning about why different approaches suit different contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify and name my feelings with prompting in familiar settings."
+            },
+            {
+              "band": "B",
+              "statement": "I can describe my feelings using appropriate words for different people and situations."
+            },
+            {
+              "band": "C",
+              "statement": "I can communicate my feelings independently, adjusting tone and detail to match the audience and context."
+            },
+            {
+              "band": "D",
+              "statement": "I can communicate my feelings across unfamiliar contexts, reasoning about why certain expressions suit particular audiences and relationships."
             }
           ]
         }
       ],
-      "stability_diagnostics": [],
+      "stability_diagnostics": [
+        "signature_counts={(('A', 'short'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 1, (('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2}"
+      ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
@@ -746,15 +746,15 @@
         },
         {
           "band": "B",
-          "statement": "I can describe how a decision impacts myself, others, and recognise one influencing factor independently."
+          "statement": "I can describe how a decision impacts myself, others, and my immediate community independently."
         },
         {
           "band": "C",
-          "statement": "I can analyse how decisions affect multiple stakeholders and explain several influencing factors and their implications."
+          "statement": "I can analyse how decisions create both immediate and long-term consequences across multiple groups."
         },
         {
           "band": "D",
-          "statement": "I can justify how complex decisions impact society across contexts, evaluating competing influencing factors and long-term implications."
+          "statement": "I can justify how complex decisions generate interconnected impacts across personal, social, and societal contexts over time."
         }
       ],
       "stability_flag": "stable",
@@ -786,15 +786,15 @@
             },
             {
               "band": "B",
-              "statement": "I can describe how a decision impacts myself, others, and recognise one influencing factor independently."
+              "statement": "I can describe how a decision impacts myself, others, and my immediate community independently."
             },
             {
               "band": "C",
-              "statement": "I can analyse how decisions affect multiple stakeholders and explain several influencing factors and their implications."
+              "statement": "I can analyse how decisions create both immediate and long-term consequences across multiple groups."
             },
             {
               "band": "D",
-              "statement": "I can justify how complex decisions impact society across contexts, evaluating competing influencing factors and long-term implications."
+              "statement": "I can justify how complex decisions generate interconnected impacts across personal, social, and societal contexts over time."
             }
           ]
         },
@@ -821,19 +821,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify how a simple decision affects myself and one other person with prompting."
+              "statement": "I can identify one impact of a decision on myself or others with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe how a decision impacts multiple people and explain one factor that influenced it."
+              "statement": "I can describe multiple impacts of a decision on myself, others, and society independently."
             },
             {
               "band": "C",
-              "statement": "I can analyse how a decision affects myself, others, and society, identifying several influencing factors independently."
+              "statement": "I can analyse how a decision creates different impacts across time and contexts with reasoning."
             },
             {
               "band": "D",
-              "statement": "I can justify how complex decisions create varied impacts across contexts, reasoning about multiple influencing factors and implications."
+              "statement": "I can evaluate and justify complex decision impacts across unfamiliar contexts and justify trade-offs."
             }
           ]
         },
@@ -860,19 +860,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify how a simple decision affects myself and one other person with prompting."
+              "statement": "I can identify one impact of a decision on myself or others with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe how a decision impacts myself, others, and recognise one influencing factor independently."
+              "statement": "I can describe multiple impacts of a decision on myself, others, and society independently."
             },
             {
               "band": "C",
-              "statement": "I can analyse how decisions affect multiple people and society, explaining several influencing factors and their implications."
+              "statement": "I can analyse how a decision creates both immediate and future impacts across different contexts."
             },
             {
               "band": "D",
-              "statement": "I can analyse complex decisions across unfamiliar contexts, justify how multiple factors interact, and evaluate broader societal implications."
+              "statement": "I can justify how decisions create interconnected impacts across personal, social, and societal levels over time."
             }
           ]
         }
@@ -883,23 +883,23 @@
     },
     {
       "lt_id": "cluster_05_lt_02",
-      "knowledge_type": "Type 1",
+      "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "A",
-          "statement": "I can identify one short-term consequence of a given decision with prompting."
+          "statement": "I can identify obvious influencing factors in a simple decision with prompting."
         },
         {
           "band": "B",
-          "statement": "I can identify both short and long-term consequences of decisions independently."
+          "statement": "I can identify multiple influencing factors and describe basic implications of a decision."
         },
         {
           "band": "C",
-          "statement": "I can identify and explain how my decisions affect others and the importance of thoughtful contribution."
+          "statement": "I can evaluate influencing factors and explain both positive and negative implications independently."
         },
         {
           "band": "D",
-          "statement": "I can analyse complex decisions, justify their consequences across contexts, and explain collective responsibility principles."
+          "statement": "I can evaluate complex influencing factors, justify implications and risks, and transfer reasoning across unfamiliar decisions."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -913,7 +913,7 @@
             ],
             [
               "B",
-              "short"
+              "medium"
             ],
             [
               "C",
@@ -921,25 +921,25 @@
             ],
             [
               "D",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify one immediate consequence of a given decision with prompting."
+              "statement": "I can identify obvious factors that influence a simple decision with prompting."
             },
             {
               "band": "B",
-              "statement": "I can identify both short and long-term consequences of decisions independently."
+              "statement": "I can identify multiple factors and describe some implications when making a straightforward decision."
             },
             {
               "band": "C",
-              "statement": "I can explain how my decisions affect others and why thoughtful participation in group decisions matters."
+              "statement": "I can independently identify relevant factors, evaluate implications and risks, and explain my reasoning."
             },
             {
               "band": "D",
-              "statement": "I can justify how considering multiple consequences strengthens collective decision-making across different contexts."
+              "statement": "I can analyse complex decisions by identifying interconnected factors, evaluating implications and risks, and justify decisions across unfamiliar contexts."
             }
           ]
         },
@@ -948,11 +948,11 @@
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
-              "short"
+              "medium"
             ],
             [
               "C",
@@ -966,19 +966,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify one short-term consequence of a given decision with prompting."
+              "statement": "I can identify obvious influencing factors in a simple decision with prompting."
             },
             {
               "band": "B",
-              "statement": "I can identify both short and long-term consequences of decisions independently."
+              "statement": "I can identify multiple influencing factors and describe basic implications of a decision."
             },
             {
               "band": "C",
-              "statement": "I can identify and explain how my decisions affect others and the importance of thoughtful contribution."
+              "statement": "I can evaluate influencing factors and explain both positive and negative implications independently."
             },
             {
               "band": "D",
-              "statement": "I can analyse complex decisions, justify their consequences across contexts, and explain collective responsibility principles."
+              "statement": "I can evaluate complex influencing factors, justify implications and risks, and transfer reasoning across unfamiliar decisions."
             }
           ]
         },
@@ -987,11 +987,11 @@
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
-              "short"
+              "medium"
             ],
             [
               "C",
@@ -1005,25 +1005,25 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify one short-term consequence of a given decision with prompting."
+              "statement": "I can identify obvious influencing factors in a simple decision with prompting."
             },
             {
               "band": "B",
-              "statement": "I can identify both short and long-term consequences of decisions independently."
+              "statement": "I can identify multiple influencing factors and describe basic implications of a decision."
             },
             {
               "band": "C",
-              "statement": "I can identify and explain how my decisions affect others and why thoughtful participation matters."
+              "statement": "I can analyse influencing factors and evaluate implications and risks independently in familiar contexts."
             },
             {
               "band": "D",
-              "statement": "I can analyse complex decisions, justify consequences across contexts, and evaluate my responsibility in collective choices."
+              "statement": "I can evaluate complex influencing factors and justify implications and risks across unfamiliar decision scenarios."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('A', 'short'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 1, (('A', 'medium'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 2}"
+        "signature_counts={(('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 1, (('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
@@ -1034,211 +1034,25 @@
       "statements": [
         {
           "band": "A",
-          "statement": "I can identify how norms and values in my community influence my behaviour with prompting."
+          "statement": "I can identify one immediate consequence of a career choice with prompting."
         },
         {
           "band": "B",
-          "statement": "I can describe how social norms, values, and rules shape identity and behaviour in familiar contexts."
+          "statement": "I can describe multiple consequences of a career choice across personal and financial domains."
         },
         {
           "band": "C",
-          "statement": "I can explain how norms, values, and rules across different cultures affect identity, behaviour, and well-being."
+          "statement": "I can independently identify and explain significant lifelong consequences of career pathway decisions."
         },
         {
           "band": "D",
-          "statement": "I can justify how social influences shape identity and well-being differently across cultural contexts using reasoned examples."
+          "statement": "I can analyse and justify how career choices create interconnected long-term consequences across unfamiliar contexts."
         }
       ],
       "stability_flag": "band_statements_unstable",
       "per_run_signatures": [
         {
           "run": 1,
-          "signature": [
-            [
-              "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can identify how norms and values in my community influence my behaviour with prompting."
-            },
-            {
-              "band": "B",
-              "statement": "I can describe how social norms, values, and rules shape identity and behaviour in familiar contexts."
-            },
-            {
-              "band": "C",
-              "statement": "I can explain how norms, values, and rules across different cultures affect identity, behaviour, and well-being."
-            },
-            {
-              "band": "D",
-              "statement": "I can justify how social influences shape identity and well-being differently across cultural contexts using reasoned examples."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can identify how norms and values in my community influence my behaviour with prompting."
-            },
-            {
-              "band": "B",
-              "statement": "I can describe how social norms, values, and rules shape identity and behaviour in familiar contexts."
-            },
-            {
-              "band": "C",
-              "statement": "I can explain how norms, values, and rules across different cultures affect identity, behaviour, and well-being."
-            },
-            {
-              "band": "D",
-              "statement": "I can justify how social influences shape identity and well-being differently across cultural contexts with reasoned examples."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can identify how norms, values, and rules in my community influence my behaviour with prompting."
-            },
-            {
-              "band": "B",
-              "statement": "I can describe how social norms and values shape identity and behaviour in familiar cultural contexts independently."
-            },
-            {
-              "band": "C",
-              "statement": "I can explain how norms, values, and rules affect identity, behaviour, and well-being across different cultural contexts."
-            },
-            {
-              "band": "D",
-              "statement": "I can justify how social influences shape identity and well-being differently across unfamiliar cultural contexts using reasoned analysis."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_06_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "A",
-          "statement": "I can identify social influences that affect behaviour with prompting and support."
-        },
-        {
-          "band": "B",
-          "statement": "I can describe how social influences shape behaviour and relationships in familiar cultural contexts."
-        },
-        {
-          "band": "C",
-          "statement": "I can analyse how social influences affect my own and others' behaviours across different cultural contexts independently."
-        },
-        {
-          "band": "D",
-          "statement": "I can critically analyse and justify how social influences shape behaviour and relationships across unfamiliar cultural contexts with reasoned evidence."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "A",
-              "medium"
-            ],
-            [
-              "B",
-              "medium"
-            ],
-            [
-              "C",
-              "medium"
-            ],
-            [
-              "D",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "A",
-              "statement": "I can identify social influences that affect behaviour in my own familiar cultural context with prompting."
-            },
-            {
-              "band": "B",
-              "statement": "I can describe how specific social influences shape behaviour and relationships within and across two different cultural contexts."
-            },
-            {
-              "band": "C",
-              "statement": "I can analyse how social influences interact to shape behaviour and experiences, explaining differences across cultural contexts independently."
-            },
-            {
-              "band": "D",
-              "statement": "I can critically evaluate how social influences operate across cultures, justifying interpretations with reasoned analysis of complex, unfamiliar cases."
-            }
-          ]
-        },
-        {
-          "run": 2,
           "signature": [
             [
               "A",
@@ -1254,25 +1068,64 @@
             ],
             [
               "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify one immediate consequence of a career choice with prompting."
+            },
+            {
+              "band": "B",
+              "statement": "I can describe multiple consequences of a career choice across personal and financial domains."
+            },
+            {
+              "band": "C",
+              "statement": "I can independently identify and explain significant lifelong consequences of career pathway decisions."
+            },
+            {
+              "band": "D",
+              "statement": "I can analyse and justify how career choices create interconnected long-term consequences across unfamiliar contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "short"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
               "long"
             ]
           ],
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify social influences that affect behaviour with prompting and support."
+              "statement": "I can identify one consequence of a career choice with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe how social influences shape behaviour and relationships in familiar cultural contexts."
+              "statement": "I can describe multiple consequences of a career choice independently."
             },
             {
               "band": "C",
-              "statement": "I can analyse how social influences affect my own and others' behaviours across different cultural contexts independently."
+              "statement": "I can explain how career choices lead to significant lifelong consequences across different life domains."
             },
             {
               "band": "D",
-              "statement": "I can critically analyse and justify how social influences shape behaviour and relationships across unfamiliar cultural contexts with reasoned evidence."
+              "statement": "I can justify why specific career decisions produce particular long-term consequences and evaluate trade-offs across unfamiliar scenarios."
             }
           ]
         },
@@ -1293,64 +1146,64 @@
             ],
             [
               "D",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify social influences that affect behaviour with prompting and support."
+              "statement": "I can identify one immediate consequence of a career choice with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe how social influences shape behaviour and relationships in familiar cultural contexts."
+              "statement": "I can describe multiple consequences of a career choice across different life areas."
             },
             {
               "band": "C",
-              "statement": "I can analyse how social influences affect my own and others' behaviours across different cultural contexts independently."
+              "statement": "I can independently identify and explain significant long-term consequences of career pathway decisions."
             },
             {
               "band": "D",
-              "statement": "I can critically analyse and justify how social influences shape behaviour and relationships, explaining differences across unfamiliar cultural contexts."
+              "statement": "I can analyse and justify how career choices create interconnected lifelong consequences across unfamiliar contexts."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 1, (('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 2}"
+        "signature_counts={(('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'short'), ('B', 'short'), ('C', 'medium'), ('D', 'long')): 1}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
     {
       "lt_id": "cluster_07_lt_01",
-      "knowledge_type": "Type 2",
+      "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "A",
-          "statement": "I can identify obvious warning signs of unhealthy relationships with prompting and support."
+          "statement": "I can identify how social norms influence my own behaviour with prompting."
         },
         {
           "band": "B",
-          "statement": "I can recognise several warning signs and describe how they affect relationship health independently."
+          "statement": "I can describe how social norms and cultural values shape identity in familiar contexts."
         },
         {
           "band": "C",
-          "statement": "I can analyse relationship dynamics and explain how multiple warning signs interact to create unhealthy patterns."
+          "statement": "I can explain how social norms, values, and cultural contexts interact to influence identity and well-being."
         },
         {
           "band": "D",
-          "statement": "I can evaluate complex relationship dynamics, justify why patterns are unhealthy, and apply insights to unfamiliar situations."
+          "statement": "I can justify how social influences shape identity and behaviour across diverse and unfamiliar cultural contexts."
         }
       ],
-      "stability_flag": "stable",
+      "stability_flag": "band_statements_unstable",
       "per_run_signatures": [
         {
           "run": 1,
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
@@ -1368,19 +1221,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify obvious warning signs of unhealthy relationships with prompting and support."
+              "statement": "I can identify how social norms influence my own behaviour with prompting."
             },
             {
               "band": "B",
-              "statement": "I can recognise several warning signs and describe how they affect relationship health independently."
+              "statement": "I can describe how social norms and cultural values shape identity in familiar contexts."
             },
             {
               "band": "C",
-              "statement": "I can analyse relationship dynamics and explain how multiple warning signs interact to create unhealthy patterns."
+              "statement": "I can explain how social norms, values, and cultural contexts interact to influence identity and well-being."
             },
             {
               "band": "D",
-              "statement": "I can evaluate complex relationship dynamics, justify why patterns are unhealthy, and apply insights to unfamiliar situations."
+              "statement": "I can justify how social influences shape identity and behaviour across diverse and unfamiliar cultural contexts."
             }
           ]
         },
@@ -1389,7 +1242,7 @@
           "signature": [
             [
               "A",
-              "medium"
+              "short"
             ],
             [
               "B",
@@ -1407,19 +1260,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify obvious warning signs of unhealthy relationships with prompting and support."
+              "statement": "I can identify how social norms influence my own behaviour with prompting."
             },
             {
               "band": "B",
-              "statement": "I can recognise multiple warning signs and describe how they affect relationship health independently."
+              "statement": "I can describe how social norms and cultural values shape identity in familiar contexts."
             },
             {
               "band": "C",
-              "statement": "I can analyse relationship dynamics and explain how warning signs interact to create unhealthy patterns."
+              "statement": "I can explain how social norms, values, and cultural contexts interact to influence identity and well-being."
             },
             {
               "band": "D",
-              "statement": "I can evaluate complex relationship dynamics and justify why patterns are unhealthy across diverse contexts."
+              "statement": "I can justify how social influences shape identity and behaviour across diverse and unfamiliar cultural contexts."
             }
           ]
         },
@@ -1446,24 +1299,26 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify obvious warning signs of unhealthy relationships with prompting and support."
+              "statement": "I can identify how social norms influence behaviour with prompting and concrete examples."
             },
             {
               "band": "B",
-              "statement": "I can recognise multiple warning signs and describe how they affect relationship dynamics."
+              "statement": "I can describe how social norms and cultural values shape identity and behaviour independently."
             },
             {
               "band": "C",
-              "statement": "I can analyse relationship dynamics independently and explain why specific patterns indicate unhealthy relationships."
+              "statement": "I can explain how social norms, values, and cultural contexts interact to influence identity and well-being."
             },
             {
               "band": "D",
-              "statement": "I can evaluate complex relationship dynamics and justify how warning signs interact across unfamiliar contexts."
+              "statement": "I can justify how social influences shape identity across different cultural contexts and justify reasoning with evidence."
             }
           ]
         }
       ],
-      "stability_diagnostics": [],
+      "stability_diagnostics": [
+        "signature_counts={(('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 1}"
+      ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
@@ -1473,19 +1328,19 @@
       "statements": [
         {
           "band": "A",
-          "statement": "I can identify support resources with prompting when a relationship feels unsafe."
+          "statement": "I can identify how cultural practices influence behaviour with prompting and support."
         },
         {
           "band": "B",
-          "statement": "I can describe appropriate support strategies and select resources for relationship safety independently."
+          "statement": "I can describe how cultural influences shape personal behaviours and relationships in familiar contexts."
         },
         {
           "band": "C",
-          "statement": "I can evaluate multiple support options and explain why each suits different unsafe relationship situations."
+          "statement": "I can analyse how social influences within own and other cultures shape behaviours and experiences independently."
         },
         {
           "band": "D",
-          "statement": "I can justify selection of support resources and strategies across complex, unfamiliar relationship scenarios with reasoned analysis."
+          "statement": "I can critically evaluate and justify how cultural influences shape behaviours across unfamiliar contexts and transfer insights."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -1495,7 +1350,7 @@
           "signature": [
             [
               "A",
-              "short"
+              "medium"
             ],
             [
               "B",
@@ -1507,25 +1362,25 @@
             ],
             [
               "D",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify support resources with prompting when a relationship feels unsafe."
+              "statement": "I can identify how cultural influences affect behaviour in familiar situations with prompting."
             },
             {
               "band": "B",
-              "statement": "I can describe appropriate support strategies and select resources for relationship safety independently."
+              "statement": "I can describe how cultural influences shape personal behaviours and relationships in own and other cultures."
             },
             {
               "band": "C",
-              "statement": "I can evaluate multiple support options and explain why each suits different unsafe relationship situations."
+              "statement": "I can analyse how cultural influences independently shape behaviours, relationships, and experiences across different contexts."
             },
             {
               "band": "D",
-              "statement": "I can justify selection of support resources and strategies across complex, unfamiliar relationship scenarios with reasoned analysis."
+              "statement": "I can critically evaluate and justify how cultural influences shape behaviours and experiences, transferring insights across unfamiliar cultural contexts."
             }
           ]
         },
@@ -1538,7 +1393,7 @@
             ],
             [
               "B",
-              "short"
+              "medium"
             ],
             [
               "C",
@@ -1552,19 +1407,19 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify support resources with prompting when a relationship feels unsafe."
+              "statement": "I can identify how cultural practices influence behaviour with prompting and support."
             },
             {
               "band": "B",
-              "statement": "I can describe appropriate support strategies and resources for unhealthy relationship situations."
+              "statement": "I can describe how cultural influences shape personal behaviours and relationships in familiar contexts."
             },
             {
               "band": "C",
-              "statement": "I can independently evaluate and select suitable support resources based on relationship safety concerns."
+              "statement": "I can analyse how social influences within own and other cultures shape behaviours and experiences independently."
             },
             {
               "band": "D",
-              "statement": "I can justify my selection of support strategies across varied relationship contexts and explain their effectiveness."
+              "statement": "I can critically evaluate and justify how cultural influences shape behaviours across unfamiliar contexts and transfer insights."
             }
           ]
         },
@@ -1591,26 +1446,318 @@
           "statements": [
             {
               "band": "A",
-              "statement": "I can identify support resources with prompting when a relationship feels unsafe."
+              "statement": "I can identify how cultural practices influence behaviour with prompting and examples."
             },
             {
               "band": "B",
-              "statement": "I can describe appropriate support strategies and resources for different unhealthy relationship situations."
+              "statement": "I can describe how cultural influences shape personal behaviours and relationships in familiar contexts."
             },
             {
               "band": "C",
-              "statement": "I can independently evaluate and select suitable support resources based on specific relationship safety concerns."
+              "statement": "I can analyse how cultural influences within own and other cultures shape behaviours and experiences independently."
             },
             {
               "band": "D",
-              "statement": "I can justify my selection of support strategies across unfamiliar relationship contexts and explain trade-offs between options."
+              "statement": "I can critically evaluate and justify how cultural influences shape behaviours across unfamiliar contexts and cultures."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'short'), ('B', 'short'), ('C', 'medium'), ('D', 'medium')): 1}"
+        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'long')): 1, (('A', 'short'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2}"
       ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "A",
+          "statement": "I can identify with prompting how belonging to a group affects how someone feels."
+        },
+        {
+          "band": "B",
+          "statement": "I can describe independently how connection with others supports physical and emotional wellbeing."
+        },
+        {
+          "band": "C",
+          "statement": "I can explain why healthy relationships are fundamental to overall wellbeing and health outcomes."
+        },
+        {
+          "band": "D",
+          "statement": "I can justify across varied contexts why belonging and connection are essential to sustained wellbeing and resilience."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "A",
+              "medium"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify with prompting how belonging to a group affects how someone feels."
+            },
+            {
+              "band": "B",
+              "statement": "I can describe independently how connection with others supports physical and emotional wellbeing."
+            },
+            {
+              "band": "C",
+              "statement": "I can explain why healthy relationships are fundamental to overall wellbeing and health outcomes."
+            },
+            {
+              "band": "D",
+              "statement": "I can justify across varied contexts why belonging and connection are essential to sustained wellbeing and resilience."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              "medium"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify with prompting what makes a relationship feel safe and comfortable."
+            },
+            {
+              "band": "B",
+              "statement": "I can describe how belonging to a group or relationship affects how someone feels and behaves."
+            },
+            {
+              "band": "C",
+              "statement": "I can explain why healthy relationships matter for physical and emotional wellbeing in everyday life."
+            },
+            {
+              "band": "D",
+              "statement": "I can justify how connection and belonging influence long-term health outcomes across different life situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              "medium"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "short"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify with prompting what makes a relationship feel safe and comfortable."
+            },
+            {
+              "band": "B",
+              "statement": "I can describe how belonging to a group or relationship affects how someone feels."
+            },
+            {
+              "band": "C",
+              "statement": "I can explain why healthy relationships matter for physical and emotional wellbeing."
+            },
+            {
+              "band": "D",
+              "statement": "I can justify why connection and belonging are fundamental to health across different life contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('A', 'medium'), ('B', 'medium'), ('C', 'medium'), ('D', 'medium')): 2, (('A', 'medium'), ('B', 'medium'), ('C', 'short'), ('D', 'medium')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "A",
+          "statement": "I can identify obvious unhealthy relationship behaviours with prompting and support."
+        },
+        {
+          "band": "B",
+          "statement": "I can recognise multiple warning signs of unhealthy dynamics and name appropriate support resources."
+        },
+        {
+          "band": "C",
+          "statement": "I can analyse unhealthy relationship dynamics independently and evaluate suitable strategies to seek help."
+        },
+        {
+          "band": "D",
+          "statement": "I can analyse complex unhealthy dynamics across contexts and justify support choices with reasoned evaluation."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify obvious unhealthy relationship behaviours with prompting and support."
+            },
+            {
+              "band": "B",
+              "statement": "I can recognise multiple warning signs of unhealthy dynamics and name appropriate support resources."
+            },
+            {
+              "band": "C",
+              "statement": "I can analyse unhealthy relationship dynamics independently and evaluate suitable strategies to seek help."
+            },
+            {
+              "band": "D",
+              "statement": "I can analyse complex unhealthy dynamics across contexts and justify support choices with reasoned evaluation."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify obvious unhealthy relationship behaviours when prompted with examples."
+            },
+            {
+              "band": "B",
+              "statement": "I can recognise multiple warning signs of unhealthy dynamics in familiar relationship contexts."
+            },
+            {
+              "band": "C",
+              "statement": "I can analyse unhealthy dynamics and independently evaluate appropriate support resources and strategies."
+            },
+            {
+              "band": "D",
+              "statement": "I can analyse complex unhealthy dynamics across varied contexts and justify support choices with reasoned evaluation."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "A",
+              "short"
+            ],
+            [
+              "B",
+              "medium"
+            ],
+            [
+              "C",
+              "medium"
+            ],
+            [
+              "D",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "A",
+              "statement": "I can identify obvious unhealthy relationship behaviours when prompted with specific examples."
+            },
+            {
+              "band": "B",
+              "statement": "I can recognise multiple warning signs of unhealthy dynamics in familiar relationship situations."
+            },
+            {
+              "band": "C",
+              "statement": "I can analyse unhealthy relationship dynamics and independently evaluate appropriate support resources and strategies."
+            },
+            {
+              "band": "D",
+              "statement": "I can analyse complex unhealthy dynamics across unfamiliar contexts and justify support choices with reasoned evaluation."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     }

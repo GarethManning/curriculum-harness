@@ -6,15 +6,17 @@
   "runs": 3,
   "overall_stability_flag": "cluster_unstable",
   "overall_stability_diagnostics": [
-    "cluster_count_differs: counts across runs = [7, 8]",
-    "dominant_type_drift_run2: canonical cluster 6 (Type 3) → run2 cluster 7 (Type 2)"
+    "cluster_count_differs: counts across runs = [8, 6, 8]",
+    "cluster_missing_in_run2: canonical clusters [3, 5] have no Jaccard>=0.30 match",
+    "dominant_type_drift_run2: canonical cluster 4 (Type 1) → run2 cluster 3 (Type 2)",
+    "dominant_type_drift_run3: canonical cluster 4 (Type 1) → run3 cluster 4 (Type 2)"
   ],
   "unassigned_kud_item_ids": [],
   "clusters": [
     {
       "cluster_id": "cluster_01",
-      "competency_name": "Physical Health and Active Living",
-      "competency_definition": "The ability to understand factors supporting physical health and develop confidence, motivation, and competence to lead healthy and active lifestyles.",
+      "competency_name": "Physical Health and Well-being",
+      "competency_definition": "The ability to understand factors affecting physical health and develop confidence, competence, and sustained motivation to lead healthy and active lifestyles.",
       "kud_item_ids": [
         "blk_0007_item_01",
         "blk_0010_item_01",
@@ -36,7 +38,7 @@
       "per_run_signatures": [
         {
           "run": 1,
-          "competency_name": "Physical Health and Active Living",
+          "competency_name": "Physical Health and Well-being",
           "dominant_knowledge_type": "Type 1",
           "kud_item_ids": [
             "blk_0007_item_01",
@@ -55,6 +57,17 @@
             "blk_0010_item_02",
             "blk_0010_item_03"
           ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Physical Health and Well-being",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0010_item_01",
+            "blk_0010_item_02",
+            "blk_0010_item_03"
+          ]
         }
       ],
       "stability_diagnostics": []
@@ -62,7 +75,7 @@
     {
       "cluster_id": "cluster_02",
       "competency_name": "Self-Care and Respect for Self and Others",
-      "competency_definition": "The ability to develop positive, informed behaviours that care for and respect self and others, supporting well-being and sense of self-worth.",
+      "competency_definition": "The ability to develop and sustain positive, informed behaviours that care for and respect self and others, supporting well-being and sense of self-worth.",
       "kud_item_ids": [
         "blk_0009_item_01",
         "blk_0009_item_02"
@@ -90,7 +103,16 @@
         },
         {
           "run": 2,
-          "competency_name": "Self-Care and Respect for Self and Others",
+          "competency_name": "Self-Care and Respect for Others",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Care and Respect for Others",
           "dominant_knowledge_type": "Type 3",
           "kud_item_ids": [
             "blk_0009_item_01",
@@ -103,7 +125,7 @@
     {
       "cluster_id": "cluster_03",
       "competency_name": "Emotional Awareness and Regulation",
-      "competency_definition": "The ability to understand connections between experiences and emotional well-being, recognise the fluidity of emotions, and develop strategies to regulate them.",
+      "competency_definition": "The ability to understand connections between experiences and emotional well-being, recognise emotions as fluid, and develop strategies to regulate emotions and seek support.",
       "kud_item_ids": [
         "blk_0011_item_01",
         "blk_0012_item_01",
@@ -139,6 +161,18 @@
           "kud_item_ids": [
             "blk_0011_item_01",
             "blk_0012_item_01",
+            "blk_0012_item_02",
+            "blk_0014_item_01",
+            "blk_0014_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Mental Health and Emotional Well-being",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0012_item_01",
             "blk_0012_item_02"
           ]
         }
@@ -163,7 +197,7 @@
         "Type 1": 1,
         "Type 3": 1
       },
-      "stability_flag": "stable",
+      "stability_flag": "cluster_unstable",
       "per_run_signatures": [
         {
           "run": 1,
@@ -176,6 +210,13 @@
         },
         {
           "run": 2,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        },
+        {
+          "run": 3,
           "competency_name": "Communication About Mental Health",
           "dominant_knowledge_type": "Type 2",
           "kud_item_ids": [
@@ -184,38 +225,51 @@
           ]
         }
       ],
-      "stability_diagnostics": []
+      "stability_diagnostics": [
+        "unmatched_in_run2"
+      ]
     },
     {
       "cluster_id": "cluster_05",
       "competency_name": "Informed Decision-Making",
-      "competency_definition": "The ability to understand how decisions impact self, others, and society, and to make informed decisions by analysing implications and influencing factors.",
+      "competency_definition": "The ability to understand how decisions impact self, others, and society, analyse influencing factors, and make informed decisions considering implications and risks.",
       "kud_item_ids": [
         "blk_0015_item_01",
         "blk_0016_item_01",
         "blk_0016_item_02",
         "blk_0016_item_03",
         "blk_0017_item_01",
-        "blk_0017_item_02",
-        "blk_0018_item_01"
+        "blk_0017_item_02"
       ],
       "source_block_ids": [
         "blk_0015",
         "blk_0016",
-        "blk_0017",
-        "blk_0018"
+        "blk_0017"
       ],
       "source_position_start": 24,
-      "source_position_end": 27,
-      "dominant_knowledge_type": "Type 2",
+      "source_position_end": 26,
+      "dominant_knowledge_type": "Type 1",
       "knowledge_type_breakdown": {
-        "Type 1": 5,
+        "Type 1": 4,
         "Type 2": 2
       },
-      "stability_flag": "stable",
+      "stability_flag": "cluster_unstable",
       "per_run_signatures": [
         {
           "run": 1,
+          "competency_name": "Informed Decision-Making",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0015_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03",
+            "blk_0017_item_01",
+            "blk_0017_item_02"
+          ]
+        },
+        {
+          "run": 2,
           "competency_name": "Informed Decision-Making",
           "dominant_knowledge_type": "Type 2",
           "kud_item_ids": [
@@ -229,7 +283,7 @@
           ]
         },
         {
-          "run": 2,
+          "run": 3,
           "competency_name": "Informed Decision-Making",
           "dominant_knowledge_type": "Type 2",
           "kud_item_ids": [
@@ -242,12 +296,61 @@
           ]
         }
       ],
-      "stability_diagnostics": []
+      "stability_diagnostics": [
+        "dominant_type_drift_run2: Type 1→Type 2",
+        "dominant_type_drift_run3: Type 1→Type 2"
+      ]
     },
     {
       "cluster_id": "cluster_06",
+      "competency_name": "Career Pathway Planning",
+      "competency_definition": "The ability to understand that career pathway decisions have significant lifelong consequences and engage thoughtfully with career planning.",
+      "kud_item_ids": [
+        "blk_0018_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0018"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 1
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Career Pathway Planning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0018_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        },
+        {
+          "run": 3,
+          "competency_name": "Career Pathway Decision-Making",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0018_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "unmatched_in_run2"
+      ]
+    },
+    {
+      "cluster_id": "cluster_07",
       "competency_name": "Understanding Social Influences",
-      "competency_definition": "The ability to understand how social influences shape identity, values, and behaviours, and to engage critically with norms and values across cultures.",
+      "competency_definition": "The ability to understand how social influences shape identity and well-being, and critically analyse how norms, values, and cultural contexts affect behaviour and relationships.",
       "kud_item_ids": [
         "blk_0019_item_01",
         "blk_0020_item_01",
@@ -285,6 +388,19 @@
         },
         {
           "run": 2,
+          "competency_name": "Understanding and Engaging with Social Influences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0019_item_01",
+            "blk_0020_item_01",
+            "blk_0020_item_02",
+            "blk_0020_item_03",
+            "blk_0021_item_01",
+            "blk_0021_item_02"
+          ]
+        },
+        {
+          "run": 3,
           "competency_name": "Understanding Social Influences",
           "dominant_knowledge_type": "Type 1",
           "kud_item_ids": [
@@ -300,9 +416,9 @@
       "stability_diagnostics": []
     },
     {
-      "cluster_id": "cluster_07",
-      "competency_name": "Healthy Relationships and Connection",
-      "competency_definition": "The ability to understand the importance of healthy relationships, recognise unhealthy dynamics, and develop sustained capacity to form, nurture, and maintain relationships.",
+      "cluster_id": "cluster_08",
+      "competency_name": "Healthy Relationships",
+      "competency_definition": "The ability to understand the importance of healthy relationships, form and maintain them, recognise unhealthy dynamics, and seek support when needed.",
       "kud_item_ids": [
         "blk_0022_item_01",
         "blk_0023_item_01",
@@ -329,11 +445,11 @@
         "Type 3": 3,
         "Type 2": 2
       },
-      "stability_flag": "cluster_unstable",
+      "stability_flag": "stable",
       "per_run_signatures": [
         {
           "run": 1,
-          "competency_name": "Healthy Relationships and Connection",
+          "competency_name": "Healthy Relationships",
           "dominant_knowledge_type": "Type 3",
           "kud_item_ids": [
             "blk_0022_item_01",
@@ -350,7 +466,23 @@
         {
           "run": 2,
           "competency_name": "Healthy Relationships",
-          "dominant_knowledge_type": "Type 2",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0022_item_01",
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0024_item_01",
+            "blk_0024_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0026_item_01",
+            "blk_0026_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Healthy Relationships",
+          "dominant_knowledge_type": "Type 3",
           "kud_item_ids": [
             "blk_0022_item_01",
             "blk_0023_item_01",
@@ -364,9 +496,7 @@
           ]
         }
       ],
-      "stability_diagnostics": [
-        "dominant_type_drift_run2: Type 3→Type 2"
-      ]
+      "stability_diagnostics": []
     }
   ]
 }
