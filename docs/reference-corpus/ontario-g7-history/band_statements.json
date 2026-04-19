@@ -11,7 +11,7 @@
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can evaluate the credibility of a historical source by identifying the author's perspective and purpose."
+          "statement": "I can analyse primary sources to identify evidence and explain how it supports conclusions about historical events."
         }
       ],
       "stability_flag": "stable",
@@ -27,7 +27,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can evaluate the credibility of a historical source by identifying the author's perspective and purpose."
+              "statement": "I can analyse primary sources to identify evidence and explain how it supports conclusions about historical events."
             }
           ]
         },
@@ -42,7 +42,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify the perspective and purpose of a historical source to evaluate its credibility."
+              "statement": "I can analyse primary sources to identify evidence and explain how it supports conclusions about historical events."
             }
           ]
         },
@@ -57,7 +57,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can evaluate the credibility of a historical source by identifying the author's perspective and purpose."
+              "statement": "I can analyse primary sources to identify evidence and explain what it reveals about a historical event."
             }
           ]
         }
@@ -68,11 +68,72 @@
     },
     {
       "lt_id": "cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Grade 7",
+          "statement": "I can analyse historical maps to identify spatial relationships and interpret how geography influenced past events and societies."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can analyse historical maps to identify spatial relationships and interpret how geography influenced past events and societies."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can analyse historical maps to identify spatial relationships and interpret how geography influenced past events and societies."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Grade 7",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Grade 7",
+              "statement": "I can analyse historical maps to identify spatial relationships and interpret how geography influenced past events and societies."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
       "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can analyse primary sources of different types to identify evidence and explain what it reveals about a historical event."
+          "statement": "I can identify multiple causes of key events between 1713 and 1800, distinguishing immediate triggers from underlying conditions."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -82,13 +143,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "short"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse primary sources of different types to identify evidence and explain what it reveals about a historical event."
+              "statement": "I can identify multiple causes contributing to key events between 1713 and 1800."
             }
           ]
         },
@@ -103,7 +164,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse evidence from different primary sources to support conclusions about historical events."
+              "statement": "I can identify multiple causes of key events between 1713 and 1800, distinguishing immediate triggers from underlying conditions."
             }
           ]
         },
@@ -112,30 +173,30 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse primary sources of different types to identify evidence and explain what it reveals about a historical event."
+              "statement": "I can identify multiple causes of key events between 1713 and 1800, distinguishing immediate triggers from underlying conditions."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('Grade 7', 'long'),): 2, (('Grade 7', 'medium'),): 1}"
+        "signature_counts={(('Grade 7', 'short'),): 1, (('Grade 7', 'medium'),): 2}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_02_lt_01",
+      "lt_id": "cluster_04_lt_02",
       "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can analyse maps to identify and explain patterns of historical settlement and displacement."
+          "statement": "I can explain how key events and treaties from 1713–1800 affected different groups and identify why significance varies across perspectives."
         }
       ],
       "stability_flag": "stable",
@@ -145,13 +206,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse maps to identify and explain patterns of historical settlement and displacement."
+              "statement": "I can explain how key events and treaties from 1713–1800 affected different groups and identify why significance varies across perspectives."
             }
           ]
         },
@@ -160,13 +221,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse maps to identify and explain patterns of settlement and spatial relationships in historical contexts."
+              "statement": "I can explain how key events and treaties from 1713–1800 affected different groups and identify why their significance varied across communities."
             }
           ]
         },
@@ -175,13 +236,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can analyse maps to identify and explain patterns of historical settlement and displacement."
+              "statement": "I can explain how key events and treaties from this period affected different groups and identify why their significance varies across communities."
             }
           ]
         }
@@ -191,12 +252,12 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_02_lt_02",
+      "lt_id": "cluster_04_lt_03",
       "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can create maps using digital or paper tools to represent historical events and settlement patterns."
+          "statement": "I can identify key events and treaties in Canada between 1713 and 1800 and describe their main features."
         }
       ],
       "stability_flag": "stable",
@@ -212,7 +273,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can create maps using digital or paper tools to represent historical events and settlement patterns."
+              "statement": "I can identify key events and treaties in Canada between 1713 and 1800 and describe their main features."
             }
           ]
         },
@@ -227,7 +288,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can create maps using digital or paper tools to represent historical events and settlement patterns."
+              "statement": "I can identify key events and treaties in Canada between 1713 and 1800 and describe their main parties and outcomes."
             }
           ]
         },
@@ -242,68 +303,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can create maps using digital or paper tools to represent historical events and settlement patterns."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_02_lt_03",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can justify why specific map types and information effectively represent historical alliances and conflicts."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can justify why specific map types and information effectively represent historical alliances and conflicts."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can justify why specific map types effectively represent historical alliances, conflicts, and spatial relationships."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can justify why specific map types effectively represent historical alliances, conflicts, and spatial relationships."
+              "statement": "I can identify key events and treaties in Canada between 1713 and 1800 and describe their main parties and outcomes."
             }
           ]
         }
@@ -314,11 +314,11 @@
     },
     {
       "lt_id": "cluster_05_lt_01",
-      "knowledge_type": "Type 2",
+      "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can explain the causes and different viewpoints surrounding displacement of groups in Canadian history."
+          "statement": "I can describe daily life and community practices in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800."
         }
       ],
       "stability_flag": "stable",
@@ -328,13 +328,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can explain the causes and different viewpoints surrounding displacement of groups in Canadian history."
+              "statement": "I can describe daily life and community practices in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800."
             }
           ]
         },
@@ -343,13 +343,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify causes and describe different perspectives on displacement events involving specific groups in Canadian history."
+              "statement": "I can describe daily life and community practices in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800."
             }
           ]
         },
@@ -358,13 +358,13 @@
           "signature": [
             [
               "Grade 7",
-              "medium"
+              "long"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify causes and describe different perspectives on displacement of groups in Canadian history."
+              "statement": "I can describe daily life and community practices in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800."
             }
           ]
         }
@@ -379,70 +379,7 @@
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can compare how different displaced groups responded to forced migration and identify similarities in their experiences."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can compare how different displaced groups responded to forced migration and identify similarities in their experiences."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can compare how different displaced groups responded to displacement and identify similarities in their experiences across historical periods."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can compare how different displaced groups responded to displacement and identify similarities and differences in their experiences."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Grade 7', 'medium'),): 2, (('Grade 7', 'long'),): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_05_lt_03",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can describe the displacement experiences of different groups in Canadian history and explain the social conditions that caused them."
+          "statement": "I can explain how interactions between individuals and groups influenced Canadian communities during 1713–1800."
         }
       ],
       "stability_flag": "stable",
@@ -452,13 +389,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can describe the displacement experiences of different groups in Canadian history and explain the social conditions that caused them."
+              "statement": "I can explain how interactions between individuals and groups influenced Canadian communities during 1713–1800."
             }
           ]
         },
@@ -467,13 +404,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can describe the displacement experiences of different groups in Canadian history and explain the social conditions that caused them."
+              "statement": "I can analyse how interactions between individuals and groups influenced Canadian communities during 1713–1800."
             }
           ]
         },
@@ -482,13 +419,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can describe the displacement experiences of different groups in Canadian history and explain the conditions that caused their movement."
+              "statement": "I can explain how interactions between individuals and groups influenced Canadian communities during 1713–1800."
             }
           ]
         }
@@ -499,11 +436,11 @@
     },
     {
       "lt_id": "cluster_06_lt_01",
-      "knowledge_type": "Type 2",
+      "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can identify similarities and differences in how people lived across historical periods and explain reasons for major changes."
+          "statement": "I can identify and describe social, political, and economic values in diverse Canadian communities between 1800 and 1850."
         }
       ],
       "stability_flag": "stable",
@@ -513,13 +450,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify similarities and differences in how people lived across historical periods and explain reasons for major changes."
+              "statement": "I can identify and describe social, political, and economic values in diverse Canadian communities between 1800 and 1850."
             }
           ]
         },
@@ -528,13 +465,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify similarities and differences in how people lived across historical periods and explain reasons for key changes."
+              "statement": "I can identify and describe social, political, and economic values in Canadian communities between 1800 and 1850."
             }
           ]
         },
@@ -543,13 +480,13 @@
           "signature": [
             [
               "Grade 7",
-              "long"
+              "medium"
             ]
           ],
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify similarities and differences in how people lived across different time periods and explain reasons for major changes."
+              "statement": "I can identify social, political, and economic values in diverse Canadian communities between 1800 and 1850."
             }
           ]
         }
@@ -560,72 +497,11 @@
     },
     {
       "lt_id": "cluster_06_lt_02",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can identify and describe different types of historical evidence from specific time periods and cultures."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can identify and describe different types of historical evidence from specific time periods and cultures."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can identify and describe different types of historical evidence from specific time periods and cultures."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can identify and describe different types of historical evidence from specific time periods and cultures."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_07_lt_01",
       "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can identify and compare different perspectives on a historical event and explain why groups held different viewpoints."
+          "statement": "I can explain how different values and beliefs affected how diverse communities experienced change between 1800 and 1850."
         }
       ],
       "stability_flag": "stable",
@@ -641,7 +517,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify and compare different perspectives on a historical event and explain why groups held different viewpoints."
+              "statement": "I can explain how different values and beliefs affected how diverse communities experienced change between 1800 and 1850."
             }
           ]
         },
@@ -656,7 +532,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify and compare different perspectives held by groups in a historical event."
+              "statement": "I can explain how different values and beliefs affected how diverse communities experienced change between 1800 and 1850."
             }
           ]
         },
@@ -671,68 +547,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify and compare different perspectives on a historical event and explain why groups held different viewpoints."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_07_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can gather evidence from multiple sources and compare different perspectives on a historical event."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can gather evidence from multiple sources and compare different perspectives on a historical event."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can gather evidence from multiple sources and compare different perspectives on a historical event."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can gather evidence from multiple sources and compare different perspectives on a historical event."
+              "statement": "I can explain how different values and beliefs affected how diverse communities experienced change between 1800 and 1850."
             }
           ]
         }
@@ -743,11 +558,11 @@
     },
     {
       "lt_id": "cluster_08_lt_01",
-      "knowledge_type": "Type 1",
+      "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can identify and describe significant events, treaties, and policies that shaped Canada between 1713 and 1850."
+          "statement": "I can identify causes and consequences of key events in Canada between 1800 and 1850."
         }
       ],
       "stability_flag": "stable",
@@ -763,7 +578,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify and describe significant events, treaties, and policies that shaped Canada between 1713 and 1850."
+              "statement": "I can identify causes and consequences of key events in Canada between 1800 and 1850."
             }
           ]
         },
@@ -778,7 +593,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify significant events, treaties, and policies that shaped Canada between 1713 and 1850."
+              "statement": "I can identify and explain the causes and consequences of key events in Canada between 1800 and 1850."
             }
           ]
         },
@@ -793,207 +608,22 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can identify major events, treaties, and policies that shaped Canada between 1713 and 1850."
+              "statement": "I can identify causes and consequences of key events in Canada between 1800 and 1850."
             }
           ]
         }
       ],
       "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_08_lt_02",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can describe key social and economic developments in Canada between 1713 and 1850 and explain how historical figures and groups influenced these changes."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe key social and economic developments in Canada between 1713 and 1850 and explain how historical figures and groups influenced these changes."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe key social and economic developments and identify important historical figures who shaped Canada between 1713 and 1850."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe key social and economic developments in Canada between 1713 and 1850 and explain how historical figures and groups influenced these changes."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Grade 7', 'long'),): 2, (('Grade 7', 'medium'),): 1}"
-      ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
     {
       "lt_id": "cluster_08_lt_03",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can analyse why major historical events are turning points by distinguishing immediate causes from underlying conditions."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse why major historical events are turning points by distinguishing immediate causes from underlying conditions."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse why major historical events are turning points by identifying both immediate causes and underlying conditions."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can explain how immediate causes and underlying conditions together made a historical event a turning point."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_09_lt_01",
       "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Grade 7",
-          "statement": "I can use historical vocabulary accurately when describing events and people from colonial North America and early Canadian history."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can use historical vocabulary accurately when describing events and people from colonial North America and early Canadian history."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can use historical vocabulary accurately when describing events and people from colonial North America and early Canadian history."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can use historical vocabulary accurately when describing events and people from colonial North America and early Canadian history."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_09_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can communicate historical findings using appropriate vocabulary and formats for my intended audience."
+          "statement": "I can identify key events, treaties, and social changes in Canada between 1800 and 1850."
         }
       ],
       "stability_flag": "stable",
@@ -1009,7 +639,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can communicate historical findings using appropriate vocabulary and formats for my intended audience."
+              "statement": "I can identify key events, treaties, and social changes in Canada between 1800 and 1850."
             }
           ]
         },
@@ -1024,7 +654,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can present historical findings using appropriate vocabulary and formats for my intended audience."
+              "statement": "I can identify key events, treaties, and social changes in Canada between 1800 and 1850."
             }
           ]
         },
@@ -1039,251 +669,7 @@
           "statements": [
             {
               "band": "Grade 7",
-              "statement": "I can present historical findings using appropriate vocabulary and formats suited to my intended audience."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_10_lt_01",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can analyse how fur trade competition created different economic opportunities and challenges for Indigenous peoples, Métis, and settlers."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how fur trade competition created different economic opportunities and challenges for Indigenous peoples, Métis, and settlers."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how fur trade competition created different economic opportunities and challenges for Indigenous peoples, Métis, and settlers."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how fur trade competition created different economic opportunities and challenges for Indigenous peoples, Métis, and settlers."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_10_lt_02",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can explain how kinship systems and cultural practices shaped relationships between Indigenous, Métis, and European communities."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can explain how kinship systems and cultural practices shaped relationships between Indigenous, Métis, and European communities."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can explain how kinship systems and cultural practices shaped relationships between Indigenous, Métis, and European communities."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can explain how kinship systems and cultural practices shaped relationships between Indigenous, Métis, and European communities."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_11_lt_01",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can analyse how different immigrant groups contributed to Canadian settlement in specific regions and time periods."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how different immigrant groups contributed to Canadian settlement in specific regions and time periods."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how different immigrant groups contributed to Canadian settlement in specific regions and time periods."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can analyse how different immigrant groups contributed to Canadian settlement in specific regions and time periods."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_11_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Grade 7",
-          "statement": "I can describe how immigrant and settler groups have shaped Canadian communities and influenced Indigenous peoples."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe how immigrant and settler groups have shaped Canadian communities and influenced Indigenous peoples."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe how immigrant and settler groups have shaped Canadian communities and influenced Indigenous peoples."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Grade 7",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Grade 7",
-              "statement": "I can describe how immigrant and settler groups have shaped Canadian society and affected Indigenous communities."
+              "statement": "I can identify key events, treaties, and social changes in Canada between 1800 and 1850."
             }
           ]
         }

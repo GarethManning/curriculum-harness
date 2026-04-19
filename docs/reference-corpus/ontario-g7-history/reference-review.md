@@ -25,282 +25,457 @@ Source snapshot: `docs/run-snapshots/2026-04-18-session-4a-4-5-ontario-k8-g7-his
 
 - KUD items: **188**
 - Halted KUD blocks: **129**
-- Competency clusters: **11**
+- Competency clusters: **8**
   - overall stability: `cluster_unstable`
-- Learning Targets: **23**
-  - knowledge types: Type 1=7, Type 2=14, Type 3=2
-  - stability: {'lt_set_unstable': 10, 'stable': 13}
-- Band-statement sets (Type 1/2): **21**
-  - stability: {'stable': 18, 'band_statements_unstable': 3}
+- Learning Targets: **13**
+  - knowledge types: Type 1=5, Type 2=6, Type 3=2
+  - stability: {'stable': 10, 'lt_set_unstable': 3}
+- Band-statement sets (Type 1/2): **11**
+  - stability: {'stable': 10, 'band_statements_unstable': 1}
 - Observation indicator sets (Type 3): **2**
   - stability: {'stable': 2}
-- Halted at any stage: 130
+- Criterion rubrics (Type 1/2): **7** (gate pass=6; halted=4)
+  - stability: {'stable': 4, 'rubric_unstable': 3}
+- Supporting components (Type 1/2): **6** (halted=0)
+- Halted at any stage: 136
 - Pipeline: all KUD halting gates passed
 
 ## Competencies
 
-### Historical Evidence Analysis and Source Evaluation — `cluster_01`
+### Historical Inquiry and Primary Source Analysis — `cluster_01`
 
-**Definition.** The ability to gather, critically analyse, and evaluate primary and secondary sources to form evidence-based conclusions about historical events and issues.
+**Definition.** The ability to gather, critically analyse, and draw conclusions from primary and secondary historical sources.
 
-**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L13-574. **KUD items:** 9.
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L13-139. **KUD items:** 4.
 
 #### KUD items
 
 | Item ID | Type | Column | Content |
 |---|---|---|---|
 | `blk_0004_item_01` | Type 2 | do_skill | Gather and critically analyse evidence from primary sources in order to form conclusions about historical issues and events. |
-| `blk_0078_item_01` | Type 2 | do_skill | Evaluate the reliability and perspective-value of diaries and letters as sources on the experiences and perspectives of expelled Acadians, and identify and consult alternative sources to investigate h |
-| `blk_0080_item_01` | Type 2 | do_skill | Identify and locate multiple types of historical sources that document First Nations positions on the Peace and Friendship Treaties, and evaluate the reliability and perspective of those sources. |
-| `blk_0083_item_01` | Type 2 | do_skill | Assess the credibility of sources and information relevant to investigations by considering the perspective, bias, accuracy, authenticity, purpose, and context of the source and the values and experti |
-| `blk_0091_item_01` | Type 2 | do_skill | Interpret and analyse paintings of key events in the Seven Years' War to extract information and to determine the perspective that is presented and the perspectives that are missing. |
-| `blk_0093_item_01` | Type 2 | do_skill | Analyse paintings to identify what they reveal about their subject and the perspective of the artist, and evaluate the accuracy of the depiction by cross-referencing with other sources. |
-| `blk_0190_item_01` | Type 2 | do_skill | Analyse a painting depicting life in the Arctic to determine the perspective of the artist and consider how the painting might differ if painted from an Inuit perspective. |
-| `blk_0191_item_01` | Type 2 | do_skill | Assess the credibility of sources and information relevant to investigations by considering the perspective, bias, accuracy, authenticity, purpose, and context of the source and the values and experti |
-| `blk_0192_item_01` | Type 2 | do_skill | Analyse a historical source by identifying the author's social, economic, or political position and reasoning about how that position may have shaped the author's values, perspective, and the source's |
-
-#### Learning Targets
-
-##### Evaluating Source Credibility and Perspective — `cluster_01_lt_01`
-
-**Definition.** I can assess the credibility of historical sources by analysing perspective, bias, authenticity, purpose, context, and author expertise.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0083_item_01`, `blk_0191_item_01`, `blk_0192_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can evaluate the credibility of a historical source by identifying the author's perspective and purpose. |
-
-##### Analysing Evidence from Diverse Source Types — `cluster_01_lt_02`
-
-**Definition.** I can gather and critically analyse evidence from primary sources of different types to form and justify conclusions about historical events and issues.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
-
-**Prerequisites:** `Evaluating Source Credibility and Perspective`
-
-**KUD items covered:** `blk_0004_item_01`, `blk_0078_item_01`, `blk_0080_item_01`, `blk_0091_item_01`, `blk_0093_item_01`, `blk_0190_item_01`
-
-**Single-grade band** — stability `band_statements_unstable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can analyse primary sources of different types to identify evidence and explain what it reveals about a historical event. |
-
-### Cartographic Analysis and Map Use — `cluster_02`
-
-**Definition.** The ability to analyse, interpret, and create maps to investigate historical patterns, displacement, settlement, and spatial relationships.
-
-**Dominant knowledge type:** Type 1. **Stability:** `stable`. **Source lines:** L139-592. **KUD items:** 15.
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
 | `blk_0039_item_01` | Type 1 | know | The term map refers to print, digital, and interactive maps. |
 | `blk_0039_item_02` | Type 1 | do_skill | Analyse maps on paper or using mapping programs. |
 | `blk_0039_item_03` | Type 1 | do_skill | Create maps on paper or using mapping programs. |
-| `blk_0086_item_01` | Type 2 | do_skill | Analyse flow maps to show where groups, including Indigenous communities, were displaced from and where they went. |
-| `blk_0086_item_02` | Type 2 | do_skill | Analyse population maps to determine changes in settlement patterns and the groups, including Indigenous communities, that were affected. |
-| `blk_0086_item_03` | Type 1 | know | America during the Seven Years' War; the displacement of groups, including Indigenous communities, from the Maritime colonies. |
-| `blk_0088_item_01` | Type 2 | do_skill | Analyse maps of Canada before and after the Treaty of Paris to identify and explain changes in settlement trends and European settlement patterns in First Nations territories. |
-| `blk_0089_item_01` | Type 2 | do_skill | Identify and justify what information would need to be included on a map to show the various alliances and conflicts in North America during the Seven Years' War. |
-| `blk_0090_item_01` | Type 2 | do_skill | Analyse maps showing Métis migration patterns before and after the establishment of the North West Company or the Hudson's Bay Company to identify what changed, what persisted, and the multiple factor |
-| `blk_0193_item_02` | Type 1 | do_skill | Analyse and construct maps as part of investigations into significant events, developments, and issues, with a focus on exploring their spatial boundaries. |
-| `blk_0194_item_02` | Type 1 | do_skill | Construct flow maps to show where famine Irish were displaced from and where they settled in Canada |
-| `blk_0194_item_03` | Type 1 | do_skill | Analyse demographic maps to determine settlement patterns in Upper Canada and how they affected First Nations and Métis people in the colony |
-| `blk_0194_item_04` | Type 2 | do_skill | Identify and justify what types of maps might be used to gather information on immigrants entering Canada |
-| `blk_0197_item_01` | Type 2 | do_skill | Identify and justify types of information needed on a map to illustrate encroachment by newcomers/settlers on the lands of the Six Nations in the Haldimand area. |
-| `blk_0199_item_04` | Type 1 | do_skill | Use graphs to determine the increase in immigrants to the various colonies in British North America. |
 
 #### Learning Targets
 
-##### Interpreting Maps to Analyse Spatial Patterns — `cluster_02_lt_01`
+##### Analysing Primary Sources for Historical Evidence — `cluster_01_lt_01`
 
-**Definition.** I can analyse maps to identify and explain historical patterns of displacement, settlement, and spatial relationships.
+**Definition.** I can gather and critically analyse evidence from primary sources to form reasoned conclusions about historical issues and events.
 
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
 
-**KUD items covered:** `blk_0039_item_02`, `blk_0086_item_01`, `blk_0086_item_02`, `blk_0088_item_01`, `blk_0090_item_01`, `blk_0193_item_02`, `blk_0194_item_03`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can analyse maps to identify and explain patterns of historical settlement and displacement. |
-
-##### Creating and Designing Maps for Historical Investigation — `cluster_02_lt_02`
-
-**Definition.** I can create maps using paper or digital tools to represent historical events, displacement patterns, and settlement trends.
-
-**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0039_item_01`, `blk_0039_item_03`, `blk_0086_item_03`, `blk_0193_item_02`, `blk_0194_item_02`, `blk_0199_item_04`
+**KUD items covered:** `blk_0004_item_01`
 
 **Single-grade band** — stability `stable`, quality gate **PASS**.
 
 | Band | Statement |
 |---|---|
-| Grade 7 | I can create maps using digital or paper tools to represent historical events and settlement patterns. |
+| Grade 7 | I can analyse primary sources to identify evidence and explain how it supports conclusions about historical events. |
 
-##### Justifying Map Design Choices for Historical Inquiry — `cluster_02_lt_03`
+##### Interpreting and Creating Historical Maps — `cluster_01_lt_02`
 
-**Definition.** I can identify and justify what information and map types are needed to represent historical alliances, conflicts, and spatial relationships.
+**Definition.** I can analyse and create maps in print or digital formats to represent and interpret historical information and spatial relationships.
 
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
+**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
 
-**KUD items covered:** `blk_0089_item_01`, `blk_0194_item_04`, `blk_0197_item_01`
+**KUD items covered:** `blk_0039_item_01`, `blk_0039_item_02`, `blk_0039_item_03`
 
 **Single-grade band** — stability `stable`, quality gate **PASS**.
 
 | Band | Statement |
 |---|---|
-| Grade 7 | I can justify why specific map types and information effectively represent historical alliances and conflicts. |
+| Grade 7 | I can analyse historical maps to identify spatial relationships and interpret how geography influenced past events and societies. |
 
-### Contextual Understanding and Anti-Presentism — `cluster_03`
+### Continuity and Change in Communities (1713–1800) — `cluster_02`
 
-**Definition.** A sustained orientation to understand historical actors' decisions and perspectives within their own context's values, beliefs, and constraints, resisting presentism.
+**Definition.** The ability to analyse and compare experiences, values, and ways of life of diverse communities in Canada between 1713 and 1800 with present-day Canada.
 
-**Dominant knowledge type:** Type 3. **Stability:** `stable`. **Source lines:** L147-724. **KUD items:** 16.
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0044_item_02` | Type 3 | do_disposition | Sustain an orientation to notice what persists and what transforms across time when encountering historical material, resisting both 'everything changes' and 'nothing really changes' as default framin |
-| `blk_0044_item_03` | Type 3 | do_disposition | Sustain an orientation to understand historical actors' decisions within their own context's values, beliefs, knowledge, and constraints, resisting presentism and the impulse to evaluate the past by p |
-| `blk_0062_item_02` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' and groups' decisions and experiences within their own context's values, beliefs, knowledge, and constraints, resisting presentism acro |
-| `blk_0066_item_02` | Type 3 | do_disposition | Develop and sustain a default orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting |
-| `blk_0081_item_01` | Type 3 | do_disposition | Sustain an orientation to actively seek and include perspectives of First Nations, Métis, and Inuit in primary and secondary sources consulted during historical inquiry, and to critically examine whet |
-| `blk_0082_item_01` | Type 3 | do_disposition | Sustain a default orientation to notice and question whose perspectives are represented in historical sources, including whether women and Indigenous women's voices are present or absent, across all s |
-| `blk_0084_item_01` | Type 3 | do_disposition | A sustained orientation to consult multiple sources by default when examining a historical event, issue, or development, rather than relying on a single account. |
-| `blk_0088_item_02` | Type 3 | do_disposition | Sustain attention to continuity and change across multiple dimensions (political, social, economic, cultural) when interpreting historical maps and settlement patterns, resisting both deterministic an |
-| `blk_0155_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and communities' decisions and values within their own context's constraints, knowledge, and beliefs, resisting presentism when encounter |
-| `blk_0168_item_02` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' decisions and adaptations within their own context's values, knowledge, constraints, and environmental conditions, resisting presentist |
-| `blk_0173_item_01` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting presentis |
-| `blk_0192_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and sources' positions within their own context's values, beliefs, and constraints, resisting presentism and judgment by present-day fram |
-| `blk_0206_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting presentism  |
-| `blk_0223_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand Tecumseh's decision within his own context's values, beliefs, knowledge, and constraints rather than judging by present-day frames, resisting presentism acr |
-| `blk_0228_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand the decisions and actions of historical actors within their own context's values, beliefs, knowledge, and constraints rather than judging them by present-da |
-| `blk_0258_item_02` | Type 3 | do_disposition | Sustain a default orientation to recognise historical significance as constructed and variable across communities, resisting the assumption that what appears in a memorial or textbook is inherently wh |
-
-#### Learning Targets
-
-##### Understanding Historical Actors in Context — `cluster_03_lt_01`
-
-**Definition.** The student sustains a default orientation to understand historical actors' and communities' decisions, perspectives, and actions within their own context's values, beliefs, knowledge, and constraints, resisting presentism across all historical encounters.
-
-**Knowledge type:** Type 3. **Assessment route:** `multi_informant_observation`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0044_item_03`, `blk_0062_item_02`, `blk_0066_item_02`, `blk_0155_item_02`, `blk_0168_item_02`, `blk_0173_item_01`, `blk_0192_item_02`, `blk_0206_item_02`, `blk_0223_item_02`, `blk_0228_item_02`
-
-**Observation protocol** — stability `stable`, Mode 3 gate **PASS**.
-
-**Grade 7**
-
-- The student asks questions about what people in the past believed, valued, or knew rather than immediately judging their choices by today's standards.
-- The student identifies constraints or conditions that shaped a historical actor's decisions and explains how those circumstances differed from the present.
-- The student resists labelling historical figures or groups as simply right or wrong, instead describing the competing pressures and information available to them at the time.
-
-_Self-reflection prompt (calibrated to this source's own developmental expectations at Grade 7):_ Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)
-
-**Parent / caregiver prompts**
-
-- When your child talks about a historical event or person from school, does he or she ask why people made those choices given what they knew then, rather than saying the choice was obviously wrong?
-- Have you noticed your child mentioning the rules, beliefs, or dangers that existed in a time period to explain why someone acted a certain way?
-- Does your child seem curious about understanding different perspectives from the past, or does he or she tend to judge people quickly based on today's values?
-
-**Developmental conversation protocol.** The teacher, student, and optionally parent discuss specific moments when the student resisted presentism—instances where the student asked about historical context, identified constraints, or suspended judgment—and reflect on how understanding the past on its own terms deepens historical thinking.
-
-##### Attending to Perspective and Change Over Time — `cluster_03_lt_02`
-
-**Definition.** The student sustains an orientation to notice continuity and change across multiple dimensions, seek diverse perspectives including Indigenous voices, question whose perspectives are represented in sources, and consult multiple sources by default when examining historical material.
-
-**Knowledge type:** Type 3. **Assessment route:** `multi_informant_observation`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0044_item_02`, `blk_0081_item_01`, `blk_0082_item_01`, `blk_0084_item_01`, `blk_0088_item_02`, `blk_0258_item_02`
-
-**Observation protocol** — stability `stable`, Mode 3 gate **PASS**.
-
-**Grade 7**
-
-- The student asks questions about who created a source and what perspectives might be missing when examining historical documents, images, or accounts in class.
-- The student consults more than one source when investigating a historical event or period and notes differences in how the same event is described across sources.
-- The student identifies examples of how a community, practice, or belief has changed over time and recognizes that people in the past held different viewpoints than people today.
-
-_Self-reflection prompt (calibrated to this source's own developmental expectations at Grade 7):_ Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)
-
-**Parent / caregiver prompts**
-
-- When your child talks about something they learned in history or social studies, do they mention checking multiple sources or wondering whose story is being told?
-- Have you noticed your child asking questions like 'Why did people think that way back then?' or 'What would someone else say about this?'
-- Does your child comment on differences between how events are described in different books, videos, or accounts they encounter?
-
-**Developmental conversation protocol.** The teacher, student, and optionally parent discuss specific moments when the student questioned perspective, consulted multiple sources, or noticed change over time, focusing on what prompted the curiosity and how the student's thinking shifted.
-
-### Indigenous Experiences and Perspectives in Colonial Canada (1713–1800) — `cluster_04`
-
-**Definition.** The ability to analyse and compare the experiences, values, and perspectives of First Nations, Métis, and Inuit communities during the colonial period and across time.
-
-**Dominant knowledge type:** Type 2. **Stability:** `cluster_unstable`. **Source lines:** L147-466. **KUD items:** 26.
-
-_Stability diagnostics:_
-- unmatched_in_run2
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L147-212. **KUD items:** 23.
 
 #### KUD items
 
 | Item ID | Type | Column | Content |
 |---|---|---|---|
 | `blk_0044_item_01` | Type 2 | do_skill | Analyse aspects of the experiences of various groups and communities, including First Nations, Métis, and Inuit communities, in Canada between 1713 and 1800, and compare them to the lives of people in |
+| `blk_0044_item_02` | Type 3 | do_disposition | Sustain an orientation to notice what persists and what transforms across time when encountering historical material, resisting both 'everything changes' and 'nothing really changes' as default framin |
+| `blk_0044_item_03` | Type 3 | do_disposition | Sustain an orientation to understand historical actors' decisions within their own context's values, beliefs, knowledge, and constraints, resisting presentism and the impulse to evaluate the past by p |
+| `blk_0046_item_01` | Type 2 | do_skill | Analyse key similarities and differences in social values and aspects of life between people in present-day Canada and some different groups and communities, including First Nations and Métis. |
 | `blk_0047_item_01` | Type 1 | know | Factual knowledge of Inuit communities in Canada between 1713 and 1800, including gender roles, religious practices, spirituality, ceremonies and rituals, living conditions, diet, and recreation. |
 | `blk_0047_item_02` | Type 1 | know | Factual knowledge of attitudes towards slavery, social class, the role of women, and crime and punishment in Inuit communities between 1713 and 1800. |
 | `blk_0047_item_03` | Type 2 | do_skill | Compare life in Inuit communities between 1713 and 1800 with life in Haudenosaunee society or on a seigneurie in New France, using multiple dimensions of comparison (gender roles, living conditions, d |
+| `blk_0048_item_01` | Type 1 | understand | The social attitudes that permitted slavery to exist in colonial Canada |
 | `blk_0049_item_01` | Type 2 | do_skill | Analyse what the presence of missionaries among First Nations during this period implies about the social values of the colonizing peoples. |
 | `blk_0049_item_02` | Type 2 | do_skill | Evaluate in what ways attitudes towards First Nations peoples held by some non-Indigenous Canadians have changed and in what ways they have stayed the same across time. |
 | `blk_0050_item_01` | Type 1 | know | Central values and world views of Inuit in the eighteenth century |
 | `blk_0050_item_02` | Type 2 | do_skill | Analyse ways in which eighteenth-century Inuit values and world views are reflected in present-day Inuit communities |
-| `blk_0066_item_01` | Type 2 | do_skill | Use the historical inquiry process to investigate perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/o |
-| `blk_0069_item_01` | Type 2 | do_skill | Formulate questions to guide investigations into perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/or |
-| `blk_0069_item_02` | Type 1 | know | Significant events, developments, and issues related to the shift in power in colonial Canada from France to Britain, including the expulsion of the Acadians; treaties and alliances among First Nation |
-| `blk_0070_item_01` | Type 1 | know | Groups involved in the Battle of the Plains of Abraham and their roles in the conflict |
-| `blk_0070_item_02` | Type 2 | do_skill | Analyse why different groups involved in the Battle of the Plains of Abraham would have viewed the conflict differently, considering each group's own context, values, and interests |
-| `blk_0075_item_01` | Type 2 | do_skill | Analyse why French colonists, English colonists, and First Nations would have had different views about the arrival of the Loyalists, recognising multiple perspectives shaped by distinct interests, va |
-| `blk_0076_item_01` | Type 2 | do_skill | Analyse how the shift in power from France to Britain affected First Nations and Métis people involved in the fur trade, and how this shift affected First Nations and Métis people not involved in the  |
-| `blk_0095_item_01` | Type 2 | do_skill | Evaluate evidence and draw conclusions about perspectives of different groups and communities, including First Nation, Métis, and/or Inuit communities, on significant events, developments, or issues r |
-| `blk_0124_item_01` | Type 1 | know | Significant aspects of daily life in various First Nations, Métis, and Inuit communities in Canada during this period, including housing, clothing, transportation, size of families, gender roles, kins |
-| `blk_0124_item_02` | Type 2 | do_skill | Analyse how Indigenous peoples' traditional knowledge of and their relationship with the land and water affected aspects of daily life in their communities. |
-| `blk_0125_item_01` | Type 2 | do_skill | Identify and explain differences in the ways of life in two Indigenous communities in the local area, considering multiple dimensions of community life. |
-| `blk_0131_item_01` | Type 1 | do_skill | Describe significant interactions between various individuals, groups, and institutions in Canada during this period, with reference to interactions affecting First Nations, Métis, Inuit, and French c |
-| `blk_0135_item_01` | Type 1 | know | What rivalries and alliances existed among Indigenous nations |
-| `blk_0135_item_02` | Type 2 | do_skill | Analyse why rivalries and alliances among Indigenous nations were significant |
-| `blk_0137_item_01` | Type 2 | do_skill | Describe relations between First Nations, Métis, and Loyalists in Upper Canada using multiple interpretive frameworks and evidence |
-| `blk_0153_item_01` | Type 2 | do_skill | Analyse social and political values and significant aspects of life for different groups and communities, including First Nations, Métis, and Inuit communities, in Canada between 1800 and 1850. |
-| `blk_0153_item_02` | Type 1 | know | Identify and describe social and political values and significant aspects of life in specific historical contexts in Canada between 1800 and 1850, including ways of life in British and French forts, i |
-| `blk_0155_item_01` | Type 2 | do_skill | Assess similarities and differences between values and aspects of life in contemporary First Nations, Métis, and Inuit communities and those in eighteenth-century Canada, with reference to education a |
+| `blk_0054_item_01` | Type 2 | do_skill | Assess similarities and differences between environmental challenges and responses in early Canada and those facing people in present-day Canada. |
+| `blk_0055_item_01` | Type 2 | do_skill | Analyse differences in the lives of elderly people across time periods, identifying and explaining the main reasons for those differences |
+| `blk_0056_item_01` | Type 2 | do_skill | Analyse the challenges the Mississaugas of the New Credit encountered as a result of encroachment on and European occupation of their traditional territory, and evaluate how they responded to these ch |
+| `blk_0056_item_02` | Type 2 | do_skill | Compare the Mississaugas of the New Credit's response to encroachment and European occupation of their traditional territory with actions taken today in response to threats to First Nations lands, eva |
+| `blk_0057_item_01` | Type 1 | know | Types and sources of care available for sick people in eighteenth-century Canada, including medicines of Indigenous origin and their role in medical practice at that time. |
+| `blk_0057_item_02` | Type 2 | do_skill | Analyse why medicines of Indigenous origin were important in eighteenth-century Canada and evaluate their continued importance today, considering multiple perspectives and evidence across time periods |
+| `blk_0058_item_01` | Type 2 | do_skill | Analyse the displacement experienced by various groups and communities, including First Nations |
+| `blk_0059_item_01` | Type 1 | know | Métis, and Inuit communities, who were living in or who came to Canada between 1713 and 1800, including the expulsion of the Acadians; the forced relocation experienced by many First Nations and/or Mé |
+| `blk_0062_item_01` | Type 2 | do_skill | Analyse the differences between the experience of immigrants to colonial Canada and present-day immigrants to this country, identifying what accounts for some of these differences. |
+| `blk_0062_item_02` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' and groups' decisions and experiences within their own context's values, beliefs, knowledge, and constraints, resisting presentism acro |
+| `blk_0064_item_01` | Type 2 | do_skill | Analyse a historical displacement by identifying and considering multiple perspectives relevant to the event, resisting presentist judgment of historical actors' decisions. |
 
 #### Learning Targets
 
-### Displacement and Forced Migration in Canadian History — `cluster_05`
+### Perspectives on the Shift in Power from France to Britain — `cluster_03`
 
-**Definition.** The ability to analyse the causes, experiences, and consequences of displacement for various groups, including Indigenous peoples, Acadians, Loyalists, and enslaved people.
+**Definition.** The ability to investigate and evaluate perspectives of diverse groups on events related to the shift in colonial power from France to Britain.
 
-**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L163-517. **KUD items:** 13.
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L216-323. **KUD items:** 34.
 
 #### KUD items
 
 | Item ID | Type | Column | Content |
 |---|---|---|---|
-| `blk_0048_item_01` | Type 1 | understand | The social attitudes that permitted slavery to exist in colonial Canada |
-| `blk_0056_item_01` | Type 2 | do_skill | Analyse the challenges the Mississaugas of the New Credit encountered as a result of encroachment on and European occupation of their traditional territory, and evaluate how they responded to these ch |
-| `blk_0056_item_02` | Type 2 | do_skill | Compare the Mississaugas of the New Credit's response to encroachment and European occupation of their traditional territory with actions taken today in response to threats to First Nations lands, eva |
-| `blk_0058_item_01` | Type 2 | do_skill | Analyse the displacement experienced by various groups and communities, including First Nations |
-| `blk_0059_item_01` | Type 1 | know | Métis, and Inuit communities, who were living in or who came to Canada between 1713 and 1800, including the expulsion of the Acadians; the forced relocation experienced by many First Nations and/or Mé |
-| `blk_0062_item_01` | Type 2 | do_skill | Analyse the differences between the experience of immigrants to colonial Canada and present-day immigrants to this country, identifying what accounts for some of these differences. |
-| `blk_0064_item_01` | Type 2 | do_skill | Analyse a historical displacement by identifying and considering multiple perspectives relevant to the event, resisting presentist judgment of historical actors' decisions. |
+| `blk_0066_item_01` | Type 2 | do_skill | Use the historical inquiry process to investigate perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/o |
+| `blk_0066_item_02` | Type 3 | do_disposition | Develop and sustain a default orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting |
+| `blk_0069_item_01` | Type 2 | do_skill | Formulate questions to guide investigations into perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/or |
+| `blk_0069_item_02` | Type 1 | know | Significant events, developments, and issues related to the shift in power in colonial Canada from France to Britain, including the expulsion of the Acadians; treaties and alliances among First Nation |
+| `blk_0070_item_01` | Type 1 | know | Groups involved in the Battle of the Plains of Abraham and their roles in the conflict |
+| `blk_0070_item_02` | Type 2 | do_skill | Analyse why different groups involved in the Battle of the Plains of Abraham would have viewed the conflict differently, considering each group's own context, values, and interests |
+| `blk_0071_item_01` | Type 2 | do_skill | Analyse the Quebec Act by identifying multiple causes for its passage, distinguishing the interests and positions of different groups who supported or opposed it, and explaining the reasoning behind t |
+| `blk_0072_item_01` | Type 2 | do_skill | Generate and articulate questions that arise when examining the image of the Covenant Chain Wampum of 1764. |
+| `blk_0073_item_01` | Type 2 | do_skill | Formulate questions that guide investigation into different perspectives on a treaty agreement. |
+| `blk_0074_item_01` | Type 2 | do_skill | Formulate questions that arise when examining the Métis sash as a historical artefact. |
+| `blk_0075_item_01` | Type 2 | do_skill | Analyse why French colonists, English colonists, and First Nations would have had different views about the arrival of the Loyalists, recognising multiple perspectives shaped by distinct interests, va |
+| `blk_0076_item_01` | Type 2 | do_skill | Analyse how the shift in power from France to Britain affected First Nations and Métis people involved in the fur trade, and how this shift affected First Nations and Métis people not involved in the  |
+| `blk_0077_item_01` | Type 2 | do_skill | Gather and organize information and evidence about perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/ |
+| `blk_0078_item_01` | Type 2 | do_skill | Evaluate the reliability and perspective-value of diaries and letters as sources on the experiences and perspectives of expelled Acadians, and identify and consult alternative sources to investigate h |
+| `blk_0080_item_01` | Type 2 | do_skill | Identify and locate multiple types of historical sources that document First Nations positions on the Peace and Friendship Treaties, and evaluate the reliability and perspective of those sources. |
+| `blk_0081_item_01` | Type 3 | do_disposition | Sustain an orientation to actively seek and include perspectives of First Nations, Métis, and Inuit in primary and secondary sources consulted during historical inquiry, and to critically examine whet |
+| `blk_0082_item_01` | Type 3 | do_disposition | Sustain a default orientation to notice and question whose perspectives are represented in historical sources, including whether women and Indigenous women's voices are present or absent, across all s |
+| `blk_0083_item_01` | Type 2 | do_skill | Assess the credibility of sources and information relevant to investigations by considering the perspective, bias, accuracy, authenticity, purpose, and context of the source and the values and experti |
+| `blk_0084_item_01` | Type 3 | do_disposition | A sustained orientation to consult multiple sources by default when examining a historical event, issue, or development, rather than relying on a single account. |
+| `blk_0086_item_01` | Type 2 | do_skill | Analyse flow maps to show where groups, including Indigenous communities, were displaced from and where they went. |
+| `blk_0086_item_02` | Type 2 | do_skill | Analyse population maps to determine changes in settlement patterns and the groups, including Indigenous communities, that were affected. |
+| `blk_0086_item_03` | Type 1 | know | America during the Seven Years' War; the displacement of groups, including Indigenous communities, from the Maritime colonies. |
+| `blk_0088_item_01` | Type 2 | do_skill | Analyse maps of Canada before and after the Treaty of Paris to identify and explain changes in settlement trends and European settlement patterns in First Nations territories. |
+| `blk_0088_item_02` | Type 3 | do_disposition | Sustain attention to continuity and change across multiple dimensions (political, social, economic, cultural) when interpreting historical maps and settlement patterns, resisting both deterministic an |
+| `blk_0089_item_01` | Type 2 | do_skill | Identify and justify what information would need to be included on a map to show the various alliances and conflicts in North America during the Seven Years' War. |
+| `blk_0090_item_01` | Type 2 | do_skill | Analyse maps showing Métis migration patterns before and after the establishment of the North West Company or the Hudson's Bay Company to identify what changed, what persisted, and the multiple factor |
+| `blk_0091_item_01` | Type 2 | do_skill | Interpret and analyse paintings of key events in the Seven Years' War to extract information and to determine the perspective that is presented and the perspectives that are missing. |
+| `blk_0091_item_02` | Type 2 | do_skill | Analyse documents to determine the response of people in New France, including First Nations and Métis people, to the colony's being ceded to Great Britain. |
+| `blk_0091_item_03` | Type 2 | do_skill | Use a graphic organizer to help compare the perspectives of different groups or actors in historical contexts. |
+| `blk_0093_item_01` | Type 2 | do_skill | Analyse paintings to identify what they reveal about their subject and the perspective of the artist, and evaluate the accuracy of the depiction by cross-referencing with other sources. |
+| `blk_0095_item_01` | Type 2 | do_skill | Evaluate evidence and draw conclusions about perspectives of different groups and communities, including First Nation, Métis, and/or Inuit communities, on significant events, developments, or issues r |
+| `blk_0096_item_01` | Type 2 | do_skill | Analyse a historical event from multiple perspectives and justify whether all perspectives are equally valid, explaining the reasoning for your judgment. |
+| `blk_0097_item_01` | Type 1 | know | Vocabulary appropriate to historical inquiry and communication about colonial North America: perspective, colony, treaty, expulsion, displacement, values, roles, power, conflict, Acadian, medicines, o |
+| `blk_0097_item_02` | Type 2 | do_skill | Communicate the results of historical inquiries using formats appropriate for specific audiences, such as a historical narrative in storybook or graphic form about the responses of different people to |
+
+#### Learning Targets
+
+### Causes, Consequences, and Significance of Key Events (1713–1800) — `cluster_04`
+
+**Definition.** The ability to analyse causes, consequences, and historical significance of key events, treaties, and political changes in Canada between 1713 and 1800.
+
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L341-395. **KUD items:** 28.
+
+#### KUD items
+
+| Item ID | Type | Column | Content |
+|---|---|---|---|
+| `blk_0102_item_01` | Type 2 | do_skill | Identify factors leading to key events that occurred in and/or affected Canada between 1713 and 1800, distinguishing between immediate triggers and underlying conditions, and recognising multiple cont |
+| `blk_0102_item_02` | Type 2 | do_skill | Describe the historical significance of key events that occurred in and/or affected Canada between 1713 and 1800 for different individuals, groups, and/or communities, recognising that significance is |
+| `blk_0104_item_01` | Type 1 | know | The underlying causes of the Seven Years' War |
+| `blk_0104_item_02` | Type 2 | do_skill | Analyse why the Seven Years' War is seen as a turning point in North American history, considering multiple contributing causes and distinguishing immediate triggers from underlying conditions |
+| `blk_0106_item_01` | Type 1 | know | Key treaties of relevance to Indigenous people during this period, including wampum belts exchanged, such as the Covenant Chain (1677–1755). |
+| `blk_0106_item_02` | Type 2 | do_skill | Explain the significance of key treaties and agreements for different people and communities in Canada, recognising that significance varies across communities and perspectives. |
+| `blk_0107_item_01` | Type 1 | know | Portsmouth, 1713; the Peace and Friendship Treaties, 1713–60; the Treaty of Niagara and the Covenant |
+| `blk_0110_item_01` | Type 1 | know | The parties to the Treaty of Niagara and the 1760 Treaty of Peace and Friendship |
+| `blk_0111_item_01` | Type 2 | do_skill | Analyse the key short-term and long-term consequences of a selected treaty for the different parties involved |
+| `blk_0112_item_01` | Type 1 | know | Who were treaty people in eighteenth-century Canada |
+| `blk_0112_item_02` | Type 1 | understand | What it meant to be a treaty person in eighteenth-century Canada |
+| `blk_0113_item_01` | Type 1 | know | The Treaty of Paris (1763) ended the Seven Years' War. |
+| `blk_0113_item_02` | Type 1 | know | The main stipulations of the Treaty of Paris (1763), including territorial transfers, recognition of British sovereignty in North America, and provisions affecting French colonial holdings. |
+| `blk_0113_item_03` | Type 2 | do_skill | Analyse how the Treaty of Paris (1763) affected Indigenous individuals and communities, considering multiple perspectives and dimensions of impact. |
+| `blk_0114_item_01` | Type 1 | know | Key political and legal changes that occurred in and/or affected Canada during this period, including the Royal Proclamation (1763), the Treaty of Utrecht (1713), and the Quebec Act (1774) |
+| `blk_0115_item_01` | Type 1 | know | The Constitutional Act, 1791 and the changes it introduced to governance and policy in British North America. |
+| `blk_0115_item_02` | Type 2 | do_skill | Explain the impact of changes introduced by the Constitutional Act, 1791 on various individuals, groups, and/or communities, including First Nations, Métis, and Inuit individuals and/or communities, a |
+| `blk_0116_item_01` | Type 1 | know | The Constitutional Act of 1791 was implemented and had impacts on French and English Canada and on Indigenous people |
+| `blk_0116_item_02` | Type 2 | do_skill | Analyse the Constitutional Act of 1791 using multiple causal and consequential lenses: identify contributing causes of its implementation; distinguish between intended and unintended consequences acro |
+| `blk_0117_item_01` | Type 1 | know | Key provisions from the Royal Proclamation of 1763 that addressed the issue of title to Indigenous land |
+| `blk_0118_item_01` | Type 1 | know | Key social and economic changes that occurred in and/or affected Canada during this period, including fur trade competition between the North West Company and the Hudson's Bay Company |
+| `blk_0119_item_01` | Type 1 | know | Loyalist settlement, growth in agriculture, growth in the timber industry, and the ethnogenesis of the Métis as historical developments during this period |
+| `blk_0119_item_02` | Type 2 | do_skill | Explain the impact of Loyalist settlement, agricultural growth, timber industry growth, and Métis ethnogenesis on various individuals, groups, and/or communities, including First Nations, Métis, and/o |
+| `blk_0120_item_01` | Type 1 | know | What the North West Company was |
+| `blk_0120_item_02` | Type 2 | do_skill | Analyse how the establishment of the North West Company changed the fur trade, and evaluate the multiple impacts of these changes on First Nations and Métis people and on French and British traders |
+| `blk_0121_item_01` | Type 1 | know | The term 'country wives' and the historical actors and relationships it denotes in the fur trade context. |
+| `blk_0121_item_02` | Type 2 | do_skill | Analyse the impact of different fur trade companies' policies on the role and status of 'country wives' by examining multiple contributing factors and perspectives. |
+| `blk_0122_item_01` | Type 2 | do_skill | Analyse the challenges facing Loyalists on their arrival in Canada, recognising that different Loyalist groups faced different challenges rather than a uniform experience. |
+
+#### Learning Targets
+
+##### Analysing Causes of Key Events — `cluster_04_lt_01`
+
+**Definition.** I can identify immediate triggers and underlying conditions contributing to key events between 1713 and 1800, distinguishing multiple causes rather than single-cause explanations.
+
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
+
+**KUD items covered:** `blk_0102_item_01`, `blk_0104_item_02`, `blk_0116_item_02`
+
+**Single-grade band** — stability `band_statements_unstable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can identify multiple causes of key events between 1713 and 1800, distinguishing immediate triggers from underlying conditions. |
+
+**Criterion rubric** — stability `stable`, quality gate **PASS**.
+
+_Competent-framing judge:_ `pass` — The descriptor declares the capability as independently demonstrated at the LT's level of demand (identifying triggers, distinguishing conditions, explaining interactions), with no hedging language or framing of incompleteness.
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | No attempt to identify or distinguish causes of events. |
+| emerging | With support, names one or two causes but conflates immediate triggers with underlying conditions. |
+| developing | Independently identifies multiple causes but does not clearly distinguish immediate triggers from underlying conditions. |
+| competent | Independently identifies and distinguishes immediate triggers and underlying conditions for key events, explaining how multiple causes interact. |
+| extending | Analyses how causes interconnect across events and evaluates the relative weight of different causal factors. |
+
+_Prerequisite edges:_
+- `cluster_04_lt_03` [ontological_prerequisite/high] — Learner must know what the key events are before analysing their causes.
+- `cluster_01_lt_01` [pedagogical_sequencing/medium] — Analysing primary sources for evidence supports gathering evidence to support causal claims, though cause analysis can proceed with secondary sources.
+
+**Supporting components** — stability `stable`.
+
+_Co-construction plan:_
+- stage: Show students a key event from 1713–1800 and ask them to list everything that made it happen.
+- stage: Introduce the distinction between immediate triggers and underlying conditions using a teacher-modelled think-aloud.
+- stage: Guide students to sort their causes into triggers versus conditions and discuss why some causes are deeper than others.
+- stage: Co-create descriptors for each rubric level by asking students what evidence would show they can do this skill.
+- stage: Test the rubric together on a second event to refine language and ensure clarity.
+- prompt: What had to happen right before this event occurred, and what conditions were already in place that made it possible?
+- prompt: Which causes are immediate and which are long-term or background?
+- prompt: How would we know if someone understood multiple causes versus just one cause?
+- prompt: What would it look like if you could explain how different causes worked together to create this event?
+- anchor-examples guidance: Select one event with a clear immediate trigger and at least two distinct underlying conditions so students can practise separating layers of causation; choose a second event with interconnected causes to model how causes interact.
+
+_Student-facing rubric:_
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | I have not yet attempted to identify or distinguish causes of events. |
+| emerging | I can name one or two causes with support, but I mix up immediate triggers with underlying conditions. |
+| developing | I can identify multiple causes on my own, but I do not clearly separate immediate triggers from underlying conditions. |
+| competent | I can identify and distinguish immediate triggers from underlying conditions, and I explain how multiple causes work together. |
+| extending | I can analyse how causes connect across different events and judge which causes matter most. |
+
+- self-check: Have I identified at least two different causes, and can I explain which one happened right before the event and which ones were already in place?
+- self-check: Can I describe how my causes are connected or how they worked together to make this event happen?
+
+_Feedback moves by level:_
+- **no_evidence**
+  - Ask the student to name one thing that had to happen for this event to occur, then ask what was already true before that moment.
+  - Provide a sentence frame: 'This event happened because [immediate trigger], and it was possible because [underlying condition].'
+- **emerging**
+  - Help the student sort their causes into two groups: things that happened right before versus things that were already in place.
+  - Ask: 'Which of these causes could have happened without the others, and which ones needed each other?'
+- **developing**
+  - Ask the student to label each cause as either a trigger or a condition, then explain why they chose each label.
+  - Prompt: 'How did this underlying condition make the immediate trigger more likely to happen?'
+- **competent**
+  - Ask the student to trace how one cause led to another across multiple events in the period.
+  - Invite them to rank their causes by importance and justify their ranking with evidence.
+
+##### Evaluating Consequences and Significance — `cluster_04_lt_02`
+
+**Definition.** I can explain how key events, treaties, and political changes affected different individuals, groups, and communities, recognising that significance varies across perspectives and communities.
+
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
+
+**KUD items covered:** `blk_0102_item_02`, `blk_0106_item_02`, `blk_0111_item_01`, `blk_0113_item_03`, `blk_0115_item_02`, `blk_0119_item_02`, `blk_0120_item_02`, `blk_0121_item_02`, `blk_0122_item_01`
+
+**Single-grade band** — stability `stable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can explain how key events and treaties from 1713–1800 affected different groups and identify why significance varies across perspectives. |
+
+**Criterion rubric** — stability `rubric_unstable`, quality gate **PASS**.
+
+_Competent-framing judge:_ `pass` — The descriptor declares the capability as demonstrated and can stand alone as meeting the Learning Target—it shows the learner explaining consequences and recognizing perspective-dependent significance without hedging language or framing it as incomplete.
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | No attempt to explain consequences or significance of events. |
+| emerging | With support, identifies one consequence but explanation lacks depth or perspective variation. |
+| developing | Independently explains consequences for some groups but does not consistently recognise perspective differences. |
+| competent | Explains how events affected different individuals, groups, and communities, recognising that significance varies across perspectives. |
+| extending | Compares significance across multiple perspectives and explains why interpretations differ based on community values. |
+
+_Prerequisite edges:_
+- `cluster_04_lt_03` [ontological_prerequisite/high] — Cannot evaluate consequences of events without first identifying what those key events and treaties were.
+- `cluster_04_lt_01` [pedagogical_sequencing/medium] — Understanding causes strengthens ability to trace and explain consequences, though consequences can be analysed independently.
+- `cluster_01_lt_01` [pedagogical_sequencing/medium] — Critical analysis of primary sources supports evidence-based explanation of consequences and perspective recognition.
+
+**Supporting components** — stability `supporting_unstable`.
+
+_Co-construction plan:_
+- stage: Show students a historical event and ask them to list who was affected by it.
+- stage: Guide students to distinguish between a consequence and its significance to different people.
+- stage: Have students brainstorm how the same event might matter differently to two contrasting groups.
+- stage: Co-create language for each rubric level by sorting student examples from weakest to strongest.
+- stage: Test the rubric together on a new event to refine clarity.
+- prompt: Who were all the people or groups touched by this event?
+- prompt: What actually changed because of this event, and why did that change matter more to some people than others?
+- prompt: How might a person from Group A and a person from Group B have felt differently about the same consequence?
+- prompt: What words describe work where you explain consequences but do not yet show different viewpoints?
+- anchor-examples guidance: Choose historical events or policy changes where at least two groups experienced visibly different impacts or valued the outcome differently; avoid events where consequences are uniform across all groups.
+
+_Student-facing rubric:_
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | I have not yet attempted to explain how an event or change affected people or groups. |
+| emerging | I can identify one consequence of an event with help, but my explanation is brief and does not show how different people saw it differently. |
+| developing | I can explain on my own how an event affected some groups, but I do not always notice that the same consequence mattered differently to different people. |
+| competent | I can explain how an event or change affected different individuals, groups, and communities, and I recognise that what mattered most depended on who you were. |
+| extending | I can compare how different communities saw the significance of an event and explain why their interpretations differed based on their values and experiences. |
+
+- self-check: Have I identified consequences for at least two different groups or perspectives?
+- self-check: Can I explain why the same consequence mattered differently to different people?
+
+_Feedback moves by level:_
+- **no_evidence**
+  - Ask: Who do you think this event affected, and what changed for them?
+  - Provide a sentence starter: This event changed ___ for ___ because ___.
+- **emerging**
+  - Ask: You found one consequence; can you find another group that was also affected?
+  - Prompt: Did this consequence feel like a good thing or a bad thing to everyone involved?
+- **developing**
+  - Ask: You explained what happened to Group A; now what happened to Group B, and was it the same or different?
+  - Prompt: Why do you think Group A and Group B might have valued this change differently?
+- **competent**
+  - Ask: You have shown two perspectives; can you find a third group whose view was distinct?
+  - Prompt: What values or experiences caused these groups to interpret the event so differently?
+
+##### Recalling Key Events and Treaties — `cluster_04_lt_03`
+
+**Definition.** I can identify key events, treaties, political changes, and social developments in Canada between 1713 and 1800, including their parties, dates, and main provisions.
+
+**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `lt_set_unstable`.
+
+**KUD items covered:** `blk_0104_item_01`, `blk_0106_item_01`, `blk_0107_item_01`, `blk_0110_item_01`, `blk_0112_item_01`, `blk_0112_item_02`, `blk_0113_item_01`, `blk_0113_item_02`, `blk_0114_item_01`, `blk_0115_item_01`, `blk_0116_item_01`, `blk_0117_item_01`, `blk_0118_item_01`, `blk_0119_item_01`, `blk_0120_item_01`, `blk_0121_item_01`
+
+**Single-grade band** — stability `stable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can identify key events and treaties in Canada between 1713 and 1800 and describe their main features. |
+
+### Daily Life, Interactions, and Key Figures (1713–1800) — `cluster_05`
+
+**Definition.** The ability to describe and analyse daily life, significant interactions, and contributions of key individuals and groups in Canada between 1713 and 1800.
+
+**Dominant knowledge type:** Type 1. **Stability:** `cluster_unstable`. **Source lines:** L399-449. **KUD items:** 18.
+
+_Stability diagnostics:_
+- unmatched_in_run3
+
+#### KUD items
+
+| Item ID | Type | Column | Content |
+|---|---|---|---|
+| `blk_0124_item_01` | Type 1 | know | Significant aspects of daily life in various First Nations, Métis, and Inuit communities in Canada during this period, including housing, clothing, transportation, size of families, gender roles, kins |
+| `blk_0124_item_02` | Type 2 | do_skill | Analyse how Indigenous peoples' traditional knowledge of and their relationship with the land and water affected aspects of daily life in their communities. |
+| `blk_0125_item_01` | Type 2 | do_skill | Identify and explain differences in the ways of life in two Indigenous communities in the local area, considering multiple dimensions of community life. |
+| `blk_0126_item_01` | Type 1 | understand | How Métis marriage customs acknowledged both First Nations and European ancestors |
+| `blk_0127_item_01` | Type 1 | know | Significant aspects of daily life of different newcomer and settler groups living in Canada during this period, including seigneurs and habitants in New France and migrant fishers. |
+| `blk_0130_item_01` | Type 1 | know | The day-to-day responsibilities of men, women, and children in a rural family in early Upper Canada |
+| `blk_0131_item_01` | Type 1 | do_skill | Describe significant interactions between various individuals, groups, and institutions in Canada during this period, with reference to interactions affecting First Nations, Métis, Inuit, and French c |
+| `blk_0132_item_01` | Type 1 | know | Identify the roles and functions of the Catholic Church, Protestant churches, and French and British colonial administrations in the lives of English colonists, Acadians, Planters, Loyalists, and ensl |
+| `blk_0132_item_02` | Type 2 | do_skill | Analyse the interactions between different groups (English colonists, Acadians, Planters, Loyalists, slaves) and religious and colonial institutions, recognising multiple perspectives and the complexi |
+| `blk_0135_item_01` | Type 1 | know | What rivalries and alliances existed among Indigenous nations |
+| `blk_0135_item_02` | Type 2 | do_skill | Analyse why rivalries and alliances among Indigenous nations were significant |
+| `blk_0137_item_01` | Type 2 | do_skill | Describe relations between First Nations, Métis, and Loyalists in Upper Canada using multiple interpretive frameworks and evidence |
+| `blk_0141_item_01` | Type 1 | know | Identify some significant individuals and groups in Canada during this period |
+| `blk_0143_item_01` | Type 1 | know | Identify and name key historical figures and groups in early Canadian history: Pontiac, Elizabeth Simcoe, John Graves Simcoe, Thanadelthur, trappers and fur traders, Métis 'country wives', missionarie |
+| `blk_0143_item_02` | Type 2 | do_skill | Explain the contribution of specific historical figures and groups (Pontiac, Elizabeth Simcoe, John Graves Simcoe, Thanadelthur, trappers and fur traders, Métis 'country wives', missionaries, explorer |
+| `blk_0144_item_01` | Type 1 | know | Who Marie-Josèphe Angélique was and the key events and circumstances of her life and times |
+| `blk_0144_item_02` | Type 2 | do_skill | Analyse what Marie-Josèphe Angélique's story reveals about Canada in this period, drawing on multiple interpretive lenses to construct an evidence-based account of historical significance |
+| `blk_0146_item_01` | Type 1 | know | Who Thanadelthur was and what her contributions to Canada were. |
+
+#### Learning Targets
+
+##### Describing Daily Life and Community Practices — `cluster_05_lt_01`
+
+**Definition.** I can describe significant aspects of daily life, including housing, work, family roles, and spiritual practices, in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800.
+
+**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
+
+**KUD items covered:** `blk_0124_item_01`, `blk_0126_item_01`, `blk_0127_item_01`, `blk_0130_item_01`, `blk_0132_item_01`, `blk_0141_item_01`, `blk_0143_item_01`
+
+**Single-grade band** — stability `stable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can describe daily life and community practices in Indigenous, Métis, Inuit, and settler communities in Canada between 1713 and 1800. |
+
+**Criterion rubric** — stability `stable`, quality gate **FAIL**.
+
+_Gate failures:_ level_progression
+
+_Competent-framing judge:_ `pass` — The descriptor directly states what the learner can do ('Describes significant aspects') without hedging language, incompleteness markers, or framing Competent as a waystation to Extending.
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | No attempt to describe daily life aspects. |
+| emerging | Names one or two daily life aspects with heavy support; descriptions lack detail or accuracy. |
+| developing | Independently describes two or three daily life aspects; misses connections across communities or time period. |
+| competent | Describes significant aspects of housing, work, family roles, and spiritual practices across Indigenous, Métis, Inuit, and settler communities between 1713 and 1800. |
+| extending | Compares daily life practices across communities and explains how geography or events shaped specific practices. |
+
+_Prerequisite edges:_
+- `cluster_01_lt_01` [pedagogical_sequencing/medium] — Analysing primary sources provides evidence base for describing daily life, though descriptions can be formed from secondary sources alone.
+- `cluster_04_lt_03` [pedagogical_sequencing/medium] — Knowing key events and dates helps situate daily life practices in historical context, though daily life description does not require event knowledge.
+
+##### Analysing Interactions and Historical Significance — `cluster_05_lt_02`
+
+**Definition.** I can analyse interactions between individuals, groups, and institutions, and explain how key figures and communities shaped Canadian heritage during this period.
+
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
+
+**Prerequisites:** `Describing Daily Life and Community Practices`
+
+**KUD items covered:** `blk_0124_item_02`, `blk_0125_item_01`, `blk_0131_item_01`, `blk_0132_item_02`, `blk_0135_item_01`, `blk_0135_item_02`, `blk_0137_item_01`, `blk_0143_item_02`, `blk_0144_item_01`, `blk_0144_item_02`, `blk_0146_item_01`
+
+**Single-grade band** — stability `stable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can explain how interactions between individuals and groups influenced Canadian communities during 1713–1800. |
+
+### Continuity and Change in Communities (1800–1850) — `cluster_06`
+
+**Definition.** The ability to analyse social and political values, conditions, and aspects of life for diverse communities in Canada between 1800 and 1850.
+
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L461-517. **KUD items:** 22.
+
+#### KUD items
+
+| Item ID | Type | Column | Content |
+|---|---|---|---|
+| `blk_0153_item_01` | Type 2 | do_skill | Analyse social and political values and significant aspects of life for different groups and communities, including First Nations, Métis, and Inuit communities, in Canada between 1800 and 1850. |
+| `blk_0153_item_02` | Type 1 | know | Identify and describe social and political values and significant aspects of life in specific historical contexts in Canada between 1800 and 1850, including ways of life in British and French forts, i |
+| `blk_0155_item_01` | Type 2 | do_skill | Assess similarities and differences between values and aspects of life in contemporary First Nations, Métis, and Inuit communities and those in eighteenth-century Canada, with reference to education a |
+| `blk_0155_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and communities' decisions and values within their own context's constraints, knowledge, and beliefs, resisting presentism when encounter |
+| `blk_0158_item_01` | Type 2 | do_skill | Analyse William Parry's writings to identify and interpret British attitudes towards Inuit, recognising that attitudes may be multiple, contradictory, or shaped by the author's perspective and histori |
+| `blk_0159_item_01` | Type 2 | do_skill | Analyse how the increasing presence of European women in fur trade communities affected country wives, and interpret what this development reveals about the social values of many newcomers with respec |
+| `blk_0160_item_01` | Type 1 | know | The historical meaning European settlers assigned to the word 'frontier' when describing the West |
+| `blk_0161_item_01` | Type 2 | do_skill | Analyse historical attitudes and values embedded in a term or concept, and reason about how the practices those attitudes supported affected First Nations and Métis people living in the West. |
+| `blk_0163_item_01` | Type 1 | know | Historical contexts and conditions affecting First Nations, Métis, and Inuit individuals and communities in Canada between 1800 and 1850, including war with the United States, industrialization, poor  |
+| `blk_0164_item_01` | Type 1 | know | Challenges faced by new immigrants on arriving in Canada, including appropriation of First Nations, Métis, and Inuit land and resources by European settler communities. |
+| `blk_0164_item_02` | Type 1 | know | Ways in which people responded to those challenges: strikes, rebellion, resistance, legislation to expand access to education, treaties, construction of canals, mutual aid societies, work bees, quaran |
+| `blk_0165_item_01` | Type 1 | know | Methods used by Reformers and Patriotes in their quest for political change |
+| `blk_0166_item_01` | Type 2 | do_skill | Analyse how discrimination and segregation affected the ways in which African Canadians met their everyday needs, considering multiple contributing factors and interconnected consequences across diffe |
+| `blk_0167_item_01` | Type 2 | do_skill | Analyse what significance a father's fur trade company rank had for his Métis children, recognising that significance is constructed and varies across communities and historical traditions. |
+| `blk_0168_item_01` | Type 2 | do_skill | Analyse how Inuit responded to the challenge of living in the Arctic and explain why they succeeded in this environment while members of the Franklin expedition did not, considering multiple contribut |
+| `blk_0168_item_02` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' decisions and adaptations within their own context's values, knowledge, constraints, and environmental conditions, resisting presentist |
 | `blk_0169_item_01` | Type 2 | do_skill | Analyse the displacement experienced by various groups and communities, including Indigenous communities, who were living in or who came to Canada between 1800 and 1850, such as displacements resultin |
 | `blk_0170_item_01` | Type 1 | know | Irish immigration to Canada in the 1840s, including reasons for emigration (seeking land, religious freedom, work), conditions aboard ship, and experiences upon arrival in Canada. |
 | `blk_0170_item_02` | Type 1 | know | Displacement of First Nations and Métis peoples resulting from increasing encroachment and settlement by colonists and European immigrants seeking land. |
@@ -310,136 +485,194 @@ _Stability diagnostics:_
 
 #### Learning Targets
 
-##### Analysing Causes and Contexts of Displacement — `cluster_05_lt_01`
+##### Identifying Historical Contexts and Values — `cluster_06_lt_01`
 
-**Definition.** I can analyse the causes, contexts, and multiple perspectives underlying displacement events for various groups in Canadian history between 1713 and 1850.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0056_item_01`, `blk_0058_item_01`, `blk_0064_item_01`, `blk_0169_item_01`, `blk_0170_item_03`, `blk_0171_item_01`, `blk_0172_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can explain the causes and different viewpoints surrounding displacement of groups in Canadian history. |
-
-##### Evaluating Responses and Comparative Consequences — `cluster_05_lt_02`
-
-**Definition.** I can evaluate how displaced groups responded to displacement and compare displacement experiences across different historical periods and communities.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0056_item_02`, `blk_0062_item_01`, `blk_0171_item_01`, `blk_0172_item_01`
-
-**Single-grade band** — stability `band_statements_unstable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can compare how different displaced groups responded to forced migration and identify similarities in their experiences. |
-
-##### Understanding Displacement Narratives and Contexts — `cluster_05_lt_03`
-
-**Definition.** I can identify and describe the displacement experiences of Indigenous peoples, Acadians, Loyalists, enslaved people, and immigrants, and explain the social attitudes and conditions that shaped these experiences.
-
-**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0048_item_01`, `blk_0059_item_01`, `blk_0170_item_01`, `blk_0170_item_02`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can describe the displacement experiences of different groups in Canadian history and explain the social conditions that caused them. |
-
-### Continuity and Change Across Time Periods — `cluster_06`
-
-**Definition.** The ability to identify and analyse what persists and what transforms across different historical periods and dimensions of life.
-
-**Dominant knowledge type:** Type 2. **Stability:** `cluster_unstable`. **Source lines:** L153-193. **KUD items:** 5.
-
-_Stability diagnostics:_
-- unmatched_in_run2
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0046_item_01` | Type 2 | do_skill | Analyse key similarities and differences in social values and aspects of life between people in present-day Canada and some different groups and communities, including First Nations and Métis. |
-| `blk_0054_item_01` | Type 2 | do_skill | Assess similarities and differences between environmental challenges and responses in early Canada and those facing people in present-day Canada. |
-| `blk_0055_item_01` | Type 2 | do_skill | Analyse differences in the lives of elderly people across time periods, identifying and explaining the main reasons for those differences |
-| `blk_0057_item_01` | Type 1 | know | Types and sources of care available for sick people in eighteenth-century Canada, including medicines of Indigenous origin and their role in medical practice at that time. |
-| `blk_0057_item_02` | Type 2 | do_skill | Analyse why medicines of Indigenous origin were important in eighteenth-century Canada and evaluate their continued importance today, considering multiple perspectives and evidence across time periods |
-
-#### Learning Targets
-
-##### Analysing Continuity and Change Across Dimensions — `cluster_06_lt_01`
-
-**Definition.** I can analyse similarities and differences in social, environmental, and lived experiences across different historical periods and identify key reasons for change.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
-
-**Prerequisites:** `Identifying Historical Sources and Contexts`
-
-**KUD items covered:** `blk_0046_item_01`, `blk_0054_item_01`, `blk_0055_item_01`, `blk_0057_item_02`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can identify similarities and differences in how people lived across historical periods and explain reasons for major changes. |
-
-##### Identifying Historical Sources and Contexts — `cluster_06_lt_02`
-
-**Definition.** I can identify types and sources of evidence from specific historical periods, including Indigenous knowledge and practices.
+**Definition.** I can identify and describe social, political, and economic values and conditions for diverse communities in Canada between 1800 and 1850.
 
 **Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
 
-**KUD items covered:** `blk_0057_item_01`
+**KUD items covered:** `blk_0153_item_02`, `blk_0160_item_01`, `blk_0163_item_01`, `blk_0164_item_01`, `blk_0164_item_02`, `blk_0165_item_01`, `blk_0170_item_01`, `blk_0170_item_02`
 
 **Single-grade band** — stability `stable`, quality gate **PASS**.
 
 | Band | Statement |
 |---|---|
-| Grade 7 | I can identify and describe different types of historical evidence from specific time periods and cultures. |
+| Grade 7 | I can identify and describe social, political, and economic values in diverse Canadian communities between 1800 and 1850. |
 
-### Multiple Perspectives and Historical Interpretation — `cluster_07`
+**Criterion rubric** — stability `stable`, quality gate **PASS**.
 
-**Definition.** The ability to identify, analyse, and evaluate multiple perspectives on historical events and issues, recognising that significance and interpretation vary across communities.
+_Competent-framing judge:_ `pass` — The descriptor directly mirrors the Learning Target's language and declares the capability as demonstrated without hedging, incompleteness framing, or positioning it as a way-station to Extending.
 
-**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L235-724. **KUD items:** 60.
+_Propositional-thin flag:_ this is a factual Type 1 LT; the rubric is necessarily compressed.
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | No attempt to identify or describe historical contexts and values. |
+| emerging | With support, names some social, political, or economic conditions but descriptions lack accuracy or depth. |
+| developing | Independently identifies contexts and values for one or two communities but descriptions remain general or incomplete. |
+| competent | Identifies and describes social, political, and economic values and conditions for diverse communities in Canada between 1800 and 1850. |
+| extending | Identifies and describes contexts and values while recognising how they differed across or within diverse communities. |
+
+_Prerequisite edges:_
+- `cluster_05_lt_01` [pedagogical_sequencing/medium] — Understanding daily life and practices in earlier communities (1713–1800) provides foundational context for identifying values and conditions in the 1800–1850 period.
+- `cluster_01_lt_01` [pedagogical_sequencing/medium] — Analysing primary sources develops the evidence-gathering skill needed to support identification and description of historical contexts and values.
+
+**Supporting components** — stability `stable`.
+
+_Co-construction plan:_
+- stage: Show students a primary source or image from early 1800s Canada and ask them to list what they notice about how people lived, what they believed, and what rules or systems governed them.
+- stage: Guide students to sort their observations into three categories: social (how people lived together), political (who had power and how decisions were made), and economic (how people made money and traded).
+- stage: Work together to define what 'diverse communities' means by identifying different groups in Canada during this period and discussing why their contexts might have been different.
+- stage: Co-create descriptors for each rubric level by asking students what it would look like to do this task with no help, with some help, on your own, really well, and in a way that shows you understand differences between groups.
+- prompt: What do you see in this source that tells you about how people lived, what they valued, or who had power?
+- prompt: Can you sort what you found into three piles: social (people and community), political (power and rules), and economic (money and work)?
+- prompt: Which groups of people in Canada between 1800 and 1850 might have experienced life very differently, and why?
+- prompt: What would it look like if someone just named a few conditions without explaining them versus someone who really described them in detail?
+- anchor-examples guidance: Choose primary sources or student work samples that show contrasting communities in early Canada, such as Indigenous nations, French-Canadian communities, and British settlers, so students can see how the same time period looked different depending on who you were. Select examples that clearly show social, political, and economic elements so students can practise sorting and describing across all three dimensions.
+
+_Student-facing rubric:_
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | I have not yet tried to identify or describe the social, political, and economic conditions and values of communities in Canada between 1800 and 1850. |
+| emerging | I can name some social, political, or economic conditions with help, but my descriptions are not very accurate or detailed. |
+| developing | I can identify and describe the social, political, and economic values and conditions for one or two communities on my own, but my descriptions are still general or missing some details. |
+| competent | I can identify and describe the social, political, and economic values and conditions for different communities in Canada between 1800 and 1850. |
+| extending | I can identify and describe contexts and values while explaining how they were different across or within diverse communities in Canada between 1800 and 1850. |
+
+- self-check: Have I described social (how people lived), political (who had power), and economic (how people made money) conditions for more than one community?
+- self-check: Can I explain why different communities experienced this time period differently?
+
+_Feedback moves by level:_
+- **no_evidence**
+  - Show the student a primary source and ask them to point out one thing that tells them about how people lived or what they valued.
+  - Work together to identify one community in early Canada and list one social, one political, and one economic fact about them.
+- **emerging**
+  - Ask the student to pick one of their named conditions and explain it in more detail using evidence from a source.
+  - Guide them to identify a second community and compare one condition between the two groups.
+- **developing**
+  - Challenge the student to add a third community and describe how their conditions were similar or different.
+  - Ask them to make sure they have covered all three dimensions (social, political, economic) for each community they describe.
+- **competent**
+  - Invite the student to explore why these differences existed by asking what circumstances or events shaped each community's values and conditions.
+  - Encourage them to find and use specific evidence from primary sources to support their descriptions of differences.
+
+##### Analysing Values and Displacement Across Communities — `cluster_06_lt_02`
+
+**Definition.** I can analyse how social and political values shaped the experiences, responses, and displacement of diverse communities including First Nations, Métis, Inuit, African Canadians, and Irish immigrants.
+
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
+
+**Prerequisites:** `Identifying Historical Contexts and Values`
+
+**KUD items covered:** `blk_0153_item_01`, `blk_0155_item_01`, `blk_0158_item_01`, `blk_0159_item_01`, `blk_0161_item_01`, `blk_0166_item_01`, `blk_0167_item_01`, `blk_0168_item_01`, `blk_0169_item_01`, `blk_0170_item_03`, `blk_0171_item_01`, `blk_0172_item_01`
+
+**Single-grade band** — stability `stable`, quality gate **PASS**.
+
+| Band | Statement |
+|---|---|
+| Grade 7 | I can explain how different values and beliefs affected how diverse communities experienced change between 1800 and 1850. |
+
+**Criterion rubric** — stability `rubric_unstable`, quality gate **PASS**.
+
+_Competent-framing judge:_ `pass` — The descriptor declares the capability as demonstrated ('Analyses') at the LT's level of demand (multiple diverse communities, social/political values, experiences and displacement) without hedging language or framing it as incomplete.
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | No attempt to analyse values or displacement. |
+| emerging | With support, identifies some values or groups but analysis lacks depth or accuracy. |
+| developing | Independently identifies values and describes displacement but does not fully connect them across communities. |
+| competent | Analyses how specific social and political values shaped experiences and displacement of multiple diverse communities. |
+| extending | Compares how conflicting values produced different displacement outcomes across communities and time periods. |
+
+_Prerequisite edges:_
+- `cluster_06_lt_01` [ontological_prerequisite/high] — Cannot analyse how values shaped experiences without first identifying what those values were.
+- `cluster_01_lt_01` [pedagogical_sequencing/high] — Analysis of displacement and values depends on gathering and critically examining primary source evidence.
+- `cluster_04_lt_02` [pedagogical_sequencing/medium] — Understanding how events affected different groups and recognising perspective variation supports analysing differential displacement.
+
+**Supporting components** — stability `stable`.
+
+_Co-construction plan:_
+- stage: Show students a primary source or short narrative from one community and ask them to identify what values are visible in how that community was treated.
+- stage: Introduce the term 'displacement' and have students brainstorm what it means beyond just physical movement.
+- stage: Guide students to compare how two different communities experienced displacement and what values might explain the differences.
+- stage: Co-create anchor descriptors for each level by asking students what 'just identifying' versus 'truly analysing' looks like in their own words.
+- stage: Have students test the draft rubric on a sample historical text to refine language before finalizing.
+- prompt: What values do you see in how this community was treated, and what clues in the source tell you that?
+- prompt: Displacement can mean losing land, culture, rights, or belonging—which of these did this community experience and why?
+- prompt: How did the values that shaped one community's displacement differ from the values that shaped another community's displacement?
+- prompt: What does it mean to truly analyse rather than just list facts about values and displacement?
+- prompt: Does our rubric language match what we see in real historical examples, or do we need to adjust it?
+- anchor-examples guidance: Select one primary source or historical account from each of at least three communities that clearly shows both the values at play and the resulting displacement, ensuring examples span different time periods and types of displacement to make comparisons visible.
+
+_Student-facing rubric:_
+
+| Level | Descriptor |
+|---|---|
+| no_evidence | I have not yet attempted to analyse how values shaped displacement in any community. |
+| emerging | I can identify some values or name some groups affected by displacement, but my explanation of how they connect is unclear or incomplete. |
+| developing | I can identify the values and describe what displacement looked like for multiple communities, but I do not fully explain how the values caused the displacement. |
+| competent | I can analyse how specific social and political values directly shaped the experiences and displacement of multiple diverse communities. |
+| extending | I can compare how conflicting or competing values produced different displacement outcomes across different communities and time periods. |
+
+- self-check: Can I name the specific values and explain how they led to displacement, not just describe what happened?
+- self-check: Have I looked at more than one community and shown how their experiences were shaped by different or similar values?
+
+_Feedback moves by level:_
+- **no_evidence**
+  - Start by asking the student to identify one value visible in a primary source about one community, then ask what happened to that community as a result.
+  - Provide a sentence frame: 'The value of ___ led to ___ because ___' and have the student fill it in with support.
+- **emerging**
+  - Ask the student to pick one community and one value, then push deeper: 'Why did people hold that value, and what did it make them do to this community?'
+  - Have the student compare their identified values across two communities: 'Were the values the same or different, and did that change how displacement happened?'
+- **developing**
+  - Guide the student to trace causation explicitly: 'Show me the step-by-step path from the value to the displacement—what happened in between?'
+  - Ask the student to analyse one more community and explain whether the same values or different values were at work.
+- **competent**
+  - Challenge the student to identify conflicting values within or across communities and explain how that conflict shaped different outcomes.
+  - Ask the student to extend their analysis across time: 'Did the same values produce the same displacement effects in different time periods, or did things change?'
+
+##### Understanding Historical Actors Within Context — `cluster_06_lt_03`
+
+**Definition.** The student sustains a default orientation to understand historical actors' decisions, values, and adaptations within their own context's constraints, knowledge, and beliefs, resisting presentism.
+
+**Knowledge type:** Type 3. **Assessment route:** `multi_informant_observation`. **Stability:** `stable`.
+
+**Prerequisites:** `Identifying Historical Contexts and Values`, `Analysing Values and Displacement Across Communities`
+
+**KUD items covered:** `blk_0155_item_02`, `blk_0168_item_02`
+
+**Observation protocol** — stability `stable`, Mode 3 gate **PASS**.
+
+_Prerequisites (knowledge-contingent Type 3):_ `Identifying Historical Contexts and Values`, `Analysing Values and Displacement Across Communities`
+
+**Grade 7**
+
+- The student explains why a historical actor made a particular decision by referencing the beliefs, knowledge, or constraints available to that person in their own time, rather than judging the decision by modern standards.
+- The student resists labelling historical actors as simply good or bad, instead describing how their values and choices reflected the conditions and information of their era.
+- The student asks clarifying questions about what a historical actor knew or believed before drawing conclusions about their actions or motivations.
+
+_Self-reflection prompt (calibrated to this source's own developmental expectations at Grade 7):_ Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)
+
+**Parent / caregiver prompts**
+
+- When your child talks about a historical figure or community from the 1800s, does he or she explain why people acted the way they did based on what was normal or believed back then, rather than saying it was right or wrong by today's standards?
+- Have you noticed your child curious about what people in the past actually knew or believed, rather than assuming they should have known what we know now?
+- Does your child describe historical people as complicated, with reasons for their choices tied to their own time, rather than simply calling them good or bad?
+
+**Developmental conversation protocol.** Teacher and student discuss a specific historical actor's decision from 1800–1850, examining together what that person knew, valued, and faced as constraints. The conversation focuses on reconstructing the actor's perspective within their context rather than evaluating the decision against present-day norms.
+
+### Perspectives on Significant Events (1800–1850) — `cluster_07`
+
+**Definition.** The ability to investigate and evaluate perspectives of diverse groups on significant events, developments, and issues affecting Canada between 1800 and 1850.
+
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L520-621. **KUD items:** 31.
 
 #### KUD items
 
 | Item ID | Type | Column | Content |
 |---|---|---|---|
-| `blk_0071_item_01` | Type 2 | do_skill | Analyse the Quebec Act by identifying multiple causes for its passage, distinguishing the interests and positions of different groups who supported or opposed it, and explaining the reasoning behind t |
-| `blk_0072_item_01` | Type 2 | do_skill | Generate and articulate questions that arise when examining the image of the Covenant Chain Wampum of 1764. |
-| `blk_0073_item_01` | Type 2 | do_skill | Formulate questions that guide investigation into different perspectives on a treaty agreement. |
-| `blk_0074_item_01` | Type 2 | do_skill | Formulate questions that arise when examining the Métis sash as a historical artefact. |
-| `blk_0077_item_01` | Type 2 | do_skill | Gather and organize information and evidence about perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/ |
-| `blk_0091_item_02` | Type 2 | do_skill | Analyse documents to determine the response of people in New France, including First Nations and Métis people, to the colony's being ceded to Great Britain. |
-| `blk_0091_item_03` | Type 2 | do_skill | Use a graphic organizer to help compare the perspectives of different groups or actors in historical contexts. |
-| `blk_0096_item_01` | Type 2 | do_skill | Analyse a historical event from multiple perspectives and justify whether all perspectives are equally valid, explaining the reasoning for your judgment. |
-| `blk_0102_item_01` | Type 2 | do_skill | Identify factors leading to key events that occurred in and/or affected Canada between 1713 and 1800, distinguishing between immediate triggers and underlying conditions, and recognising multiple cont |
-| `blk_0102_item_02` | Type 2 | do_skill | Describe the historical significance of key events that occurred in and/or affected Canada between 1713 and 1800 for different individuals, groups, and/or communities, recognising that significance is |
-| `blk_0106_item_02` | Type 2 | do_skill | Explain the significance of key treaties and agreements for different people and communities in Canada, recognising that significance varies across communities and perspectives. |
-| `blk_0111_item_01` | Type 2 | do_skill | Analyse the key short-term and long-term consequences of a selected treaty for the different parties involved |
-| `blk_0113_item_03` | Type 2 | do_skill | Analyse how the Treaty of Paris (1763) affected Indigenous individuals and communities, considering multiple perspectives and dimensions of impact. |
-| `blk_0115_item_02` | Type 2 | do_skill | Explain the impact of changes introduced by the Constitutional Act, 1791 on various individuals, groups, and/or communities, including First Nations, Métis, and Inuit individuals and/or communities, a |
-| `blk_0116_item_02` | Type 2 | do_skill | Analyse the Constitutional Act of 1791 using multiple causal and consequential lenses: identify contributing causes of its implementation; distinguish between intended and unintended consequences acro |
-| `blk_0119_item_02` | Type 2 | do_skill | Explain the impact of Loyalist settlement, agricultural growth, timber industry growth, and Métis ethnogenesis on various individuals, groups, and/or communities, including First Nations, Métis, and/o |
-| `blk_0120_item_02` | Type 2 | do_skill | Analyse how the establishment of the North West Company changed the fur trade, and evaluate the multiple impacts of these changes on First Nations and Métis people and on French and British traders |
-| `blk_0121_item_02` | Type 2 | do_skill | Analyse the impact of different fur trade companies' policies on the role and status of 'country wives' by examining multiple contributing factors and perspectives. |
-| `blk_0132_item_02` | Type 2 | do_skill | Analyse the interactions between different groups (English colonists, Acadians, Planters, Loyalists, slaves) and religious and colonial institutions, recognising multiple perspectives and the complexi |
-| `blk_0143_item_02` | Type 2 | do_skill | Explain the contribution of specific historical figures and groups (Pontiac, Elizabeth Simcoe, John Graves Simcoe, Thanadelthur, trappers and fur traders, Métis 'country wives', missionaries, explorer |
-| `blk_0144_item_02` | Type 2 | do_skill | Analyse what Marie-Josèphe Angélique's story reveals about Canada in this period, drawing on multiple interpretive lenses to construct an evidence-based account of historical significance |
-| `blk_0158_item_01` | Type 2 | do_skill | Analyse William Parry's writings to identify and interpret British attitudes towards Inuit, recognising that attitudes may be multiple, contradictory, or shaped by the author's perspective and histori |
-| `blk_0159_item_01` | Type 2 | do_skill | Analyse how the increasing presence of European women in fur trade communities affected country wives, and interpret what this development reveals about the social values of many newcomers with respec |
-| `blk_0161_item_01` | Type 2 | do_skill | Analyse historical attitudes and values embedded in a term or concept, and reason about how the practices those attitudes supported affected First Nations and Métis people living in the West. |
-| `blk_0166_item_01` | Type 2 | do_skill | Analyse how discrimination and segregation affected the ways in which African Canadians met their everyday needs, considering multiple contributing factors and interconnected consequences across diffe |
-| `blk_0167_item_01` | Type 2 | do_skill | Analyse what significance a father's fur trade company rank had for his Métis children, recognising that significance is constructed and varies across communities and historical traditions. |
-| `blk_0168_item_01` | Type 2 | do_skill | Analyse how Inuit responded to the challenge of living in the Arctic and explain why they succeeded in this environment while members of the Franklin expedition did not, considering multiple contribut |
+| `blk_0173_item_01` | Type 3 | do_disposition | Develop a sustained orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting presentis |
 | `blk_0173_item_02` | Type 2 | do_skill | Use the historical inquiry process to investigate perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on some significant events, developments,  |
 | `blk_0177_item_01` | Type 2 | do_skill | Formulate questions to guide investigations into perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, and/or |
 | `blk_0182_item_01` | Type 2 | do_skill | Formulate investigative questions that guide inquiry into the roles of Inuit in Arctic exploration during this period. |
@@ -447,22 +680,57 @@ _Stability diagnostics:_
 | `blk_0184_item_01` | Type 2 | do_skill | Analyse what view different groups had of the increasing number of Irish immigrants in Upper and Lower Canada |
 | `blk_0186_item_01` | Type 2 | do_skill | Identify and locate sources that reveal the viewpoints of different individuals or groups on political issues leading up to the Rebellion in Lower Canada, and evaluate the reliability and perspective  |
 | `blk_0187_item_01` | Type 2 | do_skill | Develop and justify a search strategy to locate primary sources representing Indigenous perspectives on the War of 1812, evaluating the credibility and relevance of sources found. |
+| `blk_0190_item_01` | Type 2 | do_skill | Analyse a painting depicting life in the Arctic to determine the perspective of the artist and consider how the painting might differ if painted from an Inuit perspective. |
+| `blk_0191_item_01` | Type 2 | do_skill | Assess the credibility of sources and information relevant to investigations by considering the perspective, bias, accuracy, authenticity, purpose, and context of the source and the values and experti |
+| `blk_0192_item_01` | Type 2 | do_skill | Analyse a historical source by identifying the author's social, economic, or political position and reasoning about how that position may have shaped the author's values, perspective, and the source's |
+| `blk_0192_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and sources' positions within their own context's values, beliefs, and constraints, resisting presentism and judgment by present-day fram |
+| `blk_0193_item_01` | Type 1 | know | Significant events, developments, and issues that affected Canada and/or people in Canada during this period, including major battles of the War of 1812, and their spatial boundaries and locations. |
+| `blk_0193_item_02` | Type 1 | do_skill | Analyse and construct maps as part of investigations into significant events, developments, and issues, with a focus on exploring their spatial boundaries. |
+| `blk_0194_item_01` | Type 1 | know | The Rebellions of 1837–38 and their historical context |
+| `blk_0194_item_02` | Type 1 | do_skill | Construct flow maps to show where famine Irish were displaced from and where they settled in Canada |
+| `blk_0194_item_03` | Type 1 | do_skill | Analyse demographic maps to determine settlement patterns in Upper Canada and how they affected First Nations and Métis people in the colony |
+| `blk_0194_item_04` | Type 2 | do_skill | Identify and justify what types of maps might be used to gather information on immigrants entering Canada |
+| `blk_0197_item_01` | Type 2 | do_skill | Identify and justify types of information needed on a map to illustrate encroachment by newcomers/settlers on the lands of the Six Nations in the Haldimand area. |
 | `blk_0198_item_01` | Type 2 | do_skill | Interpret and analyse information and evidence relevant to investigations using a variety of tools, such as graphic organizers to compare perspectives. |
+| `blk_0199_item_01` | Type 1 | know | Know the Durham Report as a historical document and its content. |
 | `blk_0199_item_02` | Type 2 | do_skill | Analyse the content of selected paintings to determine the perspectives that are presented and the perspectives that are missing. |
 | `blk_0199_item_03` | Type 2 | do_skill | Use a graphic organizer to determine similarities and differences in the perspective of various groups, communities, and/or individuals, including Indigenous communities and individuals, on life outsi |
+| `blk_0199_item_04` | Type 1 | do_skill | Use graphs to determine the increase in immigrants to the various colonies in British North America. |
 | `blk_0202_item_01` | Type 2 | do_skill | Analyse similarities and differences in the perspectives of the supporters of Mackenzie and Papineau by identifying and organising information suitable for a Venn diagram representation. |
 | `blk_0203_item_01` | Type 2 | do_skill | Analyse a historical source (newspaper editorial) to identify and interpret attitudes towards Irish Catholics in Upper Canada |
 | `blk_0206_item_01` | Type 2 | do_skill | Evaluate evidence and draw conclusions about perspectives of different groups and communities, including First Nations, Métis, and/or Inuit communities, on significant events, developments, or issues  |
+| `blk_0206_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand historical actors' and communities' decisions and perspectives within their own context's values, beliefs, knowledge, and constraints, resisting presentism  |
 | `blk_0209_item_01` | Type 2 | do_skill | Analyse why some religious institutions in Canada felt the need to establish residential schools, drawing on multiple sources of evidence and reasoning about institutional motivations, beliefs, and co |
+| `blk_0210_item_01` | Type 1 | know | Know the meaning and historical context of vocabulary: immigrant, rebels, famine, Loyalist, Reformer, Patriote, British North America, Upper Canada, Lower Canada, Family |
+| `blk_0210_item_02` | Type 2 | do_skill | Communicate the results of inquiries using appropriate vocabulary in context-specific ways that demonstrate understanding of historical concepts and events |
+
+#### Learning Targets
+
+### Causes, Consequences, and Significance of Key Events (1800–1850) — `cluster_08`
+
+**Definition.** The ability to analyse causes, consequences, and historical significance of key events, treaties, and changes in Canada between 1800 and 1850.
+
+**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L652-724. **KUD items:** 28.
+
+#### KUD items
+
+| Item ID | Type | Column | Content |
+|---|---|---|---|
+| `blk_0223_item_01` | Type 1 | know | Tecumseh's reasons for supporting the British in the War of 1812 |
+| `blk_0223_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand Tecumseh's decision within his own context's values, beliefs, knowledge, and constraints rather than judging by present-day frames, resisting presentism acr |
 | `blk_0225_item_01` | Type 2 | do_skill | Analyse the significance of the 1837–38 rebellions for Canadian political history, recognising that significance is constructed and varies across communities and historical traditions. |
 | `blk_0226_item_01` | Type 2 | do_skill | Analyse why the Battle of Saint-Eustache was significant to French Canadians, recognising that historical significance is constructed and varies across communities. |
 | `blk_0227_item_01` | Type 2 | do_skill | Analyse the motivation for the Franklin expedition and evaluate its significance for Inuit communities and for the British, recognising that significance is constructed and varies across communities. |
 | `blk_0228_item_01` | Type 2 | do_skill | Analyse who or what was most responsible for the genocide of the Beothuk by distinguishing multiple contributing causes, immediate triggers from underlying conditions, and intended from unintended con |
+| `blk_0228_item_02` | Type 3 | do_disposition | Sustain a default orientation to understand the decisions and actions of historical actors within their own context's values, beliefs, knowledge, and constraints rather than judging them by present-da |
+| `blk_0229_item_01` | Type 1 | know | Identify key treaties of relevance to Indigenous people during this period, including wampum belts exchanged, such as the Selkirk Treaty (1817), the Huron Tract Treaty (1827), the Saugeen Treaty (1836 |
 | `blk_0229_item_02` | Type 2 | do_skill | Explain the significance of treaties and agreements for different people and communities in Canada, recognising that significance varies across communities and historical traditions. |
 | `blk_0230_item_01` | Type 2 | do_skill | Analyse the short-term and long-term consequences of being included or not being included in the treaty process for First Nations, Métis, and Inuit, recognising multiple and differing impacts across g |
+| `blk_0232_item_01` | Type 1 | know | Key political and legal changes that occurred in and/or affected Canada during this period, including alliances between First Nations and British forces during the War of 1812 and the Treaty of Ghent |
 | `blk_0235_item_01` | Type 2 | do_skill | Analyse who benefited from the Act of Union by examining multiple perspectives on its consequences for different groups and communities. |
 | `blk_0236_item_01` | Type 2 | do_skill | Analyse the impact of the Hudson's Bay Company monopoly expansion to the Pacific coast on First Nations and Métis people, European traders, and prospective western settlers, recognising multiple persp |
 | `blk_0237_item_01` | Type 2 | do_skill | Analyse the intended and unintended consequences of the Pemmican Proclamation |
+| `blk_0238_item_01` | Type 1 | know | Key social and economic changes that occurred in and/or affected Canada during this period, including increasing immigration, the global recession of the 1830s, growing markets for lumber and wheat, p |
 | `blk_0241_item_01` | Type 2 | do_skill | Analyse how the merger of the Hudson's Bay Company and the North West Company in 1821 affected the way of life of Métis and First Nations communities, attending to multiple contributing causes and dis |
 | `blk_0242_item_01` | Type 2 | do_skill | Analyse the ways canal construction benefited various people in the colonies, considering multiple groups and perspectives. |
 | `blk_0243_item_01` | Type 2 | do_skill | Analyse the relationship between road conditions and colonial economic outcomes by considering multiple contributing factors and interconnections. |
@@ -470,271 +738,185 @@ _Stability diagnostics:_
 | `blk_0248_item_01` | Type 2 | do_skill | Characterize French-English relations at the time of the Durham Report using multiple interpretive lenses and evidence from the historical context. |
 | `blk_0249_item_01` | Type 2 | do_skill | Analyse the causes and contributing factors to conflict between Irish Catholics and Protestants in Upper Canada, distinguishing immediate triggers from underlying conditions and recognising multiple p |
 | `blk_0250_item_01` | Type 2 | do_skill | Analyse how alliances between First Nations and Métis groups shaped the outcome of the Mica Bay incident, considering multiple contributing factors and perspectives. |
+| `blk_0254_item_01` | Type 1 | know | Historical figures including Secord, Shawnadithit, Tecumseh, and Catharine Parr Traill; groups advocating responsible government or public education; immigrant aid and other charitable organizations;  |
 | `blk_0256_item_01` | Type 2 | do_skill | Explain Chief Shingwauk's vision and analyse why it was significant, recognising that historical significance is constructed and varies across communities and historical traditions. |
+| `blk_0257_item_01` | Type 1 | understand | The roles immigrants played in the settlement of Canada and the diversity of those roles across regions and time periods. |
 | `blk_0257_item_02` | Type 2 | do_skill | Analyse the impact of immigrant settlement on Canadian heritage and identities, considering multiple dimensions of influence and recognising that significance and interpretation vary across communitie |
 | `blk_0258_item_01` | Type 2 | do_skill | Analyse what a memorial at Grosse Île in Quebec reveals about the challenges immigrants faced at the time, using evidence from the memorial and historical context to construct an interpretation. |
+| `blk_0258_item_02` | Type 3 | do_disposition | Sustain a default orientation to recognise historical significance as constructed and variable across communities, resisting the assumption that what appears in a memorial or textbook is inherently wh |
 
 #### Learning Targets
 
-##### Analysing Multiple Perspectives on Historical Events — `cluster_07_lt_01`
+##### Analysing Causes and Consequences of Historical Events — `cluster_08_lt_01`
 
-**Definition.** I can analyse historical events by identifying multiple perspectives held by different groups, distinguishing their interests and reasoning, and evaluating the validity and limitations of each viewpoint.
+**Definition.** I can analyse the causes, consequences, and significance of key events, treaties, and changes in Canada between 1800 and 1850, distinguishing immediate triggers from underlying conditions and recognising multiple perspectives.
 
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
+**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
 
-**KUD items covered:** `blk_0071_item_01`, `blk_0096_item_01`, `blk_0102_item_02`, `blk_0106_item_02`, `blk_0111_item_01`, `blk_0113_item_03`, `blk_0115_item_02`, `blk_0116_item_02`, `blk_0119_item_02`, `blk_0120_item_02`, `blk_0121_item_02`, `blk_0132_item_02`, `blk_0143_item_02`, `blk_0144_item_02`, `blk_0158_item_01`, `blk_0159_item_01`, `blk_0161_item_01`, `blk_0166_item_01`, `blk_0167_item_01`, `blk_0168_item_01`, `blk_0183_item_01`, `blk_0184_item_01`, `blk_0199_item_02`, `blk_0202_item_01`, `blk_0203_item_01`, `blk_0206_item_01`, `blk_0209_item_01`, `blk_0225_item_01`, `blk_0226_item_01`, `blk_0227_item_01`, `blk_0228_item_01`, `blk_0229_item_02`, `blk_0230_item_01`, `blk_0235_item_01`, `blk_0236_item_01`, `blk_0237_item_01`, `blk_0241_item_01`, `blk_0242_item_01`, `blk_0243_item_01`, `blk_0248_item_01`, `blk_0249_item_01`, `blk_0250_item_01`, `blk_0256_item_01`, `blk_0257_item_02`, `blk_0258_item_01`
+**KUD items covered:** `blk_0225_item_01`, `blk_0226_item_01`, `blk_0227_item_01`, `blk_0228_item_01`, `blk_0229_item_02`, `blk_0230_item_01`, `blk_0235_item_01`, `blk_0236_item_01`, `blk_0237_item_01`, `blk_0241_item_01`, `blk_0242_item_01`, `blk_0243_item_01`, `blk_0244_item_01`, `blk_0248_item_01`, `blk_0249_item_01`, `blk_0250_item_01`, `blk_0256_item_01`, `blk_0257_item_02`, `blk_0258_item_01`
 
 **Single-grade band** — stability `stable`, quality gate **PASS**.
 
 | Band | Statement |
 |---|---|
-| Grade 7 | I can identify and compare different perspectives on a historical event and explain why groups held different viewpoints. |
+| Grade 7 | I can identify causes and consequences of key events in Canada between 1800 and 1850. |
 
-##### Gathering and Interpreting Evidence Across Perspectives — `cluster_07_lt_02`
+**Criterion rubric** — stability `stable`, quality gate **PASS**.
 
-**Definition.** I can formulate investigative questions, locate and gather evidence from diverse primary and secondary sources representing different communities, and use graphic organisers to compare and interpret multiple perspectives on historical events.
+_Competent-framing judge:_ `pass` — The descriptor declares the capability as independently demonstrated at the LT's level of demand, using affirmative language ('Independently analyses') without hedging or framing Competent as incomplete.
 
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `lt_set_unstable`.
-
-**KUD items covered:** `blk_0072_item_01`, `blk_0073_item_01`, `blk_0074_item_01`, `blk_0077_item_01`, `blk_0091_item_02`, `blk_0091_item_03`, `blk_0102_item_01`, `blk_0173_item_02`, `blk_0177_item_01`, `blk_0182_item_01`, `blk_0186_item_01`, `blk_0187_item_01`, `blk_0198_item_01`, `blk_0199_item_03`, `blk_0244_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
+| Level | Descriptor |
 |---|---|
-| Grade 7 | I can gather evidence from multiple sources and compare different perspectives on a historical event. |
+| no_evidence | No attempt to analyse causes or consequences of historical events. |
+| emerging | With support, identifies some causes or consequences but conflates immediate triggers with underlying conditions. |
+| developing | Independently identifies causes and consequences but struggles to distinguish immediate triggers from underlying conditions consistently. |
+| competent | Independently analyses causes, consequences, and significance of key events, distinguishing immediate triggers from underlying conditions and recognising multiple perspectives. |
+| extending | Analyses causes and consequences across multiple interconnected events, synthesising perspectives to explain broader historical patterns and significance. |
 
-### Factual Knowledge of Key Events, Treaties, and Policies — `cluster_08`
+_Prerequisite edges:_
+- `cluster_01_lt_01` [ontological_prerequisite/high] — Analysing causes and consequences requires gathering and critically evaluating evidence from primary sources to support reasoned historical conclusions.
+- `cluster_04_lt_01` [ontological_prerequisite/high] — The capability to distinguish immediate triggers from underlying conditions is foundational; this LT extends that skill to the 1800–1850 period.
+- `cluster_04_lt_02` [ontological_prerequisite/high] — Evaluating consequences and recognising significance across perspectives is a core component of analysing causes and consequences in this LT.
+- `cluster_08_lt_03` [pedagogical_sequencing/high] — Identifying key events and changes must precede analysing their causes, consequences, and significance.
 
-**Definition.** Knowledge of significant events, treaties, legal and political changes, and social-economic developments that shaped Canada between 1713 and 1850.
+**Supporting components** — stability `supporting_unstable`.
 
-**Dominant knowledge type:** Type 1. **Stability:** `stable`. **Source lines:** L350-715. **KUD items:** 38.
+_Co-construction plan:_
+- stage: Show students a historical event from 1800–1850 Canada and ask them to list everything that led to it happening.
+- stage: Guide students to sort their list into immediate triggers and deeper, underlying conditions that made the event possible.
+- stage: Introduce the idea that different people experienced the same event differently and ask students what perspectives might be missing from their analysis.
+- stage: Work together to draft what 'competent' analysis looks like by combining cause distinction, consequence recognition, and multiple viewpoints.
+- stage: Have students test the rubric on a second event to refine language and ensure clarity.
+- prompt: What had to happen right before this event occurred, and what conditions were already in place long before?
+- prompt: Who benefited from this event, who was harmed, and how might their stories about it differ?
+- prompt: How would you explain to someone why this event mattered—not just what happened, but why it changed things?
+- prompt: What would be missing from your analysis if you only looked at one person's or group's perspective?
+- anchor-examples guidance: Select one event where the immediate trigger is clearly distinct from underlying conditions and where at least two contrasting perspectives exist; a treaty negotiation or political conflict works well to show how different groups experienced the same moment differently.
 
-#### KUD items
+_Student-facing rubric:_
 
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0104_item_01` | Type 1 | know | The underlying causes of the Seven Years' War |
-| `blk_0106_item_01` | Type 1 | know | Key treaties of relevance to Indigenous people during this period, including wampum belts exchanged, such as the Covenant Chain (1677–1755). |
-| `blk_0107_item_01` | Type 1 | know | Portsmouth, 1713; the Peace and Friendship Treaties, 1713–60; the Treaty of Niagara and the Covenant |
-| `blk_0110_item_01` | Type 1 | know | The parties to the Treaty of Niagara and the 1760 Treaty of Peace and Friendship |
-| `blk_0112_item_01` | Type 1 | know | Who were treaty people in eighteenth-century Canada |
-| `blk_0112_item_02` | Type 1 | understand | What it meant to be a treaty person in eighteenth-century Canada |
-| `blk_0113_item_01` | Type 1 | know | The Treaty of Paris (1763) ended the Seven Years' War. |
-| `blk_0113_item_02` | Type 1 | know | The main stipulations of the Treaty of Paris (1763), including territorial transfers, recognition of British sovereignty in North America, and provisions affecting French colonial holdings. |
-| `blk_0114_item_01` | Type 1 | know | Key political and legal changes that occurred in and/or affected Canada during this period, including the Royal Proclamation (1763), the Treaty of Utrecht (1713), and the Quebec Act (1774) |
-| `blk_0115_item_01` | Type 1 | know | The Constitutional Act, 1791 and the changes it introduced to governance and policy in British North America. |
-| `blk_0116_item_01` | Type 1 | know | The Constitutional Act of 1791 was implemented and had impacts on French and English Canada and on Indigenous people |
-| `blk_0117_item_01` | Type 1 | know | Key provisions from the Royal Proclamation of 1763 that addressed the issue of title to Indigenous land |
-| `blk_0118_item_01` | Type 1 | know | Key social and economic changes that occurred in and/or affected Canada during this period, including fur trade competition between the North West Company and the Hudson's Bay Company |
-| `blk_0119_item_01` | Type 1 | know | Loyalist settlement, growth in agriculture, growth in the timber industry, and the ethnogenesis of the Métis as historical developments during this period |
-| `blk_0120_item_01` | Type 1 | know | What the North West Company was |
-| `blk_0121_item_01` | Type 1 | know | The term 'country wives' and the historical actors and relationships it denotes in the fur trade context. |
-| `blk_0127_item_01` | Type 1 | know | Significant aspects of daily life of different newcomer and settler groups living in Canada during this period, including seigneurs and habitants in New France and migrant fishers. |
-| `blk_0130_item_01` | Type 1 | know | The day-to-day responsibilities of men, women, and children in a rural family in early Upper Canada |
-| `blk_0132_item_01` | Type 1 | know | Identify the roles and functions of the Catholic Church, Protestant churches, and French and British colonial administrations in the lives of English colonists, Acadians, Planters, Loyalists, and ensl |
-| `blk_0141_item_01` | Type 1 | know | Identify some significant individuals and groups in Canada during this period |
-| `blk_0143_item_01` | Type 1 | know | Identify and name key historical figures and groups in early Canadian history: Pontiac, Elizabeth Simcoe, John Graves Simcoe, Thanadelthur, trappers and fur traders, Métis 'country wives', missionarie |
-| `blk_0144_item_01` | Type 1 | know | Who Marie-Josèphe Angélique was and the key events and circumstances of her life and times |
-| `blk_0146_item_01` | Type 1 | know | Who Thanadelthur was and what her contributions to Canada were. |
-| `blk_0160_item_01` | Type 1 | know | The historical meaning European settlers assigned to the word 'frontier' when describing the West |
-| `blk_0163_item_01` | Type 1 | know | Historical contexts and conditions affecting First Nations, Métis, and Inuit individuals and communities in Canada between 1800 and 1850, including war with the United States, industrialization, poor  |
-| `blk_0164_item_01` | Type 1 | know | Challenges faced by new immigrants on arriving in Canada, including appropriation of First Nations, Métis, and Inuit land and resources by European settler communities. |
-| `blk_0164_item_02` | Type 1 | know | Ways in which people responded to those challenges: strikes, rebellion, resistance, legislation to expand access to education, treaties, construction of canals, mutual aid societies, work bees, quaran |
-| `blk_0165_item_01` | Type 1 | know | Methods used by Reformers and Patriotes in their quest for political change |
-| `blk_0193_item_01` | Type 1 | know | Significant events, developments, and issues that affected Canada and/or people in Canada during this period, including major battles of the War of 1812, and their spatial boundaries and locations. |
-| `blk_0194_item_01` | Type 1 | know | The Rebellions of 1837–38 and their historical context |
-| `blk_0199_item_01` | Type 1 | know | Know the Durham Report as a historical document and its content. |
-| `blk_0210_item_01` | Type 1 | know | Know the meaning and historical context of vocabulary: immigrant, rebels, famine, Loyalist, Reformer, Patriote, British North America, Upper Canada, Lower Canada, Family |
-| `blk_0223_item_01` | Type 1 | know | Tecumseh's reasons for supporting the British in the War of 1812 |
-| `blk_0229_item_01` | Type 1 | know | Identify key treaties of relevance to Indigenous people during this period, including wampum belts exchanged, such as the Selkirk Treaty (1817), the Huron Tract Treaty (1827), the Saugeen Treaty (1836 |
-| `blk_0232_item_01` | Type 1 | know | Key political and legal changes that occurred in and/or affected Canada during this period, including alliances between First Nations and British forces during the War of 1812 and the Treaty of Ghent |
-| `blk_0238_item_01` | Type 1 | know | Key social and economic changes that occurred in and/or affected Canada during this period, including increasing immigration, the global recession of the 1830s, growing markets for lumber and wheat, p |
-| `blk_0254_item_01` | Type 1 | know | Historical figures including Secord, Shawnadithit, Tecumseh, and Catharine Parr Traill; groups advocating responsible government or public education; immigrant aid and other charitable organizations;  |
-| `blk_0104_item_02` | Type 2 | do_skill | Analyse why the Seven Years' War is seen as a turning point in North American history, considering multiple contributing causes and distinguishing immediate triggers from underlying conditions |
+| Level | Descriptor |
+|---|---|
+| no_evidence | I have not yet attempted to analyse what caused a historical event or what happened because of it. |
+| emerging | I can identify some causes or consequences of a historical event, but I mix up what happened right before with the deeper reasons it occurred. |
+| developing | I can identify causes and consequences on my own, but I do not always clearly separate the immediate trigger from the underlying conditions that made the event possible. |
+| competent | I can analyse what caused an event and what happened because of it, I distinguish between the immediate trigger and deeper conditions, and I recognise that different people experienced the event differently. |
+| extending | I can analyse causes and consequences across multiple connected events, combine different perspectives, and explain the broader historical patterns and significance they reveal. |
 
-#### Learning Targets
+- self-check: Have I identified both what triggered the event immediately and the deeper conditions that made it possible?
+- self-check: Have I considered how at least two different groups or perspectives experienced or understood this event?
 
-##### Identifying Key Events, Treaties, and Policies — `cluster_08_lt_01`
+_Feedback moves by level:_
+- **no_evidence**
+  - Ask the student to name one thing that happened before the event and one thing that happened after it.
+  - Provide a structured graphic organiser with columns for causes and consequences and work through one example together.
+- **emerging**
+  - Help the student sort their causes into two piles: things that happened right before versus things that were true for years or decades before.
+  - Ask whose perspective they have heard so far and whose story might be different.
+- **developing**
+  - Model how to label a cause as either immediate or underlying by thinking aloud through a second event.
+  - Prompt the student to identify one group that benefited and one that was harmed, then explain how their views of the event would differ.
+- **competent**
+  - Challenge the student to trace how one consequence of this event became a cause of another event.
+  - Ask them to find a primary source from a perspective they have not yet included and revise their analysis.
 
-**Definition.** I can identify and describe significant events, treaties, and political-legal changes that shaped Canada between 1713 and 1850.
+##### Resisting Presentism in Historical Interpretation — `cluster_08_lt_02`
+
+**Definition.** The student sustains a default orientation to understand historical actors and events within their own context's values, beliefs, knowledge, and constraints rather than judging by present-day frames.
+
+**Knowledge type:** Type 3. **Assessment route:** `multi_informant_observation`. **Stability:** `stable`.
+
+**KUD items covered:** `blk_0223_item_02`, `blk_0228_item_02`, `blk_0258_item_02`
+
+**Observation protocol** — stability `stable`, Mode 3 gate **PASS**.
+
+**Grade 7**
+
+- The student asks clarifying questions about the beliefs, tools, or knowledge available to historical actors before attributing motives or judging decisions.
+- The student identifies and names differences between a historical period's values and present-day values when discussing why people acted as they did.
+- The student resists labelling historical figures or groups as simply right or wrong, instead explaining their choices in relation to what they knew or believed at the time.
+
+_Self-reflection prompt (calibrated to this source's own developmental expectations at Grade 7):_ Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)
+
+**Parent / caregiver prompts**
+
+- When your child talks about a historical person or event, does he or she ask what people at that time believed or knew, rather than immediately saying whether it was good or bad?
+- Have you noticed your child explaining why someone in history made a choice by talking about what was normal or possible back then, rather than comparing it to how we do things now?
+- Does your child show curiosity about how people's values or beliefs were different in the past, and use that to understand their actions?
+
+**Developmental conversation protocol.** The teacher and student reflect together on a specific historical decision or event, with the teacher prompting the student to name what the historical actor knew, believed, or had available at that time, and to distinguish those constraints from modern perspectives. The conversation anchors on observable evidence from primary or secondary sources rather than on the student's present-day judgment.
+
+##### Identifying Key Events, Treaties, and Changes — `cluster_08_lt_03`
+
+**Definition.** I can identify key events, treaties, political and legal changes, and social and economic transformations that occurred in Canada between 1800 and 1850.
 
 **Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
 
-**KUD items covered:** `blk_0104_item_01`, `blk_0106_item_01`, `blk_0107_item_01`, `blk_0110_item_01`, `blk_0113_item_01`, `blk_0113_item_02`, `blk_0114_item_01`, `blk_0115_item_01`, `blk_0117_item_01`, `blk_0193_item_01`, `blk_0194_item_01`, `blk_0199_item_01`, `blk_0210_item_01`, `blk_0229_item_01`, `blk_0232_item_01`
+**KUD items covered:** `blk_0223_item_01`, `blk_0229_item_01`, `blk_0232_item_01`, `blk_0238_item_01`, `blk_0254_item_01`, `blk_0257_item_01`
 
 **Single-grade band** — stability `stable`, quality gate **PASS**.
 
 | Band | Statement |
 |---|---|
-| Grade 7 | I can identify and describe significant events, treaties, and policies that shaped Canada between 1713 and 1850. |
+| Grade 7 | I can identify key events, treaties, and social changes in Canada between 1800 and 1850. |
 
-##### Understanding Social-Economic Developments and Historical Actors — `cluster_08_lt_02`
+**Criterion rubric** — stability `rubric_unstable`, quality gate **PASS**.
 
-**Definition.** I can describe social and economic developments, key historical figures and groups, and their roles in shaping Canada between 1713 and 1850.
+_Competent-framing judge:_ `pass` — The descriptor declares independent identification of all required elements without hedging language, qualification, or framing as incomplete.
 
-**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
+_Propositional-thin flag:_ this is a factual Type 1 LT; the rubric is necessarily compressed.
 
-**KUD items covered:** `blk_0112_item_01`, `blk_0112_item_02`, `blk_0116_item_01`, `blk_0118_item_01`, `blk_0119_item_01`, `blk_0120_item_01`, `blk_0121_item_01`, `blk_0127_item_01`, `blk_0130_item_01`, `blk_0132_item_01`, `blk_0141_item_01`, `blk_0143_item_01`, `blk_0144_item_01`, `blk_0146_item_01`, `blk_0160_item_01`, `blk_0163_item_01`, `blk_0164_item_01`, `blk_0164_item_02`, `blk_0165_item_01`, `blk_0223_item_01`, `blk_0238_item_01`, `blk_0254_item_01`
-
-**Single-grade band** — stability `band_statements_unstable`, quality gate **PASS**.
-
-| Band | Statement |
+| Level | Descriptor |
 |---|---|
-| Grade 7 | I can describe key social and economic developments in Canada between 1713 and 1850 and explain how historical figures and groups influenced these changes. |
+| no_evidence | No attempt to identify events, treaties, or changes. |
+| emerging | Names some events or treaties with heavy support; details are incomplete or inaccurate. |
+| developing | Independently identifies several key events and treaties but misses some significant changes or lacks context. |
+| competent | Independently identifies key events, treaties, political and legal changes, and social and economic transformations between 1800 and 1850. |
+| extending | Identifies key events and changes while connecting them to underlying conditions or multiple perspectives. |
 
-##### Analysing Historical Causation and Turning Points — `cluster_08_lt_03`
+_Prerequisite edges:_
+- `cluster_04_lt_03` [pedagogical_sequencing/high] — Recalling events and treaties from 1713–1800 establishes foundational knowledge and skills for identifying events in the subsequent 1800–1850 period.
+- `cluster_06_lt_01` [pedagogical_sequencing/medium] — Understanding historical contexts and values in 1800–1850 helps learners recognise the significance and nature of events and changes in that period.
 
-**Definition.** I can analyse why major events are seen as turning points, distinguishing immediate triggers from underlying conditions.
+**Supporting components** — stability `supporting_unstable`.
 
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
+_Co-construction plan:_
+- stage: Show students a timeline of Canada 1800–1850 and ask them to spot what changed most dramatically.
+- stage: Have students sort their observations into categories: events, treaties, political/legal changes, and social/economic changes.
+- stage: Guide students to define what makes a change 'key' or significant enough to include in a rubric.
+- stage: Co-write level descriptors by asking students what independent work looks like versus work that needs help.
+- prompt: What happened in Canada between 1800 and 1850 that you think was really important?
+- prompt: How would you sort these changes into groups—are they about government, laws, people's lives, or trade?
+- prompt: What does it mean for an event or change to be 'key'—how do you decide if it matters?
+- prompt: If you were doing this task on your own, what would you need to do to show you really understand it?
+- anchor-examples guidance: Choose one example of a political/legal change and one of a social/economic transformation from the 1800–1850 period that students can easily verify in a source; avoid examples that are too obscure or require deep background knowledge.
 
-**Prerequisites:** `Identifying Key Events, Treaties, and Policies`
+_Student-facing rubric:_
 
-**KUD items covered:** `blk_0104_item_02`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
+| Level | Descriptor |
 |---|---|
-| Grade 7 | I can analyse why major historical events are turning points by distinguishing immediate causes from underlying conditions. |
+| no_evidence | I have not yet tried to identify events, treaties, or changes in Canada between 1800 and 1850. |
+| emerging | I can name some events or treaties from this period, but I need help and my details are incomplete or not quite right. |
+| developing | I can independently identify several key events and treaties, but I may miss some important changes or forget to explain what they mean. |
+| competent | I can independently identify key events, treaties, political and legal changes, and social and economic transformations that happened in Canada between 1800 and 1850. |
+| extending | I can identify key events and changes while explaining why they happened or showing how different people saw them differently. |
 
-### Historical Communication and Vocabulary — `cluster_09`
+- self-check: Can I name at least three events or treaties and explain what they were about?
+- self-check: Did I identify changes in government, laws, and people's daily lives, or did I focus on only one type?
 
-**Definition.** The ability to communicate historical findings using appropriate vocabulary and formats that demonstrate understanding of historical concepts and events.
-
-**Dominant knowledge type:** Type 2. **Stability:** `stable`. **Source lines:** L323-621. **KUD items:** 3.
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0097_item_01` | Type 1 | know | Vocabulary appropriate to historical inquiry and communication about colonial North America: perspective, colony, treaty, expulsion, displacement, values, roles, power, conflict, Acadian, medicines, o |
-| `blk_0097_item_02` | Type 2 | do_skill | Communicate the results of historical inquiries using formats appropriate for specific audiences, such as a historical narrative in storybook or graphic form about the responses of different people to |
-| `blk_0210_item_02` | Type 2 | do_skill | Communicate the results of inquiries using appropriate vocabulary in context-specific ways that demonstrate understanding of historical concepts and events |
-
-#### Learning Targets
-
-##### Using Historical Vocabulary Accurately — `cluster_09_lt_01`
-
-**Definition.** I can use historical vocabulary appropriately when communicating about colonial North America and early Canadian history.
-
-**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0097_item_01`, `blk_0210_item_02`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can use historical vocabulary accurately when describing events and people from colonial North America and early Canadian history. |
-
-##### Communicating Historical Findings to Audiences — `cluster_09_lt_02`
-
-**Definition.** I can communicate the results of historical inquiries using formats and vocabulary appropriate for specific audiences and historical contexts.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
-
-**Prerequisites:** `Using Historical Vocabulary Accurately`
-
-**KUD items covered:** `blk_0097_item_02`, `blk_0210_item_02`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can communicate historical findings using appropriate vocabulary and formats for my intended audience. |
-
-### Fur Trade, Economic Systems, and Social Change — `cluster_10`
-
-**Definition.** The ability to analyse how fur trade competition, economic development, and social structures affected Indigenous peoples, Métis, and settler communities.
-
-**Dominant knowledge type:** Type 2. **Stability:** `cluster_unstable`. **Source lines:** L395-408. **KUD items:** 2.
-
-_Stability diagnostics:_
-- unmatched_in_run2
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0122_item_01` | Type 2 | do_skill | Analyse the challenges facing Loyalists on their arrival in Canada, recognising that different Loyalist groups faced different challenges rather than a uniform experience. |
-| `blk_0126_item_01` | Type 1 | understand | How Métis marriage customs acknowledged both First Nations and European ancestors |
-
-#### Learning Targets
-
-##### Analysing Fur Trade Economic Competition — `cluster_10_lt_01`
-
-**Definition.** I can analyse how fur trade competition shaped economic opportunities and constraints for Indigenous peoples, Métis, and settler communities.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0122_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can analyse how fur trade competition created different economic opportunities and challenges for Indigenous peoples, Métis, and settlers. |
-
-##### Understanding Social Structures and Cultural Adaptation — `cluster_10_lt_02`
-
-**Definition.** I can explain how social structures and cultural practices, including kinship systems, reflected and negotiated relationships between Indigenous, Métis, and European communities.
-
-**Knowledge type:** Type 1. **Assessment route:** `rubric_with_clear_criteria`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0126_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can explain how kinship systems and cultural practices shaped relationships between Indigenous, Métis, and European communities. |
-
-### Immigration, Settlement, and Community Formation — `cluster_11`
-
-**Definition.** The ability to analyse the experiences, contributions, and impacts of immigrant and settler groups on Canadian heritage, identities, and Indigenous communities.
-
-**Dominant knowledge type:** Type 2. **Stability:** `cluster_unstable`. **Source lines:** L722-722. **KUD items:** 1.
-
-_Stability diagnostics:_
-- dominant_type_drift_run2: Type 2→Type 3
-
-#### KUD items
-
-| Item ID | Type | Column | Content |
-|---|---|---|---|
-| `blk_0257_item_01` | Type 1 | understand | The roles immigrants played in the settlement of Canada and the diversity of those roles across regions and time periods. |
-
-#### Learning Targets
-
-##### Analysing Immigrant Settlement Roles — `cluster_11_lt_01`
-
-**Definition.** I can analyse how immigrant groups played different roles in Canadian settlement across regions and historical periods.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0257_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can analyse how different immigrant groups contributed to Canadian settlement in specific regions and time periods. |
-
-##### Evaluating Immigrant Contributions and Impacts — `cluster_11_lt_02`
-
-**Definition.** I can evaluate the contributions and impacts of immigrant and settler groups on Canadian heritage, identities, and Indigenous communities.
-
-**Knowledge type:** Type 2. **Assessment route:** `reasoning_quality_rubric`. **Stability:** `stable`.
-
-**KUD items covered:** `blk_0257_item_01`
-
-**Single-grade band** — stability `stable`, quality gate **PASS**.
-
-| Band | Statement |
-|---|---|
-| Grade 7 | I can describe how immigrant and settler groups have shaped Canadian communities and influenced Indigenous peoples. |
+_Feedback moves by level:_
+- **no_evidence**
+  - Ask the student to choose one event from a provided list and tell you one thing that happened.
+  - Work together to find one treaty or change in a source and write down what it was.
+- **emerging**
+  - Ask the student to check their details against a source and correct any inaccuracies.
+  - Have them add one more event or treaty and explain in one sentence why it mattered.
+- **developing**
+  - Ask the student to identify one political or legal change they may have missed and add it to their list.
+  - Have them choose one event and explain what changed for people as a result.
+- **competent**
+  - Ask the student to pick one change and explain what caused it or what led to it.
+  - Have them consider how two different groups might have felt about one of the changes they identified.
 
 ## Halted items
 
@@ -872,5 +1054,14 @@ _Stability diagnostics:_
 
 ### LT stage halted clusters
 
-- `cluster_04` — lt_set_unreliable: only 0/3 runs produced parseable output
+- `cluster_02` — lt_set_unreliable: only 0/3 runs produced parseable output
+- `cluster_03` — lt_set_unreliable: only 1/3 runs produced parseable output
+- `cluster_07` — lt_set_unreliable: only 0/3 runs produced parseable output
+
+### Criterion-rubric stage halted LTs
+
+- `cluster_01_lt_01` (Analysing Primary Sources for Historical Evidence) — rubric_unreliable: no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'evaluate'), ('competent_scope', 'unscoped')), (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'evaluate'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'evaluate'), ('competent_scope', 'unscoped'))]
+- `cluster_01_lt_02` (Interpreting and Creating Historical Maps) — rubric_unreliable: only 0/3 runs produced parseable output
+- `cluster_04_lt_03` (Recalling Key Events and Treaties) — rubric_unreliable: only 1/3 runs produced parseable output
+- `cluster_05_lt_02` (Analysing Interactions and Historical Significance) — rubric_unreliable: only 1/3 runs produced parseable output
 

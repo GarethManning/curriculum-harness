@@ -1,13 +1,14 @@
 # Cross-source reference corpus summary
-*Generated: 2026-04-19 — session 4b-4.*
+*Generated: 2026-04-19 — session 4b-5.*
 
 Three sources have passed through the full reference-authoring pipeline
-(inventory → KUD classifier → KUD gates → competency clustering → LT
-generation → band statements + observation indicators). Two of the
-three (Welsh CfW HWB, Common Core G7 RP) have additionally been run
-through the 4b-4 criterion stage (five-level rubrics + supporting
-components for Type 1/2 LTs). This document provides a quantitative
-comparison and a set of cross-source observations.
+including the 4b-4 criterion stage (five-level rubrics + supporting
+components for Type 1/2 LTs): Welsh CfW HWB, Common Core G7 RP, and
+Ontario G7 History. Ontario was re-clustered on Opus 4.6 in 4b-5 to
+bring membership drift below the 20% threshold; LT/band/indicator/
+criterion/supporting stages were regenerated on Haiku on those
+stabilised clusters. This document provides a quantitative comparison
+and a set of cross-source observations.
 
 ---
 
@@ -34,17 +35,18 @@ comparison and a set of cross-source observations.
 | Artefact-count ratio | 1.650 | 2.200 | 1.333 |
 | Ratio domain band | [0.8, 2.2] (disp.) | [0.8, 2.5] (hier.) | [0.8, 1.5] (horiz.) |
 | KUD gate result | PASSED | PASSED | PASSED |
-| Competency clusters | 9 | 4 | 11 |
+| Competency clusters | 9 | 4 | 8 |
+| Cluster model | Haiku | Haiku | Opus 4.6 |
 | Cluster stability | cluster_unstable | cluster_unstable | cluster_unstable |
-| LTs | 20 | 8 | 23 |
-| Halted LT clusters | 0 | 0 | 1 |
-| Band-statement sets | 11 | 6 | 21 |
+| LTs | 20 | 8 | 13 |
+| Halted LT clusters | 0 | 0 | 3 |
+| Band-statement sets | 11 | 6 | 11 |
 | Observation indicator sets | 5 | 0 | 2 |
-| Criterion rubrics (Type 1/2) | 12 | 7 | — (not run) |
-| Criterion gate pass | 11 | 6 | — |
-| Criterion halted | 2 | 1 | — |
-| Supporting components | 9 | 4 | — |
-| Supporting halted | 2 | 2 | — |
+| Criterion rubrics (Type 1/2) | 12 | 7 | 7 |
+| Criterion gate pass | 11 | 6 | 6 |
+| Criterion halted | 2 | 1 | 4 |
+| Supporting components | 9 | 4 | 6 |
+| Supporting halted | 2 | 2 | 0 |
 
 ---
 
@@ -98,20 +100,40 @@ comparison and a set of cross-source observations.
 ## Cluster stability
 
 All three sources produced `cluster_unstable` overall — no source achieved
-`stable` at the cluster level. This is expected at this stage:
+`stable` at the cluster level. The specific drivers differ by source:
 
-- Welsh CfW (9 clusters, 33 items): small items-per-cluster denominator
-  amplifies Jaccard sensitivity. Cluster content is correct on manual review.
-- Common Core (4 clusters, 22 items): 4b-3 run; cluster_unstable with only
-  minor membership drift. Small source.
-- Ontario (11 clusters, 188 items): run-2 produced 15 clusters vs run-1's 11;
-  43% membership drift. Large source with many fine-grained specific expectations.
-  One cluster (cluster_04, 26 items, Indigenous Experiences) halted LT
-  generation as lt_set_unreliable.
+- Welsh CfW (9 clusters, 33 items, Haiku): small items-per-cluster
+  denominator amplifies Jaccard sensitivity. Cluster content is correct on
+  manual review.
+- Common Core (4 clusters, 22 items, Haiku): 4b-3 run; cluster_unstable
+  driven by dominant-type drift on one cluster, not membership drift. Small
+  source.
+- Ontario (8 clusters, 188 items, **Opus 4.6**, 4b-5 re-run): membership
+  drift **0% (vs run-2) / 9.57% (vs run-3)**, both below the 20% threshold.
+  Residual instability is `cluster_count_differs [8, 8, 7]` and
+  `cluster_missing_in_run3` (one canonical cluster has no Jaccard≥0.30 match
+  in run 3). Prior Haiku run (4b-3) had 43.09% membership drift on 11
+  clusters — escalation to Opus was load-bearing for the DoD target.
 
 `cluster_unstable` is flagged for human review but is not a halting
 condition. Across all three sources, the cluster boundaries on visual
 inspection follow the source's organising structure correctly.
+
+### Ontario downstream honest halts (4b-5)
+
+The Opus re-clustering consolidated Ontario's prior 11 clusters into 8
+larger, thematically coherent clusters (e.g. splitting by era 1713–1800
+vs 1800–1850, each with Continuity/Change, Perspectives, and Causes
+/Consequences/Significance dimensions). Three of the eight clusters
+halted LT generation under Haiku (0/3, 1/3, 0/3 parseable runs) — all
+three clusters are large (23, 34, 31 items). This produced 13 LTs from
+5 productive clusters, below the prior 23-LT Haiku output (which itself
+came from unstable 11-cluster output). Downstream: 4 of 11 Type 1/2
+LTs halted at the rubric stage (`rubric_unreliable`), producing 7
+rubrics of which 6 pass criterion gates. Pattern of halt reasons is
+consistent with prior anchors (parse-reliability ceiling on Haiku); the
+reduced absolute counts reflect Opus's cleaner consolidation, not a
+regression.
 
 ---
 
@@ -124,25 +146,26 @@ inspection follow the source's organising structure correctly.
 | Ontario | 2 |
 
 Welsh CfW has the richest observation-indicator output, matching its
-dispositional domain. Ontario's 2 indicator sets correspond to the
-contextual understanding / anti-presentism cluster (cluster_03),
-which is the only cluster with a clear Type 3 dominant type after
-clustering. The FOCUS ON disposition LTs are distributed across multiple
-clusters and most ended up in unstable clusters that produced Type 2 LTs
-rather than the expected Type 3 — this is the substantive output of the
-FOCUS ON verification (see below).
+dispositional domain. Ontario's 2 indicator sets in the 4b-5 re-run
+come from the two Type 3 LTs that survived clustering + LT generation
+under Opus clusters. The FOCUS ON disposition KUD items are
+distributed across multiple clusters; most were placed into Type 2-
+dominated clusters during Opus clustering, so their corresponding LTs
+(if any survived LT generation) are Type 2. The FOCUS ON verification
+stage records classifier disagreement with the Seixas/Morton placement
+rule rather than silently over-routing to Type 3 (see below).
 
 ---
 
 ## Criterion rubrics (Type 1/2)
 
-*Added 2026-04-19, session 4b-4.*
+*Added 2026-04-19, session 4b-4; Ontario row populated 2026-04-19, session 4b-5.*
 
 | Source | Rubrics | Gate pass | Halted | Stable | Unstable | Thin-flag | Supporting components | Supporting halted |
 |---|---|---|---|---|---|---|---|---|
 | Welsh CfW HWB | 12 | 11 | 2 | 5 | 7 | 2 | 9 | 2 |
 | Common Core G7 RP | 7 | 6 | 1 | 4 | 3 | 2 | 4 | 2 |
-| Ontario G7 History | — | — | — | — | — | — | — | — |
+| Ontario G7 History | 7 | 6 | 4 | 4 | 3 | 2 | 6 | 0 |
 
 **Observations:**
 
@@ -168,9 +191,14 @@ FOCUS ON verification (see below).
   number of halted rubrics plus a small number of additional halts on
   LTs that passed the rubric gate but produced unstable co-construction
   prompts. The gap is small and consistent across both corpora.
-- Ontario G7 History has not been run through the criterion stage in
-  this session (cluster_04 already halted at LT generation; running
-  criteria on the remaining clusters is queued for a later session).
+- Ontario G7 History (4b-5 re-run): 7 rubrics from 11 Type 1/2 LTs;
+  4 halts all `rubric_unreliable` driven by parse-reliability (0/3
+  or 1/3 runs producing valid output). 6 pass criterion gates; 0
+  supporting-components halts. Outputs are below the 15–20 rubric
+  projection in the v3 plan's DoD — that projection assumed the prior
+  Haiku clustering's 23 LTs; Opus's consolidated 8 clusters with 3
+  large-cluster LT halts produced a lower LT pool, and therefore a
+  lower rubric count. Honest halt, not a regression.
 
 ---
 
@@ -228,4 +256,4 @@ the pipeline and fits the current band comfortably — no revision triggered.
 
 ---
 
-*Cross-source summary last updated: 2026-04-19, session 4b-4.*
+*Cross-source summary last updated: 2026-04-19, session 4b-5.*

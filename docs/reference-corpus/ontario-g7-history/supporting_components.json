@@ -1,0 +1,1371 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "5-ontario-k8-g7-history-pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "components": [
+    {
+      "lt_id": "cluster_04_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_04_lt_01",
+        "stages": [
+          "Show students a key event from 1713–1800 and ask them to list everything that made it happen.",
+          "Introduce the distinction between immediate triggers and underlying conditions using a teacher-modelled think-aloud.",
+          "Guide students to sort their causes into triggers versus conditions and discuss why some causes are deeper than others.",
+          "Co-create descriptors for each rubric level by asking students what evidence would show they can do this skill.",
+          "Test the rubric together on a second event to refine language and ensure clarity."
+        ],
+        "student_prompts": [
+          "What had to happen right before this event occurred, and what conditions were already in place that made it possible?",
+          "Which causes are immediate and which are long-term or background?",
+          "How would we know if someone understood multiple causes versus just one cause?",
+          "What would it look like if you could explain how different causes worked together to create this event?"
+        ],
+        "anchor_examples_guidance": "Select one event with a clear immediate trigger and at least two distinct underlying conditions so students can practise separating layers of causation; choose a second event with interconnected causes to model how causes interact."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_04_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to identify or distinguish causes of events.",
+            "word_count": 12
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can name one or two causes with support, but I mix up immediate triggers with underlying conditions.",
+            "word_count": 18
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify multiple causes on my own, but I do not clearly separate immediate triggers from underlying conditions.",
+            "word_count": 19
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify and distinguish immediate triggers from underlying conditions, and I explain how multiple causes work together.",
+            "word_count": 18
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyse how causes connect across different events and judge which causes matter most.",
+            "word_count": 15
+          }
+        ],
+        "self_check_prompts": [
+          "Have I identified at least two different causes, and can I explain which one happened right before the event and which ones were already in place?",
+          "Can I describe how my causes are connected or how they worked together to make this event happen?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_04_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to name one thing that had to happen for this event to occur, then ask what was already true before that moment.",
+            "Provide a sentence frame: 'This event happened because [immediate trigger], and it was possible because [underlying condition].'"
+          ],
+          "emerging": [
+            "Help the student sort their causes into two groups: things that happened right before versus things that were already in place.",
+            "Ask: 'Which of these causes could have happened without the others, and which ones needed each other?'"
+          ],
+          "developing": [
+            "Ask the student to label each cause as either a trigger or a condition, then explain why they chose each label.",
+            "Prompt: 'How did this underlying condition make the immediate trigger more likely to happen?'"
+          ],
+          "competent": [
+            "Ask the student to trace how one cause led to another across multiple events in the period.",
+            "Invite them to rank their causes by importance and justify their ranking with evidence."
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_04_lt_02",
+        "stages": [
+          "Show students a historical event and ask them to list who was affected by it.",
+          "Guide students to distinguish between a consequence and its significance to different people.",
+          "Have students brainstorm how the same event might matter differently to two contrasting groups.",
+          "Co-create language for each rubric level by sorting student examples from weakest to strongest.",
+          "Test the rubric together on a new event to refine clarity."
+        ],
+        "student_prompts": [
+          "Who were all the people or groups touched by this event?",
+          "What actually changed because of this event, and why did that change matter more to some people than others?",
+          "How might a person from Group A and a person from Group B have felt differently about the same consequence?",
+          "What words describe work where you explain consequences but do not yet show different viewpoints?"
+        ],
+        "anchor_examples_guidance": "Choose historical events or policy changes where at least two groups experienced visibly different impacts or valued the outcome differently; avoid events where consequences are uniform across all groups."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_04_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to explain how an event or change affected people or groups.",
+            "word_count": 16
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify one consequence of an event with help, but my explanation is brief and does not show how different people saw it differently.",
+            "word_count": 25
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can explain on my own how an event affected some groups, but I do not always notice that the same consequence mattered differently to different people.",
+            "word_count": 27
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can explain how an event or change affected different individuals, groups, and communities, and I recognise that what mattered most depended on who you were.",
+            "word_count": 26
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can compare how different communities saw the significance of an event and explain why their interpretations differed based on their values and experiences.",
+            "word_count": 24
+          }
+        ],
+        "self_check_prompts": [
+          "Have I identified consequences for at least two different groups or perspectives?",
+          "Can I explain why the same consequence mattered differently to different people?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_04_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask: Who do you think this event affected, and what changed for them?",
+            "Provide a sentence starter: This event changed ___ for ___ because ___."
+          ],
+          "emerging": [
+            "Ask: You found one consequence; can you find another group that was also affected?",
+            "Prompt: Did this consequence feel like a good thing or a bad thing to everyone involved?"
+          ],
+          "developing": [
+            "Ask: You explained what happened to Group A; now what happened to Group B, and was it the same or different?",
+            "Prompt: Why do you think Group A and Group B might have valued this change differently?"
+          ],
+          "competent": [
+            "Ask: You have shown two perspectives; can you find a third group whose view was distinct?",
+            "Prompt: What values or experiences caused these groups to interpret the event so differently?"
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_06_lt_01",
+        "stages": [
+          "Show students a primary source or image from early 1800s Canada and ask them to list what they notice about how people lived, what they believed, and what rules or systems governed them.",
+          "Guide students to sort their observations into three categories: social (how people lived together), political (who had power and how decisions were made), and economic (how people made money and traded).",
+          "Work together to define what 'diverse communities' means by identifying different groups in Canada during this period and discussing why their contexts might have been different.",
+          "Co-create descriptors for each rubric level by asking students what it would look like to do this task with no help, with some help, on your own, really well, and in a way that shows you understand differences between groups."
+        ],
+        "student_prompts": [
+          "What do you see in this source that tells you about how people lived, what they valued, or who had power?",
+          "Can you sort what you found into three piles: social (people and community), political (power and rules), and economic (money and work)?",
+          "Which groups of people in Canada between 1800 and 1850 might have experienced life very differently, and why?",
+          "What would it look like if someone just named a few conditions without explaining them versus someone who really described them in detail?"
+        ],
+        "anchor_examples_guidance": "Choose primary sources or student work samples that show contrasting communities in early Canada, such as Indigenous nations, French-Canadian communities, and British settlers, so students can see how the same time period looked different depending on who you were. Select examples that clearly show social, political, and economic elements so students can practise sorting and describing across all three dimensions."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_06_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet tried to identify or describe the social, political, and economic conditions and values of communities in Canada between 1800 and 1850.",
+            "word_count": 25
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can name some social, political, or economic conditions with help, but my descriptions are not very accurate or detailed.",
+            "word_count": 20
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify and describe the social, political, and economic values and conditions for one or two communities on my own, but my descriptions are still general or missing some details.",
+            "word_count": 31
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify and describe the social, political, and economic values and conditions for different communities in Canada between 1800 and 1850.",
+            "word_count": 22
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can identify and describe contexts and values while explaining how they were different across or within diverse communities in Canada between 1800 and 1850.",
+            "word_count": 25
+          }
+        ],
+        "self_check_prompts": [
+          "Have I described social (how people lived), political (who had power), and economic (how people made money) conditions for more than one community?",
+          "Can I explain why different communities experienced this time period differently?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_06_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Show the student a primary source and ask them to point out one thing that tells them about how people lived or what they valued.",
+            "Work together to identify one community in early Canada and list one social, one political, and one economic fact about them."
+          ],
+          "emerging": [
+            "Ask the student to pick one of their named conditions and explain it in more detail using evidence from a source.",
+            "Guide them to identify a second community and compare one condition between the two groups."
+          ],
+          "developing": [
+            "Challenge the student to add a third community and describe how their conditions were similar or different.",
+            "Ask them to make sure they have covered all three dimensions (social, political, economic) for each community they describe."
+          ],
+          "competent": [
+            "Invite the student to explore why these differences existed by asking what circumstances or events shaped each community's values and conditions.",
+            "Encourage them to find and use specific evidence from primary sources to support their descriptions of differences."
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_06_lt_02",
+        "stages": [
+          "Show students a primary source or short narrative from one community and ask them to identify what values are visible in how that community was treated.",
+          "Introduce the term 'displacement' and have students brainstorm what it means beyond just physical movement.",
+          "Guide students to compare how two different communities experienced displacement and what values might explain the differences.",
+          "Co-create anchor descriptors for each level by asking students what 'just identifying' versus 'truly analysing' looks like in their own words.",
+          "Have students test the draft rubric on a sample historical text to refine language before finalizing."
+        ],
+        "student_prompts": [
+          "What values do you see in how this community was treated, and what clues in the source tell you that?",
+          "Displacement can mean losing land, culture, rights, or belonging—which of these did this community experience and why?",
+          "How did the values that shaped one community's displacement differ from the values that shaped another community's displacement?",
+          "What does it mean to truly analyse rather than just list facts about values and displacement?",
+          "Does our rubric language match what we see in real historical examples, or do we need to adjust it?"
+        ],
+        "anchor_examples_guidance": "Select one primary source or historical account from each of at least three communities that clearly shows both the values at play and the resulting displacement, ensuring examples span different time periods and types of displacement to make comparisons visible."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_06_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to analyse how values shaped displacement in any community.",
+            "word_count": 14
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some values or name some groups affected by displacement, but my explanation of how they connect is unclear or incomplete.",
+            "word_count": 23
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify the values and describe what displacement looked like for multiple communities, but I do not fully explain how the values caused the displacement.",
+            "word_count": 26
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can analyse how specific social and political values directly shaped the experiences and displacement of multiple diverse communities.",
+            "word_count": 19
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can compare how conflicting or competing values produced different displacement outcomes across different communities and time periods.",
+            "word_count": 18
+          }
+        ],
+        "self_check_prompts": [
+          "Can I name the specific values and explain how they led to displacement, not just describe what happened?",
+          "Have I looked at more than one community and shown how their experiences were shaped by different or similar values?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_06_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Start by asking the student to identify one value visible in a primary source about one community, then ask what happened to that community as a result.",
+            "Provide a sentence frame: 'The value of ___ led to ___ because ___' and have the student fill it in with support."
+          ],
+          "emerging": [
+            "Ask the student to pick one community and one value, then push deeper: 'Why did people hold that value, and what did it make them do to this community?'",
+            "Have the student compare their identified values across two communities: 'Were the values the same or different, and did that change how displacement happened?'"
+          ],
+          "developing": [
+            "Guide the student to trace causation explicitly: 'Show me the step-by-step path from the value to the displacement—what happened in between?'",
+            "Ask the student to analyse one more community and explain whether the same values or different values were at work."
+          ],
+          "competent": [
+            "Challenge the student to identify conflicting values within or across communities and explain how that conflict shaped different outcomes.",
+            "Ask the student to extend their analysis across time: 'Did the same values produce the same displacement effects in different time periods, or did things change?'"
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_08_lt_01",
+        "stages": [
+          "Show students a historical event from 1800–1850 Canada and ask them to list everything that led to it happening.",
+          "Guide students to sort their list into immediate triggers and deeper, underlying conditions that made the event possible.",
+          "Introduce the idea that different people experienced the same event differently and ask students what perspectives might be missing from their analysis.",
+          "Work together to draft what 'competent' analysis looks like by combining cause distinction, consequence recognition, and multiple viewpoints.",
+          "Have students test the rubric on a second event to refine language and ensure clarity."
+        ],
+        "student_prompts": [
+          "What had to happen right before this event occurred, and what conditions were already in place long before?",
+          "Who benefited from this event, who was harmed, and how might their stories about it differ?",
+          "How would you explain to someone why this event mattered—not just what happened, but why it changed things?",
+          "What would be missing from your analysis if you only looked at one person's or group's perspective?"
+        ],
+        "anchor_examples_guidance": "Select one event where the immediate trigger is clearly distinct from underlying conditions and where at least two contrasting perspectives exist; a treaty negotiation or political conflict works well to show how different groups experienced the same moment differently."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_08_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to analyse what caused a historical event or what happened because of it.",
+            "word_count": 18
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some causes or consequences of a historical event, but I mix up what happened right before with the deeper reasons it occurred.",
+            "word_count": 25
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify causes and consequences on my own, but I do not always clearly separate the immediate trigger from the underlying conditions that made the event possible.",
+            "word_count": 28
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can analyse what caused an event and what happened because of it, I distinguish between the immediate trigger and deeper conditions, and I recognise that different people experienced the event differently.",
+            "word_count": 32
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyse causes and consequences across multiple connected events, combine different perspectives, and explain the broader historical patterns and significance they reveal.",
+            "word_count": 23
+          }
+        ],
+        "self_check_prompts": [
+          "Have I identified both what triggered the event immediately and the deeper conditions that made it possible?",
+          "Have I considered how at least two different groups or perspectives experienced or understood this event?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_08_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to name one thing that happened before the event and one thing that happened after it.",
+            "Provide a structured graphic organiser with columns for causes and consequences and work through one example together."
+          ],
+          "emerging": [
+            "Help the student sort their causes into two piles: things that happened right before versus things that were true for years or decades before.",
+            "Ask whose perspective they have heard so far and whose story might be different."
+          ],
+          "developing": [
+            "Model how to label a cause as either immediate or underlying by thinking aloud through a second event.",
+            "Prompt the student to identify one group that benefited and one that was harmed, then explain how their views of the event would differ."
+          ],
+          "competent": [
+            "Challenge the student to trace how one consequence of this event became a cause of another event.",
+            "Ask them to find a primary source from a perspective they have not yet included and revise their analysis."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "co_construction_plan": {
+        "lt_id": "cluster_08_lt_03",
+        "stages": [
+          "Show students a timeline of Canada 1800–1850 and ask them to spot what changed most dramatically.",
+          "Have students sort their observations into categories: events, treaties, political/legal changes, and social/economic changes.",
+          "Guide students to define what makes a change 'key' or significant enough to include in a rubric.",
+          "Co-write level descriptors by asking students what independent work looks like versus work that needs help."
+        ],
+        "student_prompts": [
+          "What happened in Canada between 1800 and 1850 that you think was really important?",
+          "How would you sort these changes into groups—are they about government, laws, people's lives, or trade?",
+          "What does it mean for an event or change to be 'key'—how do you decide if it matters?",
+          "If you were doing this task on your own, what would you need to do to show you really understand it?"
+        ],
+        "anchor_examples_guidance": "Choose one example of a political/legal change and one of a social/economic transformation from the 1800–1850 period that students can easily verify in a source; avoid examples that are too obscure or require deep background knowledge."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_08_lt_03",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet tried to identify events, treaties, or changes in Canada between 1800 and 1850.",
+            "word_count": 17
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can name some events or treaties from this period, but I need help and my details are incomplete or not quite right.",
+            "word_count": 23
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can independently identify several key events and treaties, but I may miss some important changes or forget to explain what they mean.",
+            "word_count": 23
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can independently identify key events, treaties, political and legal changes, and social and economic transformations that happened in Canada between 1800 and 1850.",
+            "word_count": 24
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can identify key events and changes while explaining why they happened or showing how different people saw them differently.",
+            "word_count": 20
+          }
+        ],
+        "self_check_prompts": [
+          "Can I name at least three events or treaties and explain what they were about?",
+          "Did I identify changes in government, laws, and people's daily lives, or did I focus on only one type?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_08_lt_03",
+        "moves_by_level": {
+          "no_evidence": [
+            "Ask the student to choose one event from a provided list and tell you one thing that happened.",
+            "Work together to find one treaty or change in a source and write down what it was."
+          ],
+          "emerging": [
+            "Ask the student to check their details against a source and correct any inaccuracies.",
+            "Have them add one more event or treaty and explain in one sentence why it mattered."
+          ],
+          "developing": [
+            "Ask the student to identify one political or legal change they may have missed and add it to their list.",
+            "Have them choose one event and explain what changed for people as a result."
+          ],
+          "competent": [
+            "Ask the student to pick one change and explain what caused it or what led to it.",
+            "Have them consider how two different groups might have felt about one of the changes they identified."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              5
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    }
+  ],
+  "halted_lts": []
+}

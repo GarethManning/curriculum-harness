@@ -6,25 +6,28 @@
   "runs": 3,
   "sets": [
     {
-      "lt_id": "cluster_03_lt_01",
+      "lt_id": "cluster_06_lt_03",
       "bands": [
         {
           "band": "Grade 7",
           "observable_behaviours": [
-            "The student asks questions about what people in the past believed, valued, or knew rather than immediately judging their choices by today's standards.",
-            "The student identifies constraints or conditions that shaped a historical actor's decisions and explains how those circumstances differed from the present.",
-            "The student resists labelling historical figures or groups as simply right or wrong, instead describing the competing pressures and information available to them at the time."
+            "The student explains why a historical actor made a particular decision by referencing the beliefs, knowledge, or constraints available to that person in their own time, rather than judging the decision by modern standards.",
+            "The student resists labelling historical actors as simply good or bad, instead describing how their values and choices reflected the conditions and information of their era.",
+            "The student asks clarifying questions about what a historical actor knew or believed before drawing conclusions about their actions or motivations."
           ],
           "self_reflection_prompt": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
         }
       ],
       "parent_prompts": [
-        "When your child talks about a historical event or person from school, does he or she ask why people made those choices given what they knew then, rather than saying the choice was obviously wrong?",
-        "Have you noticed your child mentioning the rules, beliefs, or dangers that existed in a time period to explain why someone acted a certain way?",
-        "Does your child seem curious about understanding different perspectives from the past, or does he or she tend to judge people quickly based on today's values?"
+        "When your child talks about a historical figure or community from the 1800s, does he or she explain why people acted the way they did based on what was normal or believed back then, rather than saying it was right or wrong by today's standards?",
+        "Have you noticed your child curious about what people in the past actually knew or believed, rather than assuming they should have known what we know now?",
+        "Does your child describe historical people as complicated, with reasons for their choices tied to their own time, rather than simply calling them good or bad?"
       ],
-      "prerequisite_lts": [],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss specific moments when the student resisted presentism—instances where the student asked about historical context, identified constraints, or suspended judgment—and reflect on how understanding the past on its own terms deepens historical thinking.",
+      "prerequisite_lts": [
+        "Identifying Historical Contexts and Values",
+        "Analysing Values and Displacement Across Communities"
+      ],
+      "developmental_conversation_protocol": "Teacher and student discuss a specific historical actor's decision from 1800–1850, examining together what that person knew, valued, and faced as constraints. The conversation focuses on reconstructing the actor's perspective within their context rather than evaluating the decision against present-day norms.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -75,25 +78,25 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_03_lt_02",
+      "lt_id": "cluster_08_lt_02",
       "bands": [
         {
           "band": "Grade 7",
           "observable_behaviours": [
-            "The student asks questions about who created a source and what perspectives might be missing when examining historical documents, images, or accounts in class.",
-            "The student consults more than one source when investigating a historical event or period and notes differences in how the same event is described across sources.",
-            "The student identifies examples of how a community, practice, or belief has changed over time and recognizes that people in the past held different viewpoints than people today."
+            "The student asks clarifying questions about the beliefs, tools, or knowledge available to historical actors before attributing motives or judging decisions.",
+            "The student identifies and names differences between a historical period's values and present-day values when discussing why people acted as they did.",
+            "The student resists labelling historical figures or groups as simply right or wrong, instead explaining their choices in relation to what they knew or believed at the time."
           ],
           "self_reflection_prompt": "Describe one thing you have noticed about yourself this term in this area. When does it happen, and when does it not? (Single-grade source: Grade 7.)"
         }
       ],
       "parent_prompts": [
-        "When your child talks about something they learned in history or social studies, do they mention checking multiple sources or wondering whose story is being told?",
-        "Have you noticed your child asking questions like 'Why did people think that way back then?' or 'What would someone else say about this?'",
-        "Does your child comment on differences between how events are described in different books, videos, or accounts they encounter?"
+        "When your child talks about a historical person or event, does he or she ask what people at that time believed or knew, rather than immediately saying whether it was good or bad?",
+        "Have you noticed your child explaining why someone in history made a choice by talking about what was normal or possible back then, rather than comparing it to how we do things now?",
+        "Does your child show curiosity about how people's values or beliefs were different in the past, and use that to understand their actions?"
       ],
       "prerequisite_lts": [],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent discuss specific moments when the student questioned perspective, consulted multiple sources, or noticed change over time, focusing on what prompted the curiosity and how the student's thinking shifted.",
+      "developmental_conversation_protocol": "The teacher and student reflect together on a specific historical decision or event, with the teacher prompting the student to name what the historical actor knew, believed, or had available at that time, and to distinguish those constraints from modern perspectives. The conversation anchors on observable evidence from primary or secondary sources rather than on the student's present-day judgment.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
