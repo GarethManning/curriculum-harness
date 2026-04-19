@@ -1,0 +1,930 @@
+{
+  "schema_version": "v1",
+  "source_slug": "ontario-g7-history",
+  "source_name": "Ontario Grade 7 \u2014 History (Canada 1713\u20131850)",
+  "strand": "single_strand",
+  "total_criteria": 26,
+  "criteria": [
+    {
+      "criterion_id": "ontario-g7-history_crit_0001",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can gather relevant evidence from primary sources to address historical questions.",
+      "criterion_label": "Gathering Primary Source Evidence",
+      "source_provenance": [
+        "blk_0004_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to locate or use primary sources.",
+        "emerging": "Identifies some primary sources but gathering is unfocused or incomplete.",
+        "developing": "Gathers relevant evidence from primary sources with some gaps or irrelevant inclusions.",
+        "competent": "Systematically gathers comprehensive and relevant evidence from multiple appropriate primary sources to address historical questions.",
+        "extending": "Strategically selects and gathers evidence from diverse primary sources with clear purpose."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0002",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can critically analyse primary source evidence to evaluate its reliability and significance.",
+      "criterion_label": "Critical Analysis of Sources",
+      "source_provenance": [
+        "blk_0004_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of source quality or significance.",
+        "emerging": "Basic recognition of source features with limited analytical reasoning.",
+        "developing": "Analyses sources with some evaluation of reliability, bias, or historical context.",
+        "competent": "Systematically evaluates source reliability, bias, perspective, and historical significance using appropriate analytical frameworks.",
+        "extending": "Sophisticated analysis comparing multiple sources and evaluating complex interpretive challenges."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0001",
+          "to_criterion_id": "ontario-g7-history_crit_0002",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must be able to gather relevant evidence before critically analyzing its reliability and significance."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0003",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can form reasoned conclusions about historical issues based on primary source evidence.",
+      "criterion_label": "Drawing Historical Conclusions",
+      "source_provenance": [
+        "blk_0004_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No conclusions drawn from evidence.",
+        "emerging": "Basic conclusions with weak connection to evidence presented.",
+        "developing": "Draws conclusions supported by some evidence but reasoning may be incomplete.",
+        "competent": "Forms well-reasoned conclusions clearly supported by comprehensive analysis of primary source evidence.",
+        "extending": "Develops nuanced conclusions that acknowledge complexity and alternative interpretations."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0002"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0002",
+          "to_criterion_id": "ontario-g7-history_crit_0003",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Critical analysis of source reliability is prerequisite to forming reasoned conclusions based on that evidence."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0004",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse maps to interpret historical information and spatial relationships.",
+      "criterion_label": "Analysing Historical Maps",
+      "source_provenance": [
+        "blk_0039_item_01",
+        "blk_0039_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to interpret map information.",
+        "emerging": "Identifies basic map features with limited historical connection.",
+        "developing": "Interprets some historical information from maps with guidance.",
+        "competent": "Accurately analyses maps to extract historical information and identify spatial relationships.",
+        "extending": "Synthesises complex spatial and historical patterns from multiple map sources."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0005",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can create maps to represent historical information and spatial relationships.",
+      "criterion_label": "Creating Historical Maps",
+      "source_provenance": [
+        "blk_0039_item_01",
+        "blk_0039_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to create maps.",
+        "emerging": "Creates basic maps with minimal historical accuracy.",
+        "developing": "Creates maps showing some historical information with support.",
+        "competent": "Creates accurate maps that effectively represent historical information and spatial relationships.",
+        "extending": "Creates sophisticated maps integrating multiple historical perspectives and complex relationships."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0004"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0004",
+          "to_criterion_id": "ontario-g7-history_crit_0005",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Students must understand how to interpret maps before they can effectively create them to represent historical information."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0006",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify immediate triggers and underlying conditions that contributed to key events between 1713 and 1800.",
+      "criterion_label": "Identifying Causal Factors",
+      "source_provenance": [
+        "blk_0102_item_01",
+        "blk_0104_item_02",
+        "blk_0116_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any causal factors for historical events.",
+        "emerging": "Identifies some obvious causes but misses key factors or context.",
+        "developing": "Identifies several relevant causes but may confuse immediate and underlying factors.",
+        "competent": "Accurately identifies both immediate triggers and underlying conditions for key historical events.",
+        "extending": "Identifies comprehensive range of causal factors with nuanced understanding."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0010",
+        "ontario-g7-history_crit_0011",
+        "ontario-g7-history_crit_0012",
+        "ontario-g7-history_crit_0001",
+        "ontario-g7-history_crit_0002"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0010",
+          "to_criterion_id": "ontario-g7-history_crit_0006",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Must know what the events were before analyzing their immediate triggers and underlying conditions."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0011",
+          "to_criterion_id": "ontario-g7-history_crit_0006",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Knowledge of treaties is essential for understanding the events and conditions of the period."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0012",
+          "to_criterion_id": "ontario-g7-history_crit_0006",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Knowledge of political and legal changes is essential for understanding the events and conditions of the period."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0001",
+          "to_criterion_id": "ontario-g7-history_crit_0006",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Source analysis is the methodological tool through which causal claims are evidenced."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0002",
+          "to_criterion_id": "ontario-g7-history_crit_0006",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Critical analysis of sources is essential for making evidence-based causal claims."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0007",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can distinguish between immediate triggers and underlying conditions when analyzing historical causation.",
+      "criterion_label": "Distinguishing Causal Types",
+      "source_provenance": [
+        "blk_0102_item_01",
+        "blk_0104_item_02",
+        "blk_0116_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot differentiate between types of historical causes.",
+        "emerging": "Shows basic awareness that causes differ but struggles to categorize them.",
+        "developing": "Can sometimes distinguish immediate from underlying causes with guidance.",
+        "competent": "Consistently distinguishes between immediate triggers and underlying conditions in historical analysis.",
+        "extending": "Demonstrates sophisticated understanding of causal relationships and temporal dynamics."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0006"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0006",
+          "to_criterion_id": "ontario-g7-history_crit_0007",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must be able to identify triggers and conditions before learning to distinguish between them analytically."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0008",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognize and explain multiple contributing causes rather than relying on single-cause explanations for historical events.",
+      "criterion_label": "Recognizing Multiple Causation",
+      "source_provenance": [
+        "blk_0102_item_01",
+        "blk_0104_item_02",
+        "blk_0116_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Relies exclusively on single-cause explanations.",
+        "emerging": "Acknowledges multiple causes exist but struggles to identify them.",
+        "developing": "Identifies some multiple causes but may oversimplify complex relationships.",
+        "competent": "Consistently recognizes and explains multiple contributing causes for historical events with clear reasoning.",
+        "extending": "Demonstrates nuanced understanding of complex causal webs and interactions."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0007",
+          "to_criterion_id": "ontario-g7-history_crit_0008",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding the distinction between triggers and conditions supports recognition of multiple contributing causes."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0009",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how key events, treaties, and political changes affected different individuals, groups, and communities.",
+      "criterion_label": "Explaining Historical Impacts",
+      "source_provenance": [
+        "blk_0102_item_02",
+        "blk_0106_item_02",
+        "blk_0111_item_01",
+        "blk_0113_item_03",
+        "blk_0115_item_02",
+        "blk_0119_item_02",
+        "blk_0120_item_02",
+        "blk_0121_item_02",
+        "blk_0122_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of historical impacts provided.",
+        "emerging": "Basic explanation of impacts with limited detail or accuracy.",
+        "developing": "Clear explanation of impacts with some detail and mostly accurate information.",
+        "competent": "Comprehensive explanation of impacts on different groups with accurate details and clear connections.",
+        "extending": "Sophisticated explanation demonstrating deep understanding of complex, interconnected impacts."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0006",
+        "ontario-g7-history_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0006",
+          "to_criterion_id": "ontario-g7-history_crit_0009",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Causal analysis is prerequisite to evaluating how events affected different groups."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0010",
+          "to_criterion_id": "ontario-g7-history_crit_0009",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Cannot evaluate consequences of events that have not been identified; recall of key events is a direct prerequisite to consequence evaluation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0010",
+      "associated_lt_ids": [
+        "cluster_04_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key events that occurred in Canada during the period 1713\u20131800.",
+      "criterion_label": "Key Events Identification",
+      "source_provenance": [
+        "blk_0104_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any key events from this period.",
+        "emerging": "Identifies some events but with significant gaps or inaccuracies.",
+        "developing": "Identifies most key events with minor gaps in knowledge.",
+        "competent": "Accurately identifies key events including the Seven Years' War and their underlying causes.",
+        "extending": "Identifies events with detailed contextual understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0011",
+      "associated_lt_ids": [
+        "cluster_04_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key treaties, their parties, dates, and main provisions during the period 1713-1800.",
+      "criterion_label": "Treaties Knowledge",
+      "source_provenance": [
+        "blk_0106_item_01",
+        "blk_0107_item_01",
+        "blk_0110_item_01",
+        "blk_0113_item_01",
+        "blk_0113_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any treaties from this period.",
+        "emerging": "Identifies some treaties but lacks detail about provisions.",
+        "developing": "Identifies most treaties with basic understanding of provisions.",
+        "competent": "Accurately identifies treaties including Treaty of Paris, Treaty of Niagara, with parties and main provisions.",
+        "extending": "Demonstrates comprehensive knowledge of treaty details and contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0012",
+      "associated_lt_ids": [
+        "cluster_04_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key political and legal changes including acts and proclamations during the period 1713-1800.",
+      "criterion_label": "Political Legal Changes",
+      "source_provenance": [
+        "blk_0114_item_01",
+        "blk_0115_item_01",
+        "blk_0116_item_01",
+        "blk_0117_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify political or legal changes.",
+        "emerging": "Identifies some acts but with limited understanding.",
+        "developing": "Identifies most key acts with basic understanding of impacts.",
+        "competent": "Accurately identifies Royal Proclamation, Quebec Act, Constitutional Act with their key provisions and impacts.",
+        "extending": "Demonstrates detailed understanding of political transformations and their implications."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0013",
+      "associated_lt_ids": [
+        "cluster_04_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key social and economic developments during the period 1713-1800 in Canada.",
+      "criterion_label": "Social Economic Developments",
+      "source_provenance": [
+        "blk_0118_item_01",
+        "blk_0119_item_01",
+        "blk_0120_item_01",
+        "blk_0121_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify social or economic developments.",
+        "emerging": "Identifies some developments but with limited detail.",
+        "developing": "Identifies most developments with basic understanding of their significance.",
+        "competent": "Accurately identifies fur trade competition, Loyalist settlement, M\u00e9tis ethnogenesis, and related social changes.",
+        "extending": "Demonstrates comprehensive understanding of interconnected social and economic transformations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0015",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe significant aspects of daily life in Indigenous, M\u00e9tis, and Inuit communities in Canada between 1713 and 1800.",
+      "criterion_label": "Indigenous Community Daily Life",
+      "source_provenance": [
+        "blk_0124_item_01",
+        "blk_0126_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Indigenous daily life provided.",
+        "emerging": "Basic mention of one or two aspects of Indigenous daily life.",
+        "developing": "Describes several aspects of Indigenous daily life with some detail and accuracy.",
+        "competent": "Accurately describes multiple significant aspects of Indigenous daily life including housing, family roles, and spiritual practices.",
+        "extending": "Comprehensive description connecting various aspects of Indigenous daily life with cultural context."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0004"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0004",
+          "to_criterion_id": "ontario-g7-history_crit_0015",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Geographic and spatial context supports description of where and how communities lived."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0016",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can describe significant aspects of daily life in settler and newcomer communities in Canada between 1713 and 1800.",
+      "criterion_label": "Settler Community Daily Life",
+      "source_provenance": [
+        "blk_0127_item_01",
+        "blk_0130_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of settler daily life provided.",
+        "emerging": "Basic mention of one or two aspects of settler daily life.",
+        "developing": "Describes several aspects of settler daily life with some detail and accuracy.",
+        "competent": "Accurately describes multiple significant aspects of settler daily life including housing, work, and family responsibilities.",
+        "extending": "Comprehensive description connecting various aspects of settler daily life with historical context."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0004"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0004",
+          "to_criterion_id": "ontario-g7-history_crit_0016",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Geographic and spatial context supports description of where and how communities lived."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0017",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the roles of religious and colonial institutions in the lives of various groups in early Canada.",
+      "criterion_label": "Institutional Roles and Functions",
+      "source_provenance": [
+        "blk_0132_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of institutional roles provided.",
+        "emerging": "Basic mention of one religious or colonial institution.",
+        "developing": "Identifies several institutional roles with some understanding of their functions.",
+        "competent": "Accurately identifies multiple institutional roles and explains their functions in various communities.",
+        "extending": "Comprehensive identification connecting institutional roles across different cultural groups."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0019",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse interactions between individuals, groups, and institutions in Canadian history during this period.",
+      "criterion_label": "Analysing Historical Interactions",
+      "source_provenance": [
+        "blk_0124_item_02",
+        "blk_0125_item_01",
+        "blk_0131_item_01",
+        "blk_0132_item_02",
+        "blk_0135_item_02",
+        "blk_0137_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of historical interactions demonstrated.",
+        "emerging": "Basic identification of interactions with minimal analytical depth.",
+        "developing": "Some analysis of interactions with limited consideration of complexity or perspectives.",
+        "competent": "Clear analysis of interactions showing understanding of relationships, multiple perspectives, and contextual factors.",
+        "extending": "Sophisticated analysis demonstrating nuanced understanding of complex historical relationships."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0015",
+        "ontario-g7-history_crit_0016",
+        "ontario-g7-history_crit_0017",
+        "ontario-g7-history_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0015",
+          "to_criterion_id": "ontario-g7-history_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Descriptive knowledge of Indigenous, M\u00e9tis, and Inuit communities is prerequisite to analyzing their interactions."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0016",
+          "to_criterion_id": "ontario-g7-history_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Descriptive knowledge of settler and newcomer communities is prerequisite to analyzing their interactions."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0017",
+          "to_criterion_id": "ontario-g7-history_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding institutional roles is prerequisite to analyzing interactions between groups and institutions."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0001",
+          "to_criterion_id": "ontario-g7-history_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Primary source analysis underpins evidence-based claims about historical interactions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0020",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how key figures and communities shaped Canadian heritage during this period.",
+      "criterion_label": "Explaining Heritage Contributions",
+      "source_provenance": [
+        "blk_0143_item_02",
+        "blk_0144_item_01",
+        "blk_0144_item_02",
+        "blk_0146_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of heritage contributions provided.",
+        "emerging": "Basic identification of figures with minimal explanation of contributions.",
+        "developing": "Some explanation of contributions with limited connection to broader heritage themes.",
+        "competent": "Clear explanation of how specific figures and communities contributed to Canadian heritage with evidence.",
+        "extending": "Comprehensive explanation demonstrating deep understanding of heritage formation and historical significance."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0019"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0019",
+          "to_criterion_id": "ontario-g7-history_crit_0020",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Analysis of interactions provides foundation for explaining how figures and communities shaped heritage."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0021",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify social, political, and economic values and conditions for diverse communities in Canada between 1800 and 1850.",
+      "criterion_label": "Identifying Historical Values and Conditions",
+      "source_provenance": [
+        "blk_0153_item_02",
+        "blk_0160_item_01",
+        "blk_0163_item_01",
+        "blk_0164_item_01",
+        "blk_0164_item_02",
+        "blk_0165_item_01",
+        "blk_0170_item_01",
+        "blk_0170_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify historical values or conditions.",
+        "emerging": "Identifies few basic values or conditions with significant gaps.",
+        "developing": "Identifies some key values and conditions but lacks detail or accuracy.",
+        "competent": "Accurately identifies diverse social, political, and economic values and conditions across multiple communities.",
+        "extending": "Identifies nuanced values and conditions with rich contextual understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0022",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse how social and political values shaped the experiences and responses of diverse communities including First Nations, M\u00e9tis, Inuit, African Canadians, and Irish immigrants.",
+      "criterion_label": "Analysing Values and Experiences",
+      "source_provenance": [
+        "blk_0153_item_01",
+        "blk_0155_item_01",
+        "blk_0158_item_01",
+        "blk_0159_item_01",
+        "blk_0161_item_01",
+        "blk_0166_item_01",
+        "blk_0167_item_01",
+        "blk_0168_item_01",
+        "blk_0170_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of values or community experiences provided.",
+        "emerging": "Basic identification of values with minimal connection to community experiences.",
+        "developing": "Some analysis of how values influenced experiences, with limited depth or examples.",
+        "competent": "Clear analysis connecting social/political values to specific community experiences with relevant evidence and reasoning.",
+        "extending": "Sophisticated analysis examining complex relationships between values and diverse community experiences."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0021",
+        "ontario-g7-history_crit_0019"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0021",
+          "to_criterion_id": "ontario-g7-history_crit_0022",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must identify what values and conditions existed before analyzing how they shaped community experiences."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0019",
+          "to_criterion_id": "ontario-g7-history_crit_0022",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Interaction analysis from earlier period precedes values-and-displacement analysis."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0023",
+      "associated_lt_ids": [
+        "cluster_06_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse the displacement experienced by various communities and their responses to displacement between 1800 and 1850.",
+      "criterion_label": "Analysing Displacement and Responses",
+      "source_provenance": [
+        "blk_0169_item_01",
+        "blk_0171_item_01",
+        "blk_0172_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of displacement or responses provided.",
+        "emerging": "Basic identification of displacement with minimal analysis of responses.",
+        "developing": "Some analysis of displacement causes or community responses with limited connections.",
+        "competent": "Clear analysis of displacement experiences and community responses with specific examples and reasoning.",
+        "extending": "Sophisticated analysis examining complex factors in displacement and varied community response strategies."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0021",
+          "to_criterion_id": "ontario-g7-history_crit_0023",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding social, political, and economic conditions is prerequisite to analyzing displacement experiences."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0024",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse the causes of key events, treaties, and changes in Canada between 1800 and 1850, distinguishing immediate triggers from underlying conditions.",
+      "criterion_label": "Analysing Historical Causes",
+      "source_provenance": [
+        "blk_0228_item_01",
+        "blk_0241_item_01",
+        "blk_0243_item_01",
+        "blk_0249_item_01",
+        "blk_0250_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of causes or contributing factors.",
+        "emerging": "Identifies some obvious causes but lacks distinction between types.",
+        "developing": "Identifies multiple causes with some attempt to distinguish immediate from underlying.",
+        "competent": "Clearly distinguishes immediate triggers from underlying conditions with supporting evidence and reasoning.",
+        "extending": "Sophisticated analysis of complex causal relationships and interconnections."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0027",
+        "ontario-g7-history_crit_0028",
+        "ontario-g7-history_crit_0001",
+        "ontario-g7-history_crit_0002",
+        "ontario-g7-history_crit_0009"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0027",
+          "to_criterion_id": "ontario-g7-history_crit_0024",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Factual identification of events precedes causal analysis of those events."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0028",
+          "to_criterion_id": "ontario-g7-history_crit_0024",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Knowledge of transformations is essential for analyzing their causes."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0001",
+          "to_criterion_id": "ontario-g7-history_crit_0024",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Source analysis methods transfer across time periods as prerequisite methodological competency."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0002",
+          "to_criterion_id": "ontario-g7-history_crit_0024",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Critical source analysis is prerequisite methodological competency for causal analysis in any period."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0009",
+          "to_criterion_id": "ontario-g7-history_crit_0024",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Temporal scaffolding: consequence reasoning from earlier period frames later causal analysis."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0025",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse the consequences of key events, treaties, and changes in Canada between 1800 and 1850, distinguishing intended from unintended outcomes.",
+      "criterion_label": "Analysing Historical Consequences",
+      "source_provenance": [
+        "blk_0230_item_01",
+        "blk_0235_item_01",
+        "blk_0236_item_01",
+        "blk_0237_item_01",
+        "blk_0241_item_01",
+        "blk_0242_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of consequences or outcomes.",
+        "emerging": "Identifies some obvious consequences but lacks analytical depth.",
+        "developing": "Identifies multiple consequences with some distinction between intended and unintended.",
+        "competent": "Clearly analyses intended and unintended consequences with supporting evidence across different groups.",
+        "extending": "Sophisticated analysis of complex consequence patterns and long-term impacts."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0027",
+        "ontario-g7-history_crit_0028"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0027",
+          "to_criterion_id": "ontario-g7-history_crit_0025",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Cannot analyze consequences of events you cannot identify."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0028",
+          "to_criterion_id": "ontario-g7-history_crit_0025",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Cannot analyze consequences of transformations you cannot identify."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0026",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse the significance of key events, treaties, and changes in Canada between 1800 and 1850, recognising that significance varies across communities and perspectives.",
+      "criterion_label": "Analysing Historical Significance",
+      "source_provenance": [
+        "blk_0225_item_01",
+        "blk_0226_item_01",
+        "blk_0227_item_01",
+        "blk_0229_item_02",
+        "blk_0256_item_01",
+        "blk_0257_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No assessment of historical significance.",
+        "emerging": "Basic recognition that events had importance for some people.",
+        "developing": "Identifies significance for different groups with some supporting reasoning.",
+        "competent": "Analyses varying significance across communities with clear evidence and recognition of constructed nature.",
+        "extending": "Sophisticated analysis of how significance is constructed differently across historical traditions."
+      },
+      "prerequisite_criterion_ids": [
+        "ontario-g7-history_crit_0024",
+        "ontario-g7-history_crit_0025"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0024",
+          "to_criterion_id": "ontario-g7-history_crit_0026",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Causal analysis provides foundation for evaluating historical significance."
+        },
+        {
+          "from_criterion_id": "ontario-g7-history_crit_0025",
+          "to_criterion_id": "ontario-g7-history_crit_0026",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding consequences is essential for evaluating historical significance."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0027",
+      "associated_lt_ids": [
+        "cluster_08_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key events, treaties, and political/legal changes that occurred in Canada between 1800 and 1850.",
+      "criterion_label": "Events, Treaties, Political Changes",
+      "source_provenance": [
+        "blk_0223_item_01",
+        "blk_0229_item_01",
+        "blk_0232_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any key events, treaties, or political changes.",
+        "emerging": "Identifies few events, treaties, or political changes with significant gaps.",
+        "developing": "Identifies some key events, treaties, and political changes with minor omissions.",
+        "competent": "Accurately identifies most key events, treaties, and political/legal changes from 1800-1850.",
+        "extending": "Identifies comprehensive range with precise details and connections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "ontario-g7-history_crit_0028",
+      "associated_lt_ids": [
+        "cluster_08_lt_03"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key social and economic transformations that occurred in Canada between 1800 and 1850.",
+      "criterion_label": "Social Economic Transformations",
+      "source_provenance": [
+        "blk_0238_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify social or economic changes.",
+        "emerging": "Identifies few social or economic transformations with major gaps.",
+        "developing": "Identifies some key social and economic changes with minor omissions.",
+        "competent": "Accurately identifies most major social and economic transformations from 1800-1850.",
+        "extending": "Identifies comprehensive range with detailed understanding of impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    }
+  ]
+}

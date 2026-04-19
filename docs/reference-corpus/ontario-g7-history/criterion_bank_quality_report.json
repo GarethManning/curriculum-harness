@@ -1,0 +1,286 @@
+{
+  "source_slug": "ontario-g7-history",
+  "pass1_failed_lts": [],
+  "dag_validation": {
+    "passed": true,
+    "errors": [],
+    "primary_agreement_rate": 0.9167,
+    "secondary_agreement_rate": 0.9167,
+    "hand_curated_edges_total": 12,
+    "primary_edges_recovered": 11,
+    "secondary_edges_recovered": 11,
+    "unrecovered_edges": [
+      {
+        "lt_a": "cluster_04_lt_03",
+        "lt_b": "cluster_04_lt_02",
+        "rationale": "no criterion in crit_A_set ['ontario-g7-history_crit_0010', 'ontario-g7-history_crit_0011', 'ontario-g7-history_crit_0012', 'ontario-g7-history_crit_0013', 'ontario-g7-history_crit_0014'] found in prerequisite path to any criterion in crit_B_set ['ontario-g7-history_crit_0009']"
+      }
+    ],
+    "tag_mismatch_edges": []
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 30,
+    "sample_size": 6,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 11,
+    "audit_rows": [
+      {
+        "lt_id": "cluster_01_lt_01",
+        "lt_name": "Analysing Primary Sources for Historical Evidence",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0001",
+          "ontario-g7-history_crit_0002",
+          "ontario-g7-history_crit_0003"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the evidence-gathering skill, which is a distinct procedural competency that can be assessed independently of analytical reasoning."
+      },
+      {
+        "lt_id": "cluster_01_lt_02",
+        "lt_name": "Interpreting and Creating Historical Maps",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0004",
+          "ontario-g7-history_crit_0005"
+        ],
+        "decomposition_rationale": "Analysis and creation represent distinct cognitive operations - students can interpret existing maps without being able to create effective ones, requiring separate assessment approaches."
+      },
+      {
+        "lt_id": "cluster_04_lt_01",
+        "lt_name": "Analysing Causes of Key Events",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0006",
+          "ontario-g7-history_crit_0007",
+          "ontario-g7-history_crit_0008"
+        ],
+        "decomposition_rationale": "Single criterion because both identification skills (immediate triggers and underlying conditions) represent the same cognitive operation of recognizing causal factors, just at different temporal scales."
+      },
+      {
+        "lt_id": "cluster_04_lt_02",
+        "lt_name": "Evaluating Consequences and Significance",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0009"
+        ],
+        "decomposition_rationale": "This remains as one criterion because both explaining impacts and recognising varying significance are integrated aspects of the same analytical process - understanding how historical events affected different communities requires inherently recognising that significance varies across perspectives."
+      },
+      {
+        "lt_id": "cluster_04_lt_03",
+        "lt_name": "Recalling Key Events and Treaties",
+        "knowledge_type": "Type 1",
+        "criteria_count": 5,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0010",
+          "ontario-g7-history_crit_0011",
+          "ontario-g7-history_crit_0012",
+          "ontario-g7-history_crit_0013",
+          "ontario-g7-history_crit_0014"
+        ],
+        "decomposition_rationale": "Events and treaties represent distinct knowledge domains that can be assessed separately, as students might recall one category without the other."
+      },
+      {
+        "lt_id": "cluster_05_lt_01",
+        "lt_name": "Describing Daily Life and Community Practices",
+        "knowledge_type": "Type 1",
+        "criteria_count": 4,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0015",
+          "ontario-g7-history_crit_0016",
+          "ontario-g7-history_crit_0017",
+          "ontario-g7-history_crit_0018"
+        ],
+        "decomposition_rationale": "Indigenous communities represent a distinct cultural domain requiring separate assessment from settler communities due to different knowledge bases and cultural contexts."
+      },
+      {
+        "lt_id": "cluster_05_lt_02",
+        "lt_name": "Analysing Interactions and Historical Significance",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0019",
+          "ontario-g7-history_crit_0020"
+        ],
+        "decomposition_rationale": "This criterion captures the analytical skill of examining relationships between historical actors and institutions, which is distinct from explaining individual contributions to heritage."
+      },
+      {
+        "lt_id": "cluster_06_lt_01",
+        "lt_name": "Identifying Historical Contexts and Values",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0021"
+        ],
+        "decomposition_rationale": "Single criterion because both 'identify' and 'describe' operate at the same cognitive level on the unified domain of historical contexts, values, and conditions. No separable assessment scenarios exist between identification and description of the same historical content."
+      },
+      {
+        "lt_id": "cluster_06_lt_02",
+        "lt_name": "Analysing Values and Displacement Across Communities",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0022",
+          "ontario-g7-history_crit_0023"
+        ],
+        "decomposition_rationale": "This criterion captures the core analytical skill of connecting values to community experiences. While displacement is mentioned separately in the LT, it represents a specific type of experience rather than a distinct cognitive operation requiring separate assessment."
+      },
+      {
+        "lt_id": "cluster_08_lt_01",
+        "lt_name": "Analysing Causes and Consequences of Historical Events",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0024",
+          "ontario-g7-history_crit_0025",
+          "ontario-g7-history_crit_0026"
+        ],
+        "decomposition_rationale": "Causal analysis requires distinct analytical skills from consequence evaluation and significance assessment, involving different cognitive processes and evidence interpretation."
+      },
+      {
+        "lt_id": "cluster_08_lt_03",
+        "lt_name": "Identifying Key Events, Treaties, and Changes",
+        "knowledge_type": "Type 1",
+        "criteria_count": 4,
+        "criterion_ids": [
+          "ontario-g7-history_crit_0027",
+          "ontario-g7-history_crit_0028",
+          "ontario-g7-history_crit_0029",
+          "ontario-g7-history_crit_0030"
+        ],
+        "decomposition_rationale": "Single criterion appropriate as all items involve the same cognitive operation (identification) within the political-legal domain of Canadian history 1800-1850."
+      }
+    ],
+    "flags": [
+      "cluster_04_lt_03: 5 criteria \u2014 possible over-decomposition, review"
+    ]
+  },
+  "token_usage": {
+    "total_input_tokens": 18387,
+    "total_output_tokens": 10672,
+    "per_stage": {
+      "other": {
+        "input": 18387,
+        "output": 10672,
+        "calls": 12,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_result": {
+    "status": "ok",
+    "pre_count": 7,
+    "post_count": 7,
+    "pre_gate_fail": 1,
+    "post_gate_fail": 1,
+    "pre_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "post_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "regression_ok": true
+  },
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 1,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "cluster_04_lt_01": [
+        "cluster_01_lt_01",
+        "cluster_04_lt_03"
+      ],
+      "cluster_04_lt_02": [
+        "cluster_04_lt_01",
+        "cluster_04_lt_03"
+      ],
+      "cluster_05_lt_01": [
+        "cluster_01_lt_02"
+      ],
+      "cluster_05_lt_02": [
+        "cluster_01_lt_01",
+        "cluster_05_lt_01"
+      ],
+      "cluster_06_lt_02": [
+        "cluster_05_lt_02",
+        "cluster_06_lt_01"
+      ],
+      "cluster_08_lt_01": [
+        "cluster_01_lt_01",
+        "cluster_04_lt_02",
+        "cluster_08_lt_03"
+      ]
+    }
+  },
+  "manual_corrections": {
+    "reason": "horizontal_domain_teacher_spotcheck_and_scope_review",
+    "removed_criteria": [
+      {
+        "id": "ontario-g7-history_crit_0014",
+        "reason": "conceptual drift: understanding treaty personhood is a conceptual criterion, not a recall criterion; outside scope of cluster_04_lt_03 (recall LT)"
+      },
+      {
+        "id": "ontario-g7-history_crit_0018",
+        "reason": "scope drift: significant individuals/groups not in cluster_05_lt_01 LT definition (daily life and community practices)"
+      },
+      {
+        "id": "ontario-g7-history_crit_0029",
+        "reason": "scope drift: key historical figures not in cluster_08_lt_03 LT definition"
+      },
+      {
+        "id": "ontario-g7-history_crit_0030",
+        "reason": "scope drift: immigrant roles not in cluster_08_lt_03 LT definition"
+      }
+    ],
+    "statement_fixes": [
+      {
+        "id": "ontario-g7-history_crit_0010",
+        "fix": "removed causes from statement (causes belong in cluster_04_lt_01, not cluster_04_lt_03 recall LT)"
+      }
+    ],
+    "edge_fixes": [
+      {
+        "criterion": "ontario-g7-history_crit_0011",
+        "fix": "removed reversed prereq edge to crit_0014 (dropped criterion)"
+      },
+      {
+        "criterion": "ontario-g7-history_crit_0009",
+        "fix": "added direct prereq from crit_0010 (recall events is direct ontological prereq for evaluating consequences)"
+      }
+    ],
+    "total_criteria_after_fix": 26,
+    "dag_revalidation": "PASSED",
+    "agreement_recomputed": {
+      "primary": 1.0,
+      "secondary": 0.917
+    },
+    "horizontal_spotcheck_approved_by": "Gareth Manning 2026-04-19"
+  }
+}

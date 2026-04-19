@@ -1,0 +1,1145 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "5-ontario-k8-g7-history-pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "rubrics": [
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify or distinguish causes of events.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, names one or two causes but conflates immediate triggers with underlying conditions.",
+          "word_count": 14
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies multiple causes but does not clearly distinguish immediate triggers from underlying conditions.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies and distinguishes immediate triggers and underlying conditions for key events, explaining how multiple causes interact.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyses how causes interconnect across events and evaluates the relative weight of different causal factors.",
+          "word_count": 15
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_04_lt_03",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Learner must know what the key events are before analysing their causes."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Analysing primary sources for evidence supports gathering evidence to support causal claims, though cause analysis can proceed with secondary sources."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand (identifying triggers, distinguishing conditions, explaining interactions), with no hedging language or framing of incompleteness.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain consequences or significance of events.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies one consequence but explanation lacks depth or perspective variation.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently explains consequences for some groups but does not consistently recognise perspective differences.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Explains how events affected different individuals, groups, and communities, recognising that significance varies across perspectives.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Compares significance across multiple perspectives and explains why interpretations differ based on community values.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_04_lt_03",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot evaluate consequences of events without first identifying what those key events and treaties were."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding causes strengthens ability to trace and explain consequences, though consequences can be analysed independently."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Critical analysis of primary sources supports evidence-based explanation of consequences and perspective recognition."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated and can stand alone as meeting the Learning Target\u2014it shows the learner explaining consequences and recognizing perspective-dependent significance without hedging language or framing it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to describe daily life aspects.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Names one or two daily life aspects with heavy support; descriptions lack detail or accuracy.",
+          "word_count": 15
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently describes two or three daily life aspects; misses connections across communities or time period.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Describes significant aspects of housing, work, family roles, and spiritual practices across Indigenous, M\u00e9tis, Inuit, and settler communities between 1713 and 1800.",
+          "word_count": 21
+        },
+        {
+          "name": "extending",
+          "descriptor": "Compares daily life practices across communities and explains how geography or events shaped specific practices.",
+          "word_count": 15
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Analysing primary sources provides evidence base for describing daily life, though descriptions can be formed from secondary sources alone."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Knowing key events and dates helps situate daily life practices in historical context, though daily life description does not require event knowledge."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 21
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 22
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 22
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "level_progression"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly states what the learner can do ('Describes significant aspects') without hedging language, incompleteness markers, or framing Competent as a waystation to Extending.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify or describe historical contexts and values.",
+          "word_count": 10
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, names some social, political, or economic conditions but descriptions lack accuracy or depth.",
+          "word_count": 15
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies contexts and values for one or two communities but descriptions remain general or incomplete.",
+          "word_count": 16
+        },
+        {
+          "name": "competent",
+          "descriptor": "Identifies and describes social, political, and economic values and conditions for diverse communities in Canada between 1800 and 1850.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Identifies and describes contexts and values while recognising how they differed across or within diverse communities.",
+          "word_count": 16
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding daily life and practices in earlier communities (1713\u20131800) provides foundational context for identifying values and conditions in the 1800\u20131850 period."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Analysing primary sources develops the evidence-gathering skill needed to support identification and description of historical contexts and values."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly mirrors the Learning Target's language and declares the capability as demonstrated without hedging, incompleteness framing, or positioning it as a way-station to Extending.",
+      "propositional_lt_rubric_thin_flag": true
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyse values or displacement.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some values or groups but analysis lacks depth or accuracy.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies values and describes displacement but does not fully connect them across communities.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Analyses how specific social and political values shaped experiences and displacement of multiple diverse communities.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Compares how conflicting values produced different displacement outcomes across communities and time periods.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_06_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot analyse how values shaped experiences without first identifying what those values were."
+        },
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Analysis of displacement and values depends on gathering and critically examining primary source evidence."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding how events affected different groups and recognising perspective variation supports analysing differential displacement."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 24
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated ('Analyses') at the LT's level of demand (multiple diverse communities, social/political values, experiences and displacement) without hedging language or framing it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyse causes or consequences of historical events.",
+          "word_count": 10
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some causes or consequences but conflates immediate triggers with underlying conditions.",
+          "word_count": 14
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies causes and consequences but struggles to distinguish immediate triggers from underlying conditions consistently.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently analyses causes, consequences, and significance of key events, distinguishing immediate triggers from underlying conditions and recognising multiple perspectives.",
+          "word_count": 19
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyses causes and consequences across multiple interconnected events, synthesising perspectives to explain broader historical patterns and significance.",
+          "word_count": 17
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Analysing causes and consequences requires gathering and critically evaluating evidence from primary sources to support reasoned historical conclusions."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "The capability to distinguish immediate triggers from underlying conditions is foundational; this LT extends that skill to the 1800\u20131850 period."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_02",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Evaluating consequences and recognising significance across perspectives is a core component of analysing causes and consequences in this LT."
+        },
+        {
+          "from_lt_id": "cluster_08_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Identifying key events and changes must precede analysing their causes, consequences, and significance."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand, using affirmative language ('Independently analyses') without hedging or framing Competent as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify events, treaties, or changes.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Names some events or treaties with heavy support; details are incomplete or inaccurate.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies several key events and treaties but misses some significant changes or lacks context.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies key events, treaties, political and legal changes, and social and economic transformations between 1800 and 1850.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Identifies key events and changes while connecting them to underlying conditions or multiple perspectives.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_04_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Recalling events and treaties from 1713\u20131800 establishes foundational knowledge and skills for identifying events in the subsequent 1800\u20131850 period."
+        },
+        {
+          "from_lt_id": "cluster_06_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding historical contexts and values in 1800\u20131850 helps learners recognise the significance and nature of events and changes in that period."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'recognise'), ('competent_scope', 'unscoped')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares independent identification of all required elements without hedging language, qualification, or framing as incomplete.",
+      "propositional_lt_rubric_thin_flag": true
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "lt_name": "Analysing Primary Sources for Historical Evidence",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'evaluate'), ('competent_scope', 'unscoped')), (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'evaluate'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'evaluate'), ('competent_scope', 'unscoped'))]"
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "lt_name": "Interpreting and Creating Historical Maps",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "only 0/3 runs produced parseable output"
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "lt_name": "Recalling Key Events and Treaties",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "only 1/3 runs produced parseable output"
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "lt_name": "Analysing Interactions and Historical Significance",
+      "halt_reason": "rubric_unreliable",
+      "diagnostic": "only 1/3 runs produced parseable output"
+    }
+  ]
+}
