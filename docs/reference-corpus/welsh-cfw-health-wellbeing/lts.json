@@ -1,0 +1,901 @@
+{
+  "reference_authoring_version": "0.2.0",
+  "source_slug": "wales-cfw-health-wellbeing-sow",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Physical Health and Active Living",
+      "lt_name": "Understanding Health and Activity Factors",
+      "lt_definition": "I can explain how physical activity, nutrition, sleep, and other factors support physical health and well-being.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0010_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Movement and Exercise Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Physical Health and Active Living",
+      "lt_name": "Demonstrating Movement and Exercise Competence",
+      "lt_definition": "I can perform movement, exercise, and activity skills appropriate to my age and context with increasing proficiency.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0010_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Movement and Exercise Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_03",
+      "cluster_id": "cluster_01",
+      "competency_name": "Physical Health and Active Living",
+      "lt_name": "Sustaining Confidence in Active Living",
+      "lt_definition": "The student sustains confidence and motivation to engage in healthy and active lifestyles across different contexts and over time.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0010_item_03"
+      ],
+      "prerequisite_lts": [
+        "Understanding Health and Activity Factors",
+        "Demonstrating Movement and Exercise Competence"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Movement and Exercise Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Health and Activity Factors",
+            "Demonstrating Physical Movement Competence",
+            "Sustaining Confidence in Active Living"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Care and Respect for Self and Others",
+      "lt_name": "Caring for Self and Others",
+      "lt_definition": "The student enacts care and respect for themselves and others as a sustained default orientation across all contexts.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0009_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Care and Respect for Self and Others",
+      "lt_name": "Understanding Self-Care Impact",
+      "lt_definition": "I can explain how positive, informed behaviours that care for and respect self and others support well-being and self-worth.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0009_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Caring for Self and Others",
+            "Understanding Self-Care Impact"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Emotional Awareness and Regulation",
+      "lt_name": "Connecting Experiences to Emotional Well-being",
+      "lt_definition": "I can explain how experiences and responses to them influence emotional well-being and mental health.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0012_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Emotional Awareness and Regulation",
+      "lt_name": "Recognising Emotional Fluidity",
+      "lt_definition": "The student recognises that emotions and feelings are fluid and variable, holding this understanding as a sustained orientation across contexts.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0012_item_02"
+      ],
+      "prerequisite_lts": [
+        "Connecting Experiences to Emotional Well-being"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Connecting Experiences to Emotional Well-being",
+            "Recognising Emotional Fluidity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Communication About Mental Health",
+      "lt_name": "Communicating Feelings Appropriately",
+      "lt_definition": "I can communicate my feelings in ways that are appropriate to the context and audience.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0014_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Communication About Mental Health",
+      "lt_name": "Normalising Mental Health Talk",
+      "lt_definition": "The student sustains a default orientation toward normalising talk about mental health and emotional well-being across peer interactions and community contexts.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0014_item_02"
+      ],
+      "prerequisite_lts": [
+        "Communicating Feelings Appropriately"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Communicating Feelings Appropriately",
+            "Normalising Mental Health Talk"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Informed Decision-Making",
+      "lt_name": "Analysing Decision Impacts and Influencing Factors",
+      "lt_definition": "I can analyse how decisions and actions impact myself, others, and society, considering influencing factors and implications.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0015_item_01",
+        "blk_0016_item_01",
+        "blk_0016_item_02",
+        "blk_0016_item_03",
+        "blk_0017_item_01",
+        "blk_0018_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision Consequences and Collective Responsibility"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision Consequences and Collective Responsibility"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision-Making Significance"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 1, (2, ('Type 1', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Informed Decision-Making",
+      "lt_name": "Recognising Decision Consequences and Collective Responsibility",
+      "lt_definition": "I can identify the short and long-term consequences of decisions and explain the importance of contributing thoughtfully to collective decision-making.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0015_item_01",
+        "blk_0016_item_01",
+        "blk_0017_item_02",
+        "blk_0018_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision Consequences and Collective Responsibility"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision Consequences and Collective Responsibility"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Decision Impacts and Influencing Factors",
+            "Recognising Decision-Making Significance"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(2, ('Type 2', 'Type 2')): 1, (2, ('Type 1', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "cluster_id": "cluster_06",
+      "competency_name": "Understanding Social Influences",
+      "lt_name": "Explaining How Social Influences Shape Identity",
+      "lt_definition": "I can explain how social influences comprised of norms, values, and rules affect identity, behaviours, and well-being across different cultural contexts.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0019_item_01",
+        "blk_0020_item_01",
+        "blk_0020_item_02",
+        "blk_0020_item_03",
+        "blk_0021_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Explaining How Social Influences Shape Identity",
+            "Critically Analysing Social Influences Across Cultures"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Social Influences on Identity",
+            "Critically Analysing Social Influences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Explaining How Social Influences Shape Identity",
+            "Analysing Cultural Norms and Values Critically"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "cluster_id": "cluster_06",
+      "competency_name": "Understanding Social Influences",
+      "lt_name": "Critically Analysing Social Influences Across Cultures",
+      "lt_definition": "I can critically analyse how social influences shape my own and others' behaviours, relationships, and experiences within and across cultural contexts.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0021_item_02"
+      ],
+      "prerequisite_lts": [
+        "Explaining How Social Influences Shape Identity"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Explaining How Social Influences Shape Identity",
+            "Critically Analysing Social Influences Across Cultures"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Social Influences on Identity",
+            "Critically Analysing Social Influences"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Explaining How Social Influences Shape Identity",
+            "Analysing Cultural Norms and Values Critically"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "cluster_id": "cluster_07",
+      "competency_name": "Healthy Relationships and Connection",
+      "lt_name": "Recognising Unhealthy Relationship Dynamics",
+      "lt_definition": "I can recognise when relationships are unhealthy by analysing dynamics and identifying warning signs.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0024_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support for Relationship Safety",
+            "Prioritising Healthy Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support and Safety Strategies",
+            "Prioritising Healthy Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "cluster_id": "cluster_07",
+      "competency_name": "Healthy Relationships and Connection",
+      "lt_name": "Seeking Support for Relationship Safety",
+      "lt_definition": "I can evaluate and select appropriate support resources and strategies to keep safe when relationships are unhealthy.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0024_item_02"
+      ],
+      "prerequisite_lts": [
+        "Recognising Unhealthy Relationship Dynamics"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support for Relationship Safety",
+            "Prioritising Healthy Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support and Safety Strategies",
+            "Prioritising Healthy Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_07_lt_03",
+      "cluster_id": "cluster_07",
+      "competency_name": "Healthy Relationships and Connection",
+      "lt_name": "Prioritising Healthy Relationships",
+      "lt_definition": "The student prioritises and enacts healthy relationships as a sustained default orientation across contexts.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0022_item_01",
+        "blk_0023_item_01",
+        "blk_0023_item_02",
+        "blk_0025_item_01",
+        "blk_0025_item_02",
+        "blk_0026_item_01",
+        "blk_0026_item_02"
+      ],
+      "prerequisite_lts": [
+        "Recognising Unhealthy Relationship Dynamics",
+        "Seeking Support for Relationship Safety"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support for Relationship Safety",
+            "Prioritising Healthy Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Unhealthy Relationship Dynamics",
+            "Seeking Support and Safety Strategies",
+            "Prioritising Healthy Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2}"
+      ]
+    }
+  ],
+  "halted_clusters": []
+}
