@@ -210,6 +210,15 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help=f"Classification sampling temperature (default {DEFAULT_TEMPERATURE})",
     )
     parser.add_argument(
+        "--cluster-model",
+        default=None,
+        help=(
+            "Override the clustering-stage model. Defaults to the clustering "
+            "module default (Haiku). Set to an Opus ID when the KUD exceeds "
+            "~100 items and Haiku clustering is unstable."
+        ),
+    )
+    parser.add_argument(
         "--skip-lts",
         action="store_true",
         help="Stop after KUD gates (legacy 4b-1 behaviour).",
@@ -598,8 +607,16 @@ def main(argv: list[str] | None = None) -> int:
         print("[refauth] --skip-lts set; stopping after KUD gates.", flush=True)
         return 0
 
-    print("[refauth] competency clustering (3x self-consistency)", flush=True)
-    cluster_set = cluster_competencies_sync(inventory, kud, runs=args.runs)
+    cluster_kwargs: dict[str, Any] = {"runs": args.runs}
+    if args.cluster_model:
+        cluster_kwargs["model"] = args.cluster_model
+        print(
+            f"[refauth] competency clustering (3x self-consistency, model={args.cluster_model})",
+            flush=True,
+        )
+    else:
+        print("[refauth] competency clustering (3x self-consistency)", flush=True)
+    cluster_set = cluster_competencies_sync(inventory, kud, **cluster_kwargs)
     dump_json(cluster_set.to_dict(), os.path.join(args.out, "competency_clusters.json"))
     print(
         f"[refauth] clusters: {len(cluster_set.clusters)}; "
