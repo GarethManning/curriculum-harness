@@ -1,0 +1,1212 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-history",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "rubrics": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify the Treaty or key figures.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, partially identifies the Treaty or mentions some figures with inaccuracies.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies the Treaty as founding agreement but describes key figures with gaps or confusion.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies the Treaty of Waitangi as New Zealand's founding agreement and accurately describes roles of key figures.",
+          "word_count": 18
+        },
+        {
+          "name": "extending",
+          "descriptor": "Connects Treaty foundations and key figures to broader patterns of colonial agreements or governance.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Early contact events provide helpful context for understanding Treaty negotiations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 21
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain Treaty significance or commemoration.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic Treaty importance or describes simple commemoration activities.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Explains some aspects of Treaty significance and describes Waitangi Day commemoration with minor gaps.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Explains the ongoing importance of the Treaty in New Zealand's public life and describes how Waitangi Day is commemorated.",
+          "word_count": 19
+        },
+        {
+          "name": "extending",
+          "descriptor": "Connects Treaty significance to contemporary issues and evaluates different perspectives on commemoration practices.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding what the Treaty is and its founding role is essential before explaining its ongoing significance."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_01_lt_03",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to collect Treaty information.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "Collects basic Treaty information with heavy guidance but lacks evaluation.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently collects Treaty information but evaluation methods remain superficial or incomplete.",
+          "word_count": 11
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently collects and evaluates Treaty of Waitangi information using appropriate historical inquiry methods.",
+          "word_count": 13
+        },
+        {
+          "name": "extending",
+          "descriptor": "Applies sophisticated inquiry methods to evaluate multiple perspectives on Treaty history.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot research Treaty history without knowing what the Treaty is and key figures involved."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Historical evidence analysis skills are typically developed before specialized Treaty research methods."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'none'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to use primary sources for historical reconstruction.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some primary sources but makes inaccurate connections to community impacts.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Uses primary sources to identify natural event impacts but lacks systematic analysis or misses key connections.",
+          "word_count": 16
+        },
+        {
+          "name": "competent",
+          "descriptor": "Uses primary sources systematically to reconstruct how natural events impacted historical communities with accurate analysis and clear connections.",
+          "word_count": 18
+        },
+        {
+          "name": "extending",
+          "descriptor": "Synthesizes multiple primary sources to evaluate broader patterns of natural event impacts across different communities.",
+          "word_count": 15
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_01_lt_03",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Historical inquiry methods are foundational for systematic primary source analysis."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 20
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyze natural event impacts.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some impacts but analysis lacks accuracy or depth.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies impacts across social, economic, or cultural domains but analysis remains superficial.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently analyzes how natural events transformed social, economic, and cultural practices of affected communities with clear connections.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers analysis skills to compare transformative impacts across different natural events or communities.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot analyze societal impacts without ability to use primary sources as evidence."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to describe early contact events or developments.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, names some early contact events but provides inaccurate or incomplete descriptions.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently describes some key events and people from early M\u0101ori-European contact with minor gaps.",
+          "word_count": 16
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently describes key events, people, and developments in early M\u0101ori-European contact from the 1790s through the 1830s.",
+          "word_count": 19
+        },
+        {
+          "name": "extending",
+          "descriptor": "Describes early contact comprehensively and connects events to broader patterns of cultural exchange.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Historical evidence analysis skills support describing early contact events accurately."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "judge error",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_05_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_06_lt_03",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_07_lt_03",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_09_lt_03",
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "only 0/3 runs produced parseable output",
+      "propositional_lt_rubric_thin_flag": false
+    }
+  ],
+  "halted_lts": []
+}

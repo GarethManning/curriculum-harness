@@ -1,0 +1,3521 @@
+{
+  "schema_version": "v1",
+  "source_slug": "nz-social-sciences",
+  "source_name": "NZ Curriculum \u2014 Social Sciences",
+  "total_criteria": 115,
+  "strand_summaries": [
+    {
+      "strand": "history",
+      "criteria_count": 49,
+      "edge_count": 23,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "civics-and-society",
+      "criteria_count": 14,
+      "edge_count": 11,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "geography",
+      "criteria_count": 31,
+      "edge_count": 24,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "economic-activity",
+      "criteria_count": 21,
+      "edge_count": 18,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "criteria": [
+    {
+      "criterion_id": "nz-social-sciences_crit_0001",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify the Treaty of Waitangi as New Zealand's founding agreement and recall key facts about its signing.",
+      "criterion_label": "Treaty identification and facts",
+      "source_provenance": [
+        "blk_0013_item_01",
+        "blk_0014_item_01",
+        "blk_0016_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify the Treaty of Waitangi.",
+        "emerging": "Recognises the Treaty but recalls few accurate details.",
+        "developing": "Identifies Treaty as founding agreement with some key facts.",
+        "competent": "Clearly identifies Treaty as New Zealand's founding agreement with accurate key facts about signing.",
+        "extending": "Demonstrates comprehensive knowledge of Treaty facts and context."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0002",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the roles of key figures in the Treaty's creation and early responses.",
+      "criterion_label": "Key figures' roles",
+      "source_provenance": [
+        "blk_0017_item_01",
+        "blk_0018_item_01",
+        "blk_0019_item_01",
+        "blk_0020_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe any key figures' roles.",
+        "emerging": "Names some figures but describes roles inaccurately.",
+        "developing": "Describes roles of some key figures with basic accuracy.",
+        "competent": "Accurately describes roles of multiple key figures in Treaty creation and responses.",
+        "extending": "Provides detailed descriptions of key figures' complex roles and motivations."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0001",
+          "to_criterion_id": "nz-social-sciences_crit_0002",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the Treaty as a founding agreement is essential before examining the specific roles of individuals involved in its creation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0003",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can explain the ongoing importance of the Treaty of Waitangi in New Zealand's contemporary public life.",
+      "criterion_label": "Treaty Contemporary Significance",
+      "source_provenance": [
+        "blk_0015_item_01",
+        "blk_0059_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of Treaty's current importance.",
+        "emerging": "Basic mention of Treaty's role in modern New Zealand.",
+        "developing": "Simple explanation of Treaty's importance with some contemporary examples.",
+        "competent": "Clear explanation of Treaty's ongoing significance with relevant examples of its role in public life.",
+        "extending": "Detailed analysis of Treaty's multifaceted importance in contemporary New Zealand society."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0001",
+          "to_criterion_id": "nz-social-sciences_crit_0003",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Basic knowledge of the Treaty's foundational role is required to understand its ongoing contemporary importance."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0004",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe how Waitangi Day is commemorated across New Zealand.",
+      "criterion_label": "Waitangi Day Commemoration",
+      "source_provenance": [
+        "blk_0059_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Waitangi Day commemorations.",
+        "emerging": "Basic mention of some Waitangi Day activities.",
+        "developing": "Simple description of different ways people commemorate Waitangi Day.",
+        "competent": "Clear description of various commemoration methods with specific examples from different regions.",
+        "extending": "Comprehensive description showing understanding of diverse commemoration approaches nationwide."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0001",
+          "to_criterion_id": "nz-social-sciences_crit_0004",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding what the Treaty is must precede learning about how it is commemorated."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0005",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can collect information about the signing of the Treaty of Waitangi using appropriate historical inquiry methods.",
+      "criterion_label": "Information Collection Methods",
+      "source_provenance": [
+        "blk_0059_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to collect historical information.",
+        "emerging": "Collects basic information using simple methods.",
+        "developing": "Collects relevant information using some appropriate historical methods.",
+        "competent": "Systematically collects comprehensive information using multiple appropriate historical inquiry methods.",
+        "extending": "Strategically selects optimal methods for comprehensive information collection."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0001",
+          "to_criterion_id": "nz-social-sciences_crit_0005",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Basic Treaty knowledge provides context for conducting historical inquiry about its signing."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0006",
+      "associated_lt_ids": [
+        "history_cluster_01_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can evaluate information about the signing of the Treaty of Waitangi for reliability and usefulness.",
+      "criterion_label": "Information Evaluation",
+      "source_provenance": [
+        "blk_0059_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of information quality.",
+        "emerging": "Shows basic awareness of information differences.",
+        "developing": "Evaluates some sources for basic reliability or usefulness.",
+        "competent": "Systematically evaluates sources for reliability, bias, and usefulness to research purpose.",
+        "extending": "Critically evaluates complex source relationships and limitations."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0005"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0005",
+          "to_criterion_id": "nz-social-sciences_crit_0006",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Students must first learn to collect information before they can evaluate it for reliability and usefulness."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0007",
+      "associated_lt_ids": [
+        "history_cluster_02_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can use primary sources to reconstruct how natural events impacted historical communities.",
+      "criterion_label": "Primary Source Reconstruction",
+      "source_provenance": [
+        "blk_0040_item_01",
+        "blk_0060_item_03",
+        "blk_0060_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No use of primary sources attempted.",
+        "emerging": "Identifies primary sources but struggles to connect them meaningfully.",
+        "developing": "Uses some primary sources to make basic connections about historical impact.",
+        "competent": "Effectively uses multiple primary sources to reconstruct clear narratives of natural events' community impacts.",
+        "extending": "Synthesizes diverse primary sources to create nuanced historical reconstructions with critical analysis."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0008",
+      "associated_lt_ids": [
+        "history_cluster_02_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze how natural events like the Tarawera eruption transformed the social practices and community structures of affected populations.",
+      "criterion_label": "Social Impact Analysis",
+      "source_provenance": [
+        "blk_0028_item_01",
+        "blk_0060_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of social transformation provided.",
+        "emerging": "Basic identification of some social changes without clear connections.",
+        "developing": "Describes social changes with some analysis of transformation processes.",
+        "competent": "Clearly analyzes how natural events transformed social practices and community structures with specific examples.",
+        "extending": "Sophisticated analysis connecting multiple social transformation patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0007",
+          "to_criterion_id": "nz-social-sciences_crit_0008",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Basic reconstruction of events should precede analysis of their social impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0009",
+      "associated_lt_ids": [
+        "history_cluster_02_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze how natural events like the Tarawera eruption transformed the economic practices and livelihoods of affected communities.",
+      "criterion_label": "Economic Impact Analysis",
+      "source_provenance": [
+        "blk_0024_item_01",
+        "blk_0028_item_01",
+        "blk_0030_item_01",
+        "blk_0060_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of economic transformation provided.",
+        "emerging": "Basic identification of economic changes without clear analysis.",
+        "developing": "Describes economic changes with some analysis of transformation processes.",
+        "competent": "Clearly analyzes how natural events transformed economic practices and livelihoods with specific examples.",
+        "extending": "Sophisticated analysis of economic transformation with broader implications."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0007",
+          "to_criterion_id": "nz-social-sciences_crit_0009",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Basic reconstruction of events should precede analysis of their economic impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0010",
+      "associated_lt_ids": [
+        "history_cluster_02_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze how natural events like the Tarawera eruption transformed the cultural practices and traditions of affected communities.",
+      "criterion_label": "Cultural Impact Analysis",
+      "source_provenance": [
+        "blk_0060_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of cultural transformation provided.",
+        "emerging": "Basic identification of cultural changes without clear connections.",
+        "developing": "Describes cultural changes with some analysis of transformation processes.",
+        "competent": "Clearly analyzes how natural events transformed cultural practices and traditions with specific examples.",
+        "extending": "Sophisticated analysis connecting cultural transformation to broader patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0007",
+          "to_criterion_id": "nz-social-sciences_crit_0010",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Basic reconstruction of events should precede analysis of their cultural impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0011",
+      "associated_lt_ids": [
+        "history_cluster_02_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze how legislation and town planning evolved in response to natural events like the Tarawera eruption.",
+      "criterion_label": "Institutional Response Analysis",
+      "source_provenance": [
+        "blk_0060_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of institutional responses provided.",
+        "emerging": "Basic identification of policy changes without clear analysis.",
+        "developing": "Describes institutional changes with some analysis of evolutionary processes.",
+        "competent": "Clearly analyzes how legislation and planning evolved in response to natural events with examples.",
+        "extending": "Sophisticated analysis of institutional evolution with broader implications."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0007",
+          "to_criterion_id": "nz-social-sciences_crit_0011",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Basic reconstruction of events should precede analysis of legislative and planning responses."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0012",
+      "associated_lt_ids": [
+        "history_cluster_03_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe key events and developments in early M\u0101ori-European contact from the 1790s through the 1830s.",
+      "criterion_label": "Early Contact Events",
+      "source_provenance": [
+        "blk_0044_item_01",
+        "blk_0045_item_01",
+        "blk_0048_item_01",
+        "blk_0049_item_01",
+        "blk_0052_item_01",
+        "blk_0053_item_01",
+        "blk_0056_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of early contact events provided.",
+        "emerging": "Basic mention of some early contact events with minimal detail.",
+        "developing": "Describes several key events with some detail and chronological awareness.",
+        "competent": "Clearly describes multiple key events and developments with accurate detail and chronological understanding.",
+        "extending": "Comprehensive description connecting events within broader historical context."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0013",
+      "associated_lt_ids": [
+        "history_cluster_03_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe the impact of European contact on M\u0101ori society and culture from the 1790s through the 1830s.",
+      "criterion_label": "Contact Impact Analysis",
+      "source_provenance": [
+        "blk_0046_item_01",
+        "blk_0050_item_01",
+        "blk_0058_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of contact impacts provided.",
+        "emerging": "Basic mention of some impacts with limited understanding.",
+        "developing": "Describes several impacts with some explanation of consequences.",
+        "competent": "Clearly describes multiple impacts with understanding of how contact affected M\u0101ori society and culture.",
+        "extending": "Sophisticated analysis of impacts showing nuanced understanding of cultural adaptation."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0014",
+      "associated_lt_ids": [
+        "history_cluster_03_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyse the causes of cultural, economic, and social changes during early M\u0101ori-European contact.",
+      "criterion_label": "Analyse Change Causes",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0061_item_01",
+        "blk_0061_item_02",
+        "blk_0061_item_03",
+        "blk_0061_item_04",
+        "blk_0061_item_05"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of causes provided.",
+        "emerging": "Identifies basic causes with minimal explanation.",
+        "developing": "Explains some causes with simple connections to changes.",
+        "competent": "Analyses multiple causes with clear explanations of how they led to changes.",
+        "extending": "Evaluates interconnected causes with sophisticated reasoning."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0012"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0012",
+          "to_criterion_id": "nz-social-sciences_crit_0014",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Describing key events must precede analyzing their causes."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0015",
+      "associated_lt_ids": [
+        "history_cluster_03_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyse the consequences of cultural, economic, and social changes during early M\u0101ori-European contact.",
+      "criterion_label": "Analyse Change Consequences",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0061_item_01",
+        "blk_0061_item_02",
+        "blk_0061_item_03",
+        "blk_0061_item_04",
+        "blk_0061_item_05"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of consequences provided.",
+        "emerging": "Identifies basic consequences with minimal explanation.",
+        "developing": "Explains some consequences with simple connections to causes.",
+        "competent": "Analyses multiple consequences with clear explanations of their impacts.",
+        "extending": "Evaluates long-term consequences with sophisticated understanding."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0013"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0013",
+          "to_criterion_id": "nz-social-sciences_crit_0015",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Describing impacts must precede analyzing their consequences."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0016",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the geographical features, timeline, and social structure of Ancient Greek civilization.",
+      "criterion_label": "Greek Geography and Society",
+      "source_provenance": [
+        "blk_0064_item_01",
+        "blk_0065_item_01",
+        "blk_0067_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Greek geography or society.",
+        "emerging": "Basic mention of Greek locations or social groups.",
+        "developing": "Simple descriptions of Greek geography and basic social structure.",
+        "competent": "Clear descriptions of Greek geographical features, key periods, and social hierarchy including roles.",
+        "extending": "Detailed descriptions connecting geography to social development."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0017",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the beliefs, religious practices, and cultural achievements of Ancient Greek civilization.",
+      "criterion_label": "Greek Culture and Religion",
+      "source_provenance": [
+        "blk_0071_item_01",
+        "blk_0072_item_01",
+        "blk_0073_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Greek beliefs or culture.",
+        "emerging": "Basic mention of Greek gods or cultural elements.",
+        "developing": "Simple descriptions of Greek religion and some cultural achievements.",
+        "competent": "Clear descriptions of religious practices, philosophy, and achievements in art, literature, and drama.",
+        "extending": "Detailed descriptions showing connections between beliefs and cultural developments."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0018",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the political systems and military significance of Ancient Greek city-states.",
+      "criterion_label": "Greek Politics and Warfare",
+      "source_provenance": [
+        "blk_0069_item_01",
+        "blk_0076_item_01",
+        "blk_0079_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Greek politics or warfare.",
+        "emerging": "Basic mention of city-states or battles.",
+        "developing": "Simple descriptions of different city-states and some military events.",
+        "competent": "Clear descriptions of city-state differences, key battles, and governmental contributions.",
+        "extending": "Detailed descriptions connecting political systems to military achievements."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0019",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze the causes and effects of Ancient Greek political developments including democracy, empire, and the Peloponnesian War.",
+      "criterion_label": "Political Development Analysis",
+      "source_provenance": [
+        "blk_0068_item_01",
+        "blk_0077_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of Greek political causes or effects.",
+        "emerging": "Basic identification of some political events or outcomes.",
+        "developing": "Simple cause-effect connections for major political developments.",
+        "competent": "Clear analysis of causes and effects of key political developments with supporting evidence.",
+        "extending": "Sophisticated causal analysis with multiple interconnected factors."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0016",
+        "nz-social-sciences_crit_0018"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0016",
+          "to_criterion_id": "nz-social-sciences_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Basic understanding of Greek civilization's structure is essential before analyzing political developments."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0018",
+          "to_criterion_id": "nz-social-sciences_crit_0019",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding political systems is required before analyzing their developments and changes."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0020",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can compare Ancient Greek civilization with other civilizations and city-states to identify similarities and differences.",
+      "criterion_label": "Comparative Civilization Analysis",
+      "source_provenance": [
+        "blk_0129_item_01",
+        "blk_0129_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison attempted or inaccurate comparisons.",
+        "emerging": "Basic similarities or differences identified with limited detail.",
+        "developing": "Some valid comparisons with simple explanations of differences.",
+        "competent": "Systematic comparison identifying key similarities and differences with clear examples.",
+        "extending": "Nuanced comparative analysis with sophisticated understanding of contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0016"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0016",
+          "to_criterion_id": "nz-social-sciences_crit_0020",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Basic knowledge of Greek civilization is needed before comparing it with others."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0021",
+      "associated_lt_ids": [
+        "history_cluster_04_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can evaluate historical sources about Ancient Greece and analyze the historical significance of Greek civilization on the modern world.",
+      "criterion_label": "Source Evaluation and Significance",
+      "source_provenance": [
+        "blk_0129_item_03",
+        "blk_0129_item_05"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No source evaluation or significance analysis attempted.",
+        "emerging": "Basic recognition of source limitations or modern connections.",
+        "developing": "Simple evaluation of sources with some significance identified.",
+        "competent": "Systematic source evaluation and clear analysis of Greek influence on modern world.",
+        "extending": "Critical source analysis with sophisticated significance assessment."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0016"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0016",
+          "to_criterion_id": "nz-social-sciences_crit_0021",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding Greek civilization is necessary before evaluating sources about it."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0022",
+      "associated_lt_ids": [
+        "history_cluster_05_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe ancient Chinese agricultural innovations and their role in supporting population growth.",
+      "criterion_label": "Agricultural innovations impact",
+      "source_provenance": [
+        "blk_0087_item_01",
+        "blk_0087_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of agricultural innovations or population impact.",
+        "emerging": "Basic mention of some agricultural practices with minimal connection to growth.",
+        "developing": "Describes key innovations like flood control with some explanation of population support.",
+        "competent": "Clearly describes agricultural innovations and explains how they created surpluses supporting population growth.",
+        "extending": "Detailed analysis of innovation-population connections with specific examples and mechanisms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0023",
+      "associated_lt_ids": [
+        "history_cluster_05_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe ancient Chinese social organization and settlement patterns.",
+      "criterion_label": "Social organization structures",
+      "source_provenance": [
+        "blk_0091_item_01",
+        "blk_0092_item_01",
+        "blk_0092_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of social structures or settlement patterns.",
+        "emerging": "Basic mention of some social groups or housing with minimal detail.",
+        "developing": "Describes social hierarchy or settlement features with some organizational understanding.",
+        "competent": "Clearly describes social hierarchy, housing adaptations, and clan-based village organization patterns.",
+        "extending": "Detailed explanation of social structures with connections between hierarchy and settlement organization."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0024",
+      "associated_lt_ids": [
+        "history_cluster_05_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can explain the roles and relationships within ancient Chinese political hierarchy and administration.",
+      "criterion_label": "Chinese Political Structure",
+      "source_provenance": [
+        "blk_0089_item_01",
+        "blk_0089_item_02",
+        "blk_0089_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of Chinese political roles shown.",
+        "emerging": "Basic awareness of kings or leaders in ancient China.",
+        "developing": "Describes some roles but relationships between levels unclear.",
+        "competent": "Clearly explains king's powers and how regional leaders supported central authority.",
+        "extending": "Analyzes how hierarchy created effective governance system."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0022",
+        "nz-social-sciences_crit_0023"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0022",
+          "to_criterion_id": "nz-social-sciences_crit_0024",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding agricultural foundations helps contextualize political hierarchy development."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0023",
+          "to_criterion_id": "nz-social-sciences_crit_0024",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding social organization provides context for political hierarchy."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0025",
+      "associated_lt_ids": [
+        "history_cluster_05_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify key technological innovations in ancient China.",
+      "criterion_label": "Ancient Chinese Technology",
+      "source_provenance": [
+        "blk_0099_item_01",
+        "blk_0099_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any ancient Chinese technological innovations.",
+        "emerging": "Identifies one or two basic technological innovations with prompting.",
+        "developing": "Identifies several technological innovations but with limited detail or accuracy.",
+        "competent": "Accurately identifies multiple key technological innovations including transportation, textiles, and manufacturing advances.",
+        "extending": "Identifies innovations and explains their broader technological significance."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0026",
+      "associated_lt_ids": [
+        "history_cluster_05_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify key economic systems and trade practices in ancient China.",
+      "criterion_label": "Ancient Chinese Economics",
+      "source_provenance": [
+        "blk_0094_item_01",
+        "blk_0094_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any ancient Chinese economic systems.",
+        "emerging": "Identifies basic currency or trade elements with significant prompting.",
+        "developing": "Identifies some economic systems but with incomplete understanding of trade networks.",
+        "competent": "Accurately identifies currency systems, trade goods, and major trade routes including the Silk Road.",
+        "extending": "Identifies economic systems and explains their impact on society."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0027",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the structure and functioning of Elizabethan government and monarchy.",
+      "criterion_label": "Elizabethan Government Structure",
+      "source_provenance": [
+        "blk_0106_item_01",
+        "blk_0107_item_01",
+        "blk_0108_item_01",
+        "blk_0108_item_02",
+        "blk_0108_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Elizabethan government provided.",
+        "emerging": "Basic mention of Elizabeth I or monarchy with minimal detail.",
+        "developing": "Describes some features of monarchy or Parliament with limited accuracy.",
+        "competent": "Accurately describes key features of Elizabethan monarchy, absolute rule, and Parliament's limited role in lawmaking.",
+        "extending": "Detailed analysis of government structure including power relationships and limitations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0028",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe Elizabethan religious practices and their enforcement.",
+      "criterion_label": "Elizabethan Religious System",
+      "source_provenance": [
+        "blk_0110_item_01",
+        "blk_0110_item_02",
+        "blk_0110_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Elizabethan religious practices provided.",
+        "emerging": "Basic mention of Protestant or Catholic beliefs with minimal detail.",
+        "developing": "Describes some religious practices or enforcement with limited accuracy.",
+        "competent": "Accurately describes Protestant practices, enforcement methods, and treatment of Catholics in Elizabethan England.",
+        "extending": "Detailed analysis of religious system including enforcement mechanisms and social impact."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0029",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify the characteristics of Elizabethan social classes and the role of women in society.",
+      "criterion_label": "Elizabethan Social Structure",
+      "source_provenance": [
+        "blk_0116_item_01",
+        "blk_0116_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any social class features.",
+        "emerging": "Identifies basic social class distinctions with limited detail.",
+        "developing": "Identifies most social class characteristics and some aspects of women's roles.",
+        "competent": "Accurately identifies features of upper, middle, working classes and underclass, plus women's societal roles.",
+        "extending": "Identifies social structures with nuanced understanding of class distinctions and gender roles."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0030",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify the characteristics of Elizabethan education systems and literacy patterns.",
+      "criterion_label": "Elizabethan Education",
+      "source_provenance": [
+        "blk_0104_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify educational features.",
+        "emerging": "Identifies basic educational distinctions with minimal detail.",
+        "developing": "Identifies most educational characteristics including gender and class differences.",
+        "competent": "Accurately identifies education access patterns, child labor practices, and literacy rates by gender.",
+        "extending": "Identifies educational systems with detailed understanding of social barriers and outcomes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0031",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify the characteristics of Elizabethan cultural developments including printing and Renaissance influence.",
+      "criterion_label": "Cultural Developments",
+      "source_provenance": [
+        "blk_0113_item_01",
+        "blk_0113_item_02",
+        "blk_0113_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify cultural developments.",
+        "emerging": "Identifies basic cultural changes with limited understanding.",
+        "developing": "Identifies most cultural developments including printing or Renaissance influence.",
+        "competent": "Accurately identifies printing press invention, growth of printing, and Renaissance influence including Shakespeare.",
+        "extending": "Identifies cultural developments with understanding of their interconnected impacts on society."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0032",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify the characteristics of Elizabethan exploration and overseas ventures.",
+      "criterion_label": "Exploration and Trade",
+      "source_provenance": [
+        "blk_0112_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify exploration features.",
+        "emerging": "Identifies basic exploration activities with minimal detail.",
+        "developing": "Identifies most exploration characteristics including overseas ventures or regional connections.",
+        "competent": "Accurately identifies growth of exploration, overseas ventures, privateering, and links with Americas and Africa.",
+        "extending": "Identifies exploration patterns with understanding of their economic and political significance."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0033",
+      "associated_lt_ids": [
+        "history_cluster_06_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyse the relationship between monarchical authority and parliamentary power in Elizabethan England.",
+      "criterion_label": "Power Dynamics Analysis",
+      "source_provenance": [
+        "blk_0105_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of power relationships attempted.",
+        "emerging": "Basic identification of monarch and Parliament with minimal connection.",
+        "developing": "Simple comparison of monarchical and parliamentary powers with some examples.",
+        "competent": "Clear analysis of the dynamic relationship between Elizabeth I's authority and parliamentary influence with specific evidence.",
+        "extending": "Sophisticated analysis evaluating tensions and balance between competing power structures."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0027"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0027",
+          "to_criterion_id": "nz-social-sciences_crit_0033",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding government structure is essential before analyzing monarchical-parliamentary relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0034",
+      "associated_lt_ids": [
+        "history_cluster_07_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe the constitutional monarchy system and parliamentary government structure in Victorian England.",
+      "criterion_label": "Political System Description",
+      "source_provenance": [
+        "blk_0120_item_01",
+        "blk_0121_item_01",
+        "blk_0122_item_01",
+        "blk_0122_item_02",
+        "blk_0123_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Victorian political structures provided.",
+        "emerging": "Basic mention of monarchy or parliament with minimal detail.",
+        "developing": "Describes some features of constitutional monarchy or parliamentary system with gaps.",
+        "competent": "Clearly describes constitutional monarchy limits, parliamentary structure, and government formation processes.",
+        "extending": "Detailed explanation connecting monarchy, parliament, and democratic developments comprehensively."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0035",
+      "associated_lt_ids": [
+        "history_cluster_07_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe social changes in Victorian England including economic improvements and religious-scientific developments.",
+      "criterion_label": "Social Changes Description",
+      "source_provenance": [
+        "blk_0118_item_01",
+        "blk_0125_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Victorian social changes provided.",
+        "emerging": "Basic mention of some social or economic changes.",
+        "developing": "Describes either economic improvements or religious-scientific developments with some detail.",
+        "competent": "Clearly describes both economic improvements and emergence of scientific challenges to religious society.",
+        "extending": "Comprehensive explanation of interconnected social, economic, and intellectual transformations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0036",
+      "associated_lt_ids": [
+        "history_cluster_07_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can identify key technological innovations during Victoria's reign.",
+      "criterion_label": "Victorian Technological Innovations",
+      "source_provenance": [
+        "blk_0126_item_01",
+        "blk_0128_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any Victorian technological innovations.",
+        "emerging": "Identifies one or two basic Victorian technological innovations.",
+        "developing": "Identifies several Victorian technological innovations with some detail.",
+        "competent": "Identifies multiple key Victorian technological innovations including telegraph, photography, gas lighting, and sanitation systems.",
+        "extending": "Identifies comprehensive range of Victorian innovations with contextual understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0037",
+      "associated_lt_ids": [
+        "history_cluster_07_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can describe the expansion of the British Empire during Victoria's reign.",
+      "criterion_label": "Victorian Imperial Expansion",
+      "source_provenance": [
+        "blk_0127_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe any aspects of Victorian imperial expansion.",
+        "emerging": "Describes basic facts about British Empire growth during Victoria's reign.",
+        "developing": "Describes expansion with some geographic detail and trade connections.",
+        "competent": "Describes comprehensive imperial expansion including connections to Africa, Asia, Oceania, and New Zealand with trade networks.",
+        "extending": "Describes detailed imperial expansion with sophisticated understanding of global connections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0038",
+      "associated_lt_ids": [
+        "history_cluster_07_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can explain the relationship between monarchical authority and parliamentary power in Victorian constitutional monarchy.",
+      "criterion_label": "Constitutional Power Relationship Analysis",
+      "source_provenance": [
+        "blk_0119_item_01",
+        "blk_0121_item_01",
+        "blk_0122_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of power relationship provided.",
+        "emerging": "Basic identification of monarch and parliament with minimal connection.",
+        "developing": "Simple explanation showing limited understanding of power balance.",
+        "competent": "Clear explanation of how monarchical and parliamentary powers interact in constitutional system.",
+        "extending": "Sophisticated analysis of power dynamics with specific Victorian examples."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0034"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0034",
+          "to_criterion_id": "nz-social-sciences_crit_0038",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding constitutional monarchy structure is required before analyzing monarchical-parliamentary relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0039",
+      "associated_lt_ids": [
+        "history_cluster_08_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze similarities and differences between historical periods across multiple aspects of society.",
+      "criterion_label": "Historical Period Comparison",
+      "source_provenance": [
+        "blk_0129_item_02",
+        "blk_0131_item_01",
+        "blk_0131_item_02",
+        "blk_0131_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison attempted or inaccurate claims made.",
+        "emerging": "Identifies basic similarities or differences with limited accuracy.",
+        "developing": "Identifies some valid similarities and differences across selected aspects of society.",
+        "competent": "Systematically analyzes clear similarities and differences across multiple societal aspects with supporting evidence.",
+        "extending": "Provides nuanced analysis connecting patterns across diverse societal dimensions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0040",
+      "associated_lt_ids": [
+        "history_cluster_08_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyse similarities and differences between historical societies across different domains (religion, politics, social structures, trade).",
+      "criterion_label": "Historical Comparison Analysis",
+      "source_provenance": [
+        "blk_0129_item_02",
+        "blk_0131_item_01",
+        "blk_0131_item_02",
+        "blk_0131_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison attempted or inaccurate identification.",
+        "emerging": "Basic similarities or differences identified with limited accuracy.",
+        "developing": "Some accurate similarities and differences identified with simple explanations.",
+        "competent": "Clear identification of multiple similarities and differences with accurate historical evidence and reasoning.",
+        "extending": "Sophisticated comparison with nuanced understanding of complex relationships."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0041",
+      "associated_lt_ids": [
+        "history_cluster_08_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can evaluate the significance of identified changes and continuities between historical periods.",
+      "criterion_label": "Significance Evaluation",
+      "source_provenance": [
+        "blk_0129_item_02",
+        "blk_0131_item_01",
+        "blk_0131_item_02",
+        "blk_0131_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of significance attempted.",
+        "emerging": "Basic judgement about importance with minimal justification.",
+        "developing": "Some evaluation of significance with simple reasoning about impact.",
+        "competent": "Clear evaluation of significance with well-reasoned judgements about historical importance and impact.",
+        "extending": "Sophisticated evaluation considering multiple perspectives and long-term consequences."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0042",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe the hierarchical structure of Roman society including the roles of different social classes.",
+      "criterion_label": "Roman Social Structure",
+      "source_provenance": [
+        "blk_0136_item_01",
+        "blk_0149_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of Roman social classes.",
+        "emerging": "Names some Roman social groups with minimal detail.",
+        "developing": "Describes basic Roman social hierarchy with some class distinctions.",
+        "competent": "Clearly describes Roman social structure including patricians, plebeians, and slaves with their roles.",
+        "extending": "Detailed analysis of Roman social hierarchy and class interactions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0043",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe the structure and functioning of the Roman Republic including the concept of republican government.",
+      "criterion_label": "Roman Republic System",
+      "source_provenance": [
+        "blk_0137_item_01",
+        "blk_0137_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of Roman Republic.",
+        "emerging": "Basic awareness that Rome was once a republic.",
+        "developing": "Describes some features of Roman republican government structure.",
+        "competent": "Explains Roman Republic concept and how power was distributed among Senate and officials.",
+        "extending": "Detailed understanding of republican checks and balances."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0044",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_01"
+      ],
+      "strand": "history",
+      "criterion_statement": "Describe the imperial system and explain how Roman emperors ruled differently from the republican government.",
+      "criterion_label": "Roman Imperial System",
+      "source_provenance": [
+        "blk_0140_item_01",
+        "blk_0142_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of Roman Empire.",
+        "emerging": "Basic awareness of Roman emperors and empire.",
+        "developing": "Describes some features of imperial rule and emperors.",
+        "competent": "Explains how emperors ruled and key differences from republican government structure.",
+        "extending": "Detailed comparison of imperial versus republican power systems."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0043"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0043",
+          "to_criterion_id": "nz-social-sciences_crit_0044",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the republican system is essential before learning how imperial rule differed from it."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0045",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "Identify key features of Roman military organization including training, equipment, and legion structure.",
+      "criterion_label": "Roman Military Organization",
+      "source_provenance": [
+        "blk_0139_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of Roman military features.",
+        "emerging": "Identifies one basic Roman military feature with limited accuracy.",
+        "developing": "Identifies some Roman military features including training or equipment with general accuracy.",
+        "competent": "Accurately identifies multiple Roman military features including training, equipment, and organizational structure.",
+        "extending": "Identifies comprehensive Roman military features with detailed understanding of their effectiveness."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0046",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "Identify Roman religious beliefs including gods and goddesses.",
+      "criterion_label": "Roman Religious Beliefs",
+      "source_provenance": [
+        "blk_0144_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of Roman religious beliefs.",
+        "emerging": "Identifies one Roman god or goddess with limited accuracy.",
+        "developing": "Identifies some Roman gods and goddesses with general understanding of their roles.",
+        "competent": "Accurately identifies multiple Roman gods and goddesses demonstrating understanding of Roman religious beliefs.",
+        "extending": "Identifies comprehensive range of Roman deities with detailed understanding of religious practices."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0047",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_02"
+      ],
+      "strand": "history",
+      "criterion_statement": "Identify Roman architectural innovations including roads, baths, aqueducts, temples, and forums.",
+      "criterion_label": "Roman Architectural Innovations",
+      "source_provenance": [
+        "blk_0147_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of Roman architectural innovations.",
+        "emerging": "Identifies one Roman architectural feature with limited accuracy.",
+        "developing": "Identifies some Roman architectural innovations with general understanding of their purposes.",
+        "competent": "Accurately identifies multiple Roman architectural innovations demonstrating understanding of their functions and significance.",
+        "extending": "Identifies comprehensive Roman architectural achievements with detailed understanding of engineering principles."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0048",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can explain why Rome transitioned from republic to empire.",
+      "criterion_label": "Republic to Empire Transition",
+      "source_provenance": [
+        "blk_0141_item_01",
+        "blk_0150_item_01",
+        "blk_0150_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of Rome's political transition.",
+        "emerging": "Basic awareness that Rome changed from republic to empire.",
+        "developing": "Simple explanation of some reasons for Rome's transition to empire.",
+        "competent": "Clear explanation of key factors causing Rome's transition from republic to empire.",
+        "extending": "Sophisticated analysis of complex causes behind Rome's political transformation."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0042",
+        "nz-social-sciences_crit_0043",
+        "nz-social-sciences_crit_0044"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0042",
+          "to_criterion_id": "nz-social-sciences_crit_0048",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding Roman social structure provides context for analyzing the republic-to-empire transition."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0043",
+          "to_criterion_id": "nz-social-sciences_crit_0048",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the republic is necessary before analyzing why it transitioned to empire."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0044",
+          "to_criterion_id": "nz-social-sciences_crit_0048",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding both republican and imperial systems is required to explain the transition between them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0049",
+      "associated_lt_ids": [
+        "history_cluster_09_lt_03"
+      ],
+      "strand": "history",
+      "criterion_statement": "I can analyze Rome's lasting impact on the modern world.",
+      "criterion_label": "Roman Historical Impact Analysis",
+      "source_provenance": [
+        "blk_0150_item_05"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of Roman historical significance.",
+        "emerging": "Basic recognition that Rome influences modern world.",
+        "developing": "Simple analysis of some Roman influences on modern society.",
+        "competent": "Clear analysis of multiple ways Rome shaped the modern world.",
+        "extending": "Sophisticated evaluation of Rome's complex legacy in contemporary society."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0050",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_01_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain how democratic systems work, including the principles of democracy and how they differ from other government forms.",
+      "criterion_label": "Democratic System Principles",
+      "source_provenance": [
+        "blk_0012_item_01",
+        "blk_0012_item_02",
+        "blk_0013_item_01",
+        "blk_0022_item_03",
+        "blk_0023_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of democratic principles shown.",
+        "emerging": "Basic awareness that democracy involves voting for leaders.",
+        "developing": "Explains democracy as citizen choice of leaders, with some comparison to other systems.",
+        "competent": "Clearly explains democratic principles including citizen voice, fairness, equality and contrasts with monarchy/dictatorship.",
+        "extending": "Sophisticated analysis of democratic values and detailed comparison with alternative government forms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0051",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_01_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain how elections work and how governments are formed in New Zealand's democratic system.",
+      "criterion_label": "Elections and Government Formation",
+      "source_provenance": [
+        "blk_0014_item_01",
+        "blk_0015_item_01",
+        "blk_0016_item_01",
+        "blk_0017_item_01",
+        "blk_0021_item_01",
+        "blk_0022_item_01",
+        "blk_0022_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of electoral processes shown.",
+        "emerging": "Basic awareness that people vote for leaders in elections.",
+        "developing": "Explains three-yearly elections and that Parliament makes laws with some government formation details.",
+        "competent": "Clearly explains electoral cycle, Parliament's role, majority government formation, and Prime Minister's leadership position.",
+        "extending": "Detailed analysis of electoral processes, coalition formation, and historical development of New Zealand's system."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0050"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0050",
+          "to_criterion_id": "nz-social-sciences_crit_0051",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding democratic principles is essential before explaining how elections and government formation work within that democratic framework."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0052",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_01_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain the roles and responsibilities of different levels of government in New Zealand.",
+      "criterion_label": "Government Levels and Roles",
+      "source_provenance": [
+        "blk_0018_item_01",
+        "blk_0019_item_01",
+        "blk_0019_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of government levels shown.",
+        "emerging": "Basic awareness that government makes some decisions.",
+        "developing": "Identifies central government and local councils with some understanding of their different roles.",
+        "competent": "Clearly explains central government responsibilities (schools, hospitals, roads, safety) and local council services (parks, libraries, planning).",
+        "extending": "Sophisticated understanding of multi-level governance and how different levels coordinate and complement each other."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0050"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0050",
+          "to_criterion_id": "nz-social-sciences_crit_0052",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must understand democratic systems before they can meaningfully explain the roles of different government levels within that system."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0053",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_01_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can analyse how Ancient Greek political ideas influenced the development of New Zealand's democratic system.",
+      "criterion_label": "Democratic Historical Analysis",
+      "source_provenance": [
+        "blk_0020_item_01",
+        "blk_0021_item_01",
+        "blk_0022_item_01",
+        "blk_0022_item_02",
+        "blk_0022_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of Greek influence on NZ democracy.",
+        "emerging": "Basic identification of Greek ideas or NZ democratic features.",
+        "developing": "Simple connections between Greek concepts and NZ democratic development.",
+        "competent": "Clear analysis of how specific Greek political ideas influenced New Zealand's democratic system development.",
+        "extending": "Sophisticated analysis with detailed historical connections and implications."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0050"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0050",
+          "to_criterion_id": "nz-social-sciences_crit_0053",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding modern democratic principles provides the foundation for analyzing how ancient ideas influenced current systems."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0054",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_01_lt_03"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can identify various ways to participate meaningfully in civic life and community decision-making.",
+      "criterion_label": "Identify civic participation opportunities",
+      "source_provenance": [
+        "blk_0024_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify civic participation opportunities.",
+        "emerging": "Identifies one or two basic civic participation methods.",
+        "developing": "Identifies several civic participation opportunities with some detail.",
+        "competent": "Identifies diverse civic participation opportunities including formal and informal methods.",
+        "extending": "Identifies comprehensive range of civic participation with strategic awareness."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0051",
+        "nz-social-sciences_crit_0052"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0051",
+          "to_criterion_id": "nz-social-sciences_crit_0054",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding how elections work helps students appreciate the importance of civic participation in democratic processes."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0052",
+          "to_criterion_id": "nz-social-sciences_crit_0054",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Knowing government roles and responsibilities helps students identify appropriate levels for civic participation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0055",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_02_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain the purposes of laws in society.",
+      "criterion_label": "Explaining law purposes",
+      "source_provenance": [
+        "blk_0026_item_01",
+        "blk_0026_item_02",
+        "blk_0032_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of law purposes provided.",
+        "emerging": "Basic mention of one law purpose with minimal detail.",
+        "developing": "Explains some purposes of laws with simple reasoning.",
+        "competent": "Clearly explains multiple purposes of laws with relevant examples and sound reasoning.",
+        "extending": "Comprehensive explanation linking law purposes to societal outcomes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0056",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_02_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can identify different types of laws that govern society.",
+      "criterion_label": "Identifying law types",
+      "source_provenance": [
+        "blk_0027_item_01",
+        "blk_0028_item_01",
+        "blk_0029_item_01",
+        "blk_0031_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No law types identified.",
+        "emerging": "Identifies one type of law with basic accuracy.",
+        "developing": "Identifies several law types with some appropriate examples.",
+        "competent": "Accurately identifies multiple law types with clear examples from different levels of government.",
+        "extending": "Systematically categorizes law types with sophisticated examples."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0055"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0055",
+          "to_criterion_id": "nz-social-sciences_crit_0056",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the purposes of laws is fundamental before identifying and categorizing different types of laws."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0057",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_02_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "Describe the roles and functions of courts in the justice system.",
+      "criterion_label": "Court Functions",
+      "source_provenance": [
+        "blk_0035_item_01",
+        "blk_0036_item_01",
+        "blk_0037_item_01",
+        "blk_0038_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of court functions shown.",
+        "emerging": "Basic awareness that courts exist and handle legal matters.",
+        "developing": "Describes some court functions like making decisions or giving punishments.",
+        "competent": "Clearly describes how courts enforce laws, resolve disputes, protect rights, and ensure justice.",
+        "extending": "Explains court functions with specific examples and connections to justice principles."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0056"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0056",
+          "to_criterion_id": "nz-social-sciences_crit_0057",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Knowing different types of laws provides context for understanding how courts function to interpret and apply them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0058",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_02_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "Describe the role of judges in the justice system.",
+      "criterion_label": "Judge Roles",
+      "source_provenance": [
+        "blk_0039_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of judge roles shown.",
+        "emerging": "Basic awareness that judges work in courts.",
+        "developing": "Describes judges as decision-makers in legal matters.",
+        "competent": "Clearly describes judges as neutral interpreters of law who ensure fair outcomes.",
+        "extending": "Explains judge neutrality and law interpretation with specific examples of fair decision-making."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0057"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0057",
+          "to_criterion_id": "nz-social-sciences_crit_0058",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding court functions is necessary before explaining the specific role of judges within those courts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0059",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_02_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "Describe the roles of law enforcement in the justice system.",
+      "criterion_label": "Law Enforcement Roles",
+      "source_provenance": [
+        "blk_0041_item_01",
+        "blk_0042_item_01",
+        "blk_0044_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of law enforcement roles shown.",
+        "emerging": "Basic awareness that police exist and help with safety.",
+        "developing": "Describes some law enforcement functions like crime prevention or emergency response.",
+        "competent": "Clearly describes law enforcement roles in investigation, prevention, emergency response, and community safety.",
+        "extending": "Explains diverse law enforcement roles with specific examples of community protection and safety."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0057"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0057",
+          "to_criterion_id": "nz-social-sciences_crit_0059",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding court functions provides context for how law enforcement fits into the broader justice system."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0060",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_03_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain New Zealand's legal foundations for rights including key legislation and foundational documents.",
+      "criterion_label": "Legal foundations explanation",
+      "source_provenance": [
+        "blk_0046_item_01",
+        "blk_0047_item_01",
+        "blk_0048_item_01",
+        "blk_0049_item_01",
+        "blk_0050_item_01",
+        "blk_0051_item_01",
+        "blk_0052_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of legal foundations provided.",
+        "emerging": "Basic mention of some rights legislation or documents.",
+        "developing": "Explains several key legal foundations with some detail about their purposes.",
+        "competent": "Clearly explains multiple legal foundations including legislation, Treaty, and international agreements with their roles.",
+        "extending": "Comprehensive explanation connecting legal foundations to broader constitutional framework."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0061",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_03_lt_01"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can explain the relationship between rights and responsibilities in society.",
+      "criterion_label": "Rights-responsibilities relationship",
+      "source_provenance": [
+        "blk_0056_item_01",
+        "blk_0061_item_01",
+        "blk_0062_item_01",
+        "blk_0063_item_01",
+        "blk_0064_item_01",
+        "blk_0065_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of rights-responsibilities relationship provided.",
+        "emerging": "Basic recognition that rights and responsibilities are connected.",
+        "developing": "Explains some ways rights and responsibilities relate in society.",
+        "competent": "Clearly explains how responsibilities support rights and enable peaceful coexistence in society.",
+        "extending": "Sophisticated explanation of reciprocal relationship and democratic participation requirements."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0060"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0060",
+          "to_criterion_id": "nz-social-sciences_crit_0061",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding legal foundations for rights is essential before exploring the relationship between rights and responsibilities."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0062",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_03_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can evaluate the trustworthiness and reliability of information sources for civic decision-making.",
+      "criterion_label": "Source Evaluation",
+      "source_provenance": [
+        "blk_0059_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to assess source quality.",
+        "emerging": "Basic recognition that sources vary in quality.",
+        "developing": "Identifies some reliability indicators but inconsistently applied.",
+        "competent": "Systematically evaluates sources using multiple credibility criteria for civic contexts.",
+        "extending": "Critically assesses source limitations and potential bias impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0063",
+      "associated_lt_ids": [
+        "civics-and-society_cluster_03_lt_02"
+      ],
+      "strand": "civics-and-society",
+      "criterion_statement": "I can analyse different viewpoints on civic issues to understand multiple perspectives.",
+      "criterion_label": "Viewpoint Analysis",
+      "source_provenance": [
+        "blk_0059_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No recognition of different perspectives.",
+        "emerging": "Acknowledges that different viewpoints exist on issues.",
+        "developing": "Identifies key differences between opposing viewpoints with guidance.",
+        "competent": "Systematically compares multiple perspectives, identifying underlying assumptions and reasoning.",
+        "extending": "Synthesizes viewpoints to identify common ground and nuanced positions."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0062"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0062",
+          "to_criterion_id": "nz-social-sciences_crit_0063",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Evaluating source trustworthiness is a foundational skill needed before analyzing multiple viewpoints on civic issues."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0064",
+      "associated_lt_ids": [
+        "geography_cluster_01_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Describe how population growth, structure changes, migration factors, and natural increase affect population dynamics over time.",
+      "criterion_label": "Population Dynamics Description",
+      "source_provenance": [
+        "blk_0013_item_01",
+        "blk_0014_item_01",
+        "blk_0015_item_01",
+        "blk_0018_item_01",
+        "blk_0019_item_01",
+        "blk_0020_item_01",
+        "blk_0021_item_01",
+        "blk_0063_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of population dynamics provided.",
+        "emerging": "Basic description of one or two population factors.",
+        "developing": "Describes several population factors with limited connections to dynamics.",
+        "competent": "Clearly describes how multiple population factors affect dynamics over time with accurate examples.",
+        "extending": "Comprehensive description linking all factors to population dynamics with sophisticated understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0065",
+      "associated_lt_ids": [
+        "geography_cluster_01_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can compare different methods for representing population density and distribution patterns across geographic regions.",
+      "criterion_label": "Population Representation Comparison",
+      "source_provenance": [
+        "blk_0017_item_01",
+        "blk_0023_item_01",
+        "blk_0024_item_01",
+        "blk_0063_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison of representation methods attempted.",
+        "emerging": "Basic identification of different population representation methods.",
+        "developing": "Simple comparison noting obvious differences between representation methods.",
+        "competent": "Clear comparison of multiple methods, identifying strengths and limitations of each approach.",
+        "extending": "Sophisticated analysis evaluating method effectiveness for specific contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0064"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0064",
+          "to_criterion_id": "nz-social-sciences_crit_0065",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding population dynamics provides essential context for interpreting population density and distribution patterns."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0066",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain how cities develop through urbanisation processes.",
+      "criterion_label": "Urban Development Processes",
+      "source_provenance": [
+        "blk_0049_item_01",
+        "blk_0050_item_01",
+        "blk_0057_item_01",
+        "blk_0058_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of urban development processes.",
+        "emerging": "Basic identification of urbanisation as city growth.",
+        "developing": "Simple explanation of how cities grow with some processes identified.",
+        "competent": "Clear explanation of urban development processes including historical and cultural influences on city formation.",
+        "extending": "Detailed analysis of complex urbanisation processes and their interconnections."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0064"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0064",
+          "to_criterion_id": "nz-social-sciences_crit_0066",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Population growth and migration are fundamental drivers of urbanisation processes."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0067",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can describe the characteristics of urban growth in different global contexts.",
+      "criterion_label": "Global Urban Growth Patterns",
+      "source_provenance": [
+        "blk_0051_item_01",
+        "blk_0052_item_01",
+        "blk_0059_item_01",
+        "blk_0061_item_01",
+        "blk_0062_item_01",
+        "blk_0062_item_02",
+        "blk_0063_item_14"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of urban growth characteristics.",
+        "emerging": "Basic recognition of different urban growth patterns globally.",
+        "developing": "Simple description of urban characteristics in some global contexts.",
+        "competent": "Clear description of urban growth characteristics across different global contexts including cultural impacts.",
+        "extending": "Comprehensive comparison of urban growth patterns across diverse global contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0066"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0066",
+          "to_criterion_id": "nz-social-sciences_crit_0067",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding basic urbanisation processes is necessary before comparing urban growth characteristics across different contexts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0068",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can analyse visual geographic data to identify urban population trends and calculate percentage changes.",
+      "criterion_label": "Urban Data Analysis",
+      "source_provenance": [
+        "blk_0063_item_10",
+        "blk_0063_item_11"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to analyse urban data.",
+        "emerging": "Basic recognition of urban data with minimal analysis.",
+        "developing": "Identifies some trends but calculations may contain errors.",
+        "competent": "Accurately analyses visual data and calculates urban population changes with clear trend identification.",
+        "extending": "Sophisticated analysis with insightful trend interpretation."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0066"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0066",
+          "to_criterion_id": "nz-social-sciences_crit_0068",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding urbanisation processes is essential for meaningfully analysing urban population trend data."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0069",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can use aerial photographs and historic maps to analyse urban growth and change over time.",
+      "criterion_label": "Urban Change Mapping",
+      "source_provenance": [
+        "blk_0063_item_12"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No use of visual sources.",
+        "emerging": "Basic observation of maps or photographs with limited analysis.",
+        "developing": "Identifies some changes but analysis lacks depth or accuracy.",
+        "competent": "Effectively uses visual sources to chart and explain urban growth patterns over time.",
+        "extending": "Sophisticated temporal analysis with detailed change interpretation."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0068"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0068",
+          "to_criterion_id": "nz-social-sciences_crit_0069",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Analysing quantitative urban data provides foundation for interpreting visual evidence of urban change."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0070",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can evaluate photographic and testimonial evidence to identify challenges of informal settlement living.",
+      "criterion_label": "Settlement Challenge Evaluation",
+      "source_provenance": [
+        "blk_0063_item_13"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of settlement evidence.",
+        "emerging": "Basic description of evidence with minimal challenge identification.",
+        "developing": "Identifies some challenges but evaluation lacks depth or connection to evidence.",
+        "competent": "Effectively evaluates multiple evidence types to identify and explain settlement challenges clearly.",
+        "extending": "Sophisticated evaluation with nuanced challenge analysis."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0067"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0067",
+          "to_criterion_id": "nz-social-sciences_crit_0070",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding urban growth characteristics provides context for evaluating informal settlement challenges."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0071",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_03"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can evaluate the social consequences of urban growth on different communities.",
+      "criterion_label": "Social Impact Evaluation",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0055_item_01",
+        "blk_0059_item_01",
+        "blk_0061_item_01",
+        "blk_0062_item_01",
+        "blk_0062_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of social impacts provided.",
+        "emerging": "Basic identification of social consequences with minimal evaluation.",
+        "developing": "Describes social impacts with some evaluative reasoning about community effects.",
+        "competent": "Evaluates social consequences with clear reasoning about differential impacts on various communities.",
+        "extending": "Sophisticated evaluation connecting social impacts to broader community dynamics."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0066"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0066",
+          "to_criterion_id": "nz-social-sciences_crit_0071",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding urbanisation processes is essential for evaluating the social consequences of urban growth."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0072",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_03"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can evaluate the economic consequences of urban growth on different communities.",
+      "criterion_label": "Economic Impact Evaluation",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0055_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of economic impacts provided.",
+        "emerging": "Basic identification of economic consequences with minimal evaluation.",
+        "developing": "Describes economic impacts with some evaluative reasoning about community effects.",
+        "competent": "Evaluates economic consequences with clear reasoning about differential impacts on various communities.",
+        "extending": "Sophisticated evaluation connecting economic impacts to broader development patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0066"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0066",
+          "to_criterion_id": "nz-social-sciences_crit_0072",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding urbanisation processes is essential for evaluating the economic consequences of urban growth."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0073",
+      "associated_lt_ids": [
+        "geography_cluster_03_lt_03"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can evaluate the environmental consequences of urban growth on different communities.",
+      "criterion_label": "Environmental Impact Evaluation",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0055_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of environmental impacts provided.",
+        "emerging": "Basic identification of environmental consequences with minimal evaluation.",
+        "developing": "Describes environmental impacts with some evaluative reasoning about community effects.",
+        "competent": "Evaluates environmental consequences with clear reasoning about differential impacts on various communities.",
+        "extending": "Sophisticated evaluation connecting environmental impacts to sustainability and equity."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0066"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0066",
+          "to_criterion_id": "nz-social-sciences_crit_0073",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding urbanisation processes is essential for evaluating the environmental consequences of urban growth."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0074",
+      "associated_lt_ids": [
+        "geography_cluster_04_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain how plate movements create geological features such as mountains, volcanoes, and earthquakes.",
+      "criterion_label": "Plate Movement Effects",
+      "source_provenance": [
+        "blk_0066_item_01",
+        "blk_0067_item_01",
+        "blk_0068_item_01",
+        "blk_0069_item_01",
+        "blk_0079_item_01",
+        "blk_0080_item_01",
+        "blk_0083_item_01",
+        "blk_0124_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of plate movement effects provided.",
+        "emerging": "Basic identification of plate movements with minimal connection to features.",
+        "developing": "Explains some connections between plate movements and geological feature formation.",
+        "competent": "Clearly explains how plate movements create various geological features with specific examples.",
+        "extending": "Explains complex plate interactions and predicts future geological changes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0075",
+      "associated_lt_ids": [
+        "geography_cluster_04_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain how the rock cycle transforms rocks between sedimentary, igneous, and metamorphic types.",
+      "criterion_label": "Rock Cycle Processes",
+      "source_provenance": [
+        "blk_0071_item_01",
+        "blk_0072_item_01",
+        "blk_0073_item_01",
+        "blk_0074_item_01",
+        "blk_0084_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of rock cycle provided.",
+        "emerging": "Identifies rock types with minimal understanding of transformation processes.",
+        "developing": "Explains some rock cycle processes and transformations between rock types.",
+        "competent": "Clearly explains how rocks transform through the cycle with specific formation processes.",
+        "extending": "Explains complex rock cycle interactions and environmental conditions driving changes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0076",
+      "associated_lt_ids": [
+        "geography_cluster_04_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can interpret geological maps and aerial photographs to identify different rock types and landscapes.",
+      "criterion_label": "Interpret geological maps",
+      "source_provenance": [
+        "blk_0124_item_04",
+        "blk_0124_item_05"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot read geological maps or photographs.",
+        "emerging": "Identifies basic features on geological maps with support.",
+        "developing": "Interprets geological maps to identify some rock types and landscapes.",
+        "competent": "Accurately interprets geological maps and aerial photographs to identify rock types and landscape features.",
+        "extending": "Interprets complex geological maps with detailed landscape analysis."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0074",
+        "nz-social-sciences_crit_0075"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0074",
+          "to_criterion_id": "nz-social-sciences_crit_0076",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding how geological features form provides context for interpreting geological maps and identifying rock types."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0075",
+          "to_criterion_id": "nz-social-sciences_crit_0076",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding rock types and formation processes is essential for identifying different rock types on maps and photographs."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0077",
+      "associated_lt_ids": [
+        "geography_cluster_04_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can analyse how different rock types and erosion processes shape landscapes and landforms.",
+      "criterion_label": "Analyse landscape formation",
+      "source_provenance": [
+        "blk_0075_item_01",
+        "blk_0077_item_01",
+        "blk_0124_item_01",
+        "blk_0124_item_06"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain landscape formation processes.",
+        "emerging": "Identifies that rocks and erosion affect landscapes.",
+        "developing": "Explains basic connections between rock types, erosion and landforms.",
+        "competent": "Analyses how different rock types and erosion processes create specific landscape features and patterns.",
+        "extending": "Evaluates complex interactions between multiple geological processes."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0075"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0075",
+          "to_criterion_id": "nz-social-sciences_crit_0077",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding rock types is fundamental to analysing how different rocks shape landscapes through erosion."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0078",
+      "associated_lt_ids": [
+        "geography_cluster_04_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can collect and record observations about rock types and landform formation from diagrams and field evidence.",
+      "criterion_label": "Record geological observations",
+      "source_provenance": [
+        "blk_0124_item_01",
+        "blk_0124_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot record geological observations systematically.",
+        "emerging": "Records basic observations with significant guidance.",
+        "developing": "Collects and records some relevant geological observations.",
+        "competent": "Systematically collects and accurately records detailed observations about rocks and landforms from multiple sources.",
+        "extending": "Records comprehensive observations with insightful connections."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0076"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0076",
+          "to_criterion_id": "nz-social-sciences_crit_0078",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Interpreting geological maps provides foundation for collecting and recording field observations about rocks and landforms."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0079",
+      "associated_lt_ids": [
+        "geography_cluster_05_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can describe the characteristics and structure of rainforest biomes including layers, biodiversity, soil conditions, and plant adaptations.",
+      "criterion_label": "Rainforest Characteristics and Structure",
+      "source_provenance": [
+        "blk_0090_item_01",
+        "blk_0090_item_02",
+        "blk_0092_item_01",
+        "blk_0094_item_01",
+        "blk_0095_item_01",
+        "blk_0096_item_01",
+        "blk_0097_item_01",
+        "blk_0124_item_08",
+        "blk_0124_item_09"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of rainforest characteristics provided.",
+        "emerging": "Basic description of some rainforest features with limited detail.",
+        "developing": "Describes several rainforest characteristics including layers or adaptations with some accuracy.",
+        "competent": "Accurately describes rainforest characteristics including structure, biodiversity, soil conditions, and plant adaptations with clear explanations.",
+        "extending": "Comprehensive description linking rainforest characteristics to environmental conditions and ecological processes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0080",
+      "associated_lt_ids": [
+        "geography_cluster_05_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can describe the global distribution of rainforest biomes and explain the environmental conditions that create them.",
+      "criterion_label": "Rainforest Distribution and Formation",
+      "source_provenance": [
+        "blk_0087_item_01",
+        "blk_0088_item_01",
+        "blk_0089_item_01",
+        "blk_0091_item_01",
+        "blk_0124_item_07"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of rainforest distribution provided.",
+        "emerging": "Basic identification of some rainforest locations with minimal explanation.",
+        "developing": "Describes rainforest locations and some environmental conditions that create them.",
+        "competent": "Accurately describes global rainforest distribution and explains how climate conditions create these biomes.",
+        "extending": "Comprehensive explanation linking specific locations to detailed environmental processes and climate patterns."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0081",
+      "associated_lt_ids": [
+        "geography_cluster_05_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Analyse the causes of deforestation in rainforest ecosystems.",
+      "criterion_label": "Deforestation Causes Analysis",
+      "source_provenance": [
+        "blk_0101_item_01",
+        "blk_0124_item_11"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of deforestation causes.",
+        "emerging": "Lists basic causes like farming or settlements.",
+        "developing": "Explains some causes with simple connections to economic factors.",
+        "competent": "Analyses multiple causes including economic development, agriculture, and settlement pressures with clear explanations.",
+        "extending": "Evaluates interconnected causes with sophisticated economic and social reasoning."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0079",
+          "to_criterion_id": "nz-social-sciences_crit_0081",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding rainforest characteristics and structure is essential for analysing the causes of deforestation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0082",
+      "associated_lt_ids": [
+        "geography_cluster_05_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Analyse the consequences of deforestation on rainforest ecosystems and communities.",
+      "criterion_label": "Deforestation Consequences Analysis",
+      "source_provenance": [
+        "blk_0099_item_01",
+        "blk_0100_item_01",
+        "blk_0102_item_01",
+        "blk_0124_item_12"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No identification of deforestation impacts.",
+        "emerging": "Lists basic impacts like habitat loss.",
+        "developing": "Explains some environmental and social consequences with simple connections.",
+        "competent": "Analyses multiple consequences including ecosystem disruption, climate effects, and impacts on Indigenous communities.",
+        "extending": "Evaluates complex interconnected consequences across environmental and social systems."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0079",
+          "to_criterion_id": "nz-social-sciences_crit_0082",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding rainforest ecosystems is essential for analysing the consequences of deforestation on these systems."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0083",
+      "associated_lt_ids": [
+        "geography_cluster_05_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Collect and analyse secondary data on rainforest clearance using aerial photographs and graphs.",
+      "criterion_label": "Rainforest Data Analysis",
+      "source_provenance": [
+        "blk_0124_item_10"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot interpret data sources.",
+        "emerging": "Basic identification of features in photographs or graphs.",
+        "developing": "Simple interpretation of data with some analysis of patterns.",
+        "competent": "Systematic collection and analysis of data from multiple sources with clear pattern identification.",
+        "extending": "Sophisticated data analysis with critical evaluation of source reliability."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0081"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0081",
+          "to_criterion_id": "nz-social-sciences_crit_0083",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding deforestation causes provides context for collecting and analysing data on rainforest clearance."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0084",
+      "associated_lt_ids": [
+        "geography_cluster_06_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Explain how people interact with places and environments for different purposes (personal, social, cultural, economic).",
+      "criterion_label": "Human-Environment Interaction Purposes",
+      "source_provenance": [
+        "blk_0104_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of human-environment interactions provided.",
+        "emerging": "Basic identification of some human uses of environments.",
+        "developing": "Explains some purposes for human-environment interactions with limited detail.",
+        "competent": "Clearly explains how people interact with environments for personal, social, cultural, and economic purposes.",
+        "extending": "Comprehensively explains diverse human-environment interactions with detailed examples."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0085",
+      "associated_lt_ids": [
+        "geography_cluster_06_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "Explain the environmental impacts of human interactions with places and environments.",
+      "criterion_label": "Environmental Impact Analysis",
+      "source_provenance": [
+        "blk_0105_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of environmental impacts provided.",
+        "emerging": "Basic identification of some environmental changes from human activity.",
+        "developing": "Explains some environmental impacts with limited understanding of consequences.",
+        "competent": "Clearly explains environmental impacts of human activities on places, people, and global processes.",
+        "extending": "Comprehensively analyzes long-term environmental impacts with detailed connections."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0084",
+          "to_criterion_id": "nz-social-sciences_crit_0085",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding how people interact with environments is fundamental to explaining the environmental impacts of these interactions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0086",
+      "associated_lt_ids": [
+        "geography_cluster_06_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can analyze how values and connection to place influence people's sense of responsibility for environmental sustainability.",
+      "criterion_label": "Environmental Responsibility Analysis",
+      "source_provenance": [
+        "blk_0106_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of environmental responsibility factors.",
+        "emerging": "Basic identification of values or place connection affecting responsibility.",
+        "developing": "Simple analysis of how values or place influence environmental responsibility.",
+        "competent": "Clear analysis of how both values and connection to place shape people's environmental responsibility.",
+        "extending": "Sophisticated analysis connecting multiple factors influencing environmental responsibility."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0084",
+          "to_criterion_id": "nz-social-sciences_crit_0086",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding human-environment interactions provides foundation for analysing how values influence environmental responsibility."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0087",
+      "associated_lt_ids": [
+        "geography_cluster_07_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain the natural processes of climate change including past climate variations and glacial periods.",
+      "criterion_label": "Natural Climate Processes",
+      "source_provenance": [
+        "blk_0108_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of natural climate processes.",
+        "emerging": "Basic mention of past climate changes with minimal detail.",
+        "developing": "Describes some natural climate processes with limited understanding of patterns.",
+        "competent": "Clearly explains natural climate processes including glacial and inter-glacial periods with accurate detail.",
+        "extending": "Comprehensive explanation linking multiple natural climate processes and their interactions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0088",
+      "associated_lt_ids": [
+        "geography_cluster_07_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain the greenhouse effect and how greenhouse gases trap heat in the atmosphere.",
+      "criterion_label": "Greenhouse Effect Mechanisms",
+      "source_provenance": [
+        "blk_0109_item_01",
+        "blk_0111_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of greenhouse effect.",
+        "emerging": "Basic mention of greenhouse effect with minimal understanding.",
+        "developing": "Describes greenhouse effect with some understanding of heat trapping processes.",
+        "competent": "Clearly explains how greenhouse gases trap heat and the atmosphere's role in storing solar energy.",
+        "extending": "Detailed explanation of greenhouse mechanisms with specific gas examples and processes."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0087"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0087",
+          "to_criterion_id": "nz-social-sciences_crit_0088",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding natural climate processes provides context for learning about the greenhouse effect mechanism."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0089",
+      "associated_lt_ids": [
+        "geography_cluster_07_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can explain how human activities cause current climate warming by changing atmospheric composition.",
+      "criterion_label": "Human Climate Impacts",
+      "source_provenance": [
+        "blk_0110_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of human climate impacts.",
+        "emerging": "Basic mention of human activities affecting climate with minimal detail.",
+        "developing": "Describes some human activities that change climate with limited understanding.",
+        "competent": "Clearly explains how specific human actions alter atmospheric composition and cause warming.",
+        "extending": "Comprehensive explanation linking multiple human activities to atmospheric changes and warming."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0088"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0088",
+          "to_criterion_id": "nz-social-sciences_crit_0089",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the greenhouse effect is essential for explaining how human activities cause climate warming."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0090",
+      "associated_lt_ids": [
+        "geography_cluster_07_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can interpret climate data including line graphs showing temperature changes and correlations between greenhouse gas concentrations and global temperatures.",
+      "criterion_label": "Interpret Climate Data",
+      "source_provenance": [
+        "blk_0124_item_13",
+        "blk_0124_item_14"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot read climate graphs or data.",
+        "emerging": "Identifies basic patterns in simple climate graphs with support.",
+        "developing": "Interprets temperature trends and some correlations in climate data.",
+        "competent": "Accurately interprets climate graphs, identifying temperature changes and greenhouse gas correlations across time scales.",
+        "extending": "Synthesizes complex climate data patterns and explains underlying relationships."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0089"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0089",
+          "to_criterion_id": "nz-social-sciences_crit_0090",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding human causes of climate change provides context for interpreting climate data and correlations."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0091",
+      "associated_lt_ids": [
+        "geography_cluster_07_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can evaluate the environmental, social, and economic impacts of climate change on people and environments.",
+      "criterion_label": "Evaluate Climate Impacts",
+      "source_provenance": [
+        "blk_0112_item_01",
+        "blk_0114_item_01",
+        "blk_0115_item_01",
+        "blk_0117_item_01",
+        "blk_0118_item_01",
+        "blk_0119_item_01",
+        "blk_0120_item_01",
+        "blk_0124_item_15",
+        "blk_0124_item_16"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify climate change impacts.",
+        "emerging": "Lists basic climate impacts with prompting and support.",
+        "developing": "Describes climate impacts and attempts to categorize them by type.",
+        "competent": "Evaluates diverse climate impacts, clearly categorizing environmental, social, and economic effects with supporting evidence.",
+        "extending": "Analyzes interconnections between impact categories and evaluates management strategies."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0088"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0088",
+          "to_criterion_id": "nz-social-sciences_crit_0091",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding climate change mechanisms provides foundation for evaluating its impacts on people and environments."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0092",
+      "associated_lt_ids": [
+        "geography_cluster_08_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can identify the physical characteristics (climate, vegetation, landforms) that define a region.",
+      "criterion_label": "Physical Regional Characteristics",
+      "source_provenance": [
+        "blk_0127_item_01",
+        "blk_0128_item_01",
+        "blk_0129_item_01",
+        "blk_0130_item_01",
+        "blk_0140_item_01",
+        "blk_0144_item_01",
+        "blk_0144_item_02",
+        "blk_0144_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify physical regional characteristics",
+        "emerging": "Identifies some basic physical features with support",
+        "developing": "Identifies most physical characteristics with minor gaps",
+        "competent": "Accurately identifies key physical characteristics that define regions",
+        "extending": "Identifies and explains complex physical regional patterns"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0093",
+      "associated_lt_ids": [
+        "geography_cluster_08_lt_01"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can identify the human characteristics (cultural, economic, political) that define a region.",
+      "criterion_label": "Human Regional Characteristics",
+      "source_provenance": [
+        "blk_0132_item_01",
+        "blk_0133_item_01",
+        "blk_0134_item_01",
+        "blk_0136_item_01",
+        "blk_0137_item_01",
+        "blk_0138_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify human regional characteristics",
+        "emerging": "Identifies some basic human features with support",
+        "developing": "Identifies most human characteristics with minor gaps",
+        "competent": "Accurately identifies key human characteristics that define regions",
+        "extending": "Identifies and explains complex human regional patterns"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0094",
+      "associated_lt_ids": [
+        "geography_cluster_08_lt_02"
+      ],
+      "strand": "geography",
+      "criterion_statement": "I can interpret geographical information from maps, photographs, and graphs to describe regional features.",
+      "criterion_label": "Interpret Geographical Information",
+      "source_provenance": [
+        "blk_0144_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No interpretation of geographical sources attempted.",
+        "emerging": "Basic identification of features from geographical sources with limited description.",
+        "developing": "Interprets some geographical information accurately with simple descriptions of regional features.",
+        "competent": "Effectively interprets geographical information from multiple sources to provide clear descriptions of regional features.",
+        "extending": "Synthesizes complex geographical information to provide detailed regional feature analysis."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0092",
+        "nz-social-sciences_crit_0093"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0092",
+          "to_criterion_id": "nz-social-sciences_crit_0094",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding physical regional characteristics is essential for interpreting geographical information about regional features."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0093",
+          "to_criterion_id": "nz-social-sciences_crit_0094",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding human regional characteristics is essential for interpreting geographical information about regional features."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0095",
+      "associated_lt_ids": [
+        "economic-activity_cluster_01_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Explain how limited money creates the need for people to make choices between different spending and saving options.",
+      "criterion_label": "Financial Choice Constraints",
+      "source_provenance": [
+        "blk_0011_item_01",
+        "blk_0012_item_01",
+        "blk_0013_item_01",
+        "blk_0013_item_02",
+        "blk_0014_item_01",
+        "blk_0014_item_02",
+        "blk_0019_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of financial constraints shown.",
+        "emerging": "Basic awareness that money is limited but unclear connections.",
+        "developing": "Explains that limited money requires choices with simple examples.",
+        "competent": "Clearly explains how financial constraints force trade-offs between spending and saving options with relevant examples.",
+        "extending": "Sophisticated analysis of constraint-choice relationships including value considerations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0096",
+      "associated_lt_ids": [
+        "economic-activity_cluster_01_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can create shopping lists and compare prices across different retailers to find the best value.",
+      "criterion_label": "Shopping List Creation",
+      "source_provenance": [
+        "blk_0035_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No shopping list created or prices compared.",
+        "emerging": "Basic shopping list with limited price comparison.",
+        "developing": "Shopping list created with some price comparison across retailers.",
+        "competent": "Comprehensive shopping list with systematic price comparison to identify best value options.",
+        "extending": "Strategic shopping list with advanced comparison techniques."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0095",
+        "nz-social-sciences_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0095",
+          "to_criterion_id": "nz-social-sciences_crit_0096",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding the need to make choices due to limited money is essential before learning practical shopping and price comparison skills."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0097",
+          "to_criterion_id": "nz-social-sciences_crit_0096",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Accurate cost calculation is required to meaningfully compare prices and find best value."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0097",
+      "associated_lt_ids": [
+        "economic-activity_cluster_01_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can calculate the total costs of goods and services accurately using appropriate methods.",
+      "criterion_label": "Cost Calculation",
+      "source_provenance": [
+        "blk_0035_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No cost calculations attempted or completed.",
+        "emerging": "Basic calculations with significant errors or assistance needed.",
+        "developing": "Cost calculations completed with minor errors or some guidance.",
+        "competent": "Accurate cost calculations using appropriate methods with minimal errors.",
+        "extending": "Complex cost calculations including discounts and comparisons."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0098",
+      "associated_lt_ids": [
+        "economic-activity_cluster_01_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can develop savings plans with specific targets using available financial tools and services.",
+      "criterion_label": "Savings Planning",
+      "source_provenance": [
+        "blk_0038_item_01",
+        "blk_0015_item_01",
+        "blk_0018_item_01",
+        "blk_0020_item_01",
+        "blk_0021_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No savings plan created or attempted.",
+        "emerging": "Basic savings plan with unclear targets or methods.",
+        "developing": "Savings plan created with realistic targets and some tool awareness.",
+        "competent": "Comprehensive savings plan with clear targets using appropriate financial tools and services.",
+        "extending": "Strategic savings plan with multiple options and advanced tools."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0095",
+        "nz-social-sciences_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0095",
+          "to_criterion_id": "nz-social-sciences_crit_0098",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "The concept of limited money creating choices is fundamental to understanding why savings plans are necessary."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0097",
+          "to_criterion_id": "nz-social-sciences_crit_0098",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Calculating costs accurately is essential for creating realistic savings plans with specific targets."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0099",
+      "associated_lt_ids": [
+        "economic-activity_cluster_01_lt_03"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can analyse how different banking services meet people's financial needs and circumstances.",
+      "criterion_label": "Analyse Banking Services",
+      "source_provenance": [
+        "blk_0037_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of banking services provided.",
+        "emerging": "Basic identification of banking services with minimal connection to needs.",
+        "developing": "Simple analysis connecting some banking services to general financial needs.",
+        "competent": "Clear analysis of how various banking services address specific financial needs and circumstances.",
+        "extending": "Sophisticated evaluation comparing banking options for diverse financial situations."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0098"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0098",
+          "to_criterion_id": "nz-social-sciences_crit_0099",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding savings plans provides context for analyzing how banking services meet financial needs."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0100",
+      "associated_lt_ids": [
+        "economic-activity_cluster_02_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Explain how people exchange goods, services, and resources through different systems including marketplaces, barter, credit, and electronic forms.",
+      "criterion_label": "Exchange Systems Explanation",
+      "source_provenance": [
+        "blk_0016_item_01",
+        "blk_0017_item_01",
+        "blk_0023_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of exchange systems provided.",
+        "emerging": "Basic identification of some exchange methods with minimal explanation.",
+        "developing": "Explains several exchange systems with some detail about how they work.",
+        "competent": "Clearly explains multiple exchange systems showing understanding of how goods, services and resources are traded.",
+        "extending": "Comprehensive explanation connecting historical and modern exchange systems."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0101",
+      "associated_lt_ids": [
+        "economic-activity_cluster_02_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Explain why specialisation leads to trade and exchange in market economies.",
+      "criterion_label": "Specialisation and Trade",
+      "source_provenance": [
+        "blk_0034_item_01",
+        "blk_0034_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of specialisation-trade relationship provided.",
+        "emerging": "Basic understanding that specialisation and trade are connected.",
+        "developing": "Explains that specialisation creates need for trade with some reasoning.",
+        "competent": "Clearly explains how specialisation creates interdependence requiring trade and exchange in markets.",
+        "extending": "Sophisticated explanation of specialisation benefits and trade necessity."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0102",
+      "associated_lt_ids": [
+        "economic-activity_cluster_02_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can identify examples of trade systems and goods/services exchange in daily life and local communities.",
+      "criterion_label": "Identify Trade Examples",
+      "source_provenance": [
+        "blk_0036_item_01",
+        "blk_0044_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No examples identified",
+        "emerging": "Lists basic goods or services with prompting",
+        "developing": "Identifies clear examples of trade in daily life",
+        "competent": "Identifies diverse examples of trade systems and specialisation in local communities",
+        "extending": "Identifies complex trade relationships and specialisation patterns"
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0100",
+        "nz-social-sciences_crit_0101"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0100",
+          "to_criterion_id": "nz-social-sciences_crit_0102",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding exchange systems conceptually is required to identify specific examples in daily life."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0101",
+          "to_criterion_id": "nz-social-sciences_crit_0102",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding why specialization leads to trade helps in identifying trade examples in communities."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0103",
+      "associated_lt_ids": [
+        "economic-activity_cluster_02_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can analyse the historical development of trade systems and how trade has changed over time.",
+      "criterion_label": "Analyse Trade Development",
+      "source_provenance": [
+        "blk_0024_item_01",
+        "blk_0024_item_02",
+        "blk_0041_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis attempted",
+        "emerging": "Basic description of trade changes with support",
+        "developing": "Explains some changes in trade over time",
+        "competent": "Analyses how trade systems developed historically and changed across regions and cultures",
+        "extending": "Analyses complex connections between historical and modern trade"
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0100"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0100",
+          "to_criterion_id": "nz-social-sciences_crit_0103",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding different exchange systems is necessary to analyze their historical development."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0104",
+      "associated_lt_ids": [
+        "economic-activity_cluster_03_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Identify different kinds of work that people do in their community.",
+      "criterion_label": "Identify Work Types",
+      "source_provenance": [
+        "blk_0022_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name any types of work.",
+        "emerging": "Names 1-2 basic work types with prompting.",
+        "developing": "Identifies several different types of work independently.",
+        "competent": "Identifies diverse work types across different sectors and contexts.",
+        "extending": "Categorizes work types by industry or function."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0105",
+      "associated_lt_ids": [
+        "economic-activity_cluster_03_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Explain how work helps others in the community or enables people to earn money.",
+      "criterion_label": "Explain Work Purposes",
+      "source_provenance": [
+        "blk_0022_item_01",
+        "blk_0022_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain work purposes.",
+        "emerging": "States work helps people with simple prompting.",
+        "developing": "Explains basic ways work helps others or earns money.",
+        "competent": "Clearly explains how work serves community needs and provides income.",
+        "extending": "Connects work purposes to broader economic systems."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0104"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0104",
+          "to_criterion_id": "nz-social-sciences_crit_0105",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying different kinds of work is necessary before explaining how work helps others or enables earning."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0106",
+      "associated_lt_ids": [
+        "economic-activity_cluster_03_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Compare different types of work people do to help others or earn money, including making goods or providing services.",
+      "criterion_label": "Compare Work Types",
+      "source_provenance": [
+        "blk_0039_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison of work types attempted.",
+        "emerging": "Lists some work types with minimal comparison.",
+        "developing": "Compares work types with basic distinctions between goods and services.",
+        "competent": "Clearly compares different work types, distinguishing how they help others or earn money through goods/services.",
+        "extending": "Compares work types with nuanced analysis of their societal and economic contributions."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0105"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0105",
+          "to_criterion_id": "nz-social-sciences_crit_0106",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding how work helps others or enables earning is foundational to comparing different types of work."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0107",
+      "associated_lt_ids": [
+        "economic-activity_cluster_03_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Analyze the factors that influence people's work choices.",
+      "criterion_label": "Analyze Work Influences",
+      "source_provenance": [
+        "blk_0040_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No analysis of work choice factors.",
+        "emerging": "Identifies basic factors influencing work choices.",
+        "developing": "Explains some factors that influence work choices with simple reasoning.",
+        "competent": "Analyzes multiple factors influencing work choices, explaining their impact with clear reasoning.",
+        "extending": "Analyzes complex interplay of factors influencing work choices with sophisticated reasoning."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0106"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0106",
+          "to_criterion_id": "nz-social-sciences_crit_0107",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Comparing different types of work provides the foundation for analyzing factors that influence work choices."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0108",
+      "associated_lt_ids": [
+        "economic-activity_cluster_04_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can explain how businesses generate revenue through sales of goods and services.",
+      "criterion_label": "Revenue Generation",
+      "source_provenance": [
+        "blk_0025_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of revenue generation provided.",
+        "emerging": "Basic mention that businesses earn money from sales.",
+        "developing": "Explains that businesses generate revenue by selling goods or services to customers.",
+        "competent": "Clearly explains how businesses generate revenue through sales of goods and services, using appropriate terminology.",
+        "extending": "Explains revenue generation with specific examples and business context."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0109",
+      "associated_lt_ids": [
+        "economic-activity_cluster_04_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can explain how businesses incur different types of costs in their operations.",
+      "criterion_label": "Business Costs",
+      "source_provenance": [
+        "blk_0026_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of business costs provided.",
+        "emerging": "Basic mention that businesses have costs.",
+        "developing": "Explains that businesses have various costs to make goods and services.",
+        "competent": "Clearly explains how businesses incur different types of costs in producing goods and services.",
+        "extending": "Explains business costs with specific examples and cost categories."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0110",
+      "associated_lt_ids": [
+        "economic-activity_cluster_04_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can calculate and explain profit as the difference between revenue and costs.",
+      "criterion_label": "Profit Calculation",
+      "source_provenance": [
+        "blk_0027_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of profit calculation shown.",
+        "emerging": "Basic mention of profit involving money earned.",
+        "developing": "Explains profit as money left after paying costs.",
+        "competent": "Clearly explains and calculates profit as revenue minus costs using correct terminology.",
+        "extending": "Calculates profit accurately and explains its business significance."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0108",
+        "nz-social-sciences_crit_0109"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0108",
+          "to_criterion_id": "nz-social-sciences_crit_0110",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding revenue generation is required to calculate profit as the difference between revenue and costs."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0109",
+          "to_criterion_id": "nz-social-sciences_crit_0110",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding business costs is required to calculate profit as the difference between revenue and costs."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0111",
+      "associated_lt_ids": [
+        "economic-activity_cluster_04_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can identify and categorise the key costs, pricing strategies, and revenue sources within a business case study.",
+      "criterion_label": "Identify Business Components",
+      "source_provenance": [
+        "blk_0042_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic business financial elements.",
+        "emerging": "Identifies some costs or revenue but misses key components.",
+        "developing": "Identifies most costs, pricing, and revenue with minor gaps.",
+        "competent": "Accurately identifies and categorises all key costs, pricing strategies, and revenue sources in the case study.",
+        "extending": "Identifies components and suggests additional relevant factors."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0110"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0110",
+          "to_criterion_id": "nz-social-sciences_crit_0111",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding profit calculation provides the foundation for analyzing costs, pricing, and revenue in business cases."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0112",
+      "associated_lt_ids": [
+        "economic-activity_cluster_04_lt_03"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Learners can evaluate how different values and p\u016btake shape various forms of business and enterprise.",
+      "criterion_label": "Evaluate Values-Enterprise Alignment",
+      "source_provenance": [
+        "blk_0028_item_01",
+        "blk_0029_item_01",
+        "blk_0043_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of values-enterprise connections attempted.",
+        "emerging": "Basic recognition that values influence business forms.",
+        "developing": "Identifies some connections between values/p\u016btake and enterprise types.",
+        "competent": "Clearly evaluates how different values and p\u016btake shape various business and enterprise forms.",
+        "extending": "Sophisticated evaluation with nuanced analysis of values-enterprise relationships."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0111"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0111",
+          "to_criterion_id": "nz-social-sciences_crit_0112",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Analyzing business fundamentals provides context for evaluating how values shape different forms of enterprise."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0113",
+      "associated_lt_ids": [
+        "economic-activity_cluster_05_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Explain how credit systems work, including the process of borrowing money to purchase goods and services.",
+      "criterion_label": "Credit System Operations",
+      "source_provenance": [
+        "blk_0030_item_01",
+        "blk_0030_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of credit systems provided.",
+        "emerging": "Basic mention of credit involving borrowing money.",
+        "developing": "Explains credit as borrowing with some detail about purchasing goods/services.",
+        "competent": "Clear explanation of how credit systems work, including borrowing process and purchasing applications.",
+        "extending": "Comprehensive explanation with real-world examples and system mechanics."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0114",
+      "associated_lt_ids": [
+        "economic-activity_cluster_05_lt_01"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "Describe the relationship between borrowing and debt obligations, including repayment requirements and potential financial problems.",
+      "criterion_label": "Borrowing-Debt Relationship",
+      "source_provenance": [
+        "blk_0030_item_02",
+        "blk_0031_item_01",
+        "blk_0032_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of borrowing-debt relationship.",
+        "emerging": "Basic recognition that borrowing creates debt.",
+        "developing": "Describes debt as money owed with some repayment understanding.",
+        "competent": "Clear description of borrowing-debt relationship including repayment obligations and potential problems.",
+        "extending": "Detailed analysis of debt obligations with specific examples and risk factors."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0113"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0113",
+          "to_criterion_id": "nz-social-sciences_crit_0114",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding how credit systems work is necessary to understand borrowing and debt obligations."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "nz-social-sciences_crit_0115",
+      "associated_lt_ids": [
+        "economic-activity_cluster_05_lt_02"
+      ],
+      "strand": "economic-activity",
+      "criterion_statement": "I can create and use budgets to make informed financial decisions.",
+      "criterion_label": "Budget Creation and Application",
+      "source_provenance": [
+        "blk_0033_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No budget creation or financial decision-making demonstrated.",
+        "emerging": "Creates basic budgets with support but limited decision-making application.",
+        "developing": "Creates functional budgets and makes some informed financial decisions using them.",
+        "competent": "Creates comprehensive budgets and consistently uses them to make well-informed financial decisions.",
+        "extending": "Creates sophisticated budgets and evaluates multiple financial scenarios for optimal decisions."
+      },
+      "prerequisite_criterion_ids": [
+        "nz-social-sciences_crit_0095",
+        "nz-social-sciences_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0095",
+          "to_criterion_id": "nz-social-sciences_crit_0115",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding limited money and choices is fundamental to creating and using budgets for financial decisions."
+        },
+        {
+          "from_criterion_id": "nz-social-sciences_crit_0097",
+          "to_criterion_id": "nz-social-sciences_crit_0115",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Accurate cost calculation skills are essential for creating meaningful budgets."
+        }
+      ],
+      "schema_version": "v1"
+    }
+  ]
+}

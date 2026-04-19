@@ -521,7 +521,7 @@ def regenerate_lt_prerequisites_4c4b(
     src_type = source_cfg["type"]
     lts_file = corpus_dir / source_cfg["lts_file"]
 
-    def _update_lts_file(path: Path) -> int:
+    def _update_lts_file(path: Path, prereq_map: dict[str, set[str]]) -> int:
         with open(path) as f:
             raw = json.load(f)
         lts_list = raw if isinstance(raw, list) else raw.get("learning_targets", raw.get("lts", []))
@@ -529,7 +529,7 @@ def regenerate_lt_prerequisites_4c4b(
         updated = []
         for lt in lts_list:
             lt_copy = dict(lt)
-            new_prereqs = sorted(lt_prereqs.get(lt["lt_id"], set()))
+            new_prereqs = sorted(prereq_map.get(lt["lt_id"], set()))
             old_prereqs = lt.get("prerequisite_lts", [])
             if new_prereqs != old_prereqs:
                 changes += 1
@@ -545,14 +545,31 @@ def regenerate_lt_prerequisites_4c4b(
             json.dump(out, f, indent=2)
         return changes
 
-    total_changes = _update_lts_file(lts_file)
+    total_changes = _update_lts_file(lts_file, lt_prereqs)
 
     if src_type == "multi_strand_per_dir":
+        # For per-dir sources, associated_lt_ids are prefixed with strand slug
+        # (e.g. "history_cluster_01_lt_01"). Per-strand lts.json files use the
+        # original unprefixed IDs. Build a strand-stripped prereq map per strand.
         per_strand_root = corpus_dir / "per_strand"
         for s in source_cfg["strands"]:
-            strand_lts_path = per_strand_root / s["slug"] / "lts.json"
+            slug = s["slug"]
+            prefix = f"{slug}_"
+            strand_prereqs: dict[str, set[str]] = {}
+            for prefixed_lt_id, prereqs in lt_prereqs.items():
+                if not prefixed_lt_id.startswith(prefix):
+                    continue
+                raw_lt_id = prefixed_lt_id[len(prefix):]
+                stripped: set[str] = set()
+                for p in prereqs:
+                    if p.startswith(prefix):
+                        stripped.add(p[len(prefix):])
+                    # Cross-strand prereqs omitted — out of scope for v1.
+                strand_prereqs[raw_lt_id] = stripped
+
+            strand_lts_path = per_strand_root / slug / "lts.json"
             if strand_lts_path.exists():
-                _update_lts_file(strand_lts_path)
+                _update_lts_file(strand_lts_path, strand_prereqs)
 
     return {
         "lt_prereqs_updated": total_changes,
@@ -622,7 +639,19 @@ async def generate_criterion_bank_4c4b(
         strand_slug_out = slug  # Use the directory slug as the strand value
         lts = sd["lts"]
         kud_items = sd["kud_items"]
-        all_lts.extend(lts)
+
+        # For multi_strand_per_dir sources, LT IDs are not unique across strands
+        # (each strand starts its own cluster_01_lt_01 etc.). Prefix with strand
+        # slug to guarantee globally unique associated_lt_ids in the bank.
+        if src_type == "multi_strand_per_dir":
+            lt_id_prefix = f"{slug}_"
+            # Build prefixed-ID LTs for all_lts (used for audit/spot-check)
+            prefixed_lts = [{**lt, "lt_id": f"{lt_id_prefix}{lt['lt_id']}"} for lt in lts]
+            all_lts.extend(prefixed_lts)
+        else:
+            lt_id_prefix = ""
+            all_lts.extend(lts)
+
         type12_lts = [lt for lt in lts if lt.get("knowledge_type") in TYPE_1_2]
 
         if not type12_lts:
@@ -646,7 +675,7 @@ async def generate_criterion_bank_4c4b(
                 crit_id = f"{source_slug}_crit_{crit_counter:04d}"
                 strand_criteria.append({
                     "criterion_id": crit_id,
-                    "associated_lt_ids": [lt_id],
+                    "associated_lt_ids": [f"{lt_id_prefix}{lt_id}"],
                     "strand": strand_slug_out,
                     "criterion_statement": raw["criterion_statement"],
                     "criterion_label": raw["criterion_label"],

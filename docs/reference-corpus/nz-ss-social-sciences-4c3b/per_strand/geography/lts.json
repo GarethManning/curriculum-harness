@@ -84,7 +84,9 @@
         "blk_0024_item_01",
         "blk_0063_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -152,7 +154,9 @@
         "blk_0062_item_02",
         "blk_0063_item_14"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -215,7 +219,9 @@
         "blk_0063_item_12",
         "blk_0063_item_13"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_03_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -280,7 +286,9 @@
         "blk_0062_item_01",
         "blk_0062_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_03_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -412,7 +420,9 @@
         "blk_0124_item_05",
         "blk_0124_item_06"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_04_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -537,7 +547,9 @@
         "blk_0124_item_11",
         "blk_0124_item_12"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_05_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -644,7 +656,9 @@
       "kud_item_ids": [
         "blk_0106_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_06_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -758,7 +772,9 @@
         "blk_0124_item_15",
         "blk_0124_item_16"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_07_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -807,10 +823,7 @@
         "blk_0122_item_01",
         "blk_0123_item_01"
       ],
-      "prerequisite_lts": [
-        "Understanding Climate Change Mechanisms",
-        "Analyzing Climate Change Data and Impacts"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -924,7 +937,9 @@
       "kud_item_ids": [
         "blk_0144_item_04"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_08_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {

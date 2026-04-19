@@ -93,7 +93,9 @@
         "blk_0022_item_02",
         "blk_0022_item_03"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -152,7 +154,9 @@
       "kud_item_ids": [
         "blk_0024_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -277,7 +281,9 @@
         "blk_0042_item_01",
         "blk_0044_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -463,9 +469,7 @@
         "blk_0057_item_01",
         "blk_0058_item_01"
       ],
-      "prerequisite_lts": [
-        "Understanding Legal Rights and Foundations"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {

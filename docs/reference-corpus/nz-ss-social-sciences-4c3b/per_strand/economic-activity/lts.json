@@ -86,7 +86,9 @@
         "blk_0035_item_01",
         "blk_0038_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -145,7 +147,9 @@
       "kud_item_ids": [
         "blk_0037_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_02"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -270,7 +274,9 @@
         "blk_0041_item_01",
         "blk_0044_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -383,7 +389,9 @@
         "blk_0039_item_01",
         "blk_0040_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_03_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -498,7 +506,9 @@
       "kud_item_ids": [
         "blk_0042_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_04_lt_01"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -552,7 +562,7 @@
       "cluster_id": "cluster_04",
       "competency_name": "Business Operations and Enterprise",
       "lt_name": "Evaluating Values-Based Enterprise Models",
-      "lt_definition": "I can evaluate how different values and pūtake shape various forms of business and enterprise.",
+      "lt_definition": "I can evaluate how different values and p\u016btake shape various forms of business and enterprise.",
       "knowledge_type": "Type 2",
       "assessment_route": "reasoning_quality_rubric",
       "kud_item_ids": [
@@ -560,7 +570,9 @@
         "blk_0029_item_01",
         "blk_0043_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_04_lt_02"
+      ],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -676,7 +688,10 @@
       "kud_item_ids": [
         "blk_0033_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_01_lt_01",
+        "cluster_01_lt_02"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {

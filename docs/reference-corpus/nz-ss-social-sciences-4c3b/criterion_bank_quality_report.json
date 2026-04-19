@@ -1,0 +1,549 @@
+{
+  "source_slug": "nz-social-sciences",
+  "strand_summaries": [
+    {
+      "strand": "history",
+      "criteria_count": 49,
+      "edge_count": 23,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "civics-and-society",
+      "criteria_count": 14,
+      "edge_count": 11,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "geography",
+      "criteria_count": 31,
+      "edge_count": 24,
+      "failed_lts": [],
+      "skipped": false
+    },
+    {
+      "strand": "economic-activity",
+      "criteria_count": 21,
+      "edge_count": 18,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "dag_validation": {
+    "passed": true,
+    "errors": []
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 115,
+    "sample_size": 20,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 20,
+    "audit_rows": [
+      {
+        "lt_id": "history_cluster_05_lt_01",
+        "lt_name": "Ancient Chinese Agricultural and Social Systems",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0022",
+          "nz-social-sciences_crit_0023"
+        ],
+        "decomposition_rationale": "Agricultural innovations and their demographic impact form a distinct, assessable knowledge domain separate from social organization structures."
+      },
+      {
+        "lt_id": "history_cluster_04_lt_02",
+        "lt_name": "Analyzing Ancient Greek Historical Impact",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0019",
+          "nz-social-sciences_crit_0020",
+          "nz-social-sciences_crit_0021"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on analyzing political developments and their causal relationships, which is a distinct cognitive operation from comparison or significance evaluation."
+      },
+      {
+        "lt_id": "history_cluster_06_lt_02",
+        "lt_name": "Elizabethan Social and Cultural Features",
+        "knowledge_type": "Type 1",
+        "criteria_count": 4,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0029",
+          "nz-social-sciences_crit_0030",
+          "nz-social-sciences_crit_0031",
+          "nz-social-sciences_crit_0032"
+        ],
+        "decomposition_rationale": "Social structure forms one coherent domain covering class hierarchy and gender roles within the same societal framework."
+      },
+      {
+        "lt_id": "economic-activity_cluster_05_lt_01",
+        "lt_name": "Understanding Credit and Debt Systems",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0113",
+          "nz-social-sciences_crit_0114"
+        ],
+        "decomposition_rationale": "This criterion focuses on the operational understanding of credit systems and borrowing mechanisms."
+      },
+      {
+        "lt_id": "economic-activity_cluster_04_lt_03",
+        "lt_name": "Evaluating Values-Based Enterprise Models",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0112"
+        ],
+        "decomposition_rationale": "Single criterion as the LT involves one cognitive act (evaluate) applied to one integrated concept domain (values/p\u016btake influence on enterprise forms). The enumerated examples represent scope illustration within this unified evaluative task."
+      },
+      {
+        "lt_id": "geography_cluster_04_lt_01",
+        "lt_name": "Tectonic Processes and Rock Formation",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0074",
+          "nz-social-sciences_crit_0075"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the tectonic processes aspect of the learning target, covering plate movements and their role in creating Earth's surface features."
+      },
+      {
+        "lt_id": "history_cluster_03_lt_02",
+        "lt_name": "Analysing Cultural Exchange Impacts",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0014",
+          "nz-social-sciences_crit_0015"
+        ],
+        "decomposition_rationale": "Single criterion because both 'causes' and 'consequences' involve the same analytical cognitive operation applied to the same historical period and content domain, making them inseparable in meaningful assessment."
+      },
+      {
+        "lt_id": "geography_cluster_03_lt_01",
+        "lt_name": "Understanding Urbanisation Patterns and Processes",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0066",
+          "nz-social-sciences_crit_0067"
+        ],
+        "decomposition_rationale": "This criterion focuses on the explanatory cognitive act regarding urban development processes, covering the foundational understanding of how cities form and grow."
+      },
+      {
+        "lt_id": "geography_cluster_03_lt_02",
+        "lt_name": "Analysing Urban Geographic Data and Evidence",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0068",
+          "nz-social-sciences_crit_0069",
+          "nz-social-sciences_crit_0070"
+        ],
+        "decomposition_rationale": "Groups related quantitative analysis skills for urban population data that share common assessment approaches."
+      },
+      {
+        "lt_id": "history_cluster_06_lt_01",
+        "lt_name": "Elizabethan Political and Religious Systems",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0027",
+          "nz-social-sciences_crit_0028"
+        ],
+        "decomposition_rationale": "Political and religious systems represent distinct domains that can be separately assessed - a student could demonstrate knowledge of government structure without understanding religious practices."
+      },
+      {
+        "lt_id": "geography_cluster_06_lt_01",
+        "lt_name": "Analyzing Human-Environment Interactions",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0084",
+          "nz-social-sciences_crit_0085"
+        ],
+        "decomposition_rationale": "This criterion focuses on understanding the motivations and purposes behind human-environment interactions, which is conceptually distinct from analyzing their impacts."
+      },
+      {
+        "lt_id": "history_cluster_09_lt_01",
+        "lt_name": "Roman Society and Government Structure",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0042",
+          "nz-social-sciences_crit_0043",
+          "nz-social-sciences_crit_0044"
+        ],
+        "decomposition_rationale": "Roman social structure represents a distinct knowledge domain that can be assessed independently from government systems through questions about class hierarchy and social roles."
+      },
+      {
+        "lt_id": "geography_cluster_08_lt_01",
+        "lt_name": "Identifying Regional Characteristics",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0092",
+          "nz-social-sciences_crit_0093"
+        ],
+        "decomposition_rationale": "Physical and human characteristics represent distinct knowledge domains that can be assessed separately, as students may demonstrate understanding of one without the other."
+      },
+      {
+        "lt_id": "geography_cluster_03_lt_03",
+        "lt_name": "Evaluating Urbanisation Impacts and Consequences",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0071",
+          "nz-social-sciences_crit_0072",
+          "nz-social-sciences_crit_0073"
+        ],
+        "decomposition_rationale": "Social, economic, and environmental consequences represent distinct domains of impact that can be independently assessed and have different knowledge bases and evaluative frameworks."
+      },
+      {
+        "lt_id": "economic-activity_cluster_05_lt_02",
+        "lt_name": "Applying Financial Planning Tools",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0115"
+        ],
+        "decomposition_rationale": "This is one criterion as it involves a single cognitive process of applying budgeting tools to financial decision-making, with no separable sub-skills that could be independently assessed."
+      },
+      {
+        "lt_id": "economic-activity_cluster_04_lt_01",
+        "lt_name": "Understanding Business Financial Operations",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0108",
+          "nz-social-sciences_crit_0109",
+          "nz-social-sciences_crit_0110"
+        ],
+        "decomposition_rationale": "Revenue generation, cost management, and profit calculation represent three distinct business concepts that can be independently assessed and taught."
+      },
+      {
+        "lt_id": "geography_cluster_06_lt_02",
+        "lt_name": "Evaluating Environmental Responsibility",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0086"
+        ],
+        "decomposition_rationale": "This LT contains a single analytical task examining the relationship between two factors (values and place connection) and environmental responsibility, requiring one unified assessment approach."
+      },
+      {
+        "lt_id": "geography_cluster_05_lt_02",
+        "lt_name": "Human Impacts on Rainforest Ecosystems",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0081",
+          "nz-social-sciences_crit_0082",
+          "nz-social-sciences_crit_0083"
+        ],
+        "decomposition_rationale": "Analysing causes requires distinct cognitive skills from analysing consequences - students could demonstrate understanding of why deforestation occurs without necessarily understanding its impacts."
+      },
+      {
+        "lt_id": "economic-activity_cluster_01_lt_03",
+        "lt_name": "Evaluating Banking Services and Options",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0099"
+        ],
+        "decomposition_rationale": "Single criterion as this involves one cognitive act (analyse) applied to one domain (banking services meeting financial needs). No separable sub-skills present."
+      },
+      {
+        "lt_id": "history_cluster_05_lt_02",
+        "lt_name": "Ancient Chinese Governance and Political Structure",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "nz-social-sciences_crit_0024"
+        ],
+        "decomposition_rationale": "Single criterion appropriate as all KUD items relate to interconnected aspects of one political system - the hierarchical structure where kings held central authority while regional leaders assisted in governance."
+      }
+    ],
+    "flags": []
+  },
+  "scope_drift_check": {
+    "sample_size": 10,
+    "flags_found": 0,
+    "flags": [],
+    "rows": [
+      {
+        "criterion_id": "nz-social-sciences_crit_0111",
+        "lt_id": "economic-activity_cluster_04_lt_02",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "business",
+          "case",
+          "costs",
+          "pricing",
+          "revenue"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0008",
+        "lt_id": "history_cluster_02_lt_02",
+        "overlap_word_count": 10,
+        "overlap_sample": [
+          "affected",
+          "analyze",
+          "eruption",
+          "events",
+          "like"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0012",
+        "lt_id": "history_cluster_03_lt_01",
+        "overlap_word_count": 8,
+        "overlap_sample": [
+          "contact",
+          "describe",
+          "developments",
+          "early",
+          "european"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0093",
+        "lt_id": "geography_cluster_08_lt_01",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "characteristics",
+          "define",
+          "human",
+          "identify",
+          "region"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0040",
+        "lt_id": "history_cluster_08_lt_02",
+        "overlap_word_count": 3,
+        "overlap_sample": [
+          "different",
+          "historical",
+          "societies"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0109",
+        "lt_id": "economic-activity_cluster_04_lt_01",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "businesses",
+          "costs",
+          "explain",
+          "incur",
+          "operations"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0027",
+        "lt_id": "history_cluster_06_lt_01",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "describe",
+          "elizabethan",
+          "functioning",
+          "government",
+          "monarchy"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0074",
+        "lt_id": "geography_cluster_04_lt_01",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "create",
+          "explain",
+          "features",
+          "geological",
+          "movements"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0023",
+        "lt_id": "history_cluster_05_lt_01",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "ancient",
+          "chinese",
+          "describe",
+          "organization",
+          "social"
+        ]
+      },
+      {
+        "criterion_id": "nz-social-sciences_crit_0020",
+        "lt_id": "history_cluster_04_lt_02",
+        "overlap_word_count": 2,
+        "overlap_sample": [
+          "ancient",
+          "greek"
+        ]
+      }
+    ]
+  },
+  "token_usage": {
+    "total_input_tokens": 91653,
+    "total_output_tokens": 35209,
+    "per_stage": {
+      "other": {
+        "input": 91653,
+        "output": 35209,
+        "calls": 61,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_results": [
+    {
+      "status": "ok",
+      "from": "unified_criteria.json",
+      "to": "unified_rubrics.json",
+      "pre_count": 57,
+      "post_count": 57,
+      "pre_gate_fail": 27,
+      "post_gate_fail": 27,
+      "regression_ok": true
+    },
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 23,
+      "post_count": 23,
+      "pre_gate_fail": 18,
+      "post_gate_fail": 18,
+      "regression_ok": true
+    },
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 7,
+      "post_count": 7,
+      "pre_gate_fail": 1,
+      "post_gate_fail": 1,
+      "regression_ok": true
+    },
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 15,
+      "post_count": 15,
+      "pre_gate_fail": 4,
+      "post_gate_fail": 4,
+      "regression_ok": true
+    },
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 12,
+      "post_count": 12,
+      "pre_gate_fail": 4,
+      "post_gate_fail": 4,
+      "regression_ok": true
+    }
+  ],
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 30,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "history_cluster_01_lt_02": [
+        "history_cluster_01_lt_01"
+      ],
+      "history_cluster_01_lt_03": [
+        "history_cluster_01_lt_01"
+      ],
+      "history_cluster_02_lt_02": [
+        "history_cluster_02_lt_01"
+      ],
+      "history_cluster_03_lt_02": [
+        "history_cluster_03_lt_01"
+      ],
+      "history_cluster_04_lt_02": [
+        "history_cluster_04_lt_01"
+      ],
+      "history_cluster_05_lt_02": [
+        "history_cluster_05_lt_01"
+      ],
+      "history_cluster_06_lt_03": [
+        "history_cluster_06_lt_01"
+      ],
+      "history_cluster_07_lt_03": [
+        "history_cluster_07_lt_01"
+      ],
+      "history_cluster_09_lt_03": [
+        "history_cluster_09_lt_01"
+      ],
+      "civics-and-society_cluster_01_lt_02": [
+        "civics-and-society_cluster_01_lt_01"
+      ],
+      "civics-and-society_cluster_01_lt_03": [
+        "civics-and-society_cluster_01_lt_01"
+      ],
+      "civics-and-society_cluster_02_lt_02": [
+        "civics-and-society_cluster_02_lt_01"
+      ],
+      "geography_cluster_01_lt_02": [
+        "geography_cluster_01_lt_01"
+      ],
+      "geography_cluster_03_lt_01": [
+        "geography_cluster_01_lt_01"
+      ],
+      "geography_cluster_03_lt_02": [
+        "geography_cluster_03_lt_01"
+      ],
+      "geography_cluster_03_lt_03": [
+        "geography_cluster_03_lt_01"
+      ],
+      "geography_cluster_04_lt_02": [
+        "geography_cluster_04_lt_01"
+      ],
+      "geography_cluster_05_lt_02": [
+        "geography_cluster_05_lt_01"
+      ],
+      "geography_cluster_06_lt_02": [
+        "geography_cluster_06_lt_01"
+      ],
+      "geography_cluster_07_lt_02": [
+        "geography_cluster_07_lt_01"
+      ],
+      "geography_cluster_08_lt_02": [
+        "geography_cluster_08_lt_01"
+      ],
+      "economic-activity_cluster_01_lt_02": [
+        "economic-activity_cluster_01_lt_01"
+      ],
+      "economic-activity_cluster_01_lt_03": [
+        "economic-activity_cluster_01_lt_02"
+      ],
+      "economic-activity_cluster_02_lt_02": [
+        "economic-activity_cluster_02_lt_01"
+      ],
+      "economic-activity_cluster_03_lt_02": [
+        "economic-activity_cluster_03_lt_01"
+      ],
+      "economic-activity_cluster_04_lt_02": [
+        "economic-activity_cluster_04_lt_01"
+      ],
+      "economic-activity_cluster_04_lt_03": [
+        "economic-activity_cluster_04_lt_02"
+      ],
+      "economic-activity_cluster_05_lt_02": [
+        "economic-activity_cluster_01_lt_01",
+        "economic-activity_cluster_01_lt_02"
+      ]
+    }
+  }
+}
