@@ -138,12 +138,39 @@ def _word_count_class(n: int, limit: int) -> str:
     return "within_limit"
 
 
+_INFLECTION_SUFFIXES = ("ies", "ing", "ed", "es", "s", "d")
+
+
+def _lemmatise(word: str) -> set[str]:
+    """Return a small set of candidate lemmas for ``word``.
+
+    Kept in sync with ``criterion_gates._lemmatise`` — the two modules
+    MUST agree on what counts as a verb match, or self-consistency will
+    see false disagreements where the generator returns ``none`` but
+    the gates correctly recognise the inflected form.
+    """
+    w = word.lower()
+    candidates = {w}
+    for suf in _INFLECTION_SUFFIXES:
+        if len(w) > len(suf) + 2 and w.endswith(suf):
+            stem = w[: -len(suf)]
+            candidates.add(stem)
+            if suf == "ies":
+                candidates.add(stem + "y")
+            if suf in ("ed", "ing"):
+                candidates.add(stem + "e")
+    return candidates
+
+
 def _dominant_verb_bucket(text: str) -> str:
-    lower = text.lower()
     buckets: Counter[str] = Counter()
-    for verb, bucket in _VERB_BUCKETS.items():
-        if re.search(rf"\b{re.escape(verb)}(s|d|ing|ed)?\b", lower):
-            buckets[bucket] += 1
+    for m in re.finditer(r"[A-Za-z']+", text):
+        candidates = _lemmatise(m.group(0))
+        for cand in candidates:
+            bucket = _VERB_BUCKETS.get(cand)
+            if bucket is not None:
+                buckets[bucket] += 1
+                break
     if not buckets:
         return "none"
     return buckets.most_common(1)[0][0]
