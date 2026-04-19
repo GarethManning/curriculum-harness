@@ -431,14 +431,17 @@ def detect_strands(content: str) -> StrandDetectionResult:
     uncertain_candidates: list[StrandResult] = []
 
     for idx, (line_idx, heading_text) in enumerate(candidates):
-        # Determine line_end: up to the next candidate or end of file
-        next_idx = candidates[idx + 1][0] if idx + 1 < len(candidates) else len(lines)
+        # Temporary line_end: up to the next candidate or end of file.
+        # This is refined in Step 3b after we know which candidates are confirmed,
+        # so that each strand's content extends to the next CONFIRMED strand
+        # boundary rather than stopping at any non-strand heading-like line.
+        next_candidate_idx = candidates[idx + 1][0] if idx + 1 < len(candidates) else len(lines)
         score, signals = _teaching_point_score(lines, line_idx)
 
         strand = StrandResult(
             name=heading_text,
             line_start=line_idx,
-            line_end=next_idx,
+            line_end=next_candidate_idx,  # refined in Step 3b
             confidence=score,
             signals=signals,
         )
@@ -447,6 +450,16 @@ def detect_strands(content: str) -> StrandDetectionResult:
             confirmed.append(strand)
         elif score > 0:
             uncertain_candidates.append(strand)
+
+    # Step 3b: Recompute line_end for confirmed strands using the next CONFIRMED
+    # strand's line_start. This ensures that non-strand heading-like lines (e.g.
+    # "During Year 4", "During Year 5" in NZ curriculum) between two confirmed
+    # strands do not truncate the content slice for the preceding strand.
+    for idx, strand in enumerate(confirmed):
+        if idx + 1 < len(confirmed):
+            strand.line_end = confirmed[idx + 1].line_start
+        else:
+            strand.line_end = len(lines)
 
     # Step 4: Check for lens-heading single-strand signal
     if lens_headings and not confirmed:
