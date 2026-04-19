@@ -1,7 +1,7 @@
 # Criterion Bank Schema — v1
 
-**Status:** Sketch for Session 4c-1. This schema defines the structure Session 4c-4 will produce.
-**Date:** 2026-04-19
+**Status:** Updated for Session 4c-4. `strand` field added as mandatory.
+**Date:** 2026-04-19 (updated 2026-04-19)
 
 ## Purpose
 
@@ -69,6 +69,16 @@ Which KUD item or source bullet this criterion traces back to. Format: the `item
 
 ---
 
+### `strand`
+
+**Type:** `string` — mandatory.
+
+The strand this criterion belongs to. For multi-strand sources (e.g. DfE KS3 Maths, NZ Social Sciences), this is the strand slug (e.g. `"number"`, `"history"`). For single-strand sources (e.g. Welsh CfW H&W, Common Core 7.RP, Ontario G7 History), set to `"single_strand"`.
+
+**Rationale:** Consistent shape across all sources — consumers do not need a null-check or a branch for single-strand sources. `"single_strand"` is an explicit sentinel that signals the source has no strand division, not that the field was omitted. Required for DAG validation: cross-strand prerequisite edges are rejected in v1 scope (within-strand only).
+
+---
+
 ### `schema_version`
 
 **Type:** `string` — always `"v1"` for entries conforming to this schema.
@@ -86,4 +96,4 @@ Which KUD item or source bullet this criterion traces back to. Format: the `item
 
 ---
 
-*Schema v1 sketched 2026-04-19 (Session 4c-1). Session 4c-4 will produce criterion banks conforming to this schema across all five reference sources.*
+*Schema v1 sketched 2026-04-19 (Session 4c-1). `strand` field added as mandatory 2026-04-19 (Session 4c-4 pre-work). Session 4c-4 produces criterion banks conforming to this schema for anchor sources; 4c-4b for remaining sources.*
