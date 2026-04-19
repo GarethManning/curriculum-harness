@@ -43,6 +43,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 
+from curriculum_harness._anthropic import LEDGER as _TOKEN_LEDGER
 from curriculum_harness.reference_authoring.criterion.generate_criteria import (
     generate_criteria_sync,
 )
@@ -1151,6 +1152,7 @@ def _stage_summary_markdown(
 def main(argv: list[str] | None = None) -> int:
     args = _parse_args(argv)
     load_dotenv()
+    _TOKEN_LEDGER.reset()
     os.makedirs(args.out, exist_ok=True)
 
     inventory_path = os.path.join(args.out, "inventory.json")
@@ -1257,6 +1259,16 @@ def main(argv: list[str] | None = None) -> int:
         report_path = os.path.join(args.out, "quality_report.md")
         with open(report_path, "w", encoding="utf-8") as fh:
             fh.write(kud_report_md)
+        try:
+            import json as _json
+            with open(report_json_path, encoding="utf-8") as _fh:
+                _rpt = _json.load(_fh)
+            _rpt["token_usage"] = _TOKEN_LEDGER.to_dict()
+            with open(report_json_path, "w", encoding="utf-8") as _fh:
+                _json.dump(_rpt, _fh, indent=2)
+        except Exception:
+            pass
+        print(_TOKEN_LEDGER.summary_line(), flush=True)
         print("[refauth] --skip-lts set; stopping after KUD gates.", flush=True)
         return 0
 
@@ -1519,6 +1531,18 @@ def main(argv: list[str] | None = None) -> int:
         fh.write(extended_md)
     print(f"[refauth] extended quality report → {report_path}", flush=True)
 
+    # Append token_usage to quality_report.json now that all stages have run.
+    try:
+        import json as _json
+        with open(report_json_path, encoding="utf-8") as _fh:
+            _rpt = _json.load(_fh)
+        _rpt["token_usage"] = _TOKEN_LEDGER.to_dict()
+        with open(report_json_path, "w", encoding="utf-8") as _fh:
+            _json.dump(_rpt, _fh, indent=2)
+    except Exception as _exc:
+        print(f"[refauth] WARNING: could not write token_usage to quality_report.json: {_exc}", flush=True)
+
+    print(_TOKEN_LEDGER.summary_line(), flush=True)
     print("[refauth] pipeline complete.", flush=True)
     return 0
 
