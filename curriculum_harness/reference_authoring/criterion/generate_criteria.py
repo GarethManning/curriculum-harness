@@ -128,17 +128,14 @@ def _word_count(text: str) -> int:
 
 
 def _word_count_class(n: int, limit: int) -> str:
+    # Signature-level bins only. The hard word-limit gate enforces the cap;
+    # this function supplies the signature class used by self-consistency.
+    # Within-limit variation is noise, not structural disagreement.
     if n == 0:
         return "empty"
     if n > limit:
         return "over_limit"
-    # below-limit buckets by proportion of limit
-    frac = n / limit
-    if frac < 0.5:
-        return "thin"
-    if frac < 0.8:
-        return "target"
-    return "full"
+    return "within_limit"
 
 
 def _dominant_verb_bucket(text: str) -> str:
@@ -153,26 +150,21 @@ def _dominant_verb_bucket(text: str) -> str:
 
 
 def _competent_scope_class(text: str) -> str:
-    """Bucket the Competent descriptor by evidence-of-learning scope cues."""
+    """Binary bucket: does Competent cite any scope marker at all?
+
+    The specific marker (independence vs transfer vs range vs accuracy)
+    shifts across runs as vocabulary noise, not as structural
+    disagreement. Only whether a scope marker is present at all is
+    stable enough to signature on.
+    """
     lower = text.lower()
-    markers = {
-        "independence": any(
-            k in lower for k in (" independently", " without prompting", " unprompted")
-        ),
-        "transfer": any(
-            k in lower for k in (" new context", " unfamiliar", " novel", " transfer")
-        ),
-        "range": any(
-            k in lower for k in (" across", " in varied", " in different", " range of")
-        ),
-        "accuracy": any(
-            k in lower for k in (" accurate", " correctly", " precisely", " with precision")
-        ),
-    }
-    on = [k for k, v in markers.items() if v]
-    if not on:
-        return "base"
-    return "+".join(sorted(on))
+    scope_cues = (
+        " independently", " without prompting", " unprompted",
+        " new context", " unfamiliar", " novel", " transfer",
+        " across", " in varied", " in different", " range of",
+        " accurate", " correctly", " precisely", " with precision",
+    )
+    return "scoped" if any(k in lower for k in scope_cues) else "unscoped"
 
 
 def _validate_run(

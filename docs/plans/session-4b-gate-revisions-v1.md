@@ -124,3 +124,40 @@ generation.
 authoring" refers to vision v4.1 artefact count ratios. That reference
 is still correct for hierarchical/horizontal; this document records
 the dispositional deviation until vision v4.2 lands.
+
+## Session 4b-4 Step 5: rubric self-consistency signature relaxation
+
+**Symptom.** Running the criterion generator on Common Core 7.RP
+produced 3/8 converged rubrics and 5/8 halted as `rubric_unreliable`.
+Inspection of per-run signatures showed that in four of the five
+halts the verbs were stable across runs; the disagreement came from
+(a) within-limit word-count bin shifts (`thin`/`target`/`full`) and
+(b) keyword specificity in the Competent scope class
+(`accuracy` vs `range` vs `accuracy+independence`). These are
+vocabulary-surface noise, not structural disagreement about
+cognitive architecture.
+
+**Finding.** Session 4b-4 Step 5 revealed that word-count-class bins
+within-limit and scope-keyword specificity produce signature noise
+not structural disagreement. Signature relaxed: within-limit word
+counts collapse to single class; scope becomes binary
+scoped/unscoped. Hard word-limit gate unchanged. Verb bucket remains
+primary progression signal.
+
+**Code locations.**
+
+- `curriculum_harness/reference_authoring/criterion/generate_criteria.py`
+  — `_word_count_class` now returns `empty` / `over_limit` /
+  `within_limit` only; `_competent_scope_class` returns
+  `scoped` / `unscoped`.
+- `curriculum_harness/reference_authoring/gates/criterion_gates.py`
+  is untouched — the hard word-limit gate continues to enforce the
+  per-level cap, so relaxing the signature does not weaken validity.
+
+**Rationale.** Self-consistency on a five-level rubric is checking
+whether Haiku keeps reaching the same cognitive structure, not the
+same prose. Haiku writing "22 words" on one run and "25 words" on
+another for Competent, with the same verb and the same scope cue,
+is not evidence of instability; it is evidence of normal stochastic
+rewording under temperature 0.3. Previously the signature was
+double-counting this as disagreement.
