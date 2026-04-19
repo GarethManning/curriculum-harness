@@ -337,17 +337,10 @@ class TestCaseF:
     AFTER Commit A: gate should pass.
     """
 
-    def test_currently_fails_due_to_missing_transfer_verbs(self):
-        """
-        Pre-fix baseline: 'transfers' and 'guides' not in OBSERVABLE_VERBS.
-        Gate incorrectly rejects the extending level.
-
-        If this assertion fails after Commit A, the fix worked.
-        """
-        result = _gate_observable_verb(CASE_F)
-        assert not result.passed, (
-            "CASE_F: pre-fix baseline — 'transfers'/'guides' not in OBSERVABLE_VERBS. "
-            "If this assertion fails, Commit A (OBSERVABLE_VERBS expansion) has been applied."
+    def test_passes_after_commit_a(self):
+        """After Commit A: 'transfers' and 'guides' are in OBSERVABLE_VERBS — gate must pass."""
+        assert _passes_observable_verb(CASE_F), (
+            "CASE_F: 'transfers'/'guides' are now in OBSERVABLE_VERBS — gate must pass"
         )
 
     def test_single_construct_passes(self):

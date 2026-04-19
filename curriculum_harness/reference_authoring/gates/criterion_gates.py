@@ -54,11 +54,21 @@ OBSERVABLE_VERBS = {
     # lists MUST agree — if the generator accepts a verb as bucketable
     # but the gate rejects it as non-observable, rubrics halt on the
     # gate rather than on real content issues.
+    #
+    # Core Bloom's taxonomy verbs (original set):
     "identify", "describe", "compare", "explain", "justify", "analyse", "analyze",
     "evaluate", "create", "apply", "interpret", "construct", "communicate",
     "recognise", "recognize", "use", "select", "choose", "perform", "demonstrate",
     "distinguish", "relate", "represent", "solve", "calculate", "compute",
     "recall", "name", "contrast", "critique",
+    #
+    # Transfer and integration verbs — dominate the Extending level in
+    # horizontal and dispositional domains. All clearly measurable.
+    # Added in 4c-2b after 17 false-positive observable_verb failures on
+    # Secondary RSHE 2025 and 3 on AP US Gov (Sonnet run, 2026-04-19).
+    "transfer", "connect", "guide", "model", "advise", "notice", "assess",
+    "adapt", "integrate", "signpost", "state", "help", "articulate",
+    "anticipate", "provide", "synthesize", "synthesise", "facilitate", "mentor",
 }
 
 BANNED_SUBSTRINGS = (

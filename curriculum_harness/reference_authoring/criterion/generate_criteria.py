@@ -83,18 +83,21 @@ LT_CONCURRENCY = 6
 _TYPE_1_2 = ("Type 1", "Type 2")
 
 _VERB_BUCKETS: dict[str, str] = {
-    # recognition / recall
+    # recognition / recall / noticing
     "identify": "recognise",
     "recognise": "recognise",
     "recognize": "recognise",
     "recall": "recognise",
     "name": "recognise",
-    # description / explanation
+    "notice": "recognise",
+    # description / explanation / articulation
     "describe": "describe",
     "explain": "describe",
     "communicate": "describe",
     "represent": "describe",
-    # comparison / analysis
+    "state": "describe",
+    "articulate": "describe",
+    # comparison / analysis / integration / anticipation
     "compare": "analyse",
     "contrast": "analyse",
     "analyse": "analyse",
@@ -102,11 +105,17 @@ _VERB_BUCKETS: dict[str, str] = {
     "distinguish": "analyse",
     "relate": "analyse",
     "interpret": "analyse",
-    # evaluation / justification
+    "integrate": "analyse",
+    "anticipate": "analyse",
+    "connect": "analyse",
+    "synthesize": "analyse",
+    "synthesise": "analyse",
+    # evaluation / justification / assessment
     "evaluate": "evaluate",
     "justify": "evaluate",
     "critique": "evaluate",
-    # procedure / application
+    "assess": "evaluate",
+    # procedure / application / transfer / extension
     "apply": "apply",
     "use": "apply",
     "solve": "apply",
@@ -118,6 +127,16 @@ _VERB_BUCKETS: dict[str, str] = {
     "create": "apply",
     "select": "apply",
     "choose": "apply",
+    "transfer": "apply",
+    "guide": "apply",
+    "model": "apply",
+    "advise": "apply",
+    "adapt": "apply",
+    "signpost": "apply",
+    "provide": "apply",
+    "facilitate": "apply",
+    "mentor": "apply",
+    "help": "apply",
 }
 
 _OBSERVABLE_VERBS = set(_VERB_BUCKETS.keys())
