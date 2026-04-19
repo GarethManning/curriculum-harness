@@ -117,3 +117,15 @@ No per-item validation.
 - Automated comparison pipeline.
 - Diagnostic report format.
 - Named Phase 1 rebuild priorities.
+
+## Deferred product work and surfaced concerns
+
+Items surfaced during the 4b arc that are either downstream product work (not harness work) or pipeline-behaviour observations worth recording but not acting on inside the arc. Captured here so they are not forgotten; not on the 4b critical path.
+
+1. **KUD visualisation app (Claude design) — consumes harness reference outputs.** KUDs in multi-column grouped tables, LTs in spreadsheet form, observation indicators with band progression clearly visible. Separate from the harness; for REAL School use of harness outputs initially, potentially generalisable. Product work, not harness work.
+
+2. **Cross-referencing multiple wellbeing curricula.** Gareth intends to run the harness across Welsh CfW (done), Scottish CfE Health and Wellbeing, PSHE Association, IB PYP Learner Profile, and similar sources, then cross-reference to inform Oura development. Requires CSV format discipline and consistent schema across sources. Shapes what reference-authoring pipeline needs to support.
+
+3. **Observation indicator band progression clarity.** Reviewing the Welsh CfW output, band indicators exist but the logic of progression between bands (what makes Band B observations different from Band A) is not as clear to a reader as the Type 1/2 band statement progression. Worth addressing in a later visualisation or rendering phase; not a harness bug.
+
+4. **Know-vs-Understand boundary fuzziness on prose dispositional sources.** The Welsh CfW KUD shows many items flagged classification_unstable specifically at the Know/Understand boundary — Welsh source language bundles "knowledge and understanding." Pipeline correctly flags this as instability rather than forcing false precision. Not a bug.
