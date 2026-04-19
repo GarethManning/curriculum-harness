@@ -1,0 +1,200 @@
+{
+  "source_slug": "common-core-g7-rp",
+  "pass1_failed_lts": [],
+  "dag_validation": {
+    "passed": true,
+    "errors": [],
+    "primary_agreement_rate": 0.9167,
+    "secondary_agreement_rate": 0.9167,
+    "hand_curated_edges_total": 12,
+    "primary_edges_recovered": 11,
+    "secondary_edges_recovered": 11,
+    "unrecovered_edges": [
+      {
+        "lt_a": "cluster_03_lt_01",
+        "lt_b": "cluster_04_lt_01",
+        "rationale": "no criterion in crit_A_set ['common-core-g7-rp_crit_0010'] found in prerequisite path to any criterion in crit_B_set ['common-core-g7-rp_crit_0013', 'common-core-g7-rp_crit_0014']"
+      }
+    ],
+    "tag_mismatch_edges": []
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 16,
+    "sample_size": 3,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 8,
+    "audit_rows": [
+      {
+        "lt_id": "cluster_01_lt_01",
+        "lt_name": "Computing Unit Rates from Ratios",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0001",
+          "common-core-g7-rp_crit_0002",
+          "common-core-g7-rp_crit_0003"
+        ],
+        "decomposition_rationale": "This criterion focuses on the foundational skill of computing unit rates from basic ratios before advancing to complex fractions or different units."
+      },
+      {
+        "lt_id": "cluster_01_lt_02",
+        "lt_name": "Understanding Unit Rate Concepts",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0004",
+          "common-core-g7-rp_crit_0005"
+        ],
+        "decomposition_rationale": "Single criterion appropriate as both explanation and relationship identification involve the same conceptual understanding of unit rates without separable cognitive operations."
+      },
+      {
+        "lt_id": "cluster_02_lt_01",
+        "lt_name": "Recognizing Proportional Relationships",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0006",
+          "common-core-g7-rp_crit_0007"
+        ],
+        "decomposition_rationale": "Testing equivalent ratios requires distinct computational skills and procedural knowledge separate from graphical analysis methods."
+      },
+      {
+        "lt_id": "cluster_02_lt_02",
+        "lt_name": "Representing Proportional Relationships",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0008",
+          "common-core-g7-rp_crit_0009"
+        ],
+        "decomposition_rationale": "Analysis of proportional relationships requires different cognitive skills than representation, as students could represent relationships without understanding their underlying structure."
+      },
+      {
+        "lt_id": "cluster_03_lt_01",
+        "lt_name": "Identifying the Constant of Proportionality",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0010"
+        ],
+        "decomposition_rationale": "Single criterion because this involves one cognitive operation (identification) applied to the same mathematical concept across different representations, with no separable sub-skills."
+      },
+      {
+        "lt_id": "cluster_03_lt_02",
+        "lt_name": "Using the Constant in Proportional Equations",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0011",
+          "common-core-g7-rp_crit_0012"
+        ],
+        "decomposition_rationale": "Writing equations is a distinct procedural skill from interpreting ordered pairs, requiring different cognitive operations and having separable failure modes."
+      },
+      {
+        "lt_id": "cluster_04_lt_01",
+        "lt_name": "Solving Multistep Ratio and Percent Problems",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0013",
+          "common-core-g7-rp_crit_0014"
+        ],
+        "decomposition_rationale": "Ratio and percent problems represent distinct mathematical domains with different solution strategies, requiring separate assessment approaches."
+      },
+      {
+        "lt_id": "cluster_04_lt_02",
+        "lt_name": "Applying Proportional Relationships to Real-World Contexts",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "common-core-g7-rp_crit_0015",
+          "common-core-g7-rp_crit_0016"
+        ],
+        "decomposition_rationale": "Decomposed into two criteria because identifying proportional relationships requires different cognitive skills than applying them to solve problems, and students could demonstrate recognition without being able to execute the solution process."
+      }
+    ],
+    "flags": []
+  },
+  "token_usage": {
+    "total_input_tokens": 9927,
+    "total_output_tokens": 5802,
+    "per_stage": {
+      "other": {
+        "input": 9927,
+        "output": 5802,
+        "calls": 9,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_result": {
+    "status": "ok",
+    "pre_count": 7,
+    "post_count": 7,
+    "pre_gate_fail": 1,
+    "post_gate_fail": 1,
+    "pre_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "post_keys": [
+      "competent_framing_flag",
+      "competent_framing_judge_rationale",
+      "knowledge_type",
+      "levels",
+      "lt_id",
+      "per_run_signatures",
+      "prerequisite_edges",
+      "propositional_lt_rubric_thin_flag",
+      "quality_gate_failures",
+      "quality_gate_passed",
+      "stability_diagnostics",
+      "stability_flag"
+    ],
+    "regression_ok": true
+  },
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 7,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "cluster_01_lt_01": [
+        "cluster_01_lt_02"
+      ],
+      "cluster_02_lt_01": [
+        "cluster_01_lt_02"
+      ],
+      "cluster_02_lt_02": [
+        "cluster_02_lt_01"
+      ],
+      "cluster_03_lt_01": [
+        "cluster_02_lt_01"
+      ],
+      "cluster_03_lt_02": [
+        "cluster_03_lt_01"
+      ],
+      "cluster_04_lt_01": [
+        "cluster_01_lt_01",
+        "cluster_02_lt_01",
+        "cluster_02_lt_02",
+        "cluster_03_lt_02"
+      ],
+      "cluster_04_lt_02": [
+        "cluster_02_lt_02",
+        "cluster_04_lt_01"
+      ]
+    }
+  }
+}

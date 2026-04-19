@@ -1,0 +1,589 @@
+{
+  "schema_version": "v1",
+  "source_slug": "common-core-g7-rp",
+  "source_name": "Common Core Grade 7 \u2014 Ratios and Proportional Relationships",
+  "strand": "single_strand",
+  "total_criteria": 16,
+  "criteria": [
+    {
+      "criterion_id": "common-core-g7-rp_crit_0001",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can compute unit rates from ratios involving whole numbers and simple fractions with like units.",
+      "criterion_label": "Basic Unit Rate Computation",
+      "source_provenance": [
+        "blk_0004_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to compute unit rates.",
+        "emerging": "Attempts unit rate computation but makes significant errors.",
+        "developing": "Computes unit rates with minor errors or incomplete work.",
+        "competent": "Accurately computes unit rates from ratios with whole numbers and simple fractions.",
+        "extending": "Efficiently computes unit rates using multiple solution strategies."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0004"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0004",
+          "to_criterion_id": "common-core-g7-rp_crit_0001",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding what a unit rate is and its characteristics is required before computing unit rates from ratios."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0002",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can compute unit rates from ratios involving complex fractions and different units of measurement.",
+      "criterion_label": "Advanced Unit Rate Computation",
+      "source_provenance": [
+        "blk_0004_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt with complex fractions or different units.",
+        "emerging": "Attempts but struggles with complex fraction manipulation or unit conversion.",
+        "developing": "Computes unit rates with complex fractions but makes occasional errors.",
+        "competent": "Accurately computes unit rates from complex fractions and handles different units correctly.",
+        "extending": "Demonstrates sophisticated understanding of unit relationships and fraction operations."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0004",
+        "common-core-g7-rp_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0004",
+          "to_criterion_id": "common-core-g7-rp_crit_0002",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Conceptual understanding of unit rates must precede computation with complex fractions and different units."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0001",
+          "to_criterion_id": "common-core-g7-rp_crit_0002",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Simple unit rate computation with whole numbers should be mastered before complex fractions and different units."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0003",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can express quantities and time intervals as complex fractions and simplify to rates per single unit of time.",
+      "criterion_label": "Time-Based Rate Computation",
+      "source_provenance": [
+        "blk_0005_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to work with time-based rates.",
+        "emerging": "Attempts to set up complex fractions but struggles with simplification.",
+        "developing": "Sets up complex fractions correctly but makes errors in simplification.",
+        "competent": "Accurately expresses time intervals as complex fractions and simplifies to unit rates.",
+        "extending": "Demonstrates fluency with multiple time units and complex rate calculations."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0004",
+        "common-core-g7-rp_crit_0002"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0004",
+          "to_criterion_id": "common-core-g7-rp_crit_0003",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding unit rate characteristics is essential before expressing time intervals as rates per single unit."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0002",
+          "to_criterion_id": "common-core-g7-rp_crit_0003",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Complex fraction computation provides foundation for expressing time intervals as complex fractions."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0004",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain what a unit rate is and identify its key characteristics.",
+      "criterion_label": "Define Unit Rate",
+      "source_provenance": [
+        "blk_0005_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot define unit rate or identify characteristics.",
+        "emerging": "Provides incomplete or unclear definition of unit rate.",
+        "developing": "Defines unit rate with minor gaps or imprecision.",
+        "competent": "Clearly explains unit rate as quantity per single unit with accurate characteristics.",
+        "extending": "Provides comprehensive definition with multiple examples and connections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0005",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how unit rates relate to ratios of quantities including fractions.",
+      "criterion_label": "Unit Rate Relationships",
+      "source_provenance": [
+        "blk_0004_item_01",
+        "blk_0005_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot connect unit rates to ratios.",
+        "emerging": "Shows limited understanding of unit rate-ratio connections.",
+        "developing": "Explains basic relationship between unit rates and simple ratios.",
+        "competent": "Clearly explains how unit rates derive from ratios including fractional quantities.",
+        "extending": "Demonstrates deep understanding with complex fractional ratio examples."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0006",
+      "associated_lt_ids": [
+        "cluster_02_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can test for equivalent ratios in tables or data to determine if two quantities are in a proportional relationship.",
+      "criterion_label": "Test Equivalent Ratios",
+      "source_provenance": [
+        "blk_0009_item_02",
+        "blk_0007_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify or test ratios.",
+        "emerging": "Attempts to find ratios but makes calculation errors.",
+        "developing": "Correctly calculates some ratios but struggles with equivalence testing.",
+        "competent": "Systematically tests equivalent ratios to accurately determine proportional relationships.",
+        "extending": "Efficiently identifies patterns and explains reasoning behind ratio equivalence."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0005"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0005",
+          "to_criterion_id": "common-core-g7-rp_crit_0006",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Understanding how unit rates relate to ratios supports recognition of proportional relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0007",
+      "associated_lt_ids": [
+        "cluster_02_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyze graphs on a coordinate plane to determine if two quantities are in a proportional relationship by checking for a straight line through the origin.",
+      "criterion_label": "Analyze Graphical Representations",
+      "source_provenance": [
+        "blk_0009_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot interpret coordinate graphs.",
+        "emerging": "Identifies lines but misses origin requirement.",
+        "developing": "Recognizes straight lines through origin but inconsistent application.",
+        "competent": "Accurately identifies proportional relationships by analyzing linearity and origin passage.",
+        "extending": "Explains why origin passage indicates proportionality and connects to ratio concepts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0008",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can analyze proportional relationships to identify their characteristics and structure.",
+      "criterion_label": "Analyze Proportional Relationships",
+      "source_provenance": [
+        "blk_0002_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify proportional relationship characteristics.",
+        "emerging": "Identifies some basic features of proportional relationships with support.",
+        "developing": "Identifies key characteristics like constant ratios in simple proportional relationships.",
+        "competent": "Systematically analyzes proportional relationships to identify structure, constant ratios, and key characteristics.",
+        "extending": "Analyzes complex proportional relationships and explains underlying mathematical structure."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0006",
+        "common-core-g7-rp_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0006",
+          "to_criterion_id": "common-core-g7-rp_crit_0008",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must be able to recognize proportional relationships before analyzing their characteristics and structure."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0007",
+          "to_criterion_id": "common-core-g7-rp_crit_0008",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Graph analysis for proportionality is required before deeper analysis of proportional relationship characteristics."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0009",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can represent proportional relationships using tables, graphs, equations, and other mathematical forms.",
+      "criterion_label": "Represent Proportional Relationships",
+      "source_provenance": [
+        "blk_0007_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot create mathematical representations of proportional relationships.",
+        "emerging": "Creates basic representations with significant support and guidance.",
+        "developing": "Creates accurate representations using one or two mathematical forms consistently.",
+        "competent": "Fluently represents proportional relationships using multiple forms including tables, graphs, and equations.",
+        "extending": "Creates sophisticated representations and connects between multiple mathematical forms seamlessly."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0008"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0008",
+          "to_criterion_id": "common-core-g7-rp_crit_0009",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding characteristics of proportional relationships is required before representing them in multiple forms."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0010",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the constant of proportionality across tables, graphs, equations, diagrams, and verbal descriptions.",
+      "criterion_label": "Identify Constant of Proportionality",
+      "source_provenance": [
+        "blk_0011_item_01",
+        "blk_0011_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify constant of proportionality in any representation.",
+        "emerging": "Identifies constant of proportionality in one familiar representation with support.",
+        "developing": "Identifies constant of proportionality in tables and simple equations with minor errors.",
+        "competent": "Accurately identifies constant of proportionality across tables, graphs, equations, diagrams, and verbal descriptions.",
+        "extending": "Identifies constant of proportionality in complex or unfamiliar representations."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0006",
+        "common-core-g7-rp_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0006",
+          "to_criterion_id": "common-core-g7-rp_crit_0010",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must recognize proportional relationships exist before identifying the constant of proportionality within them."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0007",
+          "to_criterion_id": "common-core-g7-rp_crit_0010",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Graph analysis for proportionality provides foundation for identifying constants of proportionality in graphs."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0011",
+      "associated_lt_ids": [
+        "cluster_03_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can write equations using the constant of proportionality to represent proportional relationships.",
+      "criterion_label": "Write Proportional Equations",
+      "source_provenance": [
+        "blk_0013_item_01",
+        "blk_0014_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot write proportional equations.",
+        "emerging": "Attempts to write equations but makes errors with constants.",
+        "developing": "Writes basic proportional equations with some guidance needed.",
+        "competent": "Correctly writes equations using constant of proportionality for various proportional relationships.",
+        "extending": "Writes complex proportional equations and explains variable relationships."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0010",
+          "to_criterion_id": "common-core-g7-rp_crit_0011",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must identify the constant of proportionality before using it to write equations."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0012",
+      "associated_lt_ids": [
+        "cluster_03_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can interpret ordered pairs and points on graphs of proportional relationships in terms of the situation.",
+      "criterion_label": "Interpret Ordered Pairs",
+      "source_provenance": [
+        "blk_0016_item_01",
+        "blk_0016_item_02",
+        "blk_0016_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot interpret ordered pairs meaningfully.",
+        "emerging": "Identifies coordinates but struggles with situational meaning.",
+        "developing": "Interprets some ordered pairs with partial understanding of context.",
+        "competent": "Correctly interprets ordered pairs including origin and unit rate points in situational context.",
+        "extending": "Explains deeper meaning of coordinate relationships and patterns."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0010",
+          "to_criterion_id": "common-core-g7-rp_crit_0012",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding the constant of proportionality is required to interpret points on proportional relationship graphs."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0013",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can solve multistep ratio problems involving proportional relationships.",
+      "criterion_label": "Multistep Ratio Problems",
+      "source_provenance": [
+        "blk_0002_item_03",
+        "blk_0018_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt at ratio problem solving.",
+        "emerging": "Attempts ratio problems but makes significant computational or conceptual errors.",
+        "developing": "Solves simple ratio problems but struggles with multistep processes.",
+        "competent": "Successfully solves multistep ratio problems using appropriate proportional reasoning and accurate calculations.",
+        "extending": "Efficiently solves complex ratio problems and explains reasoning clearly."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0001",
+        "common-core-g7-rp_crit_0006",
+        "common-core-g7-rp_crit_0011",
+        "common-core-g7-rp_crit_0009"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0001",
+          "to_criterion_id": "common-core-g7-rp_crit_0013",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Unit rate computation is a fundamental tool needed for solving multistep ratio problems."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0006",
+          "to_criterion_id": "common-core-g7-rp_crit_0013",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must recognize when proportional relationships apply before selecting them as solution strategies."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0011",
+          "to_criterion_id": "common-core-g7-rp_crit_0013",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Writing equations with constants of proportionality is required for equation-based multistep problem solving."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0009",
+          "to_criterion_id": "common-core-g7-rp_crit_0013",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Representational fluency with tables, graphs, and equations is required to set up multistep problems."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0014",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can solve multistep percent problems including interest, tax, markups, markdowns, gratuities, commissions, fees, percent change, and percent error.",
+      "criterion_label": "Multistep Percent Problems",
+      "source_provenance": [
+        "blk_0002_item_03",
+        "blk_0018_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt at percent problem solving.",
+        "emerging": "Attempts percent problems but makes significant computational or conceptual errors.",
+        "developing": "Solves basic percent problems but struggles with multistep applications.",
+        "competent": "Successfully solves multistep percent problems across various contexts with accurate calculations and appropriate methods.",
+        "extending": "Efficiently solves complex percent problems and connects solutions to real-world meaning."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0004",
+        "common-core-g7-rp_crit_0006"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0004",
+          "to_criterion_id": "common-core-g7-rp_crit_0014",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Unit rate concept is foundational for percent applications (percent as a rate per 100)."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0006",
+          "to_criterion_id": "common-core-g7-rp_crit_0014",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Proportional relationship recognition (via ratio tables) supports setting up percent problem structures."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0015",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify proportional relationships within real-world problem contexts.",
+      "criterion_label": "Identify Proportional Relationships",
+      "source_provenance": [
+        "blk_0002_item_03",
+        "blk_0018_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot recognize proportional relationships in problems.",
+        "emerging": "Recognizes some proportional relationships with significant support.",
+        "developing": "Identifies proportional relationships in familiar contexts with minor errors.",
+        "competent": "Accurately identifies proportional relationships in various real-world contexts.",
+        "extending": "Identifies complex proportional relationships in novel contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0006",
+        "common-core-g7-rp_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0006",
+          "to_criterion_id": "common-core-g7-rp_crit_0015",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing proportional relationships in formal contexts (tables) is prerequisite to recognizing them in real-world contexts."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0007",
+          "to_criterion_id": "common-core-g7-rp_crit_0015",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "medium",
+          "rationale": "Recognizing proportional relationships via graphs supports recognition in varied real-world representations."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "common-core-g7-rp_crit_0016",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply proportional relationships to solve multistep real-world and mathematical problems.",
+      "criterion_label": "Apply Proportional Problem Solving",
+      "source_provenance": [
+        "blk_0002_item_03",
+        "blk_0018_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot solve problems using proportional relationships.",
+        "emerging": "Solves simple proportional problems with extensive guidance.",
+        "developing": "Solves multistep proportional problems with some computational errors.",
+        "competent": "Successfully solves complex multistep problems using proportional relationships with accurate reasoning.",
+        "extending": "Solves sophisticated problems and explains solution strategies."
+      },
+      "prerequisite_criterion_ids": [
+        "common-core-g7-rp_crit_0013",
+        "common-core-g7-rp_crit_0009",
+        "common-core-g7-rp_crit_0015"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0013",
+          "to_criterion_id": "common-core-g7-rp_crit_0016",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Procedural fluency in structured multistep problems should precede real-world application."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0009",
+          "to_criterion_id": "common-core-g7-rp_crit_0016",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Multiple representation skills are required for contextual application of proportional relationships."
+        },
+        {
+          "from_criterion_id": "common-core-g7-rp_crit_0015",
+          "to_criterion_id": "common-core-g7-rp_crit_0016",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Must identify proportional relationships in contexts before applying them to solve problems."
+        }
+      ],
+      "schema_version": "v1"
+    }
+  ]
+}

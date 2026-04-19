@@ -465,5 +465,480 @@
       ]
     }
   ],
-  "halted_clusters": []
+  "halted_clusters": [],
+  "learning_targets": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Computing Unit Rates",
+      "lt_name": "Computing Unit Rates from Ratios",
+      "lt_definition": "I can compute unit rates from ratios of quantities, including fractions and different units.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0004_item_02",
+        "blk_0005_item_02"
+      ],
+      "prerequisite_lts": [
+        "cluster_01_lt_02"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Computing Unit Rates",
+      "lt_name": "Understanding Unit Rate Concepts",
+      "lt_definition": "I can explain what a unit rate is and how it relates to ratios of quantities.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0004_item_01",
+        "blk_0005_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Computing Unit Rates from Ratios",
+            "Understanding Unit Rate Concepts"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Recognizing and Representing Proportional Relationships",
+      "lt_name": "Recognizing Proportional Relationships",
+      "lt_definition": "I can identify whether two quantities are in a proportional relationship by testing equivalent ratios or analyzing graphical representations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_01",
+        "blk_0007_item_01",
+        "blk_0007_item_02",
+        "blk_0009_item_01",
+        "blk_0009_item_02",
+        "blk_0009_item_03"
+      ],
+      "prerequisite_lts": [
+        "cluster_01_lt_02"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognizing Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognizing Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Recognizing and Representing Proportional Relationships",
+      "lt_name": "Representing Proportional Relationships",
+      "lt_definition": "I can represent proportional relationships using multiple mathematical forms including tables, graphs, equations, and other representations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0002_item_02",
+        "blk_0007_item_03"
+      ],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognizing Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognizing Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Proportional Relationships",
+            "Representing Proportional Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Identifying and Using the Constant of Proportionality",
+      "lt_name": "Identifying the Constant of Proportionality",
+      "lt_definition": "I can identify the constant of proportionality across tables, graphs, equations, diagrams, and verbal descriptions.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0011_item_02"
+      ],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using the Constant in Proportional Equations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using the Constant to Express Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using Constant of Proportionality in Equations",
+            "Interpreting Points on Proportional Graphs"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Identifying and Using the Constant of Proportionality",
+      "lt_name": "Using the Constant in Proportional Equations",
+      "lt_definition": "I can use the constant of proportionality to write and interpret equations and ordered pairs in proportional relationships.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0013_item_01",
+        "blk_0014_item_01",
+        "blk_0016_item_01",
+        "blk_0016_item_02",
+        "blk_0016_item_03"
+      ],
+      "prerequisite_lts": [
+        "cluster_03_lt_01"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using the Constant in Proportional Equations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using the Constant to Express Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying the Constant of Proportionality",
+            "Using Constant of Proportionality in Equations",
+            "Interpreting Points on Proportional Graphs"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Solving Real-World Proportional Relationship Problems",
+      "lt_name": "Solving Multistep Ratio and Percent Problems",
+      "lt_definition": "I can solve multistep ratio and percent problems including simple interest, tax, markups, markdowns, gratuities, commissions, fees, percent increase and decrease, and percent error.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0018_item_02",
+        "blk_0002_item_03"
+      ],
+      "prerequisite_lts": [
+        "cluster_01_lt_01",
+        "cluster_02_lt_01",
+        "cluster_02_lt_02",
+        "cluster_03_lt_02"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Reasoning to Real-World Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Relationships to Real-World Contexts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Relationships to Real-World Contexts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 1', 'Type 2')): 1, (2, ('Type 2', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Solving Real-World Proportional Relationship Problems",
+      "lt_name": "Applying Proportional Relationships to Real-World Contexts",
+      "lt_definition": "I can apply proportional relationships to solve real-world and mathematical problems involving multiple steps and reasoning.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0002_item_03",
+        "blk_0018_item_01"
+      ],
+      "prerequisite_lts": [
+        "cluster_02_lt_02",
+        "cluster_04_lt_01"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Reasoning to Real-World Contexts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Relationships to Real-World Contexts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Solving Multistep Ratio and Percent Problems",
+            "Applying Proportional Relationships to Real-World Contexts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 2', 'Type 2'))",
+        "counts={(2, ('Type 1', 'Type 2')): 1, (2, ('Type 2', 'Type 2')): 2}"
+      ]
+    }
+  ]
 }
