@@ -449,3 +449,93 @@ def test_case_h_cross_cutting_excluded():
         assert "Working" not in s.name, (
             f"'Working mathematically' should not be a strand, got: {s.name}"
         )
+
+
+# ---------------------------------------------------------------------------
+# Case I (REGRESSION): Intermediate non-strand heading does not truncate span
+#
+# Regression test for the line_end bug found in session 4c-3b: strand line_end
+# was being set to the next *candidate* heading rather than the next *confirmed*
+# strand boundary. This caused NZ strands 2-4 to receive only 5 lines each.
+#
+# This test verifies that a non-strand heading appearing within a strand's body
+# (no teaching-point marker follows it) does not truncate the preceding strand's
+# content span. The orchestrator slices [line_start : line_end], so any dropped
+# lines would silently disappear from the corpus.
+# ---------------------------------------------------------------------------
+
+# Line numbers in this content (0-indexed):
+#  0: "History"
+#  1: "Knowledge"
+#  2: "The facts, concepts, principles, and theories to teach."
+#  3: content
+#  4: content
+#  5: ""
+#  6: "A note on sources"   <- candidate heading; NO teaching-point follows
+#  7: note content
+#  8: note content
+#  9: ""
+# 10: "Geography"
+# 11: "Knowledge"
+# 12: "The facts, concepts, principles, and theories to teach."
+# 13: content
+# 14: content
+_INTERMEDIATE_HEADING_CONTENT = """\
+History
+Knowledge
+The facts, concepts, principles, and theories to teach.
+The causes of World War One and the role of key nations.
+The sequence of events from 1914 to 1918.
+
+A note on sources
+Historical documents vary in reliability.
+Consider primary vs secondary sources carefully.
+
+Geography
+Knowledge
+The facts, concepts, principles, and theories to teach.
+How climate affects human settlement patterns.
+The distribution of world biomes and climate zones."""
+
+_INTERMEDIATE_HEADING_LINES = _INTERMEDIATE_HEADING_CONTENT.splitlines()
+_GEOGRAPHY_LINE = next(
+    i for i, ln in enumerate(_INTERMEDIATE_HEADING_LINES) if ln.strip() == "Geography"
+)
+
+
+def test_case_i_intermediate_heading_does_not_truncate_span():
+    """Case I (REGRESSION): Non-strand intermediate heading does not shrink strand span.
+
+    'A note on sources' is a candidate heading but has no teaching-point marker
+    within the lookahead window, so it is not confirmed as a strand.
+
+    The fix (4c-3b): after confirmation, strand line_end is recomputed from the
+    next *confirmed* strand boundary, not the next candidate heading.
+
+    Assertions:
+    1. Exactly 2 strands detected (History, Geography).
+    2. History's line_end covers all lines up to Geography's line_start — no
+       lines are silently dropped when the orchestrator slices the content.
+    """
+    result = run_and_check_strands(
+        _INTERMEDIATE_HEADING_CONTENT,
+        expected_names=["History", "Geography"],
+        context="Case I: intermediate heading span regression",
+    )
+
+    history = result.strands[0]
+    geography = result.strands[1]
+
+    assert geography.line_start == _GEOGRAPHY_LINE, (
+        f"Geography line_start={geography.line_start}, expected {_GEOGRAPHY_LINE}"
+    )
+
+    # History must cover all content up to Geography — no lines dropped.
+    # The orchestrator slices all_lines[history.line_start : history.line_end],
+    # so history.line_end must be >= geography.line_start to avoid a gap.
+    assert history.line_end >= geography.line_start, (
+        f"Gap detected: history.line_end={history.line_end} < "
+        f"geography.line_start={geography.line_start}. "
+        f"Lines {history.line_end}-{geography.line_start - 1} would be dropped. "
+        f"This is the line_end truncation bug from 4c-3b."
+    )
