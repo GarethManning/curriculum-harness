@@ -1,0 +1,4044 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-secondary-rshe-2025",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Family Structures and Legal Relationships",
+      "lt_name": "Legal Status of Family Relationships",
+      "lt_definition": "I can identify the legal rights and protections associated with different family structures including marriage, civil partnership, and cohabitation.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0008_item_01",
+        "blk_0010_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Relationships",
+            "Family Dynamics and Development"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Relationships",
+            "Family Dynamics and Development"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Structures",
+            "Family Dynamics and Development"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Family Structures and Legal Relationships",
+      "lt_name": "Family Dynamics and Development",
+      "lt_definition": "I can explain how families change over time and describe the characteristics of effective parenting and child development.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0013_item_01",
+        "blk_0015_item_01",
+        "blk_0015_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Relationships",
+            "Family Dynamics and Development"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Relationships",
+            "Family Dynamics and Development"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Legal Status of Family Structures",
+            "Family Dynamics and Development"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Healthy Romantic Relationships",
+      "lt_name": "Understanding Healthy Relationship Principles",
+      "lt_definition": "I can explain the principles of consent, trust, respect, and ethical behaviour that characterise healthy romantic relationships.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0021_item_01",
+        "blk_0034_item_01",
+        "blk_0034_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Judging Relationship Safety"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Evaluating Relationship Safety"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Evaluating Relationship Safety"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Healthy Romantic Relationships",
+      "lt_name": "Judging Relationship Safety",
+      "lt_definition": "I can judge when a relationship is unsafe and identify where to seek help when needed.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0017_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Judging Relationship Safety"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Evaluating Relationship Safety"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Healthy Relationship Principles",
+            "Evaluating Relationship Safety"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Respectful Relationships and Self-Worth",
+      "lt_name": "Understanding Equality and Self-Worth",
+      "lt_definition": "I can explain the importance of equality, self-esteem, and respectful treatment in relationships.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0023_item_02",
+        "blk_0025_item_01",
+        "blk_0025_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Practicing Kindness and Self-Development"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Sustained Respectful Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Communicating Respectfully in Relationships",
+            "Practising Respectful Treatment and Self-Development"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Respectful Relationships and Self-Worth",
+      "lt_name": "Respectful Communication Skills",
+      "lt_definition": "I can communicate respectfully in relationships and conflicts with others and strangers.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0028_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Practicing Kindness and Self-Development"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Sustained Respectful Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Communicating Respectfully in Relationships",
+            "Practising Respectful Treatment and Self-Development"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_03",
+      "cluster_id": "cluster_03",
+      "competency_name": "Respectful Relationships and Self-Worth",
+      "lt_name": "Practicing Kindness and Self-Development",
+      "lt_definition": "The student treats others with kindness and respect while developing personal interests and skills.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0023_item_01",
+        "blk_0025_item_02"
+      ],
+      "prerequisite_lts": [
+        "Understanding Equality and Self-Worth"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Practicing Kindness and Self-Development"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Respectful Communication Skills",
+            "Sustained Respectful Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Equality and Self-Worth",
+            "Communicating Respectfully in Relationships",
+            "Practising Respectful Treatment and Self-Development"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Addressing Bullying",
+      "lt_name": "Recognising Bullying Types and Impact",
+      "lt_definition": "I can identify different types of bullying and explain their impact on victims.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0030_item_01",
+        "blk_0030_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Addressing Bullying",
+      "lt_name": "Seeking Help for Bullying",
+      "lt_definition": "I can determine appropriate sources and methods for getting help regarding bullying situations.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0030_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "cluster_id": "cluster_04",
+      "competency_name": "Addressing Bullying",
+      "lt_name": "Bystander Responsibility for Reporting",
+      "lt_definition": "The student holds responsibility for reporting bullying when witnessed as a bystander.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0030_item_04"
+      ],
+      "prerequisite_lts": [
+        "Recognising Bullying Types and Impact"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognising Bullying Types and Impact",
+            "Seeking Help for Bullying",
+            "Bystander Responsibility for Reporting"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Managing Relationship Endings",
+      "lt_name": "Ending Relationships With Kindness",
+      "lt_definition": "I can end relationships or friendships using respectful communication that acknowledges the other person's feelings.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0032_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships With Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships with Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships With Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Managing Relationship Endings",
+      "lt_name": "Managing Difficult Ending Emotions",
+      "lt_definition": "I can identify and cope with difficult emotions like disappointment, hurt, or frustration when relationships end.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0032_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships With Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships with Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Ending Relationships With Kindness",
+            "Managing Difficult Ending Emotions"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "cluster_id": "cluster_06",
+      "competency_name": "Recognising Stereotypes and Power Dynamics",
+      "lt_name": "Understanding Stereotype Harm",
+      "lt_definition": "I can explain how stereotypes based on protected characteristics can cause damage and encourage prejudice.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0036_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Dynamics in Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm and Prejudice",
+            "Analysing Power Imbalances in Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Imbalances"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "cluster_id": "cluster_06",
+      "competency_name": "Recognising Stereotypes and Power Dynamics",
+      "lt_name": "Recognising Prejudice in Context",
+      "lt_definition": "I can identify misogyny and other forms of prejudice when they occur.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0036_item_02"
+      ],
+      "prerequisite_lts": [
+        "Understanding Stereotype Harm"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Dynamics in Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm and Prejudice",
+            "Analysing Power Imbalances in Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Imbalances"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_03",
+      "cluster_id": "cluster_06",
+      "competency_name": "Recognising Stereotypes and Power Dynamics",
+      "lt_name": "Analysing Power Dynamics in Relationships",
+      "lt_definition": "I can analyse how power inequalities affect behaviour and respect within relationships.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0038_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Dynamics in Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm and Prejudice",
+            "Analysing Power Imbalances in Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Stereotype Harm",
+            "Recognising Prejudice in Context",
+            "Analysing Power Imbalances"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 1', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 2')): 2, (2, ('Type 2', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "cluster_id": "cluster_07",
+      "competency_name": "Understanding Harmful Sexual Influences",
+      "lt_name": "Analysing Pornography's Harmful Influences",
+      "lt_definition": "I can explain how pornography negatively influences sexual attitudes and behaviours through normalisation of harm and power imbalances.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0040_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "cluster_id": "cluster_07",
+      "competency_name": "Understanding Harmful Sexual Influences",
+      "lt_name": "Evaluating Subcultural Sexual Ethics",
+      "lt_definition": "I can discuss how subcultures influence understanding of sexual ethics and analyse their impact on sexual norms.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0042_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analysing Pornography's Harmful Influences",
+            "Evaluating Subcultural Sexual Ethics"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "cluster_id": "cluster_08",
+      "competency_name": "Online Safety and Privacy",
+      "lt_name": "Protecting Personal Information Online",
+      "lt_definition": "I can identify appropriate privacy settings and explain why personal information should be protected in different online contexts.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0048_item_01",
+        "blk_0048_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "cluster_id": "cluster_08",
+      "competency_name": "Online Safety and Privacy",
+      "lt_name": "Recognising Social Media Content Authenticity",
+      "lt_definition": "I can identify potential signs of fake accounts, AI-generated content, and exaggerated profiles on social media platforms.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0050_item_01",
+        "blk_0050_item_02",
+        "blk_0050_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "cluster_id": "cluster_08",
+      "competency_name": "Online Safety and Privacy",
+      "lt_name": "Applying Consistent Online Behaviour Standards",
+      "lt_definition": "I can explain how behavioural expectations remain the same across online and offline contexts.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0046_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Protecting Personal Information Online",
+            "Recognising Social Media Content Authenticity",
+            "Applying Consistent Online Behaviour Standards"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "cluster_id": "cluster_09",
+      "competency_name": "Managing Digital Content and Image Sharing",
+      "lt_name": "Understanding Digital Content Risks and Laws",
+      "lt_definition": "I can explain the risks and legal consequences of sharing images online, including criminal penalties for indecent images.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0052_item_01",
+        "blk_0052_item_02",
+        "blk_0054_item_01",
+        "blk_0054_item_02",
+        "blk_0054_item_03",
+        "blk_0054_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Legal Consequences",
+            "Responding to Digital Content Circulation Issues",
+            "Practising Responsible Digital Content Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "cluster_id": "cluster_09",
+      "competency_name": "Managing Digital Content and Image Sharing",
+      "lt_name": "Responding to Digital Content Issues",
+      "lt_definition": "I can determine appropriate actions and reporting procedures when concerned about circulated material.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0056_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Legal Consequences",
+            "Responding to Digital Content Circulation Issues",
+            "Practising Responsible Digital Content Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_09_lt_03",
+      "cluster_id": "cluster_09",
+      "competency_name": "Managing Digital Content and Image Sharing",
+      "lt_name": "Practising Responsible Digital Sharing",
+      "lt_definition": "The student practises restraint in sharing personal material and refuses to forward inappropriate content received from others.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0052_item_03"
+      ],
+      "prerequisite_lts": [
+        "Understanding Digital Content Risks and Laws"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Legal Consequences",
+            "Responding to Digital Content Circulation Issues",
+            "Practising Responsible Digital Content Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Digital Content Risks and Laws",
+            "Responding to Digital Content Issues",
+            "Practising Responsible Digital Sharing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_10_lt_01",
+      "cluster_id": "cluster_10",
+      "competency_name": "Identifying Deepfakes and Harmful Online Content",
+      "lt_name": "Recognising Deepfakes and Harmful Content",
+      "lt_definition": "I can identify deepfakes and inappropriate online content, understanding their prevalence and potential harms.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0058_item_01",
+        "blk_0058_item_02",
+        "blk_0058_item_03",
+        "blk_0058_item_04",
+        "blk_0060_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Seeking Support for Harmful Exposure"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Understanding Support Resources and Content Impact"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Understanding Digital Content Risks",
+            "Seeking Support After Harmful Exposure"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(2, ('Type 1', 'Type 2')): 2, (3, ('Type 1', 'Type 1', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_10_lt_02",
+      "cluster_id": "cluster_10",
+      "competency_name": "Identifying Deepfakes and Harmful Online Content",
+      "lt_name": "Seeking Support for Harmful Exposure",
+      "lt_definition": "I can explain where to seek advice and support after exposure to harmful online content.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0061_item_01",
+        "blk_0061_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Seeking Support for Harmful Exposure"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Understanding Support Resources and Content Impact"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Deepfakes and Harmful Content",
+            "Understanding Digital Content Risks",
+            "Seeking Support After Harmful Exposure"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(2, ('Type 1', 'Type 2')): 2, (3, ('Type 1', 'Type 1', 'Type 2')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_11_lt_01",
+      "cluster_id": "cluster_11",
+      "competency_name": "Recognising Online Abuse and Exploitation",
+      "lt_name": "Identifying Technology-Enabled Abuse",
+      "lt_definition": "I can identify when technology is being used for bullying, harassment, stalking, or coercive behaviour.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0065_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Mediated Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_11_lt_02",
+      "cluster_id": "cluster_11",
+      "competency_name": "Recognising Online Abuse and Exploitation",
+      "lt_name": "Understanding Distorted Online Content",
+      "lt_definition": "I can explain how pornography and other online content presents distorted pictures that negatively affect behaviour and attitudes.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0068_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Mediated Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_11_lt_03",
+      "cluster_id": "cluster_11",
+      "competency_name": "Recognising Online Abuse and Exploitation",
+      "lt_name": "Seeking Support for Online Concerns",
+      "lt_definition": "I can identify appropriate sources of support when encountering concerning online behaviour or content.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0065_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Enabled Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying Technology-Mediated Abuse",
+            "Understanding Distorted Online Content",
+            "Seeking Support for Online Concerns"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_12_lt_01",
+      "cluster_id": "cluster_12",
+      "competency_name": "Online Scams and Emerging Technology Risks",
+      "lt_name": "Recognising Online Threats and Scams",
+      "lt_definition": "I can identify online scams, sextortion risks, and threats posed by emerging technologies including AI chatbots.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0071_item_01",
+        "blk_0073_item_01",
+        "blk_0073_item_02",
+        "blk_0075_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Threats and Scams",
+            "Evaluating and Responding to Digital Risks"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Scams and Technology Risks",
+            "Evaluating and Responding to Digital Threats"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Scams and Technology Risks",
+            "Evaluating and Responding to Digital Threats"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_12_lt_02",
+      "cluster_id": "cluster_12",
+      "competency_name": "Online Scams and Emerging Technology Risks",
+      "lt_name": "Evaluating and Responding to Digital Risks",
+      "lt_definition": "I can critically evaluate new technologies for potential risks and seek appropriate support when encountering scams or sextortion.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0073_item_03",
+        "blk_0073_item_04",
+        "blk_0075_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Threats and Scams",
+            "Evaluating and Responding to Digital Risks"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Scams and Technology Risks",
+            "Evaluating and Responding to Digital Threats"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising Online Scams and Technology Risks",
+            "Evaluating and Responding to Digital Threats"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_13_lt_01",
+      "cluster_id": "cluster_13",
+      "competency_name": "Consent and Boundaries in Relationships",
+      "lt_name": "Recognising and Communicating Consent and Boundaries",
+      "lt_definition": "I can recognise, communicate, and respect consent and boundaries in romantic and sexual relationships across all contexts.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0079_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_13_lt_02",
+      "cluster_id": "cluster_13",
+      "competency_name": "Consent and Boundaries in Relationships",
+      "lt_name": "Managing Relationship Pressure",
+      "lt_definition": "I can identify and resist pressure in relationships while avoiding putting pressure on others.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0081_item_01",
+        "blk_0081_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_13_lt_03",
+      "cluster_id": "cluster_13",
+      "competency_name": "Consent and Boundaries in Relationships",
+      "lt_name": "Understanding Care Beyond Consent",
+      "lt_definition": "I can explain how kindness and care for others requires more than just consent.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0079_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent and Boundaries",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Recognising and Communicating Consent",
+            "Managing Relationship Pressure",
+            "Understanding Care Beyond Consent"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_14_lt_01",
+      "cluster_id": "cluster_14",
+      "competency_name": "Assessing Trustworthiness and Personal Safety",
+      "lt_name": "Evaluating Trustworthiness and Safety",
+      "lt_definition": "I can assess whether people and situations are trustworthy and safe using appropriate criteria and reasoning.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0083_item_01",
+        "blk_0085_item_03",
+        "blk_0085_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Safety Strategies",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Safety Instincts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 2', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_14_lt_02",
+      "cluster_id": "cluster_14",
+      "competency_name": "Assessing Trustworthiness and Personal Safety",
+      "lt_name": "Seeking Help and Reporting Concerns",
+      "lt_definition": "I can identify appropriate sources of help and use effective strategies to seek assistance or report concerns.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0083_item_02",
+        "blk_0085_item_01",
+        "blk_0085_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Safety Strategies",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Safety Instincts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 2', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_14_lt_03",
+      "cluster_id": "cluster_14",
+      "competency_name": "Assessing Trustworthiness and Personal Safety",
+      "lt_name": "Trusting Personal Instincts",
+      "lt_definition": "The student trusts their instincts and acts on feelings when situations don't feel right.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0085_item_05"
+      ],
+      "prerequisite_lts": [
+        "Evaluating Trustworthiness and Safety"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Safety Strategies",
+            "Trusting Personal Instincts"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Evaluating Trustworthiness and Safety",
+            "Seeking Help and Reporting Concerns",
+            "Trusting Safety Instincts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 2', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 2', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 2', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_15_lt_01",
+      "cluster_id": "cluster_15",
+      "competency_name": "Understanding Sexual Harassment and Violence",
+      "lt_name": "Identifying Sexual Harassment and Violence",
+      "lt_definition": "I can identify what constitutes sexual harassment and violence including specific behaviours and concerning actions.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0089_item_01",
+        "blk_0092_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_15_lt_02",
+      "cluster_id": "cluster_15",
+      "competency_name": "Understanding Sexual Harassment and Violence",
+      "lt_name": "Understanding Victim Responsibility",
+      "lt_definition": "I can explain that sexual harassment and violence are never the fault of the victim.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0087_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Sexual Harassment and Violence",
+            "Understanding Victim Responsibility"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_16_lt_01",
+      "cluster_id": "cluster_16",
+      "competency_name": "Understanding Domestic Abuse and Exploitation",
+      "lt_name": "Identifying Domestic Abuse and Exploitation",
+      "lt_definition": "I can identify the key concepts and legal definitions of domestic abuse, exploitation, and related harmful practices.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0094_item_01",
+        "blk_0098_item_01",
+        "blk_0104_item_01",
+        "blk_0106_item_01",
+        "blk_0107_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse Forms",
+            "Recognising Exploitation and Harmful Practices",
+            "Understanding Legal Framework and Protections"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse and Exploitation",
+            "Understanding Legal Framework and Protections"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse and Exploitation",
+            "Understanding Legal Frameworks and Protections"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 1, (2, ('Type 1', 'Type 1')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_16_lt_02",
+      "cluster_id": "cluster_16",
+      "competency_name": "Understanding Domestic Abuse and Exploitation",
+      "lt_name": "Understanding Legal Framework and Protections",
+      "lt_definition": "I can explain the legal framework and statutory protections provided by domestic abuse legislation.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0102_item_01",
+        "blk_0102_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse Forms",
+            "Recognising Exploitation and Harmful Practices",
+            "Understanding Legal Framework and Protections"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse and Exploitation",
+            "Understanding Legal Framework and Protections"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Domestic Abuse and Exploitation",
+            "Understanding Legal Frameworks and Protections"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 1')): 1, (2, ('Type 1', 'Type 1')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_17_lt_01",
+      "cluster_id": "cluster_17",
+      "competency_name": "Recognising Harmful Sexual Norms and Seeking Support",
+      "lt_name": "Recognising Harmful Sexual Norms in Pornography",
+      "lt_definition": "I can identify how pornography normalises activities that can be emotionally or physically harmful.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0109_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognising Harmful Sexual Norms in Pornography",
+            "Accessing Support for Sexual Harm"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Harmful Sexual Norms in Pornography",
+            "Accessing Support for Sexual Harm"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Harmful Sexual Norms in Media",
+            "Accessing Support for Sexual Harm"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_17_lt_02",
+      "cluster_id": "cluster_17",
+      "competency_name": "Recognising Harmful Sexual Norms and Seeking Support",
+      "lt_name": "Accessing Support for Sexual Harm",
+      "lt_definition": "I can explain how to seek support for worrying or abusive sexual behaviour.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0111_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Recognising Harmful Sexual Norms in Pornography",
+            "Accessing Support for Sexual Harm"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Harmful Sexual Norms in Pornography",
+            "Accessing Support for Sexual Harm"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Harmful Sexual Norms in Media",
+            "Accessing Support for Sexual Harm"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_18_lt_01",
+      "cluster_id": "cluster_18",
+      "competency_name": "Healthy Sexual Relationships and Consent",
+      "lt_name": "Understanding Consensual Sexual Activity",
+      "lt_definition": "I can explain the principles of sexual consent and the conditions that make sexual activity positive and appropriate.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0115_item_01",
+        "blk_0117_item_01",
+        "blk_0119_item_01",
+        "blk_0119_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consensual Sexual Activity",
+            "Evaluating Ethical Sexual Behaviour"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consent and Sexual Readiness",
+            "Ethical Sexual Behaviour Beyond Consent"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consensual Sexual Activity",
+            "Evaluating Ethical Sexual Decision-Making"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_18_lt_02",
+      "cluster_id": "cluster_18",
+      "competency_name": "Healthy Sexual Relationships and Consent",
+      "lt_name": "Evaluating Ethical Sexual Behaviour",
+      "lt_definition": "I can analyse how kindness, care, and health considerations extend beyond consent in sexual relationships.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0119_item_03",
+        "blk_0121_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consensual Sexual Activity",
+            "Evaluating Ethical Sexual Behaviour"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consent and Sexual Readiness",
+            "Ethical Sexual Behaviour Beyond Consent"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Consensual Sexual Activity",
+            "Evaluating Ethical Sexual Decision-Making"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_19_lt_01",
+      "cluster_id": "cluster_19",
+      "competency_name": "Contraception and Pregnancy Options",
+      "lt_name": "Contraceptive Knowledge and Options",
+      "lt_definition": "I can identify the full range of contraceptive choices and their efficacy rates.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0124_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access",
+            "Pregnancy Options Knowledge"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 2')): 1, (2, ('Type 1', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_19_lt_02",
+      "cluster_id": "cluster_19",
+      "competency_name": "Contraception and Pregnancy Options",
+      "lt_name": "Reproductive Health Information Access",
+      "lt_definition": "I can locate medically accurate online information to support contraceptive and pregnancy decision-making.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0124_item_02",
+        "blk_0126_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access",
+            "Pregnancy Options Knowledge"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Contraceptive Knowledge and Options",
+            "Reproductive Health Information Access"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 2'))",
+        "counts={(3, ('Type 1', 'Type 1', 'Type 2')): 1, (2, ('Type 1', 'Type 2')): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_20_lt_01",
+      "cluster_id": "cluster_20",
+      "competency_name": "Sexual Health and STI Prevention",
+      "lt_name": "Sexual Health Risk Reduction Strategies",
+      "lt_definition": "I can describe methods to reduce sexual health risks including safer sex practices and prevention medications.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0128_item_01",
+        "blk_0129_item_01",
+        "blk_0129_item_02",
+        "blk_0129_item_03",
+        "blk_0131_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Sexual Health Risk Reduction Strategies",
+            "Sexual Health Support Access"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Sexual Health Risk Reduction",
+            "Accessing Sexual Health Support Services"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding STI Risks and Prevention",
+            "Accessing Sexual Health Support Services"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_20_lt_02",
+      "cluster_id": "cluster_20",
+      "competency_name": "Sexual Health and STI Prevention",
+      "lt_name": "Sexual Health Support Access",
+      "lt_definition": "I can identify where to access confidential sexual health services and support for relationship concerns.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0134_item_01",
+        "blk_0136_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Sexual Health Risk Reduction Strategies",
+            "Sexual Health Support Access"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Sexual Health Risk Reduction",
+            "Accessing Sexual Health Support Services"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding STI Risks and Prevention",
+            "Accessing Sexual Health Support Services"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_21_lt_01",
+      "cluster_id": "cluster_21",
+      "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+      "lt_name": "Communicating About Emotions",
+      "lt_definition": "I can talk about my emotions accurately and sensitively using appropriate vocabulary.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0142_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions Effectively",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_21_lt_02",
+      "cluster_id": "cluster_21",
+      "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+      "lt_name": "Understanding Mental Health and Wellbeing",
+      "lt_definition": "I can distinguish between normal feelings and mental health conditions and identify factors that affect wellbeing.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0144_item_01",
+        "blk_0146_item_01",
+        "blk_0146_item_02",
+        "blk_0148_item_01",
+        "blk_0150_item_01",
+        "blk_0150_item_02",
+        "blk_0153_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions Effectively",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Communicating About Emotions",
+            "Understanding Mental Health and Wellbeing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_22_lt_01",
+      "cluster_id": "cluster_22",
+      "competency_name": "Substance Use and Mental Health",
+      "lt_name": "Gambling Mental Health Risks",
+      "lt_definition": "I can identify the mental health harms associated with gambling and explain how different gambling products pose varying levels of risk.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0155_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_22_lt_02",
+      "cluster_id": "cluster_22",
+      "competency_name": "Substance Use and Mental Health",
+      "lt_name": "Substance Use Mental Health Relationships",
+      "lt_definition": "I can explain the bidirectional relationships between alcohol, drug use, smoking and mental health outcomes.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0157_item_01",
+        "blk_0157_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Gambling Mental Health Risks",
+            "Substance Use Mental Health Relationships"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_23_lt_01",
+      "cluster_id": "cluster_23",
+      "competency_name": "Digital Wellbeing and Online Harms",
+      "lt_name": "Understanding Online Wellbeing Impacts",
+      "lt_definition": "I can explain how online behaviour and content affect mental and physical wellbeing for myself and others.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0161_item_01",
+        "blk_0163_item_01",
+        "blk_0163_item_02",
+        "blk_0163_item_03",
+        "blk_0167_item_01",
+        "blk_0171_item_01",
+        "blk_0173_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_23_lt_02",
+      "cluster_id": "cluster_23",
+      "competency_name": "Digital Wellbeing and Online Harms",
+      "lt_name": "Evaluating Online Information and Content",
+      "lt_definition": "I can critically assess the reliability and intent of online information and targeted content.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0169_item_01",
+        "blk_0169_item_02",
+        "blk_0169_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_23_lt_03",
+      "cluster_id": "cluster_23",
+      "competency_name": "Digital Wellbeing and Online Harms",
+      "lt_name": "Responding to Online Harms",
+      "lt_definition": "I can identify appropriate reporting and support mechanisms when encountering harmful online content or behaviours.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0165_item_01",
+        "blk_0173_item_02",
+        "blk_0173_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Online Wellbeing Impacts",
+            "Evaluating Online Information and Content",
+            "Responding to Online Harms"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_24_lt_01",
+      "cluster_id": "cluster_24",
+      "competency_name": "Nutrition and Diet-Related Health",
+      "lt_name": "Identifying Diet-Health Connections",
+      "lt_definition": "I can identify the links between poor dietary choices and specific health risks including tooth decay, weight gain, and cardiovascular disease.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0183_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Consequences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Risks"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Consequences"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_24_lt_02",
+      "cluster_id": "cluster_24",
+      "competency_name": "Nutrition and Diet-Related Health",
+      "lt_name": "Recognizing Weight-Related Health Consequences",
+      "lt_definition": "I can identify the health risks associated with unhealthy weight gain including cancer, type 2 diabetes, and cardiovascular disease.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0185_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Consequences"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Risks"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Diet-Health Connections",
+            "Recognizing Weight-Related Health Consequences"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_25_lt_01",
+      "cluster_id": "cluster_25",
+      "competency_name": "Drugs, Alcohol, and Tobacco",
+      "lt_name": "Identifying Drug and Substance Risks",
+      "lt_definition": "I can identify the health risks, legal consequences, and safety concerns associated with illegal drugs, alcohol, and tobacco products.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0190_item_01",
+        "blk_0193_item_01",
+        "blk_0195_item_01",
+        "blk_0198_item_01",
+        "blk_0200_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Drug and Substance Risks",
+            "Applying Personal Safety Strategies"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Drug and Substance Risks",
+            "Applying Safe Consumption Practices"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Illegal Drug Risks and Legal Status",
+            "Understanding Alcohol Consumption Risks and Safety",
+            "Understanding Tobacco and Vaping Health Impacts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_25_lt_02",
+      "cluster_id": "cluster_25",
+      "competency_name": "Drugs, Alcohol, and Tobacco",
+      "lt_name": "Applying Personal Safety Strategies",
+      "lt_definition": "I can describe strategies to increase personal safety when around alcohol and other substances.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0193_item_02",
+        "blk_0198_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Drug and Substance Risks",
+            "Applying Personal Safety Strategies"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Drug and Substance Risks",
+            "Applying Safe Consumption Practices"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Illegal Drug Risks and Legal Status",
+            "Understanding Alcohol Consumption Risks and Safety",
+            "Understanding Tobacco and Vaping Health Impacts"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(2, ('Type 1', 'Type 1'))",
+        "counts={(2, ('Type 1', 'Type 1')): 2, (3, ('Type 1', 'Type 1', 'Type 1')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_26_lt_01",
+      "cluster_id": "cluster_26",
+      "competency_name": "Physical Health and Preventive Care",
+      "lt_name": "Infection Prevention and Health Screening",
+      "lt_definition": "I can explain infection prevention methods, antibiotic use, vaccination benefits, and the importance of regular self-examination.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0204_item_01",
+        "blk_0210_item_01",
+        "blk_0212_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Infection Prevention and Health Screening",
+            "Personal Health Maintenance Practices"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Infection Prevention and Vaccination Knowledge",
+            "Personal Health Maintenance Practices"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Infection Prevention and Vaccination",
+            "Understanding Personal Health Maintenance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_26_lt_02",
+      "cluster_id": "cluster_26",
+      "competency_name": "Physical Health and Preventive Care",
+      "lt_name": "Personal Health Maintenance Practices",
+      "lt_definition": "I can describe dental hygiene practices, sleep hygiene requirements, and reproductive health considerations including pre-conception care.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0206_item_01",
+        "blk_0214_item_01",
+        "blk_0214_item_02",
+        "blk_0216_item_01",
+        "blk_0216_item_02",
+        "blk_0216_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Infection Prevention and Health Screening",
+            "Personal Health Maintenance Practices"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Infection Prevention and Vaccination Knowledge",
+            "Personal Health Maintenance Practices"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Infection Prevention and Vaccination",
+            "Understanding Personal Health Maintenance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_27_lt_01",
+      "cluster_id": "cluster_27",
+      "competency_name": "Accessing Healthcare Services",
+      "lt_name": "Identifying Appropriate Healthcare Services",
+      "lt_definition": "I can identify which healthcare services to access for different health needs and situations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0218_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Appropriate Healthcare Services",
+            "Understanding Medical Consent and Capacity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Appropriate Healthcare Services",
+            "Understanding Medical Consent and Capacity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Healthcare Service Options",
+            "Understanding Medical Consent and Capacity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_27_lt_02",
+      "cluster_id": "cluster_27",
+      "competency_name": "Accessing Healthcare Services",
+      "lt_name": "Understanding Medical Consent and Capacity",
+      "lt_definition": "I can explain the legal frameworks governing medical consent for minors and adults with capacity issues.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0220_item_01",
+        "blk_0221_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Appropriate Healthcare Services",
+            "Understanding Medical Consent and Capacity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Appropriate Healthcare Services",
+            "Understanding Medical Consent and Capacity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Identifying Healthcare Service Options",
+            "Understanding Medical Consent and Capacity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_28_lt_01",
+      "cluster_id": "cluster_28",
+      "competency_name": "Personal Safety and Risk Management",
+      "lt_name": "Identifying and Managing Environmental Safety Risks",
+      "lt_definition": "I can identify potential safety hazards in various environments and apply appropriate risk management strategies.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0225_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_28_lt_02",
+      "cluster_id": "cluster_28",
+      "competency_name": "Personal Safety and Risk Management",
+      "lt_name": "Recognising and Resisting Peer Pressure",
+      "lt_definition": "I can recognise when peer influence is affecting my safety decisions and apply strategies to resist harmful pressure.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0227_item_01",
+        "blk_0229_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_28_lt_03",
+      "cluster_id": "cluster_28",
+      "competency_name": "Personal Safety and Risk Management",
+      "lt_name": "Managing Conflict and Violence Situations",
+      "lt_definition": "I can apply self-awareness and relationship skills to make responsible decisions in contexts involving conflict and violence.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0229_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Identifying and Managing Environmental Safety Risks",
+            "Recognising and Resisting Peer Pressure",
+            "Managing Conflict and Violence Situations"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_29_lt_01",
+      "cluster_id": "cluster_29",
+      "competency_name": "Weapons, Violence, and Exploitation",
+      "lt_name": "Understanding Weapon Carrying Realities",
+      "lt_definition": "I can explain the actual prevalence of weapon carrying among young people and identify misconceptions that lead to false beliefs about needing weapons for protection.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0233_item_01",
+        "blk_0233_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_29_lt_02",
+      "cluster_id": "cluster_29",
+      "competency_name": "Weapons, Violence, and Exploitation",
+      "lt_name": "Seeking Help for Exploitation Concerns",
+      "lt_definition": "I can identify appropriate sources of help and take action when there are concerns about grooming or exploitation.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0235_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Understanding Weapon Carrying Realities",
+            "Seeking Help for Exploitation Concerns"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_30_lt_01",
+      "cluster_id": "cluster_30",
+      "competency_name": "Reproductive Health and First Aid",
+      "lt_name": "Understanding Reproductive Health Conditions",
+      "lt_definition": "I can identify and describe common menstrual problems, reproductive health facts, and fertility factors.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0245_item_01",
+        "blk_0247_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Reproductive Health Conditions",
+            "Recognizing When to Seek Medical Help"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Reproductive Health Knowledge",
+            "Healthcare Decision Making and First Aid Timing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Reproductive Health Conditions",
+            "Seeking Healthcare and First Aid Timing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_30_lt_02",
+      "cluster_id": "cluster_30",
+      "competency_name": "Reproductive Health and First Aid",
+      "lt_name": "Recognizing When to Seek Medical Help",
+      "lt_definition": "I can determine when reproductive health issues and first aid situations require professional medical assistance.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0245_item_02",
+        "blk_0248_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Reproductive Health Conditions",
+            "Recognizing When to Seek Medical Help"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Reproductive Health Knowledge",
+            "Healthcare Decision Making and First Aid Timing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1"
+          ],
+          "lt_names": [
+            "Understanding Reproductive Health Conditions",
+            "Seeking Healthcare and First Aid Timing"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ],
+  "halted_clusters": []
+}

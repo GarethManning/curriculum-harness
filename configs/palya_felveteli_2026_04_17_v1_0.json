@@ -1,0 +1,67 @@
+{
+  "configVersion": "1.0",
+  "runId": "palya_felveteli_2026_04_17_v1",
+  "source": {
+    "type": "html_url",
+    "url": "https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozponti_feladatsorok/temakorok_matek_9",
+    "subject": "Mathematics",
+    "grade": "8",
+    "jurisdiction": "Hungary (Oktatási Hivatal) — központi írásbeli felvételi, 9. évfolyamra jelentkezők",
+    "year": "2023",
+    "pages": "single page — canonical topic list for 8th-grade central written entrance exam in maths",
+    "documentFamily": "exam_specification"
+  },
+  "curriculumProfile": {
+    "document_family": "exam_specification",
+    "level_model": "single_intended_level",
+    "scoping_strategy": "full_document",
+    "assessment_signals": {
+      "has_assessment_objectives": false,
+      "has_command_words": false,
+      "has_mark_scheme": false,
+      "format": "10 short tasks, 45 minutes, 50 points total"
+    },
+    "output_conventions": {
+      "lt_statement_format": "i_can",
+      "recommended_adjacent_radius": 1
+    }
+  },
+  "outputPath": "outputs/palya-felveteli-2026-04-17/",
+  "checkpointDb": "checkpoints/palya_felveteli_2026_04_17.db",
+  "ltConstraints": {
+    "maxWords": 25,
+    "singleConstructOnly": true,
+    "noEmbeddedExamples": true,
+    "iCanFormat": true
+  },
+  "mcpServer": {
+    "url": "https://mcp-server-sigma-sooty.vercel.app/mcp",
+    "name": "claude-education-skills"
+  },
+  "outputStructure": {
+    "type": "grade_based",
+    "levels": [
+      {
+        "id": "y6",
+        "label": "Year 6",
+        "age_range": "11-12",
+        "cognitive_demand": "concrete"
+      },
+      {
+        "id": "y7",
+        "label": "Year 7",
+        "age_range": "12-13",
+        "cognitive_demand": "transitional"
+      },
+      {
+        "id": "y8",
+        "label": "Year 8",
+        "age_range": "13-14",
+        "cognitive_demand": "transitional"
+      }
+    ],
+    "input_level_id": "y8",
+    "generate_adjacent": false,
+    "adjacent_count": 0
+  }
+}

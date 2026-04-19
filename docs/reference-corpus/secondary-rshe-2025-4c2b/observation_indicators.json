@@ -1,0 +1,298 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-secondary-rshe-2025",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_03_lt_03",
+      "bands": [
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student consistently demonstrates kindness in interactions with peers through supportive language and inclusive actions during group activities",
+            "The student actively pursues personal interests and skill development through sustained engagement in chosen activities or hobbies",
+            "The student shows respect for others' differences and boundaries while maintaining their own sense of personal worth and identity"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "How does your child show kindness to friends, siblings, or others in your community?",
+        "What personal interests or skills has your child been developing or pursuing recently?",
+        "How does your child handle situations where they disagree with others while still showing respect?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Equality and Self-Worth"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on observed examples of kind behaviour and personal growth, exploring how the student balances respect for others with maintaining their own identity and interests.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student reports witnessed bullying incidents to appropriate adults within school systems",
+            "The student takes action to support peers experiencing bullying by seeking help from trusted authorities",
+            "The student demonstrates understanding that witnessing bullying creates a responsibility to intervene through proper reporting channels"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "Has your child mentioned reporting bullying they witnessed at school or in the community?",
+        "Does your child talk about helping friends who are being bullied by getting adult support?",
+        "Have you noticed your child understanding that they have a role to play when they see others being mistreated?"
+      ],
+      "prerequisite_lts": [
+        "Recognising Bullying Types and Impact"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student recognised bullying and took reporting action, discussing the decision-making process and identifying trusted adults for future situations.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_09_lt_03",
+      "bands": [
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student declines to share personal photos or information when peers request them for social media posts or group chats",
+            "The student deletes inappropriate content received from others rather than forwarding it to friends or classmates",
+            "The student pauses to consider potential consequences before posting or sharing digital content about themselves or others"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "Have you noticed your child being thoughtful about what they share online or declining to pass along inappropriate messages?",
+        "Does your child talk to you about receiving unwanted or inappropriate digital content from friends?",
+        "Have you observed your child taking time to think before posting photos or information about themselves or others?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Digital Content Risks and Laws"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific instances where the student demonstrated restraint in digital sharing, exploring their decision-making process and reinforcing the connection between their choices and the safety principles they understand.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Secondary",
+              2
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Secondary', 3), ('parents', 3)): 2, (('End of Secondary', 2), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_03",
+      "bands": [
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student removes themselves from situations when they sense something feels wrong or unsafe",
+            "The student speaks up or seeks help when their gut feelings indicate potential danger or discomfort",
+            "The student acts decisively on their instincts rather than dismissing or overriding their internal warning signals"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "Have you noticed your child removing themselves from situations or activities when something didn't feel right to them?",
+        "Does your child tell you or other trusted adults when they have uncomfortable feelings about a person or situation?",
+        "How does your child respond when their instincts tell them something might not be safe or appropriate?"
+      ],
+      "prerequisite_lts": [
+        "Evaluating Trustworthiness and Safety"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student trusted their instincts and took protective action, discussing how they recognised internal warning signals and what steps they took in response.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Secondary",
+              2
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Secondary', 3), ('parents', 3)): 2, (('End of Secondary', 2), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": []
+}

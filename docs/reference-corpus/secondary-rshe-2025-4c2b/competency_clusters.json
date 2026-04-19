@@ -1,0 +1,1911 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "2a-secondary-rshe-2025",
+  "model": "claude-opus-4-5-20251101",
+  "temperature": 0.3,
+  "runs": 3,
+  "overall_stability_flag": "cluster_unstable",
+  "overall_stability_diagnostics": [
+    "cluster_count_differs: counts across runs = [30, 29, 38]",
+    "cluster_missing_in_run2: canonical clusters [4, 6] have no Jaccard>=0.30 match",
+    "dominant_type_drift_run2: canonical cluster 10 (Type 2) → run2 cluster 8 (Type 1)",
+    "cluster_missing_in_run3: canonical clusters [4] have no Jaccard>=0.30 match",
+    "dominant_type_drift_run3: canonical cluster 3 (Type 1) → run3 cluster 3 (Type 2)",
+    "dominant_type_drift_run3: canonical cluster 10 (Type 2) → run3 cluster 11 (Type 1)"
+  ],
+  "unassigned_kud_item_ids": [],
+  "clusters": [
+    {
+      "cluster_id": "cluster_01",
+      "competency_name": "Family Structures and Legal Relationships",
+      "competency_definition": "The ability to understand the legal status, rights, and dynamics of different family structures including marriage, civil partnership, cohabitation, and parenting.",
+      "kud_item_ids": [
+        "blk_0008_item_01",
+        "blk_0010_item_01",
+        "blk_0013_item_01",
+        "blk_0015_item_01",
+        "blk_0015_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0008",
+        "blk_0010",
+        "blk_0013",
+        "blk_0015"
+      ],
+      "source_position_start": 13,
+      "source_position_end": 22,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 5
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Family Structures and Legal Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0008_item_01",
+            "blk_0010_item_01",
+            "blk_0013_item_01",
+            "blk_0015_item_01",
+            "blk_0015_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Marriage, Civil Partnership, and Family Structures",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0008_item_01",
+            "blk_0010_item_01",
+            "blk_0013_item_01",
+            "blk_0015_item_01",
+            "blk_0015_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Marriage, Civil Partnership, and Family Structures",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0008_item_01",
+            "blk_0010_item_01",
+            "blk_0013_item_01",
+            "blk_0015_item_01",
+            "blk_0015_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_02",
+      "competency_name": "Healthy Romantic Relationships",
+      "competency_definition": "The ability to understand and apply the principles of consent, trust, respect, and ethical behaviour that characterise healthy romantic relationships.",
+      "kud_item_ids": [
+        "blk_0017_item_01",
+        "blk_0021_item_01",
+        "blk_0034_item_01",
+        "blk_0034_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0017",
+        "blk_0021",
+        "blk_0034"
+      ],
+      "source_position_start": 25,
+      "source_position_end": 54,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 2": 1,
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Healthy Romantic Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0017_item_01",
+            "blk_0021_item_01",
+            "blk_0034_item_01",
+            "blk_0034_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Healthy Romantic Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0017_item_01",
+            "blk_0021_item_01",
+            "blk_0034_item_01",
+            "blk_0034_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Healthy Romantic Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0017_item_01",
+            "blk_0021_item_01",
+            "blk_0034_item_01",
+            "blk_0034_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_03",
+      "competency_name": "Respectful Relationships and Self-Worth",
+      "competency_definition": "The ability to develop self-esteem, treat others with kindness and respect, and understand equality in relationships.",
+      "kud_item_ids": [
+        "blk_0023_item_01",
+        "blk_0023_item_02",
+        "blk_0025_item_01",
+        "blk_0025_item_02",
+        "blk_0025_item_03",
+        "blk_0028_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0023",
+        "blk_0025",
+        "blk_0028"
+      ],
+      "source_position_start": 38,
+      "source_position_end": 47,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 3": 2,
+        "Type 1": 3,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Respectful Relationships and Self-Worth",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0025_item_03",
+            "blk_0028_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Respectful Relationships and Self-Worth",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0025_item_03",
+            "blk_0028_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Respect, Equality, and Self-Worth",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0025_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_04",
+      "competency_name": "Addressing Bullying",
+      "competency_definition": "The ability to recognise different types of bullying, understand their impact, and respond appropriately as a victim or bystander.",
+      "kud_item_ids": [
+        "blk_0030_item_01",
+        "blk_0030_item_02",
+        "blk_0030_item_03",
+        "blk_0030_item_04"
+      ],
+      "source_block_ids": [
+        "blk_0030"
+      ],
+      "source_position_start": 50,
+      "source_position_end": 50,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 2": 1,
+        "Type 3": 1
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Addressing Bullying",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0030_item_01",
+            "blk_0030_item_02",
+            "blk_0030_item_03",
+            "blk_0030_item_04"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Addressing Bullying and Ending Relationships",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0030_item_01",
+            "blk_0030_item_02",
+            "blk_0030_item_03",
+            "blk_0030_item_04",
+            "blk_0032_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Communication, Conflict, and Bullying",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0028_item_01",
+            "blk_0030_item_01",
+            "blk_0030_item_02",
+            "blk_0030_item_03",
+            "blk_0030_item_04",
+            "blk_0032_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run3: Type 1→Type 2"
+      ]
+    },
+    {
+      "cluster_id": "cluster_05",
+      "competency_name": "Managing Relationship Endings",
+      "competency_definition": "The ability to end relationships or friendships with kindness while managing the difficult emotions that endings may bring.",
+      "kud_item_ids": [
+        "blk_0032_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0032"
+      ],
+      "source_position_start": 52,
+      "source_position_end": 52,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 1
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Managing Relationship Endings",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0032_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        },
+        {
+          "run": 3,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        }
+      ],
+      "stability_diagnostics": [
+        "unmatched_in_run2",
+        "unmatched_in_run3"
+      ]
+    },
+    {
+      "cluster_id": "cluster_06",
+      "competency_name": "Recognising Stereotypes and Power Dynamics",
+      "competency_definition": "The ability to understand how stereotypes, prejudice, and power imbalances can cause harm and affect behaviour in relationships.",
+      "kud_item_ids": [
+        "blk_0036_item_01",
+        "blk_0036_item_02",
+        "blk_0038_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0036",
+        "blk_0038"
+      ],
+      "source_position_start": 59,
+      "source_position_end": 63,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Recognising Stereotypes and Power Dynamics",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0036_item_01",
+            "blk_0036_item_02",
+            "blk_0038_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Stereotypes, Prejudice, and Power Dynamics",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0036_item_01",
+            "blk_0036_item_02",
+            "blk_0038_item_01",
+            "blk_0040_item_01",
+            "blk_0042_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Stereotypes, Prejudice, and Power Dynamics",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0036_item_01",
+            "blk_0036_item_02",
+            "blk_0038_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_07",
+      "competency_name": "Understanding Harmful Sexual Influences",
+      "competency_definition": "The ability to critically analyse how pornography, media, and subcultures can negatively influence sexual attitudes and behaviours.",
+      "kud_item_ids": [
+        "blk_0040_item_01",
+        "blk_0042_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0040",
+        "blk_0042"
+      ],
+      "source_position_start": 67,
+      "source_position_end": 71,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 1,
+        "Type 2": 1
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Understanding Harmful Sexual Influences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0040_item_01",
+            "blk_0042_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        },
+        {
+          "run": 3,
+          "competency_name": "Influences on Sexual Attitudes and Behaviours",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0040_item_01",
+            "blk_0042_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "unmatched_in_run2"
+      ]
+    },
+    {
+      "cluster_id": "cluster_08",
+      "competency_name": "Online Safety and Privacy",
+      "competency_definition": "The ability to protect personal information online, understand public versus private spaces, and recognise the nature of social media content.",
+      "kud_item_ids": [
+        "blk_0046_item_01",
+        "blk_0048_item_01",
+        "blk_0048_item_02",
+        "blk_0050_item_01",
+        "blk_0050_item_02",
+        "blk_0050_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0046",
+        "blk_0048",
+        "blk_0050"
+      ],
+      "source_position_start": 78,
+      "source_position_end": 84,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Online Safety and Privacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0046_item_01",
+            "blk_0048_item_01",
+            "blk_0048_item_02",
+            "blk_0050_item_01",
+            "blk_0050_item_02",
+            "blk_0050_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Online Safety and Privacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0046_item_01",
+            "blk_0048_item_01",
+            "blk_0048_item_02",
+            "blk_0050_item_01",
+            "blk_0050_item_02",
+            "blk_0050_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Online Safety and Privacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0046_item_01",
+            "blk_0048_item_01",
+            "blk_0048_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_09",
+      "competency_name": "Managing Digital Content and Image Sharing",
+      "competency_definition": "The ability to understand the risks and legal consequences of sharing images online and to respond appropriately when content is circulated.",
+      "kud_item_ids": [
+        "blk_0052_item_01",
+        "blk_0052_item_02",
+        "blk_0052_item_03",
+        "blk_0054_item_01",
+        "blk_0054_item_02",
+        "blk_0054_item_03",
+        "blk_0054_item_04",
+        "blk_0056_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0052",
+        "blk_0054",
+        "blk_0056"
+      ],
+      "source_position_start": 89,
+      "source_position_end": 103,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6,
+        "Type 3": 1,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Managing Digital Content and Image Sharing",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0052_item_01",
+            "blk_0052_item_02",
+            "blk_0052_item_03",
+            "blk_0054_item_01",
+            "blk_0054_item_02",
+            "blk_0054_item_03",
+            "blk_0054_item_04",
+            "blk_0056_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Sharing Images and Legal Consequences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0052_item_01",
+            "blk_0052_item_02",
+            "blk_0052_item_03",
+            "blk_0054_item_01",
+            "blk_0054_item_02",
+            "blk_0054_item_03",
+            "blk_0054_item_04",
+            "blk_0056_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Sharing Images and Legal Consequences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0052_item_01",
+            "blk_0052_item_02",
+            "blk_0052_item_03",
+            "blk_0054_item_01",
+            "blk_0054_item_02",
+            "blk_0054_item_03",
+            "blk_0054_item_04",
+            "blk_0056_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_10",
+      "competency_name": "Identifying Deepfakes and Harmful Online Content",
+      "competency_definition": "The ability to recognise deepfakes, inappropriate online content, and understand where to seek support after exposure to harmful material.",
+      "kud_item_ids": [
+        "blk_0058_item_01",
+        "blk_0058_item_02",
+        "blk_0058_item_03",
+        "blk_0058_item_04",
+        "blk_0060_item_01",
+        "blk_0061_item_01",
+        "blk_0061_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0058",
+        "blk_0060",
+        "blk_0061"
+      ],
+      "source_position_start": 106,
+      "source_position_end": 110,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Identifying Deepfakes and Harmful Online Content",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0058_item_01",
+            "blk_0058_item_02",
+            "blk_0058_item_03",
+            "blk_0058_item_04",
+            "blk_0060_item_01",
+            "blk_0061_item_01",
+            "blk_0061_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Deepfakes and Harmful Online Content",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0058_item_01",
+            "blk_0058_item_02",
+            "blk_0058_item_03",
+            "blk_0058_item_04",
+            "blk_0060_item_01",
+            "blk_0061_item_01",
+            "blk_0061_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Harmful Online Content and Reporting",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0060_item_01",
+            "blk_0061_item_01",
+            "blk_0061_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_11",
+      "competency_name": "Recognising Online Abuse and Exploitation",
+      "competency_definition": "The ability to identify when technology is used for bullying, harassment, stalking, or coercive behaviour and to seek appropriate support.",
+      "kud_item_ids": [
+        "blk_0065_item_01",
+        "blk_0068_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0065",
+        "blk_0068"
+      ],
+      "source_position_start": 117,
+      "source_position_end": 123,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 1,
+        "Type 1": 1
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Recognising Online Abuse and Exploitation",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0065_item_01",
+            "blk_0068_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Online Abuse, Harassment, and Pornography",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0065_item_01",
+            "blk_0068_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Pornography and Its Effects",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0068_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run2: Type 2→Type 1",
+        "dominant_type_drift_run3: Type 2→Type 1"
+      ]
+    },
+    {
+      "cluster_id": "cluster_12",
+      "competency_name": "Online Scams and Emerging Technology Risks",
+      "competency_definition": "The ability to recognise online scams, sextortion, and risks posed by emerging technologies including AI chatbots.",
+      "kud_item_ids": [
+        "blk_0071_item_01",
+        "blk_0073_item_01",
+        "blk_0073_item_02",
+        "blk_0073_item_03",
+        "blk_0073_item_04",
+        "blk_0075_item_01",
+        "blk_0075_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0071",
+        "blk_0073",
+        "blk_0075"
+      ],
+      "source_position_start": 129,
+      "source_position_end": 136,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 4,
+        "Type 2": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Online Scams and Emerging Technology Risks",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0071_item_01",
+            "blk_0073_item_01",
+            "blk_0073_item_02",
+            "blk_0073_item_03",
+            "blk_0073_item_04",
+            "blk_0075_item_01",
+            "blk_0075_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Online Scams, Data Privacy, and Emerging Technology Risks",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0071_item_01",
+            "blk_0073_item_01",
+            "blk_0073_item_02",
+            "blk_0073_item_03",
+            "blk_0073_item_04",
+            "blk_0075_item_01",
+            "blk_0075_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Online Scams, Sextortion, and Data Privacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0071_item_01",
+            "blk_0073_item_01",
+            "blk_0073_item_02",
+            "blk_0073_item_03",
+            "blk_0073_item_04"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_13",
+      "competency_name": "Consent and Boundaries in Relationships",
+      "competency_definition": "The ability to recognise, communicate, and respect consent and boundaries in romantic and sexual relationships across all contexts.",
+      "kud_item_ids": [
+        "blk_0079_item_01",
+        "blk_0079_item_02",
+        "blk_0081_item_01",
+        "blk_0081_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0079",
+        "blk_0081"
+      ],
+      "source_position_start": 144,
+      "source_position_end": 148,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 3,
+        "Type 1": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Consent and Boundaries in Relationships",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0079_item_01",
+            "blk_0079_item_02",
+            "blk_0081_item_01",
+            "blk_0081_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Consent and Boundaries in Relationships",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0079_item_01",
+            "blk_0079_item_02",
+            "blk_0081_item_01",
+            "blk_0081_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Consent and Boundaries in Intimate Relationships",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0079_item_01",
+            "blk_0079_item_02",
+            "blk_0081_item_01",
+            "blk_0081_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_14",
+      "competency_name": "Assessing Trustworthiness and Personal Safety",
+      "competency_definition": "The ability to judge when relationships or situations are unsafe, identify trustworthy sources, and employ strategies to increase personal safety.",
+      "kud_item_ids": [
+        "blk_0083_item_01",
+        "blk_0083_item_02",
+        "blk_0085_item_01",
+        "blk_0085_item_02",
+        "blk_0085_item_03",
+        "blk_0085_item_04",
+        "blk_0085_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0083",
+        "blk_0085"
+      ],
+      "source_position_start": 151,
+      "source_position_end": 155,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 3,
+        "Type 1": 3,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Assessing Trustworthiness and Personal Safety",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0083_item_01",
+            "blk_0083_item_02",
+            "blk_0085_item_01",
+            "blk_0085_item_02",
+            "blk_0085_item_03",
+            "blk_0085_item_04",
+            "blk_0085_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Recognising Unsafe Relationships and Personal Safety",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0083_item_01",
+            "blk_0083_item_02",
+            "blk_0085_item_01",
+            "blk_0085_item_02",
+            "blk_0085_item_03",
+            "blk_0085_item_04",
+            "blk_0085_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Assessing Trustworthiness and Seeking Help",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0083_item_01",
+            "blk_0083_item_02",
+            "blk_0085_item_01",
+            "blk_0085_item_02",
+            "blk_0085_item_03",
+            "blk_0085_item_04",
+            "blk_0085_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_15",
+      "competency_name": "Understanding Sexual Harassment and Violence",
+      "competency_definition": "The ability to understand what constitutes sexual harassment and violence, recognise concerning behaviours, and know that victims are never at fault.",
+      "kud_item_ids": [
+        "blk_0087_item_01",
+        "blk_0089_item_01",
+        "blk_0092_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0087",
+        "blk_0089",
+        "blk_0092"
+      ],
+      "source_position_start": 163,
+      "source_position_end": 169,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Understanding Sexual Harassment and Violence",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0087_item_01",
+            "blk_0089_item_01",
+            "blk_0092_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Sexual Harassment and Violence",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0087_item_01",
+            "blk_0089_item_01",
+            "blk_0092_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Sexual Harassment and Violence",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0087_item_01",
+            "blk_0089_item_01",
+            "blk_0092_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_16",
+      "competency_name": "Understanding Domestic Abuse and Exploitation",
+      "competency_definition": "The ability to understand the concepts and laws relating to domestic abuse, exploitation, grooming, and related harmful practices.",
+      "kud_item_ids": [
+        "blk_0094_item_01",
+        "blk_0098_item_01",
+        "blk_0102_item_01",
+        "blk_0102_item_02",
+        "blk_0104_item_01",
+        "blk_0106_item_01",
+        "blk_0107_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0094",
+        "blk_0098",
+        "blk_0102",
+        "blk_0104",
+        "blk_0106",
+        "blk_0107"
+      ],
+      "source_position_start": 172,
+      "source_position_end": 192,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Understanding Domestic Abuse and Exploitation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0094_item_01",
+            "blk_0098_item_01",
+            "blk_0102_item_01",
+            "blk_0102_item_02",
+            "blk_0104_item_01",
+            "blk_0106_item_01",
+            "blk_0107_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Domestic Abuse and Exploitation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0094_item_01",
+            "blk_0098_item_01",
+            "blk_0102_item_01",
+            "blk_0102_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Domestic Abuse and Exploitation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0094_item_01",
+            "blk_0098_item_01",
+            "blk_0102_item_01",
+            "blk_0102_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_17",
+      "competency_name": "Recognising Harmful Sexual Norms and Seeking Support",
+      "competency_definition": "The ability to understand how pornography normalises harmful behaviours and to know how to seek support for worrying or abusive behaviour.",
+      "kud_item_ids": [
+        "blk_0109_item_01",
+        "blk_0111_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0109",
+        "blk_0111"
+      ],
+      "source_position_start": 195,
+      "source_position_end": 197,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Recognising Harmful Sexual Norms and Seeking Support",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0109_item_01",
+            "blk_0111_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Harmful Practices and Physical Harms",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0104_item_01",
+            "blk_0106_item_01",
+            "blk_0107_item_01",
+            "blk_0109_item_01",
+            "blk_0111_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Seeking Support for Abuse",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0111_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_18",
+      "competency_name": "Healthy Sexual Relationships and Consent",
+      "competency_definition": "The ability to understand that sex can be positive when consensual and age-appropriate, and that ethical sexual behaviour requires more than consent alone.",
+      "kud_item_ids": [
+        "blk_0115_item_01",
+        "blk_0117_item_01",
+        "blk_0119_item_01",
+        "blk_0119_item_02",
+        "blk_0119_item_03",
+        "blk_0121_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0115",
+        "blk_0117",
+        "blk_0119",
+        "blk_0121"
+      ],
+      "source_position_start": 205,
+      "source_position_end": 214,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Healthy Sexual Relationships and Consent",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0115_item_01",
+            "blk_0117_item_01",
+            "blk_0119_item_01",
+            "blk_0119_item_02",
+            "blk_0119_item_03",
+            "blk_0121_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Healthy Sexual Relationships and Consent",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0115_item_01",
+            "blk_0117_item_01",
+            "blk_0119_item_01",
+            "blk_0119_item_02",
+            "blk_0119_item_03",
+            "blk_0121_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Healthy Sexual Relationships and Consent",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0115_item_01",
+            "blk_0117_item_01",
+            "blk_0119_item_01",
+            "blk_0119_item_02",
+            "blk_0119_item_03",
+            "blk_0121_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_19",
+      "competency_name": "Contraception and Pregnancy Options",
+      "competency_definition": "The ability to understand contraceptive choices, access accurate reproductive health information, and know the options available regarding pregnancy.",
+      "kud_item_ids": [
+        "blk_0124_item_01",
+        "blk_0124_item_02",
+        "blk_0126_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0124",
+        "blk_0126"
+      ],
+      "source_position_start": 218,
+      "source_position_end": 222,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Contraception and Pregnancy Options",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0124_item_01",
+            "blk_0124_item_02",
+            "blk_0126_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Contraception, Pregnancy Options, and Reproductive Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0124_item_01",
+            "blk_0124_item_02",
+            "blk_0126_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Contraception and Pregnancy Options",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0124_item_01",
+            "blk_0124_item_02",
+            "blk_0126_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_20",
+      "competency_name": "Sexual Health and STI Prevention",
+      "competency_definition": "The ability to understand how to reduce sexual health risks, the importance of testing, and where to access confidential support and treatment.",
+      "kud_item_ids": [
+        "blk_0128_item_01",
+        "blk_0129_item_01",
+        "blk_0129_item_02",
+        "blk_0129_item_03",
+        "blk_0131_item_01",
+        "blk_0134_item_01",
+        "blk_0136_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0128",
+        "blk_0129",
+        "blk_0131",
+        "blk_0134",
+        "blk_0136"
+      ],
+      "source_position_start": 225,
+      "source_position_end": 235,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Sexual Health and STI Prevention",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0128_item_01",
+            "blk_0129_item_01",
+            "blk_0129_item_02",
+            "blk_0129_item_03",
+            "blk_0131_item_01",
+            "blk_0134_item_01",
+            "blk_0136_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Sexually Transmitted Infections and Sexual Health Services",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0128_item_01",
+            "blk_0129_item_01",
+            "blk_0129_item_02",
+            "blk_0129_item_03",
+            "blk_0131_item_01",
+            "blk_0134_item_01",
+            "blk_0136_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Sexually Transmitted Infections and Prevention",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0128_item_01",
+            "blk_0129_item_01",
+            "blk_0129_item_02",
+            "blk_0129_item_03",
+            "blk_0131_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_21",
+      "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+      "competency_definition": "The ability to understand and articulate emotions, distinguish normal feelings from mental health conditions, and recognise factors affecting wellbeing.",
+      "kud_item_ids": [
+        "blk_0142_item_01",
+        "blk_0144_item_01",
+        "blk_0146_item_01",
+        "blk_0146_item_02",
+        "blk_0148_item_01",
+        "blk_0150_item_01",
+        "blk_0150_item_02",
+        "blk_0153_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0142",
+        "blk_0144",
+        "blk_0146",
+        "blk_0148",
+        "blk_0150",
+        "blk_0153"
+      ],
+      "source_position_start": 247,
+      "source_position_end": 263,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 2": 1,
+        "Type 1": 7
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0142_item_01",
+            "blk_0144_item_01",
+            "blk_0146_item_01",
+            "blk_0146_item_02",
+            "blk_0148_item_01",
+            "blk_0150_item_01",
+            "blk_0150_item_02",
+            "blk_0153_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0142_item_01",
+            "blk_0144_item_01",
+            "blk_0146_item_01",
+            "blk_0146_item_02",
+            "blk_0148_item_01",
+            "blk_0150_item_01",
+            "blk_0150_item_02",
+            "blk_0153_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Emotional Wellbeing and Mental Health Literacy",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0142_item_01",
+            "blk_0144_item_01",
+            "blk_0146_item_01",
+            "blk_0146_item_02",
+            "blk_0148_item_01",
+            "blk_0150_item_01",
+            "blk_0150_item_02",
+            "blk_0153_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_22",
+      "competency_name": "Substance Use and Mental Health",
+      "competency_definition": "The ability to understand the relationships between gambling, alcohol, drugs, smoking, and mental health, including associated risks and harms.",
+      "kud_item_ids": [
+        "blk_0155_item_01",
+        "blk_0157_item_01",
+        "blk_0157_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0155",
+        "blk_0157"
+      ],
+      "source_position_start": 267,
+      "source_position_end": 270,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Substance Use and Mental Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0155_item_01",
+            "blk_0157_item_01",
+            "blk_0157_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Substances and Mental Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0155_item_01",
+            "blk_0157_item_01",
+            "blk_0157_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Substance Use and Mental Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0155_item_01",
+            "blk_0157_item_01",
+            "blk_0157_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_23",
+      "competency_name": "Digital Wellbeing and Online Harms",
+      "competency_definition": "The ability to understand how online behaviour affects mental and physical wellbeing and to critically evaluate online content and relationships.",
+      "kud_item_ids": [
+        "blk_0161_item_01",
+        "blk_0163_item_01",
+        "blk_0163_item_02",
+        "blk_0163_item_03",
+        "blk_0165_item_01",
+        "blk_0167_item_01",
+        "blk_0169_item_01",
+        "blk_0169_item_02",
+        "blk_0169_item_03",
+        "blk_0171_item_01",
+        "blk_0173_item_01",
+        "blk_0173_item_02",
+        "blk_0173_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0161",
+        "blk_0163",
+        "blk_0165",
+        "blk_0167",
+        "blk_0169",
+        "blk_0171",
+        "blk_0173"
+      ],
+      "source_position_start": 279,
+      "source_position_end": 296,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 9,
+        "Type 2": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Digital Wellbeing and Online Harms",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0161_item_01",
+            "blk_0163_item_01",
+            "blk_0163_item_02",
+            "blk_0163_item_03",
+            "blk_0165_item_01",
+            "blk_0167_item_01",
+            "blk_0169_item_01",
+            "blk_0169_item_02",
+            "blk_0169_item_03",
+            "blk_0171_item_01",
+            "blk_0173_item_01",
+            "blk_0173_item_02",
+            "blk_0173_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Digital Wellbeing and Online Harms to Mental Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0161_item_01",
+            "blk_0163_item_01",
+            "blk_0163_item_02",
+            "blk_0163_item_03",
+            "blk_0165_item_01",
+            "blk_0167_item_01",
+            "blk_0169_item_01",
+            "blk_0169_item_02",
+            "blk_0169_item_03",
+            "blk_0171_item_01",
+            "blk_0173_item_01",
+            "blk_0173_item_02",
+            "blk_0173_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Online Misinformation and Illegal Content",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0169_item_01",
+            "blk_0169_item_02",
+            "blk_0169_item_03",
+            "blk_0171_item_01",
+            "blk_0173_item_01",
+            "blk_0173_item_02",
+            "blk_0173_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_24",
+      "competency_name": "Nutrition and Diet-Related Health",
+      "competency_definition": "The ability to understand the links between diet and health risks including tooth decay, weight gain, and cardiovascular disease.",
+      "kud_item_ids": [
+        "blk_0183_item_01",
+        "blk_0185_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0183",
+        "blk_0185"
+      ],
+      "source_position_start": 310,
+      "source_position_end": 312,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Nutrition and Diet-Related Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0183_item_01",
+            "blk_0185_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Healthy Eating and Diet-Related Health Risks",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0183_item_01",
+            "blk_0185_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Diet, Weight, and Physical Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0183_item_01",
+            "blk_0185_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_25",
+      "competency_name": "Drugs, Alcohol, and Tobacco",
+      "competency_definition": "The ability to understand the risks and legal aspects of illegal drugs, alcohol consumption, smoking, and vaping.",
+      "kud_item_ids": [
+        "blk_0190_item_01",
+        "blk_0193_item_01",
+        "blk_0193_item_02",
+        "blk_0195_item_01",
+        "blk_0198_item_01",
+        "blk_0200_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0190",
+        "blk_0193",
+        "blk_0195",
+        "blk_0198",
+        "blk_0200"
+      ],
+      "source_position_start": 319,
+      "source_position_end": 335,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Drugs, Alcohol, and Tobacco",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0190_item_01",
+            "blk_0193_item_01",
+            "blk_0193_item_02",
+            "blk_0195_item_01",
+            "blk_0198_item_01",
+            "blk_0200_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Drugs, Alcohol, and Tobacco",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0190_item_01",
+            "blk_0193_item_01",
+            "blk_0193_item_02",
+            "blk_0195_item_01",
+            "blk_0198_item_01",
+            "blk_0200_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Drugs, Alcohol, and Tobacco",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0190_item_01",
+            "blk_0193_item_01",
+            "blk_0193_item_02",
+            "blk_0195_item_01",
+            "blk_0198_item_01",
+            "blk_0200_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_26",
+      "competency_name": "Physical Health and Preventive Care",
+      "competency_definition": "The ability to understand infection prevention, dental health, self-examination, vaccination, sleep hygiene, and reproductive health basics.",
+      "kud_item_ids": [
+        "blk_0204_item_01",
+        "blk_0206_item_01",
+        "blk_0210_item_01",
+        "blk_0212_item_01",
+        "blk_0214_item_01",
+        "blk_0214_item_02",
+        "blk_0216_item_01",
+        "blk_0216_item_02",
+        "blk_0216_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0204",
+        "blk_0206",
+        "blk_0210",
+        "blk_0212",
+        "blk_0214",
+        "blk_0216"
+      ],
+      "source_position_start": 341,
+      "source_position_end": 356,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 9
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Physical Health and Preventive Care",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0204_item_01",
+            "blk_0206_item_01",
+            "blk_0210_item_01",
+            "blk_0212_item_01",
+            "blk_0214_item_01",
+            "blk_0214_item_02",
+            "blk_0216_item_01",
+            "blk_0216_item_02",
+            "blk_0216_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Physical Health, Hygiene, and Preventive Care",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0204_item_01",
+            "blk_0206_item_01",
+            "blk_0210_item_01",
+            "blk_0212_item_01",
+            "blk_0214_item_01",
+            "blk_0214_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Sleep and Reproductive Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0214_item_01",
+            "blk_0214_item_02",
+            "blk_0216_item_01",
+            "blk_0216_item_02",
+            "blk_0216_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_27",
+      "competency_name": "Accessing Healthcare Services",
+      "competency_definition": "The ability to understand how to access appropriate healthcare services and the legal frameworks around medical consent and capacity.",
+      "kud_item_ids": [
+        "blk_0218_item_01",
+        "blk_0220_item_01",
+        "blk_0221_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0218",
+        "blk_0220",
+        "blk_0221"
+      ],
+      "source_position_start": 360,
+      "source_position_end": 366,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Accessing Healthcare Services",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0218_item_01",
+            "blk_0220_item_01",
+            "blk_0221_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Reproductive Health and Accessing Healthcare",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0216_item_01",
+            "blk_0216_item_02",
+            "blk_0216_item_03",
+            "blk_0218_item_01",
+            "blk_0220_item_01",
+            "blk_0221_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Accessing Healthcare Services",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0218_item_01",
+            "blk_0220_item_01",
+            "blk_0221_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_28",
+      "competency_name": "Personal Safety and Risk Management",
+      "competency_definition": "The ability to identify and manage personal safety risks in various contexts, including recognising and resisting peer pressure.",
+      "kud_item_ids": [
+        "blk_0225_item_01",
+        "blk_0227_item_01",
+        "blk_0229_item_01",
+        "blk_0229_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0225",
+        "blk_0227",
+        "blk_0229"
+      ],
+      "source_position_start": 373,
+      "source_position_end": 379,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Personal Safety and Risk Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0225_item_01",
+            "blk_0227_item_01",
+            "blk_0229_item_01",
+            "blk_0229_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Personal Safety and Risk Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0225_item_01",
+            "blk_0227_item_01",
+            "blk_0229_item_01",
+            "blk_0229_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Personal Safety and Risk Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0225_item_01",
+            "blk_0227_item_01",
+            "blk_0229_item_01",
+            "blk_0229_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_29",
+      "competency_name": "Weapons, Violence, and Exploitation",
+      "competency_definition": "The ability to understand the realities of weapon carrying, recognise grooming and exploitation, and know how to seek help.",
+      "kud_item_ids": [
+        "blk_0233_item_01",
+        "blk_0233_item_02",
+        "blk_0235_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0233",
+        "blk_0235"
+      ],
+      "source_position_start": 385,
+      "source_position_end": 390,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Weapons, Violence, and Exploitation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0233_item_01",
+            "blk_0233_item_02",
+            "blk_0235_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Weapons, Exploitation, and Seeking Help",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0233_item_01",
+            "blk_0233_item_02",
+            "blk_0235_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Weapons, Violence, and Exploitation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0233_item_01",
+            "blk_0233_item_02",
+            "blk_0235_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_30",
+      "competency_name": "Reproductive Health and First Aid",
+      "competency_definition": "The ability to understand menstrual and reproductive health issues, know when to seek help, and understand basic first aid timing.",
+      "kud_item_ids": [
+        "blk_0245_item_01",
+        "blk_0245_item_02",
+        "blk_0247_item_01",
+        "blk_0248_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0245",
+        "blk_0247",
+        "blk_0248"
+      ],
+      "source_position_start": 402,
+      "source_position_end": 407,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Reproductive Health and First Aid",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0245_item_01",
+            "blk_0245_item_02",
+            "blk_0247_item_01",
+            "blk_0248_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Menstrual and Reproductive Health Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0245_item_01",
+            "blk_0245_item_02",
+            "blk_0247_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Menstrual and Reproductive Health",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0245_item_01",
+            "blk_0245_item_02",
+            "blk_0247_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ]
+}

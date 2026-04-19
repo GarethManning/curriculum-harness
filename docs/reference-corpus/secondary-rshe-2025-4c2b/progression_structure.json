@@ -1,0 +1,25 @@
+{
+  "band_labels": [
+    "End of Secondary"
+  ],
+  "band_count": 1,
+  "age_range_hint": "ages 11-16 (DfE RSHE statutory guidance; secondary phase = Years 7-11, KS3 + KS4; outcomes framed as 'by the end of secondary school')",
+  "source_type": "england_rshe_secondary",
+  "detection_confidence": "high",
+  "detection_rationale": "DfE RSHE statutory guidance detected (host=assets.publishing.service.gov.uk, path contains 'relationships'). Single-band End-of-Secondary structure (ages 11-16).",
+  "band_self_reflection_prompts": {
+    "End of Secondary": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+  },
+  "band_details": [
+    {
+      "label": "End of Secondary",
+      "approximate_age_range": "ages 11-16",
+      "approximate_grade_year": "Years 7-11 (KS3 and KS4)",
+      "developmental_descriptor": "Secondary pupils develop the knowledge, values and personal qualities needed to navigate relationships, health and wellbeing across the full secondary phase. Outcomes are framed as terminal goals for all secondary pupils; year-group sequencing is a school decision."
+    }
+  ],
+  "progression_philosophy": "The DfE RSHE statutory guidance sets outcomes as 'by the end of secondary school' terminal statements. Unlike the National Curriculum, which has Key Stage progression, RSHE uses a single secondary-phase endpoint. Single-band output reflects the guidance's own structure. Per DfE statutory RSHE guidance (England), Children and Social Work Act 2017.",
+  "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+  "source_slug": "2a-secondary-rshe-2025",
+  "detection_module_version": "0.1.0"
+}
