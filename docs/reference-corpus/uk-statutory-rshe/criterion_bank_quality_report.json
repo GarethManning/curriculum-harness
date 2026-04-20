@@ -1,0 +1,448 @@
+{
+  "source_slug": "uk-statutory-rshe",
+  "strand_summaries": [
+    {
+      "strand": "single_strand",
+      "criteria_count": 84,
+      "edge_count": 27,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "dag_validation": {
+    "passed": true,
+    "errors": []
+  },
+  "over_generation_spot_check": {
+    "total_criteria": 84,
+    "sample_size": 16,
+    "issues_found": 0,
+    "issues": []
+  },
+  "decomposition_audit": {
+    "lts_audited": 20,
+    "audit_rows": [
+      {
+        "lt_id": "cluster_15_lt_02",
+        "lt_name": "Making Responsible Digital Decisions",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0062",
+          "uk-statutory-rshe_crit_0063",
+          "uk-statutory-rshe_crit_0064"
+        ],
+        "decomposition_rationale": "This represents a distinct cognitive skill of content evaluation that can be assessed independently from relationship management or help-seeking behaviors."
+      },
+      {
+        "lt_id": "cluster_11_lt_02",
+        "lt_name": "Analysing Relationship Challenges and Influences",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0038",
+          "uk-statutory-rshe_crit_0039"
+        ],
+        "decomposition_rationale": "This represents a distinct analytical skill focused on understanding external factors that shape relationships, separate from the practical application of conflict management strategies."
+      },
+      {
+        "lt_id": "cluster_05_lt_02",
+        "lt_name": "Developing and Managing Friendship Skills",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0015",
+          "uk-statutory-rshe_crit_0016"
+        ],
+        "decomposition_rationale": "The LT contains two distinct procedural skills: building friendships versus managing friendship challenges, each requiring different strategies and having separable failure modes."
+      },
+      {
+        "lt_id": "cluster_16_lt_01",
+        "lt_name": "Understanding Health Knowledge and Risks",
+        "knowledge_type": "Type 1",
+        "criteria_count": 6,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0065",
+          "uk-statutory-rshe_crit_0066",
+          "uk-statutory-rshe_crit_0067",
+          "uk-statutory-rshe_crit_0068",
+          "uk-statutory-rshe_crit_0069",
+          "uk-statutory-rshe_crit_0070"
+        ],
+        "decomposition_rationale": "Nutrition represents a distinct knowledge domain with specific facts about calories, diet quality, and health outcomes that can be assessed independently from other health topics."
+      },
+      {
+        "lt_id": "cluster_07_lt_01",
+        "lt_name": "Understanding Bullying and Stereotypes",
+        "knowledge_type": "Type 1",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0019",
+          "uk-statutory-rshe_crit_0020",
+          "uk-statutory-rshe_crit_0021"
+        ],
+        "decomposition_rationale": "This represents a distinct identification skill that can be assessed independently from understanding stereotypes or explaining impacts."
+      },
+      {
+        "lt_id": "cluster_17_lt_02",
+        "lt_name": "Understanding Medical Consent Capacity",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0075",
+          "uk-statutory-rshe_crit_0076"
+        ],
+        "decomposition_rationale": "This criterion addresses the specific legal framework for minors under 16, focusing on parental responsibility and the Gillick competence exception."
+      },
+      {
+        "lt_id": "cluster_12_lt_02",
+        "lt_name": "Understanding Sexual Consent Principles",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0043"
+        ],
+        "decomposition_rationale": "This is one criterion as it involves a single cognitive act (explain) applied to a unified concept domain (sexual consent principles). The various aspects mentioned are interconnected components of understanding consent rather than separately assessable skills."
+      },
+      {
+        "lt_id": "cluster_03_lt_01",
+        "lt_name": "Identifying Diverse Family Structures",
+        "knowledge_type": "Type 1",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0008"
+        ],
+        "decomposition_rationale": "This is one criterion because the LT involves a single cognitive act (identify and describe) applied to one knowledge domain (family structures and characteristics). The enumerated family types are illustrative examples of the scope, not separately assessable sub-skills."
+      },
+      {
+        "lt_id": "cluster_18_lt_02",
+        "lt_name": "Managing Personal Safety and Seeking Help",
+        "knowledge_type": "Type 2",
+        "criteria_count": 4,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0078",
+          "uk-statutory-rshe_crit_0079",
+          "uk-statutory-rshe_crit_0080",
+          "uk-statutory-rshe_crit_0081"
+        ],
+        "decomposition_rationale": "This represents a distinct procedural skill of implementing safety measures that can be assessed independently from peer influence management or help-seeking behaviors."
+      },
+      {
+        "lt_id": "cluster_05_lt_01",
+        "lt_name": "Understanding Healthy Friendship Characteristics",
+        "knowledge_type": "Type 1",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0013",
+          "uk-statutory-rshe_crit_0014"
+        ],
+        "decomposition_rationale": "This is one criterion because both 'identify' and 'explain' operate on the same knowledge domain of friendship characteristics, and the cognitive acts are closely related rather than representing distinct assessable skills."
+      },
+      {
+        "lt_id": "cluster_02_lt_02",
+        "lt_name": "Managing Complex Relationship Challenges",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0006",
+          "uk-statutory-rshe_crit_0007"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the skill-based application of emotion management strategies in friendship contexts."
+      },
+      {
+        "lt_id": "cluster_14_lt_02",
+        "lt_name": "Recognising and Responding to Mental Health Needs",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0057",
+          "uk-statutory-rshe_crit_0058",
+          "uk-statutory-rshe_crit_0059"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the cognitive skill of emotional recognition and communication, which is foundational and separately assessable from judgment and help-seeking skills."
+      },
+      {
+        "lt_id": "cluster_16_lt_02",
+        "lt_name": "Seeking Health Support",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0071",
+          "uk-statutory-rshe_crit_0072"
+        ],
+        "decomposition_rationale": "This criterion focuses on the decision-making aspect of recognising when health support is warranted, which is a distinct cognitive skill from knowing how to access that support."
+      },
+      {
+        "lt_id": "cluster_07_lt_02",
+        "lt_name": "Responding to Bullying and Stereotypes",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0022",
+          "uk-statutory-rshe_crit_0023"
+        ],
+        "decomposition_rationale": "Two criteria needed as they represent distinct procedural skills: challenging stereotypes requires reasoning and argumentation skills, while seeking help for bullying requires knowledge of support systems and communication strategies."
+      },
+      {
+        "lt_id": "cluster_01_lt_02",
+        "lt_name": "Expressing Personal Boundaries",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0003"
+        ],
+        "decomposition_rationale": "This LT represents a single cognitive-communicative skill of expressing boundaries. While it covers both physical contact and privacy, these are contextual applications of the same fundamental communication skill rather than separable sub-skills."
+      },
+      {
+        "lt_id": "cluster_12_lt_01",
+        "lt_name": "Communicating Consent and Boundaries",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0040",
+          "uk-statutory-rshe_crit_0041",
+          "uk-statutory-rshe_crit_0042"
+        ],
+        "decomposition_rationale": "Recognition is a distinct cognitive skill that can be assessed independently from communication abilities."
+      },
+      {
+        "lt_id": "cluster_18_lt_01",
+        "lt_name": "Identifying Safety Hazards and Risks",
+        "knowledge_type": "Type 2",
+        "criteria_count": 1,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0077"
+        ],
+        "decomposition_rationale": "This is one criterion as it involves a single cognitive act of identification and assessment applied across various safety contexts, with the enumerated environments serving as scope illustration rather than separate assessable skills."
+      },
+      {
+        "lt_id": "cluster_14_lt_01",
+        "lt_name": "Understanding Emotions and Mental Health",
+        "knowledge_type": "Type 1",
+        "criteria_count": 4,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0053",
+          "uk-statutory-rshe_crit_0054",
+          "uk-statutory-rshe_crit_0055",
+          "uk-statutory-rshe_crit_0056"
+        ],
+        "decomposition_rationale": "This represents a distinct cognitive skill of emotion identification that can be assessed independently from explaining mental health concepts or describing wellbeing factors."
+      },
+      {
+        "lt_id": "cluster_02_lt_01",
+        "lt_name": "Building Safe and Positive Relationships",
+        "knowledge_type": "Type 2",
+        "criteria_count": 2,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0004",
+          "uk-statutory-rshe_crit_0005"
+        ],
+        "decomposition_rationale": "This criterion focuses specifically on the application of foundational relationship skills for building positive connections, which is a distinct cognitive and practical skill set."
+      },
+      {
+        "lt_id": "cluster_08_lt_02",
+        "lt_name": "Evaluating and Responding to Online Threats",
+        "knowledge_type": "Type 2",
+        "criteria_count": 3,
+        "criterion_ids": [
+          "uk-statutory-rshe_crit_0027",
+          "uk-statutory-rshe_crit_0028",
+          "uk-statutory-rshe_crit_0029"
+        ],
+        "decomposition_rationale": "This LT contains three distinct cognitive operations: evaluating (analysis), identifying (recognition), and applying (procedural response). Each requires different assessment approaches and can be demonstrated independently."
+      }
+    ],
+    "flags": [
+      "cluster_16_lt_01: 6 criteria \u2014 possible over-decomposition, review"
+    ]
+  },
+  "scope_drift_check": {
+    "sample_size": 10,
+    "flags_found": 0,
+    "flags": [],
+    "rows": [
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0052",
+        "lt_id": "cluster_13_lt_02",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "counter",
+          "health",
+          "misinformation",
+          "sexual"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0003",
+        "lt_id": "cluster_01_lt_02",
+        "overlap_word_count": 5,
+        "overlap_sample": [
+          "boundaries",
+          "contact",
+          "personal",
+          "physical",
+          "privacy"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0042",
+        "lt_id": "cluster_12_lt_01",
+        "overlap_word_count": 8,
+        "overlap_sample": [
+          "boundaries",
+          "communicate",
+          "consent",
+          "early",
+          "including"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0008",
+        "lt_id": "cluster_03_lt_01",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "characteristics",
+          "family",
+          "identify",
+          "structures"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0029",
+        "lt_id": "cluster_08_lt_02",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "apply",
+          "appropriate",
+          "online",
+          "response",
+          "strategies"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0059",
+        "lt_id": "cluster_14_lt_02",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "appropriately",
+          "communicate",
+          "health",
+          "mental"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0027",
+        "lt_id": "cluster_08_lt_02",
+        "overlap_word_count": 4,
+        "overlap_sample": [
+          "critically",
+          "evaluate",
+          "online",
+          "relationships"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0038",
+        "lt_id": "cluster_11_lt_02",
+        "overlap_word_count": 9,
+        "overlap_sample": [
+          "affect",
+          "cultural",
+          "dynamics",
+          "evaluate",
+          "imbalances"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0007",
+        "lt_id": "cluster_02_lt_02",
+        "overlap_word_count": 8,
+        "overlap_sample": [
+          "behaviors",
+          "challenging",
+          "complex",
+          "kind",
+          "navigating"
+        ]
+      },
+      {
+        "criterion_id": "uk-statutory-rshe_crit_0025",
+        "lt_id": "cluster_08_lt_01",
+        "overlap_word_count": 6,
+        "overlap_sample": [
+          "explain",
+          "information",
+          "personal",
+          "principles",
+          "protecting"
+        ]
+      }
+    ]
+  },
+  "token_usage": {
+    "total_input_tokens": 71965,
+    "total_output_tokens": 23294,
+    "per_stage": {
+      "other": {
+        "input": 71965,
+        "output": 23294,
+        "calls": 35,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  },
+  "rename_results": [
+    {
+      "status": "ok",
+      "from": "criteria.json",
+      "to": "rubrics.json",
+      "pre_count": 34,
+      "post_count": 34,
+      "pre_gate_fail": 8,
+      "post_gate_fail": 8,
+      "regression_ok": true
+    }
+  ],
+  "lt_prerequisite_regeneration": {
+    "lt_prereqs_updated": 22,
+    "lossy_cases": [],
+    "lt_prereq_summary": {
+      "cluster_01_lt_02": [
+        "cluster_01_lt_01"
+      ],
+      "cluster_05_lt_02": [
+        "cluster_05_lt_01"
+      ],
+      "cluster_07_lt_02": [
+        "cluster_07_lt_01"
+      ],
+      "cluster_08_lt_02": [
+        "cluster_08_lt_01"
+      ],
+      "cluster_11_lt_02": [
+        "cluster_11_lt_01"
+      ],
+      "cluster_12_lt_01": [
+        "cluster_01_lt_02"
+      ],
+      "cluster_12_lt_02": [
+        "cluster_12_lt_01"
+      ],
+      "cluster_13_lt_02": [
+        "cluster_13_lt_01"
+      ],
+      "cluster_14_lt_02": [
+        "cluster_14_lt_01"
+      ],
+      "cluster_15_lt_02": [
+        "cluster_15_lt_01"
+      ],
+      "cluster_18_lt_02": [
+        "cluster_18_lt_01"
+      ],
+      "cluster_19_lt_02": [
+        "cluster_19_lt_01"
+      ]
+    }
+  }
+}

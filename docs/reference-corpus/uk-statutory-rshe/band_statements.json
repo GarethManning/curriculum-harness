@@ -1,0 +1,2977 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "uk-statutory-rshe",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify and name body parts including private areas and explain which parts are private."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can accurately identify body parts including private areas and explain privacy boundaries with detailed reasoning across different contexts."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify and name body parts including private areas and explain which parts are private."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can accurately identify body parts including private areas and explain privacy boundaries with detailed reasoning across different contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify and name body parts including private areas and explain which parts are private."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can identify body parts including private areas and explain privacy boundaries with reasoning about personal safety and consent."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify and name body parts including private areas and explain which parts are private."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can identify body parts including private areas and explain privacy boundaries with detailed reasoning across different contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 'medium'), ('End of Secondary', 'long')): 2, (('End of Primary', 'medium'), ('End of Secondary', 'medium')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can communicate my boundaries about physical contact and privacy needs in familiar situations."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can communicate my boundaries about physical contact and privacy needs clearly and assertively across various contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can communicate my boundaries about physical contact and privacy needs in familiar situations."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can communicate my boundaries about physical contact and privacy needs clearly and assertively across various contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can communicate my boundaries about physical contact and privacy needs in familiar situations."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can communicate my boundaries about physical contact and privacy needs clearly and assertively across diverse contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can communicate my boundaries about physical contact and privacy needs with support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can confidently communicate and justify my boundaries about physical contact and privacy needs across various situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can apply basic relationship skills to build positive connections with familiar people in structured settings."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can independently apply comprehensive relationship skills and safety knowledge to build and maintain positive connections across diverse social contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic relationship skills to build positive connections with familiar people in structured settings."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply comprehensive relationship skills and safety knowledge to build and maintain positive connections across diverse social contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic relationship skills to build positive connections with familiar people in structured settings."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply comprehensive relationship skills and safety knowledge to build and maintain positive connections across diverse social contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic relationship skills to build positive connections with familiar people in structured settings."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply comprehensive relationship skills and safety knowledge to build and maintain positive connections across diverse social contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify my difficult feelings and choose kind behaviors when facing simple relationship challenges."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can analyze complex emotions and evaluate the effectiveness of kind behaviors across varied challenging relationship situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my difficult feelings and choose kind behaviors when facing simple relationship challenges."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyze complex emotions and evaluate the effectiveness of kind behaviors across varied challenging relationship situations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my difficult feelings and describe kind behaviors when facing simple relationship challenges."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex difficult feelings and evaluate effective kind behaviors across varied challenging relationship situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my difficult feelings and describe kind behaviors when facing simple relationship challenges."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex emotions and evaluate effective kind responses across varied challenging relationship situations independently."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify different types of families and describe their basic characteristics with support."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can independently identify diverse family structures and describe their detailed characteristics across various contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of families and describe their basic characteristics with support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently identify diverse family structures and describe their detailed characteristics across various contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of families and describe their basic characteristics with support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently identify and describe diverse family structures and explain how their characteristics meet different needs."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of families and describe their basic characteristics with support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently identify diverse family structures and describe their detailed characteristics across various contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic forms of abuse and recognise when situations feel unsafe with adult guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can analyse different forms of abuse and evaluate potential risks in complex situations independently."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic forms of abuse and recognise when situations feel unsafe with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse different forms of abuse and evaluate potential risks in complex situations independently."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic forms of abuse and recognise when situations feel unsafe with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse different forms of abuse and evaluate complex situations to determine potential harm independently."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify when situations feel unsafe and recognise basic forms of harmful behaviour with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently analyse complex situations to identify various forms of abuse and evaluate potential risks across different contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 'medium'), ('End of Secondary', 'medium')): 2, (('End of Primary', 'medium'), ('End of Secondary', 'long')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify my basic rights and describe who to tell when I feel unsafe."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain personal rights, legal protections, and evaluate appropriate support systems when safety is compromised."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my basic rights and describe who to tell when I feel unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain personal rights, legal protections, and evaluate appropriate support systems when safety is compromised."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my basic rights and explain how to ask trusted adults for help when feeling unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse personal rights within legal frameworks and evaluate multiple support systems for addressing safety concerns independently."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify my basic rights and describe who to tell when I feel unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain personal rights, legal protections, and evaluate appropriate support systems when safety is compromised."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify key characteristics that make friendships positive and caring with guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain and justify the essential characteristics that create supportive friendships across different contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify key characteristics that make friendships positive and caring with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain and justify the essential characteristics that create supportive friendships across different contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify key characteristics that make friendships positive and caring with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain and justify the essential characteristics that create supportive friendships across different contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify key characteristics that make friendships positive and caring with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain and analyse the characteristics that create healthy, supportive friendships across different contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can apply basic strategies to build caring friendships and respond to simple friendship challenges."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can independently apply sophisticated strategies to build caring friendships and respond effectively to complex friendship challenges."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic strategies to build caring friendships and respond to simple friendship challenges."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply sophisticated strategies to build caring friendships and respond effectively to complex friendship challenges."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic strategies to build caring friendships and respond to simple friendship challenges with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply diverse strategies to build caring friendships and respond effectively to complex friendship challenges across contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can apply basic strategies to build caring friendships and respond to simple friendship challenges."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently apply sophisticated strategies to build caring friendships and respond effectively to complex friendship challenges."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 'medium'), ('End of Secondary', 'medium')): 2, (('End of Primary', 'medium'), ('End of Secondary', 'long')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify different types of bullying and stereotypes and describe why they are harmful."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can identify different types of bullying and stereotypes and explain their complex psychological and social impacts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of bullying and stereotypes and describe why they are harmful."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can identify different types of bullying and stereotypes and explain their complex psychological and social impacts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of bullying and stereotypes and describe why they are harmful."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can identify different types of bullying and stereotypes and explain their complex psychological and social impacts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify different types of bullying and stereotypes with guidance and describe their basic harmful effects."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently identify various forms of bullying and stereotypes and explain their complex psychological and social impacts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify stereotypes and tell a trusted adult when bullying happens to me or others."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can challenge stereotypes confidently and evaluate appropriate support strategies when responding to different bullying situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify stereotypes and tell a trusted adult when bullying happens to me or others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can challenge stereotypes confidently and evaluate appropriate support strategies when responding to different bullying situations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify stereotypes and tell a trusted adult when bullying happens to me or others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can challenge stereotypes confidently and apply multiple strategies to address bullying across different situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify stereotypes and tell a trusted adult when bullying happens to me or others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can challenge stereotypes confidently and evaluate appropriate support strategies when responding to various bullying situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic online risks and explain simple safety rules for protecting personal information."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can analyse complex digital risks and justify comprehensive safety principles for protecting information and managing relationships online."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic online risks and explain simple safety rules for protecting personal information."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and justify comprehensive safety principles for protecting information and managing relationships online."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify common online risks and describe basic safety principles for protecting personal information."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and justify comprehensive safety strategies for protecting information and managing relationships online."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic online risks and explain simple safety rules for protecting personal information."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and justify comprehensive safety principles for protecting information and managing relationships online."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify harmful online situations and explain basic strategies to respond safely."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can critically evaluate complex online relationships and content to justify appropriate response strategies across varied digital contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify harmful online situations and explain basic strategies to respond safely."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can critically evaluate complex online relationships and content to justify appropriate response strategies across varied digital contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify harmful online situations and explain basic response strategies with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can critically evaluate complex online relationships and content to independently apply appropriate response strategies."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify harmful online situations and apply basic safety strategies with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can critically evaluate complex online relationships and content to independently apply sophisticated response strategies."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify trustworthy people and recognise when situations or contact feel unsafe with adult support."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can independently evaluate trustworthiness and analyse complex situations to identify potential safety risks and inappropriate contact."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trustworthy people and recognise when situations or contact feel unsafe with adult support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently evaluate trustworthiness and analyse complex situations to identify potential safety risks and inappropriate contact."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trustworthy people and recognise when situations or contact feel unsafe with adult support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently evaluate trustworthiness and analyse complex situations to identify potential safety risks and inappropriate contact."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trustworthy people and recognise when situations or contact feel unsafe with adult support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently assess trustworthiness and analyse complex situations to identify potential safety risks and inappropriate contact."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify trusted adults and report safety concerns using simple vocabulary."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate appropriate reporting channels and communicate complex safety concerns with precise vocabulary."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "short"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted adults and report safety concerns using simple vocabulary."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate appropriate reporting channels and communicate complex safety concerns with precise vocabulary."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "short"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted adults and report safety concerns using simple vocabulary."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate appropriate reporting channels and communicate complex safety concerns with precise vocabulary."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "short"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted adults and report safety concerns using simple vocabulary."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently evaluate situations, report complex safety concerns through appropriate channels, and justify my decisions."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_11_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic elements of respectful relationships including kindness, fairness, and listening to others."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain how consent, boundaries, equality, and power dynamics create respectful, ethical romantic relationships."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic elements of respectful relationships including kindness, fairness, and listening to others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain how consent, boundaries, equality, and power dynamics create respectful, ethical romantic relationships."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic elements of respectful relationships including kindness, fairness, and listening to others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain how consent, boundaries, equality, and power dynamics create respectful, ethical romantic relationships."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic elements of respectful relationships including kindness, fairness, and listening to others."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain how consent, boundaries, equality, and power dynamics create respectful, ethical romantic relationships."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_11_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic stereotypes and unfairness in relationships and describe simple strategies for resolving disagreements."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate how stereotypes, power imbalances, and cultural influences affect relationship dynamics and apply strategies for managing conflict and endings."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic stereotypes and unfairness in relationships and describe simple strategies for resolving disagreements."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate how stereotypes, power imbalances, and cultural influences affect relationship dynamics and apply strategies for managing conflict and endings."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify how differences and unfairness might affect friendships and describe simple ways to resolve disagreements."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate how stereotypes, power imbalances, and cultural influences affect relationship dynamics and apply strategies for managing conflict and endings."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify how differences and unfairness might affect friendships and describe simple ways to resolve disagreements."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate how stereotypes, power imbalances, and cultural influences affect relationship dynamics and apply strategies for managing conflict and endings."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_12_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can recognise and communicate basic personal boundaries in friendships and family relationships."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can recognise, respect and clearly communicate consent and boundaries in romantic and sexual relationships."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise and communicate basic personal boundaries in friendships and family relationships."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can recognise, respect and clearly communicate consent and boundaries in romantic and sexual relationships."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise and communicate basic personal boundaries in friendships and family relationships."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can recognise, respect and clearly communicate consent and boundaries in romantic and sexual relationships."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise and communicate basic personal boundaries in friendships and family relationships."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can recognise, respect and clearly communicate consent and boundaries in romantic and sexual relationships."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_12_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can explain that people can say yes or no to physical contact and change their mind."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain the principles of sexual consent including that it can be given, withheld or removed at any time."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can explain that people can say yes or no to physical contact and change their mind."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the principles of sexual consent including that it can be given, withheld or removed at any time."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can explain that people can say yes or no to physical contact and change their mind."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the principles of sexual consent including that it can be given, withheld or removed at any time."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can explain that people can say yes or no to physical contact and change their mind."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the principles of sexual consent including that it can be given, withheld or removed at any time."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_13_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic facts about how babies are made and born with adult guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain contraceptive methods, pregnancy options, STI prevention strategies, and reproductive health information accurately."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about how babies are made and born with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain contraceptive methods, pregnancy options, STI prevention strategies, and reproductive health information accurately."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about how babies are made and born with adult support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain contraceptive methods, pregnancy options, STI prevention strategies, and reproductive health information independently."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about how babies are made and born with adult support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain contraceptive methods, pregnancy options, STI prevention strategies, and reproductive health information independently."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_13_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify trusted sources for basic sexual health information with adult guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate sexual health information sources independently and effectively counter misinformation with evidence."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted sources for basic sexual health information with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate sexual health information sources independently and effectively counter misinformation with evidence."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted sources for basic sexual health information with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate sexual health information sources independently and effectively counter misinformation with evidence."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify trusted sources for basic sexual health information with adult guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate sexual health information sources independently and effectively counter misinformation using evidence."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic emotions and describe simple factors that help keep me mentally healthy."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain complex mental health concepts and analyse how multiple factors interact to support or harm wellbeing."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic emotions and describe simple factors that help keep me mentally healthy."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain complex mental health concepts and analyse how multiple factors interact to support or harm wellbeing."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic emotions and describe simple factors that help keep me mentally healthy."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain complex mental health concepts and analyse how multiple factors interact to support or harm wellbeing."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic emotions and describe simple factors that help keep me mentally healthy."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain complex mental health concepts and analyse how multiple factors interact to support or undermine wellbeing."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can recognise basic emotional responses in myself and others and identify when adult help is needed."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can assess complex emotional situations, evaluate appropriate support options, and communicate effectively about mental health concerns."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise basic emotional responses in myself and others and identify when adult help is needed."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can assess complex emotional situations, evaluate appropriate support options, and communicate effectively about mental health concerns."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise basic emotional responses in myself and others and identify when help might be needed."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can assess complex emotional situations, evaluate appropriate support options, and communicate effectively about mental health concerns."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can recognise basic emotional responses in myself and others and identify when adult help is needed."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can assess complex emotional situations, evaluate appropriate support options, and communicate effectively about mental health concerns."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_15_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic risks and benefits of online activities with guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can analyse complex digital risks and benefits and evaluate their long-term impact on wellbeing."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic risks and benefits of common online activities with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and benefits across diverse contexts and explain their wellbeing impacts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "short"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic risks and benefits of online activities with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and benefits and evaluate their long-term impact on wellbeing."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "short"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic risks and benefits of online activities with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex digital risks and benefits and evaluate their impact on personal wellbeing."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 'medium'), ('End of Secondary', 'medium')): 1, (('End of Primary', 'short'), ('End of Secondary', 'medium')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_15_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify helpful and harmful online content with guidance to make basic digital choices."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate complex online content and relationships independently to make informed decisions about digital engagement."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify helpful and harmful online content with guidance to make basic digital choices."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex online content and relationships independently to make informed decisions about digital engagement."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify helpful and harmful online content with guidance to make basic digital choices."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex online content and relationships independently to make informed decisions about digital engagement."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify helpful and unhelpful online content to make simple decisions about digital activities."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex online content and relationships to make informed decisions about digital engagement across contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_16_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic facts about healthy eating, exercise, cleanliness, and avoiding harmful substances."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can analyse complex health information about nutrition, physical activity, substance risks, and preventive health practices."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about healthy eating, exercise, cleanliness, and avoiding harmful substances."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex health information about nutrition, physical activity, substance risks, and preventive health practices."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about healthy eating, exercise, cleanliness, and avoiding harmful substances."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex health information about nutrition, physical activity, substance risks, and preventive health practices."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic facts about healthy eating, exercise, cleanliness, and avoiding harmful substances."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can analyse complex health information and evaluate risks across nutrition, physical activity, substance use, and health maintenance practices."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 'medium'), ('End of Secondary', 'medium')): 2, (('End of Primary', 'medium'), ('End of Secondary', 'long')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_16_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify when I need help with health concerns and ask trusted adults for support."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate health situations to determine appropriate support sources and communicate effectively with healthcare professionals."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify when I need help with health concerns and ask trusted adults for support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate health situations to determine appropriate support sources and communicate effectively with healthcare professionals."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify when I need help with health concerns and ask trusted adults for support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate health situations independently and determine appropriate sources of professional healthcare support to access."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify when I need health support and ask trusted adults for help."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate health situations independently and determine appropriate support pathways from various healthcare professionals."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_17_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic healthcare services like doctors and dentists and describe simple ways to access them."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate appropriate healthcare services for diverse health needs and explain comprehensive access pathways including barriers."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic healthcare services like doctors and dentists and describe simple ways to access them."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate appropriate healthcare services for diverse health needs and explain comprehensive access pathways including barriers."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic healthcare services like doctors and dentists and describe simple ways to access them."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate appropriate healthcare services for diverse needs and explain comprehensive access pathways including barriers and solutions."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic healthcare services like doctors and dentists and describe simple ways to access them."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate appropriate healthcare services for diverse needs and explain comprehensive access pathways including barriers and solutions."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_17_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify that adults help children make important decisions about their health and medical care."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain the legal framework for medical consent including age-related capacity and competency requirements."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify that adults help children make important decisions about their health and medical care."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the legal framework for medical consent including age-related capacity and competency requirements."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify that adults help children make medical decisions and explain basic consent rules."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the legal framework for medical consent including age-related capacity and competency requirements."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify that adults help children make important decisions about their health and medical care."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the legal framework for medical consent including age-related capacity and competency requirements."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_18_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify obvious hazards and describe basic safety risks in familiar environments with guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can independently assess complex safety risks and evaluate potential consequences across diverse unfamiliar situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify obvious hazards and describe basic safety risks in familiar environments with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently assess complex safety risks and evaluate potential consequences across diverse unfamiliar situations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify obvious safety hazards and describe basic risks in familiar environments with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently assess complex safety risks and evaluate potential consequences across diverse unfamiliar situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify obvious hazards and describe basic safety risks in familiar environments with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can independently assess complex safety risks and evaluate potential consequences across diverse unfamiliar situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_18_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic safety strategies and ask trusted adults for help when I feel unsafe."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate complex safety situations, resist negative peer influence, and independently access appropriate support services."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic safety strategies and ask trusted adults for help when I feel unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex safety situations, resist negative peer influence, and independently access appropriate support services."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic safety strategies and ask trusted adults for help when I feel unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex safety situations, resist negative peer influence, and independently access appropriate support services."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic safety strategies and ask trusted adults for help when I feel unsafe."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex safety situations, resist negative peer influence, and independently access appropriate support services."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_19_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can describe the basic physical changes that happen during puberty with guidance."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can explain the physical changes during puberty and adolescence including their biological causes and individual variation."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can describe the basic physical changes that happen during puberty with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the physical changes during puberty and adolescence including their biological causes and individual variation."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can describe the basic physical changes that happen during puberty with guidance."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the physical changes during puberty and analyse how they vary between individuals."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can describe the basic physical changes that happen during puberty with support."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can explain the physical changes during puberty and analyse how they vary between individuals."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_19_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can identify basic health issues that need adult help and follow simple wellbeing strategies."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can evaluate complex health concerns requiring professional attention and independently apply comprehensive wellbeing protection strategies."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic health issues that need adult help and follow simple wellbeing strategies."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex health concerns requiring professional attention and independently apply comprehensive wellbeing protection strategies."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic health issues that need adult help and follow simple wellbeing strategies."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex health concerns requiring professional attention and independently apply comprehensive wellbeing protection strategies."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              "medium"
+            ],
+            [
+              "End of Secondary",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "End of Primary",
+              "statement": "I can identify basic health issues that need adult help and follow simple wellbeing strategies."
+            },
+            {
+              "band": "End of Secondary",
+              "statement": "I can evaluate complex health concerns requiring professional attention and independently apply comprehensive wellbeing protection strategies."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_06_lt_01",
+      "lt_name": "Assertive Communication and Boundary Setting",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "End of Primary:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can express my basic needs and feelings clearly while recognizing simple personal boundaries."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can communicate assertively across various situations while establishing and maintaining appropriate boundaries through effective emotional regulation."
+        }
+      ]
+    }
+  ]
+}

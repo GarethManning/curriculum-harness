@@ -121,6 +121,16 @@ SOURCES_4C4B: dict[str, dict] = {
             {"slug": "economic-activity", "name": "Economic Activity"},
         ],
     },
+    "uk-statutory-rshe": {
+        "type": "single_strand",
+        "name": "UK Statutory RSHE — Full Programme (DfE July 2025)",
+        "corpus_dir": "uk-statutory-rshe",
+        "strand": SINGLE_STRAND_SENTINEL,
+        "lts_file": "lts.json",
+        "kud_file": "kud.json",
+        "criteria_file": "criteria.json",
+        "horizontal_spot_check": False,
+    },
 }
 
 

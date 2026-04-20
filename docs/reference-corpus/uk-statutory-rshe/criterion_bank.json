@@ -1,0 +1,2307 @@
+{
+  "schema_version": "v1",
+  "source_slug": "uk-statutory-rshe",
+  "source_name": "UK Statutory RSHE \u2014 Full Programme (DfE July 2025)",
+  "total_criteria": 84,
+  "strand_summaries": [
+    {
+      "strand": "single_strand",
+      "criteria_count": 84,
+      "edge_count": 27,
+      "failed_lts": [],
+      "skipped": false
+    }
+  ],
+  "criteria": [
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0001",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify and name body parts using correct anatomical terms.",
+      "criterion_label": "Body Part Identification",
+      "source_provenance": [
+        "blk_0002_item_01",
+        "blk_0002_item_02",
+        "blk_0346_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name basic body parts.",
+        "emerging": "Names some basic body parts with prompting.",
+        "developing": "Names most body parts but may use incorrect terms.",
+        "competent": "Confidently identifies and names body parts using correct anatomical terminology.",
+        "extending": "Uses precise anatomical terms consistently and accurately."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0002",
+      "associated_lt_ids": [
+        "cluster_01_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain which body parts are private.",
+      "criterion_label": "Privacy Understanding",
+      "source_provenance": [
+        "blk_0346_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify private body parts.",
+        "emerging": "Shows basic awareness of privacy with support.",
+        "developing": "Identifies most private parts but explanations lack clarity.",
+        "competent": "Clearly explains which body parts are private and why this matters.",
+        "extending": "Demonstrates sophisticated understanding of body privacy concepts."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0001"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0001",
+          "to_criterion_id": "uk-statutory-rshe_crit_0002",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must know correct anatomical terms before they can meaningfully understand which body parts are private."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0003",
+      "associated_lt_ids": [
+        "cluster_01_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Learners can articulate their personal boundaries regarding physical contact and privacy in clear, age-appropriate language.",
+      "criterion_label": "Articulating Personal Boundaries",
+      "source_provenance": [
+        "blk_0346_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot express any personal boundaries.",
+        "emerging": "Identifies some boundaries but struggles to communicate them clearly.",
+        "developing": "Communicates basic boundaries with some clarity and appropriate language.",
+        "competent": "Clearly articulates personal boundaries using confident, age-appropriate language in various contexts.",
+        "extending": "Articulates boundaries with nuanced understanding of different situations."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0002"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0002",
+          "to_criterion_id": "uk-statutory-rshe_crit_0003",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding which body parts are private is foundational to articulating personal boundaries regarding physical contact and privacy."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0004",
+      "associated_lt_ids": [
+        "cluster_02_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Apply foundational relationship skills to build and maintain positive connections with others.",
+      "criterion_label": "Building Positive Relationships",
+      "source_provenance": [
+        "blk_0006_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of relationship-building skills.",
+        "emerging": "Shows basic awareness of positive relationship elements.",
+        "developing": "Applies some foundational skills with guidance to build connections.",
+        "competent": "Consistently applies foundational relationship skills to build and maintain positive connections effectively.",
+        "extending": "Adapts relationship skills flexibly across diverse social contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0005",
+      "associated_lt_ids": [
+        "cluster_02_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Apply safety knowledge to keep themselves and others safe in relationships.",
+      "criterion_label": "Relationship Safety Knowledge",
+      "source_provenance": [
+        "blk_0006_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of safety awareness.",
+        "emerging": "Shows basic awareness of safety concepts in relationships.",
+        "developing": "Applies some safety knowledge with guidance in relationship contexts.",
+        "competent": "Consistently applies safety knowledge to protect themselves and others in relationships effectively.",
+        "extending": "Demonstrates sophisticated safety reasoning across complex relationship scenarios."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0006",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can use appropriate skills to manage difficult feelings such as disappointment or anger in friendship situations.",
+      "criterion_label": "Managing Difficult Feelings",
+      "source_provenance": [
+        "blk_0008_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No strategies demonstrated for managing difficult feelings.",
+        "emerging": "Shows basic awareness of difficult feelings but limited management strategies.",
+        "developing": "Uses some appropriate strategies to manage difficult feelings with guidance.",
+        "competent": "Consistently applies effective strategies to manage difficult feelings like disappointment or anger in friendships.",
+        "extending": "Adapts and refines emotion management strategies across varied challenging situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0007",
+      "associated_lt_ids": [
+        "cluster_02_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can reflect on how to demonstrate kind behaviors when navigating complex or challenging relationship situations.",
+      "criterion_label": "Reflecting on Kind Behaviors",
+      "source_provenance": [
+        "blk_0008_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No reflection on kind behaviors shown.",
+        "emerging": "Shows basic awareness of kindness but limited reflection on application.",
+        "developing": "Reflects on some kind behaviors with support in challenging situations.",
+        "competent": "Thoughtfully reflects on and identifies appropriate kind behaviors for complex relationship challenges.",
+        "extending": "Demonstrates sophisticated reflection on kindness strategies across diverse relationship contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0008",
+      "associated_lt_ids": [
+        "cluster_03_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify different types of family structures and their defining characteristics.",
+      "criterion_label": "Identifying Family Types",
+      "source_provenance": [
+        "blk_0010_item_01",
+        "blk_0022_item_01",
+        "blk_0024_item_01",
+        "blk_0026_item_01",
+        "blk_0028_item_01",
+        "blk_0030_item_01",
+        "blk_0126_item_01",
+        "blk_0128_item_01",
+        "blk_0131_item_01",
+        "blk_0133_item_01",
+        "blk_0133_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any family types or characteristics.",
+        "emerging": "Identifies one or two basic family types with minimal detail.",
+        "developing": "Identifies several family types and describes some key characteristics accurately.",
+        "competent": "Identifies diverse family structures and describes their characteristics, including legal and social aspects comprehensively.",
+        "extending": "Analyses complex family dynamics and explains how structures evolve over time."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0009",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify different forms of abuse including emotional, physical, sexual, domestic, and exploitative abuse.",
+      "criterion_label": "Identifying Abuse Forms",
+      "source_provenance": [
+        "blk_0012_item_02",
+        "blk_0114_item_02",
+        "blk_0205_item_01",
+        "blk_0207_item_01",
+        "blk_0210_item_01",
+        "blk_0212_item_01",
+        "blk_0216_item_01",
+        "blk_0222_item_01",
+        "blk_0224_item_01",
+        "blk_0225_item_01",
+        "blk_0227_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any forms of abuse.",
+        "emerging": "Identifies basic physical abuse but struggles with other forms.",
+        "developing": "Identifies most common forms of abuse with some gaps in understanding.",
+        "competent": "Accurately identifies various forms of abuse including emotional, physical, sexual, domestic and exploitative types.",
+        "extending": "Identifies complex abuse patterns and understands interconnected forms."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0010",
+      "associated_lt_ids": [
+        "cluster_04_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise when situations are unsafe or harmful including online risks and family relationship concerns.",
+      "criterion_label": "Recognising Unsafe Situations",
+      "source_provenance": [
+        "blk_0012_item_03",
+        "blk_0032_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot recognise unsafe situations.",
+        "emerging": "Recognises obvious physical dangers but misses subtle risks.",
+        "developing": "Recognises most unsafe situations but may miss online or emotional risks.",
+        "competent": "Accurately recognises unsafe situations across physical, online and relationship contexts including reporting needs.",
+        "extending": "Recognises complex risk patterns and anticipates potential dangers."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0011",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain personal rights and legal protections related to safety and abuse.",
+      "criterion_label": "Rights and Legal Protections",
+      "source_provenance": [
+        "blk_0012_item_01",
+        "blk_0015_item_01",
+        "blk_0114_item_01",
+        "blk_0220_item_01",
+        "blk_0220_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic personal rights or protections.",
+        "emerging": "Names some personal rights but explanations are unclear or incomplete.",
+        "developing": "Explains basic personal rights and some legal protections with minor gaps.",
+        "competent": "Clearly explains personal rights, boundaries, and key legal protections including recognition of children as abuse victims.",
+        "extending": "Explains rights and protections with detailed understanding of legal frameworks."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0012",
+      "associated_lt_ids": [
+        "cluster_04_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain how to seek help and support when safety is compromised.",
+      "criterion_label": "Seeking Help and Support",
+      "source_provenance": [
+        "blk_0114_item_03",
+        "blk_0229_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help-seeking options or support systems.",
+        "emerging": "Names some sources of help but explanations lack clarity.",
+        "developing": "Explains basic help-seeking processes with some understanding of support systems.",
+        "competent": "Clearly explains how to seek help, including reporting procedures and accessing medical attention when needed.",
+        "extending": "Explains comprehensive help-seeking strategies including multiple support pathways and professional services."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0013",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the key characteristics that make friendships positive, caring, and supportive.",
+      "criterion_label": "Identify Friendship Characteristics",
+      "source_provenance": [
+        "blk_0037_item_01",
+        "blk_0041_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any friendship characteristics.",
+        "emerging": "Identifies one or two basic friendship characteristics with prompting.",
+        "developing": "Identifies several friendship characteristics but may miss key elements.",
+        "competent": "Clearly identifies multiple key characteristics of positive, caring, and supportive friendships.",
+        "extending": "Identifies comprehensive range of friendship characteristics with nuanced understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0014",
+      "associated_lt_ids": [
+        "cluster_05_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how healthy friendships work, including their challenges and how they can be maintained.",
+      "criterion_label": "Explain Friendship Dynamics",
+      "source_provenance": [
+        "blk_0035_item_01",
+        "blk_0039_item_01",
+        "blk_0043_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain friendship dynamics or challenges.",
+        "emerging": "Provides basic explanation of how friendships work with significant gaps.",
+        "developing": "Explains some aspects of friendship dynamics but lacks depth or completeness.",
+        "competent": "Clearly explains how healthy friendships function, including ups and downs and resolution strategies.",
+        "extending": "Provides sophisticated explanation of friendship dynamics with insightful understanding of complexities."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0013"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0013",
+          "to_criterion_id": "uk-statutory-rshe_crit_0014",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must first identify characteristics of positive friendships before they can explain how healthy friendships work."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0015",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Apply strategies to build caring, kind friendships.",
+      "criterion_label": "Building Caring Friendships",
+      "source_provenance": [
+        "blk_0037_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No strategies demonstrated for building friendships.",
+        "emerging": "Shows basic awareness of friendship-building strategies but application is limited.",
+        "developing": "Applies some appropriate strategies to build caring friendships with guidance.",
+        "competent": "Consistently applies effective strategies to build caring, kind friendships independently.",
+        "extending": "Models excellent friendship-building strategies and supports others."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0014",
+          "to_criterion_id": "uk-statutory-rshe_crit_0015",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Understanding how healthy friendships work is necessary before applying strategies to build them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0016",
+      "associated_lt_ids": [
+        "cluster_05_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Recognise when a friendship is unhealthy and respond appropriately to get support.",
+      "criterion_label": "Managing Friendship Challenges",
+      "source_provenance": [
+        "blk_0046_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify unhealthy friendship signs or responses.",
+        "emerging": "Shows basic awareness of unhealthy friendship signs but responses are unclear.",
+        "developing": "Identifies some unhealthy friendship signs and knows basic support-seeking responses.",
+        "competent": "Clearly recognises unhealthy friendship patterns and responds appropriately to seek support when needed.",
+        "extending": "Demonstrates sophisticated recognition of friendship issues and proactive support-seeking."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0014",
+          "to_criterion_id": "uk-statutory-rshe_crit_0016",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must understand healthy friendship characteristics before they can recognize when a friendship is unhealthy."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0017",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Learners can communicate assertively to express their needs and set appropriate boundaries in relationships.",
+      "criterion_label": "Assertive Communication Skills",
+      "source_provenance": [
+        "blk_0054_item_01",
+        "blk_0056_item_01",
+        "blk_0086_item_01",
+        "blk_0146_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of assertive communication or boundary setting.",
+        "emerging": "Basic attempts at expressing needs with limited clarity or confidence.",
+        "developing": "Clear expression of needs and boundaries with some assertiveness in familiar contexts.",
+        "competent": "Confident assertive communication expressing needs and setting appropriate boundaries across different relationship contexts.",
+        "extending": "Skilled assertive communication adapting approach effectively to complex interpersonal situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0018",
+      "associated_lt_ids": [
+        "cluster_06_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Learners can manage their emotions effectively when communicating needs and navigating relationship challenges.",
+      "criterion_label": "Emotional Regulation Skills",
+      "source_provenance": [
+        "blk_0054_item_02",
+        "blk_0050_item_01",
+        "blk_0060_item_01",
+        "blk_0063_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evidence of emotional management during interpersonal challenges.",
+        "emerging": "Basic awareness of emotions with limited management strategies.",
+        "developing": "Some ability to manage emotions like disappointment and frustration in relationships.",
+        "competent": "Effective emotional regulation when expressing needs and managing relationship complexities and disappointments.",
+        "extending": "Sophisticated emotional management supporting healthy relationships and personal growth."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0019",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify different types of bullying including online bullying.",
+      "criterion_label": "Identify Bullying Types",
+      "source_provenance": [
+        "blk_0148_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any types of bullying.",
+        "emerging": "Identifies one or two basic types of bullying.",
+        "developing": "Identifies several types of bullying with some gaps.",
+        "competent": "Accurately identifies multiple types of bullying including online forms.",
+        "extending": "Identifies comprehensive range of bullying types with nuanced understanding."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0020",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify what stereotypes are and how they can be unfair, negative, destructive or lead to bullying.",
+      "criterion_label": "Identify Stereotypes",
+      "source_provenance": [
+        "blk_0067_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify what stereotypes are.",
+        "emerging": "Shows basic recognition of stereotypes with limited understanding.",
+        "developing": "Identifies stereotypes and recognises some harmful aspects.",
+        "competent": "Clearly identifies stereotypes and explains how they can be harmful or lead to bullying.",
+        "extending": "Demonstrates sophisticated understanding of stereotypes and their destructive potential."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0021",
+      "associated_lt_ids": [
+        "cluster_07_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the harmful impacts of bullying on individuals and communities.",
+      "criterion_label": "Explain Bullying Impacts",
+      "source_provenance": [
+        "blk_0148_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain any impacts of bullying.",
+        "emerging": "Explains basic or obvious impacts with limited detail.",
+        "developing": "Explains several impacts with some understanding of consequences.",
+        "competent": "Clearly explains multiple harmful impacts of bullying on individuals and communities.",
+        "extending": "Explains comprehensive range of impacts with sophisticated understanding of consequences."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0019"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0019",
+          "to_criterion_id": "uk-statutory-rshe_crit_0021",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must first identify what bullying is before they can explain its harmful impacts."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0022",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can challenge stereotypes using appropriate strategies and reasoning.",
+      "criterion_label": "Challenging Stereotypes",
+      "source_provenance": [
+        "blk_0067_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No attempt to challenge stereotypes.",
+        "emerging": "Recognises stereotypes but struggles to challenge them effectively.",
+        "developing": "Challenges stereotypes with basic reasoning but lacks consistency or depth.",
+        "competent": "Consistently challenges stereotypes using clear reasoning and appropriate strategies for the context.",
+        "extending": "Challenges stereotypes with sophisticated reasoning and adapts approach to different situations."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0020"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0020",
+          "to_criterion_id": "uk-statutory-rshe_crit_0022",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must understand what stereotypes are and their negative effects before they can challenge them effectively."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0023",
+      "associated_lt_ids": [
+        "cluster_07_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can seek appropriate help when bullying occurs or when concerned about safety.",
+      "criterion_label": "Seeking Help for Bullying",
+      "source_provenance": [
+        "blk_0069_item_01",
+        "blk_0148_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No awareness of help-seeking options.",
+        "emerging": "Limited awareness of who to approach for help.",
+        "developing": "Identifies some appropriate sources of help but may lack confidence in approach.",
+        "competent": "Confidently identifies and approaches appropriate sources of help using effective communication strategies.",
+        "extending": "Demonstrates sophisticated judgment in selecting help sources and advocates effectively for self or others."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0024",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify online risks including fake profiles, inappropriate content, scams, and dangers from unknown contacts.",
+      "criterion_label": "Identify Online Risks",
+      "source_provenance": [
+        "blk_0075_item_01",
+        "blk_0077_item_01",
+        "blk_0168_item_01",
+        "blk_0168_item_02",
+        "blk_0168_item_03",
+        "blk_0178_item_01",
+        "blk_0189_item_01",
+        "blk_0191_item_01",
+        "blk_0191_item_02",
+        "blk_0193_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any online risks.",
+        "emerging": "Identifies basic risks like strangers online.",
+        "developing": "Identifies multiple risks including fake profiles and inappropriate content.",
+        "competent": "Identifies comprehensive range of online risks including scams, fake content, and contact dangers.",
+        "extending": "Identifies sophisticated risks including AI-generated content and deepfakes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0025",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain safety principles for protecting personal information including privacy settings, sharing restrictions, and legal considerations.",
+      "criterion_label": "Explain Information Protection",
+      "source_provenance": [
+        "blk_0079_item_01",
+        "blk_0081_item_01",
+        "blk_0166_item_01",
+        "blk_0166_item_02",
+        "blk_0170_item_01",
+        "blk_0170_item_02",
+        "blk_0172_item_01",
+        "blk_0172_item_02",
+        "blk_0172_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain any safety principles.",
+        "emerging": "Explains basic privacy concepts like not sharing passwords.",
+        "developing": "Explains privacy settings and permanence of online content.",
+        "competent": "Explains comprehensive safety principles including legal implications of image sharing and privacy controls.",
+        "extending": "Explains sophisticated safety principles including legal consequences and permanent digital footprints."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0026",
+      "associated_lt_ids": [
+        "cluster_08_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain safety principles for navigating digital relationships including respectful behavior and appropriate boundaries.",
+      "criterion_label": "Explain Relationship Safety",
+      "source_provenance": [
+        "blk_0073_item_01",
+        "blk_0164_item_01",
+        "blk_0083_item_01",
+        "blk_0172_item_03",
+        "blk_0179_item_01",
+        "blk_0179_item_02",
+        "blk_0176_item_02",
+        "blk_0176_item_03",
+        "blk_0186_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain relationship safety principles.",
+        "emerging": "Explains basic online respect like being polite.",
+        "developing": "Explains respectful behavior and seeking help when concerned.",
+        "competent": "Explains comprehensive relationship safety including behavior expectations and support seeking strategies.",
+        "extending": "Explains sophisticated relationship safety including content impact on behavior and attitudes."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0027",
+      "associated_lt_ids": [
+        "cluster_08_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can critically evaluate online relationships and sources of information to assess their trustworthiness and safety.",
+      "criterion_label": "Evaluate Online Relationships",
+      "source_provenance": [
+        "blk_0075_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of online relationships or sources.",
+        "emerging": "Basic awareness that online relationships need checking.",
+        "developing": "Simple evaluation using obvious safety indicators.",
+        "competent": "Systematic evaluation using multiple criteria to assess trustworthiness and safety risks.",
+        "extending": "Sophisticated analysis considering subtle manipulation tactics."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0024",
+        "uk-statutory-rshe_crit_0025"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0024",
+          "to_criterion_id": "uk-statutory-rshe_crit_0027",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Basic identification of online risks must precede critical evaluation of online relationships and information sources."
+        },
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0025",
+          "to_criterion_id": "uk-statutory-rshe_crit_0027",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding safety principles for personal information supports critical evaluation of online relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0028",
+      "associated_lt_ids": [
+        "cluster_08_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify harmful online content, contact, and situations including deepfakes, scams, and abusive behaviour.",
+      "criterion_label": "Identify Online Threats",
+      "source_provenance": [
+        "blk_0075_item_03",
+        "blk_0176_item_04",
+        "blk_0183_item_01",
+        "blk_0191_item_03",
+        "blk_0193_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot recognise harmful online situations.",
+        "emerging": "Identifies obvious threats with prompting.",
+        "developing": "Recognises common harmful content and contact patterns.",
+        "competent": "Accurately identifies diverse threats including sophisticated deception techniques.",
+        "extending": "Anticipates emerging threats and manipulation methods."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0029",
+      "associated_lt_ids": [
+        "cluster_08_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply appropriate response strategies including reporting procedures and seeking support when encountering online threats.",
+      "criterion_label": "Respond to Online Threats",
+      "source_provenance": [
+        "blk_0073_item_02",
+        "blk_0174_item_01",
+        "blk_0191_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No appropriate responses to online threats.",
+        "emerging": "Basic awareness of need to seek help.",
+        "developing": "Uses simple response strategies with guidance.",
+        "competent": "Selects and implements appropriate responses including reporting and support-seeking.",
+        "extending": "Adapts response strategies to complex situations."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0028"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0028",
+          "to_criterion_id": "uk-statutory-rshe_crit_0029",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must identify harmful online content and situations before they can apply appropriate response strategies."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0030",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can distinguish between trustworthy and untrustworthy people based on their behaviour and intentions.",
+      "criterion_label": "Assessing Trustworthiness",
+      "source_provenance": [
+        "blk_0094_item_01",
+        "blk_0201_item_01",
+        "blk_0203_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify trustworthy versus untrustworthy people.",
+        "emerging": "Shows basic awareness that some people may not be trustworthy.",
+        "developing": "Identifies obvious signs of trustworthy and untrustworthy behaviour with guidance.",
+        "competent": "Accurately distinguishes trustworthy from untrustworthy people using multiple behavioural indicators and contextual cues.",
+        "extending": "Evaluates complex trustworthiness scenarios including deceptive appearances."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0031",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise unsafe situations and inappropriate contact in various contexts.",
+      "criterion_label": "Identifying Unsafe Situations",
+      "source_provenance": [
+        "blk_0090_item_01",
+        "blk_0135_item_01",
+        "blk_0201_item_01",
+        "blk_0203_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify unsafe situations or inappropriate contact.",
+        "emerging": "Shows basic awareness that some situations may be unsafe.",
+        "developing": "Identifies obvious unsafe situations and inappropriate contact with support.",
+        "competent": "Accurately recognises unsafe situations and inappropriate contact across multiple contexts including online environments.",
+        "extending": "Evaluates subtle safety risks and complex inappropriate contact scenarios."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0032",
+      "associated_lt_ids": [
+        "cluster_09_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can respond safely and appropriately when encountering potentially unsafe people or situations.",
+      "criterion_label": "Safe Response Strategies",
+      "source_provenance": [
+        "blk_0092_item_01",
+        "blk_0135_item_01",
+        "blk_0203_item_04"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot demonstrate safe responses to unsafe encounters.",
+        "emerging": "Shows basic understanding of need for safe responses.",
+        "developing": "Demonstrates simple safe responses to obvious unsafe situations with guidance.",
+        "competent": "Implements appropriate safety responses across various contexts including seeking help when needed.",
+        "extending": "Adapts safety responses to complex scenarios and helps others respond safely."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0030",
+        "uk-statutory-rshe_crit_0031"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0030",
+          "to_criterion_id": "uk-statutory-rshe_crit_0032",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Distinguishing between trustworthy and untrustworthy people is essential for responding safely to potentially unsafe situations."
+        },
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0031",
+          "to_criterion_id": "uk-statutory-rshe_crit_0032",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Recognizing unsafe situations is a prerequisite for responding safely and appropriately to them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0033",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can use appropriate vocabulary to describe safety concerns, abuse, or feelings of being unsafe.",
+      "criterion_label": "Safety Communication Vocabulary",
+      "source_provenance": [
+        "blk_0096_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot use safety vocabulary appropriately.",
+        "emerging": "Uses basic safety words with significant prompting.",
+        "developing": "Uses some appropriate safety vocabulary with minor prompting.",
+        "competent": "Uses clear, appropriate vocabulary to describe safety concerns and feelings of being unsafe.",
+        "extending": "Uses precise safety vocabulary confidently in various contexts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0034",
+      "associated_lt_ids": [
+        "cluster_09_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate sources of help and use proper channels to report safety concerns.",
+      "criterion_label": "Help-Seeking and Reporting",
+      "source_provenance": [
+        "blk_0088_item_01",
+        "blk_0096_item_02",
+        "blk_0098_item_01",
+        "blk_0201_item_02",
+        "blk_0203_item_01",
+        "blk_0203_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help sources or reporting channels.",
+        "emerging": "Identifies basic help sources with significant guidance.",
+        "developing": "Identifies some appropriate help sources and reporting methods.",
+        "competent": "Identifies appropriate help sources and uses proper channels to report safety concerns effectively.",
+        "extending": "Strategically selects optimal help sources and reporting channels."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0033"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0033",
+          "to_criterion_id": "uk-statutory-rshe_crit_0034",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Having appropriate vocabulary to describe safety concerns is necessary before identifying and using proper reporting channels."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0035",
+      "associated_lt_ids": [
+        "cluster_11_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the foundational elements of healthy romantic relationships including consent, boundaries, mutual respect, trust, and communication.",
+      "criterion_label": "Healthy Relationship Elements",
+      "source_provenance": [
+        "blk_0139_item_01",
+        "blk_0143_item_01",
+        "blk_0143_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify relationship elements",
+        "emerging": "Names some basic relationship elements with limited understanding",
+        "developing": "Explains several key elements but connections unclear",
+        "competent": "Clearly explains how consent, boundaries, respect and trust create healthy relationships",
+        "extending": "Demonstrates nuanced understanding of interconnected relationship foundations"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0036",
+      "associated_lt_ids": [
+        "cluster_11_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how power dynamics and equality affect romantic relationships and ethical behaviour.",
+      "criterion_label": "Power and Equality",
+      "source_provenance": [
+        "blk_0141_item_02",
+        "blk_0152_item_01",
+        "blk_0152_item_02",
+        "blk_0156_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify power dynamics",
+        "emerging": "Shows basic awareness that power differences exist",
+        "developing": "Explains some effects of power imbalances on relationships",
+        "competent": "Clearly explains how power dynamics impact ethical behaviour and relationship equality",
+        "extending": "Demonstrates sophisticated understanding of subtle power influences"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0037",
+      "associated_lt_ids": [
+        "cluster_11_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how stereotypes and external influences like pornography can negatively impact romantic relationships.",
+      "criterion_label": "External Negative Influences",
+      "source_provenance": [
+        "blk_0154_item_01",
+        "blk_0158_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify external influences",
+        "emerging": "Shows basic awareness that outside factors affect relationships",
+        "developing": "Explains some negative effects of stereotypes or media",
+        "competent": "Clearly explains how stereotypes and pornography can harm relationship dynamics",
+        "extending": "Demonstrates nuanced understanding of multiple harmful external influences"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0038",
+      "associated_lt_ids": [
+        "cluster_11_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate how stereotypes, power imbalances, and cultural influences affect relationship dynamics.",
+      "criterion_label": "Evaluating Relationship Influences",
+      "source_provenance": [
+        "blk_0154_item_02",
+        "blk_0160_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of relationship influences shown.",
+        "emerging": "Basic recognition of some stereotypes or cultural influences on relationships.",
+        "developing": "Identifies multiple influences but evaluation lacks depth or connection to dynamics.",
+        "competent": "Clearly evaluates how stereotypes, power imbalances, and cultural factors shape relationship patterns and interactions.",
+        "extending": "Sophisticated analysis connecting multiple influences to complex relationship dynamics."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0035"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0035",
+          "to_criterion_id": "uk-statutory-rshe_crit_0038",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding foundational elements of healthy relationships supports evaluation of how external factors affect relationship dynamics."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0039",
+      "associated_lt_ids": [
+        "cluster_11_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply strategies for managing conflict and relationship endings.",
+      "criterion_label": "Managing Relationship Challenges",
+      "source_provenance": [
+        "blk_0150_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No strategies for conflict or endings demonstrated.",
+        "emerging": "Shows awareness of need for strategies but application is unclear.",
+        "developing": "Applies basic strategies with some effectiveness in straightforward situations.",
+        "competent": "Effectively applies appropriate strategies for managing conflict and endings with kindness and emotional awareness.",
+        "extending": "Skillfully adapts multiple strategies to complex relationship challenges."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0040",
+      "associated_lt_ids": [
+        "cluster_12_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise consent and boundaries in relationships including early romantic and sexual relationships.",
+      "criterion_label": "Recognising Consent and Boundaries",
+      "source_provenance": [
+        "blk_0197_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify consent or boundary indicators.",
+        "emerging": "Identifies basic consent signals with significant support and prompting.",
+        "developing": "Recognises clear consent and boundary indicators in straightforward relationship scenarios.",
+        "competent": "Accurately identifies consent and boundaries across various relationship contexts including romantic and sexual situations.",
+        "extending": "Analyses subtle consent and boundary dynamics in complex relationship scenarios."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0003"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0003",
+          "to_criterion_id": "uk-statutory-rshe_crit_0040",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Basic understanding of personal boundaries must precede learning about consent in romantic and sexual relationships."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0041",
+      "associated_lt_ids": [
+        "cluster_12_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can respect consent and boundaries in relationships including early romantic and sexual relationships.",
+      "criterion_label": "Respecting Consent and Boundaries",
+      "source_provenance": [
+        "blk_0197_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not demonstrate respectful boundary behaviour.",
+        "emerging": "Shows basic respect for clear boundaries with guidance and reminders.",
+        "developing": "Consistently respects explicit consent and boundaries in familiar relationship contexts.",
+        "competent": "Demonstrates respectful behaviour toward consent and boundaries across various relationship situations including romantic contexts.",
+        "extending": "Models exemplary respect for consent while supporting others' boundary-setting."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0042",
+      "associated_lt_ids": [
+        "cluster_12_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can communicate consent and boundaries in relationships including early romantic and sexual relationships.",
+      "criterion_label": "Communicating Consent and Boundaries",
+      "source_provenance": [
+        "blk_0197_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot express personal boundaries or consent.",
+        "emerging": "Communicates basic personal boundaries with significant support and clear prompting.",
+        "developing": "Clearly expresses personal consent and boundaries in straightforward relationship situations.",
+        "competent": "Effectively communicates consent and boundaries across various relationship contexts including romantic and sexual situations.",
+        "extending": "Articulates nuanced consent and boundary communications in complex relationship scenarios."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0043",
+      "associated_lt_ids": [
+        "cluster_12_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the principles of sexual consent including that it can be given, withheld or removed at any time.",
+      "criterion_label": "Sexual Consent Principles",
+      "source_provenance": [
+        "blk_0197_item_02",
+        "blk_0233_item_01",
+        "blk_0235_item_01",
+        "blk_0237_item_01",
+        "blk_0237_item_02",
+        "blk_0237_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain consent principles.",
+        "emerging": "Basic understanding that consent exists but unclear about key principles.",
+        "developing": "Explains some consent principles but misses key aspects like withdrawal.",
+        "competent": "Clearly explains consent can be given, withheld or removed, with understanding of broader considerations.",
+        "extending": "Comprehensive explanation linking consent to care, respect and contextual factors."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0040"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0040",
+          "to_criterion_id": "uk-statutory-rshe_crit_0043",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "high",
+          "rationale": "Basic recognition of consent and boundaries must precede detailed explanation of sexual consent principles."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0044",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain contraceptive options including efficacy, availability, and proper use of male and female condoms.",
+      "criterion_label": "Contraceptive Knowledge",
+      "source_provenance": [
+        "blk_0242_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of contraceptive methods shown.",
+        "emerging": "Names some contraceptive methods with limited detail.",
+        "developing": "Describes several contraceptive options with basic understanding of effectiveness.",
+        "competent": "Explains range of contraceptive choices including efficacy rates and proper condom use.",
+        "extending": "Compares contraceptive methods considering individual circumstances and access."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0045",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain pregnancy options including keeping the baby, adoption, and abortion with accurate medical and legal information.",
+      "criterion_label": "Pregnancy Options Knowledge",
+      "source_provenance": [
+        "blk_0244_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of pregnancy options demonstrated.",
+        "emerging": "Aware some pregnancy options exist with minimal detail.",
+        "developing": "Describes basic pregnancy options with some accurate information.",
+        "competent": "Explains all pregnancy options with medically and legally accurate information.",
+        "extending": "Discusses pregnancy options considering individual circumstances and support needs."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0046",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain STI prevention methods, testing importance, prevalence, impacts, and treatment facts.",
+      "criterion_label": "STI Prevention Knowledge",
+      "source_provenance": [
+        "blk_0246_item_01",
+        "blk_0247_item_01",
+        "blk_0247_item_02",
+        "blk_0247_item_03",
+        "blk_0249_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of STI prevention shown.",
+        "emerging": "Basic awareness of STI risks with limited prevention knowledge.",
+        "developing": "Describes some STI prevention methods and understands testing importance.",
+        "competent": "Explains comprehensive STI prevention including safer sex, PrEP/PEP, testing, and treatment facts.",
+        "extending": "Discusses STI prevention considering stigma, accessibility, and individual risk factors."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0047",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain reproductive health facts including fertility, menopause, menstrual problems, and lifestyle impacts.",
+      "criterion_label": "Reproductive Health Knowledge",
+      "source_provenance": [
+        "blk_0465_item_01",
+        "blk_0465_item_02",
+        "blk_0467_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of reproductive health facts.",
+        "emerging": "Basic awareness of some reproductive health concepts.",
+        "developing": "Describes key reproductive health facts with some understanding of impacts.",
+        "competent": "Explains reproductive health including fertility, menopause, menstrual problems, and lifestyle factors.",
+        "extending": "Discusses reproductive health considering individual variations and when to seek help."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0048",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain how sexual and relationship choices affect overall health and wellbeing across multiple dimensions.",
+      "criterion_label": "Health Impact Understanding",
+      "source_provenance": [
+        "blk_0239_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of health impacts shown.",
+        "emerging": "Basic awareness that choices affect health in some ways.",
+        "developing": "Describes some connections between sexual choices and health outcomes.",
+        "competent": "Explains how sexual and relationship choices affect physical, emotional, mental, and reproductive health.",
+        "extending": "Analyzes complex interactions between choices and multiple health dimensions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0049",
+      "associated_lt_ids": [
+        "cluster_13_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain where and how to access confidential sexual health support, advice, and treatment services.",
+      "criterion_label": "Support Access Knowledge",
+      "source_provenance": [
+        "blk_0252_item_01",
+        "blk_0254_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No knowledge of support services shown.",
+        "emerging": "Basic awareness that support services exist somewhere.",
+        "developing": "Describes some sexual health support options with limited detail.",
+        "competent": "Explains how and where to access confidential sexual health advice and support services.",
+        "extending": "Discusses support access considering barriers, confidentiality, and individual needs."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0050",
+      "associated_lt_ids": [
+        "cluster_13_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate the medical accuracy and reliability of sexual health information from various sources.",
+      "criterion_label": "Evaluate Information Quality",
+      "source_provenance": [
+        "blk_0242_item_02",
+        "blk_0254_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot assess information reliability",
+        "emerging": "Identifies some obvious inaccuracies with guidance",
+        "developing": "Evaluates basic credibility markers but misses subtle misinformation",
+        "competent": "Systematically evaluates sources using medical accuracy criteria and identifies reliable information",
+        "extending": "Critically analyses complex misinformation patterns and source credibility"
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0044",
+        "uk-statutory-rshe_crit_0046"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0044",
+          "to_criterion_id": "uk-statutory-rshe_crit_0050",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding contraceptive facts provides foundation for evaluating medical accuracy of sexual health information."
+        },
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0046",
+          "to_criterion_id": "uk-statutory-rshe_crit_0050",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding STI facts provides foundation for evaluating medical accuracy of sexual health information."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0051",
+      "associated_lt_ids": [
+        "cluster_13_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can signpost others towards medically accurate sexual health information and support services.",
+      "criterion_label": "Signpost Accurate Information",
+      "source_provenance": [
+        "blk_0242_item_02",
+        "blk_0254_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot direct others to resources",
+        "emerging": "Suggests basic resources with prompting",
+        "developing": "Identifies appropriate sources but lacks specificity for individual needs",
+        "competent": "Effectively directs others to relevant, credible sexual health resources and services",
+        "extending": "Tailors signposting to specific contexts and individual circumstances"
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0052",
+      "associated_lt_ids": [
+        "cluster_13_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can counter sexual health misinformation using evidence-based responses and alternative sources.",
+      "criterion_label": "Counter Misinformation",
+      "source_provenance": [
+        "blk_0254_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot challenge false information",
+        "emerging": "Recognises misinformation but struggles to respond",
+        "developing": "Attempts to correct misinformation but lacks supporting evidence",
+        "competent": "Effectively challenges misinformation with accurate facts and credible alternatives",
+        "extending": "Strategically counters misinformation while maintaining respectful dialogue"
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0050"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0050",
+          "to_criterion_id": "uk-statutory-rshe_crit_0052",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Students must be able to evaluate medical accuracy before they can effectively counter misinformation."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0053",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify and recognise the range of emotions that people experience in different situations.",
+      "criterion_label": "Emotion Recognition",
+      "source_provenance": [
+        "blk_0262_item_01",
+        "blk_0355_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name or identify basic emotions.",
+        "emerging": "Names some basic emotions but struggles to connect them to situations.",
+        "developing": "Identifies common emotions and links some to appropriate situations or contexts.",
+        "competent": "Accurately identifies a range of emotions and explains when they might be experienced in different situations.",
+        "extending": "Demonstrates nuanced understanding of emotional complexity and situational triggers."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0054",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain mental health concepts including the distinction between normal feelings and mental health conditions.",
+      "criterion_label": "Mental Health Concepts",
+      "source_provenance": [
+        "blk_0262_item_02",
+        "blk_0368_item_01",
+        "blk_0370_item_01",
+        "blk_0370_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Shows no understanding of mental health concepts.",
+        "emerging": "Shows basic awareness that mental health exists but limited understanding of concepts.",
+        "developing": "Explains some mental health concepts but may confuse normal feelings with conditions.",
+        "competent": "Clearly explains mental health concepts and distinguishes between normal feelings and mental health conditions.",
+        "extending": "Demonstrates sophisticated understanding of mental health complexity and nuanced distinctions."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0055",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Describe factors and activities that support or harm mental wellbeing and happiness.",
+      "criterion_label": "Wellbeing Factors",
+      "source_provenance": [
+        "blk_0259_item_01",
+        "blk_0259_item_02",
+        "blk_0270_item_01",
+        "blk_0272_item_01",
+        "blk_0364_item_01",
+        "blk_0366_item_01",
+        "blk_0366_item_02",
+        "blk_0373_item_01",
+        "blk_0375_item_01",
+        "blk_0377_item_01",
+        "blk_0377_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify factors affecting wellbeing.",
+        "emerging": "Names few factors that affect wellbeing with limited understanding of impact.",
+        "developing": "Describes several factors affecting wellbeing and shows some understanding of their effects.",
+        "competent": "Accurately describes range of factors that support or harm wellbeing and explains their impacts clearly.",
+        "extending": "Demonstrates comprehensive understanding of complex wellbeing factors and their interconnections."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0056",
+      "associated_lt_ids": [
+        "cluster_14_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify appropriate sources of help and support for mental health concerns.",
+      "criterion_label": "Help-Seeking Knowledge",
+      "source_provenance": [
+        "blk_0274_item_01",
+        "blk_0355_item_05",
+        "blk_0357_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify help sources.",
+        "emerging": "Names very few appropriate sources of help with limited understanding of when to seek help.",
+        "developing": "Identifies some appropriate help sources and shows basic understanding of when to use them.",
+        "competent": "Clearly identifies range of appropriate help sources and explains when and how to access support.",
+        "extending": "Demonstrates comprehensive knowledge of help-seeking pathways and support systems."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0057",
+      "associated_lt_ids": [
+        "cluster_14_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise and accurately describe emotional states in myself and others using appropriate vocabulary.",
+      "criterion_label": "Recognising Emotional States",
+      "source_provenance": [
+        "blk_0264_item_01",
+        "blk_0362_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic emotions in self or others.",
+        "emerging": "Identifies simple emotions with basic vocabulary.",
+        "developing": "Recognises range of emotions using varied vocabulary appropriately.",
+        "competent": "Accurately identifies and describes complex emotional states in self and others using precise, sensitive vocabulary.",
+        "extending": "Demonstrates nuanced emotional recognition with sophisticated vocabulary."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0053"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0053",
+          "to_criterion_id": "uk-statutory-rshe_crit_0057",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying emotions in different situations is foundational to recognizing and describing emotional states in oneself and others."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0058",
+      "associated_lt_ids": [
+        "cluster_14_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can judge whether emotional responses and behaviours are appropriate and when support is needed.",
+      "criterion_label": "Judging Support Needs",
+      "source_provenance": [
+        "blk_0266_item_01",
+        "blk_0274_item_02",
+        "blk_0355_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot assess appropriateness of emotional responses.",
+        "emerging": "Makes basic judgments about obvious emotional concerns.",
+        "developing": "Evaluates emotional responses and identifies clear support triggers.",
+        "competent": "Accurately judges appropriateness of emotions and behaviours, recognising when professional support is needed.",
+        "extending": "Makes sophisticated judgments about complex emotional situations."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0054"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0054",
+          "to_criterion_id": "uk-statutory-rshe_crit_0058",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Understanding mental health concepts is necessary before judging whether emotional responses are appropriate."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0059",
+      "associated_lt_ids": [
+        "cluster_14_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can seek help and communicate about mental health concerns appropriately and sensitively.",
+      "criterion_label": "Seeking Mental Health Support",
+      "source_provenance": [
+        "blk_0270_item_02",
+        "blk_0355_item_04",
+        "blk_0357_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot seek help for mental health concerns.",
+        "emerging": "Seeks basic help with prompting for obvious concerns.",
+        "developing": "Initiates help-seeking and communicates concerns with some sensitivity.",
+        "competent": "Effectively seeks appropriate help and communicates about mental health using accurate, sensitive language.",
+        "extending": "Demonstrates sophisticated help-seeking and mental health communication skills."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0060",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the risks of online activities and their impact on wellbeing.",
+      "criterion_label": "Identifying Digital Risks",
+      "source_provenance": [
+        "blk_0284_item_01",
+        "blk_0288_item_01",
+        "blk_0290_item_01",
+        "blk_0294_item_01",
+        "blk_0296_item_01",
+        "blk_0381_item_01",
+        "blk_0383_item_01",
+        "blk_0383_item_02",
+        "blk_0383_item_03",
+        "blk_0387_item_01",
+        "blk_0389_item_01",
+        "blk_0389_item_03",
+        "blk_0391_item_01",
+        "blk_0393_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any digital risks or impacts.",
+        "emerging": "Identifies basic digital risks with limited understanding of impacts.",
+        "developing": "Identifies several digital risks and some impacts on wellbeing with guidance.",
+        "competent": "Clearly identifies various digital risks and explains their impacts on personal and others' wellbeing.",
+        "extending": "Comprehensively identifies complex digital risks and analyses their multifaceted wellbeing impacts."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0061",
+      "associated_lt_ids": [
+        "cluster_15_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the benefits of online activities and their impact on wellbeing.",
+      "criterion_label": "Identifying Digital Benefits",
+      "source_provenance": [
+        "blk_0284_item_01",
+        "blk_0381_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any digital benefits or impacts.",
+        "emerging": "Identifies basic digital benefits with limited understanding of impacts.",
+        "developing": "Identifies several digital benefits and some impacts on wellbeing with guidance.",
+        "competent": "Clearly identifies various digital benefits and explains their positive impacts on personal and others' wellbeing.",
+        "extending": "Comprehensively identifies digital benefits and analyses their complex positive impacts on wellbeing."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0062",
+      "associated_lt_ids": [
+        "cluster_15_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Evaluate online content critically to determine its appropriateness and reliability.",
+      "criterion_label": "Critical Content Evaluation",
+      "source_provenance": [
+        "blk_0292_item_01",
+        "blk_0389_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot assess online content quality or appropriateness.",
+        "emerging": "Shows basic awareness that online content varies in quality.",
+        "developing": "Applies some criteria to evaluate content but inconsistently.",
+        "competent": "Systematically evaluates content using multiple criteria for appropriateness and reliability.",
+        "extending": "Evaluates content with sophisticated critical thinking skills."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0060"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0060",
+          "to_criterion_id": "uk-statutory-rshe_crit_0062",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Identifying online risks supports critical evaluation of online content appropriateness."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0063",
+      "associated_lt_ids": [
+        "cluster_15_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Evaluate online relationships and their impact on personal wellbeing and in-person connections.",
+      "criterion_label": "Online Relationship Evaluation",
+      "source_provenance": [
+        "blk_0282_item_01",
+        "blk_0286_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot assess online relationship quality or impact.",
+        "emerging": "Shows basic understanding of online relationship differences.",
+        "developing": "Identifies some pros and cons of online relationships.",
+        "competent": "Thoughtfully evaluates how online relationships complement or conflict with in-person connections.",
+        "extending": "Demonstrates nuanced understanding of relationship dynamics across contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0061"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0061",
+          "to_criterion_id": "uk-statutory-rshe_crit_0063",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding benefits of online activities supports evaluation of online relationships and their wellbeing impact."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0064",
+      "associated_lt_ids": [
+        "cluster_15_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Identify appropriate support resources and reporting mechanisms for online safety concerns.",
+      "criterion_label": "Digital Safety Support",
+      "source_provenance": [
+        "blk_0294_item_02",
+        "blk_0385_item_01",
+        "blk_0393_item_02",
+        "blk_0393_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify support resources for online issues.",
+        "emerging": "Knows some adults can help with online problems.",
+        "developing": "Identifies basic support options but may lack specificity.",
+        "competent": "Accurately identifies appropriate support resources and reporting procedures for various online concerns.",
+        "extending": "Demonstrates comprehensive knowledge of support systems and procedures."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0065",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key facts about nutrition, including caloric content, characteristics of healthy and poor diets, and associated health risks.",
+      "criterion_label": "Nutrition Knowledge",
+      "source_provenance": [
+        "blk_0309_item_01",
+        "blk_0313_item_01",
+        "blk_0396_item_01",
+        "blk_0403_item_01",
+        "blk_0405_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic nutritional facts or diet-health connections.",
+        "emerging": "Identifies some basic nutritional facts but with significant gaps or inaccuracies.",
+        "developing": "Identifies most key nutritional facts and some diet-health connections with minor gaps.",
+        "competent": "Accurately identifies comprehensive nutritional facts, diet characteristics, and associated health risks including obesity and cardiovascular disease.",
+        "extending": "Demonstrates detailed nutritional knowledge with sophisticated understanding of diet-health relationships."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0066",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key facts about physical activity requirements, benefits, and the health risks of inactive lifestyles.",
+      "criterion_label": "Physical Activity Knowledge",
+      "source_provenance": [
+        "blk_0303_item_01",
+        "blk_0396_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify physical activity requirements or health connections.",
+        "emerging": "Identifies some basic physical activity facts but with significant gaps.",
+        "developing": "Identifies most physical activity requirements and some health benefits with minor gaps.",
+        "competent": "Accurately identifies physical activity guidelines, practical implementation strategies, and health risks of inactivity including cardiovascular disease.",
+        "extending": "Demonstrates comprehensive understanding of physical activity science and diverse implementation approaches."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0067",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key facts about substance use including legal and illegal drugs, alcohol, smoking, vaping, and associated health risks.",
+      "criterion_label": "Substance Use Knowledge",
+      "source_provenance": [
+        "blk_0313_item_01",
+        "blk_0316_item_01",
+        "blk_0410_item_01",
+        "blk_0413_item_01",
+        "blk_0413_item_02",
+        "blk_0415_item_01",
+        "blk_0418_item_01",
+        "blk_0420_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify substance use facts or health risks.",
+        "emerging": "Identifies some basic substance facts but with significant gaps or inaccuracies.",
+        "developing": "Identifies most key substance facts and some associated risks with minor gaps.",
+        "competent": "Accurately identifies comprehensive facts about legal/illegal substances, consumption guidelines, addiction risks, and health consequences including cancer and mental health impacts.",
+        "extending": "Demonstrates detailed substance knowledge including safety strategies and harm reduction approaches."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0068",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key facts about hygiene practices, infection prevention, dental health, and sleep requirements for health maintenance.",
+      "criterion_label": "Health Maintenance Knowledge",
+      "source_provenance": [
+        "blk_0320_item_01",
+        "blk_0322_item_01",
+        "blk_0324_item_01",
+        "blk_0324_item_02",
+        "blk_0324_item_03",
+        "blk_0326_item_01",
+        "blk_0328_item_01",
+        "blk_0330_item_01",
+        "blk_0424_item_01",
+        "blk_0426_item_01",
+        "blk_0430_item_01",
+        "blk_0432_item_01",
+        "blk_0434_item_01",
+        "blk_0434_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic health maintenance practices or requirements.",
+        "emerging": "Identifies some health maintenance facts but with significant gaps.",
+        "developing": "Identifies most health maintenance practices and some health connections with minor gaps.",
+        "competent": "Accurately identifies comprehensive health maintenance facts including hygiene, dental care, sleep requirements, infection prevention, and screening benefits.",
+        "extending": "Demonstrates detailed understanding of health maintenance science and preventive care strategies."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0069",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate adults and healthcare professionals to contact for health concerns and support.",
+      "criterion_label": "Health Support Knowledge",
+      "source_provenance": [
+        "blk_0306_item_01",
+        "blk_0428_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify appropriate health support contacts.",
+        "emerging": "Identifies some health support contacts but with significant gaps.",
+        "developing": "Identifies most appropriate health support contacts with minor gaps.",
+        "competent": "Accurately identifies comprehensive range of appropriate adults and healthcare professionals for various health concerns and support needs.",
+        "extending": "Demonstrates sophisticated understanding of healthcare system navigation and support networks."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0070",
+      "associated_lt_ids": [
+        "cluster_16_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify key facts about reproductive and sexual health including pre-conception health, pelvic floor health, and pregnancy-related information.",
+      "criterion_label": "Reproductive Health Knowledge",
+      "source_provenance": [
+        "blk_0436_item_01",
+        "blk_0436_item_02",
+        "blk_0436_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify reproductive health facts or requirements.",
+        "emerging": "Identifies some reproductive health facts but with significant gaps.",
+        "developing": "Identifies most reproductive health facts with minor gaps or inaccuracies.",
+        "competent": "Accurately identifies key reproductive health facts including pre-conception care, pelvic floor health, and pregnancy loss support information.",
+        "extending": "Demonstrates comprehensive understanding of reproductive health across different life stages."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0071",
+      "associated_lt_ids": [
+        "cluster_16_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "The learner can determine when health support is needed by recognising concerning symptoms or situations.",
+      "criterion_label": "Recognising Support Needs",
+      "source_provenance": [
+        "blk_0306_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify when health support is needed.",
+        "emerging": "Identifies obvious health concerns requiring immediate support.",
+        "developing": "Recognises most situations where health support would be beneficial.",
+        "competent": "Accurately determines when health support is needed across various scenarios and symptom presentations.",
+        "extending": "Evaluates complex health situations and anticipates support needs."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0072",
+      "associated_lt_ids": [
+        "cluster_16_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "The learner can identify appropriate sources of health support and explain how to access them effectively.",
+      "criterion_label": "Accessing Health Support",
+      "source_provenance": [
+        "blk_0306_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify sources of health support.",
+        "emerging": "Names basic health support sources like parents or doctors.",
+        "developing": "Identifies multiple appropriate sources and basic access methods.",
+        "competent": "Explains how to effectively access various health support sources including trusted adults and healthcare professionals.",
+        "extending": "Evaluates best support options for specific situations and contexts."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0071"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0071",
+          "to_criterion_id": "uk-statutory-rshe_crit_0072",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Determining when health support is needed must precede identifying appropriate sources and access methods."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0073",
+      "associated_lt_ids": [
+        "cluster_17_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify appropriate healthcare services for different health needs and situations.",
+      "criterion_label": "Identifying Healthcare Services",
+      "source_provenance": [
+        "blk_0438_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify any healthcare services.",
+        "emerging": "Identifies basic healthcare services with significant gaps.",
+        "developing": "Identifies most healthcare services but with some confusion about appropriateness.",
+        "competent": "Accurately identifies appropriate healthcare services for various health needs and situations.",
+        "extending": "Identifies services and explains nuanced appropriateness factors."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0074",
+      "associated_lt_ids": [
+        "cluster_17_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how to access different healthcare services.",
+      "criterion_label": "Accessing Healthcare Services",
+      "source_provenance": [
+        "blk_0438_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain access procedures.",
+        "emerging": "Explains basic access steps with major gaps.",
+        "developing": "Explains most access procedures but lacks some detail or accuracy.",
+        "competent": "Clearly explains how to access various healthcare services including practical steps.",
+        "extending": "Explains access procedures and addresses potential barriers."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0073"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0073",
+          "to_criterion_id": "uk-statutory-rshe_crit_0074",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying appropriate healthcare services is necessary before explaining how to access them."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0075",
+      "associated_lt_ids": [
+        "cluster_17_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain the legal framework for medical consent for children under 16, including parental responsibility and Gillick competence.",
+      "criterion_label": "Under-16 Consent Framework",
+      "source_provenance": [
+        "blk_0440_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of under-16 consent rules.",
+        "emerging": "Basic awareness that parents consent for children under 16.",
+        "developing": "Understands parental responsibility but limited knowledge of Gillick competence.",
+        "competent": "Clearly explains parental consent responsibility and Gillick competence as exceptions for mature minors.",
+        "extending": "Analyses complex scenarios involving Gillick competence assessment."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0076",
+      "associated_lt_ids": [
+        "cluster_17_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain circumstances where individuals over 16 may lack capacity to make medical treatment decisions.",
+      "criterion_label": "Over-16 Capacity Assessment",
+      "source_provenance": [
+        "blk_0441_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No understanding of capacity limitations over 16.",
+        "emerging": "Basic awareness that some over-16s cannot consent.",
+        "developing": "Identifies some circumstances affecting capacity in over-16s.",
+        "competent": "Clearly explains various circumstances that may impair decision-making capacity in those over 16.",
+        "extending": "Analyses complex capacity assessment scenarios and legal implications."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0077",
+      "associated_lt_ids": [
+        "cluster_18_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify potential hazards and safety risks in different environments and situations.",
+      "criterion_label": "Hazard and Risk Identification",
+      "source_provenance": [
+        "blk_0333_item_01",
+        "blk_0335_item_01",
+        "blk_0445_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify basic safety hazards or risks.",
+        "emerging": "Identifies obvious hazards in familiar environments with prompting.",
+        "developing": "Identifies common hazards and risks in familiar environments independently.",
+        "competent": "Identifies potential hazards and assesses safety risks across different environments and situations effectively.",
+        "extending": "Identifies subtle risks and anticipates hazards in complex or unfamiliar situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0078",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can implement safety strategies in various environments including roads, railways, water, and unfamiliar social or work settings.",
+      "criterion_label": "Implement Safety Strategies",
+      "source_provenance": [
+        "blk_0445_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No safety strategies demonstrated.",
+        "emerging": "Basic safety awareness with significant support needed.",
+        "developing": "Some safety strategies applied with occasional guidance.",
+        "competent": "Consistently implements appropriate safety strategies across different environments independently.",
+        "extending": "Adapts safety strategies effectively to novel situations."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0077",
+          "to_criterion_id": "uk-statutory-rshe_crit_0078",
+          "reasoning_tag": "ontological_prerequisite",
+          "strength": "high",
+          "rationale": "Identifying potential hazards and safety risks is foundational to implementing safety strategies in various environments."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0079",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise and manage peer influence in relation to risk-taking behaviour and personal safety.",
+      "criterion_label": "Manage Peer Influence",
+      "source_provenance": [
+        "blk_0447_item_01",
+        "blk_0449_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No recognition of peer influence.",
+        "emerging": "Limited awareness of peer pressure situations.",
+        "developing": "Recognises peer influence but struggles to manage it.",
+        "competent": "Effectively recognises and manages peer influence in safety-related situations consistently.",
+        "extending": "Helps others recognise and manage peer influence."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0080",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can seek appropriate help when facing safety concerns including grooming, exploitation, or other threats.",
+      "criterion_label": "Seek Appropriate Help",
+      "source_provenance": [
+        "blk_0455_item_01",
+        "blk_0338_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No help-seeking demonstrated.",
+        "emerging": "Recognises need for help but unsure how.",
+        "developing": "Seeks help with prompting in some situations.",
+        "competent": "Independently identifies when help is needed and accesses appropriate support sources.",
+        "extending": "Guides others in effective help-seeking strategies."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0081",
+      "associated_lt_ids": [
+        "cluster_18_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply conflict resolution and decision-making skills in contexts involving conflict and violence.",
+      "criterion_label": "Apply Conflict Resolution Skills",
+      "source_provenance": [
+        "blk_0449_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No conflict resolution skills shown.",
+        "emerging": "Basic awareness of conflict situations.",
+        "developing": "Attempts conflict resolution with mixed success.",
+        "competent": "Consistently applies effective self-management and decision-making skills in conflict situations.",
+        "extending": "Models advanced conflict resolution for others."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0082",
+      "associated_lt_ids": [
+        "cluster_19_lt_01"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "Explain the physical changes that occur during puberty and adolescence.",
+      "criterion_label": "Physical Development Explanation",
+      "source_provenance": [
+        "blk_0344_item_01",
+        "blk_0348_item_01",
+        "blk_0348_item_02",
+        "blk_0351_item_01",
+        "blk_0468_item_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of puberty changes provided.",
+        "emerging": "Lists some physical changes with minimal explanation.",
+        "developing": "Explains several physical changes with basic understanding of timing.",
+        "competent": "Clearly explains multiple physical changes during puberty with accurate understanding of development patterns.",
+        "extending": "Comprehensively explains physical changes with connections to individual variation."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0083",
+      "associated_lt_ids": [
+        "cluster_19_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can identify when physical or mental health issues require attention.",
+      "criterion_label": "Recognising Health Concerns",
+      "source_provenance": [
+        "blk_0351_item_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify health concerns requiring attention.",
+        "emerging": "Identifies obvious physical health issues but misses mental health concerns.",
+        "developing": "Identifies clear physical and mental health issues with some prompting.",
+        "competent": "Accurately identifies when physical and mental health issues require professional attention or intervention.",
+        "extending": "Identifies subtle health concerns and explains urgency levels appropriately."
+      },
+      "prerequisite_criterion_ids": [
+        "uk-statutory-rshe_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from_criterion_id": "uk-statutory-rshe_crit_0082",
+          "to_criterion_id": "uk-statutory-rshe_crit_0083",
+          "reasoning_tag": "pedagogical_sequencing",
+          "strength": "medium",
+          "rationale": "Understanding normal physical changes during puberty helps students identify when health issues require attention."
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "uk-statutory-rshe_crit_0084",
+      "associated_lt_ids": [
+        "cluster_19_lt_02"
+      ],
+      "strand": "single_strand",
+      "criterion_statement": "I can apply strategies to protect my own health and wellbeing.",
+      "criterion_label": "Applying Protective Strategies",
+      "source_provenance": [
+        "blk_0351_item_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot apply health protection strategies.",
+        "emerging": "Applies basic strategies with significant guidance and support.",
+        "developing": "Applies some appropriate strategies but may miss key protective measures.",
+        "competent": "Consistently applies effective strategies to protect physical and mental health and wellbeing.",
+        "extending": "Adapts and combines strategies effectively for different health situations."
+      },
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    }
+  ]
+}

@@ -1,0 +1,935 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "uk-statutory-rshe",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_02_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student spontaneously offers help to classmates who are struggling or upset",
+            "The student uses gentle words and tone when speaking to peers, even during disagreements",
+            "The student shows consideration for others' feelings by waiting their turn and sharing materials without being reminded"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student consistently demonstrates empathy by actively listening to others' perspectives and responding thoughtfully",
+            "The student advocates for peers who are being treated unfairly or excluded from group activities",
+            "The student maintains respectful communication and supportive behaviour even in challenging social situations or conflicts"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child treats siblings, friends, or family members when they are upset or need help?",
+        "When your child disagrees with someone at home, how do they express their feelings and work through the situation?",
+        "Have you observed your child showing consideration for others' needs or feelings in everyday family situations?"
+      ],
+      "prerequisite_lts": [
+        "Building Safe and Positive Relationships"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples of caring and respectful interactions the student has demonstrated, examining how their orientation toward kindness manifests across different relationships and contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student speaks positively about classmates' different family arrangements without making comparisons or judgements",
+            "The student includes children from various family structures in play and group activities without questioning their family circumstances",
+            "The student responds with curiosity rather than surprise when learning about unfamiliar family forms"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student actively challenges stereotypes or negative comments about non-traditional families in peer conversations",
+            "The student demonstrates consistent inclusive language when discussing family topics across different social contexts",
+            "The student seeks to understand rather than judge when encountering family situations different from their own experience"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child talks about their friends' families at home?",
+        "When your child encounters families that look different from yours, how do they respond or what questions do they ask?",
+        "Have you observed your child standing up for or supporting friends whose family situations might be different or challenging?"
+      ],
+      "prerequisite_lts": [
+        "Identifying Diverse Family Structures"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student has demonstrated respectful attitudes toward family diversity, examining their natural responses to different family forms and their developing capacity to challenge stigmatising attitudes in their peer group.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student tells a trusted adult when they feel unsafe or uncomfortable in a situation",
+            "The student uses clear body language and words to say no when someone makes them feel uncomfortable",
+            "The student stays close to safe adults in unfamiliar environments or when meeting new people"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student removes themselves from situations they recognise as potentially harmful or exploitative",
+            "The student actively intervenes or seeks immediate help when they observe peers in unsafe situations",
+            "The student maintains consistent protective behaviours across different social contexts including online interactions"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when they feel uncomfortable or unsafe at home or in the community?",
+        "When has your child come to you or another trusted adult for help with a situation that worried them?",
+        "How does your child react when they see someone else being treated unfairly or in a way that seems wrong?"
+      ],
+      "prerequisite_lts": [
+        "Recognising Abuse and Unsafe Situations",
+        "Understanding Rights and Support Systems"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student has practised protective behaviours, identifying what helped them recognise unsafe situations and how they sought or provided help. Discussion includes planning for future scenarios and reinforcing the student's growing confidence in maintaining safety for themselves and others.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student uses polite language and listens when others are speaking in group activities",
+            "The student says no clearly when uncomfortable with physical contact or requests from peers",
+            "The student asks permission before borrowing items or entering others' personal spaces"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student maintains respectful communication during disagreements across different social groups",
+            "The student consistently enforces personal boundaries while respecting others' limits in various relationship contexts",
+            "The student navigates complex social situations by balancing assertiveness with consideration for others' perspectives"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child communicates when they disagree with family members or friends?",
+        "When your child feels uncomfortable with something someone asks them to do, how do they typically respond?",
+        "Have you observed your child showing respect for others' personal space, belongings, or privacy at home or in social situations?"
+      ],
+      "prerequisite_lts": [
+        "Assertive Communication and Boundary Setting"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples of respectful communication and boundary-setting the student has demonstrated, connecting observed behaviours to their understanding of healthy relationship dynamics across different contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_07_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student tells a trusted adult when they see someone being hurt or excluded by others",
+            "The student offers comfort or inclusion to peers who have been treated unkindly",
+            "The student speaks up or gets help when witnessing name-calling or physical aggression"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student consistently intervenes safely or seeks appropriate support when observing bullying across different social contexts",
+            "The student advocates for peers experiencing discrimination or harassment in both face-to-face and digital environments",
+            "The student takes initiative to create inclusive spaces and challenge harmful behaviour without prompting"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when they see others being treated unfairly or unkindly?",
+        "Has your child mentioned helping classmates or friends who were having difficulties with other children?",
+        "When your child witnesses conflict or meanness, what actions have you observed them taking?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Bullying and Stereotypes"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student witnessed harmful behaviour and examines their decision-making process about when and how to intervene or seek help. Discussion includes identifying trusted adults, safe intervention strategies, and reflecting on the impact of their bystander choices on school community wellbeing.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student pauses before sharing personal details in digital activities and asks for adult guidance",
+            "The student demonstrates careful consideration when posting or sharing content online, often checking with others first"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student consistently applies privacy settings and information-sharing protocols across different digital platforms",
+            "The student demonstrates thoughtful evaluation of digital content before sharing or responding, considering potential consequences",
+            "The student takes initiative to protect others' digital privacy and challenges inappropriate sharing when encountered"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child approaches sharing photos, personal information, or content online at home?",
+        "When your child encounters something concerning or inappropriate online, how do they typically respond or seek help?",
+        "Have you observed your child thinking carefully about their digital footprint or considering how their online actions might affect others?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Digital Risks and Safety Principles"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student has demonstrated digital caution and responsibility, examining their decision-making process and identifying areas for continued growth in online citizenship.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              2
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              2
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 2), ('End of Secondary', 3), ('parents', 3)): 2, (('End of Primary', 3), ('End of Secondary', 3), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_09_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student speaks up immediately when something feels wrong without waiting for adult permission",
+            "The student maintains their position about safety concerns even when peers dismiss or question their worries",
+            "The student approaches trusted adults with confidence when reporting incidents rather than appearing hesitant or apologetic"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student acts on safety instincts in unfamiliar social situations without seeking validation from others first",
+            "The student persists in raising safety concerns through appropriate channels when initial reports are not taken seriously",
+            "The student demonstrates unwavering confidence when supporting peers who express safety concerns"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child tells you something doesn't feel right about a situation, how do they express this and what do you notice about their confidence level?",
+        "Have you observed your child standing firm about safety concerns even when others around them seem unconcerned or dismissive?",
+        "What have you noticed about how your child approaches you or other trusted adults when they need to report something that worries them?"
+      ],
+      "prerequisite_lts": [
+        "Recognising Trust and Safety Risks",
+        "Seeking Help and Reporting Concerns"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student trusted their safety instincts and examines their confidence levels when reporting concerns. Teacher, student, and optionally parent discuss how the student's trust in their own judgment has developed and identify any barriers to confident reporting.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_11_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student consistently uses polite language and listens when others are speaking during group activities",
+            "The student includes different classmates in games and activities without being prompted by adults",
+            "The student maintains personal space and asks permission before touching others' belongings or engaging in physical contact"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student demonstrates respectful communication patterns in peer interactions while maintaining their own viewpoints and boundaries",
+            "The student actively pursues individual interests and friendships independently of romantic relationships",
+            "The student intervenes appropriately when witnessing disrespectful behaviour toward others in social settings"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child treats friends and family members when they disagree or have different opinions?",
+        "How does your child balance time with friends or romantic interests alongside their own hobbies and personal goals?",
+        "When your child sees someone being treated unkindly, what do you observe about their response?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Healthy Relationship Foundations"
+      ],
+      "developmental_conversation_protocol": "The conversation explores observed patterns of respectful conduct across different relationships and settings, examining how the student maintains personal autonomy while treating others with consistent kindness and respect.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student notices when classmates appear upset and offers simple comfort or seeks adult help",
+            "The student uses basic strategies like deep breathing or asking for a break when feeling overwhelmed",
+            "The student talks about feelings with trusted adults when experiencing difficult emotions"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student consistently checks in with friends about their wellbeing and responds appropriately to signs of distress",
+            "The student independently applies multiple coping strategies and seeks appropriate support when facing mental health challenges",
+            "The student advocates for mental health awareness in their peer group and challenges stigma when it arises"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends seem upset or stressed?",
+        "How does your child handle their own difficult emotions or stressful situations at home?",
+        "Have you observed your child talking about mental health or supporting others' wellbeing in your community or family?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Emotions and Mental Health"
+      ],
+      "developmental_conversation_protocol": "The conversation explores how the student recognises and responds to mental health needs in themselves and others, examining their growing repertoire of wellbeing strategies and their developing sense of responsibility for collective mental health in their communities.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_16_lt_03",
+      "bands": [
+        {
+          "band": "End of Primary",
+          "observable_behaviours": [
+            "The student independently performs basic self-care routines like teeth brushing and handwashing without reminders",
+            "The student notices and reports physical changes or discomfort to trusted adults",
+            "The student asks questions about their body and health during appropriate conversations"
+          ],
+          "self_reflection_prompt": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?"
+        },
+        {
+          "band": "End of Secondary",
+          "observable_behaviours": [
+            "The student maintains consistent personal health routines across different environments and schedules",
+            "The student seeks appropriate health information and screening opportunities when needed",
+            "The student takes initiative to address health concerns through proper channels rather than ignoring symptoms"
+          ],
+          "self_reflection_prompt": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child takes care of their own health routines at home?",
+        "When your child feels unwell or notices something different about their body, how do they typically respond?",
+        "Have you observed your child seeking out health information or asking health-related questions independently?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Health Knowledge and Risks"
+      ],
+      "developmental_conversation_protocol": "The conversation explores how the student demonstrates ownership of their health through self-monitoring behaviours and help-seeking patterns. Teacher and student discuss observed consistency in health practices across settings, with parent input on home behaviours when appropriate.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "End of Primary",
+              2
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "End of Primary",
+              3
+            ],
+            [
+              "End of Secondary",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('End of Primary', 2), ('End of Secondary', 3), ('parents', 3)): 1, (('End of Primary', 3), ('End of Secondary', 3), ('parents', 3)): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": []
+}

@@ -1,0 +1,108 @@
+{
+  "source_slug": "uk-statutory-rshe",
+  "source_name": "UK Statutory RSHE — Full Programme (DfE July 2025)",
+  "source_type": "national_statutory_curriculum",
+  "domain_type": "horizontal_dispositional_mixed",
+  "domain_type_notes": "RSHE is unusual: predominantly propositional-hierarchical (T1: 70% of KUD — laws, facts, health science) with embedded relational skills (T2: 24%) and a small dispositional component (T3: 6%). Domain declared as dispositional per --dispositional flag (relationships domain); T1 dominance is a source-fidelity finding, not a classification error. Health sections (puberty, nutrition, first aid) are explicitly hierarchical. Relationship sections (consent, ethics, online safety) are horizontal/dispositional.",
+  "hierarchical_elements": [
+    "Developing Bodies / puberty facts (T1)",
+    "Health Protection and Prevention / medical facts (T1)",
+    "Physical Health and Fitness (T1)",
+    "Healthy Eating (T1)",
+    "Legal Knowledge / marriage law, consent law, FGM law (T1)",
+    "First Aid / CPR (T1)"
+  ],
+  "scale": "full_programme",
+  "contestation_level": "moderate",
+  "contestation_notes": "July 2025 statutory guidance replaces the withdrawn 2019 version. Sex education content remains politically contested in England; parental withdrawal rights are statutory. The 2025 guidance is more politically settled than the 2019 version but retains ideological framing (e.g. emphasis on marriage and civil partnership, age-appropriate teaching provisions). Schools have limited flexibility on compulsory elements.",
+  "developmental_scope": "explicit_progression",
+  "developmental_scope_confidence": "high",
+  "developmental_scope_notes": "Document uses two explicit phases: 'content to be covered by the end of primary' and 'content to be covered by the end of secondary'. This is the document's own two-phase architecture, not the four-KS National Curriculum structure. Neither phase is subdivided into KS1/KS2 or KS3/KS4 within curriculum content sections. Band reference: End of Primary (ages 5-11, KS1+KS2) and End of Secondary (ages 11-16, KS3+KS4).",
+  "jurisdiction": "England",
+  "language": "English",
+  "statutory_authority": "Children and Social Work Act 2017",
+  "implementation_date": "1 September 2026",
+  "band_reference": {
+    "End of Primary": {
+      "phases": [
+        "KS1",
+        "KS2"
+      ],
+      "years": "Years 1-6",
+      "ages": "5-11",
+      "description": "Primary Relationships Education + Primary Health and Wellbeing"
+    },
+    "End of Secondary": {
+      "phases": [
+        "KS3",
+        "KS4"
+      ],
+      "years": "Years 7-11",
+      "ages": "11-16",
+      "description": "Secondary RSE + Secondary Health and Wellbeing"
+    }
+  },
+  "competency_count": 19,
+  "lt_count": 44,
+  "lt_halted_clusters": 1,
+  "lt_type_breakdown": {
+    "Type 1": 15,
+    "Type 2": 19,
+    "Type 3": 10
+  },
+  "kud_items_total": 279,
+  "kud_type_distribution": {
+    "Type 1": 195,
+    "Type 2": 67,
+    "Type 3": 17
+  },
+  "kud_stability": {
+    "stable": 226,
+    "classification_unstable": 53
+  },
+  "band_statement_sets": 33,
+  "band_statement_halted": 1,
+  "band_statement_coverage": {
+    "End of Primary": 33,
+    "End of Secondary": 33
+  },
+  "gate_results_summary": {
+    "source_coverage": "PASS",
+    "traceability": "PASS",
+    "artefact_count_ratio": "PASS",
+    "type3_distribution": "FAIL (informational) — Type 3 rate is 6.1% vs expected ≥20% for dispositional domain. RSHE is principally a statutory knowledge curriculum (knowing rights, laws, health facts) with embedded relational skills (T2) and minimal dispositional outcomes (T3). The low T3 rate reflects the source's propositional framing, not a classification failure. This gate triggers informational only — not a halt.",
+    "no_compound_unsplit": "PASS"
+  },
+  "flags_for_human_review": [
+    {
+      "flag": "type3_distribution_low",
+      "severity": "informational",
+      "detail": "Type 3 rate is 6.1% vs expected ≥20% for dispositional domain. RSHE is principally a statutory knowledge curriculum (knowing rights, laws, health facts) with embedded relational skills (T2) and minimal dispositional outcomes (T3). The low T3 rate reflects the source's propositional framing, not a classification failure. This gate triggers informational only — not a halt."
+    },
+    {
+      "flag": "band_statement_halted",
+      "lt_id": "cluster_06_lt_01",
+      "severity": "low",
+      "detail": "1 format/quality failures",
+      "statements": [
+        {
+          "band": "End of Primary",
+          "statement": "I can express my basic needs and feelings clearly while recognizing simple personal boundaries."
+        },
+        {
+          "band": "End of Secondary",
+          "statement": "I can communicate assertively across various situations while establishing and maintaining appropriate boundaries through effective emotional regulation."
+        }
+      ]
+    },
+    {
+      "flag": "rubric_gate_failures",
+      "severity": "low",
+      "detail": "8 rubrics with gate failures (5 generation-unreliable placeholders, 3 semantic gate failures: observable_verb, single_construct x2). Supporting components not generated for these 8 LTs."
+    }
+  ],
+  "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+  "snapshot_path": "docs/run-snapshots/uk-statutory-rshe",
+  "session": "HR-1",
+  "session_date": "2026-04-20"
+}

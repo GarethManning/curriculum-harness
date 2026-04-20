@@ -1,0 +1,33 @@
+{
+  "band_labels": [
+    "End of Primary",
+    "End of Secondary"
+  ],
+  "band_count": 2,
+  "age_range_hint": "ages 5-16 (DfE RSHE statutory guidance July 2025; primary phase = Years 1-6, secondary phase = Years 7-11; two-phase structure, no within-phase KS subdivision)",
+  "source_type": "england_rshe_full",
+  "detection_confidence": "high",
+  "detection_rationale": "Source slug 'uk-statutory-rshe' matches DfE RSHE full-programme pattern. Two-band structure: End of Primary (ages 5-11) + End of Secondary (ages 11-16). DfE statutory RSHE guidance (July 2025).",
+  "band_self_reflection_prompts": {
+    "End of Primary": "Think about one relationship in your life — with a friend, family member, or classmate. What makes it feel safe and kind? Is there anything you would like to be different?",
+    "End of Secondary": "Think about a situation this term where you had to make a decision about a relationship or your own wellbeing. What did you consider, and what would you do differently now?"
+  },
+  "band_details": [
+    {
+      "label": "End of Primary",
+      "approximate_age_range": "ages 5-11",
+      "approximate_grade_year": "Years 1-6 (KS1 and KS2)",
+      "developmental_descriptor": "Primary pupils develop the foundational skills and knowledge needed for positive relationships, personal safety, and health. Outcomes are framed as terminal goals for all primary pupils; year-group and KS1/KS2 sequencing is a school decision. Primary relationships education does not include RSE content; sex education in primary is non-statutory."
+    },
+    {
+      "label": "End of Secondary",
+      "approximate_age_range": "ages 11-16",
+      "approximate_grade_year": "Years 7-11 (KS3 and KS4)",
+      "developmental_descriptor": "Secondary pupils develop the knowledge, values and personal qualities needed to navigate relationships, sex and health across the full secondary phase. Outcomes are framed as terminal goals for all secondary pupils; KS3/KS4 and year-group sequencing is a school decision."
+    }
+  ],
+  "progression_philosophy": "The DfE RSHE statutory guidance (July 2025) uses a two-phase architecture: 'content to be covered by the end of primary' and 'content to be covered by the end of secondary'. Neither phase is subdivided into individual Key Stages within the curriculum content sections. Two-band output reflects the guidance's own structure. Per DfE statutory RSHE guidance (England), Children and Social Work Act 2017.",
+  "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+  "source_slug": "uk-statutory-rshe",
+  "detection_module_version": "0.1.0"
+}
