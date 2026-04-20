@@ -1,0 +1,4496 @@
+{
+  "schema_version": "v1",
+  "source_slug": "real-wellbeing-2026-04",
+  "source_name": "REAL School Budapest — Wellbeing Framework",
+  "total_criteria": 107,
+  "dag_validation": {
+    "dag_valid": true,
+    "status": "PASS",
+    "total_criteria": 107,
+    "total_edges": 247,
+    "cycles": [],
+    "self_loops": [],
+    "unresolved_ids": []
+  },
+  "strand_summaries": [
+    {
+      "strand": "comp_1",
+      "strand_name": "Emotional Intelligence",
+      "criteria_count": 8
+    },
+    {
+      "strand": "comp_2",
+      "strand_name": "Attention & Reflective Practices",
+      "criteria_count": 18
+    },
+    {
+      "strand": "comp_3",
+      "strand_name": "Physical Wellbeing & Self-Care",
+      "criteria_count": 14
+    },
+    {
+      "strand": "comp_4",
+      "strand_name": "Consent, Safety & Healthy Relationships",
+      "criteria_count": 19
+    },
+    {
+      "strand": "comp_5",
+      "strand_name": "Community, Purpose & Belonging",
+      "criteria_count": 16
+    },
+    {
+      "strand": "comp_6",
+      "strand_name": "Wellbeing Science & Literacy",
+      "criteria_count": 18
+    },
+    {
+      "strand": "comp_7",
+      "strand_name": "Metacognitive Self-Direction",
+      "criteria_count": 14
+    }
+  ],
+  "criteria": [
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0001",
+      "associated_lt_ids": [
+        "lt_1_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can notice physical sensations in my body, identify and name my feelings, and use a calming strategy to help me return to learning activities.",
+      "criterion_label": "Body awareness and emotional regulation",
+      "source_kud_item_ids": [
+        "kud_lt_1_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Self-regulation behaviours not yet observed.",
+        "emerging": "Sometimes notices body signals or names feelings with adult prompting.",
+        "developing": "Occasionally identifies feelings and attempts calming strategies independently.",
+        "competent": "Consistently notices body signals, names feelings, and uses calming strategies to return to learning.",
+        "extending": "Consistently self-regulates and can explain their process to others."
+      },
+      "decomposition_rationale": "This produces one criterion as the three components (noticing body signals, naming feelings, using strategies) form an integrated self-regulation process observable as a single dispositional behaviour at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0001",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0001",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0002",
+      "associated_lt_ids": [
+        "lt_1_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify a common personal trigger and choose a practised strategy to manage my response.",
+      "criterion_label": "Trigger identification and strategy selection",
+      "source_kud_item_ids": [
+        "kud_lt_1_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not identify personal triggers or select strategies.",
+        "emerging": "Identifies triggers or selects strategies with adult prompting and support.",
+        "developing": "Sometimes identifies triggers and selects appropriate strategies independently.",
+        "competent": "Consistently identifies common personal triggers and selects practised strategies to manage responses.",
+        "extending": "Consistently demonstrates trigger awareness and strategy selection, explaining choices to others."
+      },
+      "decomposition_rationale": "This is a single dispositional behaviour combining trigger awareness with strategic response selection, observable as one integrated competency at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0001",
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0001",
+          "to": "real-wellbeing-2026-04_crit_0002",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0002",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0002",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0003",
+      "associated_lt_ids": [
+        "lt_1_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can apply a chosen strategy in a challenging situation and reflect on how well it worked.",
+      "criterion_label": "Strategy application and reflection",
+      "source_kud_item_ids": [
+        "kud_lt_1_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Strategy use and reflection not yet observed.",
+        "emerging": "Applies strategies with prompting and reflects briefly when guided.",
+        "developing": "Sometimes applies strategies independently and offers simple reflections on effectiveness.",
+        "competent": "Consistently applies chosen strategies in challenging situations and reflects thoughtfully on their effectiveness.",
+        "extending": "Consistently demonstrates strategic responses and articulates detailed reflections about strategy effectiveness."
+      },
+      "decomposition_rationale": "This represents one integrated dispositional behaviour combining strategy application with reflective evaluation, observable as a single competency pattern.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0002",
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0002",
+          "to": "real-wellbeing-2026-04_crit_0003",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0003",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0003",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0003",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0004",
+      "associated_lt_ids": [
+        "lt_1_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can apply my emotional regulation strategies effectively under stress across different settings and reflect on their effectiveness to inform future improvements.",
+      "criterion_label": "Cross-setting strategy application and reflection",
+      "source_kud_item_ids": [
+        "kud_lt_1_1_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Strategy use under stress not yet observed.",
+        "emerging": "Applies strategies under stress occasionally with adult prompting and support.",
+        "developing": "Applies strategies under stress sometimes independently across familiar settings.",
+        "competent": "Consistently applies strategies under stress across different settings and reflects on effectiveness to plan improvements.",
+        "extending": "Consistently demonstrates strategic regulation under stress and coaches others in strategy selection."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it represents one integrated capability - the ability to maintain strategic emotional regulation under stress while engaging in metacognitive reflection across contexts.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0003",
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0003",
+          "to": "real-wellbeing-2026-04_crit_0004",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0004",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0004",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0005",
+      "associated_lt_ids": [
+        "lt_1_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify emotions in others and respond with appropriate kindness or helpful actions.",
+      "criterion_label": "Empathetic Recognition and Response",
+      "source_kud_item_ids": [
+        "kud_lt_1_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not recognize others' emotions or respond caringly.",
+        "emerging": "Occasionally names feelings or offers help with adult prompting and guidance.",
+        "developing": "Sometimes identifies emotions and responds kindly without consistent prompting from adults.",
+        "competent": "Consistently recognizes others' feelings and spontaneously offers kind words or specific helpful actions appropriately.",
+        "extending": "Consistently responds empathetically and can explain why their caring response was helpful."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it captures one integrated empathetic behavior combining emotional recognition with caring response action.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0006",
+      "associated_lt_ids": [
+        "lt_1_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "Students can describe a situation from another person's perspective and ask if they would like help before acting.",
+      "criterion_label": "Perspective-taking and consent",
+      "source_kud_item_ids": [
+        "kud_lt_1_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not show perspective-taking or asking before helping.",
+        "emerging": "Occasionally describes others' perspectives or asks before helping when prompted.",
+        "developing": "Sometimes describes others' perspectives and asks before helping without prompting.",
+        "competent": "Consistently describes situations from others' perspectives and asks if they would like help before acting.",
+        "extending": "Consistently demonstrates perspective-taking and consent-seeking, explaining why this approach helps others feel respected."
+      },
+      "decomposition_rationale": "This is a single dispositional behaviour combining perspective-taking with respectful helping practices, observable as one integrated social skill.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0005"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0005",
+          "to": "real-wellbeing-2026-04_crit_0006",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0007",
+      "associated_lt_ids": [
+        "lt_1_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can notice what others say and do in a group, check in when I'm unsure, and adjust my actions to match their stated needs or boundaries.",
+      "criterion_label": "Group awareness and responsiveness",
+      "source_kud_item_ids": [
+        "kud_lt_1_2_c_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not observe others' verbal or nonverbal cues.",
+        "emerging": "Occasionally notices others' cues with adult prompting and sometimes checks in.",
+        "developing": "Sometimes notices others' cues independently and asks clarifying questions when uncertain.",
+        "competent": "Consistently observes others' verbal and nonverbal signals, seeks clarification when needed, and adjusts behavior accordingly.",
+        "extending": "Models attentive group awareness and can explain how to read social cues."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it represents one integrated social behavior of awareness and responsive adjustment within group contexts.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0006"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0006",
+          "to": "real-wellbeing-2026-04_crit_0007",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0008",
+      "associated_lt_ids": [
+        "lt_1_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The student demonstrates relationship repair after conflict through active listening, taking responsibility, and collaborative problem-solving.",
+      "criterion_label": "Post-conflict relationship repair",
+      "source_kud_item_ids": [
+        "kud_lt_1_2_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No observed attempts at relationship repair after conflict.",
+        "emerging": "Occasionally attempts one aspect of repair when prompted by adults.",
+        "developing": "Sometimes initiates repair attempts, demonstrating listening or accountability but not full process.",
+        "competent": "Consistently engages in complete repair process including listening, owning responsibility, and reaching mutual agreements.",
+        "extending": "Consistently repairs relationships and can explain or model the repair process for others."
+      },
+      "decomposition_rationale": "This is a single dispositional behavior requiring integrated demonstration of listening, accountability, and collaborative problem-solving as one coherent relationship repair process.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0007"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0007",
+          "to": "real-wellbeing-2026-04_crit_0008",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0009",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can use their senses to direct attention to one task for a short time.",
+      "criterion_label": "Sensory-focused attention",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not sustain attention to task",
+        "emerging": "Briefly attends to task with prompting to use senses",
+        "developing": "Sometimes uses senses to attend to task for short periods",
+        "competent": "Consistently uses senses to direct attention to one task for short time",
+        "extending": "Uses senses purposefully and can explain which senses help focus"
+      },
+      "decomposition_rationale": "This addresses the attentional capacity component of the learning target.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0010",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can describe how they brought their attention back when it wandered.",
+      "criterion_label": "Attention-return awareness",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe attention recovery",
+        "emerging": "Notices attention wandered with adult prompting",
+        "developing": "Sometimes describes what helped bring attention back",
+        "competent": "Clearly describes specific ways they brought attention back when it wandered",
+        "extending": "Describes attention strategies and teaches them to others"
+      },
+      "decomposition_rationale": "This addresses the metacognitive awareness component which involves different cognitive processes than sustaining attention itself.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0011",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can apply a practised attention strategy while engaged in a task.",
+      "criterion_label": "Apply attention strategy",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not use attention strategies during tasks.",
+        "emerging": "Occasionally uses attention strategy with adult prompting during tasks.",
+        "developing": "Sometimes uses attention strategy independently during tasks.",
+        "competent": "Consistently applies practised attention strategy independently throughout tasks.",
+        "extending": "Consistently applies strategy and can teach it to others."
+      },
+      "decomposition_rationale": "Two criteria are needed because using a strategy and reflecting on focus factors represent distinct cognitive operations that can be independently demonstrated.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0009",
+        "real-wellbeing-2026-04_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0009",
+          "to": "real-wellbeing-2026-04_crit_0011",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0010",
+          "to": "real-wellbeing-2026-04_crit_0011",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0012",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe what made it easier or harder to focus during a task.",
+      "criterion_label": "Reflect on focus factors",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify focus factors after tasks.",
+        "emerging": "Identifies simple focus factors with adult guidance and questioning.",
+        "developing": "Sometimes identifies focus factors independently with basic explanations.",
+        "competent": "Consistently describes specific factors that helped or hindered focus during tasks.",
+        "extending": "Describes focus factors and connects them to strategy effectiveness."
+      },
+      "decomposition_rationale": "Two criteria are needed because using a strategy and reflecting on focus factors represent distinct cognitive operations that can be independently demonstrated.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0009",
+        "real-wellbeing-2026-04_crit_0010"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0009",
+          "to": "real-wellbeing-2026-04_crit_0012",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0010",
+          "to": "real-wellbeing-2026-04_crit_0012",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0013",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate how an attention strategy affected my focus during a specific task.",
+      "criterion_label": "Strategy Impact Evaluation",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No evaluation of strategy impact observed",
+        "emerging": "Evaluates strategy impact with prompting and support",
+        "developing": "Sometimes evaluates strategy impact independently",
+        "competent": "Consistently evaluates how attention strategies affected focus during tasks",
+        "extending": "Evaluates strategy impact and guides others in self-reflection"
+      },
+      "decomposition_rationale": "The band statement contains two distinct cognitive operations: evaluating strategy effectiveness and explaining reasoning, which require separate assessment.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0011",
+        "real-wellbeing-2026-04_crit_0012"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0011",
+          "to": "real-wellbeing-2026-04_crit_0013",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0012",
+          "to": "real-wellbeing-2026-04_crit_0013",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0014",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain why an attention strategy did or didn't help my focus.",
+      "criterion_label": "Strategy Reasoning Explanation",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No reasoning explanations provided",
+        "emerging": "Explains strategy reasoning with prompting and guidance",
+        "developing": "Sometimes explains why strategies worked or failed",
+        "competent": "Consistently explains reasoning behind strategy effectiveness clearly",
+        "extending": "Explains reasoning and helps others understand strategy mechanisms"
+      },
+      "decomposition_rationale": "The band statement contains two distinct cognitive operations: evaluating strategy effectiveness and explaining reasoning, which require separate assessment.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0011",
+        "real-wellbeing-2026-04_crit_0012"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0011",
+          "to": "real-wellbeing-2026-04_crit_0014",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0012",
+          "to": "real-wellbeing-2026-04_crit_0014",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0015",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can sustain attention during a challenging task for an extended period.",
+      "criterion_label": "Sustain focused attention",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Attention frequently breaks during challenging tasks.",
+        "emerging": "Sustains attention briefly during challenging tasks with prompting.",
+        "developing": "Sustains attention for moderate periods during challenging tasks.",
+        "competent": "Consistently sustains attention throughout challenging tasks without external reminders.",
+        "extending": "Sustains deep focus and can describe attention management techniques."
+      },
+      "decomposition_rationale": "Sustaining attention is a distinct cognitive operation from identifying distractors or applying strategies.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0013",
+        "real-wellbeing-2026-04_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0013",
+          "to": "real-wellbeing-2026-04_crit_0015",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0014",
+          "to": "real-wellbeing-2026-04_crit_0015",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0016",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify what is pulling my attention away from a task.",
+      "criterion_label": "Identify attention distractors",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify what causes attention to wander.",
+        "emerging": "Occasionally notices attention has wandered with prompting.",
+        "developing": "Sometimes identifies distractors after attention has wandered.",
+        "competent": "Consistently recognises and can name specific distractors affecting focus.",
+        "extending": "Anticipates potential distractors and explains their impact."
+      },
+      "decomposition_rationale": "Identifying distractors requires metacognitive awareness distinct from the other operations.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0013",
+        "real-wellbeing-2026-04_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0013",
+          "to": "real-wellbeing-2026-04_crit_0016",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0014",
+          "to": "real-wellbeing-2026-04_crit_0016",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0017",
+      "associated_lt_ids": [
+        "lt_2_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can use a deliberate strategy to return my attention to a task.",
+      "criterion_label": "Apply attention return strategies",
+      "source_kud_item_ids": [
+        "kud_lt_2_1_D_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not use strategies to refocus attention.",
+        "emerging": "Attempts to use attention strategies with prompting.",
+        "developing": "Sometimes applies strategies to return focus independently.",
+        "competent": "Consistently selects and applies effective strategies to refocus attention.",
+        "extending": "Flexibly adapts strategies and explains their effectiveness."
+      },
+      "decomposition_rationale": "Strategic application of attention-return techniques is a separate cognitive operation requiring deliberate selection and execution of specific methods.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0013",
+        "real-wellbeing-2026-04_crit_0014"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0013",
+          "to": "real-wellbeing-2026-04_crit_0017",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0014",
+          "to": "real-wellbeing-2026-04_crit_0017",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0018",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can retell a short experience with key details in sequence.",
+      "criterion_label": "Experience Retelling",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot retell experience coherently",
+        "emerging": "Retells experience with prompting, some details missing",
+        "developing": "Retells experience with most key details present",
+        "competent": "Clearly retells experience with key details in logical sequence",
+        "extending": "Retells experience vividly and helps others understand the sequence"
+      },
+      "decomposition_rationale": "Retelling an experience and identifying learning from it are distinct cognitive operations requiring separate assessment.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0019",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify and state one specific thing I learned from an experience.",
+      "criterion_label": "Learning Identification",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify learning from experience",
+        "emerging": "States learning with prompting, may be vague",
+        "developing": "Sometimes identifies specific learning without prompting",
+        "competent": "Consistently states specific learning gained from the experience",
+        "extending": "States learning clearly and explains how it applies elsewhere"
+      },
+      "decomposition_rationale": "Retelling an experience and identifying learning from it are distinct cognitive operations requiring separate assessment.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0020",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can pause before making a choice to consider potential outcomes.",
+      "criterion_label": "Pause before choosing",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not pause before making choices.",
+        "emerging": "Occasionally pauses before choosing when prompted by others.",
+        "developing": "Sometimes pauses before choosing without being reminded.",
+        "competent": "Consistently pauses to think before making choices without prompting.",
+        "extending": "Consistently pauses and can explain why thinking first helps."
+      },
+      "decomposition_rationale": "This criterion captures the metacognitive 'stopping' behaviour that precedes the outcome analysis, which is a distinct observable action from identifying consequences.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0018",
+        "real-wellbeing-2026-04_crit_0019"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0018",
+          "to": "real-wellbeing-2026-04_crit_0020",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0019",
+          "to": "real-wellbeing-2026-04_crit_0020",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0021",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify at least one helpful and one harmful possible outcome for a choice.",
+      "criterion_label": "Identify helpful and harmful outcomes",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify potential outcomes of choices.",
+        "emerging": "Occasionally identifies one type of outcome when prompted.",
+        "developing": "Sometimes identifies both helpful and harmful outcomes with support.",
+        "competent": "Consistently identifies at least one helpful and one harmful outcome independently.",
+        "extending": "Consistently identifies multiple outcomes and explains their reasoning clearly."
+      },
+      "decomposition_rationale": "This criterion focuses on the cognitive skill of consequence prediction, which is a separate demonstrable ability from the metacognitive pause behaviour.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0018",
+        "real-wellbeing-2026-04_crit_0019"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0018",
+          "to": "real-wellbeing-2026-04_crit_0021",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0019",
+          "to": "real-wellbeing-2026-04_crit_0021",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0022",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can compare multiple options by identifying key differences between them.",
+      "criterion_label": "Compare Multiple Options",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No comparison of options attempted.",
+        "emerging": "Identifies some differences between options with prompting.",
+        "developing": "Identifies key differences between most options independently.",
+        "competent": "Systematically compares multiple options by identifying relevant differences.",
+        "extending": "Compares options thoroughly and explains comparison process."
+      },
+      "decomposition_rationale": "Three distinct cognitive operations require separate assessment: comparing options involves analysis, stating choice requires decision-making, and giving value-based reasons involves justification.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0020",
+        "real-wellbeing-2026-04_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0020",
+          "to": "real-wellbeing-2026-04_crit_0022",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0021",
+          "to": "real-wellbeing-2026-04_crit_0022",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0023",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can clearly state my choice from available options.",
+      "criterion_label": "State Clear Choice",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No clear choice stated.",
+        "emerging": "States a choice with prompting or clarification.",
+        "developing": "States choice clearly most of the time.",
+        "competent": "Consistently states clear, definitive choice from available options.",
+        "extending": "States choice decisively and explains decision-making process."
+      },
+      "decomposition_rationale": "Three distinct cognitive operations require separate assessment: comparing options involves analysis, stating choice requires decision-making, and giving value-based reasons involves justification.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0020",
+        "real-wellbeing-2026-04_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0020",
+          "to": "real-wellbeing-2026-04_crit_0023",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0021",
+          "to": "real-wellbeing-2026-04_crit_0023",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0024",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can give a reason for my choice that connects to my personal values.",
+      "criterion_label": "Value-Based Reasoning",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_C_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No reasoning provided for choice.",
+        "emerging": "Provides basic reasoning with prompting about values.",
+        "developing": "Sometimes connects reasoning to personal values independently.",
+        "competent": "Consistently provides clear reasoning that explicitly connects to personal values.",
+        "extending": "Articulates value-based reasoning and explains value priorities."
+      },
+      "decomposition_rationale": "Three distinct cognitive operations require separate assessment: comparing options involves analysis, stating choice requires decision-making, and giving value-based reasons involves justification.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0020",
+        "real-wellbeing-2026-04_crit_0021"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0020",
+          "to": "real-wellbeing-2026-04_crit_0024",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0021",
+          "to": "real-wellbeing-2026-04_crit_0024",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0025",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the trade-offs involved in a decision by identifying what is gained and lost with different options.",
+      "criterion_label": "Explain decision trade-offs",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not identify gains or losses in options",
+        "emerging": "Identifies some gains or losses with prompting",
+        "developing": "Identifies gains and losses for some options independently",
+        "competent": "Clearly explains what is gained and lost across multiple decision options",
+        "extending": "Articulates complex trade-offs and their interconnections"
+      },
+      "decomposition_rationale": "Two distinct cognitive operations: explaining trade-offs requires analytical thinking about gains/losses, while justifying choices based on effects on people requires evaluative reasoning with empathy.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0022",
+        "real-wellbeing-2026-04_crit_0023",
+        "real-wellbeing-2026-04_crit_0024"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0022",
+          "to": "real-wellbeing-2026-04_crit_0025",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0023",
+          "to": "real-wellbeing-2026-04_crit_0025",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0024",
+          "to": "real-wellbeing-2026-04_crit_0025",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0026",
+      "associated_lt_ids": [
+        "lt_2_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can justify my choice by considering how the decision affects different people involved.",
+      "criterion_label": "Justify choice considering impacts",
+      "source_kud_item_ids": [
+        "kud_lt_2_2_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not consider effects on others",
+        "emerging": "Considers effects on one person with prompting",
+        "developing": "Considers effects on some people without prompting",
+        "competent": "Justifies choice by thoughtfully considering impacts on different people involved",
+        "extending": "Justifies choice considering diverse perspectives and stakeholder needs"
+      },
+      "decomposition_rationale": "Two distinct cognitive operations: explaining trade-offs requires analytical thinking about gains/losses, while justifying choices based on effects on people requires evaluative reasoning with empathy.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0022",
+        "real-wellbeing-2026-04_crit_0023",
+        "real-wellbeing-2026-04_crit_0024"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0022",
+          "to": "real-wellbeing-2026-04_crit_0026",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0023",
+          "to": "real-wellbeing-2026-04_crit_0026",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0024",
+          "to": "real-wellbeing-2026-04_crit_0026",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0027",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can name my body's basic needs such as food, water, sleep, and movement.",
+      "criterion_label": "Basic Body Needs",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name basic body needs",
+        "emerging": "Names 1-2 basic needs with prompting",
+        "developing": "Names 2-3 basic needs independently",
+        "competent": "Names 4+ basic needs (food, water, sleep, movement) clearly",
+        "extending": "Names basic needs and explains why bodies need them"
+      },
+      "decomposition_rationale": "Naming basic needs is a distinct cognitive act from practicing hygiene routines, requiring factual knowledge rather than procedural demonstration.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0027",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0027",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0028",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can practise simple personal hygiene routines with reminders.",
+      "criterion_label": "Hygiene Routine Practice",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not engage in hygiene routines",
+        "emerging": "Participates in hygiene routines with significant guidance",
+        "developing": "Follows hygiene routines with occasional reminders",
+        "competent": "Consistently follows simple hygiene routines when reminded",
+        "extending": "Follows hygiene routines and reminds others or self"
+      },
+      "decomposition_rationale": "Practicing hygiene routines involves different procedural skills from naming body needs, requiring physical demonstration rather than verbal knowledge.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0028",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0028",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0029",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how sleep, food, and movement affect how I feel.",
+      "criterion_label": "Explain health impact connections",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot connect health habits to feelings.",
+        "emerging": "Names some connections with prompting or examples.",
+        "developing": "Explains basic connections between habits and feelings sometimes.",
+        "competent": "Clearly explains how sleep, food, and movement affect personal feelings and energy.",
+        "extending": "Explains connections and helps others understand habit-feeling relationships."
+      },
+      "decomposition_rationale": "Two distinct cognitive operations: explaining causal relationships versus goal-setting behavior require separate assessment.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0027",
+        "real-wellbeing-2026-04_crit_0028",
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0027",
+          "to": "real-wellbeing-2026-04_crit_0029",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0028",
+          "to": "real-wellbeing-2026-04_crit_0029",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0029",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0029",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0030",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can set a goal for one healthy habit.",
+      "criterion_label": "Set healthy habit goal",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not identify or set health goals.",
+        "emerging": "Identifies a habit to work on with guidance.",
+        "developing": "Sets a basic goal for healthy habit change.",
+        "competent": "Sets a clear, specific goal for improving one healthy habit.",
+        "extending": "Sets specific goals and explains why the habit matters to them."
+      },
+      "decomposition_rationale": "Two distinct cognitive operations: explaining causal relationships versus goal-setting behavior require separate assessment.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0027",
+        "real-wellbeing-2026-04_crit_0028",
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0027",
+          "to": "real-wellbeing-2026-04_crit_0030",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0028",
+          "to": "real-wellbeing-2026-04_crit_0030",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0030",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0030",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0031",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can track one habit consistently for a week using a recording method.",
+      "criterion_label": "Habit tracking",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No habit tracking attempted or recorded.",
+        "emerging": "Records habit data for 2-3 days with prompting.",
+        "developing": "Records habit data for most days independently.",
+        "competent": "Consistently records habit data for all seven days using chosen method.",
+        "extending": "Tracks habit comprehensively and suggests improvements to tracking method."
+      },
+      "decomposition_rationale": "Tracking represents a distinct data collection skill that can be assessed independently through record-keeping evidence.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0029",
+        "real-wellbeing-2026-04_crit_0030",
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0029",
+          "to": "real-wellbeing-2026-04_crit_0031",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0030",
+          "to": "real-wellbeing-2026-04_crit_0031",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0031",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0031",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0031",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0032",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify a specific barrier that affects my habit practice.",
+      "criterion_label": "Barrier identification",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No barriers identified or mentioned.",
+        "emerging": "Names a vague or general obstacle with prompting.",
+        "developing": "Identifies a relevant barrier but may lack specificity.",
+        "competent": "Clearly identifies a specific barrier that genuinely affects habit practice.",
+        "extending": "Identifies barrier and recognizes its underlying causes or patterns."
+      },
+      "decomposition_rationale": "Barrier identification requires analytical thinking that is separate from tracking or explanation skills.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0029",
+        "real-wellbeing-2026-04_crit_0030",
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0029",
+          "to": "real-wellbeing-2026-04_crit_0032",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0030",
+          "to": "real-wellbeing-2026-04_crit_0032",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0032",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0032",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0032",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0033",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain my reasoning for wanting to keep or change a tracked habit.",
+      "criterion_label": "Habit reasoning",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_C_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of habit decisions provided.",
+        "emerging": "States preference to keep or change with prompting.",
+        "developing": "Gives basic reason for keeping or changing habit.",
+        "competent": "Clearly explains reasoning with connection to personal goals or wellbeing.",
+        "extending": "Explains reasoning and considers multiple factors or potential consequences."
+      },
+      "decomposition_rationale": "Explanation requires reflective reasoning skills distinct from data collection and barrier analysis, representing a separate cognitive operation.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0029",
+        "real-wellbeing-2026-04_crit_0030",
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0029",
+          "to": "real-wellbeing-2026-04_crit_0033",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0030",
+          "to": "real-wellbeing-2026-04_crit_0033",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0033",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0033",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0033",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0034",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can compare two sources of health information for credibility and usefulness.",
+      "criterion_label": "Compare health information sources",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_d_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not evaluate health information sources.",
+        "emerging": "Identifies basic differences between sources with prompting.",
+        "developing": "Compares sources using some evaluation criteria independently.",
+        "competent": "Systematically compares sources for credibility, accuracy, and relevance to personal needs.",
+        "extending": "Explains evaluation criteria and teaches others to assess sources critically."
+      },
+      "decomposition_rationale": "Comparing sources requires distinct evaluation skills separate from planning and adjusting habits.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0031",
+        "real-wellbeing-2026-04_crit_0032",
+        "real-wellbeing-2026-04_crit_0033",
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0031",
+          "to": "real-wellbeing-2026-04_crit_0034",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0032",
+          "to": "real-wellbeing-2026-04_crit_0034",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0033",
+          "to": "real-wellbeing-2026-04_crit_0034",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0034",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0034",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0035",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can create a balanced weekly habits plan incorporating multiple health areas.",
+      "criterion_label": "Create balanced habits plan",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_d_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not create structured habit plans.",
+        "emerging": "Creates simple plans with prompting for balance.",
+        "developing": "Creates weekly plans addressing some health areas.",
+        "competent": "Creates comprehensive weekly plans balancing sleep, nutrition, exercise, and wellbeing goals.",
+        "extending": "Creates detailed plans and explains rationale for balance choices."
+      },
+      "decomposition_rationale": "Creating balanced plans requires synthesis skills distinct from information evaluation and plan adjustment.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0031",
+        "real-wellbeing-2026-04_crit_0032",
+        "real-wellbeing-2026-04_crit_0033",
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0031",
+          "to": "real-wellbeing-2026-04_crit_0035",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0032",
+          "to": "real-wellbeing-2026-04_crit_0035",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0033",
+          "to": "real-wellbeing-2026-04_crit_0035",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0035",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0035",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0036",
+      "associated_lt_ids": [
+        "lt_3_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can adjust my habits plan based on logged results and reflection.",
+      "criterion_label": "Adjust plan from results",
+      "source_kud_item_ids": [
+        "kud_lt_3_1_d_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not track or adjust plans.",
+        "emerging": "Makes basic changes with guidance after logging.",
+        "developing": "Adjusts some aspects based on logged data.",
+        "competent": "Systematically reviews logged results and makes informed adjustments to improve outcomes.",
+        "extending": "Explains adjustment reasoning and models reflective planning for others."
+      },
+      "decomposition_rationale": "Plan adjustment requires data analysis and reflection skills that are cognitively distinct from creating initial plans.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0031",
+        "real-wellbeing-2026-04_crit_0032",
+        "real-wellbeing-2026-04_crit_0033",
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0031",
+          "to": "real-wellbeing-2026-04_crit_0036",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0032",
+          "to": "real-wellbeing-2026-04_crit_0036",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0033",
+          "to": "real-wellbeing-2026-04_crit_0036",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0036",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0036",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0037",
+      "associated_lt_ids": [
+        "lt_3_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can identify trusted adults available for help and demonstrate simple self-care practices.",
+      "criterion_label": "Trust and Self-Care",
+      "source_kud_item_ids": [
+        "kud_lt_3_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name trusted adults or self-care practices.",
+        "emerging": "Names one trusted adult with prompting; attempts self-care with guidance.",
+        "developing": "Sometimes identifies trusted adults and practices self-care without reminders.",
+        "competent": "Consistently names trusted adults for help and demonstrates simple self-care routines independently.",
+        "extending": "Consistently demonstrates self-care and explains why trusted adults are important."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion combining help-seeking and self-care behaviours, as both reflect the same underlying wellbeing orientation observable at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0037",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0037",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0038",
+      "associated_lt_ids": [
+        "lt_3_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify my body's early warning signs and choose a helpful self-care response.",
+      "criterion_label": "Body awareness and self-care",
+      "source_kud_item_ids": [
+        "kud_lt_3_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not notice body signals or self-care needs.",
+        "emerging": "Sometimes notices body signals with prompting and tries self-care strategies.",
+        "developing": "Often recognises body's warning signs and selects appropriate self-care responses.",
+        "competent": "Consistently identifies body's early warning signs and independently chooses effective self-care responses that help restore wellbeing.",
+        "extending": "Consistently demonstrates body awareness and self-care, and can explain strategies to others."
+      },
+      "decomposition_rationale": "This is a single dispositional behaviour combining body awareness with self-care response selection, observable as one integrated capability.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0037",
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0037",
+          "to": "real-wellbeing-2026-04_crit_0038",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0038",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0038",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0039",
+      "associated_lt_ids": [
+        "lt_3_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can create a comprehensive self-care plan that includes strategies for both home and school environments and identify trusted support networks.",
+      "criterion_label": "Self-care planning and support networks",
+      "source_kud_item_ids": [
+        "kud_lt_3_2_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No self-care planning or support identification observed.",
+        "emerging": "Creates basic self-care ideas with prompting; names few support people.",
+        "developing": "Creates simple self-care plan for one environment; identifies some trusted people.",
+        "competent": "Creates detailed self-care plan covering home and school strategies; identifies comprehensive support network.",
+        "extending": "Creates sophisticated self-care plan and explains support network choices to others."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it represents one integrated behaviour of planning and help-seeking that demonstrates the learner's developing self-care capacity across contexts.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0038",
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0038",
+          "to": "real-wellbeing-2026-04_crit_0039",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0039",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0039",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0039",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0040",
+      "associated_lt_ids": [
+        "lt_3_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The learner maintains their key self-care routines during stressful times and describes one way they support a peer to do the same.",
+      "criterion_label": "Resilient Self-Care Support",
+      "source_kud_item_ids": [
+        "kud_lt_3_2_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No self-care maintenance or peer support observed.",
+        "emerging": "Occasionally maintains self-care routines when prompted during stress.",
+        "developing": "Sometimes maintains self-care routines during stress independently.",
+        "competent": "Consistently maintains self-care routines during stressful times and describes peer support strategies.",
+        "extending": "Maintains self-care consistently and articulates how peer support strategies work."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it represents one integrated behaviour pattern of resilient self-care that includes both personal maintenance and peer support elements observable together.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0039",
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0039",
+          "to": "real-wellbeing-2026-04_crit_0040",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0040",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0040",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0041",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can correctly name private body parts using appropriate terminology.",
+      "criterion_label": "Name private body parts",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name private body parts.",
+        "emerging": "Names some private body parts with prompting or support.",
+        "developing": "Names most private body parts correctly when asked.",
+        "competent": "Confidently names all private body parts using correct terminology.",
+        "extending": "Names private body parts correctly and explains why proper names are important."
+      },
+      "decomposition_rationale": "Two distinct criteria are needed as naming body parts requires factual knowledge while identifying trusted adults involves relationship awareness and safety understanding.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0042",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify my trusted adults who help keep me safe.",
+      "criterion_label": "Identify trusted adults",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify trusted adults.",
+        "emerging": "Names one trusted adult with prompting or support.",
+        "developing": "Identifies some trusted adults when asked about safety.",
+        "competent": "Clearly names several trusted adults who help keep them safe.",
+        "extending": "Names trusted adults and explains how they help with safety."
+      },
+      "decomposition_rationale": "Two distinct criteria are needed as naming body parts requires factual knowledge while identifying trusted adults involves relationship awareness and safety understanding.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0043",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can set personal boundaries and respect the boundaries of others.",
+      "criterion_label": "Set and respect boundaries",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not demonstrate boundary-setting or respecting others' boundaries.",
+        "emerging": "Shows awareness of boundaries with adult prompting and support.",
+        "developing": "Sometimes sets own boundaries and respects others' with occasional reminders.",
+        "competent": "Consistently sets personal boundaries and respects others' boundaries without prompting.",
+        "extending": "Models boundary-setting for peers and explains why boundaries are important."
+      },
+      "decomposition_rationale": "Setting and respecting boundaries involves distinct but related skills that can be assessed together as they represent the same cognitive operation applied to boundary management.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0041",
+        "real-wellbeing-2026-04_crit_0042"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0041",
+          "to": "real-wellbeing-2026-04_crit_0043",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0042",
+          "to": "real-wellbeing-2026-04_crit_0043",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0044",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can ask for clear consent before actions that affect others.",
+      "criterion_label": "Ask for clear consent",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not ask for consent before actions affecting others.",
+        "emerging": "Sometimes asks for consent when prompted by adults.",
+        "developing": "Often asks for consent but may need reminders in some situations.",
+        "competent": "Consistently asks for clear consent before actions that affect others.",
+        "extending": "Models consent-seeking for peers and explains why consent matters."
+      },
+      "decomposition_rationale": "Asking for consent represents a distinct cognitive operation from boundary management, requiring different communication and decision-making skills.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0041",
+        "real-wellbeing-2026-04_crit_0042"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0041",
+          "to": "real-wellbeing-2026-04_crit_0044",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0042",
+          "to": "real-wellbeing-2026-04_crit_0044",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0045",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can seek help from trusted adults when I feel pressured or unsafe.",
+      "criterion_label": "Seek help when pressured",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_B_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not seek help when feeling pressured.",
+        "emerging": "Recognises pressure but needs prompting to seek help.",
+        "developing": "Sometimes seeks help when pressured but may hesitate.",
+        "competent": "Consistently seeks help from trusted adults when feeling pressured or unsafe.",
+        "extending": "Helps peers recognise when to seek help and models help-seeking behaviour."
+      },
+      "decomposition_rationale": "Help-seeking when pressured involves different skills than boundary-setting or consent-asking, including recognising pressure situations and knowing how to access support.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0041",
+        "real-wellbeing-2026-04_crit_0042"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0041",
+          "to": "real-wellbeing-2026-04_crit_0045",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0042",
+          "to": "real-wellbeing-2026-04_crit_0045",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0046",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can apply consent skills in non-sexual and online contexts.",
+      "criterion_label": "Apply consent skills",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No demonstration of consent skills in contexts.",
+        "emerging": "Applies basic consent skills with prompting in simple scenarios.",
+        "developing": "Applies consent skills in some non-sexual and online contexts.",
+        "competent": "Consistently applies consent skills across various non-sexual and online situations appropriately.",
+        "extending": "Applies consent skills fluently and can explain their importance to others."
+      },
+      "decomposition_rationale": "This represents a distinct cognitive operation of applying procedural knowledge in specific contexts.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0043",
+        "real-wellbeing-2026-04_crit_0044",
+        "real-wellbeing-2026-04_crit_0045"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0043",
+          "to": "real-wellbeing-2026-04_crit_0046",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0044",
+          "to": "real-wellbeing-2026-04_crit_0046",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0045",
+          "to": "real-wellbeing-2026-04_crit_0046",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0047",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can state my boundaries clearly to peers.",
+      "criterion_label": "State boundaries clearly",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No clear boundary communication observed with peers.",
+        "emerging": "States some boundaries with prompting or unclear communication.",
+        "developing": "States boundaries to peers with increasing clarity and confidence.",
+        "competent": "Consistently states personal boundaries clearly and directly to peers when needed.",
+        "extending": "States boundaries clearly and helps peers understand appropriate boundary communication."
+      },
+      "decomposition_rationale": "Boundary communication is a separate cognitive operation from applying consent skills, requiring different communication competencies.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0043",
+        "real-wellbeing-2026-04_crit_0044",
+        "real-wellbeing-2026-04_crit_0045"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0043",
+          "to": "real-wellbeing-2026-04_crit_0047",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0044",
+          "to": "real-wellbeing-2026-04_crit_0047",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0045",
+          "to": "real-wellbeing-2026-04_crit_0047",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0048",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can recognise situations where power imbalances or peer pressure create risks to consent and safety.",
+      "criterion_label": "Recognise Power/Pressure Risks",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify risky power or pressure situations.",
+        "emerging": "Identifies obvious risk situations with prompting and guidance.",
+        "developing": "Identifies some risk situations independently but misses subtle dynamics.",
+        "competent": "Consistently identifies various power imbalances and peer pressure situations that compromise safety.",
+        "extending": "Identifies risks and explains underlying dynamics to others."
+      },
+      "decomposition_rationale": "Recognition of risks is a distinct cognitive skill from planning responses or supporting others.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0046",
+        "real-wellbeing-2026-04_crit_0047"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0046",
+          "to": "real-wellbeing-2026-04_crit_0048",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0047",
+          "to": "real-wellbeing-2026-04_crit_0048",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0049",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can clearly state my refusal and articulate a specific exit plan when facing pressure situations.",
+      "criterion_label": "State Refusal and Exit Plan",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot articulate refusal or exit strategies.",
+        "emerging": "States basic refusal with prompting but exit plan unclear.",
+        "developing": "States refusal clearly but exit plan lacks specific details.",
+        "competent": "Clearly states refusal and describes specific, practical exit strategies for pressure situations.",
+        "extending": "Models assertive refusal and detailed exit planning for peers."
+      },
+      "decomposition_rationale": "Active response skills (refusing and exiting) require different competencies than recognition or peer support.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0046",
+        "real-wellbeing-2026-04_crit_0047"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0046",
+          "to": "real-wellbeing-2026-04_crit_0049",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0047",
+          "to": "real-wellbeing-2026-04_crit_0049",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0050",
+      "associated_lt_ids": [
+        "lt_4_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe how I would help a peer access appropriate support when they face safety concerns.",
+      "criterion_label": "Support Peer Help-Seeking",
+      "source_kud_item_ids": [
+        "kud_lt_4_1_D_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe peer support strategies.",
+        "emerging": "Describes basic peer support with prompting and guidance.",
+        "developing": "Describes some appropriate support strategies but misses key elements.",
+        "competent": "Describes clear, appropriate strategies for supporting peers to access help for safety concerns.",
+        "extending": "Describes comprehensive peer support and demonstrates bystander intervention skills."
+      },
+      "decomposition_rationale": "Supporting others requires distinct interpersonal and help-seeking knowledge beyond personal safety skills.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0046",
+        "real-wellbeing-2026-04_crit_0047"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0046",
+          "to": "real-wellbeing-2026-04_crit_0050",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0047",
+          "to": "real-wellbeing-2026-04_crit_0050",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0051",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the basic physical and emotional changes that happen during puberty.",
+      "criterion_label": "Explain puberty changes",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe any puberty changes",
+        "emerging": "Names one or two puberty changes with prompting",
+        "developing": "Describes several physical changes but needs support for emotional aspects",
+        "competent": "Clearly explains both physical and emotional changes that occur during puberty",
+        "extending": "Explains puberty changes and helps others understand them"
+      },
+      "decomposition_rationale": "This targets the specific cognitive act of explaining puberty changes, which is distinct from the procedural skills that follow.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0052",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can use appropriate personal hygiene routines consistently.",
+      "criterion_label": "Use hygiene routines",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not follow hygiene routines",
+        "emerging": "Follows basic hygiene with frequent reminders and support",
+        "developing": "Follows hygiene routines with occasional reminders about specific practices",
+        "competent": "Consistently maintains appropriate personal hygiene routines without prompting",
+        "extending": "Models good hygiene and explains importance to others"
+      },
+      "decomposition_rationale": "This represents a procedural skill that is cognitively distinct from explaining concepts or finding information.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0053",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can find reliable health information from trusted sources.",
+      "criterion_label": "Find reliable health information",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_B_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify reliable health sources",
+        "emerging": "Identifies one trusted source with guidance about reliability",
+        "developing": "Finds health information but needs support distinguishing reliable sources",
+        "competent": "Successfully locates reliable health information from multiple trusted sources",
+        "extending": "Evaluates source reliability and helps others find trustworthy information"
+      },
+      "decomposition_rationale": "Information literacy represents a distinct cognitive operation from explaining concepts or applying procedures, requiring evaluation and selection skills.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0054",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can manage my personal hygiene practices specifically related to puberty changes.",
+      "criterion_label": "Puberty hygiene management",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_c_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No hygiene practices demonstrated.",
+        "emerging": "Basic hygiene practices with frequent prompting and guidance.",
+        "developing": "Some independent hygiene practices with occasional reminders needed.",
+        "competent": "Consistently manages personal hygiene independently with understanding of puberty-related needs.",
+        "extending": "Models good hygiene practices and explains rationale to others."
+      },
+      "decomposition_rationale": "This criterion focuses on the practical application and management of hygiene routines, which is distinct from the cognitive tasks of identifying sources and explaining reproduction.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0051",
+        "real-wellbeing-2026-04_crit_0052",
+        "real-wellbeing-2026-04_crit_0053"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0051",
+          "to": "real-wellbeing-2026-04_crit_0054",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0052",
+          "to": "real-wellbeing-2026-04_crit_0054",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0053",
+          "to": "real-wellbeing-2026-04_crit_0054",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0055",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify and distinguish between trusted and unreliable sources of health information.",
+      "criterion_label": "Health information source evaluation",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_c_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify reliable health sources.",
+        "emerging": "Identifies some trusted sources with significant guidance and prompting.",
+        "developing": "Sometimes distinguishes between reliable and unreliable health sources independently.",
+        "competent": "Consistently identifies trusted health information sources and explains why they are reliable.",
+        "extending": "Evaluates source credibility and teaches others evaluation strategies."
+      },
+      "decomposition_rationale": "Source identification requires distinct evaluative skills separate from hygiene management and reproductive knowledge.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0051",
+        "real-wellbeing-2026-04_crit_0052",
+        "real-wellbeing-2026-04_crit_0053"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0051",
+          "to": "real-wellbeing-2026-04_crit_0055",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0052",
+          "to": "real-wellbeing-2026-04_crit_0055",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0053",
+          "to": "real-wellbeing-2026-04_crit_0055",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0056",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain the basic biological processes and concepts of human reproduction.",
+      "criterion_label": "Human reproduction basics explanation",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_c_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain reproduction concepts.",
+        "emerging": "Explains basic reproduction concepts with prompting and support.",
+        "developing": "Sometimes explains reproduction basics accurately with minor gaps.",
+        "competent": "Clearly explains fundamental human reproduction processes using appropriate terminology.",
+        "extending": "Explains reproduction comprehensively and connects to broader health concepts."
+      },
+      "decomposition_rationale": "Explaining reproduction involves different cognitive demands (factual recall and conceptual understanding) than the practical and evaluative skills in the other criteria.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0051",
+        "real-wellbeing-2026-04_crit_0052",
+        "real-wellbeing-2026-04_crit_0053"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0051",
+          "to": "real-wellbeing-2026-04_crit_0056",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0052",
+          "to": "real-wellbeing-2026-04_crit_0056",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0053",
+          "to": "real-wellbeing-2026-04_crit_0056",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0057",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can assess risks related to STIs, pregnancy, and substance use.",
+      "criterion_label": "Risk Assessment Skills",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_d_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify or evaluate health-related risks.",
+        "emerging": "Identifies basic risks with prompting but assessment lacks detail.",
+        "developing": "Assesses some risks accurately but may miss important factors.",
+        "competent": "Accurately assesses multiple risks and considers relevant factors affecting severity.",
+        "extending": "Comprehensively assesses risks and explains reasoning to others."
+      },
+      "decomposition_rationale": "Risk assessment is a distinct cognitive operation requiring evaluation and analysis skills separate from explaining protection methods.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0054",
+        "real-wellbeing-2026-04_crit_0055",
+        "real-wellbeing-2026-04_crit_0056"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0054",
+          "to": "real-wellbeing-2026-04_crit_0057",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0055",
+          "to": "real-wellbeing-2026-04_crit_0057",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0056",
+          "to": "real-wellbeing-2026-04_crit_0057",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0058",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain protection methods for sexual health and substance use.",
+      "criterion_label": "Protection Method Explanation",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_d_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain any protection methods.",
+        "emerging": "Explains basic protection methods with prompting and guidance.",
+        "developing": "Explains some protection methods but may lack detail or accuracy.",
+        "competent": "Clearly explains multiple protection methods and their effectiveness.",
+        "extending": "Explains protection methods comprehensively and addresses misconceptions."
+      },
+      "decomposition_rationale": "Explaining protection methods requires different cognitive skills from risk assessment and involves declarative knowledge application.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0054",
+        "real-wellbeing-2026-04_crit_0055",
+        "real-wellbeing-2026-04_crit_0056"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0054",
+          "to": "real-wellbeing-2026-04_crit_0058",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0055",
+          "to": "real-wellbeing-2026-04_crit_0058",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0056",
+          "to": "real-wellbeing-2026-04_crit_0058",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0059",
+      "associated_lt_ids": [
+        "lt_4_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify steps to access confidential health advice.",
+      "criterion_label": "Health Service Access",
+      "source_kud_item_ids": [
+        "kud_lt_4_2_d_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify ways to access health advice.",
+        "emerging": "Identifies basic steps to access health advice with prompting.",
+        "developing": "Identifies some steps but may miss confidentiality aspects.",
+        "competent": "Clearly identifies multiple pathways to confidential health advice.",
+        "extending": "Identifies comprehensive pathways and explains confidentiality importance."
+      },
+      "decomposition_rationale": "Identifying access steps involves procedural knowledge distinct from risk assessment and protection explanation, requiring knowledge of health systems and services.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0054",
+        "real-wellbeing-2026-04_crit_0055",
+        "real-wellbeing-2026-04_crit_0056"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0054",
+          "to": "real-wellbeing-2026-04_crit_0059",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0055",
+          "to": "real-wellbeing-2026-04_crit_0059",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0056",
+          "to": "real-wellbeing-2026-04_crit_0059",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0060",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can take turns in conversation by waiting for others to finish speaking before I respond.",
+      "criterion_label": "Take conversational turns",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not wait for others to finish speaking.",
+        "emerging": "Sometimes waits for others to finish with adult prompting.",
+        "developing": "Usually waits for others to finish speaking without prompting.",
+        "competent": "Consistently waits for others to finish speaking and responds appropriately in conversations.",
+        "extending": "Models turn-taking and helps others practice waiting their turn."
+      },
+      "decomposition_rationale": "Taking turns, using kind words, and making I-statements are three distinct interpersonal communication skills that can be independently assessed and developed.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0061",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can use kind words when speaking with others.",
+      "criterion_label": "Use kind words",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Uses unkind or hurtful words regularly.",
+        "emerging": "Uses kind words occasionally when reminded by adults.",
+        "developing": "Uses kind words most of the time without reminders.",
+        "competent": "Consistently chooses kind words when speaking with peers and adults.",
+        "extending": "Models kind language and helps others choose respectful words."
+      },
+      "decomposition_rationale": "Taking turns, using kind words, and making I-statements are three distinct interpersonal communication skills that can be independently assessed and developed.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0062",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can use an I-statement to express my feelings or needs.",
+      "criterion_label": "Use I-statements",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_A_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not use I-statements when expressing feelings.",
+        "emerging": "Uses simple I-statements with adult prompting and support.",
+        "developing": "Uses I-statements sometimes when expressing feelings or needs.",
+        "competent": "Uses I-statements regularly to express feelings and needs clearly to others.",
+        "extending": "Models I-statement use and teaches others this communication skill."
+      },
+      "decomposition_rationale": "Taking turns, using kind words, and making I-statements are three distinct interpersonal communication skills that can be independently assessed and developed.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0063",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can use I-statements to clearly express their personal needs.",
+      "criterion_label": "Express needs with I-statements",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not use I-statements when expressing needs.",
+        "emerging": "Uses I-statements occasionally with adult prompting to express needs.",
+        "developing": "Uses I-statements sometimes without prompting when expressing needs.",
+        "competent": "Consistently uses I-statements to clearly communicate personal needs in various situations.",
+        "extending": "Consistently uses I-statements and can explain why this communication approach is effective."
+      },
+      "decomposition_rationale": "This criterion focuses on the specific skill of using I-statements for need expression, which is a foundational communication technique at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0060",
+        "real-wellbeing-2026-04_crit_0061",
+        "real-wellbeing-2026-04_crit_0062"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0060",
+          "to": "real-wellbeing-2026-04_crit_0063",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0061",
+          "to": "real-wellbeing-2026-04_crit_0063",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0062",
+          "to": "real-wellbeing-2026-04_crit_0063",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0064",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can ask questions to understand others' boundaries.",
+      "criterion_label": "Ask about boundaries",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not ask about others' boundaries.",
+        "emerging": "Asks about boundaries occasionally with adult prompting or reminders.",
+        "developing": "Sometimes asks about boundaries without prompting in social situations.",
+        "competent": "Consistently asks appropriate questions to understand and respect others' boundaries in interactions.",
+        "extending": "Consistently inquires about boundaries and can model this behavior for peers."
+      },
+      "decomposition_rationale": "Boundary awareness represents a distinct social skill that requires separate assessment from self-expression and problem-solving.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0060",
+        "real-wellbeing-2026-04_crit_0061",
+        "real-wellbeing-2026-04_crit_0062"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0060",
+          "to": "real-wellbeing-2026-04_crit_0064",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0061",
+          "to": "real-wellbeing-2026-04_crit_0064",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0062",
+          "to": "real-wellbeing-2026-04_crit_0064",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0065",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can propose two different options when seeking fair solutions to problems.",
+      "criterion_label": "Propose two fair options",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_B_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not offer multiple solution options.",
+        "emerging": "Proposes two options occasionally with adult guidance and prompting.",
+        "developing": "Sometimes proposes two options without prompting when solving problems.",
+        "competent": "Consistently generates and presents two different fair options when working toward solutions.",
+        "extending": "Consistently proposes multiple options and can explain why offering choices promotes fairness."
+      },
+      "decomposition_rationale": "Option generation for fair problem-solving is a distinct cognitive skill that involves perspective-taking and creative thinking, separate from the communication skills above.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0060",
+        "real-wellbeing-2026-04_crit_0061",
+        "real-wellbeing-2026-04_crit_0062"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0060",
+          "to": "real-wellbeing-2026-04_crit_0065",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0061",
+          "to": "real-wellbeing-2026-04_crit_0065",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0062",
+          "to": "real-wellbeing-2026-04_crit_0065",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0066",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can listen in a disagreement without interrupting others while they speak.",
+      "criterion_label": "Active listening skills",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Interrupts frequently during disagreements",
+        "emerging": "Occasionally listens without interrupting when reminded",
+        "developing": "Sometimes listens without interrupting in disagreements",
+        "competent": "Consistently listens without interrupting during disagreements",
+        "extending": "Models active listening and explains its importance"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations are involved: listening skills, respectful word choice, and repair routines each require separate assessment to determine specific areas of strength or need.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0063",
+        "real-wellbeing-2026-04_crit_0064",
+        "real-wellbeing-2026-04_crit_0065"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0063",
+          "to": "real-wellbeing-2026-04_crit_0066",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0064",
+          "to": "real-wellbeing-2026-04_crit_0066",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0065",
+          "to": "real-wellbeing-2026-04_crit_0066",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0067",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can choose words that stay respectful when communicating during disagreements.",
+      "criterion_label": "Respectful word choice",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Uses disrespectful language during disagreements",
+        "emerging": "Occasionally chooses respectful words with prompting",
+        "developing": "Sometimes chooses respectful words independently",
+        "competent": "Consistently chooses respectful words during disagreements",
+        "extending": "Models respectful communication and coaches others"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations are involved: listening skills, respectful word choice, and repair routines each require separate assessment to determine specific areas of strength or need.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0063",
+        "real-wellbeing-2026-04_crit_0064",
+        "real-wellbeing-2026-04_crit_0065"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0063",
+          "to": "real-wellbeing-2026-04_crit_0067",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0064",
+          "to": "real-wellbeing-2026-04_crit_0067",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0065",
+          "to": "real-wellbeing-2026-04_crit_0067",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0068",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can use a simple repair routine when communication breaks down.",
+      "criterion_label": "Communication repair routine",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_C_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not attempt to repair communication",
+        "emerging": "Attempts simple repair with significant guidance",
+        "developing": "Uses simple repair routine with minimal prompting",
+        "competent": "Consistently applies simple repair routine when needed",
+        "extending": "Uses repair routine effectively and teaches others"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations are involved: listening skills, respectful word choice, and repair routines each require separate assessment to determine specific areas of strength or need.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0063",
+        "real-wellbeing-2026-04_crit_0064",
+        "real-wellbeing-2026-04_crit_0065"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0063",
+          "to": "real-wellbeing-2026-04_crit_0068",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0064",
+          "to": "real-wellbeing-2026-04_crit_0068",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0065",
+          "to": "real-wellbeing-2026-04_crit_0068",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0069",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can state my boundaries clearly in interpersonal interactions.",
+      "criterion_label": "Clear boundary communication",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_d_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No clear boundary statements observed.",
+        "emerging": "States boundaries with prompting or support from others.",
+        "developing": "States boundaries clearly in some situations without prompting.",
+        "competent": "Consistently states personal boundaries clearly and directly in various interpersonal situations.",
+        "extending": "Models clear boundary communication and helps others articulate their boundaries."
+      },
+      "decomposition_rationale": "This targets the specific skill of boundary communication, which is a distinct cognitive operation from paraphrasing or word choice.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0066",
+        "real-wellbeing-2026-04_crit_0067",
+        "real-wellbeing-2026-04_crit_0068"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0066",
+          "to": "real-wellbeing-2026-04_crit_0069",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0067",
+          "to": "real-wellbeing-2026-04_crit_0069",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0068",
+          "to": "real-wellbeing-2026-04_crit_0069",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0070",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can paraphrase what others say before responding in conversations.",
+      "criterion_label": "Active listening paraphrasing",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_d_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No paraphrasing before responding observed.",
+        "emerging": "Occasionally paraphrases with reminders or in structured settings.",
+        "developing": "Sometimes paraphrases before responding without prompting in conversations.",
+        "competent": "Consistently paraphrases others' statements before responding to demonstrate understanding and ensure clarity.",
+        "extending": "Uses sophisticated paraphrasing techniques and teaches this skill to others."
+      },
+      "decomposition_rationale": "Paraphrasing represents a distinct cognitive operation of processing and reflecting understanding separate from boundary-setting and word choice.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0066",
+        "real-wellbeing-2026-04_crit_0067",
+        "real-wellbeing-2026-04_crit_0068"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0066",
+          "to": "real-wellbeing-2026-04_crit_0070",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0067",
+          "to": "real-wellbeing-2026-04_crit_0070",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0068",
+          "to": "real-wellbeing-2026-04_crit_0070",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0071",
+      "associated_lt_ids": [
+        "lt_5_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can choose appropriate words for different situations including during conflict.",
+      "criterion_label": "Situational word choice",
+      "source_kud_item_ids": [
+        "kud_lt_5_1_d_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Word choice not adapted to situations.",
+        "emerging": "Shows awareness of appropriate words with guidance during conflicts.",
+        "developing": "Sometimes chooses situation-appropriate words including in some conflict situations.",
+        "competent": "Consistently selects words appropriate to context and audience, maintaining respect even during difficult conversations.",
+        "extending": "Demonstrates sophisticated language adaptation and helps others communicate effectively in challenging situations."
+      },
+      "decomposition_rationale": "Word choice and tone adaptation is a separate communication skill requiring different cognitive processing than boundary-setting or paraphrasing.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0066",
+        "real-wellbeing-2026-04_crit_0067",
+        "real-wellbeing-2026-04_crit_0068"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0066",
+          "to": "real-wellbeing-2026-04_crit_0071",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0067",
+          "to": "real-wellbeing-2026-04_crit_0071",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0068",
+          "to": "real-wellbeing-2026-04_crit_0071",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0072",
+      "associated_lt_ids": [
+        "lt_5_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can take responsibility for a classroom job and explain how my actions help the class community function well.",
+      "criterion_label": "Classroom Responsibility and Purpose",
+      "source_kud_item_ids": [
+        "kud_lt_5_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not engage with classroom jobs consistently.",
+        "emerging": "Completes classroom job with reminders but cannot explain its purpose.",
+        "developing": "Completes classroom job independently and gives simple explanations of helpfulness.",
+        "competent": "Consistently completes classroom job and clearly explains how it helps the class community.",
+        "extending": "Consistently completes classroom job and can teach others why these roles matter."
+      },
+      "decomposition_rationale": "This is a single dispositional criterion as it captures one observable behavior pattern of taking responsibility and connecting personal actions to community benefit.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0073",
+      "associated_lt_ids": [
+        "lt_5_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can notice when peers are excluded and take action to include them in group activities.",
+      "criterion_label": "Inclusive action taking",
+      "source_kud_item_ids": [
+        "kud_lt_5_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not notice or respond to peer exclusion.",
+        "emerging": "Sometimes notices exclusion but needs prompting to take inclusive action.",
+        "developing": "Notices exclusion and occasionally invites others to join without prompting.",
+        "competent": "Consistently notices when peers are left out and actively invites them to participate in activities.",
+        "extending": "Proactively includes others and explains why inclusion matters to everyone."
+      },
+      "decomposition_rationale": "This is a single dispositional behaviour combining awareness of exclusion with inclusive action, observable as one unified response pattern.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0072"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0072",
+          "to": "real-wellbeing-2026-04_crit_0073",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0074",
+      "associated_lt_ids": [
+        "lt_5_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The learner can identify a school need, propose a simple project to address it, and complete the project collaboratively with teammates.",
+      "criterion_label": "School Project Leadership",
+      "source_kud_item_ids": [
+        "kud_lt_5_2_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No engagement in identifying needs or proposing projects.",
+        "emerging": "Identifies school needs with prompting and participates in proposed projects.",
+        "developing": "Sometimes identifies needs independently and proposes basic project ideas with support.",
+        "competent": "Consistently identifies school needs, proposes viable simple projects, and completes them through effective teamwork.",
+        "extending": "Leads project identification and completion while articulating project impact to others."
+      },
+      "decomposition_rationale": "This is a single dispositional behaviour that integrates need identification, project proposal, and collaborative completion as one observable community engagement pattern at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0073"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0073",
+          "to": "real-wellbeing-2026-04_crit_0074",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0075",
+      "associated_lt_ids": [
+        "lt_5_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "I can collaborate effectively with diverse peers on community projects, demonstrate measurable impact, and articulate personal connection to the work.",
+      "criterion_label": "Purposeful Community Collaboration",
+      "source_kud_item_ids": [
+        "kud_lt_5_2_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No community collaboration attempts observed.",
+        "emerging": "Participates in group projects with prompting about diversity and impact.",
+        "developing": "Works with diverse peers on projects, sometimes shows impact or explains personal connection.",
+        "competent": "Consistently collaborates across differences, demonstrates project impact, and clearly explains why work matters personally.",
+        "extending": "Models inclusive collaboration and helps others understand community impact and personal purpose."
+      },
+      "decomposition_rationale": "This dispositional learning target represents integrated community engagement behaviour that must be assessed as a unified demonstration of collaborative capability, impact awareness, and personal purpose.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0074"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0074",
+          "to": "real-wellbeing-2026-04_crit_0075",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0076",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can name body signals that tell me something about how I feel.",
+      "criterion_label": "Body Signal Recognition",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot name body signals related to feelings.",
+        "emerging": "Names one or two body signals with prompting.",
+        "developing": "Names several body signals without prompting.",
+        "competent": "Names multiple body signals and connects them to feelings.",
+        "extending": "Names body signals and explains how they indicate feelings."
+      },
+      "decomposition_rationale": "This criterion focuses on the foundational knowledge of identifying physical sensations as indicators of emotional states, which is distinct from understanding the biological functions of sleep and food.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0077",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe what sleep and food do for my body and brain.",
+      "criterion_label": "Sleep and Food Functions",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe functions of sleep or food.",
+        "emerging": "Describes basic functions of sleep or food with prompting.",
+        "developing": "Describes some functions of sleep and food without prompting.",
+        "competent": "Describes multiple functions of sleep and food for body and brain.",
+        "extending": "Describes functions and explains why sleep and food are important."
+      },
+      "decomposition_rationale": "This criterion addresses understanding of biological functions, which requires different knowledge and cognitive processes than identifying body signals related to emotions.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0078",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain what happens in my body during a fight, flight, or freeze response.",
+      "criterion_label": "Fight-Flight-Freeze Response",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe stress response changes",
+        "emerging": "Names one or two body changes during stress with prompting",
+        "developing": "Describes some body changes but may confuse response types",
+        "competent": "Clearly explains physical changes in fight, flight, or freeze responses with accurate examples",
+        "extending": "Explains stress responses and can teach or demonstrate understanding to others"
+      },
+      "decomposition_rationale": "This represents one distinct physiological concept that requires understanding the body's acute stress response mechanisms.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0078",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0078",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0079",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the three parts of the habit loop.",
+      "criterion_label": "Habit Loop Components",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify habit loop parts",
+        "emerging": "Names one or two habit loop components with prompting",
+        "developing": "Identifies most habit loop parts but may miss connections",
+        "competent": "Accurately describes all three parts of the habit loop and their relationships",
+        "extending": "Describes habit loop components and applies framework to analyze specific behaviors"
+      },
+      "decomposition_rationale": "This represents a separate behavioral mechanism concept distinct from stress physiology, requiring understanding of cue-routine-reward cycles.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0079",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0079",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0080",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain how the amygdala and prefrontal cortex interact during a stressful moment.",
+      "criterion_label": "Amygdala-prefrontal cortex interaction",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_c_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain brain region interactions during stress.",
+        "emerging": "Names amygdala and prefrontal cortex but unclear about their interaction.",
+        "developing": "Explains basic roles but interaction description lacks detail or accuracy.",
+        "competent": "Clearly explains how amygdala triggers stress response and prefrontal cortex regulates it during stressful moments.",
+        "extending": "Explains interaction and can give specific examples of this process."
+      },
+      "decomposition_rationale": "This represents understanding a specific neurobiological mechanism requiring distinct knowledge of brain anatomy and stress physiology.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0080",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0080",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0081",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain what neuroplasticity means.",
+      "criterion_label": "Neuroplasticity concept understanding",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_c_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot define or explain neuroplasticity.",
+        "emerging": "Mentions brain change but explanation is vague or incorrect.",
+        "developing": "Basic understanding that brain can change but lacks detail.",
+        "competent": "Clearly explains neuroplasticity as the brain's ability to reorganize and form new connections.",
+        "extending": "Explains concept and connects it to learning or habit formation."
+      },
+      "decomposition_rationale": "Neuroplasticity is a distinct foundational concept separate from stress mechanisms, requiring separate assessment of this core neuroscience principle.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0081",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0081",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0082",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe how the habit loop explains behaviour change at the level of mechanism.",
+      "criterion_label": "Habit loop mechanism",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_c_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot connect habit loop to behaviour change.",
+        "emerging": "Recalls habit loop parts but unclear about behaviour change mechanism.",
+        "developing": "Describes habit loop and mentions behaviour change but lacks mechanistic detail.",
+        "competent": "Clearly describes how cue-routine-reward cycle creates automatic behaviours and enables behaviour change through modification.",
+        "extending": "Describes mechanism and can apply it to specific behaviour change scenarios."
+      },
+      "decomposition_rationale": "This requires distinct understanding of how habit formation works mechanistically, building on previous band knowledge but requiring deeper mechanistic explanation.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0082",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0082",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0083",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can use accurate neuroscience vocabulary to explain the interactions between stress, emotion, attention, and habit as an integrated system.",
+      "criterion_label": "System interactions explanation",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No neuroscience vocabulary used or system connections explained.",
+        "emerging": "Uses some neuroscience terms with prompting to describe isolated components.",
+        "developing": "Uses neuroscience vocabulary to explain some connections between stress, emotion, attention and habit.",
+        "competent": "Accurately uses neuroscience vocabulary to explain how stress, emotion, attention and habit interact as an integrated system.",
+        "extending": "Explains system interactions with precise vocabulary and can teach others these concepts."
+      },
+      "decomposition_rationale": "This represents a complex understanding (U-level) requiring integration of multiple neurobiological processes into a coherent systems explanation.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0083",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0083",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0083",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0084",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the role of the HPA axis in the stress response mechanism.",
+      "criterion_label": "HPA axis stress response",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify or describe HPA axis components.",
+        "emerging": "Names some HPA axis components with prompting but unclear on function.",
+        "developing": "Describes basic HPA axis components and their general role in stress response.",
+        "competent": "Accurately describes the HPA axis pathway and explains its specific role in coordinating stress responses.",
+        "extending": "Describes HPA axis function and connects it to broader physiological regulation systems."
+      },
+      "decomposition_rationale": "This is a distinct factual knowledge (K-level) criterion about a specific neurobiological pathway that can be assessed independently from the systems understanding.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0084",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0084",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0084",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0085",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify whether a health claim comes from a trusted adult or source.",
+      "criterion_label": "Identify trusted sources",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot distinguish between trusted and untrusted sources.",
+        "emerging": "Identifies trusted sources occasionally with adult prompting and support.",
+        "developing": "Identifies trusted sources sometimes, showing inconsistent recognition patterns.",
+        "competent": "Consistently identifies whether health claims come from trusted adults or reliable sources.",
+        "extending": "Identifies trusted sources consistently and can teach others about source reliability."
+      },
+      "decomposition_rationale": "Two criteria are needed because identifying trusted sources and explaining reasoning are distinct cognitive operations at different levels - recognition versus articulation of thinking process.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0085",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0085",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0086",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain my reasoning for trusting or not trusting a health information source.",
+      "criterion_label": "Explain source reasoning",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain reasoning about source trustworthiness.",
+        "emerging": "Explains reasoning occasionally with prompting, often using simple statements.",
+        "developing": "Explains reasoning sometimes independently, using basic justifications for trust decisions.",
+        "competent": "Consistently explains clear reasoning for why they trust or don't trust health information sources.",
+        "extending": "Explains detailed reasoning and can help others understand source evaluation thinking."
+      },
+      "decomposition_rationale": "Two criteria are needed because identifying trusted sources and explaining reasoning are distinct cognitive operations at different levels - recognition versus articulation of thinking process.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0076",
+        "real-wellbeing-2026-04_crit_0077"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0076",
+          "to": "real-wellbeing-2026-04_crit_0086",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0077",
+          "to": "real-wellbeing-2026-04_crit_0086",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0087",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can compare two health information sources by identifying key differences between them.",
+      "criterion_label": "Compare health sources",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify differences between health sources.",
+        "emerging": "Identifies basic differences with prompting and support.",
+        "developing": "Sometimes identifies key differences between sources independently.",
+        "competent": "Consistently identifies and clearly describes key differences between health information sources.",
+        "extending": "Systematically compares sources and explains comparison approach to others."
+      },
+      "decomposition_rationale": "This targets the comparison cognitive operation, which requires students to systematically examine and contrast two sources before making trust judgements.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079",
+        "real-wellbeing-2026-04_crit_0085",
+        "real-wellbeing-2026-04_crit_0086"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0085",
+          "to": "real-wellbeing-2026-04_crit_0087",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0086",
+          "to": "real-wellbeing-2026-04_crit_0087",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0087",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0087",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0088",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe which health information source I trust more and explain my reasoning.",
+      "criterion_label": "Justify source trustworthiness",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_B_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain trust preferences for health sources.",
+        "emerging": "States preference but reasoning unclear or prompted.",
+        "developing": "Sometimes explains trust reasoning with basic justification.",
+        "competent": "Clearly describes preferred source and provides logical reasoning for trust decision.",
+        "extending": "Articulates nuanced reasoning and helps others evaluate source trustworthiness."
+      },
+      "decomposition_rationale": "This targets the evaluation and justification cognitive operation, which is distinct from comparison and requires students to make reasoned judgements about trustworthiness.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0078",
+        "real-wellbeing-2026-04_crit_0079",
+        "real-wellbeing-2026-04_crit_0085",
+        "real-wellbeing-2026-04_crit_0086"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0085",
+          "to": "real-wellbeing-2026-04_crit_0088",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0086",
+          "to": "real-wellbeing-2026-04_crit_0088",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0078",
+          "to": "real-wellbeing-2026-04_crit_0088",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0079",
+          "to": "real-wellbeing-2026-04_crit_0088",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0089",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can examine and categorise the type of evidence supporting a health claim.",
+      "criterion_label": "Analyse Evidence Types",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify evidence types in health claims.",
+        "emerging": "Identifies basic evidence types with prompting and support.",
+        "developing": "Sometimes categorises evidence types but may miss key distinctions.",
+        "competent": "Consistently examines and accurately categorises different types of evidence in health claims.",
+        "extending": "Categorises evidence types and explains their relative strengths and limitations."
+      },
+      "decomposition_rationale": "This addresses the first cognitive operation of examining and analysing evidence types, which requires specific analytical skills distinct from bias detection.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082",
+        "real-wellbeing-2026-04_crit_0087",
+        "real-wellbeing-2026-04_crit_0088"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0087",
+          "to": "real-wellbeing-2026-04_crit_0089",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0088",
+          "to": "real-wellbeing-2026-04_crit_0089",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0089",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0089",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0089",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0090",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify potential sources of bias in health information providers.",
+      "criterion_label": "Identify Source Bias",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify bias in health information sources.",
+        "emerging": "Identifies obvious bias with prompting and guidance.",
+        "developing": "Sometimes recognises potential bias but reasoning may be incomplete.",
+        "competent": "Consistently identifies whether sources have reasons to be biased and explains those reasons.",
+        "extending": "Identifies bias and explains how it might influence the information presented."
+      },
+      "decomposition_rationale": "This addresses the second cognitive operation of identifying bias, which involves different analytical skills from evidence evaluation and can be assessed independently.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0080",
+        "real-wellbeing-2026-04_crit_0081",
+        "real-wellbeing-2026-04_crit_0082",
+        "real-wellbeing-2026-04_crit_0087",
+        "real-wellbeing-2026-04_crit_0088"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0087",
+          "to": "real-wellbeing-2026-04_crit_0090",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0088",
+          "to": "real-wellbeing-2026-04_crit_0090",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0080",
+          "to": "real-wellbeing-2026-04_crit_0090",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0081",
+          "to": "real-wellbeing-2026-04_crit_0090",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0082",
+          "to": "real-wellbeing-2026-04_crit_0090",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0091",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can compare the quality of evidence supporting different sides of a contested health claim.",
+      "criterion_label": "Compare evidence quality",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not attempt evidence comparison.",
+        "emerging": "Compares evidence with significant prompting and support.",
+        "developing": "Compares evidence quality with occasional guidance needed.",
+        "competent": "Independently compares evidence quality across different sides of contested health claims.",
+        "extending": "Compares evidence quality and explains comparison methodology."
+      },
+      "decomposition_rationale": "This criterion focuses specifically on the cognitive act of comparing evidence quality, which is distinct from identifying arguments or justifying conclusions.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084",
+        "real-wellbeing-2026-04_crit_0089",
+        "real-wellbeing-2026-04_crit_0090"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0089",
+          "to": "real-wellbeing-2026-04_crit_0091",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0090",
+          "to": "real-wellbeing-2026-04_crit_0091",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0091",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0091",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0092",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify the strongest and weakest arguments in a contested health claim debate.",
+      "criterion_label": "Identify argument strength",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Does not identify argument strengths.",
+        "emerging": "Identifies argument strength with substantial prompting and examples.",
+        "developing": "Identifies strongest and weakest arguments with some guidance.",
+        "competent": "Independently identifies strongest and weakest arguments in contested health debates.",
+        "extending": "Identifies argument strength and explains evaluation criteria used."
+      },
+      "decomposition_rationale": "This criterion addresses the specific analytical skill of ranking argument strength, which requires different cognitive processes than evidence comparison.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084",
+        "real-wellbeing-2026-04_crit_0089",
+        "real-wellbeing-2026-04_crit_0090"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0089",
+          "to": "real-wellbeing-2026-04_crit_0092",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0090",
+          "to": "real-wellbeing-2026-04_crit_0092",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0092",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0092",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0093",
+      "associated_lt_ids": [
+        "lt_6_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can justify my conclusion about a contested health claim using evidence-based reasoning.",
+      "criterion_label": "Justify evidence-based conclusion",
+      "source_kud_item_ids": [
+        "kud_lt_6_2_D_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Provides no justification for conclusions.",
+        "emerging": "Attempts justification with significant prompting and structure provided.",
+        "developing": "Justifies conclusions using evidence with occasional support needed.",
+        "competent": "Independently justifies conclusions about contested health claims using clear evidence-based reasoning.",
+        "extending": "Justifies conclusions and acknowledges limitations or uncertainties."
+      },
+      "decomposition_rationale": "Justification represents a higher-order synthesis skill that builds on but is distinct from the analytical skills of comparing evidence and identifying argument strength.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0083",
+        "real-wellbeing-2026-04_crit_0084",
+        "real-wellbeing-2026-04_crit_0089",
+        "real-wellbeing-2026-04_crit_0090"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0089",
+          "to": "real-wellbeing-2026-04_crit_0093",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0090",
+          "to": "real-wellbeing-2026-04_crit_0093",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0083",
+          "to": "real-wellbeing-2026-04_crit_0093",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0084",
+          "to": "real-wellbeing-2026-04_crit_0093",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0094",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe one thing I noticed about how I reacted to a situation.",
+      "criterion_label": "Notice Own Reaction",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot describe own reaction to situation.",
+        "emerging": "Describes own reaction with prompting and support.",
+        "developing": "Sometimes describes own reaction without prompting.",
+        "competent": "Consistently describes one specific thing noticed about own reaction to situation.",
+        "extending": "Describes reaction and explains why noticing is important."
+      },
+      "decomposition_rationale": "This criterion focuses on the self-awareness component - noticing and describing one's own reaction to a situation.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0095",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can say what I might do differently next time.",
+      "criterion_label": "Propose Different Response",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_A_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot suggest different response for next time.",
+        "emerging": "Suggests different response with prompting and guidance.",
+        "developing": "Sometimes suggests what to do differently without prompting.",
+        "competent": "Consistently suggests specific different response for similar future situations.",
+        "extending": "Suggests different response and explains why it would be better."
+      },
+      "decomposition_rationale": "This criterion addresses the forward-thinking adjustment component - proposing alternative responses for future similar situations.",
+      "prerequisite_criterion_ids": [],
+      "prerequisite_edges_detail": [],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0096",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can identify a pattern in how I tend to respond in a type of situation.",
+      "criterion_label": "Identify response patterns",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_b_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot identify response patterns",
+        "emerging": "Occasionally identifies response patterns with prompting",
+        "developing": "Sometimes identifies response patterns without prompting",
+        "competent": "Consistently identifies response patterns without prompting",
+        "extending": "Consistently identifies patterns and can articulate the identification process"
+      },
+      "decomposition_rationale": "Two criteria are needed because identifying patterns and explaining reasons are distinct cognitive operations requiring different assessment approaches.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0094",
+        "real-wellbeing-2026-04_crit_0095"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0094",
+          "to": "real-wellbeing-2026-04_crit_0096",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0095",
+          "to": "real-wellbeing-2026-04_crit_0096",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0097",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can give a reason for why a response pattern might happen.",
+      "criterion_label": "Explain pattern reasons",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_b_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Cannot explain pattern reasons",
+        "emerging": "Occasionally explains pattern reasons with prompting",
+        "developing": "Sometimes explains pattern reasons without prompting",
+        "competent": "Consistently explains pattern reasons without prompting",
+        "extending": "Consistently explains reasons and can model reasoning for others"
+      },
+      "decomposition_rationale": "Two criteria are needed because identifying patterns and explaining reasons are distinct cognitive operations requiring different assessment approaches.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0094",
+        "real-wellbeing-2026-04_crit_0095"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0094",
+          "to": "real-wellbeing-2026-04_crit_0097",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0095",
+          "to": "real-wellbeing-2026-04_crit_0097",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0098",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can analyse a pattern that I observe across more than one situation in my thinking or behaviour.",
+      "criterion_label": "Cross-situational pattern analysis",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_C_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No pattern analysis attempted across situations.",
+        "emerging": "Identifies similarities between situations with prompting but limited analysis.",
+        "developing": "Describes patterns across situations but analysis lacks depth or clarity.",
+        "competent": "Clearly analyses patterns across multiple situations, identifying key commonalities and differences in thinking or behaviour.",
+        "extending": "Analyses patterns thoroughly and can explain the analysis process used."
+      },
+      "decomposition_rationale": "This represents the first distinct cognitive operation of analysing patterns across multiple contexts.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0096",
+        "real-wellbeing-2026-04_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0096",
+          "to": "real-wellbeing-2026-04_crit_0098",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0097",
+          "to": "real-wellbeing-2026-04_crit_0098",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0099",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can explain what drives the pattern I have identified in my thinking or behaviour.",
+      "criterion_label": "Pattern driver explanation",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_C_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No explanation of pattern drivers provided.",
+        "emerging": "Attempts to explain drivers with prompting but explanations are unclear.",
+        "developing": "Provides basic explanations of what drives patterns but may lack insight.",
+        "competent": "Clearly explains the underlying causes, triggers, or motivations that drive the identified pattern.",
+        "extending": "Explains pattern drivers with sophisticated insight and can consider multiple influences."
+      },
+      "decomposition_rationale": "This represents the second distinct cognitive operation of explaining causal relationships behind observed patterns.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0096",
+        "real-wellbeing-2026-04_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0096",
+          "to": "real-wellbeing-2026-04_crit_0099",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0097",
+          "to": "real-wellbeing-2026-04_crit_0099",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0100",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe a specific adjustment I have made or will make to address the pattern.",
+      "criterion_label": "Specific adjustment description",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_C_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No specific adjustments described.",
+        "emerging": "Mentions adjustments with prompting but descriptions lack specificity or clarity.",
+        "developing": "Describes adjustments but they may be vague or not clearly connected to the pattern.",
+        "competent": "Describes specific, concrete adjustments that clearly address the identified pattern and its drivers.",
+        "extending": "Describes specific adjustments and can explain the reasoning behind the adjustment strategy."
+      },
+      "decomposition_rationale": "This represents the third distinct cognitive operation of formulating specific action plans based on pattern analysis.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0096",
+        "real-wellbeing-2026-04_crit_0097"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0096",
+          "to": "real-wellbeing-2026-04_crit_0100",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0097",
+          "to": "real-wellbeing-2026-04_crit_0100",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0101",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can evaluate a pattern in my thinking or responses across different contexts.",
+      "criterion_label": "Pattern Evaluation Across Contexts",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_D_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No pattern evaluation demonstrated",
+        "emerging": "Evaluates patterns with significant prompting and guidance",
+        "developing": "Evaluates patterns sometimes across limited contexts",
+        "competent": "Consistently evaluates patterns in thinking or responses across multiple different contexts",
+        "extending": "Evaluates patterns comprehensively and explains evaluation approach"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations (evaluate, justify, describe effects) each require separate assessment as they represent different reasoning capabilities.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0098",
+        "real-wellbeing-2026-04_crit_0099",
+        "real-wellbeing-2026-04_crit_0100"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0098",
+          "to": "real-wellbeing-2026-04_crit_0101",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0099",
+          "to": "real-wellbeing-2026-04_crit_0101",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0100",
+          "to": "real-wellbeing-2026-04_crit_0101",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0102",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can justify what sustains a pattern in my thinking or responses.",
+      "criterion_label": "Pattern Sustaining Factors Justification",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_D_02"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No justification for sustaining factors",
+        "emerging": "Attempts justification with prompting but reasoning unclear",
+        "developing": "Provides basic justification for some sustaining factors",
+        "competent": "Clearly justifies what sustains patterns with sound reasoning and evidence",
+        "extending": "Justifies sustaining factors with sophisticated reasoning"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations (evaluate, justify, describe effects) each require separate assessment as they represent different reasoning capabilities.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0098",
+        "real-wellbeing-2026-04_crit_0099",
+        "real-wellbeing-2026-04_crit_0100"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0098",
+          "to": "real-wellbeing-2026-04_crit_0102",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0099",
+          "to": "real-wellbeing-2026-04_crit_0102",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0100",
+          "to": "real-wellbeing-2026-04_crit_0102",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0103",
+      "associated_lt_ids": [
+        "lt_7_1"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 2",
+      "strand": "single_strand",
+      "criterion_statement": "I can describe the effect of a specific adjustment I have made.",
+      "criterion_label": "Adjustment Effect Description",
+      "source_kud_item_ids": [
+        "kud_lt_7_1_D_03"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No description of adjustment effects",
+        "emerging": "Attempts to describe effects with significant prompting",
+        "developing": "Describes some effects of adjustments with basic detail",
+        "competent": "Clearly describes specific effects of adjustments made with concrete examples",
+        "extending": "Describes effects comprehensively with reflection on impact"
+      },
+      "decomposition_rationale": "Three distinct cognitive operations (evaluate, justify, describe effects) each require separate assessment as they represent different reasoning capabilities.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0098",
+        "real-wellbeing-2026-04_crit_0099",
+        "real-wellbeing-2026-04_crit_0100"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0098",
+          "to": "real-wellbeing-2026-04_crit_0103",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0099",
+          "to": "real-wellbeing-2026-04_crit_0103",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0100",
+          "to": "real-wellbeing-2026-04_crit_0103",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0104",
+      "associated_lt_ids": [
+        "lt_7_2"
+      ],
+      "band": "A",
+      "band_label": "Water/Air Dragons (ages 5–8)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The student demonstrates adaptive self-direction by independently adjusting approaches when initial attempts don't work, naming setbacks without dismissing them, and accepting suggestions for alternative strategies without extended resistance.",
+      "criterion_label": "Adaptive Self-Direction",
+      "source_kud_item_ids": [
+        "kud_lt_7_2_A_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No self-directed adjustments observed when approaches fail.",
+        "emerging": "Occasionally adjusts approach or names setbacks with adult prompting.",
+        "developing": "Sometimes independently tries different approaches and acknowledges setbacks.",
+        "competent": "Consistently stops and tries different approaches independently, names what happened after setbacks, and accepts suggestions without resistance.",
+        "extending": "Consistently demonstrates adaptive responses and can explain why changing approaches helps."
+      },
+      "decomposition_rationale": "This dispositional learning target represents a unified metacognitive orientation observable through three interconnected behaviours that together demonstrate self-directed learning capacity at this developmental level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0094",
+        "real-wellbeing-2026-04_crit_0095"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0094",
+          "to": "real-wellbeing-2026-04_crit_0104",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0095",
+          "to": "real-wellbeing-2026-04_crit_0104",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0105",
+      "associated_lt_ids": [
+        "lt_7_2"
+      ],
+      "band": "B",
+      "band_label": "Earth Dragons (ages 8–10)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The student demonstrates sustained metacognitive self-direction through strategic recall, self-reflection, and inquiry-based problem solving without adult prompting.",
+      "criterion_label": "Metacognitive Self-Direction Habits",
+      "source_kud_item_ids": [
+        "kud_lt_7_2_B_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No metacognitive behaviors observed without prompting.",
+        "emerging": "Occasionally refers to past strategies or reflects when prompted by adults.",
+        "developing": "Sometimes demonstrates strategic recall, reflection, or inquiry without prompting in familiar contexts.",
+        "competent": "Consistently refers to helpful strategies, volunteers specific work observations, and asks inquiry questions without prompting.",
+        "extending": "Consistently demonstrates metacognitive habits and can explain their self-direction approach to others."
+      },
+      "decomposition_rationale": "This dispositional learning target represents a unified orientation toward metacognitive self-direction that manifests through three observable behaviors that work together as indicators of the same underlying disposition.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0096",
+        "real-wellbeing-2026-04_crit_0097",
+        "real-wellbeing-2026-04_crit_0104"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0104",
+          "to": "real-wellbeing-2026-04_crit_0105",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0096",
+          "to": "real-wellbeing-2026-04_crit_0105",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0097",
+          "to": "real-wellbeing-2026-04_crit_0105",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0106",
+      "associated_lt_ids": [
+        "lt_7_2"
+      ],
+      "band": "C",
+      "band_label": "Fire Dragons (ages 10–12)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The student demonstrates sustained metacognitive self-direction by identifying personal response patterns, making mid-task adjustments, and connecting current responses to previously identified patterns.",
+      "criterion_label": "Sustained Metacognitive Self-Direction",
+      "source_kud_item_ids": [
+        "kud_lt_7_2_c_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "No metacognitive self-direction behaviours observed",
+        "emerging": "Occasionally identifies patterns or adjusts approach with adult prompting",
+        "developing": "Sometimes identifies response patterns and makes adjustments without prompting",
+        "competent": "Consistently identifies personal response patterns across situations, adjusts approach mid-task, and connects responses to identified patterns",
+        "extending": "Demonstrates sustained metacognitive self-direction and articulates strategies"
+      },
+      "decomposition_rationale": "This is a Type 3 dispositional learning target requiring exactly one criterion that captures the observable metacognitive self-direction behaviours at this band level.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0098",
+        "real-wellbeing-2026-04_crit_0099",
+        "real-wellbeing-2026-04_crit_0100",
+        "real-wellbeing-2026-04_crit_0105"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0105",
+          "to": "real-wellbeing-2026-04_crit_0106",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0098",
+          "to": "real-wellbeing-2026-04_crit_0106",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0099",
+          "to": "real-wellbeing-2026-04_crit_0106",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0100",
+          "to": "real-wellbeing-2026-04_crit_0106",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0107",
+      "associated_lt_ids": [
+        "lt_7_2"
+      ],
+      "band": "D",
+      "band_label": "Metal/Light Dragons (ages 12–14)",
+      "lt_type": "Type 3",
+      "strand": "single_strand",
+      "criterion_statement": "The student demonstrates sustained metacognitive self-direction by articulating specific adjustments to their thinking or behaviour, applying self-awareness strategies unprompted in novel situations, and making connections between wellbeing learning and behaviour across contexts.",
+      "criterion_label": "Sustained metacognitive self-direction",
+      "source_kud_item_ids": [
+        "kud_lt_7_2_d_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "Self-direction behaviours not yet observed.",
+        "emerging": "Occasionally articulates adjustments or applies strategies with some prompting.",
+        "developing": "Sometimes demonstrates unprompted self-awareness and makes cross-domain connections.",
+        "competent": "Consistently articulates specific adjustments across domains, applies self-awareness strategies unprompted in novel situations, and connects wellbeing learning to other contexts.",
+        "extending": "Consistently demonstrates sustained metacognitive self-direction and can articulate or model these processes for others."
+      },
+      "decomposition_rationale": "This dispositional learning target represents a unified metacognitive orientation that manifests through interconnected behaviours of self-adjustment, strategy application, and cross-contextual connection-making that cannot be meaningfully separated.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0101",
+        "real-wellbeing-2026-04_crit_0102",
+        "real-wellbeing-2026-04_crit_0103",
+        "real-wellbeing-2026-04_crit_0106"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0106",
+          "to": "real-wellbeing-2026-04_crit_0107",
+          "edge_type": "within_lt_band"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0101",
+          "to": "real-wellbeing-2026-04_crit_0107",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0102",
+          "to": "real-wellbeing-2026-04_crit_0107",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0103",
+          "to": "real-wellbeing-2026-04_crit_0107",
+          "edge_type": "cross_lt_source_stated"
+        }
+      ],
+      "schema_version": "v1"
+    }
+  ]
+}
