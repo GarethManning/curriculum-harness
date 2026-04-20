@@ -4,6 +4,16 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session 4c-5 (developmental scope detection)** — 2026-04-20 — head `25608eb [4c-5] architecture-diagnosis-schema.md`.
+
+`developmental_scope` and `developmental_scope_confidence` detection added to architecture diagnosis. New module `curriculum_harness/reference_authoring/developmental_scope/detect_scope.py`. Curated source_type map covers all 7 harness source types. Content inspection path for `nz_curriculum` (Level-marker scan). Flag emission (`developmental_scope_range_without_bands`) with domain_type metadata and layered pedagogical explanations. Adversarial tests 8/8. Verification against 7 existing sources 7/7. Token cost: trivial (no LLM calls).
+
+Commits this session:
+- `c247d43` — developmental scope detection module + adversarial tests (8/8)
+- `43dbe93` — verification script — 7 existing sources match expected scope (7/7)
+- `25608eb` — architecture-diagnosis-schema.md
+
+Session 4c-4b (prior, for history):
 **Session 4c-4b (remaining criterion banks)** — 2026-04-19 — head `00a692c [4c-4b] NZ Social Sciences criterion bank`.
 
 Criterion banks generated for all 4 remaining sources: AP US Gov CED Unit 1, Secondary RSHE 2025, DfE KS3 Maths, NZ Social Sciences. Pre-work committed first (Pass 1 prompt fix for enumerated-example over-decomposition, adversarial Test 9). All 4 pass DAG validation. No enumerated-example violations post-fix. One scope-drift correction (RSHE 2025 crit_0065 removed). NZ SS per-strand LT ID collision discovered and fixed (strand-slug prefixing for multi_strand_per_dir sources). Horizontal spot-check on NZ SS (5 LTs) approved by Gareth Manning 2026-04-19. Total 4c-4b cost: ~$1.62. Combined 7-source cost: ~$2.14.
@@ -57,6 +67,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **Developmental scope detection — complete (4c-5).** `curriculum_harness/reference_authoring/developmental_scope/detect_scope.py`. `DevelopmentalScopeResult` dataclass + `detect_developmental_scope()` + `make_developmental_scope_flag()`. Adversarial tests 8/8. Verification 7/7. Schema doc at `docs/schemas/architecture-diagnosis-schema.md`.
 - **Criterion bank — all 7 sources complete (4c-4 + 4c-4b). HARNESS V5 COMPLETE.**
   - Welsh CfW H&W (22 criteria), Common Core 7.RP (16), Ontario G7 History (26), AP US Gov (42), Secondary RSHE 2025 (108), DfE KS3 Maths (69, 6 strands), NZ Social Sciences (115, 4 strands). Schema v1. DAG validated on all 7.
   - Scripts: `scripts/generate_criterion_bank.py` (anchor sources), `scripts/generate_criterion_bank_4c4b.py` (remaining 4), `scripts/test_criterion_bank_adversarial.py` (9/9 pass).
@@ -94,9 +105,9 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**4c-2c (deferred) — Lemmatiser improvements.** Fix `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling in `_lemmatise()`. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
+**Track 1b — Band decomposer scoping review.** Review scope and approach for the band decomposer tool (single-grade planning from `range_without_bands` sources). The three affected sources (RSHE 2025, DfE KS3 Maths, NZ SS) are now flagged with `developmental_scope_range_without_bands` at detection time. Band decomposer is the next architectural piece.
 
-**4c-5 or later — Adaptive pipeline integration.** Begin wiring criterion bank into adaptive sequencing engine. Criterion bank is now complete across all 7 reference sources.
+**4c-2c (deferred) — Lemmatiser improvements.** Fix `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling in `_lemmatise()`. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
 
 Invocation:
 ```
@@ -112,4 +123,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-19 at end of Session 4c-4b (remaining criterion banks). Harness v5 criterion bank milestone COMPLETE. Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-20 at end of Session 4c-5 (developmental scope detection). Update at end of every session per `docs/process/state-md-discipline.md`.*
