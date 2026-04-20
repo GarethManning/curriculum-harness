@@ -4,6 +4,34 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-1 (REAL School Budapest wellbeing framework)** — 2026-04-20 — head `7459132 [REAL-1] generate_real_wellbeing.py`.
+
+Full reference corpus produced for REAL School Budapest's internal wellbeing framework (7 competencies, 14 LTs, Bands A–D). New `source_type: internal_school_framework`. Architecture diagnosis, KUD classification (161 items), LT gate-check (14/14 pass), criterion bank (107 criteria, 247 edges, DAG PASS). This is the 8th reference corpus, first internal-school-framework source. Pass 2 edge generation switched to deterministic (LLM JSON too large for 107 criteria). Gate verb check improved with morphological normalisation. Session cost: ~$0.97.
+
+Commits this session:
+- `ba31f43` — source.md ingested (REAL-1 pre-work)
+- `3e00f23` — architecture-diagnosis.json
+- `a0ab671` — KUD classification + LT gate-check
+- `21ca944` — criterion-bank.json (107 criteria, 247 edges, DAG PASS)
+- `68fe0bd` — quality-report.json + readable-output/
+- `7459132` — generate_real_wellbeing.py
+
+Key results — REAL-1:
+
+| Artefact | Result |
+|---|---|
+| Architecture diagnosis | internal_school_framework, explicit_progression, horizontal_dispositional |
+| KUD items | 161 (146 source-derived, 15 AI-inferred) |
+| LT gate | 14/14 pass, 7 warnings |
+| Band gate | 0 failures, 4 warnings |
+| Criteria (T1) | 9 |
+| Criteria (T2) | 78 |
+| Criteria (T3/obs) | 20 |
+| Total criteria | 107 |
+| Prerequisite edges | 247 |
+| DAG | PASS (no cycles, self-loops, or unresolved IDs) |
+| Session cost | ~$0.97 |
+
 **Session 4c-5 (developmental scope detection)** — 2026-04-20 — head `25608eb [4c-5] architecture-diagnosis-schema.md`.
 
 `developmental_scope` and `developmental_scope_confidence` detection added to architecture diagnosis. New module `curriculum_harness/reference_authoring/developmental_scope/detect_scope.py`. Curated source_type map covers all 7 harness source types. Content inspection path for `nz_curriculum` (Level-marker scan). Flag emission (`developmental_scope_range_without_bands`) with domain_type metadata and layered pedagogical explanations. Adversarial tests 8/8. Verification against 7 existing sources 7/7. Token cost: trivial (no LLM calls).
@@ -67,6 +95,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **REAL School Budapest reference corpus — complete (REAL-1).** `docs/reference-corpus/real-wellbeing-2026-04/`. 7 competencies / 14 LTs / 4 bands. architecture-diagnosis.json, kud-by-competency-by-band.json, lt-by-band.json, criterion-bank.json (107 criteria / 247 edges), quality-report.json, readable-output/. DAG PASS. Generator: `scripts/generate_real_wellbeing.py`. New source_type: `internal_school_framework`. Deterministic edge generation (Pass 2). Morphological verb normalisation for gate checks.
 - **Developmental scope detection — complete (4c-5).** `curriculum_harness/reference_authoring/developmental_scope/detect_scope.py`. `DevelopmentalScopeResult` dataclass + `detect_developmental_scope()` + `make_developmental_scope_flag()`. Adversarial tests 8/8. Verification 7/7. Schema doc at `docs/schemas/architecture-diagnosis-schema.md`.
 - **Criterion bank — all 7 sources complete (4c-4 + 4c-4b). HARNESS V5 COMPLETE.**
   - Welsh CfW H&W (22 criteria), Common Core 7.RP (16), Ontario G7 History (26), AP US Gov (42), Secondary RSHE 2025 (108), DfE KS3 Maths (69, 6 strands), NZ Social Sciences (115, 4 strands). Schema v1. DAG validated on all 7.
@@ -105,6 +134,8 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
+**REAL-2 (if needed) — Spot-check KUD and criteria with REAL School teachers.** Gate warnings surfaced (7 LT-level, 4 band-level) should be reviewed with Gareth / REAL teachers. Particular items: `lt_4_2` mental-state verb "understand", `lt_5_1` band_coverage warning (Band D inline examples), T3 observation indicators with reasoning verbs.
+
 **Track 1b — Band decomposer scoping review.** Review scope and approach for the band decomposer tool (single-grade planning from `range_without_bands` sources). The three affected sources (RSHE 2025, DfE KS3 Maths, NZ SS) are now flagged with `developmental_scope_range_without_bands` at detection time. Band decomposer is the next architectural piece.
 
 **4c-2c (deferred) — Lemmatiser improvements.** Fix `-ful`/`-fully` morphology, hyphen splitting, name/identify coupling in `_lemmatise()`. Defer unless teacher review flags the 2 persistent single_construct false positives as blocking.
@@ -123,4 +154,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-20 at end of Session 4c-5 (developmental scope detection). Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-20 at end of Session REAL-1 (REAL School Budapest wellbeing framework — 8th reference corpus). Update at end of every session per `docs/process/state-md-discipline.md`.*
