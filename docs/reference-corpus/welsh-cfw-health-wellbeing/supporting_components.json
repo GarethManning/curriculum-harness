@@ -1,7 +1,7 @@
 {
   "reference_authoring_version": "0.3.0",
-  "source_slug": "wales-cfw-health-wellbeing-sow",
-  "model": "claude-haiku-4-5-20251001",
+  "source_slug": "welsh-cfw-health-wellbeing-ps-descriptions",
+  "model": "claude-sonnet-4-20250514",
   "temperature": 0.3,
   "runs": 3,
   "components": [
@@ -10,73 +10,70 @@
       "co_construction_plan": {
         "lt_id": "cluster_01_lt_01",
         "stages": [
-          "Show students a short video or image of someone engaging in a healthy behaviour and ask them to name what they see and why it might matter.",
-          "Guide students to brainstorm all the health factors they know about and sort them into categories together.",
-          "Work with students to write simple explanations of how each factor supports health, using their own words.",
-          "Have students compare their explanations to the rubric levels and identify what makes an explanation complete versus incomplete.",
-          "Co-create anchor examples by selecting student work that clearly shows each level of understanding."
+          "Explore what movement skills look like in different environments through demonstration and observation",
+          "Identify key differences between familiar and unfamiliar movement situations",
+          "Define what successful transfer of skills means across environments",
+          "Establish criteria for adapting and creating new movement patterns"
         ],
         "student_prompts": [
-          "What health habits or choices do you see in this picture, and why do you think people do them?",
-          "What are all the different things that help keep our bodies and minds healthy?",
-          "How would you explain to a younger student why sleep is important for their health?",
-          "What would be missing from an explanation that just names factors but doesn't say how they help?",
-          "Can you think of a time when two health factors worked together to help you feel better?"
+          "What movement skills do you use in different places and how do they change?",
+          "When have you had to adjust your movements for a new environment or situation?",
+          "What makes it easier or harder to use your movement skills in different places?"
         ],
-        "anchor_examples_guidance": "Select student work that shows a clear progression from naming only one or two factors with vague reasons, to naming all four main factors with clear cause-and-effect statements, to showing how factors connect or apply to new situations. Anchor examples should use language and contexts familiar to students."
+        "anchor_examples_guidance": "Select movement examples that clearly show progression from basic skills in one environment to successful transfer across multiple environments."
       },
       "student_rubric": {
         "lt_id": "cluster_01_lt_01",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet tried to explain how health factors support well-being.",
-            "word_count": 12
+            "descriptor": "I have not yet attempted to demonstrate movement skills.",
+            "word_count": 9
           },
           {
             "name": "emerging",
-            "descriptor": "I can name some health factors like physical activity, nutrition, or sleep, but my explanations are unclear or not quite right.",
-            "word_count": 21
+            "descriptor": "I can demonstrate basic movement skills with help in familiar places.",
+            "word_count": 11
           },
           {
             "name": "developing",
-            "descriptor": "I can identify physical activity, nutrition, and sleep and explain how each one helps, but my explanations are short or don't show how they connect.",
-            "word_count": 25
+            "descriptor": "I can apply movement skills on my own in familiar environments but find it challenging to use them in new situations.",
+            "word_count": 21
           },
           {
             "name": "competent",
-            "descriptor": "I can explain how physical activity, nutrition, sleep, and other factors support physical health and well-being outcomes.",
-            "word_count": 17
+            "descriptor": "I can develop, apply and transfer movement skills effectively across different environments and situations independently.",
+            "word_count": 15
           },
           {
             "name": "extending",
-            "descriptor": "I can explain how multiple health factors work together and apply my reasoning to new health situations.",
-            "word_count": 17
+            "descriptor": "I can adapt and create movement skills fluently across complex and unfamiliar environments.",
+            "word_count": 13
           }
         ],
         "self_check_prompts": [
-          "Did I name all the main health factors and explain how each one helps my body or mind?",
-          "Can I show how two or more factors work together, or use my understanding to explain a new health situation?"
+          "Can I use my movement skills successfully in different environments without help?",
+          "How well do I adapt my movements when the situation changes?"
         ]
       },
       "feedback_guide": {
         "lt_id": "cluster_01_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to name one health habit they do every day and what they think it does for them.",
-            "Provide a simple sentence frame: 'When I [physical activity/nutrition/sleep], my body/mind feels [better/stronger/more alert] because …'"
+            "Provide guided practice with basic movement skills in a safe, familiar environment",
+            "Use demonstration and physical prompts to support initial movement attempts"
           ],
           "emerging": [
-            "Ask the student to pick one factor they named and add one more detail about how it helps their health.",
-            "Prompt them to explain the same factor to a friend in their own words, then check if the explanation makes sense."
+            "Gradually reduce support while practicing familiar movements",
+            "Introduce slight variations in the same environment to build confidence"
           ],
           "developing": [
-            "Challenge the student to add one more factor beyond the three main ones and explain how it supports health.",
-            "Ask them to draw or describe a day where two factors worked together to help them feel good."
+            "Practice the same movement skills in different environments with guidance",
+            "Help identify similarities between familiar and new movement situations"
           ],
           "competent": [
-            "Ask the student to predict what would happen to their health if one factor was missing for a week.",
-            "Invite them to explain how a health factor might affect someone in a different situation or with different needs."
+            "Challenge with complex or unfamiliar environments requiring skill adaptation",
+            "Encourage experimentation with creating new movement patterns"
           ]
         }
       },
@@ -88,282 +85,6 @@
             [
               "stages",
               5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              4
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
-      ]
-    },
-    {
-      "lt_id": "cluster_01_lt_02",
-      "co_construction_plan": {
-        "lt_id": "cluster_01_lt_02",
-        "stages": [
-          "Show students video clips or live demonstrations of the same movement skill performed at different quality levels and ask them to describe what they notice about control and technique.",
-          "Guide students to identify the key differences between attempts that look shaky or incomplete versus smooth and controlled.",
-          "Work together to name what 'control,' 'coordination,' and 'technique' mean in the context of their own age-appropriate activities.",
-          "Have students sort movement examples into levels based on the language they've developed, then refine the descriptors together."
-        ],
-        "student_prompts": [
-          "What do you see happening with the person's body when they perform this skill smoothly versus when they struggle?",
-          "What does it mean for a movement to have 'control' or 'good technique'?",
-          "How would you describe the difference between doing a skill with help and doing it all by yourself?",
-          "When might you need to change how you do a movement depending on where you are or what you're doing?"
-        ],
-        "anchor_examples_guidance": "Choose movement examples from activities students actually do in class or at home, showing the same skill at clearly different levels of control and consistency. Select clips or demonstrations where the difference between shaky/incomplete and smooth/controlled is visually obvious."
-      },
-      "student_rubric": {
-        "lt_id": "cluster_01_lt_02",
-        "levels": [
-          {
-            "name": "no_evidence",
-            "descriptor": "I have not yet tried to perform the movement or exercise skill.",
-            "word_count": 12
-          },
-          {
-            "name": "emerging",
-            "descriptor": "I can attempt movement skills with help, but my control and technique are not yet steady.",
-            "word_count": 16
-          },
-          {
-            "name": "developing",
-            "descriptor": "I can perform basic movement and exercise skills on my own with mostly correct technique, though I am not always consistent.",
-            "word_count": 21
-          },
-          {
-            "name": "competent",
-            "descriptor": "I can perform movement, exercise, and activity skills on my own with control, coordination, and technique that fit my age and what I am doing.",
-            "word_count": 25
-          },
-          {
-            "name": "extending",
-            "descriptor": "I can perform movement skills with precision and change my technique smoothly when the activity or setting is different or more challenging.",
-            "word_count": 22
-          }
-        ],
-        "self_check_prompts": [
-          "Can I do this skill on my own, or do I still need help?",
-          "Is my movement smooth and controlled, or does it feel shaky or incomplete?"
-        ]
-      },
-      "feedback_guide": {
-        "lt_id": "cluster_01_lt_02",
-        "moves_by_level": {
-          "no_evidence": [
-            "Invite the student to try the skill with you modeling it step by step alongside them.",
-            "Break the skill into smaller, simpler parts and practice one part at a time with encouragement."
-          ],
-          "emerging": [
-            "Reduce the amount of support gradually and have the student practice the skill independently while you observe for moments of control.",
-            "Focus feedback on one specific part of the technique that, when improved, will make the whole movement smoother."
-          ],
-          "developing": [
-            "Ask the student to perform the skill multiple times and notice which attempts feel most controlled; discuss what they did differently.",
-            "Introduce the skill in a slightly different context or with a small variation to build consistency across situations."
-          ],
-          "competent": [
-            "Challenge the student to perform the skill in a new or more complex setting and reflect on how they adjusted their technique.",
-            "Encourage the student to teach or demonstrate the skill to a peer, which deepens their awareness of precision and control."
-          ]
-        }
-      },
-      "stability_flag": "supporting_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "stages",
-              4
-            ],
-            [
-              "student_prompts",
-              4
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "stages",
-              4
             ],
             [
               "student_prompts",
@@ -408,6 +129,55 @@
           ]
         },
         {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
           "run": 3,
           "signature": [
             [
@@ -416,7 +186,7 @@
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -458,80 +228,78 @@
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
       ]
     },
     {
-      "lt_id": "cluster_02_lt_02",
+      "lt_id": "cluster_02_lt_01",
       "co_construction_plan": {
-        "lt_id": "cluster_02_lt_02",
+        "lt_id": "cluster_02_lt_01",
         "stages": [
-          "Show students a short video or image of someone engaging in a self-care behaviour and ask them to describe what they notice and why it might matter.",
-          "Guide students to brainstorm a list of self-care behaviours they know about and sort them by category.",
-          "Work together to define what 'well-being' and 'sense of self-worth' mean in their own words.",
-          "Co-create descriptor language by asking students to explain how one self-care behaviour connects to well-being, then refine the explanation together.",
-          "Review the five levels as a class and have students identify which level matches sample student work."
+          "Brainstorm what students already know about healthy eating and nutrition.",
+          "Discuss what makes a diet 'balanced' and identify key nutrition concepts.",
+          "Explore connections between food choices and how our bodies feel and function.",
+          "Define different levels of understanding from basic identification to complex evaluation."
         ],
         "student_prompts": [
-          "What self-care behaviours do you see or know about, and what do you think happens when someone does them regularly?",
-          "How would you explain to a younger student why taking care of yourself matters for how you feel about yourself?",
-          "What does 'well-being' mean to you, and how is it different from just feeling happy for one day?",
-          "Can you think of a time when you took care of yourself and it made a difference—what changed?"
+          "What do you think makes a meal or diet healthy?",
+          "How do the foods we eat affect how we feel and perform?",
+          "What's the difference between knowing nutrition facts and understanding how they work together?"
         ],
-        "anchor_examples_guidance": "Choose student work samples that show clear thinking about the link between a specific self-care behaviour and a concrete outcome for well-being; avoid samples that only list behaviours without explanation or that confuse self-care with other health topics."
+        "anchor_examples_guidance": "Select student work samples that show clear progression from listing food groups to explaining complex diet-health relationships."
       },
       "student_rubric": {
-        "lt_id": "cluster_02_lt_02",
+        "lt_id": "cluster_02_lt_01",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet tried to explain how self-care affects well-being.",
-            "word_count": 11
+            "descriptor": "I have not yet attempted to explain balanced diet principles.",
+            "word_count": 10
           },
           {
             "name": "emerging",
-            "descriptor": "I can name some self-care behaviours, but my explanations are unclear or not quite accurate.",
-            "word_count": 15
+            "descriptor": "I can identify some nutrition concepts with help but my explanations need work.",
+            "word_count": 13
           },
           {
             "name": "developing",
-            "descriptor": "I can explain on my own how some self-care behaviours help my well-being, but my reasoning is not complete.",
-            "word_count": 19
+            "descriptor": "I can explain basic balanced diet principles but struggle to connect nutrition with health impacts.",
+            "word_count": 15
           },
           {
             "name": "competent",
-            "descriptor": "I can explain on my own how positive self-care behaviours support my well-being and how I feel about myself.",
-            "word_count": 19
+            "descriptor": "I can explain balanced diet principles and clearly describe how nutrition impacts physical health and well-being.",
+            "word_count": 16
           },
           {
             "name": "extending",
-            "descriptor": "I can explain self-care impact and connect it to how it shapes who I am and my relationships with others.",
-            "word_count": 20
+            "descriptor": "I can explain nutrition principles and evaluate complex relationships between diet choices and health outcomes.",
+            "word_count": 15
           }
         ],
         "self_check_prompts": [
-          "Can I name a self-care behaviour and explain how it helps my well-being, not just what it is?",
-          "Does my explanation show how self-care affects both how I feel and how I see myself?"
+          "Can I explain what makes a diet balanced without just listing food groups?",
+          "Can I connect specific nutrition choices to their effects on health and well-being?"
         ]
       },
       "feedback_guide": {
-        "lt_id": "cluster_02_lt_02",
+        "lt_id": "cluster_02_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to pick one self-care behaviour they know and tell you what happens when someone does it.",
-            "Offer a sentence starter: 'When I [self-care behaviour], I feel … because …' and help them complete it."
+            "Provide graphic organizers to help organize thoughts about nutrition.",
+            "Start with familiar foods and guide identification of their nutritional components."
           ],
           "emerging": [
-            "Ask the student to pick one behaviour from their list and explain why it matters, not just what it is.",
-            "Prompt them to connect the behaviour to a feeling or outcome: 'How does this behaviour change how you feel or think about yourself?'"
+            "Use questioning to help clarify and expand incomplete explanations.",
+            "Provide sentence starters to structure more complete nutrition explanations."
           ],
           "developing": [
-            "Ask the student to explain a second self-care behaviour and how it supports well-being, to build completeness.",
-            "Encourage them to think about both immediate and longer-term effects: 'What happens right away, and what happens over time?'"
+            "Guide students to make explicit connections between specific nutrients and health outcomes.",
+            "Use cause-and-effect graphic organizers to link diet principles with health impacts."
           ],
           "competent": [
-            "Invite them to explore how one self-care behaviour affects their relationships or how others see them.",
-            "Ask them to consider how self-care connects to their identity: 'How does taking care of yourself shape who you are?'"
+            "Challenge students to analyze real-world diet scenarios and their health implications.",
+            "Encourage evaluation of conflicting nutrition information or diet trends."
           ]
         }
       },
@@ -542,11 +310,11 @@
           "signature": [
             [
               "stages",
-              5
+              4
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -591,11 +359,11 @@
           "signature": [
             [
               "stages",
-              5
+              4
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -640,11 +408,11 @@
           "signature": [
             [
               "stages",
-              5
+              4
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -688,75 +456,74 @@
       "stability_diagnostics": []
     },
     {
-      "lt_id": "cluster_03_lt_01",
+      "lt_id": "cluster_04_lt_01",
       "co_construction_plan": {
-        "lt_id": "cluster_03_lt_01",
+        "lt_id": "cluster_04_lt_01",
         "stages": [
-          "Show students a short video or image of someone experiencing an emotion and ask them to name what they see.",
-          "Guide students to brainstorm their own experiences and the feelings that came with them.",
-          "Work together to identify what makes a connection between experience and feeling clear and strong.",
-          "Co-create language for each level that describes how well someone can explain this connection and its effect on well-being."
+          "Brainstorm what makes people healthy or unhealthy from student experiences",
+          "Sort brainstormed items into categories of behaviors, conditions, and situations",
+          "Discuss what it means to describe how these affect our bodies and minds",
+          "Create quality levels from basic naming to detailed explaining"
         ],
         "student_prompts": [
-          "What experience have you had that changed how you felt?",
-          "How did that feeling affect you—your body, your thoughts, or how you treated others?",
-          "What words would help someone understand the link between what happened and how it made you feel?",
-          "When you explain this connection really well, what details do you include that make it clear?"
+          "What are some things that can make people sick or hurt their health?",
+          "How would you explain to a younger student why this affects health?",
+          "What's the difference between just naming a health risk and really understanding it?"
         ],
-        "anchor_examples_guidance": "Choose one anchor that shows a clear, simple connection between an experience and a feeling, and one that goes deeper by explaining how that feeling shaped the student's well-being or behavior over time. Look for examples where the student's own voice is present and the reasoning is visible."
+        "anchor_examples_guidance": "Choose examples that show clear progression from simple naming to detailed explanations of health impacts."
       },
       "student_rubric": {
-        "lt_id": "cluster_03_lt_01",
+        "lt_id": "cluster_04_lt_01",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet tried to connect an experience to a feeling or explained how it affected my well-being.",
-            "word_count": 19
+            "descriptor": "I have not yet tried to identify any health risks",
+            "word_count": 10
           },
           {
             "name": "emerging",
-            "descriptor": "I can name one experience and one feeling, but I need help explaining how they are connected.",
-            "word_count": 17
+            "descriptor": "I can name some health risks with help but my descriptions need work",
+            "word_count": 13
           },
           {
             "name": "developing",
-            "descriptor": "I can describe an experience and the feeling it caused, but I do not fully explain how it affected my mental health or well-being.",
-            "word_count": 24
-          },
-          {
-            "name": "competent",
-            "descriptor": "I can explain how a specific experience and my emotional response influenced my mental health and well-being.",
+            "descriptor": "I can identify clear health risks on my own but struggle to explain how they affect well-being",
             "word_count": 17
           },
           {
+            "name": "competent",
+            "descriptor": "I can recognize and describe various behaviors, conditions and situations that affect physical health and well-being",
+            "word_count": 16
+          },
+          {
             "name": "extending",
-            "descriptor": "I can explain how experiences and emotional responses influence my well-being and connect this to patterns I notice in my life.",
-            "word_count": 21
+            "descriptor": "I can recognize subtle health risks and describe complex connections between multiple health factors",
+            "word_count": 14
           }
         ],
         "self_check_prompts": [
-          "Can I describe a real experience and name the feeling it caused?",
-          "Can I explain how that feeling affected my well-being, my thoughts, or my actions?"
+          "Can I explain how this health risk actually affects the body or mind?",
+          "Am I identifying different types of health risks including behaviors, conditions, and situations?"
         ]
       },
       "feedback_guide": {
-        "lt_id": "cluster_03_lt_01",
+        "lt_id": "cluster_04_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to share one thing that happened to them recently and how it made them feel.",
-            "Model aloud how you connect an experience to a feeling, then ask them to try with their own example."
+            "Provide examples of common health risks from student's daily life",
+            "Ask what happens when people don't get enough sleep or exercise"
           ],
           "emerging": [
-            "Ask follow-up questions to deepen the connection: How did that feeling change what you did next or how you felt about yourself?",
-            "Provide a sentence frame to help them explain the link: When [experience] happened, I felt [feeling] because …"
+            "Guide student to explain one health risk they named in their own words",
+            "Ask follow-up questions about how the risk affects the body"
           ],
           "developing": [
-            "Ask the student to explain one way their feeling affected their well-being, such as their sleep, mood, or relationships.",
-            "Encourage them to add one more detail that shows why this experience mattered to their mental health."
+            "Prompt student to describe what happens inside the body when exposed to the risk",
+            "Encourage student to think about both immediate and long-term effects"
           ],
           "competent": [
-            "Invite the student to explore a second experience and compare how different experiences shape their well-being differently.",
-            "Ask them to reflect on whether they notice patterns in how certain types of experiences affect them over time."
+            "Challenge student to identify less obvious health risks in their environment",
+            "Ask student to explain connections between different health factors"
           ]
         }
       },
@@ -771,7 +538,7 @@
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -820,7 +587,7 @@
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -869,7 +636,7 @@
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -917,529 +684,71 @@
       "co_construction_plan": {
         "lt_id": "cluster_05_lt_01",
         "stages": [
-          "Show students a real decision scenario and ask them to list all the people and groups affected by it.",
-          "Guide students to distinguish between immediate impacts and broader societal ripples.",
-          "Introduce the concept of influencing factors and have students brainstorm what shapes how people decide.",
-          "Work together to sort impacts and factors into categories and discuss what makes reasoning complete or incomplete.",
-          "Co-author level descriptors by asking students what evidence would show they can do each level."
+          "Introduce the concept of paying attention to what happens inside our minds and bodies",
+          "Explore what it means to notice our thoughts, feelings, and what we sense",
+          "Discuss how we can use this noticing to help ourselves learn and grow",
+          "Create language together for different levels of this skill",
+          "Refine our shared understanding through examples and discussion"
         ],
         "student_prompts": [
-          "Who is affected by this decision, and in what ways?",
-          "What happens beyond the immediate situation—how might this decision affect the wider community or society?",
-          "What things influence how someone makes a decision—their beliefs, circumstances, information, or something else?",
-          "How do you know if your analysis of a decision is thorough or if you've missed something important?",
-          "Can you think of a time when one decision's impact led to another decision being made?"
+          "What does it feel like when you really pay attention to your thoughts or feelings?",
+          "How might noticing what's happening inside you help you in different situations?",
+          "What would it look like if someone was just starting to learn this skill versus someone who was really good at it?"
         ],
-        "anchor_examples_guidance": "Choose decisions that are age-appropriate and familiar to students, with clear impacts on multiple levels (personal, peer, community). Select examples where influencing factors are visible but not obvious, so students must reason through them."
+        "anchor_examples_guidance": "Look for student work or scenarios that clearly show different levels of internal awareness and application of that awareness to real situations."
       },
       "student_rubric": {
         "lt_id": "cluster_05_lt_01",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet tried to analyse how decisions affect people or what influences decision-making.",
-            "word_count": 15
+            "descriptor": "I have not yet tried to pay attention to my thoughts, feelings, or what I notice around me.",
+            "word_count": 18
           },
           {
             "name": "emerging",
-            "descriptor": "I can identify some people or groups affected by a decision and name some factors that influence decisions, but my reasoning has gaps or mistakes.",
-            "word_count": 25
+            "descriptor": "I can sometimes notice my thoughts, feelings, or perceptions when someone helps me.",
+            "word_count": 13
           },
           {
             "name": "developing",
-            "descriptor": "I can independently identify how a decision affects myself and others, and I can name some factors that influence decisions, but I do not yet consider the wider society.",
-            "word_count": 29
-          },
-          {
-            "name": "competent",
-            "descriptor": "I can independently analyse how a decision impacts myself, others, and society, and I can identify the key factors that influence how people decide.",
-            "word_count": 24
-          },
-          {
-            "name": "extending",
-            "descriptor": "I can analyse decision impacts and influencing factors across different situations and recognise how influences are connected to each other.",
+            "descriptor": "I can notice my thoughts, feelings, and perceptions on my own but don't always use this awareness to help myself.",
             "word_count": 20
-          }
-        ],
-        "self_check_prompts": [
-          "Have I considered how this decision affects me, the people around me, and the wider community?",
-          "Can I explain what factors influenced this decision and how they are connected?"
-        ]
-      },
-      "feedback_guide": {
-        "lt_id": "cluster_05_lt_01",
-        "moves_by_level": {
-          "no_evidence": [
-            "Ask the student to name one person or group affected by a decision and describe what happened to them.",
-            "Prompt the student to think of one thing that might make someone choose one way instead of another."
-          ],
-          "emerging": [
-            "Help the student check their reasoning by asking 'How do you know that?' or 'What evidence shows that?'",
-            "Guide the student to add one more impact or factor they may have overlooked."
-          ],
-          "developing": [
-            "Ask the student to step back and consider: 'Who else might be affected by this decision beyond the people we've already named?'",
-            "Encourage the student to explore how the decision might affect the community or society as a whole."
-          ],
-          "competent": [
-            "Invite the student to explore a different context or scenario and apply their analysis skills there.",
-            "Ask the student to trace how one influencing factor connects to or affects another factor."
-          ]
-        }
-      },
-      "stability_flag": "supporting_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              4
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
-      ]
-    },
-    {
-      "lt_id": "cluster_05_lt_02",
-      "co_construction_plan": {
-        "lt_id": "cluster_05_lt_02",
-        "stages": [
-          "Show students a real or realistic decision scenario and ask them to list every possible outcome they can think of.",
-          "Guide students to sort their outcomes into categories: effects on self, effects on others, short-term, and long-term.",
-          "Introduce the idea of risk and have students identify which outcomes are risky or uncertain.",
-          "Work together to distinguish between surface-level consequences and deeper, connected consequences that ripple outward.",
-          "Co-author level descriptors by asking students what it looks like when someone does or does not think through implications before deciding."
-        ],
-        "student_prompts": [
-          "What could happen if you make this decision—for you and for people around you?",
-          "Which of these consequences might happen soon, and which might take weeks or months to show up?",
-          "What could go wrong, and how confident are you that you've thought of all the risks?",
-          "If one consequence happens, what else might that trigger down the line?",
-          "How would you describe someone who rushes into a decision without thinking, and someone who carefully weighs what might happen?"
-        ],
-        "anchor_examples_guidance": "Choose decisions that are age-appropriate and personally relevant to students, with consequences that span both immediate and delayed effects, and that touch multiple people or contexts. Look for examples where surface-level thinking misses important ripple effects."
-      },
-      "student_rubric": {
-        "lt_id": "cluster_05_lt_02",
-        "levels": [
-          {
-            "name": "no_evidence",
-            "descriptor": "I have not yet tried to think about what might happen before I decide.",
-            "word_count": 14
-          },
-          {
-            "name": "emerging",
-            "descriptor": "I can name some things that might happen if I make a decision, but I need help and my thinking might be incomplete or mixed up.",
-            "word_count": 26
-          },
-          {
-            "name": "developing",
-            "descriptor": "I can figure out on my own what might happen for me and for others, but I might miss consequences that take longer to show up or affect people further away.",
-            "word_count": 31
           },
           {
             "name": "competent",
-            "descriptor": "I can think through several different implications and risks of a decision for myself and others before I decide.",
+            "descriptor": "I can focus on my thoughts, feelings, and perceptions and use this awareness to help myself learn and grow.",
             "word_count": 19
           },
           {
             "name": "extending",
-            "descriptor": "I can evaluate how implications and risks connect across different situations and predict consequences that trigger other consequences.",
-            "word_count": 18
-          }
-        ],
-        "self_check_prompts": [
-          "Have I thought about what happens to me and to other people if I make this choice?",
-          "Am I seeing only what happens right away, or am I also thinking about what might happen later or in other areas of my life?"
-        ]
-      },
-      "feedback_guide": {
-        "lt_id": "cluster_05_lt_02",
-        "moves_by_level": {
-          "no_evidence": [
-            "Ask the student to pause and name one thing that could happen if they make this decision.",
-            "Model thinking aloud about a consequence, then ask them to name one more consequence you did not mention."
-          ],
-          "emerging": [
-            "Ask: Who else might be affected by this decision, and what might happen to them?",
-            "Help the student separate immediate consequences from ones that might take longer to appear."
-          ],
-          "developing": [
-            "Push the student to think beyond the people directly involved: What other situations or people might be touched by this decision?",
-            "Ask: If that consequence happens, what else might it cause to happen?"
-          ],
-          "competent": [
-            "Invite the student to map out how one consequence might trigger a chain of other consequences.",
-            "Challenge them to identify a risk they had not considered by asking about less obvious contexts or longer time horizons."
-          ]
-        }
-      },
-      "stability_flag": "supporting_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              4
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "stages",
-              5
-            ],
-            [
-              "student_prompts",
-              5
-            ],
-            [
-              "student_rubric_levels",
-              [
-                "no_evidence",
-                "emerging",
-                "developing",
-                "competent",
-                "extending"
-              ]
-            ],
-            [
-              "self_check_prompts",
-              2
-            ],
-            [
-              [
-                "moves",
-                "no_evidence",
-                2
-              ],
-              [
-                "moves",
-                "emerging",
-                2
-              ],
-              [
-                "moves",
-                "developing",
-                2
-              ],
-              [
-                "moves",
-                "competent",
-                2
-              ]
-            ]
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
-      ]
-    },
-    {
-      "lt_id": "cluster_06_lt_01",
-      "co_construction_plan": {
-        "lt_id": "cluster_06_lt_01",
-        "stages": [
-          "Show students a career choice scenario and ask them to brainstorm all the ways that choice might affect someone's life over time.",
-          "Guide students to sort their brainstormed consequences into three domains: personal, financial, and social.",
-          "Work together to distinguish between surface-level and significant consequences, discussing what makes a consequence worth describing.",
-          "Co-create descriptors for each level by asking students what evidence would show they can identify and describe consequences well."
-        ],
-        "student_prompts": [
-          "If someone chose to become a teacher, what are all the ways that decision might change their life—not just at the start, but years later?",
-          "Which of these consequences fit into personal (how you feel, your skills, your lifestyle), financial (money and resources), or social (relationships, community, status) categories?",
-          "Which consequences are surface-level and which ones are truly significant or life-changing?",
-          "What would it look like if you could identify consequences in all three domains with real detail and accuracy?"
-        ],
-        "anchor_examples_guidance": "Choose career scenarios that naturally generate consequences across all three domains and that students can relate to or research easily. Select student work samples that show varying levels of depth—from naming one consequence vaguely to explaining how a financial consequence ripples into personal and social effects over decades."
-      },
-      "student_rubric": {
-        "lt_id": "cluster_06_lt_01",
-        "levels": [
-          {
-            "name": "no_evidence",
-            "descriptor": "I have not yet tried to identify or describe consequences of career choices.",
-            "word_count": 13
-          },
-          {
-            "name": "emerging",
-            "descriptor": "I can name one or two consequences of a career choice, but my descriptions are unclear or not quite accurate.",
-            "word_count": 20
-          },
-          {
-            "name": "developing",
-            "descriptor": "I can identify consequences across one or two domains on my own, but I miss some important details or do not explore them deeply enough.",
-            "word_count": 25
-          },
-          {
-            "name": "competent",
-            "descriptor": "I can identify and describe significant lifelong consequences of career choices across personal, financial, and social domains.",
+            "descriptor": "I can use my self-awareness skills in new situations and connect them with deeper thinking about myself.",
             "word_count": 17
-          },
-          {
-            "name": "extending",
-            "descriptor": "I can identify consequences and explain how they connect to each other across domains or how they change over time.",
-            "word_count": 20
           }
         ],
         "self_check_prompts": [
-          "Have I identified consequences in all three domains: personal, financial, and social?",
-          "Are my descriptions detailed and accurate, and do they show why these consequences matter over a lifetime?"
+          "Am I noticing what's happening in my mind and body right now?",
+          "How am I using what I notice about myself to help me in this situation?"
         ]
       },
       "feedback_guide": {
-        "lt_id": "cluster_06_lt_01",
+        "lt_id": "cluster_05_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to pick one career and name just one thing that might change in their life because of that choice.",
-            "Provide a sentence starter: 'If someone chose this career, they might experience a change in their [personal life / money / relationships] because…'"
+            "Guide student to pause and notice one simple internal experience",
+            "Provide sentence stems like 'Right now I notice...' or 'I'm feeling...'"
           ],
           "emerging": [
-            "Ask the student to pick one consequence they named and add two or three details that explain why it matters.",
-            "Introduce the three domains and ask: 'Which domain does this consequence belong to, and can you find one consequence in a different domain?'"
+            "Encourage independent noticing without prompts",
+            "Help student identify patterns in their internal experiences"
           ],
           "developing": [
-            "Ask the student to identify at least one consequence in the domain they have not yet explored.",
-            "Prompt them to explain how one consequence might lead to another consequence over time."
+            "Support student in connecting their awareness to specific actions or choices",
+            "Ask how their self-awareness could help them in this moment"
           ],
           "competent": [
-            "Ask the student to trace how a consequence in one domain affects or connects to consequences in another domain.",
-            "Invite them to predict how a consequence might change or deepen as someone moves through different life stages."
+            "Challenge student to apply their self-awareness in unfamiliar contexts",
+            "Encourage deeper reflection on how self-awareness connects to their growth"
           ]
         }
       },
@@ -1450,11 +759,11 @@
           "signature": [
             [
               "stages",
-              4
+              5
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -1499,11 +808,11 @@
           "signature": [
             [
               "stages",
-              4
+              5
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -1548,11 +857,11 @@
           "signature": [
             [
               "stages",
-              4
+              5
             ],
             [
               "student_prompts",
-              4
+              3
             ],
             [
               "student_rubric_levels",
@@ -1596,77 +905,76 @@
       "stability_diagnostics": []
     },
     {
-      "lt_id": "cluster_07_lt_02",
+      "lt_id": "cluster_07_lt_01",
       "co_construction_plan": {
-        "lt_id": "cluster_07_lt_02",
+        "lt_id": "cluster_07_lt_01",
         "stages": [
-          "Show students a short video or image of a cultural practice and ask them to list what they notice without judgment.",
-          "Guide students to distinguish between a norm they observed and the reasons or values that might underlie it.",
-          "Introduce the idea of comparing how the same value appears differently across two cultures.",
-          "Work together to identify what 'depth of analysis' means by examining a weak versus strong explanation of cultural development.",
-          "Co-create the five levels by having students sort example statements into categories of quality."
+          "Students share what it means to 'look back' at experiences and why this might be valuable.",
+          "Class discusses what makes some experiences more meaningful or memorable than others.",
+          "Students explore what patterns, impacts, and lessons might look like through guided questioning.",
+          "Groups create criteria for what strong reflection and analysis would include.",
+          "Class finalizes rubric levels by comparing and refining group contributions."
         ],
         "student_prompts": [
-          "What norm or value did you spot in this cultural practice, and what clues tell you it matters to that community?",
-          "Why might this norm have developed in this culture—what problem or need might it solve?",
-          "How is this value expressed differently in another culture you know about, and what might explain the difference?",
-          "What makes an explanation of cultural norms 'surface-level' versus 'deep'—what details matter?",
-          "Which of these statements about cultural norms shows the strongest thinking, and why?"
+          "What does it mean to really think deeply about something that happened to you?",
+          "How can looking at multiple experiences help you notice things you might have missed?",
+          "What's the difference between just remembering what happened and actually learning from it?",
+          "How would you know if someone has done a really good job analyzing their experiences?"
         ],
-        "anchor_examples_guidance": "Choose anchor examples that show a clear progression from naming a norm without context, to explaining its origin in one culture, to comparing how similar values function differently across two or more cultures. Prioritize examples that reveal student reasoning, not just factual knowledge."
+        "anchor_examples_guidance": "Select student reflection samples that clearly show different depths of analysis, from simple retelling to sophisticated pattern recognition across multiple experiences."
       },
       "student_rubric": {
-        "lt_id": "cluster_07_lt_02",
+        "lt_id": "cluster_07_lt_01",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet attempted to analyse how cultural norms or values develop.",
-            "word_count": 13
+            "descriptor": "I have not yet attempted to analyze my past experiences.",
+            "word_count": 10
           },
           {
             "name": "emerging",
-            "descriptor": "I can identify some norms or values in a culture with support, but my explanation of why they developed is unclear or missing cultural context.",
-            "word_count": 25
+            "descriptor": "I can identify basic details from my experiences with help but struggle to see patterns.",
+            "word_count": 15
           },
           {
             "name": "developing",
-            "descriptor": "I can independently explain how norms develop within one culture, but I struggle to compare how similar norms function across different cultures.",
-            "word_count": 22
+            "descriptor": "I can identify some patterns or impacts from my experiences but my analysis needs more depth.",
+            "word_count": 16
           },
           {
             "name": "competent",
-            "descriptor": "I can analyse how norms and values develop within and across different cultural contexts and explain my reasoning clearly.",
-            "word_count": 19
+            "descriptor": "I can analyze my past experiences to identify clear patterns, impacts, and meaningful lessons learned.",
+            "word_count": 15
           },
           {
             "name": "extending",
-            "descriptor": "I can analyse how norms and values develop across cultures and connect these patterns to larger social systems and historical forces.",
-            "word_count": 21
+            "descriptor": "I can transfer insights across diverse experiences to generate sophisticated understanding and predictions beyond the immediate situation.",
+            "word_count": 17
           }
         ],
         "self_check_prompts": [
-          "Can I explain not just what a norm is, but why it developed and what it does for that culture?",
-          "Have I compared how the same value or need shows up differently in at least two cultures, and explained what causes those differences?"
+          "Can I explain not just what happened but what it means and how it connects to other experiences?",
+          "Have I identified specific patterns, impacts, or lessons that I could apply to future situations?"
         ]
       },
       "feedback_guide": {
-        "lt_id": "cluster_07_lt_02",
+        "lt_id": "cluster_07_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to name one norm they observe in a cultural practice and describe what it looks like in action.",
-            "Prompt them to think of a reason that norm might exist—what does it help the community do or believe?"
+            "Provide a simple reflection prompt about one specific recent experience.",
+            "Model thinking aloud about your own experience to demonstrate the process."
           ],
           "emerging": [
-            "Help the student dig deeper by asking 'What in the environment, history, or beliefs of this culture might have caused this norm to develop?'",
-            "Introduce a second culture and ask how a similar value or need is expressed there, then guide them to notice the difference."
+            "Ask guided questions to help identify one clear pattern or connection between experiences.",
+            "Provide sentence starters for deeper analysis."
           ],
           "developing": [
-            "Challenge the student to select a second culture and systematically compare how the same underlying value appears in different forms.",
-            "Ask them to explain what factors in each culture might account for the different expressions of that value."
+            "Challenge to explain the 'so what' of identified patterns or impacts.",
+            "Encourage connections between current analysis and potential future applications."
           ],
           "competent": [
-            "Invite the student to explore how the norms they analysed connect to larger patterns in society, such as economics, power, or survival.",
-            "Encourage them to consider how understanding these patterns helps explain cultural change over time."
+            "Prompt to apply analytical approach to experiences from different contexts or time periods.",
+            "Encourage prediction-making based on identified patterns."
           ]
         }
       },
@@ -1677,11 +985,11 @@
           "signature": [
             [
               "stages",
-              5
+              4
             ],
             [
               "student_prompts",
-              5
+              3
             ],
             [
               "student_rubric_levels",
@@ -1730,7 +1038,7 @@
             ],
             [
               "student_prompts",
-              5
+              4
             ],
             [
               "student_rubric_levels",
@@ -1821,80 +1129,2114 @@
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+        "signature_counts={(('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
       ]
     },
     {
-      "lt_id": "cluster_09_lt_01",
+      "lt_id": "cluster_07_lt_02",
       "co_construction_plan": {
-        "lt_id": "cluster_09_lt_01",
+        "lt_id": "cluster_07_lt_02",
         "stages": [
-          "Show students a short scenario of a relationship and ask them to spot what feels wrong or concerning.",
-          "Guide students to name the specific behaviours or patterns they noticed and discuss why those matter.",
-          "Work together to sort their observations into categories of warning signs.",
-          "Build shared language for what 'analysis' means by asking students how they would explain why a warning sign matters.",
-          "Co-author level descriptors by asking students what it looks like when someone can do this well, with help, or not yet."
+          "Students share examples of times they learned from past experiences.",
+          "Class discusses what makes a good prediction about future situations.",
+          "Students identify key elements that help connect past learning to future preparation.",
+          "Groups create criteria for different levels of prediction and preparation skills."
         ],
         "student_prompts": [
-          "What behaviours or words in this relationship made you uncomfortable or worried?",
-          "Why do you think that behaviour is a warning sign rather than just a normal disagreement?",
-          "What pattern do you see—does this warning sign connect to other problems in the relationship?",
-          "How would you explain to someone else why this relationship dynamic is unhealthy?"
+          "What past experience taught you something useful for the future?",
+          "How do you know when a prediction is realistic and helpful?",
+          "What's the difference between a basic connection and a detailed preparation plan?"
         ],
-        "anchor_examples_guidance": "Choose scenarios that show clear warning signs but vary in context and subtlety—one obvious example and one more nuanced case help students see that analysis requires looking beyond surface behaviour. Avoid examples that centre on only one type of relationship or harm."
+        "anchor_examples_guidance": "Choose student work that shows clear progression from simple past-future connections to detailed preparation plans with multiple scenarios."
       },
       "student_rubric": {
-        "lt_id": "cluster_09_lt_01",
+        "lt_id": "cluster_07_lt_02",
         "levels": [
           {
             "name": "no_evidence",
-            "descriptor": "I have not yet tried to identify warning signs or explain what makes a relationship unhealthy.",
-            "word_count": 16
+            "descriptor": "I have not yet connected my past experiences to preparing for future situations.",
+            "word_count": 13
           },
           {
             "name": "emerging",
-            "descriptor": "I can name some warning signs when someone helps me, but my explanation of why they matter is incomplete or not quite accurate.",
-            "word_count": 23
+            "descriptor": "I can identify some past experiences with help but make few connections to future situations.",
+            "word_count": 15
           },
           {
             "name": "developing",
-            "descriptor": "I can identify several warning signs on my own, but my analysis does not go deep enough or does not work well when the situation is new or different.",
-            "word_count": 29
+            "descriptor": "I can connect some past experiences to future situations but my predictions need more detail.",
+            "word_count": 15
           },
           {
             "name": "competent",
-            "descriptor": "I can analyse relationship dynamics on my own and accurately identify multiple warning signs that show a relationship is unhealthy.",
+            "descriptor": "I can use insights from past experiences to make realistic predictions and prepare appropriately for future challenges and opportunities.",
+            "word_count": 19
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can transfer predictive insights across different contexts and develop comprehensive backup plans for multiple scenarios.",
+            "word_count": 16
+          }
+        ],
+        "self_check_prompts": [
+          "Can I clearly explain how my past experience connects to this future situation?",
+          "Are my predictions realistic and my preparations detailed enough?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_07_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Help student identify one specific past experience they can reflect on.",
+            "Guide student to notice one simple connection between past and future."
+          ],
+          "emerging": [
+            "Encourage student to make connections independently without prompting.",
+            "Ask student to explain why their past experience relates to the future situation."
+          ],
+          "developing": [
+            "Push student to add specific details to their predictions.",
+            "Challenge student to consider what could go wrong and how to prepare."
+          ],
+          "competent": [
+            "Encourage student to apply their prediction skills to different types of situations.",
+            "Ask student to develop backup plans for when their main prediction doesn't work out."
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_08_lt_01",
+        "stages": [
+          "Students share recent experiences that made them feel strong emotions",
+          "Class identifies different emotions and discusses what caused them",
+          "Students explore why the same experience might affect different people differently",
+          "Groups create criteria for understanding emotional impact at different levels"
+        ],
+        "student_prompts": [
+          "What happened that made you feel that way?",
+          "Why do you think this experience affected you like this?",
+          "How might someone else feel about the same experience?",
+          "What does it mean to really understand how experiences affect emotions?"
+        ],
+        "anchor_examples_guidance": "Choose examples that show clear progression from simple emotion identification to complex analysis of why experiences create different impacts on different people."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_08_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet shown understanding of how experiences affect emotions.",
+            "word_count": 11
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can name basic emotions with help but struggle to connect them to what happened.",
+            "word_count": 15
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can recognize how experiences affect emotions in situations I know well.",
+            "word_count": 12
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can explain how and why specific experiences create emotional impacts on myself and others.",
+            "word_count": 15
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyze complex emotional patterns and predict how different experiences will affect different people.",
+            "word_count": 15
+          }
+        ],
+        "self_check_prompts": [
+          "Can I explain why an experience made me or someone else feel a certain way?",
+          "Do I understand how the same experience might affect different people differently?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_08_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Guide student to notice and name emotions they are feeling",
+            "Help student connect a simple experience to how it made them feel"
+          ],
+          "emerging": [
+            "Ask student to explain what specifically caused the emotion they identified",
+            "Provide sentence starters to help connect experiences with emotional impacts"
+          ],
+          "developing": [
+            "Challenge student to consider why the experience had that emotional impact",
+            "Prompt student to think about how others might feel differently about the same experience"
+          ],
+          "competent": [
+            "Encourage student to analyze more complex emotional situations with multiple factors",
+            "Ask student to predict emotional impacts before experiences happen"
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_10_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_10_lt_01",
+        "stages": [
+          "Students share examples of decisions they've made and their effects",
+          "Class discusses how decisions impact different people at different times",
+          "Students identify situations where group decisions work better than individual ones",
+          "Together create criteria for explaining decision impacts and choosing decision-making processes"
+        ],
+        "student_prompts": [
+          "What decisions have you made that affected other people?",
+          "How might the effects of a decision change over weeks or months?",
+          "When should a group make a decision together instead of one person deciding?"
+        ],
+        "anchor_examples_guidance": "Choose decisions with clear short-term and long-term effects on multiple people, including both individual and group decision scenarios."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_10_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to explain how decisions affect people or when groups should decide together.",
+            "word_count": 17
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some effects of decisions with help but my explanations are incomplete.",
+            "word_count": 14
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can explain some decision impacts on myself and others but miss timing or group decision situations.",
+            "word_count": 17
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can explain how decisions affect myself and others over time and identify when collective decision-making works best.",
+            "word_count": 18
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyze complex decision impacts across multiple timeframes and evaluate the best decision-making approaches.",
+            "word_count": 15
+          }
+        ],
+        "self_check_prompts": [
+          "Did I explain effects on both myself and others over different time periods?",
+          "Did I identify situations where group decisions are better than individual ones?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_10_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Provide a simple decision scenario and ask what might happen next",
+            "Guide student to identify one person affected by a familiar decision"
+          ],
+          "emerging": [
+            "Ask student to extend their thinking about who else might be affected",
+            "Prompt student to consider what happens after the immediate effect"
+          ],
+          "developing": [
+            "Guide student to think about effects weeks or months later",
+            "Ask when it would be better for a group to make this decision together"
+          ],
+          "competent": [
+            "Challenge student to consider multiple interconnected effects across different timeframes",
+            "Ask student to compare and evaluate different decision-making approaches"
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_11_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_11_lt_01",
+        "stages": [
+          "Students brainstorm what makes something dangerous or risky in familiar situations.",
+          "Class discusses how to tell if something bad is likely to happen versus unlikely.",
+          "Students explore how to measure how serious the consequences would be if risks occurred.",
+          "Groups practice applying both likelihood and severity thinking to sample scenarios.",
+          "Class refines criteria for thorough risk assessment including complex situations."
+        ],
+        "student_prompts": [
+          "What could go wrong in this situation and how would you spot the warning signs?",
+          "How do you decide if something is very likely to happen or probably won't happen?",
+          "How do you figure out if the consequences would be minor, serious, or really bad?",
+          "What makes someone good at spotting risks that others might miss?"
+        ],
+        "anchor_examples_guidance": "Choose scenarios with varying complexity levels and clear distinctions between obvious versus hidden hazards, and between high-likelihood/low-impact versus low-likelihood/high-impact risks."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_11_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to identify hazards or assess risks.",
+            "word_count": 11
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can spot obvious dangers with help but struggle to judge how likely they are or how bad they could be.",
+            "word_count": 21
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify common hazards on my own and make basic judgments about risk with some gaps.",
+            "word_count": 17
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can independently spot potential hazards and accurately judge both how likely they are and how serious they could be.",
             "word_count": 20
           },
           {
             "name": "extending",
-            "descriptor": "I can analyse relationship dynamics in many different contexts and connect warning signs to the deeper patterns of harm underneath them.",
-            "word_count": 21
+            "descriptor": "I can systematically identify complex hazards and evaluate risks using multiple criteria across different situations.",
+            "word_count": 15
           }
         ],
         "self_check_prompts": [
-          "Can I name at least three warning signs and explain why each one matters?",
-          "Have I looked at the relationship as a whole pattern, or just picked out single moments?"
+          "Have I considered both how likely this risk is and how serious the consequences would be?",
+          "Am I looking beyond the obvious hazards to spot less visible dangers?"
         ]
       },
       "feedback_guide": {
-        "lt_id": "cluster_09_lt_01",
+        "lt_id": "cluster_11_lt_01",
         "moves_by_level": {
           "no_evidence": [
-            "Ask the student to point to one behaviour in the scenario and describe what they see happening.",
-            "Offer a sentence starter: 'This is a warning sign because…' and ask them to complete it."
+            "Guide student to notice one obvious hazard in a simple scenario.",
+            "Ask what could go wrong in a familiar situation they know well."
           ],
           "emerging": [
-            "Ask the student to explain why each warning sign they named is unhealthy rather than just normal conflict.",
-            "Prompt them to find a second or third warning sign they might have missed in the same scenario."
+            "Prompt student to consider how often this type of problem actually happens.",
+            "Help student think about whether the consequences would be minor or major."
           ],
           "developing": [
-            "Ask the student to show how two or three warning signs connect to each other or repeat over time.",
-            "Introduce a slightly different context and ask them to identify whether the same warning signs apply and why."
+            "Challenge student to look for less obvious hazards they might have missed.",
+            "Ask student to explain their reasoning for both likelihood and severity judgments."
           ],
           "competent": [
-            "Ask the student to explain what deeper need or power imbalance might be driving the warning signs they identified.",
-            "Challenge them to analyse a relationship scenario from a perspective they have not considered before."
+            "Introduce scenarios with multiple interconnected risks or hidden hazards.",
+            "Encourage student to consider how risks might change in different contexts or conditions."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              3
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_12_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_12_lt_01",
+        "stages": [
+          "Students share examples of different groups they belong to and rules within those groups.",
+          "Students identify what makes group rules different from individual choices.",
+          "Students explore how group rules affect how people act and feel.",
+          "Students distinguish between simple rule-following and complex group interactions."
+        ],
+        "student_prompts": [
+          "What groups are you part of and what rules do they have?",
+          "How do group rules change the way people behave?",
+          "What happens when someone follows or breaks group expectations?"
+        ],
+        "anchor_examples_guidance": "Select student work that shows clear differences in depth of explanation and connection between group dynamics and individual effects."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_12_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet explained how group rules or norms work.",
+            "word_count": 11
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some group rules with help but my explanations need work.",
+            "word_count": 13
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can explain basic group rules and norms but struggle to show how they affect individuals.",
+            "word_count": 16
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can explain how rules, norms, and behaviors work in different groups and how they affect individuals.",
+            "word_count": 17
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyze complex interactions between multiple group norms and predict how individuals will respond.",
+            "word_count": 15
+          }
+        ],
+        "self_check_prompts": [
+          "Can I explain both the group rules and how they affect people?",
+          "Have I shown understanding of different types of groups and situations?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_12_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Provide examples of familiar groups and ask students to identify one rule.",
+            "Use graphic organizers to help students see group structure."
+          ],
+          "emerging": [
+            "Ask students to explain why a group rule exists.",
+            "Guide students to give specific examples rather than general statements."
+          ],
+          "developing": [
+            "Prompt students to describe how a group rule makes someone feel or act differently.",
+            "Ask students to compare the same person's behavior in two different groups."
+          ],
+          "competent": [
+            "Challenge students to examine what happens when group norms conflict.",
+            "Ask students to predict how changing one norm might affect individual behavior."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2, (('stages', 5), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_12_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_12_lt_02",
+        "stages": [
+          "Students share examples of different groups they belong to and brainstorm what makes each group unique.",
+          "Students identify specific rules or expectations that exist in each group they mentioned.",
+          "Students discuss what happens when someone follows or doesn't follow these group expectations.",
+          "Students create a progression from needing help with social rules to helping others navigate them."
+        ],
+        "student_prompts": [
+          "What are some different groups or situations you're part of at school, home, or in your community?",
+          "What are the unwritten rules or expectations in each of these places?",
+          "How do you know when you're following the social norms well in different situations?",
+          "What does it look like when someone is really skilled at adapting to different social situations?"
+        ],
+        "anchor_examples_guidance": "Choose examples that show clear differences in social expectations across familiar contexts like classroom discussions versus lunch time or family dinner versus sports practice."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_12_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet shown that I can recognize or follow social norms in different situations.",
+            "word_count": 16
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some social rules when someone helps me but I struggle to follow them consistently.",
+            "word_count": 17
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can recognize social norms in familiar situations but don't always apply appropriate behavior on my own.",
+            "word_count": 17
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can independently recognize and follow the rules and norms of different groups and situations consistently.",
+            "word_count": 16
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can adapt my behavior fluidly across diverse social contexts and help others navigate social norms.",
+            "word_count": 16
+          }
+        ],
+        "self_check_prompts": [
+          "Can I identify what behavior is expected in this situation without being told?",
+          "Do I consistently follow the social norms even when no one is watching or reminding me?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_12_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Point out specific social expectations in the current situation.",
+            "Model appropriate behavior and explain why it fits the context."
+          ],
+          "emerging": [
+            "Ask the student to identify one social norm they notice in the current situation.",
+            "Provide gentle reminders before transitions to new social contexts."
+          ],
+          "developing": [
+            "Encourage the student to pause and consider what behavior is expected before acting.",
+            "Have the student reflect on how their behavior matched or didn't match the social context."
+          ],
+          "competent": [
+            "Challenge the student to notice and adapt to subtle differences between similar social situations.",
+            "Ask the student to help a peer who is struggling with social norms."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_14_lt_02",
+      "co_construction_plan": {
+        "lt_id": "cluster_14_lt_02",
+        "stages": [
+          "Students share personal values and discuss where these might come from.",
+          "Students examine how family, friends, media, and community shape what people believe is important.",
+          "Students compare their values with classmates to identify patterns of similarity and difference.",
+          "Students practice evaluating connections between social influences and values using real scenarios."
+        ],
+        "student_prompts": [
+          "What are three things you value most and where do you think these values came from?",
+          "How might someone from a different background have different values than you?",
+          "What social influences have the strongest impact on shaping people's values?"
+        ],
+        "anchor_examples_guidance": "Choose examples that show clear connections between specific social influences and resulting values, representing different cultural backgrounds and age-appropriate contexts."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_14_lt_02",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to evaluate values or social influences.",
+            "word_count": 11
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some values with help but struggle to connect them to social influences.",
+            "word_count": 15
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify values and social influences but my evaluation of connections has gaps or mistakes.",
+            "word_count": 16
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can evaluate how values are shaped by social influences and recognise similarities and differences between people's values accurately.",
+            "word_count": 19
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can transfer my evaluation skills to analyze complex value systems across diverse cultural or historical contexts.",
+            "word_count": 17
+          }
+        ],
+        "self_check_prompts": [
+          "Can I explain how at least two social influences have shaped specific values?",
+          "Have I identified both similarities and differences between different people's values?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_14_lt_02",
+        "moves_by_level": {
+          "no_evidence": [
+            "Provide a simple values identification activity with clear examples.",
+            "Guide student to name one personal value and brainstorm where it might come from."
+          ],
+          "emerging": [
+            "Help student make explicit connections between identified values and their sources.",
+            "Provide sentence starters to link values to social influences."
+          ],
+          "developing": [
+            "Point out specific gaps in reasoning and ask student to reconsider those connections.",
+            "Encourage student to check their evaluation against evidence or examples."
+          ],
+          "competent": [
+            "Challenge student to apply their evaluation skills to unfamiliar cultural contexts.",
+            "Invite student to analyze more complex or nuanced value systems."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_15_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_15_lt_01",
+        "stages": [
+          "Students brainstorm different types of relationships they know from their lives and media.",
+          "Class sorts relationship examples into categories and discusses what makes each type unique.",
+          "Students examine how one relationship type changes over time using personal or fictional examples.",
+          "Groups identify factors that make relationships more or less complex.",
+          "Class creates shared language for describing relationship dynamics and change patterns."
+        ],
+        "student_prompts": [
+          "What different types of relationships do you see in your daily life?",
+          "How has one of your relationships changed since you first met that person?",
+          "What makes some relationships more complicated than others?",
+          "What signs tell you a relationship is getting stronger or weaker?"
+        ],
+        "anchor_examples_guidance": "Choose examples that clearly show different relationship types and include obvious changes over time or varying levels of complexity."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_15_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet attempted to identify relationship types or explain how they work.",
+            "word_count": 14
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can name some relationship types with help but my explanations need more work.",
+            "word_count": 14
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify basic relationship types on my own but need help explaining how they change and become complex.",
+            "word_count": 19
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify different types of relationships and explain how relationships change over time and vary in complexity.",
+            "word_count": 18
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can analyze relationship patterns across different situations and predict how specific factors influence relationship development.",
+            "word_count": 16
+          }
+        ],
+        "self_check_prompts": [
+          "Can I name at least three different types of relationships and explain what makes each one unique?",
+          "Can I describe how relationships change over time and what makes some relationships more complex than others?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_15_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Provide sentence starters for naming relationship types from student's own experience.",
+            "Use visual organizers to help student categorize different relationships they observe."
+          ],
+          "emerging": [
+            "Ask student to elaborate on their relationship examples with specific details.",
+            "Guide student to compare two relationship types and identify key differences."
+          ],
+          "developing": [
+            "Prompt student to trace how one specific relationship has evolved over time.",
+            "Ask student to identify what factors make certain relationships more challenging or complex."
+          ],
+          "competent": [
+            "Challenge student to find patterns in how relationships develop across different contexts.",
+            "Ask student to predict what might happen to a relationship given specific changes or circumstances."
+          ]
+        }
+      },
+      "stability_flag": "supporting_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              5
+            ],
+            [
+              "student_prompts",
+              4
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 1, (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))): 2}"
+      ]
+    },
+    {
+      "lt_id": "cluster_17_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_17_lt_01",
+        "stages": [
+          "Students share examples of conflicts they've experienced or witnessed",
+          "Class discusses what makes conflicts easy or hard to resolve",
+          "Students brainstorm different strategies people use to handle disagreements",
+          "Groups sort strategies from least to most effective and discuss when to ask for help"
+        ],
+        "student_prompts": [
+          "What does a conflict look like and sound like?",
+          "What strategies have you seen work well when people disagree?",
+          "When might you need to ask an adult or friend for help with a conflict?"
+        ],
+        "anchor_examples_guidance": "Choose examples that show clear differences between basic strategies and more sophisticated approaches, including situations where seeking support was necessary."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_17_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet shown that I can identify conflicts or use strategies to resolve them.",
+            "word_count": 16
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can recognize some conflicts with help but my strategies don't always work well.",
+            "word_count": 14
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify conflicts on my own and use basic strategies but find complex disagreements challenging.",
+            "word_count": 16
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify conflicts and choose appropriate strategies to resolve them while asking for support when I need it.",
+            "word_count": 19
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can use conflict resolution skills in new situations and help others work through their disagreements.",
+            "word_count": 16
+          }
+        ],
+        "self_check_prompts": [
+          "Can I explain what the conflict is really about?",
+          "Did I choose a strategy that fits this situation and ask for help if needed?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_17_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Point out specific moments when conflicts occur in classroom situations",
+            "Model naming the problem and one simple strategy to try"
+          ],
+          "emerging": [
+            "Practice identifying the main issue before jumping to solutions",
+            "Discuss which strategies work best for different types of conflicts"
+          ],
+          "developing": [
+            "Analyze what makes some conflicts more complex than others",
+            "Practice recognizing when a situation requires adult support or mediation"
+          ],
+          "competent": [
+            "Explore how the same strategies apply in different settings or relationships",
+            "Reflect on how to guide others through conflict resolution steps"
+          ]
+        }
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "stages",
+              4
+            ],
+            [
+              "student_prompts",
+              3
+            ],
+            [
+              "student_rubric_levels",
+              [
+                "no_evidence",
+                "emerging",
+                "developing",
+                "competent",
+                "extending"
+              ]
+            ],
+            [
+              "self_check_prompts",
+              2
+            ],
+            [
+              [
+                "moves",
+                "no_evidence",
+                2
+              ],
+              [
+                "moves",
+                "emerging",
+                2
+              ],
+              [
+                "moves",
+                "developing",
+                2
+              ],
+              [
+                "moves",
+                "competent",
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_18_lt_01",
+      "co_construction_plan": {
+        "lt_id": "cluster_18_lt_01",
+        "stages": [
+          "Students brainstorm what makes them feel safe with friends and family.",
+          "Class discusses warning signs that might indicate relationship problems.",
+          "Students explore different ways to respond when they notice safety concerns.",
+          "Groups create scenarios and practice identifying safety characteristics.",
+          "Class finalizes rubric levels based on their collective understanding."
+        ],
+        "student_prompts": [
+          "What does it feel like when you're in a safe relationship with someone?",
+          "How might you know if a relationship isn't safe anymore?",
+          "What are some good ways to respond when you notice safety problems?",
+          "How could you help a friend recognize relationship safety issues?"
+        ],
+        "anchor_examples_guidance": "Choose scenarios that show clear safety indicators and realistic response options that students can relate to from their own social experiences."
+      },
+      "student_rubric": {
+        "lt_id": "cluster_18_lt_01",
+        "levels": [
+          {
+            "name": "no_evidence",
+            "descriptor": "I have not yet shown that I can identify what makes relationships safe.",
+            "word_count": 13
+          },
+          {
+            "name": "emerging",
+            "descriptor": "I can identify some basic safety features with help but my responses need work.",
+            "word_count": 14
+          },
+          {
+            "name": "developing",
+            "descriptor": "I can identify obvious safety characteristics but struggle to respond well when safety is threatened.",
+            "word_count": 15
+          },
+          {
+            "name": "competent",
+            "descriptor": "I can identify characteristics of safe relationships and respond appropriately when safety is threatened.",
+            "word_count": 14
+          },
+          {
+            "name": "extending",
+            "descriptor": "I can recognize safety issues in complex situations and help others maintain relationship safety.",
+            "word_count": 14
+          }
+        ],
+        "self_check_prompts": [
+          "Can I explain what makes a relationship feel safe without needing help?",
+          "Do I know what to do when I notice relationship safety problems?"
+        ]
+      },
+      "feedback_guide": {
+        "lt_id": "cluster_18_lt_01",
+        "moves_by_level": {
+          "no_evidence": [
+            "Guide student to notice one specific safety characteristic in a simple relationship scenario.",
+            "Provide sentence starters for describing what safety feels like."
+          ],
+          "emerging": [
+            "Practice identifying safety features without prompts using familiar examples.",
+            "Role-play one appropriate response to a clear safety concern."
+          ],
+          "developing": [
+            "Discuss multiple response options when safety is threatened and practice choosing the best one.",
+            "Analyze scenarios where safety threats are less obvious."
+          ],
+          "competent": [
+            "Explore complex relationship dynamics where safety issues are subtle or layered.",
+            "Practice coaching others through safety recognition and response strategies."
           ]
         }
       },
@@ -2053,16 +3395,84 @@
   ],
   "halted_lts": [
     {
-      "lt_id": "cluster_07_lt_01",
-      "lt_name": "Identifying Social Influences on Identity",
+      "lt_id": "cluster_02_lt_02",
+      "lt_name": "Making Informed Food Choices",
       "halt_reason": "supporting_unreliable",
-      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
     },
     {
-      "lt_id": "cluster_08_lt_01",
-      "lt_name": "Understanding Healthy Relationships and Belonging",
+      "lt_id": "cluster_04_lt_02",
+      "lt_name": "Responding to Health Risks",
       "halt_reason": "supporting_unreliable",
-      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 5), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "lt_name": "Strategic Emotional Regulation",
+      "halt_reason": "supporting_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+    },
+    {
+      "lt_id": "cluster_10_lt_02",
+      "lt_name": "Participating in Decision-Making Processes",
+      "halt_reason": "supporting_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 3), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+    },
+    {
+      "lt_id": "cluster_16_lt_01",
+      "lt_name": "Expressing and Receiving Communication",
+      "halt_reason": "supporting_unreliable",
+      "diagnostic": "no structural signature reached 2/3 agreement; signatures=[(('stages', 5), ('student_prompts', 3), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 5), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2))), (('stages', 4), ('student_prompts', 4), ('student_rubric_levels', ('no_evidence', 'emerging', 'developing', 'competent', 'extending')), ('self_check_prompts', 2), (('moves', 'no_evidence', 2), ('moves', 'emerging', 2), ('moves', 'developing', 2), ('moves', 'competent', 2)))]"
+    },
+    {
+      "lt_id": "cluster_02_lt_03",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['observable_verb']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['single_construct']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['observable_verb']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['observable_verb']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['single_construct']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['single_construct']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_11_lt_02",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['observable_verb']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_14_lt_01",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['single_construct']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_18_lt_02",
+      "halt_reason": "supporting_skipped_gate_fail",
+      "diagnostic": "rubric has gate failures ['observable_verb']; not a stable anchor for supporting materials"
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "halt_reason": "supporting_skipped_gen_fail",
+      "diagnostic": "rubric generation failed for cluster_09_lt_02; no content to build from"
     }
   ]
 }

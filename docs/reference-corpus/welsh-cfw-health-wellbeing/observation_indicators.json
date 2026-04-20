@@ -1,68 +1,67 @@
 {
   "reference_authoring_version": "0.3.0",
-  "source_slug": "wales-cfw-health-wellbeing-sow",
-  "model": "claude-haiku-4-5-20251001",
+  "source_slug": "welsh-cfw-health-wellbeing-ps-descriptions",
+  "model": "claude-sonnet-4-20250514",
   "temperature": 0.3,
   "runs": 3,
   "sets": [
     {
-      "lt_id": "cluster_01_lt_03",
+      "lt_id": "cluster_01_lt_02",
       "bands": [
         {
           "band": "Progression Step 1",
           "observable_behaviours": [
-            "The student engages in movement activities when invited by an adult and shows visible enjoyment through smiling or continued participation.",
-            "The student returns to the same physical activity or play space on multiple occasions within a week when given the opportunity."
+            "The student shows excitement or positive body language when invited to join movement activities",
+            "The student attempts physical challenges with adult encouragement and support"
           ],
           "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
         },
         {
           "band": "Progression Step 2",
           "observable_behaviours": [
-            "The student initiates participation in familiar active play or movement activities without adult prompting and persists for several minutes.",
-            "The student expresses preference for certain physical activities and seeks them out during free choice time.",
-            "The student attempts new movement challenges after observing peers or receiving encouragement, showing willingness to try despite initial hesitation."
+            "The student voluntarily participates in familiar physical activities without prompting",
+            "The student persists through simple movement challenges even when initially unsuccessful",
+            "The student seeks out opportunities to repeat enjoyable physical activities"
           ],
           "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
         },
         {
           "band": "Progression Step 3",
           "observable_behaviours": [
-            "The student independently chooses to engage in active play or structured physical activity and sustains effort across a range of different settings.",
-            "The student demonstrates resilience when finding a movement task difficult, adjusting their approach or asking for support rather than withdrawing.",
-            "The student talks positively about their own physical abilities and expresses interest in improving specific skills through practice."
+            "The student initiates participation in new or unfamiliar physical activities",
+            "The student encourages peers to join in movement activities or games",
+            "The student returns to physical challenges after setbacks with minimal adult support"
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
         },
         {
           "band": "Progression Step 4",
           "observable_behaviours": [
-            "The student maintains commitment to regular physical activity across different contexts and weathers, showing consistent engagement even when motivation fluctuates.",
-            "The student seeks out new physical challenges and activities beyond their immediate experience, exploring different sports or movement forms with sustained interest.",
-            "The student reflects on their own progress in physical activities and sets personal goals for improvement, demonstrating intrinsic motivation to develop competence."
+            "The student sets personal physical goals and works consistently toward achieving them",
+            "The student adapts their approach to physical challenges when initial strategies are unsuccessful",
+            "The student maintains engagement in physical activities across different environments and contexts"
           ],
           "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
         },
         {
           "band": "Progression Step 5",
           "observable_behaviours": [
-            "The student sustains active healthy behaviours as a valued part of their identity and daily routine, maintaining engagement across varied contexts and over extended periods without external reward.",
-            "The student advocates for active play and healthy movement in their peer group and community, encouraging others and modelling sustained participation.",
-            "The student independently adapts their approach to physical activity based on changing circumstances, personal interests, and evolving goals, demonstrating flexible and self-directed motivation."
+            "The student independently seeks out increasingly complex physical challenges",
+            "The student demonstrates sustained commitment to physical activities over extended periods despite obstacles",
+            "The student motivates and supports others in developing their own physical confidence and engagement"
           ],
           "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
         }
       ],
       "parent_prompts": [
-        "What physical activities or types of movement does your child choose to do at home or in the community without being asked, and how often do you notice them returning to these activities?",
-        "When your child finds a physical activity challenging or feels they are not good at something, what do you notice about how they respond—do they keep trying, ask for help, or tend to give up?",
-        "How does your child talk about their own body and physical abilities? Do you hear them express confidence, set goals for themselves, or show interest in getting better at particular activities?"
+        "What have you noticed about your child's enthusiasm for physical activities at home or in the community?",
+        "How does your child respond when they encounter physical challenges or activities that are difficult for them?",
+        "When does your child choose to be physically active without being asked or encouraged by adults?"
       ],
       "prerequisite_lts": [
-        "Understanding Health and Well-being Factors",
-        "Demonstrating Physical Movement Competence"
+        "Movement Skills Application and Transfer"
       ],
-      "developmental_conversation_protocol": "The synthesising conversation brings together observations of the student's self-initiated physical engagement, their responses to challenge and setback, and their emerging sense of themselves as an active person. The teacher, student, and optionally parent reflect on patterns of sustained motivation across different contexts and discuss what activities and conditions support the student's confidence and persistence in healthy, active behaviours.",
+      "developmental_conversation_protocol": "The conversation explores patterns of physical engagement across settings, discusses strategies for maintaining motivation through challenges, and identifies opportunities to build sustained commitment to movement and physical activity.",
       "stability_flag": "observation_indicators_unstable",
       "per_run_signatures": [
         {
@@ -100,7 +99,7 @@
           "signature": [
             [
               "Progression Step 1",
-              3
+              2
             ],
             [
               "Progression Step 2",
@@ -130,7 +129,7 @@
           "signature": [
             [
               "Progression Step 1",
-              2
+              3
             ],
             [
               "Progression Step 2",
@@ -163,61 +162,62 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_02_lt_01",
+      "lt_id": "cluster_03_lt_03",
       "bands": [
         {
           "band": "Progression Step 1",
           "observable_behaviours": [
-            "The student accepts help with personal hygiene routines when prompted by an adult.",
-            "The student responds to gentle reminders to use kind words or gentle touch with peers during structured activities.",
-            "The student shows awareness of basic comfort needs by communicating when hungry, tired, or uncomfortable."
+            "The student responds to adult prompts to notice how their body feels after different activities",
+            "The student shows awareness when reminded about basic health routines like washing hands or drinking water"
           ],
           "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
         },
         {
           "band": "Progression Step 2",
           "observable_behaviours": [
-            "The student initiates simple self-care tasks such as washing hands or tidying personal belongings with occasional reminders.",
-            "The student notices when a peer is upset and seeks adult guidance on how to help or comfort them.",
-            "The student demonstrates respect for others' belongings by asking permission before using them and returning items when asked."
+            "The student begins to make connections between their actions and how they feel physically or emotionally",
+            "The student occasionally chooses healthier options when given clear alternatives",
+            "The student notices and reports changes in their energy or mood during the day"
           ],
           "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
         },
         {
           "band": "Progression Step 3",
           "observable_behaviours": [
-            "The student manages personal hygiene and grooming routines independently and recognises the connection between self-care and feeling well.",
-            "The student shows consideration for others by offering help or comfort to peers without prompting in familiar situations.",
-            "The student respects personal boundaries and responds appropriately when others express discomfort with physical contact or shared space."
+            "The student regularly monitors their own physical and emotional states without prompting",
+            "The student makes deliberate adjustments to their behavior based on how they are feeling",
+            "The student seeks out activities or strategies they know support their wellbeing"
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
         },
         {
           "band": "Progression Step 4",
           "observable_behaviours": [
-            "The student makes deliberate choices about diet, rest, and physical activity that reflect awareness of their own wellbeing across different settings.",
-            "The student actively listens to others' concerns and adjusts their behaviour to show respect for different perspectives and emotional needs.",
-            "The student takes responsibility for maintaining a safe and respectful environment by addressing unkind behaviour or supporting peers who are excluded or struggling."
+            "The student consistently adapts their daily routines to maintain physical and emotional balance",
+            "The student recognizes early warning signs of stress or fatigue and takes preventive action",
+            "The student helps others notice connections between their behaviors and wellbeing"
           ],
           "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
         },
         {
           "band": "Progression Step 5",
           "observable_behaviours": [
-            "The student sustains self-care practices that support physical, emotional, and social wellbeing and reflects on how these choices affect their learning and relationships.",
-            "The student demonstrates empathy and respect across unfamiliar contexts by recognising and responding thoughtfully to the needs and dignity of others, including those from different backgrounds or experiences.",
-            "The student advocates for respectful treatment of themselves and others and takes initiative to challenge disrespect or harm when they encounter it."
+            "The student maintains health-conscious behaviors even in challenging or unfamiliar situations",
+            "The student independently develops and refines personal strategies for sustaining wellbeing over time",
+            "The student demonstrates long-term commitment to health behaviors that support both immediate and future wellbeing"
           ],
           "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
         }
       ],
       "parent_prompts": [
-        "What have you noticed about how your child looks after themselves at home—for example, their willingness to wash, dress, or eat without being asked, and how they talk about feeling healthy or unwell?",
-        "When your child is with family or friends, how do they respond when someone is sad, hurt, or upset? Do they show concern or try to help, and how do they treat others' feelings and belongings?",
-        "Have you seen your child stand up for themselves or others when something feels unfair or unkind, or ask questions about why people treat each other differently?"
+        "What have you noticed about how your child pays attention to their own physical and emotional needs at home?",
+        "When has your child made choices about food, sleep, or activities based on how they were feeling?",
+        "How does your child respond when they notice they are tired, stressed, or not feeling their best?"
       ],
-      "prerequisite_lts": [],
-      "developmental_conversation_protocol": "The teacher, student, and optionally parent reflect together on specific moments when the student showed care for themselves or others, exploring what prompted that care, how it felt, and how the student might sustain or extend that orientation across new situations.",
+      "prerequisite_lts": [
+        "Analyzing Physical-Emotional Connections"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on gathering evidence of the student's sustained commitment to health-conscious behaviors across different settings, exploring how they monitor and adapt their actions for ongoing wellbeing, and identifying patterns in their self-care practices over time.",
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -225,160 +225,6 @@
           "signature": [
             [
               "Progression Step 1",
-              3
-            ],
-            [
-              "Progression Step 2",
-              3
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              3
-            ],
-            [
-              "Progression Step 2",
-              3
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              3
-            ],
-            [
-              "Progression Step 2",
-              3
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_03_lt_02",
-      "bands": [
-        {
-          "band": "Progression Step 1",
-          "observable_behaviours": [
-            "The student names a feeling they are experiencing in the moment when prompted by an adult.",
-            "The student notices when their feeling changes from one activity to another and mentions it with support."
-          ],
-          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
-        },
-        {
-          "band": "Progression Step 2",
-          "observable_behaviours": [
-            "The student describes how their feeling shifted during a familiar activity without being asked.",
-            "The student recognises that the same situation can produce different feelings at different times.",
-            "The student uses language that acknowledges feelings are not permanent, such as 'I was sad but now I'm happy'."
-          ],
-          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
-        },
-        {
-          "band": "Progression Step 3",
-          "observable_behaviours": [
-            "The student explains how their emotions changed in response to events during their day, showing awareness of the sequence.",
-            "The student identifies that their feelings about a person or activity can vary depending on circumstances.",
-            "The student reflects on how the same emotion can feel different in intensity or expression across different moments."
-          ],
-          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
-        },
-        {
-          "band": "Progression Step 4",
-          "observable_behaviours": [
-            "The student articulates how their emotional responses shift across unfamiliar contexts and demonstrates flexibility in managing those shifts.",
-            "The student recognises patterns in how their emotions change over time and discusses what influences those patterns.",
-            "The student applies the understanding that emotions are fluid to support peers who are experiencing difficult feelings."
-          ],
-          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
-        },
-        {
-          "band": "Progression Step 5",
-          "observable_behaviours": [
-            "The student sustains the understanding that emotions are dynamic across extended periods and varied social, academic, and personal contexts.",
-            "The student independently reflects on how their emotional landscape evolves and uses this insight to make choices about their own well-being.",
-            "The student demonstrates nuanced recognition that emotions can coexist, layer, or transform, and communicates this complexity to others."
-          ],
-          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
-        }
-      ],
-      "parent_prompts": [
-        "Have you noticed your child describing their feelings differently at different times of the day, or talking about how their mood changed during an activity?",
-        "When your child has felt upset or frustrated, have they mentioned that the feeling got better, or talked about times when they felt differently about the same thing?",
-        "Does your child notice or comment on how their emotions shift in different situations, such as at home versus with friends, or before and after something they enjoy?"
-      ],
-      "prerequisite_lts": [
-        "Connecting Experiences to Emotional Well-being"
-      ],
-      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent explores specific moments when the student noticed their emotions changing, what they observed about those shifts, and how they are beginning to apply this understanding to navigate their emotional experiences across different settings and relationships.",
-      "stability_flag": "observation_indicators_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
               2
             ],
             [
@@ -413,163 +259,6 @@
             ],
             [
               "Progression Step 2",
-              2
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              2
-            ],
-            [
-              "Progression Step 2",
-              3
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 2), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 2, (('Progression Step 1', 2), ('Progression Step 2', 2), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_04_lt_02",
-      "bands": [
-        {
-          "band": "Progression Step 1",
-          "observable_behaviours": [
-            "The student uses simple words to name feelings when prompted by an adult in one-to-one or small group settings.",
-            "The student listens without visible discomfort when a peer or adult mentions feeling sad, worried, or happy in everyday conversation.",
-            "The student responds to direct questions about how they feel by naming a basic emotion rather than deflecting or staying silent."
-          ],
-          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
-        },
-        {
-          "band": "Progression Step 2",
-          "observable_behaviours": [
-            "The student initiates brief mentions of their own feelings or mood during informal peer interactions without adult prompting.",
-            "The student asks a peer or adult a simple question about how they are feeling in response to observing a change in their behaviour or expression.",
-            "The student participates in structured circle time or group discussions about feelings and emotions without withdrawing or showing embarrassment."
-          ],
-          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
-        },
-        {
-          "band": "Progression Step 3",
-          "observable_behaviours": [
-            "The student brings up their own emotional experiences or worries in conversation with peers or trusted adults across different settings, showing it as a normal part of talking.",
-            "The student notices when a peer seems upset or withdrawn and asks them directly about their feelings, demonstrating curiosity rather than avoidance.",
-            "The student uses emotional language naturally when describing their day or experiences, integrating feelings talk into everyday storytelling."
-          ],
-          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
-        },
-        {
-          "band": "Progression Step 4",
-          "observable_behaviours": [
-            "The student sustains open conversation about mental health and emotional well-being with peers, including discussing stress, anxiety, or low mood without minimising or joking it away.",
-            "The student responds to a peer's emotional disclosure by validating their feelings and continuing the conversation, rather than changing the subject or offering quick reassurance.",
-            "The student references their own experiences with difficult emotions or mental health in group settings, modelling that such talk is ordinary and acceptable."
-          ],
-          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
-        },
-        {
-          "band": "Progression Step 5",
-          "observable_behaviours": [
-            "The student consistently initiates or sustains conversations about mental health and emotional well-being across unfamiliar peer groups and community contexts, treating it as a routine part of connection.",
-            "The student actively encourages peers to talk about their feelings and well-being by asking thoughtful follow-up questions and demonstrating genuine interest, even when the peer initially hesitates.",
-            "The student reflects on their own mental health and emotional patterns in conversation with others, connecting their feelings to situations or choices, and inviting peers to do the same."
-          ],
-          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
-        }
-      ],
-      "parent_prompts": [
-        "When your child talks about their day or their feelings at home, do you notice them mentioning emotions or worries without you having to ask? What kinds of feelings do they bring up naturally?",
-        "Have you observed your child asking a friend or family member how they are feeling, or showing interest in someone else's mood or well-being without being told to do so?",
-        "Does your child seem comfortable talking about difficult feelings like worry, sadness, or frustration in everyday conversation, or do they tend to avoid or change the subject when emotions come up?"
-      ],
-      "prerequisite_lts": [
-        "Communicating Feelings Appropriately"
-      ],
-      "developmental_conversation_protocol": "The synthesising conversation between teacher, student, and optionally parent explores the student's comfort and frequency in bringing up feelings and mental health in peer and family contexts, and identifies settings where the student feels safe normalising such talk. The conversation also examines whether the student is noticing and responding to others' emotional cues, and what language or prompts help sustain open emotional conversation.",
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
-              3
-            ],
-            [
-              "Progression Step 2",
-              3
-            ],
-            [
-              "Progression Step 3",
-              3
-            ],
-            [
-              "Progression Step 4",
-              3
-            ],
-            [
-              "Progression Step 5",
-              3
-            ],
-            [
-              "parents",
-              3
-            ]
-          ],
-          "parent_prompt_count": 3
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              3
-            ],
-            [
-              "Progression Step 2",
               3
             ],
             [
@@ -596,7 +285,7 @@
           "signature": [
             [
               "Progression Step 1",
-              3
+              2
             ],
             [
               "Progression Step 2",
@@ -632,53 +321,982 @@
         {
           "band": "Progression Step 1",
           "observable_behaviours": [
-            "The student offers a simple idea or preference when invited to contribute to a group decision in structured settings.",
-            "The student notices when their suggestion has been included in a shared choice and shows awareness that their input mattered."
+            "The student pauses and takes deep breaths when prompted by an adult during moments of strong emotion",
+            "The student uses simple self-soothing strategies like counting or holding a comfort object when experiencing frustration"
           ],
           "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
         },
         {
           "band": "Progression Step 2",
           "observable_behaviours": [
-            "The student volunteers contributions to group decisions without prompting and listens when others share their ideas.",
-            "The student recognises that different people in the group have different views and accepts when the group chooses something other than their own suggestion."
+            "The student recognises their emotional state and names it using basic emotion words without adult prompting",
+            "The student independently chooses from familiar calming strategies when feeling overwhelmed",
+            "The student maintains emotional balance during routine transitions and minor disappointments"
           ],
           "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
         },
         {
           "band": "Progression Step 3",
           "observable_behaviours": [
-            "The student explains why their contribution matters to a shared decision and asks questions about others' ideas before the group decides.",
-            "The student reflects on how their input influenced what the group chose and identifies moments when their thinking changed because of someone else's contribution."
+            "The student demonstrates consistent emotional self-regulation during group activities and collaborative work",
+            "The student notices early warning signs of emotional escalation and applies appropriate regulation techniques",
+            "The student maintains mindful awareness of their emotional responses across different classroom contexts"
           ],
           "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
         },
         {
           "band": "Progression Step 4",
           "observable_behaviours": [
-            "The student actively builds on others' contributions during decision-making and articulates how collective input strengthens the final choice.",
-            "The student seeks out opportunities to contribute to decisions in unfamiliar groups and adapts their approach based on how that particular group works."
+            "The student sustains emotional equilibrium during challenging academic tasks and social conflicts",
+            "The student demonstrates emotional self-regulation that supports their learning and relationships throughout the school day",
+            "The student shows awareness of how their emotional state affects others and adjusts accordingly"
           ],
           "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
         },
         {
           "band": "Progression Step 5",
           "observable_behaviours": [
-            "The student initiates and sustains collaborative decision-making processes across different contexts, consistently valuing and integrating diverse perspectives into shared outcomes.",
-            "The student demonstrates sustained commitment to collective decision-making by reflecting critically on their own contributions, recognising power dynamics, and actively ensuring that quieter voices are heard and valued."
+            "The student maintains consistent emotional self-regulation as their natural approach across all school and community contexts",
+            "The student demonstrates sustained mindful self-awareness that informs their responses to unexpected challenges",
+            "The student models healthy emotional regulation for peers and contributes to positive group emotional climate"
           ],
           "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
         }
       ],
       "parent_prompts": [
-        "When your child is involved in family decisions, such as planning an outing or choosing what to do together, what have you noticed about whether they offer their ideas and how they respond when the family chooses something different from what they suggested?",
-        "Have you seen your child ask questions about why other family members want something, or change their mind because of what someone else said? What does that look like?",
-        "In situations where your child is part of a group outside the family, such as with friends or in a club, what have you noticed about whether they speak up, listen to others, and seem to value what different people bring to decisions?"
+        "What have you noticed about how your child handles disappointment or frustration at home, and do they seem to have strategies they use naturally?",
+        "When your child faces challenging situations or changes in routine, how do they typically respond emotionally?",
+        "Have you observed your child being aware of their own feelings and emotions, and how does this show up in their daily interactions with family?"
       ],
       "prerequisite_lts": [
-        "Analysing Decision Impacts and Influencing Factors"
+        "Mindful Self-Awareness Development",
+        "Strategic Emotional Regulation"
       ],
-      "developmental_conversation_protocol": "The synthesising conversation brings together observations of the student's contributions across different decision-making contexts, explores what the student notices about their own role and the roles of others, and considers how the student's understanding of collective value has grown. The conversation may include reflection on a specific decision the student participated in and what they learned from hearing different perspectives.",
+      "developmental_conversation_protocol": "The conversation synthesises observations of the student's consistent emotional self-regulation patterns across contexts, exploring how mindful self-awareness supports their sustained emotional balance and contributes to their overall wellbeing and relationships.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_06_lt_03",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student approaches familiar adults when experiencing distress or confusion",
+            "The student uses simple words or gestures to indicate when something feels wrong or scary"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student asks specific trusted adults for help with emotional difficulties",
+            "The student mentions that talking about feelings is okay when peers seem upset",
+            "The student identifies when they need support and communicates this to appropriate people"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student seeks help from multiple sources including teachers, counselors, or peer supporters when facing mental health challenges",
+            "The student openly discusses mental health topics with classmates without stigmatizing language",
+            "The student encourages friends to talk to adults when they notice concerning behaviors"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student advocates for mental health resources in school or community settings",
+            "The student initiates conversations about mental health awareness with diverse groups",
+            "The student connects peers with appropriate support services when they express mental health concerns"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student leads initiatives to reduce mental health stigma in their community",
+            "The student mentors younger students in help-seeking behaviors and mental health advocacy",
+            "The student collaborates with adults to develop mental health support systems in various settings"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child faces emotional challenges at home, how do they go about asking for help or support?",
+        "What have you noticed about how your child talks about mental health or emotional wellbeing with family members or friends?",
+        "Have you observed your child encouraging others to seek help or talk openly about their feelings and mental health?"
+      ],
+      "prerequisite_lts": [
+        "Communicating About Feelings",
+        "Identifying Support Resources"
+      ],
+      "developmental_conversation_protocol": "The conversation explores how the student recognizes their own mental health needs and takes action to seek support, while examining their role in creating safe spaces for mental health discussions. Teacher, student, and optionally parent discuss observed help-seeking behaviors and advocacy efforts across different contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_02",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student pauses when another child cries or shows distress",
+            "The student looks at faces when others express strong emotions",
+            "The student seeks adult help when noticing someone is upset"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student names basic emotions they observe in others during daily interactions",
+            "The student adjusts their voice or approach when speaking to someone who appears sad or worried",
+            "The student notices and comments on emotional changes in familiar people"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student recognizes emotional cues in group settings and responds appropriately",
+            "The student demonstrates understanding of how their actions affect others' feelings",
+            "The student offers comfort or support when peers experience disappointment or frustration"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student identifies underlying emotions beyond surface expressions in various social situations",
+            "The student adapts their communication style based on others' emotional states across different contexts",
+            "The student anticipates how events or changes might affect others' feelings"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student maintains awareness of multiple people's emotional states simultaneously in complex social environments",
+            "The student demonstrates sustained attention to emotional dynamics in unfamiliar groups or communities",
+            "The student initiates supportive actions based on subtle emotional cues without prompting"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends are upset or emotional?",
+        "When your child is around others who are experiencing strong feelings, what do you observe about their awareness and reactions?",
+        "Have you seen your child pick up on emotional cues or changes in mood that others might miss?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student demonstrated empathetic awareness, discussing what emotional cues they noticed and how they responded. Teacher, student, and optionally parent identify patterns in the student's attention to others' feelings across different settings and relationships.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Progression Step 1', 3), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 2, (('Progression Step 1', 2), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_08_lt_03",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student offers comfort items or gentle touch when peers are visibly upset",
+            "The student responds to adult prompts to help with simple acts of care like sharing snacks or toys"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student initiates helping behaviors when classmates struggle with tasks or materials",
+            "The student shows patience with younger children during mixed-age activities",
+            "The student offers apologies and attempts to make amends after causing distress to others"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student advocates for peers who are excluded or treated unfairly in group situations",
+            "The student adjusts their communication style to be gentler when interacting with distressed individuals",
+            "The student takes initiative to include isolated classmates in activities without adult direction"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student organizes or participates in compassionate actions that extend beyond their immediate peer group",
+            "The student demonstrates self-compassion by seeking appropriate help and speaking kindly to themselves during difficulties",
+            "The student recognizes and responds to subtle signs of distress in others across different social contexts"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student sustains compassionate responses even when facing personal stress or conflict",
+            "The student mentors others in developing compassionate approaches to challenging interpersonal situations",
+            "The student initiates systemic changes or advocacy efforts to address broader issues of suffering or injustice"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends are going through difficult times?",
+        "When your child makes mistakes or faces challenges, how do they treat themselves and what kind of support do they seek?",
+        "Have you observed your child taking action to help others, even when it might be inconvenient or require extra effort from them?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Emotional Impact"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student has enacted compassionate responses, examining both the motivations behind their actions and the impact on themselves and others. Discussion includes identifying opportunities for extending compassionate action and reflecting on how self-compassion supports sustained care for others.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_12_lt_03",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student notices when different groups have different ways of doing things",
+            "The student asks questions about why certain rules exist in specific settings"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student identifies unwritten rules that groups follow without being told",
+            "The student compares how the same situation is handled differently across different groups",
+            "The student notices when group members automatically follow established patterns"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student questions why certain group behaviors continue even when they seem unnecessary",
+            "The student recognizes when group norms influence individual choices",
+            "The student identifies situations where people follow rules without understanding their purpose"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student analyzes how social norms become accepted as normal within communities",
+            "The student examines instances where group behaviors go unquestioned despite potential problems",
+            "The student explores how established norms can exclude or disadvantage certain individuals"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student critically evaluates the origins and ongoing relevance of established social norms",
+            "The student challenges group behaviors that perpetuate unfairness while understanding social dynamics",
+            "The student demonstrates awareness of how unconscious acceptance of norms shapes community structures"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about your child questioning family traditions or household rules, especially asking why we do things a certain way?",
+        "When your child is with different groups of friends or in various settings, have you observed them commenting on different expectations or ways of behaving?",
+        "Have you seen your child notice or point out when people seem to follow unspoken rules or do things just because that's how they've always been done?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Social Group Dynamics"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples where the student has noticed, questioned, or analyzed social norms and group behaviors, focusing on their developing ability to recognize when established patterns go unchallenged and the implications of this awareness.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_13_lt_01",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student responds positively when adults model caring gestures like gentle touch or soothing voice",
+            "The student shows distress when witnessing others in distress or conflict",
+            "The student seeks comfort from familiar adults when upset rather than acting out toward peers"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student uses simple caring words like 'sorry' or 'are you okay' when prompted by adults",
+            "The student shares toys or materials when directly asked by teachers",
+            "The student shows concern through facial expressions or body language when classmates are hurt or sad"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student initiates helping behaviors like offering tissues to crying peers or helping clean up spills",
+            "The student uses polite language consistently across different social settings without adult reminders",
+            "The student includes isolated classmates in group activities or play"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student mediates conflicts between peers by suggesting fair solutions or compromises",
+            "The student adjusts communication style appropriately when interacting with younger children or adults",
+            "The student advocates for classmates who are being treated unfairly or excluded"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student maintains respectful interactions even during disagreements or when feeling frustrated",
+            "The student demonstrates care for community members beyond immediate peer group including staff and visitors",
+            "The student takes initiative to create inclusive environments in new or unfamiliar social situations"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child treats family members, friends, or strangers when they interact at home or in community settings?",
+        "When your child sees someone who is upset or needs help, how do they typically respond?",
+        "How does your child handle disagreements or conflicts with siblings, friends, or family members?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation synthesizes observations of caring and respectful behaviors across home, school, and community contexts to understand the student's developing capacity for sustained pro-social orientation. Discussion focuses on growth patterns in empathy expression and respectful interaction consistency across different social situations.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_13_lt_02",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student responds positively when adults model sharing or turn-taking behaviors",
+            "The student shows different interaction patterns with familiar adults versus peers",
+            "The student notices when group activities change and adjusts participation level"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student modifies voice volume and body language when moving between quiet work time and active play",
+            "The student demonstrates different greeting behaviors with teachers, classmates, and visitors",
+            "The student recognizes when a peer needs help and offers simple assistance"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student adapts communication style when working with younger children versus same-age peers",
+            "The student adjusts collaborative approaches when joining established groups with different dynamics",
+            "The student recognizes cultural differences in social interactions and responds respectfully"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student flexibly shifts between leadership and supportive roles based on group needs and context",
+            "The student adapts conflict resolution strategies to match the personalities and preferences of those involved",
+            "The student modifies pro-social behaviors when engaging with community members outside school"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student demonstrates sophisticated awareness of power dynamics and adjusts pro-social engagement accordingly",
+            "The student initiates and sustains adaptive pro-social behaviors across diverse cultural and social contexts",
+            "The student mentors others in developing flexible pro-social skills for different situations"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child interacts differently with various family members, friends, or community members?",
+        "When your child encounters new social situations or groups, what changes do you observe in their behavior or approach?",
+        "How does your child show kindness or helpfulness, and have you seen this adapt based on who they're with or where they are?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation explores specific examples of how the student recognizes different social contexts and adapts their pro-social behaviors accordingly, with teacher observations, student reflections on their flexible approaches, and parent insights about adaptive social engagement across home and community settings.",
       "stability_flag": "observation_indicators_unstable",
       "per_run_signatures": [
         {
@@ -720,19 +1338,176 @@
             ],
             [
               "Progression Step 2",
-              2
+              3
             ],
             [
               "Progression Step 3",
-              2
+              3
             ],
             [
               "Progression Step 4",
-              2
+              3
             ],
             [
               "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              3
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Progression Step 1', 3), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 2, (('Progression Step 1', 2), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_03",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student repeats positive statements about fairness or kindness when prompted by adults",
+            "The student shows discomfort or confusion when witnessing obviously unfair treatment of peers"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student spontaneously shares positive messages about treating others well during group activities",
+            "The student asks adults for help when they notice someone being treated unfairly",
+            "The student expresses disagreement with clearly harmful behaviours using simple language"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student actively encourages peers to include others or be kind without adult prompting",
+            "The student speaks up against name-calling or exclusion when they witness it",
+            "The student explains to others why certain behaviours are hurtful or unfair"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student initiates conversations about fairness and respect in new social situations",
+            "The student challenges discriminatory comments or jokes even when it might be socially uncomfortable",
+            "The student models inclusive behaviour and explains their reasoning to peers who ask"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student consistently advocates for positive values across different contexts including online spaces",
+            "The student addresses harmful attitudes by engaging others in thoughtful dialogue about underlying beliefs",
+            "The student takes leadership roles in promoting positive community values even when facing resistance"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when they see unfairness or unkindness toward others at home or in the community?",
+        "When has your child spoken up about something they felt was wrong or tried to encourage positive behaviour in family situations?",
+        "How does your child talk about treating others well, and do you see them actively promoting kindness or fairness in their daily interactions?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Social Influence on Identity",
+        "Evaluating Values and Social Influences"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific instances where the student has promoted positive values or challenged harmful ones, exploring their reasoning and the impact of their actions. Discussion includes identifying opportunities for value-based leadership and reflecting on the courage required to stand up for what is right.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
               2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
             ],
             [
               "parents",
@@ -750,19 +1525,19 @@
             ],
             [
               "Progression Step 2",
-              2
+              3
             ],
             [
               "Progression Step 3",
-              2
+              3
             ],
             [
               "Progression Step 4",
-              2
+              3
             ],
             [
               "Progression Step 5",
-              2
+              3
             ],
             [
               "parents",
@@ -772,19 +1547,633 @@
           "parent_prompt_count": 3
         }
       ],
-      "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 3), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)): 1, (('Progression Step 1', 2), ('Progression Step 2', 2), ('Progression Step 3', 2), ('Progression Step 4', 2), ('Progression Step 5', 2), ('parents', 3)): 2}"
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_15_lt_02",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student notices when relationships feel different in different places, such as being quieter around unfamiliar adults than with family",
+            "The student shows confusion or asks simple questions when the same person acts differently in different settings"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student comments on how relationships change in different situations, noting when friends act differently at school versus at home",
+            "The student begins to adjust their own behaviour based on relationship context, speaking more formally with teachers than with peers",
+            "The student expresses curiosity about why people have different types of relationships with the same person"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student articulates how the same relationship can have multiple dimensions, explaining how a teacher can be both caring and strict",
+            "The student recognises that relationships involve ongoing negotiation, observing how friends work through disagreements over time",
+            "The student demonstrates understanding that relationship complexity increases with context, noting how family dynamics shift during stressful periods"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student analyses how cultural and social factors influence relationship expectations, discussing how different families have different rules about respect",
+            "The student reflects on how their own relationships contain contradictions, acknowledging both positive and challenging aspects of close friendships",
+            "The student anticipates how relationship dynamics might change in new contexts, preparing differently for interactions in formal versus informal settings"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student navigates complex relationship tensions with awareness of multiple perspectives, mediating between friends while acknowledging competing loyalties",
+            "The student demonstrates sophisticated understanding of relationship evolution, discussing how trust and boundaries develop differently across various relationships",
+            "The student integrates awareness of relationship complexity into decision-making, considering how their choices might affect multiple relationship dimensions simultaneously"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
       ],
+      "parent_prompts": [
+        "What have you noticed about how your child talks about the different sides of their relationships with friends, teachers, or family members?",
+        "When has your child shown understanding that relationships can be both positive and challenging at the same time?",
+        "How does your child respond when they notice that people act differently with them in different situations or places?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Relationship Types and Dynamics"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples of when the student has noticed relationship complexity, discussing how they navigate situations where relationships feel different across contexts and how they make sense of the multiple dimensions present in their important relationships.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_16_lt_02",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student seeks adult support when experiencing conflict with peers",
+            "The student uses gentle touch or proximity to show care for familiar people"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student waits for others to finish speaking before responding in small group activities",
+            "The student notices when someone appears upset and offers simple comfort",
+            "The student includes peers who are standing alone during play"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student adjusts communication style when speaking with different age groups",
+            "The student actively listens by asking follow-up questions about others' experiences",
+            "The student mediates minor disagreements between classmates"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student maintains respectful dialogue even when holding opposing viewpoints",
+            "The student seeks to understand cultural differences in communication styles",
+            "The student takes initiative to repair relationships after misunderstandings"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student models respectful communication patterns that influence peer group dynamics",
+            "The student navigates complex relationship tensions while maintaining connection with all parties",
+            "The student advocates for respectful treatment of others in challenging social situations"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members disagree or have different opinions?",
+        "When your child talks about friendships or peer relationships, what patterns do you notice in how they describe treating others?",
+        "How does your child handle situations at home when someone is upset or needs support?"
+      ],
+      "prerequisite_lts": [
+        "Expressing and Receiving Communication"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples of respectful communication the student has demonstrated, discusses relationship challenges they are navigating, and identifies opportunities to strengthen connection-building skills across different social contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_17_lt_02",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student seeks adult help when relationships become difficult or uncomfortable",
+            "The student shows willingness to share toys or materials when prompted by adults"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student apologises when reminded after hurting someone's feelings",
+            "The student includes others in play activities when encouraged by peers or adults",
+            "The student asks friends how they are feeling when they notice upset"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student initiates conversations to repair relationships after disagreements",
+            "The student remembers and follows through on promises made to friends",
+            "The student notices when group dynamics exclude someone and takes action to include them"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student maintains friendships across different social settings and activities",
+            "The student adjusts communication style to support friends with different needs or preferences",
+            "The student proactively checks in with friends during stressful periods"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student demonstrates consistent relationship maintenance behaviours across family, peer, and community contexts",
+            "The student mentors younger students in developing positive relationship skills",
+            "The student sustains long-term friendships through major life transitions and changes"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child maintains friendships over time, especially when conflicts arise?",
+        "When your child has disagreements with siblings or friends, what do you observe about their efforts to repair those relationships?",
+        "How does your child show ongoing care and commitment to the important relationships in their life?"
+      ],
+      "prerequisite_lts": [
+        "Conflict Resolution Strategies"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific examples of how the student maintains relationships across different contexts, examining their strategies for sustaining positive connections and their commitment to working through challenges with others.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_18_lt_03",
+      "bands": [
+        {
+          "band": "Progression Step 1",
+          "observable_behaviours": [
+            "The student waits for others to finish speaking before talking",
+            "The student asks before taking or using items that belong to classmates"
+          ],
+          "self_reflection_prompt": "Tell me about a time this term when you tried something new. What did you do, and how did it feel?"
+        },
+        {
+          "band": "Progression Step 2",
+          "observable_behaviours": [
+            "The student acknowledges when others express different opinions without dismissing them",
+            "The student includes peers who are being left out of group activities",
+            "The student stops actions when told they are making someone uncomfortable"
+          ],
+          "self_reflection_prompt": "Describe one thing you have noticed about yourself this term. When does it happen, and when does it not?"
+        },
+        {
+          "band": "Progression Step 3",
+          "observable_behaviours": [
+            "The student actively seeks consent before physical contact or entering personal space",
+            "The student defends peers' right to participate when others try to exclude them",
+            "The student respects others' choices about sharing personal information"
+          ],
+          "self_reflection_prompt": "Compare what you have noticed in yourself with what your teacher or family has noticed. Where do these accounts agree, and where do they differ?"
+        },
+        {
+          "band": "Progression Step 4",
+          "observable_behaviours": [
+            "The student challenges discriminatory language or behaviour directed at others",
+            "The student ensures equal speaking opportunities for all group members during discussions",
+            "The student respects cultural and religious practices that differ from their own"
+          ],
+          "self_reflection_prompt": "Analyse a pattern you can see in yourself across two or more different settings this term. What changes across settings, and why do you think it changes?"
+        },
+        {
+          "band": "Progression Step 5",
+          "observable_behaviours": [
+            "The student advocates for systemic changes when they observe patterns of rights violations",
+            "The student mentors younger students in understanding and respecting others' rights",
+            "The student consistently applies rights-respecting principles across diverse and unfamiliar social contexts"
+          ],
+          "self_reflection_prompt": "Trace how your understanding of yourself in this area has developed over time. What values now guide how you act, and what would you still like to develop?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends say no to their requests?",
+        "When your child is playing with siblings or friends, how do they handle situations where others want different things?",
+        "Have you observed your child standing up for others or speaking out when they see someone being treated unfairly?"
+      ],
+      "prerequisite_lts": [
+        "Understanding and Advocating for Rights"
+      ],
+      "developmental_conversation_protocol": "The conversation explores specific instances where the student demonstrated respect for others' rights, identifies contexts where this orientation is developing, and discusses how rights-respecting behaviour connects to building healthy relationships and communities.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              2
+            ],
+            [
+              "Progression Step 2",
+              3
+            ],
+            [
+              "Progression Step 3",
+              3
+            ],
+            [
+              "Progression Step 4",
+              3
+            ],
+            [
+              "Progression Step 5",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     }
   ],
   "halted_lts": [
     {
-      "lt_id": "cluster_08_lt_02",
-      "lt_name": "Valuing and Prioritising Healthy Relationships",
+      "lt_id": "cluster_10_lt_03",
+      "lt_name": "Sustained Impact Awareness",
       "halt_reason": "observation_indicators_unreliable",
-      "diagnostic": "no signature reached 2/3 agreement; signatures=[(('Progression Step 1', 3), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)), (('Progression Step 1', 2), ('Progression Step 2', 2), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)), (('Progression Step 1', 2), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3))]"
+      "diagnostic": "no signature reached 2/3 agreement; signatures=[(('Progression Step 1', 3), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)), (('Progression Step 1', 2), ('Progression Step 2', 3), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3)), (('Progression Step 1', 2), ('Progression Step 2', 2), ('Progression Step 3', 3), ('Progression Step 4', 3), ('Progression Step 5', 3), ('parents', 3))]"
     }
   ]
 }

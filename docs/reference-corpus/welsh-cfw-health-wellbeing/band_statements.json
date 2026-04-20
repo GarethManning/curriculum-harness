@@ -1,33 +1,33 @@
 {
   "reference_authoring_version": "0.3.0",
-  "source_slug": "wales-cfw-health-wellbeing-sow",
-  "model": "claude-haiku-4-5-20251001",
+  "source_slug": "welsh-cfw-health-wellbeing-ps-descriptions",
+  "model": "claude-sonnet-4-20250514",
   "temperature": 0.3,
   "runs": 3,
   "sets": [
     {
-      "lt_id": "cluster_01_lt_02",
+      "lt_id": "cluster_02_lt_01",
       "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can perform basic movement skills with adult support and guidance."
+          "statement": "I can identify basic food groups with support and recognise healthy foods."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can perform fundamental movement skills with increasing independence and control."
+          "statement": "I can describe different food groups and explain why we need variety in our diet."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can perform movement skills with precision and adapt them to different contexts."
+          "statement": "I can explain the principles of balanced diet and describe how nutrition affects our health."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can perform complex movement sequences and explain how to improve my technique."
+          "statement": "I can analyse balanced diet principles and evaluate how different nutritional choices impact physical well-being."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can perform and evaluate movement skills across varied contexts, justifying choices made."
+          "statement": "I can justify balanced diet principles and critically evaluate nutritional impacts across diverse health contexts."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -41,15 +41,15 @@
             ],
             [
               "Progression Step 2",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 3",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 4",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 5",
@@ -59,23 +59,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can perform basic movement skills with adult support and guidance."
+              "statement": "I can identify basic food groups with support and recognise healthy foods."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can perform fundamental movement skills independently with increasing body control."
+              "statement": "I can describe different food groups and explain why we need variety in our diet."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can perform combined movement skills with accuracy in structured activities."
+              "statement": "I can explain the principles of balanced diet and describe how nutrition affects our health."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can perform complex movement sequences with precision across varied contexts."
+              "statement": "I can analyse balanced diet principles and evaluate how different nutritional choices impact physical well-being."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can perform and adapt movement skills strategically in unfamiliar and challenging situations."
+              "statement": "I can justify balanced diet principles and critically evaluate nutritional impacts across diverse health contexts."
             }
           ]
         },
@@ -84,11 +84,11 @@
           "signature": [
             [
               "Progression Step 1",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 2",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 3",
@@ -106,23 +106,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can perform basic movement skills with adult support and guidance."
+              "statement": "I can identify basic food groups with support and describe why eating is important."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can perform fundamental movement skills with increasing independence and control."
+              "statement": "I can describe different food groups and explain how they help keep my body healthy."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can perform movement skills with precision and adapt them to different contexts."
+              "statement": "I can explain the principles of balanced diet and describe how nutrition affects physical health."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can perform complex movement sequences and explain how to improve my technique."
+              "statement": "I can analyse balanced diet principles and explain how specific nutrients impact physical health and well-being."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can perform and evaluate movement skills across varied contexts, justifying choices made."
+              "statement": "I can evaluate balanced diet principles and justify how nutritional choices influence long-term health outcomes across populations."
             }
           ]
         },
@@ -135,7 +135,7 @@
             ],
             [
               "Progression Step 2",
-              "short"
+              "medium"
             ],
             [
               "Progression Step 3",
@@ -153,231 +153,229 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can perform basic movement skills with adult support and guidance."
+              "statement": "I can identify basic food groups with support and recognise healthy foods."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can perform fundamental movement and exercise skills with increasing independence."
+              "statement": "I can describe different food groups and explain why we need variety in our diet."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can perform a range of movement skills with control and coordination in familiar contexts."
+              "statement": "I can explain balanced diet principles and describe how nutrition affects our physical health."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can perform complex movement and exercise skills with precision across different activities and environments."
+              "statement": "I can analyse balanced diet principles and justify how specific nutritional choices impact overall well-being."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can perform and adapt movement skills with precision and reasoning across varied and unfamiliar physical contexts."
+              "statement": "I can evaluate complex nutritional principles and apply balanced diet knowledge across diverse health contexts."
             }
           ]
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 'short'), ('Progression Step 2', 'short'), ('Progression Step 3', 'short'), ('Progression Step 4', 'short'), ('Progression Step 5', 'medium')): 1, (('Progression Step 1', 'short'), ('Progression Step 2', 'short'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 2}"
+        "signature_counts={(('Progression Step 1', 'short'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 2, (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 1}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_03_lt_01",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Progression Step 1",
-          "statement": "I can identify how my feelings change in response to different experiences."
-        },
-        {
-          "band": "Progression Step 2",
-          "statement": "I can describe connections between my experiences and how I feel emotionally."
-        },
-        {
-          "band": "Progression Step 3",
-          "statement": "I can explain how specific experiences affect my emotional responses and well-being."
-        },
-        {
-          "band": "Progression Step 4",
-          "statement": "I can analyse how my emotional responses to experiences influence my overall mental health."
-        },
-        {
-          "band": "Progression Step 5",
-          "statement": "I can evaluate and justify how patterns of experiences shape my emotional well-being across different contexts."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "short"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify how my feelings change in response to different experiences."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe connections between my experiences and how I feel emotionally."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how specific experiences affect my emotional responses and well-being."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how my emotional responses to experiences influence my overall mental health."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate and justify how patterns of experiences shape my emotional well-being across different contexts."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify how my feelings change in response to different experiences."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe connections between my experiences and how they affect my emotional state."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how specific experiences influence my emotional responses and overall well-being."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how patterns of experiences shape my emotional responses and mental health over time."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate how experiences and emotional responses interact to influence well-being across different contexts."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "short"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify how my feelings change in response to different experiences."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe connections between my experiences and how I feel emotionally."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how specific experiences affect my emotional responses and well-being."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how my emotional responses to experiences influence my mental health over time."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can justify how managing emotional responses to experiences supports sustained mental health and well-being."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 'short'), ('Progression Step 2', 'short'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 2, (('Progression Step 1', 'short'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_05_lt_01",
+      "lt_id": "cluster_02_lt_02",
       "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify simple consequences of my own decisions on myself and others around me."
+          "statement": "I can identify healthy foods with support and make simple food choices."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can describe how decisions affect different people and recognise some factors that influence my choices."
+          "statement": "I can explain why some foods are healthier and make informed choices independently."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can explain how decisions impact myself, others, and society, and analyse key factors influencing decision-making."
+          "statement": "I can compare nutritional values of foods and make informed choices for different situations."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can evaluate complex decision impacts across multiple contexts and justify how various influencing factors shape outcomes."
+          "statement": "I can analyse nutritional information to make informed food choices that meet specific health needs."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can analyse decision impacts and influencing factors in unfamiliar situations and apply insights to inform future choices."
+          "statement": "I can evaluate and justify food choices using nutritional knowledge across diverse and unfamiliar contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify healthy foods with support and make simple food choices."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can explain why some foods are healthier and make informed choices independently."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can compare nutritional values of foods and make informed choices for different situations."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse nutritional information to make informed food choices that meet specific health needs."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate and justify food choices using nutritional knowledge across diverse and unfamiliar contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify healthy foods with guidance and make simple food choices."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe why certain foods are healthy and make appropriate choices for meals."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain nutritional benefits of foods and make informed choices for balanced eating."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse nutritional information to make reasoned food choices that support specific health goals."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate and justify food choices using comprehensive nutritional knowledge across diverse situations and contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify healthy foods with support and make simple food choices."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can choose foods that are good for me using basic nutritional knowledge."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can apply nutritional knowledge to make informed food choices for different meals."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse nutritional information to make informed food choices that support specific health goals."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate and justify food choices using comprehensive nutritional knowledge across diverse contexts and populations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify obvious behaviors and situations that affect my physical health with adult support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can recognize and describe simple behaviors and conditions that directly impact physical health and well-being."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can identify and explain various behaviors, conditions and situations that influence physical health in different contexts."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyze complex behaviors, conditions and situations that affect physical health and describe their interconnected effects."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate and justify how multiple behaviors, conditions and situations impact physical health across diverse environments."
         }
       ],
       "stability_flag": "stable",
@@ -409,23 +407,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify simple consequences of my own decisions on myself and others around me."
+              "statement": "I can identify obvious behaviors and situations that affect my physical health with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how decisions affect different people and recognise some factors that influence my choices."
+              "statement": "I can recognize and describe simple behaviors and conditions that directly impact physical health and well-being."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how decisions impact myself, others, and society, and analyse key factors influencing decision-making."
+              "statement": "I can identify and explain various behaviors, conditions and situations that influence physical health in different contexts."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate complex decision impacts across multiple contexts and justify how various influencing factors shape outcomes."
+              "statement": "I can analyze complex behaviors, conditions and situations that affect physical health and describe their interconnected effects."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse decision impacts and influencing factors in unfamiliar situations and apply insights to inform future choices."
+              "statement": "I can evaluate and justify how multiple behaviors, conditions and situations impact physical health across diverse environments."
             }
           ]
         },
@@ -456,23 +454,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify how my decisions affect myself and others in familiar situations."
+              "statement": "I can identify obvious behaviors and situations that affect my physical health with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how decisions impact myself, others, and my community with some reasoning."
+              "statement": "I can recognize and describe simple behaviors and conditions that directly impact physical health and well-being."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can analyse how decisions and actions create different impacts across multiple contexts and perspectives."
+              "statement": "I can identify and explain various behaviors, conditions and situations that influence physical health in different contexts."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse decisions and actions, explaining how influencing factors shape outcomes for individuals and society."
+              "statement": "I can analyze complex behaviors, conditions and situations that affect physical health and describe their interconnected effects."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate complex decisions, justify how multiple factors influence outcomes, and transfer insights to unfamiliar situations."
+              "statement": "I can evaluate and justify how multiple behaviors, conditions and situations collectively impact physical health across diverse environments."
             }
           ]
         },
@@ -503,23 +501,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify simple impacts of my own decisions on myself and others around me."
+              "statement": "I can identify obvious behaviors and situations that affect my physical health with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how decisions affect myself, others, and my community, and recognise some influencing factors."
+              "statement": "I can recognize and describe simple behaviors and conditions that directly impact physical health and well-being."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how decisions and actions create impacts across different contexts, and analyse multiple influencing factors."
+              "statement": "I can identify and explain various behaviors, conditions and situations that influence physical health in different contexts."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate complex decision impacts on individuals, groups, and society, and justify how various factors influence choices."
+              "statement": "I can analyze complex behaviors, conditions and situations that affect physical health and describe their interconnected effects."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse interconnected decision impacts across unfamiliar situations and critically evaluate competing influencing factors with reasoning."
+              "statement": "I can evaluate and justify how multiple behaviors, conditions and situations impact physical health across diverse environments."
             }
           ]
         }
@@ -534,196 +532,23 @@
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify simple consequences of my choices with adult support."
+          "statement": "I can identify basic emotions and use simple strategies with adult support to feel calmer."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can describe possible outcomes of decisions affecting myself and others."
+          "statement": "I can apply familiar emotional regulation strategies independently in routine situations when prompted."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can analyse risks and benefits of decisions in familiar situations independently."
+          "statement": "I can select appropriate emotional regulation strategies for different emotions across various familiar contexts."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can evaluate implications and risks of decisions, considering multiple perspectives and outcomes."
+          "statement": "I can evaluate and adapt emotional regulation strategies based on their effectiveness in complex situations."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can evaluate complex implications and risks across unfamiliar contexts, justifying my reasoning."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "short"
-            ],
-            [
-              "Progression Step 3",
-              "short"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify simple consequences of my choices with adult support."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe possible outcomes of decisions affecting myself and others."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can analyse risks and benefits of decisions in familiar situations independently."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can evaluate implications and risks of decisions, considering multiple perspectives and outcomes."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate complex implications and risks across unfamiliar contexts, justifying my reasoning."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "short"
-            ],
-            [
-              "Progression Step 3",
-              "short"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify simple consequences of my choices with adult support."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe possible outcomes of decisions affecting myself and others."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can analyse risks and benefits of decisions in familiar situations independently."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can evaluate implications and risks of decisions, considering multiple perspectives and outcomes."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate complex implications and risks across unfamiliar contexts, justifying my reasoning."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              "short"
-            ],
-            [
-              "Progression Step 2",
-              "short"
-            ],
-            [
-              "Progression Step 3",
-              "short"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify simple consequences of my choices with adult support."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe possible outcomes of decisions affecting myself and others."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain risks and benefits of decisions in familiar situations independently."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse multiple implications and risks before making decisions in complex situations."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate long-term implications and risks across different contexts to justify decisions."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_06_lt_01",
-      "knowledge_type": "Type 1",
-      "statements": [
-        {
-          "band": "Progression Step 1",
-          "statement": "I can identify one immediate consequence of a career choice in my own life."
-        },
-        {
-          "band": "Progression Step 2",
-          "statement": "I can describe consequences of career choices across personal and financial domains with support."
-        },
-        {
-          "band": "Progression Step 3",
-          "statement": "I can identify and describe multiple consequences of career choices across personal, financial, and social domains."
-        },
-        {
-          "band": "Progression Step 4",
-          "statement": "I can explain how career pathway decisions create interconnected lifelong consequences across personal, financial, and social domains."
-        },
-        {
-          "band": "Progression Step 5",
-          "statement": "I can analyse and justify the significance of career choice consequences across domains in unfamiliar contexts."
+          "statement": "I can systematically apply and justify sophisticated emotional regulation approaches across unfamiliar and challenging contexts."
         }
       ],
       "stability_flag": "stable",
@@ -755,23 +580,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify one immediate consequence of a career choice in my own life."
+              "statement": "I can identify basic emotions and use simple strategies with adult support to feel calmer."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe consequences of career choices across personal and financial domains with support."
+              "statement": "I can apply familiar emotional regulation strategies independently in routine situations when prompted."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can identify and describe multiple consequences of career choices across personal, financial, and social domains."
+              "statement": "I can select appropriate emotional regulation strategies for different emotions across various familiar contexts."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can explain how career pathway decisions create interconnected lifelong consequences across personal, financial, and social domains."
+              "statement": "I can evaluate and adapt emotional regulation strategies based on their effectiveness in complex situations."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse and justify the significance of career choice consequences across domains in unfamiliar contexts."
+              "statement": "I can systematically apply and justify sophisticated emotional regulation approaches across unfamiliar and challenging contexts."
             }
           ]
         },
@@ -802,23 +627,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify one immediate consequence of a career choice in a familiar context."
+              "statement": "I can identify basic emotions and use simple strategies with adult support to feel calmer."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe multiple consequences of a career choice across personal, financial, and social areas."
+              "statement": "I can apply familiar emotional regulation strategies independently in routine situations I recognize."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how career choices lead to significant long-term consequences in different life domains."
+              "statement": "I can select appropriate emotional regulation strategies for different situations and explain why they work."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse and compare consequences of contrasting career pathways across personal, financial, and social domains."
+              "statement": "I can adapt and combine multiple emotional regulation strategies effectively across varied and challenging situations."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate and justify how career decisions create interconnected lifelong consequences across multiple domains."
+              "statement": "I can evaluate and refine emotional regulation strategies systematically, transferring successful approaches to novel contexts."
             }
           ]
         },
@@ -849,23 +674,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify one immediate consequence of a career choice in a familiar context."
+              "statement": "I can identify basic emotions and use simple strategies with adult support to feel calmer."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe consequences of career choices across personal, financial, and social domains."
+              "statement": "I can apply familiar emotional regulation strategies independently in routine situations when prompted."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how career pathway decisions create interconnected consequences across multiple life domains."
+              "statement": "I can select appropriate emotional regulation strategies for different situations and explain why they work."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse significant lifelong consequences of career choices and justify their relative importance."
+              "statement": "I can adapt and combine multiple emotional regulation strategies effectively across varied and challenging situations."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate long-term consequences of career decisions and apply reasoning across unfamiliar scenarios."
+              "statement": "I can evaluate and refine emotional regulation approaches, transferring strategies flexibly across unfamiliar contexts."
             }
           ]
         }
@@ -876,377 +701,27 @@
     },
     {
       "lt_id": "cluster_06_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Progression Step 1",
-          "statement": "I can identify my interests and describe how they connect to different career pathways."
-        },
-        {
-          "band": "Progression Step 2",
-          "statement": "I can compare career pathways and explain which align with my abilities and interests."
-        },
-        {
-          "band": "Progression Step 3",
-          "statement": "I can evaluate career pathways against my values and abilities, and justify my preferences with reasoning."
-        },
-        {
-          "band": "Progression Step 4",
-          "statement": "I can analyse multiple career pathways, evaluate their fit with my values and long-term goals, and justify my reasoning."
-        },
-        {
-          "band": "Progression Step 5",
-          "statement": "I can evaluate complex career pathways, justify choices by reasoning about alignment with values, abilities, and long-term goals across contexts."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "long"
-            ],
-            [
-              "Progression Step 5",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify my interests and describe how they connect to different career pathways."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can compare career pathways and explain which align with my abilities and interests."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can evaluate career pathways against my values and abilities, and justify my preferences with reasoning."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse multiple career pathways, evaluate their fit with my values and long-term goals, and justify my reasoning."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate complex career pathways, justify choices by reasoning about alignment with values, abilities, and long-term goals across contexts."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify my interests and describe one career pathway that appeals to me."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can compare two career pathways and explain how each relates to my interests and abilities."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can evaluate multiple career pathways and explain how they align with my values and long-term goals."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can evaluate and justify career pathway choices by reasoning about alignment with my values, abilities, and goals."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate multiple career pathways and justify my choices by reasoning about their alignment across values, abilities, and long-term goals in unfamiliar contexts."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "long"
-            ],
-            [
-              "Progression Step 5",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify my interests and describe one career pathway that appeals to me."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can compare two career pathways and explain which one matches my abilities better."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can evaluate multiple career pathways by reasoning about their fit with my values and goals."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can justify my career pathway choices by analysing alignment between pathways and my abilities, values, and long-term goals."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate and justify career pathway decisions across changing contexts by reasoning about complex interactions between my values, abilities, and evolving goals."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'long'), ('Progression Step 5', 'long')): 2, (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'long')): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_07_lt_01",
       "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify people and groups that influence how I think and behave."
+          "statement": "I can identify trusted adults who can help me when I need support with prompting."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can describe how family, friends, and community shape my values and choices."
+          "statement": "I can identify different people and groups who provide mental health support in familiar situations."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can explain how different social influences affect my identity, behaviours, and well-being."
+          "statement": "I can identify appropriate support resources and explain when to seek help for mental health concerns."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can analyse how multiple social influences interact to shape identity and justify my responses."
+          "statement": "I can analyse different mental health support options and justify appropriate timing for seeking specific help."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can evaluate social influences on identity across different contexts and explain their impact on well-being."
-        }
-      ],
-      "stability_flag": "band_statements_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify people and groups that influence how I think and behave."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe how family, friends, and community shape my values and choices."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how different social influences affect my identity, behaviours, and well-being."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how multiple social influences interact to shape identity and justify my responses."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate social influences on identity across different contexts and explain their impact on well-being."
-            }
-          ]
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "medium"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify people and groups that influence how I think and behave."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe how family, friends, and community shape my values and choices."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how different social influences affect my identity, behaviours, and well-being."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how multiple social influences interact to shape identity across different contexts."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate and justify how social influences shape identity and well-being in unfamiliar situations."
-            }
-          ]
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "Progression Step 1",
-              "medium"
-            ],
-            [
-              "Progression Step 2",
-              "medium"
-            ],
-            [
-              "Progression Step 3",
-              "medium"
-            ],
-            [
-              "Progression Step 4",
-              "medium"
-            ],
-            [
-              "Progression Step 5",
-              "long"
-            ]
-          ],
-          "statements": [
-            {
-              "band": "Progression Step 1",
-              "statement": "I can identify people and groups that influence how I think and behave."
-            },
-            {
-              "band": "Progression Step 2",
-              "statement": "I can describe how family, peers, and community shape my values and choices."
-            },
-            {
-              "band": "Progression Step 3",
-              "statement": "I can explain how different social influences affect my identity and well-being in specific situations."
-            },
-            {
-              "band": "Progression Step 4",
-              "statement": "I can analyse how multiple social influences interact to shape my identity, values, and behaviours over time."
-            },
-            {
-              "band": "Progression Step 5",
-              "statement": "I can evaluate and justify how social influences shape identity and well-being, and apply this understanding to unfamiliar contexts."
-            }
-          ]
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 2, (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'long')): 1}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": []
-    },
-    {
-      "lt_id": "cluster_07_lt_02",
-      "knowledge_type": "Type 2",
-      "statements": [
-        {
-          "band": "Progression Step 1",
-          "statement": "I can identify norms and values that exist in my own family and community."
-        },
-        {
-          "band": "Progression Step 2",
-          "statement": "I can describe how norms and values differ between two familiar cultural contexts."
-        },
-        {
-          "band": "Progression Step 3",
-          "statement": "I can explain how norms and values develop over time within a specific cultural group."
-        },
-        {
-          "band": "Progression Step 4",
-          "statement": "I can analyse how norms and values are shaped by historical, social, and environmental factors across cultures."
-        },
-        {
-          "band": "Progression Step 5",
-          "statement": "I can evaluate how norms and values develop and change across different cultural contexts and justify cultural perspectives."
+          "statement": "I can evaluate and select optimal support resources across diverse contexts while considering individual circumstances and needs."
         }
       ],
       "stability_flag": "stable",
@@ -1278,23 +753,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify norms and values that exist in my own family and community."
+              "statement": "I can identify trusted adults who can help me when I need support with prompting."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how norms and values differ between two familiar cultural contexts."
+              "statement": "I can identify different people and groups who provide mental health support in familiar situations."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how norms and values develop over time within a specific cultural group."
+              "statement": "I can identify appropriate support resources and explain when to seek help for mental health concerns."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse how norms and values are shaped by historical, social, and environmental factors across cultures."
+              "statement": "I can analyse different mental health support options and justify appropriate timing for seeking specific help."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate how norms and values develop and change across different cultural contexts and justify cultural perspectives."
+              "statement": "I can evaluate and select optimal support resources across diverse contexts while considering individual circumstances and needs."
             }
           ]
         },
@@ -1325,23 +800,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify norms and values that exist in my own cultural community."
+              "statement": "I can identify familiar adults who help me when I need support with guidance."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how norms and values develop within a single cultural context over time."
+              "statement": "I can identify different people and places that provide help for various personal concerns."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can compare norms and values across different cultural contexts and explain their origins."
+              "statement": "I can identify appropriate support resources and explain when different types of help are needed."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse how norms and values develop through cultural interaction and historical influences."
+              "statement": "I can identify and compare various mental health support options and determine optimal timing for access."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse and justify how norms and values develop across cultures, evaluating competing explanations."
+              "statement": "I can identify comprehensive support networks and justify appropriate resource selection across diverse mental health scenarios."
             }
           ]
         },
@@ -1372,23 +847,196 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify norms and values that exist in my own cultural community."
+              "statement": "I can identify trusted adults who can help when I need support with guidance."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how norms and values differ between two or more cultural contexts."
+              "statement": "I can identify different people and groups who provide mental health support in familiar situations."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can explain how norms and values develop through shared experiences within cultural groups."
+              "statement": "I can identify appropriate support resources and explain when to seek help for mental health concerns."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse how historical events and social interactions shape the development of cultural norms and values."
+              "statement": "I can analyse different mental health support options and determine the most appropriate timing for seeking help."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse and justify how norms and values evolve across different cultural contexts and time periods."
+              "statement": "I can evaluate and justify the selection of mental health support resources across diverse and unfamiliar contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify what happened in my recent experiences with adult support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can describe what I learned from my experiences and how they made me feel."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can explain connections between different experiences and identify simple patterns in my responses."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyze how my past experiences influenced my decisions and identify meaningful lessons learned."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate complex patterns across diverse experiences and justify how insights apply to future situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify what happened in my recent experiences with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe what I learned from my experiences and how they made me feel."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain connections between different experiences and identify simple patterns in my responses."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze how my past experiences influenced my decisions and identify meaningful lessons learned."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex patterns across diverse experiences and justify how insights apply to future situations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify what happened in my recent experiences with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe what happened in my experiences and how they made me feel."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain what I learned from my experiences and how they affected me."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze patterns across multiple experiences and identify their broader impacts on my development."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex patterns across diverse experiences and justify how lessons learned apply to future situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify what happened in my recent experiences with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe what happened in my experiences and how they made me feel."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain what I learned from my experiences and how they affected me."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze patterns across multiple experiences and identify their broader impacts on my development."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex patterns in my experiences and justify how lessons learned apply to future situations."
             }
           ]
         }
@@ -1403,23 +1051,23 @@
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify people who care for me and describe how they make me feel safe."
+          "statement": "I can identify when experiences make me feel happy or sad with support."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can recognise what makes a relationship healthy and explain why belonging to a group matters."
+          "statement": "I can describe how familiar experiences affect my feelings and those of others."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can describe how healthy relationships and belonging contribute to my physical and emotional wellbeing."
+          "statement": "I can explain why different experiences create specific emotional responses in myself and others."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can explain how healthy relationships and belonging support wellbeing across different areas of my life."
+          "statement": "I can analyse how complex experiences affect emotions and compare responses across different people."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can justify why healthy relationships and belonging are fundamental to overall wellbeing and health in varied contexts."
+          "statement": "I can evaluate emotional impacts of varied experiences and justify why responses differ across contexts."
         }
       ],
       "stability_flag": "stable",
@@ -1451,23 +1099,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify people who care for me and describe how they make me feel safe."
+              "statement": "I can identify when experiences make me feel happy or sad with support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can recognise what makes a relationship healthy and explain why belonging to a group matters."
+              "statement": "I can describe how familiar experiences affect my feelings and those of others."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can describe how healthy relationships and belonging contribute to my physical and emotional wellbeing."
+              "statement": "I can explain why different experiences create specific emotional responses in myself and others."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can explain how healthy relationships and belonging support wellbeing across different areas of my life."
+              "statement": "I can analyse how complex experiences affect emotions and compare responses across different people."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can justify why healthy relationships and belonging are fundamental to overall wellbeing and health in varied contexts."
+              "statement": "I can evaluate emotional impacts of varied experiences and justify why responses differ across contexts."
             }
           ]
         },
@@ -1498,23 +1146,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify people who care for me and describe how they make me feel safe."
+              "statement": "I can identify when experiences make me feel happy or sad with support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can recognise what makes a relationship positive and explain how belonging to a group helps me."
+              "statement": "I can describe how familiar experiences affect my feelings and those of others."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can describe characteristics of healthy relationships and explain how they support my emotional wellbeing."
+              "statement": "I can explain why different experiences create specific emotional responses in myself and others."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse how healthy relationships and a sense of belonging contribute to physical and mental health."
+              "statement": "I can analyse how varied experiences impact emotions differently across diverse people and situations."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can explain why healthy relationships and belonging are fundamental to wellbeing and justify this across different contexts."
+              "statement": "I can evaluate complex emotional impacts of experiences and justify why responses vary across contexts."
             }
           ]
         },
@@ -1545,23 +1193,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify people who care for me and describe how they make me feel safe."
+              "statement": "I can identify when experiences make me feel happy or sad with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can recognise what makes a relationship feel good and explain why belonging matters to me."
+              "statement": "I can describe how familiar experiences affect my feelings and those of people close to me."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can describe characteristics of healthy relationships and explain how they support my wellbeing."
+              "statement": "I can explain how different experiences create various emotional responses in myself and others around me."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse how healthy relationships and belonging contribute to physical and emotional health."
+              "statement": "I can analyse why specific experiences produce particular emotional impacts across different people and situations."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can justify why healthy relationships and belonging are fundamental to wellbeing across different life contexts."
+              "statement": "I can evaluate how experiences affect emotional responses and apply this understanding across diverse and unfamiliar contexts."
             }
           ]
         }
@@ -1571,28 +1219,28 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_09_lt_01",
-      "knowledge_type": "Type 2",
+      "lt_id": "cluster_10_lt_01",
+      "knowledge_type": "Type 1",
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify obvious warning signs in relationships with adult support and guidance."
+          "statement": "I can identify immediate effects of simple decisions on myself with adult support."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can describe warning signs in relationship dynamics and explain why they are concerning."
+          "statement": "I can explain how my decisions affect myself and others in familiar situations."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can analyse relationship dynamics to identify multiple warning signs and explain their impact."
+          "statement": "I can describe short and long-term impacts of decisions and recognise when group decisions are needed."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can analyse complex relationship dynamics, identify subtle warning signs, and justify why they indicate unhealthy patterns."
+          "statement": "I can analyse decision consequences across time and contexts and evaluate when collaborative approaches are most effective."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can analyse relationship dynamics across contexts, identify interconnected warning signs, and evaluate their significance independently."
+          "statement": "I can justify decision-making processes by examining complex impacts and determining optimal collective or individual approaches."
         }
       ],
       "stability_flag": "stable",
@@ -1624,23 +1272,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify obvious warning signs in relationships with adult support and guidance."
+              "statement": "I can identify immediate effects of simple decisions on myself with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe warning signs in relationship dynamics and explain why they are concerning."
+              "statement": "I can explain how my decisions affect myself and others in familiar situations."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can analyse relationship dynamics to identify multiple warning signs and explain their impact."
+              "statement": "I can describe short and long-term impacts of decisions and recognise when group decisions are needed."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse complex relationship dynamics, identify subtle warning signs, and justify why they indicate unhealthy patterns."
+              "statement": "I can analyse decision consequences across time and contexts and evaluate when collaborative approaches are most effective."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse relationship dynamics across contexts, identify interconnected warning signs, and evaluate their significance independently."
+              "statement": "I can justify decision-making processes by examining complex impacts and determining optimal collective or individual approaches."
             }
           ]
         },
@@ -1671,23 +1319,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify obvious warning signs in relationships with adult support and guidance."
+              "statement": "I can identify immediate effects of simple decisions on myself with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe several warning signs of unhealthy relationships independently and with accuracy."
+              "statement": "I can explain how my decisions affect myself and others in familiar situations."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can analyse relationship dynamics to identify warning signs and explain their significance."
+              "statement": "I can describe short and long-term impacts of decisions and recognise when group decisions are needed."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can analyse complex relationship dynamics, identify subtle warning signs, and justify concerns."
+              "statement": "I can analyse decision consequences across time and justify when collaborative approaches improve outcomes."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse relationship dynamics across contexts, identify warning signs, and evaluate appropriate responses."
+              "statement": "I can evaluate complex decision impacts systematically and determine optimal decision-making processes for varied contexts."
             }
           ]
         },
@@ -1718,23 +1366,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify obvious warning signs in relationships with adult support and guidance."
+              "statement": "I can identify immediate effects of simple decisions on myself with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe several warning signs of unhealthy relationships independently and with some detail."
+              "statement": "I can explain how my decisions affect myself and others in familiar situations."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can analyse relationship dynamics and explain how warning signs connect to unhealthy patterns."
+              "statement": "I can describe short and long-term impacts of decisions and identify when group decisions work better."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate complex relationship dynamics and justify why specific signs indicate unhealthy relationships."
+              "statement": "I can analyse decision consequences across time and explain when collaborative approaches improve outcomes for communities."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can analyse and evaluate relationship dynamics across varied contexts and explain warning signs with reasoning."
+              "statement": "I can evaluate complex decision impacts across multiple contexts and justify optimal decision-making processes for varied situations."
             }
           ]
         }
@@ -1744,28 +1392,201 @@
       "quality_gate_failures": []
     },
     {
-      "lt_id": "cluster_09_lt_02",
+      "lt_id": "cluster_11_lt_01",
       "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify support resources and safety strategies with adult guidance."
+          "statement": "I can identify obvious hazards in familiar environments with adult support and guidance."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can describe how different support resources and strategies help keep me safe."
+          "statement": "I can identify potential hazards and describe whether risks are high or low."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can compare support resources and strategies to select appropriate ones for unhealthy situations."
+          "statement": "I can identify hazards and assess risks by considering both likelihood and severity."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can evaluate support resources and strategies, explaining why they are effective for different unhealthy relationships."
+          "statement": "I can systematically identify hazards and evaluate risks using detailed criteria across different contexts."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can evaluate and justify selection of support resources and strategies across varied unhealthy relationship contexts."
+          "statement": "I can comprehensively identify complex hazards and justify risk assessments through detailed analysis of multiple factors."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify obvious hazards in familiar environments with adult support and guidance."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify potential hazards and describe whether risks are high or low."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify hazards and assess risks by considering both likelihood and severity."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can systematically identify hazards and evaluate risks using detailed criteria across different contexts."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can comprehensively identify complex hazards and justify risk assessments through detailed analysis of multiple factors."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify obvious hazards in familiar environments with adult support and guidance."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify potential hazards in familiar situations and describe basic risks they present."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify hazards across different contexts and evaluate their likelihood and potential consequences."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can systematically identify complex hazards and assess risks by analysing probability and severity factors."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can comprehensively evaluate multifaceted risks across unfamiliar contexts and justify assessment decisions with detailed reasoning."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify obvious hazards in familiar environments with adult support and guidance."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify potential hazards and describe whether risks are high or low."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify hazards and evaluate risks by considering both likelihood and severity."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can systematically identify hazards and assess risks using detailed criteria across different contexts."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can comprehensively identify complex hazards and evaluate multifaceted risks in unfamiliar situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_12_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify basic rules and behaviors in familiar groups with support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can describe simple rules and norms that guide behavior in different groups."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can explain how group rules and norms influence individual behavior in various situations."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse the effects of different group norms on individual choices and social interactions."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate how social group dynamics operate across diverse contexts and justify their impact."
         }
       ],
       "stability_flag": "band_statements_unstable",
@@ -1797,23 +1618,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify support resources and safety strategies with adult guidance."
+              "statement": "I can identify basic rules and behaviors in familiar groups with support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how different support resources and strategies help keep me safe."
+              "statement": "I can describe simple rules and norms that guide behavior in different groups."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can compare support resources and strategies to select appropriate ones for unhealthy situations."
+              "statement": "I can explain how group rules and norms influence individual behavior in various situations."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate support resources and strategies, explaining why they are effective for different unhealthy relationships."
+              "statement": "I can analyse the effects of different group norms on individual choices and social interactions."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate and justify selection of support resources and strategies across varied unhealthy relationship contexts."
+              "statement": "I can evaluate how social group dynamics operate across diverse contexts and justify their impact."
             }
           ]
         },
@@ -1844,23 +1665,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify simple support resources and strategies available when relationships feel unsafe."
+              "statement": "I can identify basic rules and behaviors in familiar groups with adult support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how different support resources and safety strategies help in unhealthy relationships."
+              "statement": "I can describe simple rules and norms that guide behavior in different groups."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can compare support resources and strategies to select those most appropriate for specific situations."
+              "statement": "I can explain how group rules and norms influence individual behavior in various situations."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate support resources and strategies, explaining why they are effective for different unhealthy relationship contexts."
+              "statement": "I can analyse the effects of different group norms on individual choices and social interactions."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can justify selection of support resources and strategies across varied unhealthy relationship scenarios with reasoned analysis."
+              "statement": "I can evaluate how social group dynamics operate across diverse contexts and justify their impacts."
             }
           ]
         },
@@ -1891,23 +1712,23 @@
           "statements": [
             {
               "band": "Progression Step 1",
-              "statement": "I can identify basic support resources and safety strategies with adult guidance."
+              "statement": "I can identify basic rules and behaviors in familiar groups with support."
             },
             {
               "band": "Progression Step 2",
-              "statement": "I can describe how different support resources and strategies help keep people safe."
+              "statement": "I can describe simple rules and norms that guide behavior in different groups."
             },
             {
               "band": "Progression Step 3",
-              "statement": "I can compare support resources and strategies to select appropriate ones for different situations."
+              "statement": "I can explain how group rules and norms influence individual behavior in various situations."
             },
             {
               "band": "Progression Step 4",
-              "statement": "I can evaluate support resources and strategies, explaining why they are effective for unhealthy relationships."
+              "statement": "I can analyze the effects of different group norms on individual choices and behaviors."
             },
             {
               "band": "Progression Step 5",
-              "statement": "I can evaluate and justify selection of support resources and strategies across varied relationship contexts."
+              "statement": "I can evaluate how social group dynamics operate across diverse contexts and their complex effects."
             }
           ]
         }
@@ -1917,24 +1738,1455 @@
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify that different groups influence how people think and behave with support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can describe how family and friends influence my values and attitudes in familiar situations."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can explain how various social groups shape people's identity and values in different contexts."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse how multiple social influences interact to shape identity and values across diverse communities."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate the complex ways social influences shape identity and justify responses to unfamiliar scenarios."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify that different groups influence how people think and behave with support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how family and friends influence my values and attitudes in familiar situations."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social groups shape people's identity and values in different contexts."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how multiple social influences interact to shape identity and values across diverse communities."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate the complex ways social influences shape identity and justify responses to unfamiliar scenarios."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify how my family and friends influence what I like and believe."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how different groups around me shape my values and attitudes."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social influences affect the development of my identity and beliefs."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how multiple social groups simultaneously influence identity formation and value development in complex ways."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate how social influences shape identity across different contexts and justify responses to conflicting pressures."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify that different groups influence how people think and behave with support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how family and friends influence my values and attitudes in familiar situations."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social groups shape people's identity and values in different contexts."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how multiple social influences interact to shape identity formation across diverse communities."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex relationships between social influences and identity development across unfamiliar cultural contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_14_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify my own values and recognise that other people have different values with support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can describe how family and friends influence my values and compare simple differences between people's values."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can explain how various social groups shape my values and analyse similarities and differences in values across communities."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can evaluate how multiple social influences interact to shape values and justify why people develop different value systems."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can critically evaluate complex social influences on values and apply this understanding to unfamiliar cultural contexts independently."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify my own values and recognise that other people have different values with support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how family and friends influence my values and compare simple differences between people's values."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social groups shape my values and analyse similarities and differences in others' values."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can evaluate how multiple social influences interact to shape values and justify why people hold different values."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can critically evaluate complex social influences on values and apply this understanding to unfamiliar cultural contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "long"
+            ],
+            [
+              "Progression Step 4",
+              "long"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify my own values and recognise that other people have different values with support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how family and friends influence my values and compare simple differences between people's values."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social groups shape my values and analyse similarities and differences in values across communities."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can evaluate how multiple social influences interact to shape values and justify why people develop different value systems."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can critically evaluate complex social influences on values and apply this understanding to unfamiliar cultural contexts independently."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "long"
+            ],
+            [
+              "Progression Step 4",
+              "long"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify my own values and recognise that other people have different values with support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how family and friends influence my values and compare simple differences between people's values."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain how various social groups shape my values and analyse similarities and differences in values across communities."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can evaluate how multiple social influences interact to shape values and justify why people develop different value systems."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can critically evaluate complex social influences on values and apply this understanding to unfamiliar cultural contexts independently."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')): 1, (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'long'), ('Progression Step 4', 'long'), ('Progression Step 5', 'medium')): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_15_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify different types of relationships with support from others."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can identify different types of relationships and describe simple ways they can change."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can describe different types of relationships and explain how they develop and change over time."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse different types of relationships and explain how multiple factors influence their complexity and development."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate relationship types and dynamics across diverse contexts and justify how various influences shape their evolution."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify different types of relationships with support from others."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify different types of relationships and describe simple ways they can change."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can describe different types of relationships and explain how they develop and change over time."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse different types of relationships and explain how multiple factors influence their complexity and development."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate relationship types and dynamics across diverse contexts and justify how various influences shape their evolution."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify different types of relationships with support from adults."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify different types of relationships and describe simple ways they can change."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain different types of relationships and how they develop and change over time."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse various relationship types and explain how multiple factors influence their complexity and development."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate relationship dynamics across contexts and justify how different influences shape their evolution and complexity."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify different types of relationships with support from adults."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can identify different types of relationships and describe simple ways they change."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain different types of relationships and how they develop over time."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse various relationship types and explain how multiple factors influence their complexity."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate relationship dynamics across contexts and justify how complexity varies systematically."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_16_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can communicate basic needs and feelings with support and respond to simple expressions from others."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can express my needs and feelings clearly and recognise when others communicate their needs and feelings."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can communicate my needs and feelings effectively and respond appropriately to others' expressed needs and feelings."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can communicate complex needs and feelings precisely and analyse others' communications to respond with appropriate sensitivity."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can communicate nuanced needs and feelings across diverse contexts and evaluate appropriate responses to complex interpersonal communications."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can communicate basic needs and feelings with support and respond to simple expressions from others."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can express my needs and feelings clearly and recognise when others communicate their needs and feelings."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can communicate my needs and feelings effectively and respond appropriately to others' expressed needs and feelings."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can communicate complex needs and feelings precisely and analyse others' communications to respond with appropriate sensitivity."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can communicate nuanced needs and feelings across diverse contexts and evaluate appropriate responses to complex interpersonal communications."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can communicate basic needs and feelings with support and respond to simple expressions from others."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can express my needs and feelings clearly and recognize when others communicate their needs and feelings."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can communicate my needs and feelings effectively and respond appropriately to others' expressed needs and feelings."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can communicate complex needs and feelings precisely and analyze others' communications to respond thoughtfully and appropriately."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can communicate nuanced needs and feelings across diverse contexts and evaluate communication patterns to respond strategically."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can communicate basic needs and feelings with support and respond to simple expressions from others."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can communicate my needs and feelings clearly and respond appropriately to others' direct communications."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can communicate complex needs and feelings effectively and interpret others' verbal and non-verbal expressions accurately."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can communicate nuanced needs and feelings across different contexts and analyse underlying meanings in others' communications."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can communicate sophisticated needs and feelings strategically and evaluate the effectiveness of communication exchanges in varied situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_17_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify when disagreements happen and ask for help from adults."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can recognise conflicts and use simple strategies like taking turns with guidance."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can identify different types of conflicts and apply basic resolution strategies independently."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse conflicts and select appropriate strategies while explaining my reasoning to others."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate complex conflicts and apply sophisticated resolution strategies across varied social contexts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when disagreements happen and ask for help from adults."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognise conflicts and use simple strategies like taking turns with guidance."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify different types of conflicts and apply basic resolution strategies independently."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse conflicts and select appropriate strategies while explaining my reasoning to others."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex conflicts and apply sophisticated resolution strategies across varied social contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when disagreements happen and ask for help from adults."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognise conflicts and use simple strategies like taking turns with guidance."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify different types of conflicts and apply basic resolution strategies independently."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse conflicts and select appropriate strategies while explaining my reasoning to others."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex conflicts and adapt resolution strategies across different contexts and relationships."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when disagreements happen and ask for help from adults."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognize conflicts and use simple strategies like taking turns with guidance."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can identify different types of conflicts and apply basic resolution strategies independently."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze conflicts and select appropriate resolution strategies while knowing when to seek support."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex conflicts and apply sophisticated resolution strategies across varied relationship contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_18_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify when I feel safe or unsafe with familiar people with adult support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can recognize basic signs of safe relationships and tell a trusted adult when something feels wrong."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can describe characteristics of healthy relationships and explain simple strategies to maintain personal safety."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyze relationship dynamics to identify potential risks and implement appropriate responses to protect myself and others."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate complex relationship situations and justify comprehensive safety strategies across diverse social contexts and scenarios."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when I feel safe or unsafe with familiar people with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognize basic signs of safe relationships and tell a trusted adult when something feels wrong."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can describe characteristics of healthy relationships and explain simple strategies to maintain personal safety."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze relationship dynamics to identify potential risks and implement appropriate responses to protect myself and others."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex relationship situations and justify comprehensive safety strategies across diverse social contexts and scenarios."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when I feel safe or unsafe with familiar people with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognize basic signs of safe relationships and tell a trusted adult when something feels wrong."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can describe characteristics of safe relationships and explain simple strategies to maintain my safety."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze relationship dynamics to identify safety concerns and justify appropriate responses to protect myself and others."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex relationship situations to determine safety risks and create comprehensive response plans across various contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "medium"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify when I feel safe or unsafe with familiar people with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can recognize basic signs of safe relationships and tell a trusted adult when something feels wrong."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can describe characteristics of healthy relationships and explain simple strategies for maintaining personal safety."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyze relationship dynamics to identify potential safety concerns and implement appropriate protective responses."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex relationship situations for safety risks and justify comprehensive strategies for maintaining wellbeing across contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_18_lt_02",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify basic rights in familiar relationships with adult support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can describe how rights affect my relationships and ask for help when needed."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can explain the importance of rights in relationships and advocate for myself appropriately."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse how rights impact different relationships and advocate effectively for others' rights."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate complex rights issues across various relationships and advocate strategically in unfamiliar situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify basic rights in familiar relationships with adult support."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how rights affect my relationships and ask for help when needed."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain the importance of rights in relationships and advocate for myself appropriately."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how rights impact different relationships and advocate effectively for others' rights."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex rights issues across various relationships and advocate strategically in unfamiliar situations."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify basic rights in relationships with adult support and prompting."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how rights affect my relationships and express my needs clearly."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain the impact of rights on relationships and advocate for myself confidently."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how rights influence various relationships and advocate effectively for others' rights."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex rights issues across diverse relationships and advocate strategically in challenging situations."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Progression Step 1",
+              "short"
+            ],
+            [
+              "Progression Step 2",
+              "medium"
+            ],
+            [
+              "Progression Step 3",
+              "medium"
+            ],
+            [
+              "Progression Step 4",
+              "medium"
+            ],
+            [
+              "Progression Step 5",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Progression Step 1",
+              "statement": "I can identify basic rights in relationships with adult support and prompting."
+            },
+            {
+              "band": "Progression Step 2",
+              "statement": "I can describe how rights affect my relationships and express my needs clearly."
+            },
+            {
+              "band": "Progression Step 3",
+              "statement": "I can explain the impact of rights on different relationships and advocate for myself."
+            },
+            {
+              "band": "Progression Step 4",
+              "statement": "I can analyse how rights influence various relationships and advocate effectively for others' rights."
+            },
+            {
+              "band": "Progression Step 5",
+              "statement": "I can evaluate complex rights issues across diverse relationships and advocate strategically in unfamiliar situations."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
     }
   ],
   "halted_lts": [
     {
       "lt_id": "cluster_01_lt_01",
-      "lt_name": "Understanding Health and Well-being Factors",
-      "halt_reason": "band_statements_unreliable",
-      "diagnostic": "no word-count-class signature reached 2/3 agreement; signatures=[(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'long')), (('Progression Step 1', 'short'), ('Progression Step 2', 'short'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')), (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium'))]"
+      "lt_name": "Movement Skills Application and Transfer",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb",
+        "Progression Step 4:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can develop basic movement skills with guidance and support from others."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can apply familiar movement skills in similar environments with some independence."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can transfer movement skills between different but related physical activities and environments."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can adapt and refine movement skills effectively across varied and challenging situations."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can analyse and transfer complex movement skills strategically across unfamiliar environments and contexts."
+        }
+      ]
     },
     {
-      "lt_id": "cluster_02_lt_02",
-      "lt_name": "Understanding Self-Care Impact",
-      "halt_reason": "band_statements_unreliable",
-      "diagnostic": "no word-count-class signature reached 2/3 agreement; signatures=[(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'long'), ('Progression Step 4', 'long'), ('Progression Step 5', 'long')), (('Progression Step 1', 'short'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'long')), (('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'long'), ('Progression Step 5', 'long'))]"
+      "lt_id": "cluster_02_lt_03",
+      "lt_name": "Planning and Preparing Nutritious Meals",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can prepare simple nutritious meals with direct guidance and support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can plan and prepare basic nutritious meals using familiar techniques with some assistance."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can independently plan and prepare a variety of nutritious meals using appropriate techniques."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can plan and prepare diverse nutritious meals using complex techniques and explain my choices."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can plan and prepare sophisticated nutritious meals adapting techniques for different dietary requirements and contexts."
+        }
+      ]
     },
     {
-      "lt_id": "cluster_04_lt_01",
-      "lt_name": "Communicating Feelings Appropriately",
+      "lt_id": "cluster_03_lt_01",
+      "lt_name": "Analyzing Physical-Emotional Connections",
+      "halt_reason": "band_statements_unreliable",
+      "diagnostic": "no word-count-class signature reached 2/3 agreement; signatures=[(('Progression Step 1', 'medium'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')), (('Progression Step 1', 'short'), ('Progression Step 2', 'short'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium')), (('Progression Step 1', 'short'), ('Progression Step 2', 'medium'), ('Progression Step 3', 'medium'), ('Progression Step 4', 'medium'), ('Progression Step 5', 'medium'))]"
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "lt_name": "Managing Health Through Behavioral Strategies",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "4 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb",
+        "Progression Step 3:no_observable_verb",
+        "Progression Step 4:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can make simple changes to my behavior with adult support to feel better."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can identify helpful behaviors and work with others to improve my wellbeing."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can modify specific behaviors and collaborate effectively to achieve better health outcomes."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can systematically adjust my behavior and guide collaborative efforts to enhance physical and emotional health."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can strategically modify complex behaviors and lead collaborative initiatives to optimize health outcomes across contexts."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "lt_name": "Responding to Health Risks",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can follow simple safety rules with adult guidance to protect myself from immediate harm."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can identify basic health risks and apply familiar safety strategies in routine situations."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can select appropriate strategies to manage common health risks affecting myself and my peers."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can evaluate and implement effective risk management strategies to protect myself and others systematically."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can adapt and justify comprehensive health protection strategies across diverse and unpredictable risk scenarios."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "lt_name": "Mindful Self-Awareness Development",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can notice my feelings and thoughts with adult support and prompting."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can identify my current emotions and basic thoughts in familiar situations."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can describe my perceptions, thoughts and feelings and explain how they connect."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse my emotional patterns and thought processes to develop targeted self-awareness strategies."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate and apply sophisticated self-awareness techniques across diverse and challenging contexts."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_06_lt_01",
+      "lt_name": "Communicating About Feelings",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can notice my feelings and share them with support from others."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can express my feelings clearly and identify that talking helps me feel better."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can communicate my feelings effectively and describe how this supports my mental wellbeing."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can express feelings confidently and explain why communicating emotions is beneficial for mental health."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can advocate for emotional communication as a mental health strategy across different situations and relationships."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "lt_name": "Anticipating and Preparing for Future Situations",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 2:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify what happened before and think about what might happen next with support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can connect simple past experiences to predict what could happen in similar future situations."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can analyse past experiences to anticipate challenges and plan appropriate responses for upcoming situations."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can evaluate multiple past experiences to predict complex future scenarios and develop detailed preparation strategies."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can synthesise insights from diverse experiences to anticipate and prepare for unfamiliar future challenges across contexts."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "lt_name": "Making Evidence-Based Decisions",
       "halt_reason": "band_statements_gate_failed",
       "diagnostic": "1 format/quality failures",
       "failures": [
@@ -1943,23 +3195,149 @@
       "statements": [
         {
           "band": "Progression Step 1",
-          "statement": "I can identify and name my feelings with support from others."
+          "statement": "I can make simple decisions using obvious information with adult support and guidance."
         },
         {
           "band": "Progression Step 2",
-          "statement": "I can express my feelings using simple words appropriate to familiar people and settings."
+          "statement": "I can gather basic evidence from familiar sources to make straightforward decisions independently."
         },
         {
           "band": "Progression Step 3",
-          "statement": "I can communicate my feelings clearly, adjusting my approach for different people and situations."
+          "statement": "I can evaluate different types of evidence to make informed decisions in familiar contexts."
         },
         {
           "band": "Progression Step 4",
-          "statement": "I can explain my feelings with precision, considering the needs and perspectives of my audience."
+          "statement": "I can systematically gather and analyse complex evidence to make well-reasoned decisions across various situations."
         },
         {
           "band": "Progression Step 5",
-          "statement": "I can communicate complex feelings thoughtfully across varied contexts, justifying my choices of expression."
+          "statement": "I can critically evaluate diverse evidence sources to make sophisticated decisions and justify my reasoning."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_09_lt_02",
+      "lt_name": "Setting and Achieving Goals",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 3:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify simple goals with adult support and take basic steps toward achieving them."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can set straightforward goals and create simple plans with some guidance to work toward them."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can establish clear goals and develop detailed plans that include specific actions and timelines."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can set challenging goals and create comprehensive plans that anticipate obstacles and include alternative strategies."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can establish complex long-term goals and develop sophisticated plans that adapt to changing circumstances and setbacks."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_10_lt_02",
+      "lt_name": "Participating in Decision-Making Processes",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Progression Step 2:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify simple factors when making basic decisions with adult support."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can consider obvious factors and make straightforward decisions independently or with peers."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can evaluate multiple factors and their immediate implications when making decisions in groups."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can analyse complex factors and predict broader implications when participating in collaborative decision-making processes."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can systematically evaluate interconnected factors and justify decisions by explaining long-term implications across contexts."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_11_lt_02",
+      "lt_name": "Risk Management and Mitigation",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Progression Step 2:no_observable_verb",
+        "Progression Step 5:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can identify simple strategies to reduce obvious risks with adult support and guidance."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can develop basic strategies to manage familiar risks in structured situations with some support."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can create and implement appropriate strategies to reduce multiple risks in various contexts independently."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can design comprehensive risk management strategies and evaluate their effectiveness across different complex situations."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can systematically develop, implement and adapt sophisticated risk mitigation strategies across unfamiliar and unpredictable contexts."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_12_lt_02",
+      "lt_name": "Navigating Social Norms Appropriately",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Progression Step 1:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Progression Step 1",
+          "statement": "I can follow simple rules in familiar groups with adult support and reminders."
+        },
+        {
+          "band": "Progression Step 2",
+          "statement": "I can recognize and follow basic social norms in familiar situations with occasional guidance."
+        },
+        {
+          "band": "Progression Step 3",
+          "statement": "I can identify and adapt to different social norms across various groups and situations independently."
+        },
+        {
+          "band": "Progression Step 4",
+          "statement": "I can explain why different social norms exist and adjust my behavior appropriately across diverse contexts."
+        },
+        {
+          "band": "Progression Step 5",
+          "statement": "I can evaluate and navigate complex social norms in unfamiliar situations while maintaining appropriate behavior."
         }
       ]
     }

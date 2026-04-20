@@ -1,48 +1,41 @@
 {
   "reference_authoring_version": "0.3.0",
-  "source_slug": "wales-cfw-health-wellbeing-sow",
-  "model": "claude-haiku-4-5-20251001",
+  "source_slug": "welsh-cfw-health-wellbeing-ps-descriptions",
+  "model": "claude-sonnet-4-20250514",
   "temperature": 0.3,
   "runs": 3,
   "rubrics": [
     {
       "lt_id": "cluster_01_lt_01",
-      "knowledge_type": "Type 1",
+      "knowledge_type": "Type 2",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to explain health and well-being factors.",
-          "word_count": 9
+          "descriptor": "No attempt to demonstrate movement skills.",
+          "word_count": 6
         },
         {
           "name": "emerging",
-          "descriptor": "With support, names some factors but explanations are incomplete or inaccurate.",
-          "word_count": 11
+          "descriptor": "Demonstrates basic movement skills with significant support in familiar environments.",
+          "word_count": 10
         },
         {
           "name": "developing",
-          "descriptor": "Independently identifies physical activity, nutrition, and sleep but explanations lack depth or connection.",
-          "word_count": 13
+          "descriptor": "Applies movement skills independently in familiar environments but struggles with transfer to new situations.",
+          "word_count": 14
         },
         {
           "name": "competent",
-          "descriptor": "Explains how physical activity, nutrition, sleep, and other factors support physical health and well-being outcomes.",
-          "word_count": 16
+          "descriptor": "Develops, applies and transfers movement skills effectively across different environments and situations independently.",
+          "word_count": 13
         },
         {
           "name": "extending",
-          "descriptor": "Explains interconnections between multiple factors and applies reasoning to novel health scenarios.",
-          "word_count": 12
+          "descriptor": "Adapts and creates movement skills fluently across complex and unfamiliar environments.",
+          "word_count": 11
         }
       ],
-      "prerequisite_edges": [
-        {
-          "from_lt_id": "cluster_02_lt_02",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Understanding self-care behaviours provides foundation for recognising how specific actions support health outcomes."
-        }
-      ],
+      "prerequisite_edges": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -51,34 +44,34 @@
             [
               "no_evidence",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "developing",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 16
+          "competent_word_count": 13
         },
         {
           "run": 2,
@@ -86,34 +79,34 @@
             [
               "no_evidence",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "developing",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 16
+          "competent_word_count": 13
         },
         {
           "run": 3,
@@ -121,71 +114,71 @@
             [
               "no_evidence",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "developing",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 16
+          "competent_word_count": 13
         }
       ],
       "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor directly mirrors the LT definition without hedging language, frames the capability as demonstrated, and can stand alone as evidence that the learning target is met.",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner develops, applies and transfers movement skills effectively and independently, demonstrating full achievement of the learning target without hedging language or positioning it as incomplete.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
-      "lt_id": "cluster_01_lt_02",
+      "lt_id": "cluster_02_lt_01",
       "knowledge_type": "Type 1",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to perform movement or exercise skills.",
-          "word_count": 8
+          "descriptor": "No attempt to explain balanced diet principles.",
+          "word_count": 7
         },
         {
           "name": "emerging",
-          "descriptor": "With support, attempts movement skills but demonstrates inconsistent control or incomplete technique.",
+          "descriptor": "With support, identifies some nutrition concepts but explanations are inaccurate or incomplete.",
           "word_count": 12
         },
         {
           "name": "developing",
-          "descriptor": "Independently performs basic movement and exercise skills with generally correct technique but inconsistency in execution.",
-          "word_count": 15
+          "descriptor": "Explains basic balanced diet principles but struggles to connect nutrition with health impacts.",
+          "word_count": 13
         },
         {
           "name": "competent",
-          "descriptor": "Independently performs movement, exercise, and activity skills with control, coordination, and technique appropriate to age and context.",
-          "word_count": 17
+          "descriptor": "Explains balanced diet principles and clearly describes how nutrition impacts physical health and well-being.",
+          "word_count": 15
         },
         {
           "name": "extending",
-          "descriptor": "Performs movement skills with precision and adapts technique fluently across varied contexts and increasing complexity.",
-          "word_count": 15
+          "descriptor": "Explains nutrition principles and evaluates complex relationships between diet choices and health outcomes.",
+          "word_count": 13
         }
       ],
       "prerequisite_edges": [],
@@ -197,34 +190,34 @@
             [
               "no_evidence",
               "within_limit",
-              "apply"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "apply"
+              "recognise"
             ],
             [
               "developing",
               "within_limit",
-              "apply"
+              "describe"
             ],
             [
               "competent",
               "within_limit",
-              "apply"
+              "describe"
             ],
             [
               "extending",
               "within_limit",
-              "none"
+              "describe"
             ],
             [
               "competent_scope",
               "unscoped"
             ]
           ],
-          "competent_word_count": 17
+          "competent_word_count": 15
         },
         {
           "run": 2,
@@ -232,34 +225,34 @@
             [
               "no_evidence",
               "within_limit",
-              "apply"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "apply"
+              "recognise"
             ],
             [
               "developing",
               "within_limit",
-              "apply"
+              "describe"
             ],
             [
               "competent",
               "within_limit",
-              "apply"
+              "describe"
             ],
             [
               "extending",
               "within_limit",
-              "apply"
+              "analyse"
             ],
             [
               "competent_scope",
               "unscoped"
             ]
           ],
-          "competent_word_count": 17
+          "competent_word_count": 16
         },
         {
           "run": 3,
@@ -267,110 +260,7 @@
             [
               "no_evidence",
               "within_limit",
-              "apply"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "apply"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "apply"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "apply"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "apply"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 17
-        }
-      ],
-      "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'none'), ('competent_scope', 'unscoped')): 1, (('no_evidence', 'within_limit', 'apply'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2}"
-      ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": [],
-      "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares independent performance of skills with appropriate control, coordination, and technique, standing alone as evidence the LT is met without hedging language or framing Competent as incomplete.",
-      "propositional_lt_rubric_thin_flag": true
-    },
-    {
-      "lt_id": "cluster_02_lt_02",
-      "knowledge_type": "Type 1",
-      "levels": [
-        {
-          "name": "no_evidence",
-          "descriptor": "No attempt to explain self-care impact on well-being.",
-          "word_count": 10
-        },
-        {
-          "name": "emerging",
-          "descriptor": "With support, names some self-care behaviours but explanations lack clarity or accuracy.",
-          "word_count": 13
-        },
-        {
-          "name": "developing",
-          "descriptor": "Independently explains how some self-care behaviours support well-being but reasoning is incomplete.",
-          "word_count": 14
-        },
-        {
-          "name": "competent",
-          "descriptor": "Independently explains how positive, informed self-care behaviours support well-being and sense of self-worth.",
-          "word_count": 16
-        },
-        {
-          "name": "extending",
-          "descriptor": "Explains self-care impact and connects it to broader influences on identity and relationships.",
-          "word_count": 14
-        }
-      ],
-      "prerequisite_edges": [
-        {
-          "from_lt_id": "cluster_01_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Understanding specific health factors is foundational to explaining how self-care behaviours support well-being."
-        },
-        {
-          "from_lt_id": "cluster_03_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Understanding emotional responses and mental health is essential to explaining self-care's impact on well-being and self-worth."
-        },
-        {
-          "from_lt_id": "cluster_04_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Communicating feelings supports reflection on self-care's emotional impact, though explanation can occur without this skill."
-        },
-        {
-          "from_lt_id": "cluster_07_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Identifying social influences on identity enriches understanding of how self-care relates to sense of self, but is not strictly required."
-        }
-      ],
-      "stability_flag": "rubric_unstable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
@@ -398,138 +288,56 @@
             ]
           ],
           "competent_word_count": 16
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent_scope",
-              "scoped"
-            ]
-          ],
-          "competent_word_count": 18
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 18
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'scoped')): 1}"
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 1}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares independent capability to explain the core relationship between self-care behaviours and well-being/self-worth, matching the LT's demand without hedging or positioning as incomplete.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated at the learning target's level of demand without hedging language or positioning it as incomplete.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
-      "lt_id": "cluster_03_lt_01",
-      "knowledge_type": "Type 1",
+      "lt_id": "cluster_02_lt_02",
+      "knowledge_type": "Type 2",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to connect experiences to emotional responses.",
-          "word_count": 8
+          "descriptor": "No attempt to apply nutritional knowledge for food choices.",
+          "word_count": 9
         },
         {
           "name": "emerging",
-          "descriptor": "With support, identifies one experience and names a feeling, but connection is unclear.",
-          "word_count": 13
+          "descriptor": "With support, applies basic nutritional knowledge to make simple food choices.",
+          "word_count": 11
         },
         {
           "name": "developing",
-          "descriptor": "Independently describes an experience and its emotional response but lacks depth in explaining well-being impact.",
-          "word_count": 16
+          "descriptor": "Independently applies nutritional knowledge to make food choices in familiar contexts.",
+          "word_count": 11
         },
         {
           "name": "competent",
-          "descriptor": "Independently explains how specific experiences and emotional responses influence mental health and well-being.",
-          "word_count": 14
+          "descriptor": "Independently applies nutritional knowledge to make informed food choices that support health across different contexts.",
+          "word_count": 15
         },
         {
           "name": "extending",
-          "descriptor": "Explains how experiences and emotional responses influence well-being and relates this to broader life patterns.",
-          "word_count": 16
+          "descriptor": "Transfers nutritional decision-making to novel situations and evaluates complex food choice implications.",
+          "word_count": 13
         }
       ],
       "prerequisite_edges": [
         {
-          "from_lt_id": "cluster_04_lt_01",
+          "from_lt_id": "cluster_02_lt_01",
           "kind": "ontological_prerequisite",
           "confidence": "high",
-          "rationale": "Learner must be able to identify and name feelings before explaining how those feelings influence well-being."
-        },
-        {
-          "from_lt_id": "cluster_02_lt_02",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Understanding physical experiences and their effects supports recognition of how embodied experiences connect to emotional well-being."
-        },
-        {
-          "from_lt_id": "cluster_08_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Understanding healthy relationships as fundamental to well-being provides context for recognizing how relational experiences influence emotional responses."
+          "rationale": "Cannot apply nutritional knowledge without first understanding balanced diet and nutrition principles."
         }
       ],
-      "stability_flag": "rubric_unstable",
+      "stability_flag": "stable",
       "per_run_signatures": [
         {
           "run": 1,
@@ -537,34 +345,34 @@
             [
               "no_evidence",
               "within_limit",
-              "none"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "developing",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 15
         },
         {
           "run": 2,
@@ -572,7 +380,131 @@
             [
               "no_evidence",
               "within_limit",
-              "none"
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently at the learning target's level of demand without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_02_lt_03",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to plan or prepare meals.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some nutritious foods but produces incomplete meal plans.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently plans basic nutritious meals but preparation techniques lack consistency or accuracy.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently plans and prepares a variety of nutritious meals using appropriate cooking and preparation techniques consistently.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Adapts meal planning and preparation techniques to accommodate dietary restrictions or cultural preferences.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_02_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot plan nutritious meals without understanding balanced diet principles."
+        },
+        {
+          "from_lt_id": "cluster_02_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Making informed food choices typically precedes meal planning and preparation skills."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
             ],
             [
               "emerging",
@@ -582,33 +514,443 @@
             [
               "developing",
               "within_limit",
-              "describe"
+              "none"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "none"
             ],
             [
               "extending",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent_scope",
               "unscoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
         }
       ],
-      "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'none'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'describe'), ('competent_scope', 'unscoped')): 2}"
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
       ],
-      "quality_gate_passed": true,
-      "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand, with no hedging language or framing of incompleteness.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' and 'consistently' indicating complete mastery of the learning target.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyze physical-emotional connections.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic connections between physical and emotional changes.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies connections but analysis lacks depth or context consideration.",
+          "word_count": 10
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently analyzes and evaluates how physical and emotional changes connect across different contexts.",
+          "word_count": 13
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers analysis to novel situations and integrates multiple interconnected physical-emotional patterns.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_08_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot analyze physical-emotional connections without understanding how experiences affect emotions."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Self-awareness of perceptions and feelings typically precedes analyzing their connections to physical changes."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding emotional regulation strategies supports deeper analysis of physical-emotional connections."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly states the learner independently demonstrates the exact capability described in the learning target without hedging or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to modify behavior for health outcomes.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts basic behavioral changes but inconsistently applies strategies.",
+          "word_count": 10
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently modifies some behaviors but struggles to collaborate effectively or sustain changes.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently modifies behavior and collaborates with others to achieve improved physical and emotional health outcomes.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers behavioral strategies across contexts and supports others in developing health-promoting behaviors.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_03_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot modify behavior for health without understanding physical-emotional connections."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Self-regulation strategies are foundational for sustained behavioral modification."
+        },
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Recognizing health risks typically precedes modifying behavior to address them."
+        },
+        {
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Communication skills support effective collaboration for health outcomes."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and frames Competent as successfully achieving the learning target without hedging language or positioning it as incomplete.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
@@ -617,42 +959,42 @@
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to communicate feelings.",
-          "word_count": 5
+          "descriptor": "No attempt to identify health risks.",
+          "word_count": 6
         },
         {
           "name": "emerging",
-          "descriptor": "With support, names a feeling but communicates it in ways unsuitable to context or audience.",
-          "word_count": 15
+          "descriptor": "With support, names some health risks but descriptions are incomplete or inaccurate.",
+          "word_count": 12
         },
         {
           "name": "developing",
-          "descriptor": "Independently communicates feelings appropriately in familiar contexts but inconsistently adjusts to unfamiliar audiences or situations.",
-          "word_count": 15
-        },
-        {
-          "name": "competent",
-          "descriptor": "Independently communicates feelings in ways that are clearly appropriate to the context and audience.",
+          "descriptor": "Independently identifies obvious health risks but struggles to describe their effects on well-being.",
           "word_count": 14
         },
         {
+          "name": "competent",
+          "descriptor": "Independently recognizes and describes various behaviors, conditions and situations that affect physical health and well-being.",
+          "word_count": 16
+        },
+        {
           "name": "extending",
-          "descriptor": "Selects and adapts communication of feelings strategically across diverse contexts and audiences to strengthen relationships.",
-          "word_count": 15
+          "descriptor": "Recognizes subtle health risks and describes complex interconnections between multiple health factors.",
+          "word_count": 12
         }
       ],
       "prerequisite_edges": [
         {
-          "from_lt_id": "cluster_03_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Learner must first understand how experiences and emotional responses influence mental health before communicating feelings appropriately."
-        },
-        {
-          "from_lt_id": "cluster_08_lt_01",
+          "from_lt_id": "cluster_02_lt_01",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Understanding healthy relationships and belonging provides context for why appropriate feeling communication matters in relationships."
+          "rationale": "Understanding nutrition principles helps recognize diet-related health risks."
+        },
+        {
+          "from_lt_id": "cluster_11_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "General risk identification skills are essential for recognizing health-specific risks."
         }
       ],
       "stability_flag": "rubric_unstable",
@@ -663,7 +1005,7 @@
             [
               "no_evidence",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
@@ -673,12 +1015,179 @@
             [
               "developing",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'recognise'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'recognise'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently at the learning target's level of demand without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": true
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to apply health risk management strategies.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, applies basic strategies but inconsistently or inappropriately for context.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently applies some appropriate strategies but misses key protective measures or contexts.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently applies appropriate strategies to manage health risks and protect self and others effectively.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Adapts and combines strategies flexibly across novel situations and advocates for others' protection.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot apply strategies to manage health risks without first recognizing what those risks are."
+        },
+        {
+          "from_lt_id": "cluster_11_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Risk identification and assessment skills typically support health risk management strategies."
+        },
+        {
+          "from_lt_id": "cluster_11_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "General risk management strategies provide foundation for health-specific risk management approaches."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
             ],
             [
               "extending",
@@ -698,22 +1207,22 @@
             [
               "no_evidence",
               "within_limit",
-              "describe"
+              "recognise"
             ],
             [
               "emerging",
               "within_limit",
-              "recognise"
+              "apply"
             ],
             [
               "developing",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "competent",
               "within_limit",
-              "describe"
+              "apply"
             ],
             [
               "extending",
@@ -725,18 +1234,49 @@
               "unscoped"
             ]
           ],
-          "competent_word_count": 15
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
         }
       ],
-      "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'describe'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2}"
-      ],
-      "quality_gate_passed": false,
-      "quality_gate_failures": [
-        "single_construct"
-      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares independent capability to communicate feelings appropriately, uses no hedging language, and stands alone as evidence the learning target is met.",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently applies appropriate strategies effectively, demonstrating complete achievement of the learning target without hedging language or dependency on higher levels.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
@@ -745,50 +1285,31 @@
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to analyse decision impacts or influencing factors.",
-          "word_count": 9
+          "descriptor": "No attempt to focus attention on internal experiences.",
+          "word_count": 8
         },
         {
           "name": "emerging",
-          "descriptor": "With support, identifies some impacts or factors but reasoning is incomplete or inaccurate.",
-          "word_count": 13
+          "descriptor": "With support, notices some perceptions, thoughts or feelings but inconsistently.",
+          "word_count": 10
         },
         {
           "name": "developing",
-          "descriptor": "Independently identifies impacts on self and others and some influencing factors but misses broader societal scope.",
-          "word_count": 16
+          "descriptor": "Independently notices internal experiences but struggles to apply self-awareness consistently.",
+          "word_count": 11
         },
         {
           "name": "competent",
-          "descriptor": "Independently analyses how decisions impact self, others, and society, and identifies key factors influencing decision-making.",
-          "word_count": 16
+          "descriptor": "Independently focuses attention on perceptions, thoughts and feelings to develop and apply self-awareness effectively.",
+          "word_count": 15
         },
         {
           "name": "extending",
-          "descriptor": "Analyses decision impacts and factors across multiple contexts and recognises interconnections between influences.",
+          "descriptor": "Transfers mindful self-awareness skills to novel situations and integrates with broader reflection.",
           "word_count": 13
         }
       ],
-      "prerequisite_edges": [
-        {
-          "from_lt_id": "cluster_03_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Understanding how experiences and emotions influence well-being is foundational to analysing how decisions impact self and others."
-        },
-        {
-          "from_lt_id": "cluster_07_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Identifying social influences on identity and behaviour is essential to recognising factors that influence decision-making."
-        },
-        {
-          "from_lt_id": "cluster_02_lt_02",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Demonstrating physical competence provides concrete experience of personal decision-making and its outcomes, supporting analysis of impacts."
-        }
-      ],
+      "prerequisite_edges": [],
       "stability_flag": "rubric_unstable",
       "per_run_signatures": [
         {
@@ -797,7 +1318,7 @@
             [
               "no_evidence",
               "within_limit",
-              "analyse"
+              "recognise"
             ],
             [
               "emerging",
@@ -812,47 +1333,12 @@
             [
               "competent",
               "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "analyse"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 16
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "competent_scope",
@@ -862,12 +1348,12 @@
           "competent_word_count": 16
         },
         {
-          "run": 3,
+          "run": 2,
           "signature": [
             [
               "no_evidence",
               "within_limit",
-              "analyse"
+              "recognise"
             ],
             [
               "emerging",
@@ -882,28 +1368,63 @@
             [
               "competent",
               "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "extending",
               "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "competent_scope",
               "unscoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'analyse'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 1}"
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand, with no hedging language or framing of incompleteness.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and effectively, standing alone as evidence that the learning target is met.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
@@ -912,28 +1433,28 @@
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to identify or evaluate decision implications or risks.",
-          "word_count": 10
+          "descriptor": "No attempt to identify or apply emotional regulation strategies.",
+          "word_count": 9
         },
         {
           "name": "emerging",
-          "descriptor": "With support, identifies some possible consequences but reasoning is incomplete or inaccurate.",
-          "word_count": 12
+          "descriptor": "With support, identifies basic emotional regulation strategies but applies them inconsistently or inaccurately.",
+          "word_count": 13
         },
         {
           "name": "developing",
-          "descriptor": "Independently identifies implications and risks for self or others but misses broader or longer-term consequences.",
-          "word_count": 16
+          "descriptor": "Independently identifies appropriate emotional regulation strategies but applies them inconsistently across different situations.",
+          "word_count": 13
         },
         {
           "name": "competent",
-          "descriptor": "Independently evaluates multiple implications and risks of decisions for self and others before deciding.",
-          "word_count": 14
+          "descriptor": "Independently identifies and consistently applies appropriate emotional regulation strategies to manage emotions effectively across different situations.",
+          "word_count": 16
         },
         {
           "name": "extending",
-          "descriptor": "Evaluates implications and risks across interconnected contexts and anticipates second-order consequences.",
-          "word_count": 12
+          "descriptor": "Transfers emotional regulation strategies to novel situations and adapts strategies based on contextual demands.",
+          "word_count": 14
         }
       ],
       "prerequisite_edges": [
@@ -941,13 +1462,13 @@
           "from_lt_id": "cluster_05_lt_01",
           "kind": "ontological_prerequisite",
           "confidence": "high",
-          "rationale": "Analysing decision impacts and influencing factors is foundational; evaluation of implications and risks builds directly on that analytical capability."
+          "rationale": "Self-awareness of thoughts and feelings is necessary before regulating emotions strategically."
         },
         {
-          "from_lt_id": "cluster_03_lt_01",
+          "from_lt_id": "cluster_08_lt_01",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Understanding how experiences and emotions influence well-being supports recognition of emotional and personal implications in decision-making."
+          "rationale": "Understanding emotional impact typically precedes learning to regulate those emotions."
         }
       ],
       "stability_flag": "stable",
@@ -973,19 +1494,19 @@
             [
               "competent",
               "within_limit",
-              "evaluate"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "evaluate"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 16
         },
         {
           "run": 2,
@@ -1008,19 +1529,19 @@
             [
               "competent",
               "within_limit",
-              "evaluate"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "evaluate"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 18
         },
         {
           "run": 3,
@@ -1043,56 +1564,56 @@
             [
               "competent",
               "within_limit",
-              "evaluate"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "evaluate"
+              "apply"
             ],
             [
               "competent_scope",
-              "unscoped"
+              "scoped"
             ]
           ],
-          "competent_word_count": 12
+          "competent_word_count": 13
         }
       ],
       "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand (evaluating implications and risks before deciding) without hedging language or framing it as incomplete.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently identifies and consistently applies' showing complete mastery of the learning target.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
       "lt_id": "cluster_06_lt_01",
-      "knowledge_type": "Type 1",
+      "knowledge_type": "Type 2",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to identify consequences of career choices.",
-          "word_count": 8
+          "descriptor": "No attempt to communicate about feelings.",
+          "word_count": 6
         },
         {
           "name": "emerging",
-          "descriptor": "With support, names one or two consequences but descriptions lack detail or accuracy.",
-          "word_count": 13
+          "descriptor": "With support, identifies some feelings but struggles to express or advocate for communication benefits.",
+          "word_count": 14
         },
         {
           "name": "developing",
-          "descriptor": "Independently identifies consequences across one or two domains but misses depth or breadth.",
+          "descriptor": "Independently expresses feelings but inconsistently advocates for communication as a mental health strategy.",
           "word_count": 13
         },
         {
           "name": "competent",
-          "descriptor": "Identifies and describes significant lifelong consequences of career choices across personal, financial, and social domains.",
-          "word_count": 15
+          "descriptor": "Independently notices, expresses, and advocates for the benefits of communicating feelings as a mental health strategy.",
+          "word_count": 16
         },
         {
           "name": "extending",
-          "descriptor": "Identifies consequences and explains how they interconnect across domains or evolve over time.",
-          "word_count": 13
+          "descriptor": "Transfers communication advocacy skills to support others and applies across diverse mental health contexts.",
+          "word_count": 14
         }
       ],
       "prerequisite_edges": [
@@ -1100,19 +1621,186 @@
           "from_lt_id": "cluster_05_lt_01",
           "kind": "ontological_prerequisite",
           "confidence": "high",
-          "rationale": "Identifying consequences requires understanding how decisions and actions impact self and others."
+          "rationale": "Self-awareness of feelings is required before one can notice and express them."
         },
         {
-          "from_lt_id": "cluster_07_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Understanding social influences on identity supports recognition of social consequences of career choices."
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Basic communication skills are essential for expressing feelings effectively."
         },
         {
-          "from_lt_id": "cluster_03_lt_01",
+          "from_lt_id": "cluster_08_lt_01",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Understanding emotional well-being supports recognition of personal consequences of career pathways."
+          "rationale": "Understanding emotional impact typically precedes advocating for communication as mental health strategy."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' performing all required actions without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_06_lt_02",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify mental health support resources.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, names some people or groups but shows confusion about appropriateness.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies some appropriate support people or groups but lacks understanding of timing considerations.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies appropriate people, groups, and timing for seeking mental health support across different situations.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Evaluates and prioritizes multiple support options while considering complex situational factors and accessibility.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_06_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Understanding the value of communicating feelings typically precedes knowing where to seek support."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Self-awareness helps recognize when mental health support might be needed."
+        },
+        {
+          "from_lt_id": "cluster_08_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding emotional impact helps determine appropriate timing for seeking support."
         }
       ],
       "stability_flag": "stable",
@@ -1143,7 +1831,7 @@
             [
               "extending",
               "within_limit",
-              "recognise"
+              "evaluate"
             ],
             [
               "competent_scope",
@@ -1178,6 +1866,1098 @@
             [
               "extending",
               "within_limit",
+              "evaluate"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner can independently demonstrate the capability without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_07_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to analyze past experiences.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic details from experiences but struggles to recognize patterns.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies some patterns or impacts from experiences but analysis lacks depth.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently analyzes past experiences to identify clear patterns, impacts, and meaningful lessons learned.",
+          "word_count": 13
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers analytical insights across diverse experiences to generate sophisticated understanding and predictions.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Self-awareness is essential to meaningfully analyze one's own past experiences."
+        },
+        {
+          "from_lt_id": "cluster_08_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding emotional impact typically precedes deeper pattern analysis of experiences."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 13
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently analyzes' and 'clear patterns, impacts, and meaningful lessons learned' without any hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_07_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to connect past experiences with future preparation.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some past experiences but makes limited connections to future situations.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently connects some past experiences to future situations but predictions lack detail or accuracy.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently uses insights from past experiences to make realistic predictions and develop appropriate preparations for future challenges and opportunities.",
+          "word_count": 19
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers predictive insights across diverse contexts and develops comprehensive contingency plans for multiple scenarios.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_07_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot use insights from past experiences without first being able to analyze and reflect on them."
+        },
+        {
+          "from_lt_id": "cluster_09_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Goal-setting skills typically support the preparation aspect of anticipating future situations."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 19
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently uses insights' and 'realistic predictions' without any hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_08_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to understand emotional impact.",
+          "word_count": 6
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies basic emotions but struggles to connect experiences with impacts.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently recognizes emotional impacts in familiar situations but misses underlying reasons or connections.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently explains how and why specific experiences create emotional impacts on self and others across various situations.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes complex emotional patterns and predicts how varied experiences will impact different people.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Self-awareness of perceptions and feelings is necessary to understand emotional impact."
+        },
+        {
+          "from_lt_id": "cluster_06_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Noticing and expressing feelings typically develops before understanding their causes and impacts."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and can stand alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_09_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to gather or use evidence for decisions.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, collects some information but applies it inaccurately or incompletely.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently gathers relevant evidence but evaluates it superficially or applies it inconsistently.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently gathers, evaluates, and applies relevant evidence to make informed decisions across different contexts.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Synthesizes complex evidence sources and anticipates decision implications beyond immediate context.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_07_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Analyzing past experiences provides foundation for evaluating evidence quality and relevance."
+        },
+        {
+          "from_lt_id": "cluster_10_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding decision impacts is essential for applying evidence meaningfully in decision-making."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'evaluate'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'apply'), ('developing', 'within_limit', 'evaluate'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 2}"
+      ],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' performing all required actions without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_10_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain decision impacts or processes.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some decision effects but explanations are incomplete or inaccurate.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Explains some decision impacts on self and others but misses timing considerations or collective processes.",
+          "word_count": 15
+        },
+        {
+          "name": "competent",
+          "descriptor": "Explains how decisions affect self and others over time and identifies when collective decision-making is appropriate.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes complex decision impacts across multiple timeframes and evaluates optimal decision-making approaches.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_08_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding emotional impact is necessary to explain how decisions affect people."
+        },
+        {
+          "from_lt_id": "cluster_12_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding group dynamics helps identify when collective decision-making is appropriate."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly states the learner explains and identifies the required capabilities without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_10_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to evaluate factors or participate in decisions.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some factors but evaluates them inaccurately or incompletely.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies relevant factors but evaluates implications superficially or inconsistently across contexts.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently evaluates relevant factors and implications when making decisions both individually and as part of a group.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers decision-making evaluation skills to complex unfamiliar contexts and guides others' decision processes.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_09_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot evaluate factors and implications without ability to gather and evaluate relevant evidence."
+        },
+        {
+          "from_lt_id": "cluster_10_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must understand decision impacts and processes before participating effectively in decision-making."
+        },
+        {
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "medium",
+          "rationale": "Group decision-making requires ability to communicate needs and respond to others appropriately."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'evaluate'), ('competent', 'within_limit', 'evaluate'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently evaluates' matching the learning target's demand without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_11_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify hazards or assess risks.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies obvious hazards but struggles to evaluate likelihood or severity.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies common hazards and attempts basic risk evaluation with some gaps.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies potential hazards and accurately evaluates both likelihood and severity of associated risks.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Systematically identifies complex hazards and evaluates risks using multiple assessment criteria and contexts.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_04_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must recognize health risks before evaluating their likelihood and severity."
+        },
+        {
+          "from_lt_id": "cluster_09_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Evidence-based decision making supports systematic risk evaluation processes."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
               "recognise"
             ],
             [
@@ -1185,7 +2965,42 @@
               "scoped"
             ]
           ],
-          "competent_word_count": 16
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 14
         },
         {
           "run": 3,
@@ -1220,67 +3035,856 @@
               "scoped"
             ]
           ],
-          "competent_word_count": 16
+          "competent_word_count": 14
         }
       ],
       "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor directly mirrors the LT definition without hedging language, frames the capability as demonstrated, and stands alone as evidence the target is met.",
-      "propositional_lt_rubric_thin_flag": true
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently demonstrates the full capability without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
     },
     {
-      "lt_id": "cluster_07_lt_01",
-      "knowledge_type": "Type 1",
+      "lt_id": "cluster_11_lt_02",
+      "knowledge_type": "Type 2",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to identify social influences on identity.",
-          "word_count": 8
+          "descriptor": "No attempt to develop risk management strategies.",
+          "word_count": 7
         },
         {
           "name": "emerging",
-          "descriptor": "With support, names one or two social influences but descriptions lack clarity or accuracy.",
-          "word_count": 14
+          "descriptor": "With support, suggests basic strategies but implementation is incomplete or inappropriate.",
+          "word_count": 11
         },
         {
           "name": "developing",
-          "descriptor": "Independently identifies several social influences on identity but explanations remain surface-level or incomplete.",
-          "word_count": 14
+          "descriptor": "Independently develops some strategies but implementation lacks consistency or effectiveness in managing risks.",
+          "word_count": 13
         },
         {
           "name": "competent",
-          "descriptor": "Identifies how family, peers, culture, and media shape identity, values, behaviours, and well-being with clear reasoning.",
-          "word_count": 17
+          "descriptor": "Independently develops and implements appropriate strategies that effectively reduce, eliminate, or manage identified risks.",
+          "word_count": 14
         },
         {
           "name": "extending",
-          "descriptor": "Analyses how multiple social influences interact and conflict to shape identity across different contexts and life stages.",
-          "word_count": 17
+          "descriptor": "Adapts strategies across contexts and evaluates their effectiveness to optimize risk management outcomes.",
+          "word_count": 13
         }
       ],
       "prerequisite_edges": [
         {
-          "from_lt_id": "cluster_03_lt_01",
+          "from_lt_id": "cluster_11_lt_01",
           "kind": "ontological_prerequisite",
           "confidence": "high",
-          "rationale": "Understanding how experiences and emotional responses influence well-being is foundational to recognising how social influences shape identity and well-being."
+          "rationale": "Cannot develop management strategies without first identifying and assessing the risks."
         },
         {
-          "from_lt_id": "cluster_02_lt_02",
+          "from_lt_id": "cluster_09_lt_01",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Understanding self-care and respect for self supports recognition of how social influences affect behaviours and sense of self-worth."
+          "rationale": "Evidence-based decision making supports selecting appropriate risk management strategies."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
         },
         {
-          "from_lt_id": "cluster_08_lt_01",
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "none"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "none"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently develops and implements appropriate strategies that effectively' manage risks, meeting the learning target without hedging language.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_12_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain group rules or norms.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some group rules but explanations are incomplete or inaccurate.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Explains basic group rules and norms but struggles to connect effects on individuals.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Explains how rules, norms, and behaviors operate within different groups and their effects on individuals.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes complex interactions between multiple group norms and predicts individual behavioral responses.",
+          "word_count": 12
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_15_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding relationship types is necessary to comprehend how groups form and function."
+        },
+        {
+          "from_lt_id": "cluster_14_lt_01",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Understanding healthy relationships and belonging provides context for identifying how social connections influence identity formation."
+          "rationale": "Understanding how groups shape identity helps explain why group norms have effects on individuals."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor directly states the learner can explain the required concepts without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_12_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to recognize or follow social norms.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some social rules but struggles to follow them consistently.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Recognizes social norms in familiar situations but inconsistently applies appropriate behavior independently.",
+          "word_count": 12
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently recognizes and follows the rules and norms of different groups and situations consistently.",
+          "word_count": 14
+        },
+        {
+          "name": "extending",
+          "descriptor": "Adapts behavior fluidly across diverse social contexts and helps others navigate social norms.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_12_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot navigate social norms without first understanding how they operate within groups."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Self-awareness helps recognize one's own behavior in relation to social expectations."
         }
       ],
       "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 13
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' and 'consistently' without any hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_14_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to explain social influences on identity.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some groups but provides inaccurate or incomplete explanations.",
+          "word_count": 11
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently explains basic social influences but lacks depth in connecting values to identity.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently explains how values, attitudes, and identity are shaped by different groups and social influences.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes complex interactions between multiple social influences and their cumulative effects on identity.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_12_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding group dynamics is essential to explain how groups influence identity."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "single_construct"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner can independently explain the concept without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_14_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to evaluate values or social influences.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some values but struggles to connect them to social influences.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies values and social influences but evaluates connections with significant gaps or inaccuracies.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently evaluates how values are shaped by social influences and recognises similarities and differences between people's values accurately.",
+          "word_count": 18
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers evaluation skills to analyze complex value systems across diverse cultural or historical contexts.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_14_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Cannot evaluate how values are shaped without first understanding that social influences shape identity and values."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Self-awareness of own perceptions and thoughts supports recognition of one's own values before evaluating them."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 18
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "evaluate"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 18
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently and accurately, standing alone as evidence that the learning target is met.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_15_lt_01",
+      "knowledge_type": "Type 1",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify relationship types or dynamics.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, names some relationship types but explanations are incomplete or inaccurate.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies basic relationship types but explanations of change and complexity lack detail.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies different types of relationships and explains how relationships change over time and vary in complexity.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Analyzes relationship patterns across contexts and predicts how specific factors influence relationship development.",
+          "word_count": 13
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_08_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding emotional impact is essential for explaining how relationships change and affect people."
+        },
+        {
+          "from_lt_id": "cluster_12_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding group dynamics provides foundation for comprehending relationship complexity and variation."
+        }
+      ],
+      "stability_flag": "stable",
       "per_run_signatures": [
         {
           "run": 1,
@@ -1350,7 +3954,7 @@
               "unscoped"
             ]
           ],
-          "competent_word_count": 14
+          "competent_word_count": 17
         },
         {
           "run": 3,
@@ -1378,7 +3982,166 @@
             [
               "extending",
               "within_limit",
+              "analyse"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently demonstrates the full capability described in the learning target without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_16_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to communicate needs or respond to others.",
+          "word_count": 9
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, attempts basic communication but struggles with clarity or appropriate responses.",
+          "word_count": 12
+        },
+        {
+          "name": "developing",
+          "descriptor": "Communicates needs and feelings with some clarity but inconsistently responds appropriately to others.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently communicates needs and feelings clearly and responds appropriately to others' expressed needs and feelings.",
+          "word_count": 15
+        },
+        {
+          "name": "extending",
+          "descriptor": "Adapts communication style effectively across diverse contexts and facilitates others' communication.",
+          "word_count": 11
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_05_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Self-awareness is required to identify and communicate one's own needs and feelings."
+        },
+        {
+          "from_lt_id": "cluster_06_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Understanding feelings communication benefits typically precedes broader communication skills development."
+        }
+      ],
+      "stability_flag": "rubric_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
               "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "describe"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
             ],
             [
               "competent_scope",
@@ -1389,392 +4152,68 @@
         }
       ],
       "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'recognise'), ('competent_scope', 'unscoped')): 1}"
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'describe'), ('competent', 'within_limit', 'describe'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2}"
       ],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated independently ('Identifies how...with clear reasoning') without hedging language, incompleteness markers, or positioning it as a way-station to Extending.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently' and 'clearly' without any hedging language or implications of incompleteness.",
       "propositional_lt_rubric_thin_flag": false
     },
     {
-      "lt_id": "cluster_07_lt_02",
+      "lt_id": "cluster_17_lt_01",
       "knowledge_type": "Type 2",
       "levels": [
         {
           "name": "no_evidence",
-          "descriptor": "No attempt to analyse cultural norms or values.",
-          "word_count": 8
+          "descriptor": "No attempt to identify conflicts or apply resolution strategies.",
+          "word_count": 9
         },
         {
           "name": "emerging",
-          "descriptor": "With support, identifies some norms or values but analysis lacks depth or cultural context.",
-          "word_count": 14
+          "descriptor": "With support, recognizes some conflicts but applies strategies inconsistently or inappropriately.",
+          "word_count": 11
         },
         {
           "name": "developing",
-          "descriptor": "Independently describes how norms develop in one culture but struggles to compare across contexts.",
-          "word_count": 14
-        },
-        {
-          "name": "competent",
-          "descriptor": "Analyses how norms and values develop within and across different cultural contexts with reasoned explanation.",
-          "word_count": 15
-        },
-        {
-          "name": "extending",
-          "descriptor": "Analyses norms and values development across cultures and relates patterns to broader social systems.",
-          "word_count": 14
-        }
-      ],
-      "prerequisite_edges": [
-        {
-          "from_lt_id": "cluster_07_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Identifying social influences on identity is foundational to analysing how norms develop culturally."
-        },
-        {
-          "from_lt_id": "cluster_05_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Analysing decision impacts and influencing factors supports understanding how cultural norms shape behaviour."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "competent_scope",
-              "scoped"
-            ]
-          ],
-          "competent_word_count": 15
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "competent_scope",
-              "scoped"
-            ]
-          ],
-          "competent_word_count": 15
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "analyse"
-            ],
-            [
-              "competent_scope",
-              "scoped"
-            ]
-          ],
-          "competent_word_count": 14
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": [],
-      "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated ('Analyses how norms and values develop within and across different cultural contexts with reasoned explanation') and directly mirrors the LT's demand without hedging, incompleteness framing, or positioning it as a way-station to Extending.",
-      "propositional_lt_rubric_thin_flag": false
-    },
-    {
-      "lt_id": "cluster_08_lt_01",
-      "knowledge_type": "Type 1",
-      "levels": [
-        {
-          "name": "no_evidence",
-          "descriptor": "No attempt to explain healthy relationships or belonging.",
-          "word_count": 8
-        },
-        {
-          "name": "emerging",
-          "descriptor": "With support, names some features of healthy relationships but explanations lack depth or accuracy.",
-          "word_count": 14
-        },
-        {
-          "name": "developing",
-          "descriptor": "Independently explains some reasons why healthy relationships matter but misses connections to broader wellbeing.",
-          "word_count": 14
-        },
-        {
-          "name": "competent",
-          "descriptor": "Explains why healthy relationships and belonging are fundamental to wellbeing and health with clear reasoning.",
-          "word_count": 15
-        },
-        {
-          "name": "extending",
-          "descriptor": "Explains healthy relationships and belonging's role in wellbeing and connects to multiple health dimensions.",
-          "word_count": 14
-        }
-      ],
-      "prerequisite_edges": [
-        {
-          "from_lt_id": "cluster_03_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Understanding how emotional responses influence wellbeing is foundational to explaining why relationships matter to health."
-        },
-        {
-          "from_lt_id": "cluster_04_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Ability to communicate feelings appropriately supports understanding healthy relationship dynamics but is not strictly required to explain their importance."
-        },
-        {
-          "from_lt_id": "cluster_07_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Identifying social influences on identity helps learners understand belonging's role but explanation of healthy relationships can precede this."
-        }
-      ],
-      "stability_flag": "stable",
-      "per_run_signatures": [
-        {
-          "run": 1,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 15
-        },
-        {
-          "run": 2,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 15
-        },
-        {
-          "run": 3,
-          "signature": [
-            [
-              "no_evidence",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "emerging",
-              "within_limit",
-              "recognise"
-            ],
-            [
-              "developing",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "extending",
-              "within_limit",
-              "describe"
-            ],
-            [
-              "competent_scope",
-              "unscoped"
-            ]
-          ],
-          "competent_word_count": 15
-        }
-      ],
-      "stability_diagnostics": [],
-      "quality_gate_passed": true,
-      "quality_gate_failures": [],
-      "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as demonstrated ('Explains why...with clear reasoning') without hedging language, incompleteness markers, or framing Competent as a stepping stone to Extending.",
-      "propositional_lt_rubric_thin_flag": false
-    },
-    {
-      "lt_id": "cluster_09_lt_01",
-      "knowledge_type": "Type 2",
-      "levels": [
-        {
-          "name": "no_evidence",
-          "descriptor": "No attempt to identify or analyse relationship dynamics.",
-          "word_count": 8
-        },
-        {
-          "name": "emerging",
-          "descriptor": "With support, names some warning signs but analysis is incomplete or inaccurate.",
+          "descriptor": "Independently identifies conflicts and applies basic strategies but struggles with complex disagreements.",
           "word_count": 12
         },
         {
-          "name": "developing",
-          "descriptor": "Independently identifies several warning signs but analysis lacks depth or nuance in unfamiliar contexts.",
-          "word_count": 14
-        },
-        {
           "name": "competent",
-          "descriptor": "Independently analyses relationship dynamics and accurately identifies multiple warning signs of unhealthy relationships.",
+          "descriptor": "Independently identifies conflicts and applies appropriate resolution strategies while seeking support when needed.",
           "word_count": 13
         },
         {
           "name": "extending",
-          "descriptor": "Analyses relationship dynamics across diverse contexts and connects warning signs to underlying patterns of harm.",
-          "word_count": 15
+          "descriptor": "Transfers conflict resolution skills to novel situations and helps others resolve disagreements.",
+          "word_count": 12
         }
       ],
       "prerequisite_edges": [
         {
-          "from_lt_id": "cluster_08_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Learner must understand what healthy relationships are before identifying deviations from that standard."
-        },
-        {
-          "from_lt_id": "cluster_03_lt_01",
-          "kind": "ontological_prerequisite",
-          "confidence": "high",
-          "rationale": "Recognising emotional responses and their influence on well-being is essential to identifying unhealthy relationship impacts."
-        },
-        {
-          "from_lt_id": "cluster_04_lt_01",
-          "kind": "pedagogical_sequencing",
-          "confidence": "medium",
-          "rationale": "Ability to communicate feelings supports reflection on relationship dynamics and articulation of concerns."
-        },
-        {
           "from_lt_id": "cluster_05_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Self-awareness is essential for recognizing one's role in conflicts."
+        },
+        {
+          "from_lt_id": "cluster_05_lt_02",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Emotional regulation skills are typically needed before managing interpersonal conflicts."
+        },
+        {
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Clear communication is fundamental to applying conflict resolution strategies."
+        },
+        {
+          "from_lt_id": "cluster_06_lt_02",
           "kind": "pedagogical_sequencing",
           "confidence": "medium",
-          "rationale": "Analysing decision impacts and influencing factors provides analytical frameworks applicable to relationship dynamics."
+          "rationale": "Knowing when to seek support is usually established before applying it in conflicts."
         }
       ],
       "stability_flag": "rubric_unstable",
@@ -1800,16 +4239,16 @@
             [
               "competent",
               "within_limit",
-              "analyse"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "competent_scope",
-              "scoped"
+              "unscoped"
             ]
           ],
           "competent_word_count": 13
@@ -1835,12 +4274,179 @@
             [
               "competent",
               "within_limit",
-              "analyse"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "analyse"
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "scoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 15
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'recognise'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'scoped')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor clearly states the learner independently demonstrates all components of the learning target without hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
+    },
+    {
+      "lt_id": "cluster_18_lt_01",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to identify relationship safety characteristics.",
+          "word_count": 7
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some basic safety features but responses are inappropriate or incomplete.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently identifies obvious safety characteristics but struggles to respond appropriately when safety is threatened.",
+          "word_count": 14
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently identifies characteristics of safe relationships and responds appropriately when safety is threatened in various contexts.",
+          "word_count": 16
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers safety recognition skills to complex situations and supports others in maintaining relationship safety.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_15_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Must understand relationship types before identifying safety characteristics within them."
+        },
+        {
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Communication skills typically support expressing safety concerns and responding appropriately."
+        },
+        {
+          "from_lt_id": "cluster_11_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "medium",
+          "rationale": "Risk identification skills provide foundation for recognizing relationship safety threats."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 16
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
             ],
             [
               "competent_scope",
@@ -1870,43 +4476,211 @@
             [
               "competent",
               "within_limit",
-              "analyse"
+              "recognise"
             ],
             [
               "extending",
               "within_limit",
-              "analyse"
+              "apply"
             ],
             [
               "competent_scope",
-              "scoped"
+              "unscoped"
             ]
           ],
           "competent_word_count": 13
         }
       ],
-      "stability_diagnostics": [
-        "signature_counts={(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'scoped')): 2, (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'recognise'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'analyse'), ('competent_scope', 'unscoped')): 1}"
-      ],
+      "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": [],
       "competent_framing_flag": "pass",
-      "competent_framing_judge_rationale": "The descriptor declares the capability as independently demonstrated at the LT's level of demand without hedging language, incompleteness framing, or positioning it as a way-station to Extending.",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently identifies' and 'responds appropriately' without any hedging language or implications of incompleteness.",
       "propositional_lt_rubric_thin_flag": false
-    }
-  ],
-  "halted_lts": [
+    },
     {
-      "lt_id": "cluster_06_lt_02",
-      "lt_name": "Making Informed Career Pathway Decisions",
-      "halt_reason": "rubric_unreliable",
-      "diagnostic": "only 0/3 runs produced parseable output"
+      "lt_id": "cluster_18_lt_02",
+      "knowledge_type": "Type 2",
+      "levels": [
+        {
+          "name": "no_evidence",
+          "descriptor": "No attempt to understand or advocate for rights.",
+          "word_count": 8
+        },
+        {
+          "name": "emerging",
+          "descriptor": "With support, identifies some basic rights but struggles to connect them to relationships.",
+          "word_count": 13
+        },
+        {
+          "name": "developing",
+          "descriptor": "Independently recognizes rights in relationships but advocacy efforts lack clarity or appropriate strategies.",
+          "word_count": 13
+        },
+        {
+          "name": "competent",
+          "descriptor": "Independently understands how rights impact relationships and effectively advocates for own and others' rights using appropriate strategies.",
+          "word_count": 17
+        },
+        {
+          "name": "extending",
+          "descriptor": "Transfers rights advocacy skills across diverse contexts and helps others develop their advocacy capabilities.",
+          "word_count": 14
+        }
+      ],
+      "prerequisite_edges": [
+        {
+          "from_lt_id": "cluster_15_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Understanding relationship types is essential before understanding how rights operate within them."
+        },
+        {
+          "from_lt_id": "cluster_16_lt_01",
+          "kind": "pedagogical_sequencing",
+          "confidence": "high",
+          "rationale": "Communication skills are typically needed before effective advocacy can occur."
+        },
+        {
+          "from_lt_id": "cluster_18_lt_01",
+          "kind": "ontological_prerequisite",
+          "confidence": "high",
+          "rationale": "Recognizing safe relationships is fundamental to understanding rights within relationships."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 17
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "no_evidence",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "emerging",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "developing",
+              "within_limit",
+              "recognise"
+            ],
+            [
+              "competent",
+              "within_limit",
+              "none"
+            ],
+            [
+              "extending",
+              "within_limit",
+              "apply"
+            ],
+            [
+              "competent_scope",
+              "unscoped"
+            ]
+          ],
+          "competent_word_count": 14
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "observable_verb"
+      ],
+      "competent_framing_flag": "pass",
+      "competent_framing_judge_rationale": "The descriptor declares the capability as fully demonstrated with 'independently understands' and 'effectively advocates' without any hedging language or positioning it as incomplete.",
+      "propositional_lt_rubric_thin_flag": false
     },
     {
       "lt_id": "cluster_09_lt_02",
-      "lt_name": "Evaluating Support Resources and Safety Strategies",
-      "halt_reason": "rubric_unreliable",
-      "diagnostic": "only 1/3 runs produced parseable output"
+      "knowledge_type": "Type 2",
+      "levels": [],
+      "prerequisite_edges": [],
+      "stability_flag": "rubric_unreliable",
+      "per_run_signatures": [],
+      "stability_diagnostics": [],
+      "quality_gate_passed": false,
+      "quality_gate_failures": [
+        "rubric_generation_failed"
+      ],
+      "competent_framing_flag": "error",
+      "competent_framing_judge_rationale": "no structural signature reached 2/3 agreement; signatures=[(('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'none'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')), (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'none'), ('competent', 'within_limit', 'analyse'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped')), (('no_evidence', 'within_limit', 'recognise'), ('emerging', 'within_limit', 'recognise'), ('developing', 'within_limit', 'apply'), ('competent', 'within_limit', 'apply'), ('extending', 'within_limit', 'apply'), ('competent_scope', 'unscoped'))]",
+      "propositional_lt_rubric_thin_flag": false
     }
-  ]
+  ],
+  "halted_lts": []
 }

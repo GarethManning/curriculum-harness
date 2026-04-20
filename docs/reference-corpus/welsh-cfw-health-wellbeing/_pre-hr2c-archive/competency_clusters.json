@@ -1,0 +1,536 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "wales-cfw-health-wellbeing-sow",
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "runs": 3,
+  "overall_stability_flag": "cluster_unstable",
+  "overall_stability_diagnostics": [
+    "cluster_count_differs: counts across runs = [9, 8, 8]",
+    "cluster_missing_in_run2: canonical clusters [8] have no Jaccard>=0.30 match",
+    "cluster_missing_in_run3: canonical clusters [8] have no Jaccard>=0.30 match"
+  ],
+  "unassigned_kud_item_ids": [],
+  "clusters": [
+    {
+      "cluster_id": "cluster_01",
+      "competency_name": "Physical Health and Well-being",
+      "competency_definition": "The ability to understand factors supporting physical health and develop confidence, motivation, and competence to lead healthy and active lifestyles.",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0010_item_01",
+        "blk_0010_item_02",
+        "blk_0010_item_03"
+      ],
+      "source_block_ids": [
+        "blk_0007",
+        "blk_0010"
+      ],
+      "source_position_start": 9,
+      "source_position_end": 12,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Physical Health and Well-being",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0010_item_01",
+            "blk_0010_item_02",
+            "blk_0010_item_03"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Physical Health and Active Living",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0010_item_01",
+            "blk_0010_item_02",
+            "blk_0010_item_03"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Physical Health and Active Living",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0010_item_01",
+            "blk_0010_item_02",
+            "blk_0010_item_03"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Care and Respect for Self and Others",
+      "competency_definition": "The ability to develop and sustain positive, informed behaviours that care for and respect self and others, supporting well-being and sense of self-worth.",
+      "kud_item_ids": [
+        "blk_0009_item_01",
+        "blk_0009_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 1,
+        "Type 1": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Care and Respect for Self and Others",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Care and Respect for Self and Others",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Care and Respect for Self and Others",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_03",
+      "competency_name": "Mental Health and Emotional Well-being",
+      "competency_definition": "The ability to understand connections between experiences and emotional well-being, recognise emotions as fluid, and develop strategies to regulate emotions and seek support.",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0012_item_01",
+        "blk_0012_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0011",
+        "blk_0012"
+      ],
+      "source_position_start": 13,
+      "source_position_end": 14,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Mental Health and Emotional Well-being",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0012_item_01",
+            "blk_0012_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Emotional Awareness and Regulation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0012_item_01",
+            "blk_0012_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Understanding Experiences and Emotional Regulation",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0012_item_01",
+            "blk_0012_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_04",
+      "competency_name": "Communication About Mental Health",
+      "competency_definition": "The ability to communicate feelings appropriately and sustain a default orientation toward normalising talk about mental health and emotional well-being.",
+      "kud_item_ids": [
+        "blk_0014_item_01",
+        "blk_0014_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0014"
+      ],
+      "source_position_start": 23,
+      "source_position_end": 23,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 1": 1,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Communication About Mental Health",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0014_item_01",
+            "blk_0014_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Communication About Mental Health",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0014_item_01",
+            "blk_0014_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Communicating About Mental Health and Emotional Well-Being",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0014_item_01",
+            "blk_0014_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_05",
+      "competency_name": "Informed Decision-Making",
+      "competency_definition": "The ability to understand how decisions impact self and others, analyse influencing factors, and make informed decisions by considering implications and risks.",
+      "kud_item_ids": [
+        "blk_0015_item_01",
+        "blk_0016_item_01",
+        "blk_0016_item_02",
+        "blk_0016_item_03",
+        "blk_0017_item_01",
+        "blk_0017_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0015",
+        "blk_0016",
+        "blk_0017"
+      ],
+      "source_position_start": 24,
+      "source_position_end": 26,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 1": 4,
+        "Type 2": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Informed Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0015_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03",
+            "blk_0017_item_01",
+            "blk_0017_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Informed Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0015_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03",
+            "blk_0017_item_01",
+            "blk_0017_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Informed Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0015_item_01",
+            "blk_0016_item_01",
+            "blk_0016_item_02",
+            "blk_0016_item_03",
+            "blk_0017_item_01",
+            "blk_0017_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_06",
+      "competency_name": "Career Pathway Decision-Making",
+      "competency_definition": "The ability to understand that career pathway decisions have significant lifelong consequences and make informed choices about future pathways.",
+      "kud_item_ids": [
+        "blk_0018_item_01"
+      ],
+      "source_block_ids": [
+        "blk_0018"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Career Pathway Decision-Making",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0018_item_01"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Career Pathway Planning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0018_item_01"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Career Pathway Planning",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0018_item_01"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_07",
+      "competency_name": "Understanding Social Influences",
+      "competency_definition": "The ability to understand how social influences shape identity, values and behaviours, and critically analyse how norms and values develop across cultures.",
+      "kud_item_ids": [
+        "blk_0019_item_01",
+        "blk_0020_item_01",
+        "blk_0020_item_02",
+        "blk_0020_item_03",
+        "blk_0021_item_01",
+        "blk_0021_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0019",
+        "blk_0020",
+        "blk_0021"
+      ],
+      "source_position_start": 28,
+      "source_position_end": 40,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 5,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Understanding Social Influences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0019_item_01",
+            "blk_0020_item_01",
+            "blk_0020_item_02",
+            "blk_0020_item_03",
+            "blk_0021_item_01",
+            "blk_0021_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Understanding Social Influences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0019_item_01",
+            "blk_0020_item_01",
+            "blk_0020_item_02",
+            "blk_0020_item_03",
+            "blk_0021_item_01",
+            "blk_0021_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Understanding Social Influences",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0019_item_01",
+            "blk_0020_item_01",
+            "blk_0020_item_02",
+            "blk_0020_item_03",
+            "blk_0021_item_01",
+            "blk_0021_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_08",
+      "competency_name": "Healthy Relationships and Belonging",
+      "competency_definition": "The ability to understand the importance of healthy relationships, value belonging and connection, and develop sustained capacity to form, nurture and maintain relationships.",
+      "kud_item_ids": [
+        "blk_0022_item_01",
+        "blk_0023_item_01",
+        "blk_0023_item_02",
+        "blk_0025_item_01",
+        "blk_0025_item_02",
+        "blk_0026_item_01",
+        "blk_0026_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0022",
+        "blk_0023",
+        "blk_0025",
+        "blk_0026"
+      ],
+      "source_position_start": 41,
+      "source_position_end": 45,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 1": 4,
+        "Type 3": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Healthy Relationships and Belonging",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0022_item_01",
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0026_item_01",
+            "blk_0026_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Healthy Relationships and Connection",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0022_item_01",
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0024_item_01",
+            "blk_0024_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0026_item_01",
+            "blk_0026_item_02"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Healthy Relationships and Connection",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0022_item_01",
+            "blk_0023_item_01",
+            "blk_0023_item_02",
+            "blk_0024_item_01",
+            "blk_0024_item_02",
+            "blk_0025_item_01",
+            "blk_0025_item_02",
+            "blk_0026_item_01",
+            "blk_0026_item_02"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_09",
+      "competency_name": "Recognising and Responding to Unhealthy Relationships",
+      "competency_definition": "The ability to recognise unhealthy relationships and evaluate appropriate support resources and strategies to keep safe and seek help.",
+      "kud_item_ids": [
+        "blk_0024_item_01",
+        "blk_0024_item_02"
+      ],
+      "source_block_ids": [
+        "blk_0024"
+      ],
+      "source_position_start": 43,
+      "source_position_end": 43,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 2
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Recognising and Responding to Unhealthy Relationships",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0024_item_01",
+            "blk_0024_item_02"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        },
+        {
+          "run": 3,
+          "competency_name": null,
+          "dominant_knowledge_type": null,
+          "kud_item_ids": [],
+          "note": "no_matched_cluster"
+        }
+      ],
+      "stability_diagnostics": [
+        "unmatched_in_run2",
+        "unmatched_in_run3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2229 @@
+{
+  "reference_authoring_version": "0.1.0",
+  "source_slug": "wales-cfw-health-wellbeing-sow",
+  "snapshot_path": "docs/run-snapshots/2026-04-19-session-4a-5-wales-cfw-health-wellbeing-sow",
+  "classification_model": "claude-haiku-4-5-20251001",
+  "classification_temperature": 0.3,
+  "self_consistency_runs": 3,
+  "items": [
+    {
+      "item_id": "blk_0007_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Developing physical health and well-being has lifelong benefits.",
+      "source_block_id": "blk_0007",
+      "classification_rationale": "Decision-tree branch 1: This is a propositional/causal claim ('X affects Y across time'). It asserts a factual relationship between physical health development and long-term well-being outcomes. The learner is expected to internalise this conceptual understanding and recognise its implications, not to deploy a skill on occasion or to enact a sustained orientation. Type 1 understand, assessed via rubric with clear criteria (e.g. explanation of the relationship, application to scenarios).",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0009_item_01",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Care for and respect themselves and others as a sustained default orientation across contexts.",
+      "source_block_id": "blk_0009",
+      "classification_rationale": "Decision tree branch 3: the source describes a quality that exists only as it is enacted over time — a sustained default orientation to care for and respect self and others. This is not occasion-triggered but operates by default across interactions and settings. Surface cue: 'care for and respect' signals a sustained orientation rather than a skill deployed when prompted.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0009_item_02",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Positive, informed behaviours that care for and respect self and others support learners' sense of self-worth, their overall mood and energy levels.",
+      "source_block_id": "blk_0009",
+      "classification_rationale": "Decision tree branch 1: the source makes a propositional causal claim ('behaviours support sense of self-worth, mood and energy levels'). This is factual/conceptual knowledge about how behaviour relates to wellbeing — a claim to be understood, not a skill to deploy or an orientation to enact. Assessable via explanation or knowledge check of the relationship described.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0010_item_01",
+      "kud_column": "know",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Knowledge and understanding of factors that support physical health and well-being, including the relationship between physical activity, nutrition, sleep, and overall health outcomes.",
+      "source_block_id": "blk_0010",
+      "classification_rationale": "Propositional knowledge about how physical health works. This is factual/conceptual content that learners must hold and can be assessed through knowledge checks and explanation tasks. Decision tree branch 1: hard prerequisite sequence exists (understanding health mechanisms precedes informed lifestyle choices).",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0010_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Physical competence in movement, exercise, and activity skills appropriate to age and context.",
+      "source_block_id": "blk_0010",
+      "classification_rationale": "Procedural capability—learners must be able to perform physical skills. Type 1 because physical competence builds hierarchically (foundational movement patterns precede complex sport or fitness skills). Assessable via performance rubric with clear criteria.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0010_item_03",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Confidence and motivation to lead healthy and active lifestyles across different contexts and over time.",
+      "source_block_id": "blk_0010",
+      "classification_rationale": "Sustained orientation that exists only as enacted behaviour across time and contexts. Confidence and motivation in physical activity are default dispositions—they operate by default when learners encounter opportunities for activity, not occasion-triggered skills. Decision tree branch 3: the quality exists only as it is enacted over sustained experience. Requires multi-informant observation (peers, educators, family) across multiple settings and occasions to assess validity.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [
+        "Knowledge and understanding of factors that support physical health and well-being",
+        "Physical competence in movement, exercise, and activity skills appropriate to age and context"
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0011_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "How we process and respond to our experiences affects our mental health and emotional well-being.",
+      "source_block_id": "blk_0011",
+      "classification_rationale": "This is a propositional causal claim ('X affects Y') stating a relationship between cognitive-emotional processing and mental health outcomes. It is factual/conceptual knowledge the learner is expected to internalise and apply to reasoning about their own and others' experiences. Decision tree branch 1: hard prerequisite sequence exists (understanding this claim is foundational to later content about mental health, resilience, or emotional regulation). Type 1 content assessed via knowledge test or explanation task demonstrating grasp of the causal relationship.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0012_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Connections exist between experiences, mental health and emotional well-being.",
+      "source_block_id": "blk_0012",
+      "classification_rationale": "Decision tree branch 1: This is a propositional claim about how the world works (causal/relational). The source asserts that such connections exist and can be explored. This is conceptual knowledge the learner must internalise to engage with the domain.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0012_item_02",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Recognise that feelings and emotions are neither fixed nor consistent, and hold this recognition as a sustained orientation across contexts and over time.",
+      "source_block_id": "blk_0012",
+      "classification_rationale": "Decision tree branch 3: This describes a sustained default orientation—a quality that exists only as it is enacted over time and across different situations. The learner is expected to develop and maintain this recognition as an ongoing stance, not deploy it on specific occasions. Assessment requires observation of behaviour across multiple contexts and informants.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0014_item_01",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Communicate their feelings in ways appropriate to context and audience.",
+      "source_block_id": "blk_0014",
+      "classification_rationale": "Decision tree branch 1: this describes a procedural capability with identifiable criteria (appropriateness to context/audience). It is a skill learners perform on specific occasions when they need to express emotion. Type 1 procedural skill, assessed via rubric with clear criteria.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0014_item_02",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Sustain a default orientation toward normalising talk about mental health and emotional well-being across peer interactions and community contexts.",
+      "source_block_id": "blk_0014",
+      "classification_rationale": "Decision tree branch 3: the source describes a sustained orientation—a quality that exists only as it is enacted over time and across multiple contexts ('normalised culture'). This is not occasion-triggered but a default stance the learner maintains. Type 3 dispositional knowledge, assessed via multi-informant observation of behaviour across settings and time.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0015_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Our decision-making impacts on the quality of our lives and the lives of others.",
+      "source_block_id": "blk_0015",
+      "classification_rationale": "This is a propositional causal claim ('X affects Y'). It states a factual relationship between decision-making and life quality that learners are expected to understand and internalise as a conceptual principle. It does not describe a skill deployed on occasion, nor a sustained orientation enacted over time. Decision tree branch 1: hard prerequisite sequence exists (understanding this claim precedes reasoning about decision consequences); branch 4 does not apply (single knowledge type).",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "How decisions and actions impact on themselves, on others and on wider society, both now and in the future",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "Decision 1: This is a propositional causal claim ('decisions and actions impact...') that learners must internalise as a conceptual understanding. It is not a hard prerequisite sequence but a foundational concept that grounds later decision-making analysis. Type 1 understand.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_02",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The factors that influence decision-making",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "Decision 1: This is a propositional claim about a domain of knowledge ('factors that influence decision-making') that learners must understand conceptually. Type 1 understand.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0016_item_03",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Make more informed and considered decisions by analysing how decisions and actions impact on themselves, on others and on wider society, and by considering the factors that influence decision-making",
+      "source_block_id": "blk_0016",
+      "classification_rationale": "Decision 2: This describes an analytical capability deployed when a decision is at hand — learners analyse impacts and influencing factors to reason toward a decision. The quality of the decision depends on reasoning depth across multiple dimensions (self, others, society, time horizons, influencing factors). This is occasion-triggered analytical reasoning, not a sustained default orientation. Type 2 do_skill.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [
+        "How decisions and actions impact on themselves, on others and on wider society, both now and in the future",
+        "The factors that influence decision-making"
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0017_item_01",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Consider decision-making in terms of possible implications, including risks, for themselves and others.",
+      "source_block_id": "blk_0017",
+      "classification_rationale": "Decision 2: This describes an analytical capability deployed when a decision-making situation arises. The learner must reason through multiple lenses (implications for self, implications for others, risk dimensions) to evaluate a choice. This is occasion-triggered reasoning, not a sustained default orientation, and not a fixed procedural sequence. Type 2 do_skill.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0017_item_02",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "The importance of their contributions to collective decision-making processes.",
+      "source_block_id": "blk_0017",
+      "classification_rationale": "Decision 1: This is a propositional claim about how the world works—a value claim that contributions matter in group decision-making. It is conceptual knowledge the learner must internalise, not a skill deployed on occasion and not a sustained orientation enacted over time. The learner must understand and be able to explain or apply this understanding. Type 1 understand.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0018_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Career pathway decisions have significant lifelong consequences for learners.",
+      "source_block_id": "blk_0018",
+      "classification_rationale": "This is a propositional claim about how the world works (causal: career decisions affect life outcomes). It is factual/conceptual content the learner is expected to understand, not an occasion-triggered skill or sustained orientation. Decision-tree branch 1: hard prerequisite sequence exists in understanding causality and consequence; branch 4 does not apply (single type). Routes to Type 1 understand via rubric_with_clear_criteria.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0019_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "How we engage with social influences shapes who we are and affects our health and well-being.",
+      "source_block_id": "blk_0019",
+      "classification_rationale": "This is a propositional causal claim ('X affects Y') about how social engagement influences identity and well-being. It describes a conceptual relationship the learner is expected to internalise and apply to reasoning about personal and collective development. Decision tree branch 1: hard prerequisite sequence exists (understanding social influence precedes understanding its effects on identity and health); this is foundational conceptual knowledge, not occasion-triggered reasoning or sustained enactment.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0020_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Social influences are comprised of rules, social norms, attitudes and values that are created and reinforced by different social groups.",
+      "source_block_id": "blk_0020",
+      "classification_rationale": "Decision tree branch 1: This is a propositional/conceptual claim about how social influences are structured and constituted. It is foundational knowledge that must be understood before learners can analyse how these influences operate. It is a fixed conceptual framework, not occasion-triggered reasoning.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0020_item_02",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Social influences affect identity, values, behaviours and health and well-being, often without our being aware of it.",
+      "source_block_id": "blk_0020",
+      "classification_rationale": "Decision tree branch 1: This is a causal/propositional claim about the effects of social influences. It is conceptual knowledge that learners must internalise to understand the mechanisms by which social groups shape individual outcomes. It is a fixed claim about how the world works, not a reasoning skill or sustained orientation.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0020_item_03",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "We experience social influences through interaction with social groups.",
+      "source_block_id": "blk_0020",
+      "classification_rationale": "Decision tree branch 1: This is a propositional claim about the mechanism by which social influences are encountered and transmitted. It is foundational conceptual knowledge that must be understood before learners can analyse their own social experiences.",
+      "underspecification_flag": null,
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0021_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "How norms and values develop within cultures and across different cultural contexts",
+      "source_block_id": "blk_0021",
+      "classification_rationale": "Decision tree branch 1: This is propositional knowledge with a causal structure ('how X develops'). It is a conceptual claim about the world that learners must internalise in order to engage in subsequent analysis. It is foundational to the analytical work described in the source.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0021_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Engage critically with social influences within own culture and those of others to analyse how own behaviours, relationships and experiences are shaped",
+      "source_block_id": "blk_0021",
+      "classification_rationale": "Decision tree branch 2: This describes an analytical capability deployed when examining social influences. It is occasion-triggered (when learners encounter cultural norms or reflect on their own experience) and requires reasoning across multiple lenses (own culture, others' cultures, personal impact). The quality of the analysis improves with experience and sophistication.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [
+        "How norms and values develop within cultures and across different cultural contexts"
+      ],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0022_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Healthy relationships are fundamental to our well-being.",
+      "source_block_id": "blk_0022",
+      "classification_rationale": "Step 0, branch 1: This is a propositional/causal claim ('X is fundamental to Y') that describes a conceptual relationship between two constructs. It is not a hard prerequisite sequence (branch 1 does not apply in the procedural sense), but it is a factual or conceptual claim the learner is expected to internalise and be able to explain or apply. It is not occasion-triggered reasoning across multiple lenses (not Type 2), and it is not a sustained orientation enacted over time (not Type 3). It is Type 1 conceptual knowledge, assessed via explanation or knowledge-check rubric.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0023_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Feelings of belonging and connection that come from healthy relationships have a powerful effect on health and well-being.",
+      "source_block_id": "blk_0023",
+      "classification_rationale": "Decision tree branch 1: This is a propositional causal claim ('X affects Y') about how the world works. It is factual/conceptual content the learner must hold and be able to explain or apply to new contexts. Type 1 hierarchical knowledge; assessed via knowledge test or explanation rubric.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0023_item_02",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Value how feelings of belonging and connection that come from healthy relationships contribute to health and well-being.",
+      "source_block_id": "blk_0023",
+      "classification_rationale": "Decision tree branch 3: This describes a sustained orientation—a default way of regarding and prioritising healthy relationships across contexts—that exists only as it is enacted over time in peer interactions, relationship choices, and reflective practice. Type 3 dispositional knowledge; assessed via multi-informant observation of behaviour and choices across settings.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0024_item_01",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Recognise when relationships are unhealthy by analysing relationship dynamics and identifying warning signs.",
+      "source_block_id": "blk_0024",
+      "classification_rationale": "This is an occasion-triggered analytical skill deployed when a relationship situation calls for evaluation. It requires reasoning across multiple dimensions (communication patterns, boundaries, power dynamics) to reach a judgment. Decision tree branch 2: analytical capability across multiple lenses, occasion-prompted.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0024_item_02",
+      "kud_column": "do_skill",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "content_statement": "Evaluate and select appropriate support resources and strategies to keep safe and seek support for themselves and others when relationships are unhealthy.",
+      "source_block_id": "blk_0024",
+      "classification_rationale": "This is an occasion-triggered decision-making skill deployed when support is needed. It requires reasoning about which support is appropriate in context and why. Decision tree branch 2: analytical capability across multiple lenses, occasion-prompted.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0025_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Throughout their lives, learners will experience a range of relationships.",
+      "source_block_id": "blk_0025",
+      "classification_rationale": "Decision tree branch 1: This is a propositional claim about how the world works — a factual statement about the nature and diversity of human relationships across the lifespan. It is conceptual knowledge to be understood, not a skill to deploy or an orientation to enact.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0025_item_02",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Learners develop their abilities to form, nurture and maintain relationships as a sustained orientation across contexts.",
+      "source_block_id": "blk_0025",
+      "classification_rationale": "Decision tree branch 3: This describes a sustained default orientation — the capacity to form, nurture and maintain relationships operates across time and multiple relational contexts, not in response to a single occasion. It exists only as it is enacted over time and requires multi-informant observation (peers, educators, family) to assess validly.",
+      "underspecification_flag": "mild",
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "mild",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0026_item_01",
+      "kud_column": "understand",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "content_statement": "Healthy relationships are vital for a healthy body and mind, allowing us to thrive.",
+      "source_block_id": "blk_0026",
+      "classification_rationale": "Decision tree branch 1: This is a propositional causal claim ('X affects Y') — a factual/conceptual statement about how the world works. The learner must understand the relationship between healthy relationships and physical and mental wellbeing. This is Type 1 propositional knowledge, assessable via explanation or knowledge-check tasks.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "blk_0026_item_02",
+      "kud_column": "do_disposition",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "content_statement": "Prioritise and enact healthy relationships as a sustained default orientation across contexts, recognising their importance for wellbeing.",
+      "source_block_id": "blk_0026",
+      "classification_rationale": "Decision tree branch 3: The source describes a sustained orientation — a default way of being and acting that develops over time and is enacted across multiple contexts, not occasion-triggered. This is Type 3 dispositional knowledge, observable only through multi-informant observation of behaviour patterns over time.",
+      "underspecification_flag": "moderate",
+      "prerequisite_lts": [],
+      "stability_flag": "classification_unstable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "halted_blocks": [
+    {
+      "block_id": "blk_0002",
+      "source_block_raw_text": "Health and Well-being",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0003",
+      "source_block_raw_text": "Guidance to help schools and settings develop their own curriculum, enabling learners to develop towards the four purposes.",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0005",
+      "source_block_raw_text": "View these statements of what matters in British Sign Language (BSL).",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0006",
+      "source_block_raw_text": "Curriculum Mandatory",
+      "halt_reason": "severe_underspecification",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "severe",
+          "items_signature": []
+        }
+      ],
+      "diagnostic": "meta_or_nonteachable"
+    },
+    {
+      "block_id": "blk_0008",
+      "source_block_raw_text": "This Area can help learners to understand the factors that affect physical health and well-being. This includes health-promoting behaviours such as physical activity, including but not limited to sport; balanced diet; personal care and hygiene; sleep; and protection from infection. It also includes an understanding of health-harming behaviours.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": null,
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "know",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            }
+          ]
+        }
+      ],
+      "diagnostic": "no signature achieved 2/3 agreement across runs; observed signatures: [('items', (('understand', 'Type 1'), ('understand', 'Type 1'))), ('items', (('know', 'Type 1'), ('know', 'Type 1'), ('understand', 'Type 1'))), ('items', (('know', 'Type 1'), ('understand', 'Type 1'), ('understand', 'Type 1')))]"
+    },
+    {
+      "block_id": "blk_0013",
+      "source_block_raw_text": "Having an awareness of our own feelings and emotions is the foundation upon which empathy can be developed. This can enable us to act in a way which supports the mental health and emotional well-being of others. Supporting learners to develop strategies which help them to regulate their emotions can contribute towards good mental health and emotional well-being , enabl ing learners to recognise when and where to seek help and support; to develop awareness of mental health issues and are able to advocate on behalf of others .",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "underspecification_flag": "moderate",
+          "items_signature": [
+            {
+              "kud_column": "understand",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_disposition",
+              "knowledge_type": "Type 3"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 1"
+            },
+            {
+              "kud_column": "do_skill",
+              "knowledge_type": "Type 2"
+            }
+          ]
+        }
+      ],
+      "diagnostic": "no signature achieved 2/3 agreement across runs; observed signatures: [('items', (('do_disposition', 'Type 3'), ('understand', 'Type 1'))), ('items', (('do_disposition', 'Type 3'), ('do_disposition', 'Type 3'), ('understand', 'Type 1'), ('understand', 'Type 1'))), ('items', (('do_disposition', 'Type 3'), ('do_disposition', 'Type 3'), ('do_skill', 'Type 1'), ('do_skill', 'Type 2'), ('understand', 'Type 1')))]"
+    }
+  ]
+}
