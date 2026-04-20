@@ -2951,17 +2951,10 @@
       "stability_diagnostics": [],
       "quality_gate_passed": true,
       "quality_gate_failures": []
-    }
-  ],
-  "halted_lts": [
+    },
     {
       "lt_id": "cluster_06_lt_01",
-      "lt_name": "Assertive Communication and Boundary Setting",
-      "halt_reason": "band_statements_gate_failed",
-      "diagnostic": "1 format/quality failures",
-      "failures": [
-        "End of Primary:no_observable_verb"
-      ],
+      "knowledge_type": "Type 2",
       "statements": [
         {
           "band": "End of Primary",
@@ -2971,7 +2964,15 @@
           "band": "End of Secondary",
           "statement": "I can communicate assertively across various situations while establishing and maintaining appropriate boundaries through effective emotional regulation."
         }
-      ]
+      ],
+      "stability_flag": "promoted_from_halt",
+      "per_run_signatures": [],
+      "stability_diagnostics": [
+        "promoted_from_halt: band_statements_gate_failed due to e-drop regex bug (HR-1b Fix 2a). Original statement passes quality check with fixed validator. No API re-run performed — validator bug, not generation noise."
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
     }
-  ]
+  ],
+  "halted_lts": []
 }

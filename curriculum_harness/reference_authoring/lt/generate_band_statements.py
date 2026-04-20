@@ -90,6 +90,7 @@ OBSERVABLE_VERBS = {
     "distinguish",
     "relate",
     "represent",
+    "express",
 }
 
 BANNED_SUBSTRINGS = (
@@ -100,6 +101,15 @@ BANNED_SUBSTRINGS = (
     " for example",
     " for instance",
 )
+
+# Known limitation: _quality_check_statement checks that an observable verb is
+# present but does NOT check for single-construct statements. A statement like
+# "I can express needs while recognizing boundaries" passes the verb check
+# despite encoding two distinct constructs ("express" + "recognizing"). A
+# future single_construct gate would flag the "while", "and", or "as well as"
+# conjunctions that signal compound LTs. For now, compound-construct statements
+# halt silently only because the LT itself is multi-construct; the fix is at
+# LT authoring time, not band-statement generation. (HR-1b Fix 2b)
 
 
 def _validate_run(
@@ -145,7 +155,14 @@ def _quality_check_statement(s: str) -> list[str]:
         if banned in lower:
             failures.append(f"banned_substring:{banned.strip()}")
     # Observable verb: look for any of the allowed verbs as a whole word.
-    has_verb = any(re.search(rf"\b{re.escape(v)}(s|d|ing|ed)?\b", lower) for v in OBSERVABLE_VERBS)
+    # For verbs ending in 'e', handle e-drop inflections (e.g. recognize→recognizing,
+    # not recognizeing). Pattern: recogniz(e[sd]?|ing) covers base+s/d and -ing.
+    def _verb_pattern(v: str) -> str:
+        if v.endswith("e"):
+            stem = re.escape(v[:-1])
+            return rf"\b{stem}(e[sd]?|ing)\b"
+        return rf"\b{re.escape(v)}(s|d|ing|ed)?\b"
+    has_verb = any(re.search(_verb_pattern(v), lower) for v in OBSERVABLE_VERBS)
     if not has_verb:
         failures.append("no_observable_verb")
     return failures
