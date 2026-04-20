@@ -4,6 +4,14 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session CW-1 (REAL wellbeing × RSHE × Welsh CfW crosswalk v1)** — 2026-04-20 — head `2f92161 feat: CW-1 REAL wellbeing x RSHE x Welsh CfW crosswalk v1`.
+
+PLC-ready crosswalk document produced from three band-tagged JSON inputs (REAL 84 items, RSHE 279 items, CfW 136 items). Full five-section output: 30 convergent pairs (11 high confidence, 19 apparent-only), 7 divergence topics with band-gap annotations, three unique-content subsections with verbatim quotes, 5 sequencing-difference prose analyses, 10 substantive PLC questions. All Band E/F cells marked "draft — teacher review pending" throughout. Self-check (5 criteria) passed before write.
+
+Output: `docs/reference-corpus/crosswalks/real-wellbeing-x-rshe-x-cfw-v1.md` — commit `2f92161`.
+
+---
+
 **Session REAL-2a (REAL wellbeing framework — Band E/F extension + band-tagged JSON v1)** — 2026-04-20 — head `d60fd2b feat: REAL wellbeing framework extended to bands E-F; band-tagged JSON v1`.
 
 Extended the REAL School Budapest wellbeing framework (14 LTs) from Bands A–D to Bands E and F, applying the six progression levers (independence, complexity, scope, precision, reasoning, transfer) consistently across all competencies. Produced full band-tagged JSON (84 items, 14 LTs × 6 bands). All verification checks PASS. Review gate completed (all 14 LT E/F Do statements confirmed) before JSON production.
@@ -193,6 +201,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **REAL × RSHE × Welsh CfW crosswalk v1 — complete (CW-1).** `docs/reference-corpus/crosswalks/real-wellbeing-x-rshe-x-cfw-v1.md`. PLC-ready Markdown. 30 convergent pairs (11 high, 19 apparent-only), 7 divergence topics, unique-content and sequencing sections, 10 PLC questions. Commit `2f92161`.
 - **Welsh CfW Health & Wellbeing band-tagged artefact v2 — complete (HR-2c + BT-3b).** `docs/reference-corpus/welsh-cfw-health-wellbeing/band-tagged-cfw-v2.json`. 136 KUD items + 45 LTs tagged. 100% medium confidence (0% low). PS→REAL canonical mapping applied. 19 PS1 items → Band A (unambiguous); PS2–PS5 → 2-band spans. source_voice_preserved: true on all items. architecture-diagnosis.json present with developmental_scope: explicit_progression. Pre-HR2c artefacts in `_pre-hr2c-archive/`.
 - **UK statutory RSHE band-tagged artefact — complete (BT-2).** `docs/reference-corpus/uk-statutory-rshe/band-tagged-rshe-v1.json`. 279 KUD items + 44 LTs tagged with REAL bands. End of Primary → [A,B,C], End of Secondary → [C,D,E], cross-band LTs → [A,B,C,D,E]. All verification checks PASS. source_voice_preserved: true on all 279 items.
 - **UK statutory RSHE reference corpus — complete (HR-1 + HR-1b).** `docs/reference-corpus/uk-statutory-rshe/`. DfE July 2025 statutory RSHE, full programme. 19 clusters / 44 LTs / 2 bands (End of Primary + End of Secondary). source.md, architecture-diagnosis.json, inventory.json, kud.json (279 items), lts.json, band_statements.json (34 sets, 0 halted), observation_indicators.json (10 sets), rubrics.json (34 rubrics, 0 halted), criterion_bank.json (86 criteria / DAG PASS), quality_report.json, readable-output/. New source_type: `england_rshe_full` in detect_progression.py. Session cost: HR-1 ~$12.00 + HR-1b ~$0.40 rubric retries.
@@ -260,4 +269,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-20 at end of Session BT-3 (Welsh CfW band translation complete, 0 open). Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-20 at end of Session CW-1 (REAL × RSHE × Welsh CfW crosswalk v1 complete). Update at end of every session per `docs/process/state-md-discipline.md`.*
