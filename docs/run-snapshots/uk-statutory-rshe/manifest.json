@@ -1,0 +1,160 @@
+{
+  "phase0_version": "0.6.0",
+  "source_type": "flat_pdf_linear",
+  "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+  "timestamp": "2026-04-20T12:38:12.194400+00:00",
+  "encoding_detected": null,
+  "encoding_failure": null,
+  "notes": "2025 DfE statutory RSHE guidance (for introduction 1 September 2026). Full programme: primary relationships education (pages 8-13), secondary RSE (pages 14-20), primary health and wellbeing (pages 22-26), secondary health and wellbeing (pages 28-32). Implementation guidance (pages 33-41) and annexes (pages 42-47) excluded — not curriculum content. Source PDF is the same document used for secondary-rshe-2025 corpus; raw.pdf is not duplicated — referenced by path only.",
+  "primitive_sequence": [
+    "fetch_pdf_file",
+    "extract_pdf_text_multirange",
+    "normalise_whitespace",
+    "content_hash"
+  ],
+  "acquisition_trace": [
+    {
+      "primitive": "fetch_pdf_file",
+      "started_at": "2026-04-20T12:38:12.194400+00:00",
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {
+        "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf"
+      },
+      "outputs_summary": {
+        "status": "reused",
+        "note": "Raw PDF reused from 2026-04-19-session-4c-2a-secondary-rshe-2025/raw.pdf",
+        "raw_hash": "999203ab4db830c069ee3841920e6ab9d4a5a6d7c3195822700cc984a9239714",
+        "raw_bytes": 630916,
+        "total_pages": 47
+      }
+    },
+    {
+      "primitive": "extract_pdf_text_multirange",
+      "started_at": "2026-04-20T12:38:12.194400+00:00",
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {
+        "ranges": [
+          {
+            "pages": [
+              8,
+              13
+            ],
+            "label": "primary_relationships",
+            "section_heading": "Relationships education (Primary): content to be covered by the end of primary"
+          },
+          {
+            "pages": [
+              14,
+              20
+            ],
+            "label": "secondary_rse",
+            "section_heading": "Secondary relationships and sex education curriculum content"
+          },
+          {
+            "pages": [
+              22,
+              26
+            ],
+            "label": "primary_health",
+            "section_heading": "Primary health and wellbeing: content to be covered by the end of primary"
+          },
+          {
+            "pages": [
+              28,
+              32
+            ],
+            "label": "secondary_health",
+            "section_heading": "Secondary health and wellbeing curriculum content"
+          }
+        ],
+        "total_pages": 47,
+        "separator": "=== section header ===",
+        "notes": "Primary content (pages 8-13, 22-26) + secondary content (pages 14-20, 28-32). Page 21 (Health Education transition header) excluded. Pages 12-13 contain primary policy context; included per 'preserve full document' instruction."
+      },
+      "outputs_summary": {
+        "chars_out": 49711,
+        "sections_extracted": 4,
+        "status": "ok"
+      }
+    },
+    {
+      "primitive": "normalise_whitespace",
+      "started_at": "2026-04-20T12:38:12.194400+00:00",
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "chars_in": 49711,
+        "chars_out": 49711
+      }
+    },
+    {
+      "primitive": "content_hash",
+      "started_at": "2026-04-20T12:38:12.194400+00:00",
+      "duration_ms": 0,
+      "error": null,
+      "inputs": {},
+      "outputs_summary": {
+        "bytes": 49779,
+        "content_hash": "3743cccd972cf95ceeb93e92c91085540ac0c1cfa828a89ee4122dcb548794da"
+      }
+    }
+  ],
+  "scope_requested": {
+    "source_reference": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+    "source_type": "flat_pdf_linear",
+    "page_ranges": [
+      [
+        8,
+        13
+      ],
+      [
+        14,
+        20
+      ],
+      [
+        22,
+        26
+      ],
+      [
+        28,
+        32
+      ]
+    ],
+    "section_headings": [
+      "Relationships education (Primary): content to be covered by the end of primary",
+      "Secondary relationships and sex education curriculum content",
+      "Primary health and wellbeing: content to be covered by the end of primary",
+      "Secondary health and wellbeing curriculum content"
+    ],
+    "notes": "Full DfE statutory RSHE programme of study (England). Two phases: primary (ages 5-11) and secondary (ages 11-16). Slug: uk-statutory-rshe. Session HR-1, 2026-04-20."
+  },
+  "scope_acquired": {
+    "chars": 49711,
+    "verification_excerpt": {
+      "first_chars": "=== RELATIONSHIPS EDUCATION (PRIMARY): CONTENT TO BE COVERED BY THE END OF PRIMARY ===\n\nactivity involved. Similarly, good safeguarding practice requires young people to\nunderstand the correct terms f",
+      "last_chars": "oductive health, including fertility and menopause, and the\npotential impact of lifestyle on fertility for men and women.\n11 Cardiopulmonary Resuscitation is usually best taught after 12 years old.\n31",
+      "line_count": 771
+    }
+  },
+  "content_files": [
+    "docs/run-snapshots/uk-statutory-rshe/content.txt"
+  ],
+  "raw_content_files": [
+    {
+      "bytes": 630916,
+      "file_type": "source_pdf",
+      "hash": "999203ab4db830c069ee3841920e6ab9d4a5a6d7c3195822700cc984a9239714",
+      "path": "docs/run-snapshots/2026-04-19-session-4c-2a-secondary-rshe-2025/raw.pdf",
+      "note": "Shared with secondary-rshe-2025 snapshot; not duplicated."
+    }
+  ],
+  "raw_content_unavailable": null,
+  "content_hash": "3743cccd972cf95ceeb93e92c91085540ac0c1cfa828a89ee4122dcb548794da",
+  "detection_hash": null,
+  "dom_hash": null,
+  "user_interactions": [],
+  "verification_trace": []
+}

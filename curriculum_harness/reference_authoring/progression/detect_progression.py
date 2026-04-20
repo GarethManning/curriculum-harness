@@ -1016,6 +1016,99 @@ def _england_rshe_secondary_structure(
 
 
 # ---------------------------------------------------------------------------
+# DfE England — RSHE statutory guidance (full programme, primary + secondary).
+#
+# The full RSHE statutory guidance covers both phases:
+#   - Relationships Education (Primary): "content to be covered by the end of primary"
+#     Pages 9-12 of the July 2025 statutory guidance.
+#   - Primary Health and Wellbeing: "content to be covered by the end of primary"
+#     Pages 22-26 of the July 2025 statutory guidance.
+#   - Secondary RSE: "content to be covered by the end of secondary"
+#     Pages 14-20 of the July 2025 statutory guidance.
+#   - Secondary Health and Wellbeing: "content to be covered by the end of secondary"
+#     Pages 28-32 of the July 2025 statutory guidance.
+#
+# The document uses "primary" and "secondary" phases, NOT individual Key Stages.
+# There is no KS1/KS2 subdivision within primary content, and no KS3/KS4
+# subdivision within secondary content. The two-band structure faithfully
+# represents the document's own architecture.
+#
+# Source: DfE "Relationships Education, RSE and Health Education" (July 2025).
+# Statutory authority: Children and Social Work Act 2017.
+# Slug: uk-statutory-rshe
+# ---------------------------------------------------------------------------
+
+_ENGLAND_RSHE_FULL_BAND_DETAILS: list[dict] = [
+    {
+        "label": "End of Primary",
+        "approximate_age_range": "ages 5-11",
+        "approximate_grade_year": "Years 1-6 (KS1 and KS2)",
+        "developmental_descriptor": (
+            "Primary pupils develop the foundational skills and knowledge needed "
+            "for positive relationships, personal safety, and health. Outcomes are "
+            "framed as terminal goals for all primary pupils; year-group and KS1/KS2 "
+            "sequencing is a school decision. Primary relationships education does "
+            "not include RSE content; sex education in primary is non-statutory."
+        ),
+    },
+    {
+        "label": "End of Secondary",
+        "approximate_age_range": "ages 11-16",
+        "approximate_grade_year": "Years 7-11 (KS3 and KS4)",
+        "developmental_descriptor": (
+            "Secondary pupils develop the knowledge, values and personal qualities "
+            "needed to navigate relationships, sex and health across the full "
+            "secondary phase. Outcomes are framed as terminal goals for all secondary "
+            "pupils; KS3/KS4 and year-group sequencing is a school decision."
+        ),
+    },
+]
+
+_ENGLAND_RSHE_FULL_PROGRESSION_PHILOSOPHY = (
+    "The DfE RSHE statutory guidance (July 2025) uses a two-phase architecture: "
+    "'content to be covered by the end of primary' and 'content to be covered by "
+    "the end of secondary'. Neither phase is subdivided into individual Key Stages "
+    "within the curriculum content sections. Two-band output reflects the guidance's "
+    "own structure. Per DfE statutory RSHE guidance (England), Children and Social "
+    "Work Act 2017."
+)
+
+_ENGLAND_RSHE_FULL_SELF_REFLECTION_PROMPTS: dict[str, str] = {
+    "End of Primary": (
+        "Think about one relationship in your life — with a friend, family member, "
+        "or classmate. What makes it feel safe and kind? Is there anything you would "
+        "like to be different?"
+    ),
+    "End of Secondary": (
+        "Think about a situation this term where you had to make a decision about "
+        "a relationship or your own wellbeing. What did you consider, and what would "
+        "you do differently now?"
+    ),
+}
+
+
+def _england_rshe_full_structure(
+    *, source_reference: str, source_slug: str, rationale: str
+) -> "ProgressionStructure":
+    return ProgressionStructure(
+        band_labels=["End of Primary", "End of Secondary"],
+        band_count=2,
+        age_range_hint=(
+            "ages 5-16 (DfE RSHE statutory guidance July 2025; primary phase = Years 1-6, "
+            "secondary phase = Years 7-11; two-phase structure, no within-phase KS subdivision)"
+        ),
+        source_type="england_rshe_full",
+        detection_confidence="high",
+        detection_rationale=rationale,
+        band_self_reflection_prompts=dict(_ENGLAND_RSHE_FULL_SELF_REFLECTION_PROMPTS),
+        band_details=list(_ENGLAND_RSHE_FULL_BAND_DETAILS),
+        progression_philosophy=_ENGLAND_RSHE_FULL_PROGRESSION_PHILOSOPHY,
+        source_reference=source_reference,
+        source_slug=source_slug,
+    )
+
+
+# ---------------------------------------------------------------------------
 # URL- and slug-based dispatch
 # ---------------------------------------------------------------------------
 
@@ -1266,11 +1359,27 @@ def _lookup_high_confidence(
             ),
         )
 
+    # --- DfE England RSHE (full programme, primary + secondary) ---------------
+    # Matches slugs containing 'uk-statutory-rshe' or 'rshe-full'. Two-band
+    # structure: End of Primary + End of Secondary. Must be checked BEFORE the
+    # secondary-only RSHE entry below, which also matches 'rshe' in the slug.
+    if "uk-statutory-rshe" in slug_lower or "rshe-full" in slug_lower or "uk-rshe-full" in slug_lower:
+        return _england_rshe_full_structure(
+            source_reference=source_reference,
+            source_slug=source_slug,
+            rationale=(
+                f"Source slug '{source_slug}' matches DfE RSHE full-programme pattern. "
+                "Two-band structure: End of Primary (ages 5-11) + End of Secondary "
+                "(ages 11-16). DfE statutory RSHE guidance (July 2025)."
+            ),
+        )
+
     # --- DfE England RSHE (secondary) -----------------------------------------
     # Matches the assets.publishing.service.gov.uk URL for the RSHE statutory
     # guidance, or slugs containing 'rshe'. Single-band 'End of Secondary'
     # structure (ages 11-16). Prevents the source-text fallback from producing
     # a multi-KS structure because the document references both KS3 and KS4.
+    # NOTE: the full-programme check above fires first for 'uk-statutory-rshe'.
     if matched is not None:
         host, path = matched
         if "assets.publishing.service.gov.uk" in host and "relationships" in path:
