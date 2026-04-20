@@ -188,7 +188,9 @@
         "blk_0008_item_01",
         "blk_0008_item_02"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_02_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -500,7 +502,9 @@
         "blk_0220_item_02",
         "blk_0229_item_01"
       ],
-      "prerequisite_lts": [],
+      "prerequisite_lts": [
+        "cluster_04_lt_01"
+      ],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1504,9 +1508,7 @@
         "blk_0154_item_02",
         "blk_0160_item_01"
       ],
-      "prerequisite_lts": [
-        "cluster_11_lt_01"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
@@ -1626,7 +1628,7 @@
         "blk_0197_item_01"
       ],
       "prerequisite_lts": [
-        "cluster_01_lt_02"
+        "cluster_11_lt_01"
       ],
       "stability_flag": "stable",
       "per_run_signatures": [
@@ -2112,9 +2114,7 @@
         "blk_0393_item_02",
         "blk_0393_item_03"
       ],
-      "prerequisite_lts": [
-        "cluster_15_lt_01"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "lt_set_unstable",
       "per_run_signatures": [
         {
@@ -2673,9 +2673,7 @@
         "blk_0351_item_02",
         "blk_0351_item_03"
       ],
-      "prerequisite_lts": [
-        "cluster_19_lt_01"
-      ],
+      "prerequisite_lts": [],
       "stability_flag": "stable",
       "per_run_signatures": [
         {
