@@ -1,0 +1,4846 @@
+{
+  "sets": [
+    {
+      "lt_id": "pre-kindergarten_cluster_01_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student smiles and shows excitement when sharing something they made or did",
+            "The student says positive things about themselves when prompted by adults"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student talks about their accomplishments with enthusiasm and confidence",
+            "The student stands tall and speaks clearly when sharing their work with others",
+            "The student expresses pride in their abilities using simple language"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student consistently describes their strengths and achievements without prompting",
+            "The student maintains confident body language when presenting their work to peers",
+            "The student celebrates their progress and growth in learning activities"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student articulates specific reasons why they feel good about their accomplishments",
+            "The student maintains positive self-regard even when facing challenges or setbacks",
+            "The student shares their successes with others in balanced and appropriate ways"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student demonstrates consistent self-confidence across different social and academic contexts",
+            "The student acknowledges their achievements while remaining open to feedback and growth",
+            "The student maintains positive self-identity despite peer pressure or social comparison"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student expresses authentic pride in their unique qualities and contributions",
+            "The student maintains stable positive self-regard through various life transitions and challenges",
+            "The student advocates for themselves and their accomplishments in appropriate settings"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates unwavering confidence in their identity and capabilities across all environments",
+            "The student integrates their accomplishments into a coherent sense of personal worth and direction",
+            "The student inspires positive self-regard in others through their own authentic self-confidence"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child talks about themselves and their accomplishments at home?",
+        "When your child faces disappointment or makes mistakes, how do they maintain confidence in themselves?",
+        "How does your child express pride in their achievements, and what kinds of things make them feel good about themselves?"
+      ],
+      "prerequisite_lts": [
+        "Identifying Personal Emotions and Characteristics"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on how the student views themselves positively and takes pride in their growth, with teacher and student discussing specific examples of when the student felt confident and accomplished, while parents may share observations of self-confidence demonstrated at home.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "pre-kindergarten_cluster_02_lt_01",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student uses simple words or gestures to name basic emotions like happy, sad, or mad when prompted by an adult",
+            "The student seeks comfort from familiar adults when experiencing strong emotions"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student identifies their own emotions using feeling words during daily activities",
+            "The student uses basic calming strategies like deep breathing or counting when reminded by adults",
+            "The student notices when their emotions change during play or learning activities"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student describes what triggered specific emotions in themselves during classroom situations",
+            "The student independently chooses from a known set of emotion regulation strategies when feeling overwhelmed",
+            "The student recognizes physical sensations that accompany different emotions"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student explains the connection between their thoughts, emotions, and behaviors in various school contexts",
+            "The student adapts their emotion regulation strategies based on the situation and setting",
+            "The student monitors their emotional state throughout the day and adjusts their approach to tasks accordingly"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student recognizes complex emotions and emotional patterns in themselves across different social and academic situations",
+            "The student proactively uses emotion regulation strategies before situations that typically trigger strong reactions",
+            "The student reflects on how their emotional responses affect their relationships and learning"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student analyzes how their emotional responses are influenced by personal values, past experiences, and current stressors",
+            "The student develops and refines personalized emotion regulation strategies for different contexts and relationships",
+            "The student maintains emotional awareness and regulation during high-stakes or unfamiliar situations"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates sophisticated understanding of their emotional patterns and triggers across multiple life domains",
+            "The student coaches others in emotion recognition and regulation strategies",
+            "The student maintains emotional balance while navigating complex personal, academic, and social challenges"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child identifies and talks about their feelings at home?",
+        "When your child gets upset or excited, what strategies do you see them using to manage those emotions?",
+        "How does your child respond when family situations become emotionally challenging or stressful?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation focuses on reviewing observed instances of emotional recognition and regulation across settings, discussing which strategies are most effective for the student, and identifying next steps for developing more sophisticated emotional awareness and management skills.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2, (('Pre-Kindergarten', 3), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "pre-kindergarten_cluster_02_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student attempts simple self-care tasks like putting on shoes or washing hands with minimal prompting",
+            "The student shows willingness to try new activities even when uncertain about the outcome"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student completes familiar classroom routines independently such as cleaning up materials or preparing for transitions",
+            "The student persists with challenging tasks for short periods before seeking help",
+            "The student expresses confidence in their abilities using phrases like 'I can do this' or 'I know how'"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student initiates and completes multi-step tasks without constant supervision or reminders",
+            "The student demonstrates confidence by volunteering for new responsibilities or leadership roles",
+            "The student manages personal belongings and workspace organization independently"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student takes ownership of long-term assignments by breaking them into manageable steps",
+            "The student confidently advocates for their needs and asks clarifying questions when instructions are unclear",
+            "The student independently problem-solves obstacles that arise during task completion"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student manages competing priorities and deadlines across multiple subjects and activities",
+            "The student demonstrates confidence in their decision-making by explaining their reasoning to peers and adults",
+            "The student independently seeks resources and support when needed without waiting for direction"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student takes initiative on complex projects that require sustained effort over weeks or months",
+            "The student confidently presents their work and ideas to diverse audiences",
+            "The student independently manages their learning environment and schedule to optimize productivity"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates independence in pursuing self-directed learning goals beyond required coursework",
+            "The student confidently navigates unfamiliar situations and environments with minimal guidance",
+            "The student takes responsibility for their personal and academic growth by setting and pursuing meaningful goals"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child approaches new tasks or challenges at home without being asked?",
+        "When does your child show the most confidence in their abilities, and how do they express that confidence?",
+        "How does your child handle responsibilities like chores, homework, or personal care routines independently?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation focuses on identifying specific instances where the student has demonstrated growing independence and confidence, discussing strategies that support their autonomous task completion, and setting goals for expanding their self-reliance in new contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "pre-kindergarten_cluster_03_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student offers comfort objects or gentle touches when peers are upset",
+            "The student shows concern through facial expressions and body language when others are hurt or sad"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student uses simple caring words like 'I'm sorry you're sad' when responding to others' distress",
+            "The student shares toys or materials when noticing a peer needs something",
+            "The student seeks adult help when seeing another child in need"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student asks caring questions about others' feelings and experiences",
+            "The student adjusts their behavior to be gentler around upset peers",
+            "The student offers specific help based on what they observe others needing"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student responds with appropriate emotional support that matches the intensity of others' situations",
+            "The student demonstrates patience and understanding when peers make mistakes or struggle",
+            "The student includes others who appear lonely or left out in group activities"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student provides thoughtful emotional support that acknowledges others' perspectives without trying to fix everything",
+            "The student shows consistent caring responses across different social groups and contexts",
+            "The student advocates for peers who are being treated unfairly or unkindly"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student responds with empathy and care even in challenging or conflict situations",
+            "The student balances their own needs with genuine concern for others' wellbeing",
+            "The student demonstrates cultural sensitivity when responding to diverse peers' experiences"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student maintains empathetic responses while respecting others' autonomy and boundaries",
+            "The student shows sustained caring across long-term relationships and community involvement",
+            "The student responds with appropriate empathy to complex social and emotional situations"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends are upset or going through difficult times?",
+        "When your child sees someone who needs help or comfort, what kinds of caring actions do they typically take?",
+        "How does your child show empathy and care in their relationships with siblings, friends, or community members?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Others' Emotions and Characteristics"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on observed patterns of empathetic and caring responses across different relationships and contexts, exploring how the student's capacity for genuine care has developed and identifying opportunities to strengthen empathetic connections with others.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              2
+            ],
+            [
+              "Grade Band 11-12",
+              2
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 2), ('Grade Band 11-12', 2), ('parents', 3)): 1, (('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "pre-kindergarten_cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student seeks proximity to familiar peers during play activities",
+            "The student responds positively when peers initiate simple interactions",
+            "The student asks an adult for help when experiencing social difficulty"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student initiates play invitations with classmates",
+            "The student shares materials or takes turns without adult prompting",
+            "The student approaches a teacher or trusted adult when feeling upset about peer interactions"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student maintains ongoing friendships across multiple weeks or months",
+            "The student includes others in group activities or games",
+            "The student seeks peer support when facing social challenges"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student demonstrates loyalty and support to friends during conflicts with others",
+            "The student actively helps classmates with academic or social problems",
+            "The student identifies and approaches appropriate adults or peers when needing relationship advice"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student navigates complex friendship dynamics while maintaining multiple close relationships",
+            "The student engages in prosocial behaviors that benefit the broader school community",
+            "The student seeks guidance from trusted mentors when facing significant relationship challenges"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student sustains meaningful friendships despite changing social contexts or schedules",
+            "The student takes initiative in organizing prosocial activities or supporting peers in need",
+            "The student accesses appropriate support systems when relationship stress affects wellbeing"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student maintains authentic relationships while preparing for post-graduation transitions",
+            "The student demonstrates consistent prosocial leadership in school and community settings",
+            "The student proactively builds support networks and seeks mentorship for personal growth"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child maintains friendships over time, especially when conflicts or changes occur?",
+        "When has your child shown kindness or helpfulness toward others without being asked?",
+        "How does your child typically seek support when they are struggling with friendship issues or social situations?"
+      ],
+      "prerequisite_lts": [
+        "Social Communication and Conflict Resolution",
+        "Collaborative Social Participation"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on reviewing specific examples of sustained friendship patterns, prosocial choices, and help-seeking behaviors across different social contexts. Teacher, student, and optionally parent discuss growth in relationship maintenance skills and identify supportive strategies for continued prosocial development.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 1, (('Pre-Kindergarten', 3), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "pre-kindergarten_cluster_05_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student reaches for materials or approaches adults when encountering difficulty with a task",
+            "The student shows excitement through body language or vocalizations when presented with new activities or learning opportunities"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student raises their hand or verbally asks for help when stuck on classroom activities",
+            "The student expresses curiosity by asking questions about new topics or materials",
+            "The student approaches the teacher or peers when needing assistance with basic tasks"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student identifies specific areas where they need help and articulates their confusion to teachers or classmates",
+            "The student demonstrates enthusiasm for learning by volunteering to try new activities or share discoveries",
+            "The student seeks out additional resources like books or educational materials when interested in a topic"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student proactively asks clarifying questions during instruction to deepen understanding",
+            "The student seeks feedback from teachers and peers to improve their work",
+            "The student pursues independent learning opportunities related to personal interests or academic subjects"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student advocates for their learning needs by requesting specific types of support or accommodations",
+            "The student actively seeks out mentors, tutors, or study groups when facing academic challenges",
+            "The student demonstrates sustained engagement with challenging material even when initial attempts are unsuccessful"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student initiates conversations with teachers about academic goals and seeks guidance for improvement",
+            "The student pursues learning opportunities outside the classroom through clubs, internships, or independent projects",
+            "The student recognizes when they need help and systematically identifies appropriate resources and support systems"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student takes ownership of their learning by seeking out advanced coursework, research opportunities, or specialized training",
+            "The student builds networks of academic and professional mentors to support their educational and career goals",
+            "The student demonstrates resilience in learning by viewing setbacks as opportunities to seek additional support and grow"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child encounters something difficult at home, what do you notice about how they respond or who they turn to for help?",
+        "What have you observed about your child's excitement or curiosity when they discover something new or interesting?",
+        "How does your child typically ask for help or support when they need it, whether with homework, chores, or personal challenges?"
+      ],
+      "prerequisite_lts": [
+        "Applying Problem-Solving Strategies",
+        "Identifying Safety Resources"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on recognizing the student's natural curiosity and help-seeking patterns, celebrating growth in learning enthusiasm, and identifying strategies to strengthen their comfort with asking for support when needed.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "kindergarten-grade-1_cluster_01_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student uses encouraging words about themselves when prompted by adults",
+            "The student repeats positive statements about their abilities after hearing them from others"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student spontaneously says positive things about their work or efforts",
+            "The student corrects negative self-statements with adult guidance",
+            "The student uses kind words when talking about their mistakes"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student catches themselves using negative self-talk and replaces it with more balanced statements",
+            "The student speaks encouragingly to themselves during challenging tasks",
+            "The student acknowledges their strengths when discussing their performance"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student maintains constructive internal dialogue during setbacks without external prompting",
+            "The student reframes negative thoughts about themselves into growth-oriented language",
+            "The student practices positive self-talk strategies consistently across different situations"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student demonstrates sustained positive internal dialogue even during peer conflicts or academic pressure",
+            "The student helps others recognize and change their negative self-talk patterns",
+            "The student maintains constructive self-regard when facing criticism or failure"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student consistently maintains positive self-regard across multiple life domains including academics, relationships, and personal goals",
+            "The student models healthy internal dialogue for peers during stressful situations",
+            "The student demonstrates resilient self-talk when navigating complex social or academic challenges"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student sustains constructive internal dialogue during major life transitions and decisions",
+            "The student integrates positive self-talk practices into their daily routines without external support",
+            "The student advocates for positive self-regard practices in their community or peer groups"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child talks to themselves when they make mistakes or face challenges at home?",
+        "When your child is working on something difficult, what kinds of things do you hear them say about their abilities or progress?",
+        "How does your child respond when they don't succeed at something on the first try - what do you observe about their internal conversation?"
+      ],
+      "prerequisite_lts": [
+        "Recognizing Emotions and Personal Attributes"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on identifying specific instances where the student demonstrated positive or negative self-talk, exploring the impact of their internal dialogue on their feelings and actions, and collaboratively developing personalized strategies for maintaining constructive self-regard across different contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "kindergarten-grade-1_cluster_02_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student chooses between two offered activities without waiting for adult direction",
+            "The student attempts new tasks independently before seeking help"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student selects materials and begins activities without prompting during free choice time",
+            "The student makes decisions about personal needs like choosing a snack or selecting a book",
+            "The student initiates conversations or play with peers without adult facilitation"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student independently organizes personal workspace and materials for learning activities",
+            "The student makes choices about how to spend free time and follows through with selected activities",
+            "The student takes on classroom responsibilities without reminders"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student independently identifies and pursues personal interests through self-selected projects or activities",
+            "The student makes decisions about learning strategies and adjusts approach based on personal preferences",
+            "The student initiates solutions to personal challenges before seeking adult support"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student independently manages personal schedule and commitments across multiple contexts",
+            "The student makes informed choices about extracurricular activities and personal goals",
+            "The student takes initiative in addressing personal conflicts or challenges with peers"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student independently researches and pursues opportunities aligned with personal interests and values",
+            "The student makes autonomous decisions about academic pathways and personal development",
+            "The student initiates and sustains self-directed learning projects outside of required coursework"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student independently navigates complex personal decisions about future pathways and life choices",
+            "The student demonstrates consistent self-advocacy and autonomous decision-making across various life domains",
+            "The student takes initiative in creating opportunities that align with personal vision and goals"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child makes choices at home without being told what to do?",
+        "When does your child take the lead on activities or decisions in your family?",
+        "How does your child handle situations where they need to figure things out on their own?"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Communication",
+        "Goal Setting and Need Expression"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on identifying specific instances where the student demonstrated initiative and independence in personal choices, discussing the decision-making process used, and exploring how this capacity can be strengthened across different contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "kindergarten-grade-1_cluster_03_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student uses gentle touches when interacting with peers and adults",
+            "The student says 'please' and 'thank you' when prompted by adults",
+            "The student shows concern when another child is crying or upset"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student waits for their turn during group activities without being reminded",
+            "The student uses kind words when speaking to classmates and teachers",
+            "The student offers to help when they see someone struggling with a task"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student listens attentively when others are speaking without interrupting",
+            "The student includes peers who are sitting alone or left out of activities",
+            "The student apologizes sincerely when they have hurt someone's feelings"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student advocates for fair treatment when they witness exclusion or unkindness",
+            "The student adjusts their communication style to be respectful with different people",
+            "The student shows appreciation for others' contributions and efforts"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student demonstrates respect for diverse viewpoints during discussions and disagreements",
+            "The student consistently considers how their words and actions affect others before acting",
+            "The student takes initiative to support peers who are experiencing difficulties"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student maintains respectful interactions even during conflicts or stressful situations",
+            "The student recognizes and responds appropriately to others' emotional needs across various social contexts",
+            "The student demonstrates care through both words and actions in their relationships"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student models respectful behavior that influences positive interactions in their peer groups",
+            "The student consistently demonstrates care and respect across diverse communities and cultural contexts",
+            "The student takes responsibility for creating inclusive environments where others feel valued"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child treats family members, friends, and people they meet in the community?",
+        "When your child disagrees with someone or feels frustrated, how do they handle those interactions?",
+        "Can you share examples of times when your child has shown kindness or consideration for others at home or in your neighborhood?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Others' Perspectives and Emotions"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific examples of caring and respectful interactions the student has demonstrated, exploring how they recognize others' needs and feelings in different situations. Together, teacher, student, and optionally parent identify patterns in the student's caring behaviors and discuss how respect looks different across various relationships and contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "kindergarten-grade-1_cluster_04_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student makes eye contact and smiles when another child approaches them",
+            "The student responds to simple greetings with gestures or words when prompted by an adult"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student initiates play by approaching peers and using simple invitations like 'want to play'",
+            "The student responds positively to peer invitations to join activities",
+            "The student shares materials or toys when asked by classmates"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student starts conversations with peers about shared interests or activities",
+            "The student listens to others' ideas and responds with relevant comments during group work",
+            "The student includes new or less familiar classmates in games or activities"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student maintains ongoing friendships through regular check-ins and shared activities",
+            "The student initiates conversations that show genuine interest in others' experiences and feelings",
+            "The student responds supportively when peers share problems or concerns"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student navigates friendship conflicts by initiating conversations to address misunderstandings",
+            "The student builds connections with diverse peers across different social groups",
+            "The student maintains friendships through digital communication and in-person interactions"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student develops deeper friendships by sharing personal thoughts and providing emotional support",
+            "The student initiates and sustains relationships in new environments like clubs or community activities",
+            "The student responds to others' communication attempts even when busy or stressed"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student mentors younger students by initiating supportive relationships and communication",
+            "The student maintains long-term friendships while adapting to changing life circumstances",
+            "The student builds professional and academic relationships through purposeful networking and collaboration"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child starts conversations or reaches out to friends and classmates?",
+        "When other children try to talk to or play with your child, how does your child typically respond?",
+        "How does your child maintain friendships, and what friendship skills have you observed them using at home or in the community?"
+      ],
+      "prerequisite_lts": [
+        "Identifying Collaborative Behaviors"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific examples of how the student initiates and responds to peer communication, identifying patterns in their friendship-building approaches and discussing strategies for expanding their relationship skills across different social contexts.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "kindergarten-grade-1_cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student uses simple words or gestures to name feelings when upset instead of hitting or throwing objects",
+            "The student seeks comfort from a trusted adult when experiencing strong emotions"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student takes deep breaths or counts to calm down when frustrated during activities",
+            "The student asks for help using words when feeling overwhelmed rather than acting out physically",
+            "The student uses basic emotion words to tell others how they feel when upset"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student walks away from situations that trigger strong emotions and returns when calmer",
+            "The student expresses anger or disappointment through words rather than aggressive actions toward peers",
+            "The student identifies trusted adults at school to talk to when experiencing difficult emotions"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student uses multiple coping strategies like journaling or talking to friends when dealing with stress",
+            "The student expresses disagreement or frustration respectfully without name-calling or threats",
+            "The student recognizes when emotions are building and takes preventive action before losing control"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student maintains friendships despite experiencing conflict by expressing emotions constructively",
+            "The student seeks appropriate support from counselors or trusted adults during emotional crises",
+            "The student channels intense emotions into positive outlets like art, music, or physical activity"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student navigates romantic relationship challenges by communicating feelings directly rather than through harmful behaviors",
+            "The student manages academic and social pressures by utilizing healthy emotional expression techniques",
+            "The student supports peers who are struggling emotionally while maintaining their own emotional boundaries"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student handles major life transitions and disappointments by processing emotions through constructive means",
+            "The student advocates for mental health resources when needed for themselves or others",
+            "The student demonstrates emotional resilience during high-stress situations like college applications or family challenges"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child gets upset or angry at home, what do you notice about how they express those feelings?",
+        "How does your child typically ask for help when they're feeling overwhelmed or stressed?",
+        "What have you observed about your child's ability to calm down after experiencing strong emotions?"
+      ],
+      "prerequisite_lts": [],
+      "developmental_conversation_protocol": "The conversation focuses on identifying specific instances where the student successfully managed difficult emotions without causing harm, discussing which strategies worked best, and planning support for situations where constructive expression remains challenging.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              2
+            ],
+            [
+              "Grade Band 11-12",
+              2
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2, (('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 2), ('Grade Band 11-12', 2), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-2-3_cluster_02_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student returns to a challenging puzzle or building activity after initial frustration with adult prompting",
+            "The student tries a different approach to reach a toy or complete a task when the first attempt doesn't work"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student continues working on art projects or block constructions even when pieces don't fit as expected",
+            "The student asks for help or tries new strategies when stuck on classroom tasks",
+            "The student returns to challenging activities during free choice time"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student works through multiple attempts at math problems or writing assignments without giving up",
+            "The student generates alternative solutions when initial problem-solving approaches fail",
+            "The student maintains focus on challenging tasks across multiple work sessions"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student breaks down complex projects into smaller steps when facing difficulties",
+            "The student seeks feedback and adjusts approaches when initial strategies prove ineffective",
+            "The student demonstrates willingness to tackle unfamiliar or difficult assignments"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student persists through multiple drafts and revisions of creative or academic work",
+            "The student applies problem-solving strategies learned in one subject area to challenges in other contexts",
+            "The student maintains effort on long-term projects despite setbacks or obstacles"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student independently develops and tests multiple hypotheses when facing complex problems",
+            "The student sustains creative thinking and effort through extended research or project work",
+            "The student demonstrates resilience when encountering failure in academic or extracurricular pursuits"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student initiates innovative approaches to solve novel problems across academic and personal contexts",
+            "The student maintains persistent effort on self-directed learning goals despite minimal external structure",
+            "The student demonstrates sustained creative problem-solving in leadership roles or independent projects"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child encounters a difficult task at home, what have you noticed about how they respond and whether they keep trying?",
+        "Have you observed your child coming up with creative solutions or trying different approaches when something doesn't work the first time?",
+        "What have you noticed about your child's willingness to stick with challenging activities or projects over time?"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Goal Setting"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on identifying specific instances where the student demonstrated persistence and creativity in problem-solving, discussing what strategies worked well, and setting goals for applying these approaches in new challenging situations.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-2-3_cluster_04_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student seeks out familiar peers for play activities with adult prompting",
+            "The student shows interest in joining group activities by moving closer or watching others"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student initiates simple interactions with classmates during free play",
+            "The student shows care for others by offering comfort when someone is upset",
+            "The student participates in partner activities and takes turns"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student actively includes others in games and activities",
+            "The student maintains friendships by checking in with peers and remembering their interests",
+            "The student seeks to resolve conflicts by talking through problems with others"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student builds connections with new classmates by finding common interests",
+            "The student maintains multiple friendships across different social groups",
+            "The student demonstrates loyalty by supporting friends during difficult times"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student navigates changing peer dynamics while maintaining core friendships",
+            "The student builds relationships with adults in school through respectful engagement",
+            "The student demonstrates empathy by adjusting communication style based on others' needs"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student cultivates diverse relationships across different social contexts",
+            "The student maintains long-term friendships despite changing circumstances",
+            "The student builds professional relationships with mentors and community members"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates relationship building skills in workplace or volunteer settings",
+            "The student maintains meaningful connections while preparing for post-graduation transitions",
+            "The student serves as a relationship model for younger students through mentoring or leadership"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child connects with friends, neighbors, or family members at home or in the community?",
+        "When your child faces relationship challenges or conflicts, how do you see them working to maintain or repair those connections?",
+        "How does your child show care and investment in building relationships with people of different ages or backgrounds?"
+      ],
+      "prerequisite_lts": [
+        "Effective Communication and Collaboration"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific examples of relationship building behaviors observed across school and home contexts, with discussion of how the student initiates, maintains, and deepens connections with others over time.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-2-3_cluster_05_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student asks questions about why friends are sad or upset during play",
+            "The student notices when classroom routines change and wonders aloud about the reasons"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student shows interest in hearing about different solutions when conflicts arise between classmates",
+            "The student asks follow-up questions when teachers explain why certain rules exist",
+            "The student expresses wonder about how other children might feel in challenging situations"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student seeks to understand multiple perspectives when playground disagreements occur",
+            "The student shows sustained interest in discussing why certain problems keep happening in their community",
+            "The student asks thoughtful questions about fairness during group activities"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student initiates conversations about social issues they observe in school or neighborhood settings",
+            "The student demonstrates ongoing curiosity about how different groups of people experience the same challenges",
+            "The student pursues deeper understanding of complex problems through multiple conversations over time"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student maintains interest in exploring social challenges even when initial solutions prove inadequate",
+            "The student seeks out diverse viewpoints on issues affecting their peer groups and broader community",
+            "The student demonstrates sustained engagement with problems that have no clear or immediate solutions"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student actively investigates social challenges across different contexts and communities",
+            "The student maintains curiosity about systemic issues even when they feel overwhelming or discouraging",
+            "The student engages with social challenges through multiple approaches over extended periods"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates enduring commitment to understanding complex social issues that extend beyond their immediate experience",
+            "The student maintains intellectual curiosity about social challenges while taking meaningful action",
+            "The student seeks to understand root causes of social problems across diverse contexts and time periods"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about your child's interest in understanding why problems happen in your family, neighborhood, or community?",
+        "When your child encounters unfairness or conflict, how do they respond to learning about different people's perspectives on the situation?",
+        "Have you observed your child continuing to think about or ask questions about social issues over time, even after initial conversations have ended?"
+      ],
+      "prerequisite_lts": [
+        "Problem Analysis and Solution Development",
+        "Consequence Awareness and Response Planning"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on documenting the student's sustained curiosity patterns and exploring how their engagement with social challenges has deepened over time. Teacher, student, and optionally parent discuss specific instances where the student demonstrated ongoing interest in understanding complex social problems.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              2
+            ],
+            [
+              "Grade Band 11-12",
+              2
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 2), ('Grade Band 11-12', 2), ('parents', 3)): 1, (('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-4-5_cluster_01_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student tries again after making a mistake with adult encouragement",
+            "The student shows willingness to attempt new activities even when uncertain"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student persists through simple challenges for short periods",
+            "The student asks for help when stuck rather than giving up",
+            "The student celebrates small improvements in their work"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student talks about learning from mistakes using growth mindset language",
+            "The student independently tries different strategies when first attempts don't work",
+            "The student identifies specific strengths they can use to tackle new challenges"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student seeks out challenging tasks that stretch their current abilities",
+            "The student explains how effort and practice lead to improvement in specific areas",
+            "The student builds on their identified strengths to approach unfamiliar problems"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student maintains growth mindset thinking during extended difficult tasks",
+            "The student actively seeks feedback to improve their performance",
+            "The student leverages their strengths while working to develop weaker areas"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student demonstrates growth mindset across multiple subject areas and social situations",
+            "The student helps peers develop growth mindset thinking about their own challenges",
+            "The student strategically applies their strengths to overcome obstacles in new contexts"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student sustains growth mindset orientation even during high-stakes or stressful situations",
+            "The student models growth mindset thinking for younger students or in leadership roles",
+            "The student continuously builds upon their strengths while embracing challenges that require new skill development"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child faces something difficult at home, what do you notice about how they respond to setbacks or mistakes?",
+        "What have you observed about how your child talks about their abilities and whether they can improve at things?",
+        "How does your child use their natural strengths or talents when they encounter new challenges or activities?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Growth Mindset"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific examples of how the student has demonstrated growth mindset thinking and strength-building in recent situations, with discussion of patterns across different contexts and goal-setting for continued development.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-4-5_cluster_02_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student takes deep breaths or uses simple calming strategies when upset with adult prompting",
+            "The student continues trying a task for short periods even when it feels hard"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student uses taught calming strategies independently when experiencing strong emotions",
+            "The student returns to difficult tasks after brief breaks without giving up entirely",
+            "The student asks for help when frustrated rather than having emotional outbursts"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student maintains emotional composure during classroom transitions and unexpected changes",
+            "The student persists through multi-step assignments even when encountering obstacles",
+            "The student recovers from disappointments and continues participating in activities"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student demonstrates consistent emotional regulation across different settings and social situations",
+            "The student approaches challenging academic tasks with sustained effort over multiple days",
+            "The student maintains courage when trying new activities or speaking up in group discussions"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student manages emotional responses effectively during peer conflicts and academic pressure",
+            "The student shows perseverance through long-term projects despite setbacks and criticism",
+            "The student demonstrates courage in standing up for personal values even when facing social pressure"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student maintains emotional equilibrium during high-stress situations like presentations or competitions",
+            "The student persists through complex challenges that require sustained effort over weeks or months",
+            "The student shows courage in taking on leadership roles or advocating for important causes"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student demonstrates consistent self-regulation across academic, social, and personal contexts without external support",
+            "The student maintains perseverance through significant obstacles while pursuing long-term goals",
+            "The student exhibits courage in making difficult decisions and taking principled stands even when facing consequences"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child faces something difficult at home, what have you noticed about how they handle their emotions and whether they keep trying?",
+        "How does your child respond when they encounter setbacks or disappointments in activities they care about?",
+        "What have you observed about your child's willingness to try new or challenging things, especially when they might fail or face criticism?"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Self-Advocacy",
+        "Goal Setting and Achievement Planning"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on reviewing specific instances where the student demonstrated or struggled with emotional self-regulation and perseverance, identifying patterns across different contexts, and discussing strategies that support sustained courage in challenging situations.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-4-5_cluster_03_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student says 'thank you' when prompted by adults during daily routines",
+            "The student shows excitement when receiving something and looks toward the giver"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student spontaneously says 'thank you' for help or gifts without prompting",
+            "The student expresses appreciation for simple experiences like snack time or playground activities",
+            "The student draws pictures or uses gestures to show thankfulness"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student regularly acknowledges others' contributions during group work",
+            "The student notices and comments on positive aspects of ordinary school experiences",
+            "The student writes or shares specific things they are grateful for during class discussions"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student maintains a consistent practice of identifying daily moments of gratitude",
+            "The student expresses appreciation for both positive outcomes and learning opportunities from challenges",
+            "The student recognizes and thanks people for behind-the-scenes contributions"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student integrates gratitude expressions naturally into peer interactions and collaborative work",
+            "The student reflects on and shares appreciation for personal growth experiences",
+            "The student demonstrates thankfulness for diverse perspectives during discussions and conflicts"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student sustains gratitude practices across different social contexts and stress levels",
+            "The student expresses appreciation for complex learning experiences including failures and setbacks",
+            "The student initiates gratitude-focused conversations and activities with others"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student maintains consistent gratitude practices during high-pressure academic and social situations",
+            "The student demonstrates deep appreciation for systemic supports and community resources",
+            "The student models and teaches gratitude practices to younger students or community members"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child expresses thankfulness for everyday things at home?",
+        "When does your child seem most appreciative, and how do they show it?",
+        "Have you observed your child acknowledging or thanking family members, friends, or community helpers?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Diversity and Empathy"
+      ],
+      "developmental_conversation_protocol": "The conversation explores observed patterns of gratitude expression across settings, discusses how appreciation practices support relationships and well-being, and identifies opportunities to strengthen consistent gratitude habits in daily life.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-4-5_cluster_04_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student seeks out familiar peers for play activities",
+            "The student uses simple words like 'please' and 'thank you' when prompted by adults"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student initiates conversations with classmates about shared toys or activities",
+            "The student takes turns speaking during circle time or group discussions",
+            "The student shows interest in what others are saying by looking at them and responding"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student asks questions to learn more about classmates' interests and experiences",
+            "The student maintains friendships over time by checking in with friends and remembering their preferences",
+            "The student adjusts communication style when speaking with different people"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student actively seeks common ground with peers from different backgrounds or with different interests",
+            "The student maintains respectful dialogue even when disagreeing with others' opinions",
+            "The student builds collaborative relationships in group projects by valuing others' contributions"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student navigates changing social dynamics while maintaining core friendships",
+            "The student communicates authentically about personal values while respecting others' perspectives",
+            "The student builds new relationships across different social groups or contexts"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student maintains meaningful relationships despite scheduling conflicts and competing priorities",
+            "The student engages in deep conversations about values and beliefs while remaining open to different viewpoints",
+            "The student builds professional relationships with mentors, employers, or community members"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student sustains long-term relationships through major life transitions and changes",
+            "The student builds relationships based on shared values and mutual respect across diverse communities",
+            "The student mentors younger students or peers in developing their own relationship skills"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child builds and maintains friendships at home or in the neighborhood?",
+        "When your child disagrees with family members or friends, how do they handle those conversations?",
+        "How does your child show interest in learning about other people's backgrounds, interests, or experiences?"
+      ],
+      "prerequisite_lts": [
+        "Positive Communication and Conflict Resolution"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on how the student recognizes their growth in building meaningful connections with others and their developing ability to communicate respectfully across different relationships and contexts.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2, (('Pre-Kindergarten', 3), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-6-8_cluster_03_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student says 'thank you' when prompted by adults during classroom activities",
+            "The student helps put away toys or materials when asked by teachers"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student spontaneously thanks classmates and teachers for help or kindness",
+            "The student volunteers to help with simple classroom tasks like cleaning up or distributing materials",
+            "The student notices when someone needs help and offers assistance with adult guidance"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student regularly expresses appreciation for others' contributions during group work",
+            "The student initiates helpful actions like holding doors or picking up dropped items without being asked",
+            "The student participates in classroom community-building activities and suggests ways to make the classroom better"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student acknowledges and thanks peers for their unique strengths and contributions to projects",
+            "The student takes on leadership roles in school service activities and encourages others to participate",
+            "The student identifies problems in the school environment and proposes solutions to teachers or administrators"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student consistently recognizes and celebrates diverse perspectives and contributions from classmates across different social groups",
+            "The student organizes or leads initiatives that benefit the broader school community",
+            "The student advocates for inclusive practices and speaks up when community members are excluded or treated unfairly"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student mentors younger students and expresses genuine appreciation for their growth and efforts",
+            "The student collaborates across different school groups and activities to address community-wide challenges",
+            "The student connects school community work with broader social issues and encourages civic engagement"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student sustains long-term commitments to community improvement projects and reflects on their impact",
+            "The student facilitates dialogue between different community stakeholders to build understanding and cooperation",
+            "The student models gratitude and community contribution as core values that influence their post-graduation plans"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child expresses appreciation for family members, neighbors, or community helpers in your daily life together?",
+        "When has your child taken initiative to help improve your household, neighborhood, or community without being asked?",
+        "How does your child respond when they see opportunities to contribute positively to group activities or community events outside of school?"
+      ],
+      "prerequisite_lts": [
+        "Understanding and Empathizing with Others"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific instances where the student has demonstrated gratitude and community contribution, exploring their motivations and the impact of their actions on others. Together, teacher, student, and optionally parent identify patterns of growth in the student's sustained orientation toward positive community engagement across different settings.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-6-8_cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student shows interest in playing with children who look different from them or speak different languages",
+            "The student accepts help from various adults and peers without showing preference based on appearance"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student invites classmates of different backgrounds to join their activities",
+            "The student asks questions about other children's cultures or families with genuine curiosity",
+            "The student shares materials and space equally with all peers regardless of differences"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student actively seeks to include peers who are often left out of group activities",
+            "The student adapts their communication style when interacting with classmates who have different abilities or language skills",
+            "The student stands up for peers who are being excluded or treated unfairly"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student initiates friendships with peers from diverse backgrounds and maintains these relationships over time",
+            "The student facilitates inclusive group dynamics by ensuring all voices are heard during collaborative work",
+            "The student seeks to understand different perspectives before making judgments about others"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student builds bridges between different social groups in their school or community",
+            "The student consistently challenges exclusionary behavior and advocates for inclusive practices",
+            "The student demonstrates cultural humility by learning from peers with different lived experiences"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student mentors younger students from diverse backgrounds and creates welcoming environments for them",
+            "The student organizes or participates in initiatives that promote inclusion and equity in their school community",
+            "The student navigates complex social situations by prioritizing inclusive relationship building over social status"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student leads inclusive relationship building efforts that extend beyond their immediate peer group into broader community contexts",
+            "The student models inclusive practices that influence positive change in institutional policies or cultural norms",
+            "The student sustains meaningful relationships across significant differences while honoring each person's authentic identity"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child interacts with people who are different from your family in terms of culture, language, abilities, or background?",
+        "When your child talks about their friends or classmates, do you hear them showing interest in and respect for different perspectives and experiences?",
+        "Have you observed your child taking action to include others or speak up when someone is being left out or treated unfairly?"
+      ],
+      "prerequisite_lts": [
+        "Collaborative Communication and Conflict Resolution",
+        "Effective Group Collaboration"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific examples of how the student builds and maintains relationships across differences, examining their motivations for inclusive behavior and reflecting on the impact of their relationship-building approaches on creating welcoming environments for all.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-9-10_cluster_02_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student asks for help when stuck on a task by pointing, gesturing, or using simple words",
+            "The student continues trying an activity after initial difficulty with adult encouragement"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student verbally asks teachers or peers for specific help when encountering difficulties",
+            "The student returns to challenging tasks after brief breaks or encouragement",
+            "The student expresses basic needs and preferences in group settings"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student explains what kind of help they need when facing academic challenges",
+            "The student tries multiple approaches to solve problems before seeking assistance",
+            "The student speaks up when they disagree with peers during collaborative work"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student advocates for accommodations or clarifications they need to succeed",
+            "The student persists through multi-step projects despite setbacks or frustration",
+            "The student communicates their learning preferences to teachers and peers"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student initiates conversations with teachers about academic support needs",
+            "The student maintains effort on long-term goals despite obstacles or peer pressure",
+            "The student stands up for their values and beliefs in social situations"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student proactively seeks resources and support systems for academic and personal challenges",
+            "The student sustains commitment to difficult goals across multiple contexts and time periods",
+            "The student advocates for themselves in conflict situations while respecting others"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student independently navigates institutional systems to access needed support and opportunities",
+            "The student demonstrates resilience by adapting strategies and maintaining progress toward complex goals",
+            "The student balances self-advocacy with collaborative problem-solving in diverse settings"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "When your child faces a difficult homework assignment or project, what have you noticed about how they ask for help or keep trying?",
+        "How does your child respond when things don't go their way at home, and what strategies do they use to work through challenges?",
+        "What have you observed about your child's willingness to speak up for what they need or believe in family or social situations?"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Goal Planning"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on reviewing specific instances where the student demonstrated self-advocacy and perseverance, identifying personal strategies that work, and setting goals for applying these skills in new or more challenging situations.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-9-10_cluster_03_lt_02",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student shows curiosity about why another child is crying or upset",
+            "The student notices when someone looks different and asks simple questions about the difference"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student listens when others share their feelings and responds with care",
+            "The student shows interest in learning about classmates' family traditions or customs",
+            "The student offers comfort to peers who are sad or hurt"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student asks thoughtful questions to understand why someone might feel differently about a situation",
+            "The student acknowledges when their perspective differs from others without dismissing the other viewpoint",
+            "The student shows genuine interest in stories or experiences from different cultural backgrounds"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student actively seeks to understand multiple viewpoints before forming opinions about conflicts",
+            "The student demonstrates respect for peers' religious, cultural, or family practices that differ from their own",
+            "The student adjusts their communication style when interacting with someone who processes information differently"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student engages in conversations about sensitive topics while maintaining respect for opposing viewpoints",
+            "The student recognizes and validates the emotional experiences of peers from different backgrounds",
+            "The student seeks out diverse perspectives when working on group projects or discussions"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student demonstrates empathy for individuals whose life experiences differ significantly from their own",
+            "The student challenges their own assumptions when presented with alternative perspectives",
+            "The student advocates for inclusive practices that honor different viewpoints in school settings"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student facilitates respectful dialogue between peers with conflicting viewpoints",
+            "The student demonstrates sustained commitment to understanding systemic factors that shape different perspectives",
+            "The student integrates multiple cultural and social perspectives into their decision-making processes"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child responds when family members or friends share different opinions or experiences?",
+        "When your child encounters people from different backgrounds or cultures, what curiosity or respect do you observe?",
+        "How does your child show care or understanding when someone in your family or community is going through a difficult time?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Cultural Value and Injustice"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on specific instances where the student demonstrated empathy or respectful engagement with different perspectives, exploring what they noticed about others' experiences and how they chose to respond with care and respect.",
+      "stability_flag": "observation_indicators_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              3
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 3), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 1, (('Pre-Kindergarten', 2), ('Kindergarten-Grade 1', 3), ('Grade Band 2-3', 3), ('Grade Band 4-5', 3), ('Grade Band 6-8', 3), ('Grade Band 9-10', 3), ('Grade Band 11-12', 3), ('parents', 3)): 2}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-9-10_cluster_03_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student helps with simple classroom tasks when prompted by adults",
+            "The student shows concern when classmates are upset or hurt"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student volunteers to help with classroom jobs and cleanup activities",
+            "The student invites isolated peers to join group activities",
+            "The student notices when someone needs help and alerts an adult"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student initiates helpful actions for classmates without being asked",
+            "The student organizes or suggests group activities that include everyone",
+            "The student speaks up when witnessing unfair treatment of peers"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student takes leadership roles in school service projects or community initiatives",
+            "The student actively recruits reluctant peers to participate in school activities",
+            "The student advocates for changes that would benefit the whole class or school"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student creates or sustains ongoing programs that address school community needs",
+            "The student mentors younger students in contributing to school well-being",
+            "The student mobilizes peer groups around community service or school improvement efforts"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student establishes cross-grade or school-wide initiatives that promote community well-being",
+            "The student coaches peers in developing their own community contribution skills",
+            "The student connects school community efforts with broader neighborhood or civic engagement"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student designs sustainable systems for ongoing community contribution that will continue beyond their graduation",
+            "The student facilitates community partnerships between school and external organizations",
+            "The student develops other student leaders to carry forward community well-being initiatives"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about your child taking initiative to help family members or neighbors without being asked?",
+        "When has your child encouraged siblings or friends to join in activities or help with family or community projects?",
+        "How does your child respond when they see someone in your family or neighborhood who needs support or assistance?"
+      ],
+      "prerequisite_lts": [
+        "Understanding Cultural Value and Injustice"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on documenting specific instances where the student has actively contributed to community well-being and encouraged others' participation, examining the sustainability and scope of their initiatives. Teacher, student, and optionally parent discuss patterns of community contribution across different settings and identify opportunities for expanding the student's leadership in fostering collective well-being.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "lt_id": "grade-band-9-10_cluster_04_lt_03",
+      "bands": [
+        {
+          "band": "Pre-Kindergarten",
+          "observable_behaviours": [
+            "The student seeks out familiar adults and peers for comfort and play with prompting",
+            "The student shows affection through hugs, smiles, or staying close to trusted individuals"
+          ],
+          "self_reflection_prompt": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "observable_behaviours": [
+            "The student initiates simple interactions with classmates during structured activities",
+            "The student maintains friendships through sharing toys and taking turns",
+            "The student seeks help from teachers when experiencing social difficulties"
+          ],
+          "self_reflection_prompt": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?"
+        },
+        {
+          "band": "Grade Band 2-3",
+          "observable_behaviours": [
+            "The student actively includes others in group activities and games",
+            "The student maintains multiple friendships across different school settings",
+            "The student demonstrates care for classmates by checking on them when upset"
+          ],
+          "self_reflection_prompt": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?"
+        },
+        {
+          "band": "Grade Band 4-5",
+          "observable_behaviours": [
+            "The student builds and sustains friendships that extend beyond immediate classroom interactions",
+            "The student navigates peer group dynamics while maintaining individual relationships",
+            "The student actively contributes to positive classroom community through encouraging others"
+          ],
+          "self_reflection_prompt": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?"
+        },
+        {
+          "band": "Grade Band 6-8",
+          "observable_behaviours": [
+            "The student maintains meaningful relationships despite changing social dynamics and peer pressure",
+            "The student demonstrates loyalty and trustworthiness in close friendships over time",
+            "The student engages positively with diverse peer groups across academic and extracurricular contexts"
+          ],
+          "self_reflection_prompt": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?"
+        },
+        {
+          "band": "Grade Band 9-10",
+          "observable_behaviours": [
+            "The student cultivates relationships with peers, teachers, and community members across multiple environments",
+            "The student maintains healthy boundaries while deepening meaningful connections",
+            "The student actively supports others' wellbeing through consistent positive engagement"
+          ],
+          "self_reflection_prompt": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?"
+        },
+        {
+          "band": "Grade Band 11-12",
+          "observable_behaviours": [
+            "The student sustains positive relationships that contribute to mutual growth and learning",
+            "The student mentors younger students and builds intergenerational connections",
+            "The student demonstrates relationship skills that prepare them for adult personal and professional contexts"
+          ],
+          "self_reflection_prompt": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+        }
+      ],
+      "parent_prompts": [
+        "What have you noticed about how your child builds and maintains friendships at home and in the neighborhood?",
+        "How does your child show care and support for family members and friends during both good times and challenges?",
+        "When your child talks about school relationships, what patterns do you notice in how they describe their connections with peers and teachers?"
+      ],
+      "prerequisite_lts": [
+        "Collaborative Communication and Feedback",
+        "Conflict Resolution and Support Seeking"
+      ],
+      "developmental_conversation_protocol": "The conversation focuses on observed patterns of relationship engagement across contexts, celebrating growth in connection-building while identifying opportunities to strengthen positive relationship skills. Discussion includes specific examples of how the student initiates, maintains, and deepens relationships over time.",
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              2
+            ],
+            [
+              "Kindergarten-Grade 1",
+              3
+            ],
+            [
+              "Grade Band 2-3",
+              3
+            ],
+            [
+              "Grade Band 4-5",
+              3
+            ],
+            [
+              "Grade Band 6-8",
+              3
+            ],
+            [
+              "Grade Band 9-10",
+              3
+            ],
+            [
+              "Grade Band 11-12",
+              3
+            ],
+            [
+              "parents",
+              3
+            ]
+          ],
+          "parent_prompt_count": 3
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    }
+  ],
+  "halted_lts": []
+}

@@ -1,0 +1,655 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-year-9",
+  "snapshot_path": "/var/folders/d1/1hd27b7s10gcc97hl5sm4lqr0000gn/T/strand_snapshots_8om1k63p/strand-year-9",
+  "classification_model": "claude-sonnet-4-20250514",
+  "classification_temperature": 0.3,
+  "self_consistency_runs": 3,
+  "items": [],
+  "halted_blocks": [
+    {
+      "block_id": "blk_0003",
+      "source_block_raw_text": "- Has reflected on their developing identity. Writes about a role model and why they have chosen this person.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0004",
+      "source_block_raw_text": "- Can talk about how they have developed up to five character strengths and what strengths they are working on and why these are valuable.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0005",
+      "source_block_raw_text": "- Can identify the five values and three beliefs about the world that impact most in how they choose to live their lives.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0007",
+      "source_block_raw_text": "- Knows the role of the amygdala and how it can hijack 'thinking'. Can give an example of when this might happen. Knows about 'mirroring' neurons. Can give an example of when this might happen.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0008",
+      "source_block_raw_text": "- Watches a film and writes a review about the characters, what happened to them and the emotional content. What did it make them feel and why?",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0010",
+      "source_block_raw_text": "- Can list five ways in which someone might change how they feel and write the pros and cons of each.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0011",
+      "source_block_raw_text": "- Can reflect on a learning task and describe a range of emotions that were experienced in engagement, challenges and completion.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0012",
+      "source_block_raw_text": "- Can identify ways in which friends can support resilience and ways in which this can be undermined.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0014",
+      "source_block_raw_text": "- Can give five reasons why 'shared humanity' matters for the future of our world.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0015",
+      "source_block_raw_text": "- With a partner makes a poster on gender, sexuality or disability to prevent discrimination.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0017",
+      "source_block_raw_text": "- Demonstrates the skills of 'active listening', paying verbal and non-verbal attention, responding verbally and non-verbally, asking questions, clarifying meaning.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0018",
+      "source_block_raw_text": "- Knows what respect means, how it is demonstrated and why it is important for a healthy relationship.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0019",
+      "source_block_raw_text": "- Can initiate and maintain a conversation with someone who is previously unknown.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0021",
+      "source_block_raw_text": "- Can say when it might be a good time to approach a parent with a request and when best to wait, and identify factors that influence the decision.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0022",
+      "source_block_raw_text": "- Recognizes that everyone has their own story and does not make quick judgements.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0024",
+      "source_block_raw_text": "- Can divide a task into a series of between 8 and 12 achievable steps.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0025",
+      "source_block_raw_text": "- Can discuss risk taking and look at how to assess risk against potential outcomes.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0026",
+      "source_block_raw_text": "- Gives help to others so that they can do well at something.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0028",
+      "source_block_raw_text": "- Keeps a daily gratitude journal for a month: writing in three different blessings, one for the day, one for life and one for anything else.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0029",
+      "source_block_raw_text": "- Can take five 'problems' and give a 'solution' for each: what you are aiming for rather than what you want to get rid of.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0031",
+      "source_block_raw_text": "- Identifies the short- and long-term outcomes of overt aggression, passive aggression, timidity and appropriate assertiveness.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0032",
+      "source_block_raw_text": "- Checks on intention before jumping to a negative conclusion in a potential conflict.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0034",
+      "source_block_raw_text": "- Can list ways to say how something could have been done differently.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0035",
+      "source_block_raw_text": "- Responds positively to an attempt to repair harm caused.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0037",
+      "source_block_raw_text": "- Identifies three factors that influence how someone might vote in an election.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0038",
+      "source_block_raw_text": "- Takes part in a project to protect the environment.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0040",
+      "source_block_raw_text": "- Joins in a discussion about what it means to live 'a good life'.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    },
+    {
+      "block_id": "blk_0041",
+      "source_block_raw_text": "- Makes a photo portfolio of what is meaningful and writes briefly why each photo is included.",
+      "halt_reason": "classification_unreliable",
+      "per_run_classifications": [
+        {
+          "run": 1,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 2,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        },
+        {
+          "run": 3,
+          "ok": false,
+          "diagnostic": "call_or_parse_failed"
+        }
+      ],
+      "diagnostic": "only 0/3 runs produced parseable output; cannot resolve self-consistency"
+    }
+  ]
+}

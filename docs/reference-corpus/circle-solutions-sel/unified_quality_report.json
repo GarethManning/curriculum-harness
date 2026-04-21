@@ -1,0 +1,122 @@
+{
+  "strand_detection": {
+    "is_multi_strand": true,
+    "overall_confidence": 0.7,
+    "strands": [
+      {
+        "name": "YEAR 2",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 3/6 lines"
+        ]
+      },
+      {
+        "name": "YEAR 6",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 3/6 lines"
+        ]
+      },
+      {
+        "name": "YEAR 9",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 3/6 lines"
+        ]
+      },
+      {
+        "name": "YEAR 12",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 3/6 lines"
+        ]
+      }
+    ],
+    "flags": []
+  },
+  "per_strand_counts": {
+    "year-2": {
+      "strand_name": "YEAR 2",
+      "kud_items": 0,
+      "halted_blocks": 28,
+      "clusters": 0,
+      "lts": 0,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "year-6": {
+      "strand_name": "YEAR 6",
+      "kud_items": 0,
+      "halted_blocks": 28,
+      "clusters": 0,
+      "lts": 0,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "year-9": {
+      "strand_name": "YEAR 9",
+      "kud_items": 0,
+      "halted_blocks": 28,
+      "clusters": 0,
+      "lts": 0,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "year-12": {
+      "strand_name": "YEAR 12",
+      "kud_items": 0,
+      "halted_blocks": 28,
+      "clusters": 0,
+      "lts": 0,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    }
+  },
+  "unified_counts": {
+    "kud_items": 0,
+    "clusters": 0,
+    "lts": 0,
+    "rubrics": 0,
+    "supporting_components": 0
+  },
+  "sanity_checks": {
+    "passed": true,
+    "failure_count": 0,
+    "failures": []
+  },
+  "token_usage": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "estimated_cost_usd": null,
+    "by_strand": {
+      "year-2": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "per_stage": {}
+      },
+      "year-6": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "per_stage": {}
+      },
+      "year-9": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "per_stage": {}
+      },
+      "year-12": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "per_stage": {}
+      }
+    }
+  }
+}

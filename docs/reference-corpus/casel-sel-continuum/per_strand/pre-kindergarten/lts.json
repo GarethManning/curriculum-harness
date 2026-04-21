@@ -1,0 +1,709 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-pre-kindergarten",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Identifying Personal Emotions and Characteristics",
+      "lt_definition": "I can identify my own emotions and describe my personal characteristics and needs.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_01",
+        "blk_0003_item_02",
+        "blk_0003_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Sustaining Positive Self-Identity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Maintaining Positive Self-Identity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Maintaining Positive Self-Identity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Sustaining Positive Self-Identity",
+      "lt_definition": "The student holds a positive view of themselves and displays pride in their accomplishments.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0003_item_03",
+        "blk_0003_item_04"
+      ],
+      "prerequisite_lts": [
+        "Identifying Personal Emotions and Characteristics"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Sustaining Positive Self-Identity"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Maintaining Positive Self-Identity"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Personal Emotions and Characteristics",
+            "Maintaining Positive Self-Identity"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Emotional Recognition and Regulation",
+      "lt_definition": "The student holds a sustained orientation toward recognizing their emotions and using appropriate strategies to express and manage them.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0005_item_01",
+        "blk_0005_item_02",
+        "blk_0005_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Independent Task Completion and Confidence",
+      "lt_definition": "The student enacts independence and confidence when meeting personal needs and completing tasks.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0005_item_04",
+        "blk_0005_item_05",
+        "blk_0005_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Recognition and Regulation",
+            "Independent Task Completion and Confidence"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Understanding Others' Emotions and Characteristics",
+      "lt_definition": "I can describe individual characteristics and recognize how others may be feeling in different situations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0007_item_03",
+        "blk_0007_item_05",
+        "blk_0007_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic and Caring Responses"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic Response and Care"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic Response and Care"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Empathetic and Caring Responses",
+      "lt_definition": "The student consistently responds to others with empathy, compassion, and genuine care across social interactions.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0007_item_02",
+        "blk_0007_item_04"
+      ],
+      "prerequisite_lts": [
+        "Understanding Others' Emotions and Characteristics"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic and Caring Responses"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic Response and Care"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Emotions and Characteristics",
+            "Empathetic Response and Care"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Social Communication and Conflict Resolution",
+      "lt_definition": "I can express my feelings and needs clearly and use problem-solving strategies when facing social challenges.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0009_item_03",
+        "blk_0009_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Social Play Participation",
+            "Prosocial Relationship Orientation"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Collaborative Social Participation",
+      "lt_definition": "I can demonstrate strategies for joining social play and working cooperatively with peers.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0009_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Social Play Participation",
+            "Prosocial Relationship Orientation"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Sustained Prosocial Relationship Building",
+      "lt_definition": "The student consistently maintains friendships, engages in prosocial behaviors, and seeks help when needed across social contexts.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0009_item_01",
+        "blk_0009_item_04",
+        "blk_0009_item_05"
+      ],
+      "prerequisite_lts": [
+        "Social Communication and Conflict Resolution",
+        "Collaborative Social Participation"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Collaborative Social Participation",
+            "Sustained Prosocial Relationship Building"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Social Communication and Conflict Resolution",
+            "Social Play Participation",
+            "Prosocial Relationship Orientation"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Applying Problem-Solving Strategies",
+      "lt_definition": "I can use problem-solving strategies and consider ideas from others to find solutions.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0011_item_02",
+        "blk_0011_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Support"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Help"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Problem-Solving With Community Input",
+            "Safety Knowledge and Rules",
+            "Learning Orientation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Identifying Safety Resources",
+      "lt_definition": "I can identify community helpers and follow basic health and safety rules.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0011_item_05",
+        "blk_0011_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Support"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Help"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Problem-Solving With Community Input",
+            "Safety Knowledge and Rules",
+            "Learning Orientation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_03",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Seeking Learning and Support",
+      "lt_definition": "The student shows eagerness to learn and seeks help when needed.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0011_item_03"
+      ],
+      "prerequisite_lts": [
+        "Applying Problem-Solving Strategies",
+        "Identifying Safety Resources"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Support"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Applying Problem-Solving Strategies",
+            "Identifying Safety Resources",
+            "Seeking Learning and Help"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Problem-Solving With Community Input",
+            "Safety Knowledge and Rules",
+            "Learning Orientation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ],
+  "halted_clusters": []
+}

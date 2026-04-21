@@ -1,0 +1,787 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-grade-band-4-5",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Recognizing Emotions and Strengths",
+      "lt_definition": "I can describe my emotions and identify how my interests and strengths support my learning.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0003_item_01",
+        "blk_0003_item_02",
+        "blk_0003_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Strengths",
+            "Understanding Growth Mindset Characteristics",
+            "Enacting Growth Mindset in Challenges"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 1', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Understanding Growth Mindset",
+      "lt_definition": "I can describe the characteristics of a growth mindset and how it applies to learning situations.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Strengths",
+            "Understanding Growth Mindset Characteristics",
+            "Enacting Growth Mindset in Challenges"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 1', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_01_lt_03",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Enacting Growth Mindset",
+      "lt_definition": "The student enacts a growth mindset when facing challenges and builds upon their strengths.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0003_item_05"
+      ],
+      "prerequisite_lts": [
+        "Understanding Growth Mindset"
+      ],
+      "stability_flag": "lt_set_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 1",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Strengths",
+            "Understanding Growth Mindset",
+            "Enacting Growth Mindset"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Strengths",
+            "Understanding Growth Mindset Characteristics",
+            "Enacting Growth Mindset in Challenges"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "lt_set_signature=(3, ('Type 1', 'Type 2', 'Type 3'))",
+        "counts={(3, ('Type 1', 'Type 2', 'Type 3')): 2, (3, ('Type 1', 'Type 1', 'Type 3')): 1}"
+      ]
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Emotional Regulation and Self-Advocacy",
+      "lt_definition": "I can evaluate my emotional responses and demonstrate appropriate ways to advocate for my needs.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0005_item_01",
+        "blk_0005_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Goal Setting and Achievement Planning",
+      "lt_definition": "I can develop short-term goals with action plans and evaluate how my attitude affects success.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0005_item_03",
+        "blk_0005_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_03",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Sustained Self-Regulation and Perseverance",
+      "lt_definition": "The student enacts consistent emotional self-regulation and demonstrates courage when facing challenging situations.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0005_item_02",
+        "blk_0005_item_06"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Self-Advocacy",
+        "Goal Setting and Achievement Planning"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Self-Advocacy",
+            "Goal Setting and Achievement Planning",
+            "Sustained Self-Regulation and Perseverance"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Understanding Diversity and Empathy",
+      "lt_definition": "I can explain different backgrounds, cultures, and perspectives while demonstrating understanding of how stereotypes harm others.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0007_item_02",
+        "blk_0007_item_03",
+        "blk_0007_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Community Problem Solving",
+            "Sustained Gratitude Practice"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Needs",
+            "Practicing Gratitude"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Solutions",
+            "Practicing Gratitude"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Community Problem Solving",
+      "lt_definition": "I can identify community needs and propose thoughtful solutions for classroom or school challenges.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0007_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Community Problem Solving",
+            "Sustained Gratitude Practice"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Needs",
+            "Practicing Gratitude"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Solutions",
+            "Practicing Gratitude"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_03",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Sustained Gratitude Practice",
+      "lt_definition": "The student practises gratitude consistently across daily interactions and experiences.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0007_item_05"
+      ],
+      "prerequisite_lts": [
+        "Understanding Diversity and Empathy"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Community Problem Solving",
+            "Sustained Gratitude Practice"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Needs",
+            "Practicing Gratitude"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Diversity and Empathy",
+            "Identifying Community Solutions",
+            "Practicing Gratitude"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Positive Communication and Conflict Resolution",
+      "lt_definition": "I can communicate positively and resolve conflicts using appropriate strategies and technology.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0009_item_02",
+        "blk_0009_item_04",
+        "blk_0009_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Positive Communication and Conflict Resolution",
+            "Relationship Building and Respectful Interaction"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Positive Communication and Conflict Resolution",
+            "Respectful Relationship Building"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Effective Communication and Conflict Resolution",
+            "Respectful Relationship Building"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Relationship Building and Respectful Interaction",
+      "lt_definition": "The student sustains respectful communication and builds relationships based on shared interests and values.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0009_item_01",
+        "blk_0009_item_03",
+        "blk_0009_item_06"
+      ],
+      "prerequisite_lts": [
+        "Positive Communication and Conflict Resolution"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Positive Communication and Conflict Resolution",
+            "Relationship Building and Respectful Interaction"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Positive Communication and Conflict Resolution",
+            "Respectful Relationship Building"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Effective Communication and Conflict Resolution",
+            "Respectful Relationship Building"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Evaluating Choices and Consequences",
+      "lt_definition": "I can analyze decision-making situations by identifying what is within my control and exploring the potential outcomes of different choices.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0011_item_02",
+        "blk_0011_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Choices and Consequences",
+            "Reflecting on Personal Impact"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analyzing Decision Options and Consequences",
+            "Reflecting on Personal Impact and Learning"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analyzing Decision Options and Consequences",
+            "Reflecting on Personal Impact and Learning"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Reflecting on Personal Impact",
+      "lt_definition": "I can reflect on my behaviors and choices to identify their effects on myself and others in various contexts.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0011_item_04",
+        "blk_0011_item_05",
+        "blk_0011_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Evaluating Choices and Consequences",
+            "Reflecting on Personal Impact"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analyzing Decision Options and Consequences",
+            "Reflecting on Personal Impact and Learning"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 2,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Analyzing Decision Options and Consequences",
+            "Reflecting on Personal Impact and Learning"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ],
+  "halted_clusters": []
+}

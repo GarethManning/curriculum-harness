@@ -1,0 +1,96 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-grade-band-11-12",
+  "halted_by": "artefact_count_ratio",
+  "summary": {
+    "source_domain": "dispositional",
+    "inventory_blocks_total": 11,
+    "inventory_non_heading_blocks": 5,
+    "kud_items_total": 0,
+    "halted_blocks_total": 5,
+    "halted_severe": 0,
+    "halted_unreliable": 5,
+    "knowledge_type_distribution": {},
+    "kud_column_distribution": {},
+    "stability_distribution": {},
+    "underspecification_distribution": {}
+  },
+  "gate_results": [
+    {
+      "name": "source_coverage",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "all non-severe, non-unreliable inventory blocks produced \u22651 KUD item",
+      "details": {
+        "required_blocks": [],
+        "covered_blocks": [],
+        "missing_blocks": [],
+        "severely_halted_blocks": [],
+        "unreliable_halted_blocks": [
+          "blk_0003",
+          "blk_0005",
+          "blk_0007",
+          "blk_0009",
+          "blk_0011"
+        ]
+      }
+    },
+    {
+      "name": "traceability",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item has a valid source_block_id",
+      "details": {
+        "total_items": 0,
+        "untraceable_count": 0,
+        "untraceable_items": []
+      }
+    },
+    {
+      "name": "artefact_count_ratio",
+      "passed": false,
+      "halting": true,
+      "diagnostic": "KUD items / expected-yield blocks = 0/5 = 0.000 (denominator excludes 0 severely-underspecified blocks) outside dispositional-domain target band [0.8, 2.2] (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional source may re-trigger review)",
+      "details": {
+        "kud_item_count": 0,
+        "non_heading_block_count": 5,
+        "severely_halted_block_count": 0,
+        "expected_yield_block_count": 5,
+        "ratio": 0.0,
+        "source_domain": "dispositional",
+        "target_min": 0.8,
+        "target_max": 2.2,
+        "dispositional_provisional": true
+      }
+    },
+    {
+      "name": "type3_distribution",
+      "passed": false,
+      "halting": false,
+      "diagnostic": "dispositional_content_underrepresented: Type 3 items = 0/0 = 0.0% < expected \u226520% for dispositional domain (informational only)",
+      "details": {
+        "type3_count": 0,
+        "total_items": 0,
+        "pct": 0.0,
+        "expected_min_pct": 0.2,
+        "arch_source_type": null,
+        "arch_domain_type": null,
+        "flag": "dispositional_content_underrepresented"
+      }
+    },
+    {
+      "name": "no_compound_unsplit",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item carries a single knowledge type with consistent column and route",
+      "details": {
+        "offenders": []
+      }
+    }
+  ],
+  "token_usage": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "per_stage": {}
+  }
+}

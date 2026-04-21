@@ -1,0 +1,73 @@
+{
+  "band_labels": [
+    "Pre-Kindergarten",
+    "Kindergarten-Grade 1",
+    "Grade Band 2-3",
+    "Grade Band 4-5",
+    "Grade Band 6-8",
+    "Grade Band 9-10",
+    "Grade Band 11-12"
+  ],
+  "band_count": 7,
+  "age_range_hint": "ages 3-18 (CASEL SEL Skills Continuum 2023; Pre-K through Grade 11-12; Adults band excluded as out of K-12 curriculum scope)",
+  "source_type": "casel_sel_grade_band",
+  "detection_confidence": "high",
+  "detection_rationale": "CASEL source detected (host=drc.casel.org). 7-band structure: Pre-Kindergarten through Grade Band 11-12 (Adults excluded).",
+  "band_self_reflection_prompts": {
+    "Pre-Kindergarten": "Can you show me on your face how you feel right now? Tell me one thing you like about yourself.",
+    "Kindergarten-Grade 1": "Tell me about a time you felt a really big feeling. What did you do to help yourself feel better?",
+    "Grade Band 2-3": "Describe a time when you had to deal with a problem. What did you try, and how did it turn out?",
+    "Grade Band 4-5": "Think about a challenge you faced this term. How did your mindset — what you told yourself — help or get in the way?",
+    "Grade Band 6-8": "Describe how your emotions affected a relationship or decision this term. What would you do differently, and why?",
+    "Grade Band 9-10": "Reflect on a goal you set this term. What helped you progress, what got in the way, and what have you learned about yourself?",
+    "Grade Band 11-12": "Analyse a complex decision you made this year — personal, academic, or social. What values guided it, and what would you reconsider?"
+  },
+  "band_details": [
+    {
+      "label": "Pre-Kindergarten",
+      "approximate_age_range": "ages 3-5",
+      "approximate_grade_year": "Pre-Kindergarten",
+      "developmental_descriptor": "Learners at the Pre-Kindergarten stage are developing foundational emotional identification and basic self-regulation. They begin to name and recognise emotions in themselves and others, practise simple self-soothing strategies, and engage in play-based prosocial behaviour. Adult scaffolding is central at this stage."
+    },
+    {
+      "label": "Kindergarten-Grade 1",
+      "approximate_age_range": "ages 5-7",
+      "approximate_grade_year": "Kindergarten-Grade 1",
+      "developmental_descriptor": "Learners name and distinguish a range of basic emotions, practise self-talk and simple self-regulation strategies, and begin to understand others' perspectives and feelings. They develop early friendship and communication skills with adult support."
+    },
+    {
+      "label": "Grade Band 2-3",
+      "approximate_age_range": "ages 7-9",
+      "approximate_grade_year": "Grades 2-3",
+      "developmental_descriptor": "Learners identify a broader range of emotions and understand how emotions affect behaviour. They practise self- and co-regulation strategies, begin setting simple goals, and develop collaborative skills and basic empathy in social situations."
+    },
+    {
+      "label": "Grade Band 4-5",
+      "approximate_age_range": "ages 9-11",
+      "approximate_grade_year": "Grades 4-5",
+      "developmental_descriptor": "Learners understand that multiple emotions can occur simultaneously and that emotions shift with context. They develop a growth mindset, practise self-regulation in challenging situations, and apply structured decision-making and empathy-based communication skills."
+    },
+    {
+      "label": "Grade Band 6-8",
+      "approximate_age_range": "ages 11-14",
+      "approximate_grade_year": "Grades 6-8",
+      "developmental_descriptor": "Learners recognise the complex interplay between emotions, thoughts, and relationships. They develop longer-term goal-planning, conflict resolution processes, and social-media communication awareness. They practise perspective-taking and contribute to community well-being."
+    },
+    {
+      "label": "Grade Band 9-10",
+      "approximate_age_range": "ages 14-16",
+      "approximate_grade_year": "Grades 9-10",
+      "developmental_descriptor": "Learners engage with the complex interplay of emotions, identity, and decision-making in academic and social contexts. They develop self-advocacy, monitor progress toward multi-step goals, and practise responsible use of digital media and conflict resolution skills."
+    },
+    {
+      "label": "Grade Band 11-12",
+      "approximate_age_range": "ages 16-18",
+      "approximate_grade_year": "Grades 11-12",
+      "developmental_descriptor": "Learners demonstrate advanced self-awareness, sustained self-regulation, and long-term goal management. They apply critical thinking to complex social problems, demonstrate leadership and collaborative skills across diverse settings, and reflect on lifelong decision-making frameworks."
+    }
+  ],
+  "progression_philosophy": "The CASEL SEL Skills Continuum (2023) organises social-emotional competencies across seven K-12 grade bands (Pre-Kindergarten through Grade 11-12) plus an Adults band (excluded here). Each band describes observable skill indicators across five core competencies: Self-Awareness, Self-Management, Social Awareness, Relationship Skills, and Responsible Decision-Making. Progression is developmental — skills deepen in complexity and autonomy as learners move through bands. The continuum does not prescribe a year-by-year curriculum sequence; grade-band boundaries are approximate developmental waypoints. Per CASEL (Collaborative for Academic, Social, and Emotional Learning), SEL Skills Continuum, January 2023.",
+  "source_reference": "https://drc.casel.org/uploads/sites/3/2023/11/SEL-Skills-Continuum-Adult-and-PreK-12.pdf",
+  "source_slug": "strand-pre-kindergarten",
+  "detection_module_version": "0.1.0"
+}

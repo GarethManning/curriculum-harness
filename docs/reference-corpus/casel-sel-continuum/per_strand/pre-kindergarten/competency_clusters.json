@@ -1,0 +1,343 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-pre-kindergarten",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "overall_stability_flag": "cluster_unstable",
+  "overall_stability_diagnostics": [
+    "dominant_type_drift_run3: canonical cluster 0 (Type 1) → run3 cluster 0 (Type 3)"
+  ],
+  "unassigned_kud_item_ids": [],
+  "clusters": [
+    {
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to identify and describe one's own emotions, characteristics, and needs while maintaining positive self-identity.",
+      "kud_item_ids": [
+        "blk_0003_item_01",
+        "blk_0003_item_02",
+        "blk_0003_item_03",
+        "blk_0003_item_04",
+        "blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 3": 2
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run3: Type 1→Type 3"
+      ]
+    },
+    {
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "A sustained orientation toward recognizing and regulating one's emotions while demonstrating independence and confidence in meeting personal needs.",
+      "kud_item_ids": [
+        "blk_0005_item_01",
+        "blk_0005_item_02",
+        "blk_0005_item_03",
+        "blk_0005_item_04",
+        "blk_0005_item_05",
+        "blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "A sustained orientation toward understanding others' emotions and characteristics while responding with empathy and care.",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0007_item_02",
+        "blk_0007_item_03",
+        "blk_0007_item_04",
+        "blk_0007_item_05",
+        "blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 3": 2,
+        "Type 2": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "A sustained orientation toward building and maintaining positive relationships through effective communication and prosocial behavior.",
+      "kud_item_ids": [
+        "blk_0009_item_01",
+        "blk_0009_item_02",
+        "blk_0009_item_03",
+        "blk_0009_item_04",
+        "blk_0009_item_05",
+        "blk_0009_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 3,
+        "Type 2": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to use problem-solving strategies and community knowledge to make safe and responsible choices.",
+      "kud_item_ids": [
+        "blk_0011_item_01",
+        "blk_0011_item_02",
+        "blk_0011_item_03",
+        "blk_0011_item_04",
+        "blk_0011_item_05",
+        "blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 35,
+      "source_position_end": 35,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 2,
+        "Type 2": 2,
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ]
+}

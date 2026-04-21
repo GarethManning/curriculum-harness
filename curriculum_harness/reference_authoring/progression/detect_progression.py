@@ -1109,6 +1109,280 @@ def _england_rshe_full_structure(
 
 
 # ---------------------------------------------------------------------------
+# CASEL SEL Skills Continuum (2023) — 7 grade bands, PreK–12.
+#
+# Source: CASEL (Collaborative for Academic, Social, and Emotional Learning),
+# SEL Skills Continuum, January 2023. Five core competencies across grade
+# bands Pre-Kindergarten, K-1, 2-3, 4-5, 6-8, 9-10, 11-12 (Adults excluded
+# — out of K-12 curriculum scope).
+#
+# Age ranges derived from US standard grade-level ages per NCES documentation.
+# Pre-K ages 3-5; K-1 ages 5-7; 2-3 ages 7-9; 4-5 ages 9-11; 6-8 ages 11-14;
+# 9-10 ages 14-16; 11-12 ages 16-18.
+# ---------------------------------------------------------------------------
+
+_CASEL_BAND_DETAILS: list[dict] = [
+    {
+        "label": "Pre-Kindergarten",
+        "approximate_age_range": "ages 3-5",
+        "approximate_grade_year": "Pre-Kindergarten",
+        "developmental_descriptor": (
+            "Learners at the Pre-Kindergarten stage are developing foundational "
+            "emotional identification and basic self-regulation. They begin to "
+            "name and recognise emotions in themselves and others, practise "
+            "simple self-soothing strategies, and engage in play-based prosocial "
+            "behaviour. Adult scaffolding is central at this stage."
+        ),
+    },
+    {
+        "label": "Kindergarten-Grade 1",
+        "approximate_age_range": "ages 5-7",
+        "approximate_grade_year": "Kindergarten-Grade 1",
+        "developmental_descriptor": (
+            "Learners name and distinguish a range of basic emotions, practise "
+            "self-talk and simple self-regulation strategies, and begin to "
+            "understand others' perspectives and feelings. They develop early "
+            "friendship and communication skills with adult support."
+        ),
+    },
+    {
+        "label": "Grade Band 2-3",
+        "approximate_age_range": "ages 7-9",
+        "approximate_grade_year": "Grades 2-3",
+        "developmental_descriptor": (
+            "Learners identify a broader range of emotions and understand how "
+            "emotions affect behaviour. They practise self- and co-regulation "
+            "strategies, begin setting simple goals, and develop collaborative "
+            "skills and basic empathy in social situations."
+        ),
+    },
+    {
+        "label": "Grade Band 4-5",
+        "approximate_age_range": "ages 9-11",
+        "approximate_grade_year": "Grades 4-5",
+        "developmental_descriptor": (
+            "Learners understand that multiple emotions can occur simultaneously "
+            "and that emotions shift with context. They develop a growth mindset, "
+            "practise self-regulation in challenging situations, and apply "
+            "structured decision-making and empathy-based communication skills."
+        ),
+    },
+    {
+        "label": "Grade Band 6-8",
+        "approximate_age_range": "ages 11-14",
+        "approximate_grade_year": "Grades 6-8",
+        "developmental_descriptor": (
+            "Learners recognise the complex interplay between emotions, thoughts, "
+            "and relationships. They develop longer-term goal-planning, conflict "
+            "resolution processes, and social-media communication awareness. They "
+            "practise perspective-taking and contribute to community well-being."
+        ),
+    },
+    {
+        "label": "Grade Band 9-10",
+        "approximate_age_range": "ages 14-16",
+        "approximate_grade_year": "Grades 9-10",
+        "developmental_descriptor": (
+            "Learners engage with the complex interplay of emotions, identity, and "
+            "decision-making in academic and social contexts. They develop self-"
+            "advocacy, monitor progress toward multi-step goals, and practise "
+            "responsible use of digital media and conflict resolution skills."
+        ),
+    },
+    {
+        "label": "Grade Band 11-12",
+        "approximate_age_range": "ages 16-18",
+        "approximate_grade_year": "Grades 11-12",
+        "developmental_descriptor": (
+            "Learners demonstrate advanced self-awareness, sustained self-regulation, "
+            "and long-term goal management. They apply critical thinking to complex "
+            "social problems, demonstrate leadership and collaborative skills across "
+            "diverse settings, and reflect on lifelong decision-making frameworks."
+        ),
+    },
+]
+
+_CASEL_PROGRESSION_PHILOSOPHY = (
+    "The CASEL SEL Skills Continuum (2023) organises social-emotional competencies "
+    "across seven K-12 grade bands (Pre-Kindergarten through Grade 11-12) plus an "
+    "Adults band (excluded here). Each band describes observable skill indicators "
+    "across five core competencies: Self-Awareness, Self-Management, Social "
+    "Awareness, Relationship Skills, and Responsible Decision-Making. Progression "
+    "is developmental — skills deepen in complexity and autonomy as learners move "
+    "through bands. The continuum does not prescribe a year-by-year curriculum "
+    "sequence; grade-band boundaries are approximate developmental waypoints. Per "
+    "CASEL (Collaborative for Academic, Social, and Emotional Learning), "
+    "SEL Skills Continuum, January 2023."
+)
+
+_CASEL_SELF_REFLECTION_PROMPTS: dict[str, str] = {
+    "Pre-Kindergarten": (
+        "Can you show me on your face how you feel right now? Tell me one thing "
+        "you like about yourself."
+    ),
+    "Kindergarten-Grade 1": (
+        "Tell me about a time you felt a really big feeling. What did you do "
+        "to help yourself feel better?"
+    ),
+    "Grade Band 2-3": (
+        "Describe a time when you had to deal with a problem. What did you try, "
+        "and how did it turn out?"
+    ),
+    "Grade Band 4-5": (
+        "Think about a challenge you faced this term. How did your mindset — "
+        "what you told yourself — help or get in the way?"
+    ),
+    "Grade Band 6-8": (
+        "Describe how your emotions affected a relationship or decision this "
+        "term. What would you do differently, and why?"
+    ),
+    "Grade Band 9-10": (
+        "Reflect on a goal you set this term. What helped you progress, what "
+        "got in the way, and what have you learned about yourself?"
+    ),
+    "Grade Band 11-12": (
+        "Analyse a complex decision you made this year — personal, academic, "
+        "or social. What values guided it, and what would you reconsider?"
+    ),
+}
+
+
+def _casel_sel_structure(
+    *, source_reference: str, source_slug: str, rationale: str
+) -> "ProgressionStructure":
+    return ProgressionStructure(
+        band_labels=[d["label"] for d in _CASEL_BAND_DETAILS],
+        band_count=len(_CASEL_BAND_DETAILS),
+        age_range_hint=(
+            "ages 3-18 (CASEL SEL Skills Continuum 2023; Pre-K through Grade 11-12; "
+            "Adults band excluded as out of K-12 curriculum scope)"
+        ),
+        source_type="casel_sel_grade_band",
+        detection_confidence="high",
+        detection_rationale=rationale,
+        band_self_reflection_prompts=dict(_CASEL_SELF_REFLECTION_PROMPTS),
+        band_details=list(_CASEL_BAND_DETAILS),
+        progression_philosophy=_CASEL_PROGRESSION_PHILOSOPHY,
+        source_reference=source_reference,
+        source_slug=source_slug,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Circle Solutions SEL Framework — Cowie & Myers (2016) — 4 year levels.
+#
+# Source: Cowie, H. & Myers, C-A. (2016) Circle Solutions for Student
+# Wellbeing. Assessment framework observable indicators at Year 2, Year 6,
+# Year 9, Year 12 (Table 2.2). 12 SEL dimensions. Australian education
+# system year levels; approximate ages per Australian standard year-level
+# benchmarks.
+#
+# Year 2 ≈ ages 7-8; Year 6 ≈ ages 11-12; Year 9 ≈ ages 14-15;
+# Year 12 ≈ ages 17-18.
+# sparse_source_structure: only 4 of 6 REAL bands are represented.
+# ---------------------------------------------------------------------------
+
+_CIRCLE_SOLUTIONS_BAND_DETAILS: list[dict] = [
+    {
+        "label": "Year 2",
+        "approximate_age_range": "ages 7-8",
+        "approximate_grade_year": "Year 2 (Australian primary)",
+        "developmental_descriptor": (
+            "Learners at Year 2 develop foundational emotional vocabulary, "
+            "basic self-regulation strategies, and an awareness of fairness "
+            "and belonging. Observable indicators focus on concrete personal "
+            "and relational skills with adult scaffolding."
+        ),
+    },
+    {
+        "label": "Year 6",
+        "approximate_age_range": "ages 11-12",
+        "approximate_grade_year": "Year 6 (Australian upper primary)",
+        "developmental_descriptor": (
+            "Learners at Year 6 demonstrate expanded emotional knowledge, "
+            "perspective-taking, and collaborative skills. They apply "
+            "understanding of empathy, conflict, and positive communication "
+            "across a wider range of social contexts."
+        ),
+    },
+    {
+        "label": "Year 9",
+        "approximate_age_range": "ages 14-15",
+        "approximate_grade_year": "Year 9 (Australian junior secondary)",
+        "developmental_descriptor": (
+            "Learners at Year 9 engage with complex emotional and social "
+            "challenges, including assertiveness, identity, and the neuroscience "
+            "of emotion. They demonstrate self-regulation, ethical reasoning, "
+            "and leadership skills with increasing independence."
+        ),
+    },
+    {
+        "label": "Year 12",
+        "approximate_age_range": "ages 17-18",
+        "approximate_grade_year": "Year 12 (Australian senior secondary)",
+        "developmental_descriptor": (
+            "Learners at Year 12 demonstrate advanced self-awareness, sustained "
+            "resilience strategies, and a developed philosophy for life. They "
+            "apply ethical reasoning, collaborative leadership, and meaningful "
+            "reflection to personal and community decisions."
+        ),
+    },
+]
+
+_CIRCLE_SOLUTIONS_PROGRESSION_PHILOSOPHY = (
+    "The Circle Solutions SEL Framework (Cowie & Myers, 2016) uses four "
+    "year-level markers — Year 2, Year 6, Year 9, Year 12 — as assessment "
+    "checkpoints across twelve dimensions of social-emotional learning. "
+    "The framework does not prescribe a continuous annual progression; the "
+    "four checkpoints are developmental waypoints with observable indicator "
+    "tasks at each level. Bands between checkpoints (Years 3-5, 7-8, 10-11) "
+    "are not explicitly described — this is a sparse source structure and "
+    "interpolation requires teacher judgement. Per Cowie, H. & Myers, C-A. "
+    "(2016) Circle Solutions for Student Wellbeing (Table 2.2)."
+)
+
+_CIRCLE_SOLUTIONS_SELF_REFLECTION_PROMPTS: dict[str, str] = {
+    "Year 2": (
+        "Tell me five things you like about yourself. What is one thing "
+        "that is really important to you?"
+    ),
+    "Year 6": (
+        "Draw three pictures of yourself in different situations. How do "
+        "you behave differently in each, and why?"
+    ),
+    "Year 9": (
+        "Reflect on your developing identity. Who is a role model for you "
+        "and what strengths are you working on, and why?"
+    ),
+    "Year 12": (
+        "Write about who you are now and the person you hope to become. "
+        "What values will guide your decisions in the future?"
+    ),
+}
+
+
+def _circle_solutions_structure(
+    *, source_reference: str, source_slug: str, rationale: str
+) -> "ProgressionStructure":
+    return ProgressionStructure(
+        band_labels=[d["label"] for d in _CIRCLE_SOLUTIONS_BAND_DETAILS],
+        band_count=len(_CIRCLE_SOLUTIONS_BAND_DETAILS),
+        age_range_hint=(
+            "ages 7-18 (Cowie & Myers 2016; Year 2 through Year 12; "
+            "sparse 4-checkpoint structure — Years 3-5, 7-8, 10-11 not explicitly covered)"
+        ),
+        source_type="circle_solutions_sel",
+        detection_confidence="high",
+        detection_rationale=rationale,
+        band_self_reflection_prompts=dict(_CIRCLE_SOLUTIONS_SELF_REFLECTION_PROMPTS),
+        band_details=list(_CIRCLE_SOLUTIONS_BAND_DETAILS),
+        progression_philosophy=_CIRCLE_SOLUTIONS_PROGRESSION_PHILOSOPHY,
+        source_reference=source_reference,
+        source_slug=source_slug,
+    )
+
+
+# ---------------------------------------------------------------------------
 # URL- and slug-based dispatch
 # ---------------------------------------------------------------------------
 
@@ -1356,6 +1630,43 @@ def _lookup_high_confidence(
                 f"Source slug '{source_slug}' matches DfE KS3 single-subject pattern. "
                 "KS3-only single-band structure (prevents multi-KS false positive from "
                 "source-text inspection on documents that reference KS2 as prior stage)."
+            ),
+        )
+
+    # --- CASEL SEL Skills Continuum (2023) ------------------------------------
+    # Matches slugs containing 'casel-sel' or 'casel-skills-continuum'.
+    # URL host: drc.casel.org. 7-band structure: Pre-K through Grade 11-12.
+    if matched is not None:
+        host, _path = matched
+        if "drc.casel.org" in host or "casel.org" in host:
+            return _casel_sel_structure(
+                source_reference=source_reference,
+                source_slug=source_slug,
+                rationale=(
+                    f"CASEL source detected (host={host}). 7-band structure: "
+                    "Pre-Kindergarten through Grade Band 11-12 (Adults excluded)."
+                ),
+            )
+    if "casel-sel" in slug_lower or "casel-sel-continuum" in slug_lower or "casel-skills-continuum" in slug_lower:
+        return _casel_sel_structure(
+            source_reference=source_reference,
+            source_slug=source_slug,
+            rationale=(
+                f"Source slug '{source_slug}' matches CASEL SEL Continuum pattern. "
+                "7-band structure: Pre-Kindergarten through Grade Band 11-12."
+            ),
+        )
+
+    # --- Circle Solutions SEL Framework (Cowie & Myers, 2016) ----------------
+    # Matches slugs containing 'circle-solutions'. Non-URL source (book).
+    # 4-checkpoint structure: Year 2, Year 6, Year 9, Year 12.
+    if "circle-solutions" in slug_lower or "circle-solutions-sel" in slug_lower:
+        return _circle_solutions_structure(
+            source_reference=source_reference,
+            source_slug=source_slug,
+            rationale=(
+                f"Source slug '{source_slug}' matches Circle Solutions SEL pattern "
+                "(Cowie & Myers, 2016). 4-checkpoint structure: Year 2, 6, 9, 12."
             ),
         )
 

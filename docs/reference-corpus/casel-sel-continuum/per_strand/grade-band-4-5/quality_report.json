@@ -1,0 +1,147 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-grade-band-4-5",
+  "halted_by": "artefact_count_ratio",
+  "summary": {
+    "source_domain": "dispositional",
+    "inventory_blocks_total": 11,
+    "inventory_non_heading_blocks": 5,
+    "kud_items_total": 29,
+    "halted_blocks_total": 0,
+    "halted_severe": 0,
+    "halted_unreliable": 0,
+    "knowledge_type_distribution": {
+      "Type 1": 7,
+      "Type 2": 15,
+      "Type 3": 7
+    },
+    "kud_column_distribution": {
+      "know": 2,
+      "understand": 4,
+      "do_skill": 16,
+      "do_disposition": 7
+    },
+    "stability_distribution": {
+      "stable": 5,
+      "classification_unstable": 24
+    },
+    "underspecification_distribution": {
+      "null": 29
+    }
+  },
+  "gate_results": [
+    {
+      "name": "source_coverage",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "all non-severe, non-unreliable inventory blocks produced \u22651 KUD item",
+      "details": {
+        "required_blocks": [
+          "blk_0003",
+          "blk_0005",
+          "blk_0007",
+          "blk_0009",
+          "blk_0011"
+        ],
+        "covered_blocks": [
+          "blk_0003",
+          "blk_0005",
+          "blk_0007",
+          "blk_0009",
+          "blk_0011"
+        ],
+        "missing_blocks": [],
+        "severely_halted_blocks": [],
+        "unreliable_halted_blocks": []
+      }
+    },
+    {
+      "name": "traceability",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item has a valid source_block_id",
+      "details": {
+        "total_items": 29,
+        "untraceable_count": 0,
+        "untraceable_items": []
+      }
+    },
+    {
+      "name": "artefact_count_ratio",
+      "passed": false,
+      "halting": true,
+      "diagnostic": "KUD items / expected-yield blocks = 29/5 = 5.800 (denominator excludes 0 severely-underspecified blocks) outside dispositional-domain target band [0.8, 2.2] (dispositional ceiling is PROVISIONAL per 4b-2; next dispositional source may re-trigger review)",
+      "details": {
+        "kud_item_count": 29,
+        "non_heading_block_count": 5,
+        "severely_halted_block_count": 0,
+        "expected_yield_block_count": 5,
+        "ratio": 5.8,
+        "source_domain": "dispositional",
+        "target_min": 0.8,
+        "target_max": 2.2,
+        "dispositional_provisional": true
+      }
+    },
+    {
+      "name": "type3_distribution",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "Type 3 items = 7/29 = 24.1% (\u226520% expected for dispositional domain)",
+      "details": {
+        "type3_count": 7,
+        "total_items": 29,
+        "pct": 0.2414,
+        "expected_min_pct": 0.2,
+        "arch_source_type": null,
+        "arch_domain_type": null,
+        "flag": null
+      }
+    },
+    {
+      "name": "no_compound_unsplit",
+      "passed": true,
+      "halting": false,
+      "diagnostic": "every KUD item carries a single knowledge type with consistent column and route",
+      "details": {
+        "offenders": []
+      }
+    }
+  ],
+  "token_usage": {
+    "total_input_tokens": 115203,
+    "total_output_tokens": 31611,
+    "per_stage": {
+      "band_statements": {
+        "input": 28386,
+        "output": 7203,
+        "calls": 27,
+        "model": "claude-sonnet-4-20250514"
+      },
+      "clustering": {
+        "input": 10764,
+        "output": 2310,
+        "calls": 3,
+        "model": "claude-sonnet-4-20250514"
+      },
+      "kud_classification": {
+        "input": 36216,
+        "output": 9827,
+        "calls": 15,
+        "model": "claude-sonnet-4-20250514"
+      },
+      "lt_generation": {
+        "input": 23106,
+        "output": 5039,
+        "calls": 15,
+        "model": "claude-sonnet-4-20250514"
+      },
+      "observation_indicators": {
+        "input": 16731,
+        "output": 7232,
+        "calls": 12,
+        "model": "claude-sonnet-4-20250514"
+      }
+    }
+  }
+}

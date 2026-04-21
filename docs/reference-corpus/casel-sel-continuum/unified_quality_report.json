@@ -1,0 +1,377 @@
+{
+  "strand_detection": {
+    "is_multi_strand": true,
+    "overall_confidence": 0.7,
+    "strands": [
+      {
+        "name": "PRE-KINDERGARTEN",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "KINDERGARTEN–GRADE 1",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "GRADE BAND 2–3",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "GRADE BAND 4–5",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "GRADE BAND 6–8",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "GRADE BAND 9–10",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      },
+      {
+        "name": "GRADE BAND 11–12",
+        "confidence": 0.7,
+        "signals": [
+          "bullet_density: 4/6 lines"
+        ]
+      }
+    ],
+    "flags": []
+  },
+  "per_strand_counts": {
+    "pre-kindergarten": {
+      "strand_name": "PRE-KINDERGARTEN",
+      "kud_items": 29,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 12,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "kindergarten-grade-1": {
+      "strand_name": "KINDERGARTEN–GRADE 1",
+      "kud_items": 29,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 15,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "grade-band-2-3": {
+      "strand_name": "GRADE BAND 2–3",
+      "kud_items": 32,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 13,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "grade-band-4-5": {
+      "strand_name": "GRADE BAND 4–5",
+      "kud_items": 29,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 13,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "grade-band-6-8": {
+      "strand_name": "GRADE BAND 6–8",
+      "kud_items": 28,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 13,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "grade-band-9-10": {
+      "strand_name": "GRADE BAND 9–10",
+      "kud_items": 28,
+      "halted_blocks": 0,
+      "clusters": 5,
+      "lts": 13,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    },
+    "grade-band-11-12": {
+      "strand_name": "GRADE BAND 11–12",
+      "kud_items": 0,
+      "halted_blocks": 5,
+      "clusters": 0,
+      "lts": 0,
+      "rubrics": 0,
+      "rubric_gate_fail": 0,
+      "rubric_gen_fail": 0,
+      "supporting_components": 0
+    }
+  },
+  "unified_counts": {
+    "kud_items": 175,
+    "clusters": 30,
+    "lts": 79,
+    "rubrics": 0,
+    "supporting_components": 0
+  },
+  "sanity_checks": {
+    "passed": true,
+    "failure_count": 0,
+    "failures": []
+  },
+  "token_usage": {
+    "total_input_tokens": 692178,
+    "total_output_tokens": 191095,
+    "estimated_cost_usd": null,
+    "by_strand": {
+      "pre-kindergarten": {
+        "total_input_tokens": 112374,
+        "total_output_tokens": 32249,
+        "per_stage": {
+          "band_statements": {
+            "input": 18879,
+            "output": 4728,
+            "calls": 18,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 9939,
+            "output": 2344,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 35802,
+            "output": 9270,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 22743,
+            "output": 4749,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 25011,
+            "output": 11158,
+            "calls": 18,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "kindergarten-grade-1": {
+        "total_input_tokens": 121233,
+        "total_output_tokens": 34503,
+        "per_stage": {
+          "band_statements": {
+            "input": 31527,
+            "output": 7953,
+            "calls": 30,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 10179,
+            "output": 2323,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 35931,
+            "output": 9408,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 22788,
+            "output": 5593,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 20808,
+            "output": 9226,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "grade-band-2-3": {
+        "total_input_tokens": 114396,
+        "total_output_tokens": 31605,
+        "per_stage": {
+          "band_statements": {
+            "input": 31476,
+            "output": 7907,
+            "calls": 30,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 10890,
+            "output": 2405,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 36114,
+            "output": 10570,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 23400,
+            "output": 5154,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 12516,
+            "output": 5569,
+            "calls": 9,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "grade-band-4-5": {
+        "total_input_tokens": 115203,
+        "total_output_tokens": 31611,
+        "per_stage": {
+          "band_statements": {
+            "input": 28386,
+            "output": 7203,
+            "calls": 27,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 10764,
+            "output": 2310,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 36216,
+            "output": 9827,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 23106,
+            "output": 5039,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 16731,
+            "output": 7232,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "grade-band-6-8": {
+        "total_input_tokens": 113184,
+        "total_output_tokens": 29461,
+        "per_stage": {
+          "band_statements": {
+            "input": 34752,
+            "output": 8762,
+            "calls": 33,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 10761,
+            "output": 2329,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 36264,
+            "output": 9473,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 23031,
+            "output": 5007,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 8376,
+            "output": 3890,
+            "calls": 6,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "grade-band-9-10": {
+        "total_input_tokens": 115788,
+        "total_output_tokens": 31666,
+        "per_stage": {
+          "band_statements": {
+            "input": 28443,
+            "output": 7229,
+            "calls": 27,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "clustering": {
+            "input": 11046,
+            "output": 2300,
+            "calls": 3,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "kud_classification": {
+            "input": 36432,
+            "output": 9665,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "lt_generation": {
+            "input": 23109,
+            "output": 5094,
+            "calls": 15,
+            "model": "claude-sonnet-4-20250514"
+          },
+          "observation_indicators": {
+            "input": 16758,
+            "output": 7378,
+            "calls": 12,
+            "model": "claude-sonnet-4-20250514"
+          }
+        }
+      },
+      "grade-band-11-12": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "per_stage": {}
+      }
+    }
+  }
+}

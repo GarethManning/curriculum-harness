@@ -1,0 +1,1008 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-pre-kindergarten",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "sets": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can identify basic emotions like happy or sad with adult support."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can identify my emotions and describe simple personal characteristics with prompting."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can identify my emotions and describe my personal characteristics and basic needs."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can identify complex emotions and describe my personal characteristics, strengths, and needs."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can identify nuanced emotions and analyze how my personal characteristics influence my needs."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can identify subtle emotional patterns and evaluate how my characteristics shape my evolving needs."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can identify complex emotional states and justify connections between my characteristics and diverse needs."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "short"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "short"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify basic emotions like happy or sad with adult support."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify my emotions and describe simple personal characteristics with prompting."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify my emotions and describe my personal characteristics and basic needs."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify complex emotions and describe my personal characteristics, strengths, and needs."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify nuanced emotions and analyze how my personal characteristics influence my needs."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify subtle emotional patterns and evaluate how my characteristics shape my evolving needs."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify complex emotional states and justify connections between my characteristics and diverse needs."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "short"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "short"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can name basic emotions I feel with adult support and guidance."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify my emotions and describe simple personal characteristics about myself."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify my emotions and describe my personal characteristics and basic needs."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify my emotions accurately and describe my personal characteristics and needs clearly."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify complex emotions and analyze how my personal characteristics influence my needs."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify nuanced emotions and evaluate connections between my characteristics and evolving needs."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify sophisticated emotional states and justify how my characteristics shape my needs across contexts."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "short"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "short"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify basic emotions like happy or sad with adult support."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify my emotions and describe simple personal characteristics with prompting."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify my emotions and describe my personal characteristics and basic needs independently."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify complex emotions and describe detailed personal characteristics and specific needs accurately."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify nuanced emotions and analyze how my personal characteristics influence my needs."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify subtle emotional patterns and evaluate how my characteristics shape my evolving needs."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify complex emotional states and justify connections between my characteristics and developmental needs."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can identify basic emotions in others with adult support and notice simple characteristics."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can recognize common emotions in others and describe obvious individual characteristics I observe."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can describe how others feel in familiar situations and identify multiple individual characteristics."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can explain how others might feel in various situations and describe diverse individual characteristics."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can analyze how others feel across different contexts and compare individual characteristics thoughtfully."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can evaluate others' emotions in complex situations and interpret individual characteristics with nuanced understanding."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can justify interpretations of others' emotions across unfamiliar contexts and analyze individual characteristics systematically."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify basic emotions in others with adult support and notice simple characteristics."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can recognize common emotions in others and describe obvious individual characteristics I observe."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can describe how others feel in familiar situations and identify multiple individual characteristics."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can explain how others might feel in various situations and describe diverse individual characteristics."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can analyze how others feel across different contexts and compare individual characteristics thoughtfully."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can evaluate others' emotions in complex situations and interpret individual characteristics with nuanced understanding."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can justify interpretations of others' emotions across unfamiliar contexts and analyze individual characteristics systematically."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify basic emotions in others with adult support and notice simple characteristics."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can recognize common emotions in others and describe obvious individual characteristics I observe."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can describe how others feel in familiar situations and identify multiple individual characteristics."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can explain how others might feel in various situations and describe diverse individual characteristics."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can analyze how others feel across different contexts and explain complex individual characteristics."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can evaluate others' emotional responses in unfamiliar situations and interpret nuanced individual characteristics."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can justify predictions about others' emotions across complex scenarios and analyze multifaceted individual characteristics."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify basic emotions in others with adult support and notice simple characteristics."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can recognize common emotions in others and describe obvious individual characteristics I observe."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can describe how others feel in familiar situations and identify multiple individual characteristics."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can explain how others might feel in various situations and describe diverse individual characteristics."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can analyze how others feel across different contexts and describe complex individual characteristics accurately."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can evaluate emotional responses of others in challenging situations and describe nuanced individual characteristics."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can interpret complex emotional states of others across unfamiliar contexts and describe sophisticated individual characteristics."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "knowledge_type": "Type 2",
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can express basic feelings and needs with adult support during simple social interactions."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can express my feelings and needs clearly and try simple solutions when problems happen."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can express my feelings and needs clearly and apply basic problem-solving steps during social challenges."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can express my feelings and needs clearly and use multiple problem-solving strategies during various social challenges."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can express my feelings and needs clearly and systematically apply problem-solving strategies across diverse social situations."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can express my feelings and needs clearly and evaluate problem-solving strategies to resolve complex social challenges effectively."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can express my feelings and needs clearly and adapt problem-solving strategies to resolve social challenges across unfamiliar contexts."
+        }
+      ],
+      "stability_flag": "band_statements_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "long"
+            ],
+            [
+              "Grade Band 11-12",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can express basic feelings and needs with adult support during simple social interactions."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can express my feelings and needs clearly and try simple solutions when problems happen."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can express my feelings and needs clearly and apply basic problem-solving steps during social challenges."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can express my feelings and needs clearly and use multiple problem-solving strategies during various social challenges."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can express my feelings and needs clearly and systematically apply problem-solving strategies across diverse social situations."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can express my feelings and needs clearly and evaluate problem-solving strategies to resolve complex social challenges effectively."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can express my feelings and needs clearly and adapt problem-solving strategies to resolve social challenges across unfamiliar contexts."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "long"
+            ],
+            [
+              "Grade Band 11-12",
+              "long"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can express basic feelings and needs with adult support during simple social interactions."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can express my feelings and needs clearly and try simple solutions when problems happen."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can express my feelings and needs clearly and apply basic problem-solving steps during social challenges."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can express my feelings and needs clearly and use multiple problem-solving strategies during various social challenges."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can express my feelings and needs clearly and systematically apply problem-solving strategies across different social situations."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can express my feelings and needs clearly and evaluate problem-solving strategies to resolve complex social challenges effectively."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can express my feelings and needs clearly and adapt problem-solving strategies to resolve diverse social challenges independently."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can express basic feelings and ask for help when I have problems with friends."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can communicate simple needs and try one solution when facing conflicts with peers."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can express feelings clearly and apply basic problem-solving steps to resolve social disagreements."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can communicate needs effectively and use multiple strategies to address various social challenges."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can express complex feelings precisely and analyze different problem-solving approaches for interpersonal conflicts."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can communicate needs assertively and evaluate problem-solving strategies across diverse social situations."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can articulate feelings and needs strategically and adapt problem-solving approaches across complex social contexts."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "signature_counts={(('Pre-Kindergarten', 'medium'), ('Kindergarten-Grade 1', 'medium'), ('Grade Band 2-3', 'medium'), ('Grade Band 4-5', 'medium'), ('Grade Band 6-8', 'medium'), ('Grade Band 9-10', 'long'), ('Grade Band 11-12', 'long')): 2, (('Pre-Kindergarten', 'medium'), ('Kindergarten-Grade 1', 'medium'), ('Grade Band 2-3', 'medium'), ('Grade Band 4-5', 'medium'), ('Grade Band 6-8', 'medium'), ('Grade Band 9-10', 'medium'), ('Grade Band 11-12', 'medium')): 1}"
+      ],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "knowledge_type": "Type 1",
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can identify community helpers and follow simple safety rules with adult guidance."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can identify community helpers and follow basic health and safety rules independently."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can identify various community helpers and explain why specific health and safety rules matter."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can identify community helpers and analyze how health and safety rules protect individuals and groups."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can identify community helpers and evaluate the effectiveness of health and safety rules in different situations."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can identify community helpers and justify the importance of health and safety rules across diverse contexts."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can identify community helpers and create comprehensive safety plans by applying health and safety principles."
+        }
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify community helpers and follow simple safety rules with adult guidance."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify community helpers and follow basic health and safety rules independently."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify various community helpers and explain why specific health and safety rules matter."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify community helpers and analyze how health and safety rules protect individuals and groups."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify community helpers and evaluate the effectiveness of health and safety rules in different situations."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify community helpers and justify the importance of health and safety rules across diverse contexts."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify community helpers and create comprehensive safety plans by applying health and safety principles."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify community helpers and follow simple safety rules with adult guidance."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify community helpers and follow basic health and safety rules independently."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify various community helpers and explain why specific health and safety rules matter."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify community helpers and analyze how health and safety rules protect individuals and groups."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify community helpers and evaluate the effectiveness of health and safety rules in different situations."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify community helpers and justify the importance of health and safety rules across diverse contexts."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify community helpers and create comprehensive safety plans by applying health and safety principles."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "signature": [
+            [
+              "Pre-Kindergarten",
+              "medium"
+            ],
+            [
+              "Kindergarten-Grade 1",
+              "medium"
+            ],
+            [
+              "Grade Band 2-3",
+              "medium"
+            ],
+            [
+              "Grade Band 4-5",
+              "medium"
+            ],
+            [
+              "Grade Band 6-8",
+              "medium"
+            ],
+            [
+              "Grade Band 9-10",
+              "medium"
+            ],
+            [
+              "Grade Band 11-12",
+              "medium"
+            ]
+          ],
+          "statements": [
+            {
+              "band": "Pre-Kindergarten",
+              "statement": "I can identify community helpers and follow basic safety rules with adult guidance."
+            },
+            {
+              "band": "Kindergarten-Grade 1",
+              "statement": "I can identify community helpers and follow basic health and safety rules independently."
+            },
+            {
+              "band": "Grade Band 2-3",
+              "statement": "I can identify various community helpers and explain why basic health and safety rules are important."
+            },
+            {
+              "band": "Grade Band 4-5",
+              "statement": "I can identify community helpers and analyze how health and safety rules protect individuals and groups."
+            },
+            {
+              "band": "Grade Band 6-8",
+              "statement": "I can identify community helpers and evaluate the effectiveness of health and safety rules in different situations."
+            },
+            {
+              "band": "Grade Band 9-10",
+              "statement": "I can identify community helpers and justify the application of health and safety rules across diverse contexts."
+            },
+            {
+              "band": "Grade Band 11-12",
+              "statement": "I can identify community helpers and create comprehensive safety plans using health and safety principles."
+            }
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "quality_gate_passed": true,
+      "quality_gate_failures": []
+    }
+  ],
+  "halted_lts": [
+    {
+      "lt_id": "cluster_04_lt_02",
+      "lt_name": "Collaborative Social Participation",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "2 format/quality failures",
+      "failures": [
+        "Grade Band 9-10:no_observable_verb",
+        "Grade Band 11-12:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can join simple play activities with peers using basic strategies with adult support."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can demonstrate appropriate ways to join group play and share materials with classmates."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can apply effective strategies to join ongoing activities and collaborate respectfully in small groups."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can evaluate different approaches for joining social situations and maintain cooperative relationships during group work."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can analyze social dynamics to select appropriate participation strategies and facilitate productive collaboration across diverse groups."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can adapt collaborative strategies based on group composition and context while promoting inclusive participation among peers."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can synthesize advanced social participation techniques to build cohesive teams and navigate complex collaborative challenges effectively."
+        }
+      ]
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "lt_name": "Applying Problem-Solving Strategies",
+      "halt_reason": "band_statements_gate_failed",
+      "diagnostic": "1 format/quality failures",
+      "failures": [
+        "Pre-Kindergarten:no_observable_verb"
+      ],
+      "statements": [
+        {
+          "band": "Pre-Kindergarten",
+          "statement": "I can try different ways to solve simple problems with adult help."
+        },
+        {
+          "band": "Kindergarten-Grade 1",
+          "statement": "I can use basic problem-solving steps and listen to others' ideas with guidance."
+        },
+        {
+          "band": "Grade Band 2-3",
+          "statement": "I can apply simple problem-solving strategies and consider suggestions from peers and adults."
+        },
+        {
+          "band": "Grade Band 4-5",
+          "statement": "I can independently use multiple problem-solving strategies and evaluate ideas from others effectively."
+        },
+        {
+          "band": "Grade Band 6-8",
+          "statement": "I can systematically apply problem-solving strategies and integrate diverse perspectives to develop comprehensive solutions."
+        },
+        {
+          "band": "Grade Band 9-10",
+          "statement": "I can strategically select and combine problem-solving approaches while critically analyzing others' contributions."
+        },
+        {
+          "band": "Grade Band 11-12",
+          "statement": "I can expertly adapt problem-solving strategies across contexts and synthesize complex ideas to create innovative solutions."
+        }
+      ]
+    }
+  ]
+}

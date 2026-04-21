@@ -1,0 +1,2125 @@
+{
+  "clusters": [
+    {
+      "cluster_id": "pre-kindergarten_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to identify and describe one's own emotions, characteristics, and needs while maintaining positive self-identity.",
+      "kud_item_ids": [
+        "pre-kindergarten_blk_0003_item_01",
+        "pre-kindergarten_blk_0003_item_02",
+        "pre-kindergarten_blk_0003_item_03",
+        "pre-kindergarten_blk_0003_item_04",
+        "pre-kindergarten_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 3": 2
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run3: Type 1→Type 3"
+      ],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "pre-kindergarten_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "A sustained orientation toward recognizing and regulating one's emotions while demonstrating independence and confidence in meeting personal needs.",
+      "kud_item_ids": [
+        "pre-kindergarten_blk_0005_item_01",
+        "pre-kindergarten_blk_0005_item_02",
+        "pre-kindergarten_blk_0005_item_03",
+        "pre-kindergarten_blk_0005_item_04",
+        "pre-kindergarten_blk_0005_item_05",
+        "pre-kindergarten_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "pre-kindergarten_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "A sustained orientation toward understanding others' emotions and characteristics while responding with empathy and care.",
+      "kud_item_ids": [
+        "pre-kindergarten_blk_0007_item_01",
+        "pre-kindergarten_blk_0007_item_02",
+        "pre-kindergarten_blk_0007_item_03",
+        "pre-kindergarten_blk_0007_item_04",
+        "pre-kindergarten_blk_0007_item_05",
+        "pre-kindergarten_blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 3": 2,
+        "Type 2": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "pre-kindergarten_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "A sustained orientation toward building and maintaining positive relationships through effective communication and prosocial behavior.",
+      "kud_item_ids": [
+        "pre-kindergarten_blk_0009_item_01",
+        "pre-kindergarten_blk_0009_item_02",
+        "pre-kindergarten_blk_0009_item_03",
+        "pre-kindergarten_blk_0009_item_04",
+        "pre-kindergarten_blk_0009_item_05",
+        "pre-kindergarten_blk_0009_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 3,
+        "Type 2": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "pre-kindergarten_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to use problem-solving strategies and community knowledge to make safe and responsible choices.",
+      "kud_item_ids": [
+        "pre-kindergarten_blk_0011_item_01",
+        "pre-kindergarten_blk_0011_item_02",
+        "pre-kindergarten_blk_0011_item_03",
+        "pre-kindergarten_blk_0011_item_04",
+        "pre-kindergarten_blk_0011_item_05",
+        "pre-kindergarten_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 35,
+      "source_position_end": 35,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 2,
+        "Type 2": 2,
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "PRE-KINDERGARTEN",
+        "strand_slug": "pre-kindergarten",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "kindergarten-grade-1_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to recognize and understand one's emotions, strengths, interests, and need for support.",
+      "kud_item_ids": [
+        "kindergarten-grade-1_blk_0003_item_01",
+        "kindergarten-grade-1_blk_0003_item_02",
+        "kindergarten-grade-1_blk_0003_item_03",
+        "kindergarten-grade-1_blk_0003_item_04",
+        "kindergarten-grade-1_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 3": 1,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "kindergarten-grade-1_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "The ability to regulate emotions, set goals, communicate needs, and demonstrate initiative in personal choices.",
+      "kud_item_ids": [
+        "kindergarten-grade-1_blk_0005_item_01",
+        "kindergarten-grade-1_blk_0005_item_02",
+        "kindergarten-grade-1_blk_0005_item_03",
+        "kindergarten-grade-1_blk_0005_item_04",
+        "kindergarten-grade-1_blk_0005_item_05",
+        "kindergarten-grade-1_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 5,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "kindergarten-grade-1_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "The ability to understand others' perspectives, recognize fairness, and demonstrate care and respect for others.",
+      "kud_item_ids": [
+        "kindergarten-grade-1_blk_0007_item_01",
+        "kindergarten-grade-1_blk_0007_item_02",
+        "kindergarten-grade-1_blk_0007_item_03",
+        "kindergarten-grade-1_blk_0007_item_04",
+        "kindergarten-grade-1_blk_0007_item_05",
+        "kindergarten-grade-1_blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 4,
+        "Type 2": 1,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "kindergarten-grade-1_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "A sustained orientation toward building positive relationships through communication, collaboration, and emotional regulation.",
+      "kud_item_ids": [
+        "kindergarten-grade-1_blk_0009_item_01",
+        "kindergarten-grade-1_blk_0009_item_02",
+        "kindergarten-grade-1_blk_0009_item_03",
+        "kindergarten-grade-1_blk_0009_item_04",
+        "kindergarten-grade-1_blk_0009_item_05",
+        "kindergarten-grade-1_blk_0009_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 3": 5,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "kindergarten-grade-1_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to solve problems, reflect on actions, and understand community support systems and safety rules.",
+      "kud_item_ids": [
+        "kindergarten-grade-1_blk_0011_item_01",
+        "kindergarten-grade-1_blk_0011_item_02",
+        "kindergarten-grade-1_blk_0011_item_03",
+        "kindergarten-grade-1_blk_0011_item_04",
+        "kindergarten-grade-1_blk_0011_item_05",
+        "kindergarten-grade-1_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 35,
+      "source_position_end": 35,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 4,
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "KINDERGARTEN–GRADE 1",
+        "strand_slug": "kindergarten-grade-1",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-2-3_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to recognize and understand one's emotions, strengths, interests, and personal needs.",
+      "kud_item_ids": [
+        "grade-band-2-3_blk_0003_item_01",
+        "grade-band-2-3_blk_0003_item_02",
+        "grade-band-2-3_blk_0003_item_03",
+        "grade-band-2-3_blk_0003_item_04",
+        "grade-band-2-3_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 4,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-2-3_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "The ability to regulate emotions, set goals, and demonstrate persistence in overcoming challenges.",
+      "kud_item_ids": [
+        "grade-band-2-3_blk_0005_item_01",
+        "grade-band-2-3_blk_0005_item_02",
+        "grade-band-2-3_blk_0005_item_03",
+        "grade-band-2-3_blk_0005_item_04",
+        "grade-band-2-3_blk_0005_item_05",
+        "grade-band-2-3_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 3,
+        "Type 1": 2,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-2-3_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "The ability to understand others' emotions, appreciate diversity, and demonstrate empathy and gratitude.",
+      "kud_item_ids": [
+        "grade-band-2-3_blk_0007_item_01",
+        "grade-band-2-3_blk_0007_item_02",
+        "grade-band-2-3_blk_0007_item_03",
+        "grade-band-2-3_blk_0007_item_04",
+        "grade-band-2-3_blk_0007_item_05",
+        "grade-band-2-3_blk_0007_item_06",
+        "grade-band-2-3_blk_0007_item_07",
+        "grade-band-2-3_blk_0007_item_08"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 2": 4,
+        "Type 1": 4
+      },
+      "stability_flag": "cluster_unstable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06",
+            "blk_0007_item_07",
+            "blk_0007_item_08"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06",
+            "blk_0007_item_07",
+            "blk_0007_item_08"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06",
+            "blk_0007_item_07",
+            "blk_0007_item_08"
+          ]
+        }
+      ],
+      "stability_diagnostics": [
+        "dominant_type_drift_run3: Type 1→Type 2"
+      ],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-2-3_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "The ability to build and maintain positive relationships through effective communication and collaboration.",
+      "kud_item_ids": [
+        "grade-band-2-3_blk_0009_item_01",
+        "grade-band-2-3_blk_0009_item_02",
+        "grade-band-2-3_blk_0009_item_03",
+        "grade-band-2-3_blk_0009_item_04",
+        "grade-band-2-3_blk_0009_item_05",
+        "grade-band-2-3_blk_0009_item_06",
+        "grade-band-2-3_blk_0009_item_07"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 1": 1,
+        "Type 3": 1,
+        "Type 2": 5
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06",
+            "blk_0009_item_07"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06",
+            "blk_0009_item_07"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06",
+            "blk_0009_item_07"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-2-3_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to make thoughtful choices by analyzing problems and considering consequences for self and community.",
+      "kud_item_ids": [
+        "grade-band-2-3_blk_0011_item_01",
+        "grade-band-2-3_blk_0011_item_02",
+        "grade-band-2-3_blk_0011_item_03",
+        "grade-band-2-3_blk_0011_item_04",
+        "grade-band-2-3_blk_0011_item_05",
+        "grade-band-2-3_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 35,
+      "source_position_end": 35,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 1,
+        "Type 2": 3,
+        "Type 1": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 2–3",
+        "strand_slug": "grade-band-2-3",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-4-5_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to recognize and understand one's emotions, strengths, and mindset in various situations.",
+      "kud_item_ids": [
+        "grade-band-4-5_blk_0003_item_01",
+        "grade-band-4-5_blk_0003_item_02",
+        "grade-band-4-5_blk_0003_item_03",
+        "grade-band-4-5_blk_0003_item_04",
+        "grade-band-4-5_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 2": 1,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-4-5_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "The ability to regulate emotions, set goals, and demonstrate perseverance when facing challenges.",
+      "kud_item_ids": [
+        "grade-band-4-5_blk_0005_item_01",
+        "grade-band-4-5_blk_0005_item_02",
+        "grade-band-4-5_blk_0005_item_03",
+        "grade-band-4-5_blk_0005_item_04",
+        "grade-band-4-5_blk_0005_item_05",
+        "grade-band-4-5_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 3,
+        "Type 3": 2,
+        "Type 1": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-4-5_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "The ability to understand and appreciate diversity, demonstrate empathy, and identify community needs.",
+      "kud_item_ids": [
+        "grade-band-4-5_blk_0007_item_01",
+        "grade-band-4-5_blk_0007_item_02",
+        "grade-band-4-5_blk_0007_item_03",
+        "grade-band-4-5_blk_0007_item_04",
+        "grade-band-4-5_blk_0007_item_05",
+        "grade-band-4-5_blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 1",
+      "knowledge_type_breakdown": {
+        "Type 1": 3,
+        "Type 2": 2,
+        "Type 3": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 1",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-4-5_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "The ability to build positive relationships, communicate effectively, and resolve conflicts constructively.",
+      "kud_item_ids": [
+        "grade-band-4-5_blk_0009_item_01",
+        "grade-band-4-5_blk_0009_item_02",
+        "grade-band-4-5_blk_0009_item_03",
+        "grade-band-4-5_blk_0009_item_04",
+        "grade-band-4-5_blk_0009_item_05",
+        "grade-band-4-5_blk_0009_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 3,
+        "Type 2": 3
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05",
+            "blk_0009_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-4-5_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to make thoughtful choices by evaluating options, consequences, and personal impact on others.",
+      "kud_item_ids": [
+        "grade-band-4-5_blk_0011_item_01",
+        "grade-band-4-5_blk_0011_item_02",
+        "grade-band-4-5_blk_0011_item_03",
+        "grade-band-4-5_blk_0011_item_04",
+        "grade-band-4-5_blk_0011_item_05",
+        "grade-band-4-5_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 35,
+      "source_position_end": 35,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 4–5",
+        "strand_slug": "grade-band-4-5",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-6-8_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to recognize and understand one's emotions, strengths, values, and their impact on thoughts and behaviors.",
+      "kud_item_ids": [
+        "grade-band-6-8_blk_0003_item_01",
+        "grade-band-6-8_blk_0003_item_02",
+        "grade-band-6-8_blk_0003_item_03",
+        "grade-band-6-8_blk_0003_item_04",
+        "grade-band-6-8_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 5
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-6-8_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "The ability to regulate emotions, cope with stress, set goals, and reframe challenges as learning opportunities.",
+      "kud_item_ids": [
+        "grade-band-6-8_blk_0005_item_01",
+        "grade-band-6-8_blk_0005_item_02",
+        "grade-band-6-8_blk_0005_item_03",
+        "grade-band-6-8_blk_0005_item_04",
+        "grade-band-6-8_blk_0005_item_05",
+        "grade-band-6-8_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 1": 2,
+        "Type 2": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-6-8_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "The ability to understand diverse perspectives, empathize with others, and contribute positively to community well-being.",
+      "kud_item_ids": [
+        "grade-band-6-8_blk_0007_item_01",
+        "grade-band-6-8_blk_0007_item_02",
+        "grade-band-6-8_blk_0007_item_03",
+        "grade-band-6-8_blk_0007_item_04",
+        "grade-band-6-8_blk_0007_item_05",
+        "grade-band-6-8_blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 18,
+      "source_position_end": 18,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 3,
+        "Type 1": 1,
+        "Type 3": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-6-8_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "The ability to build positive relationships, collaborate effectively, communicate respectfully, and resolve conflicts constructively.",
+      "kud_item_ids": [
+        "grade-band-6-8_blk_0009_item_01",
+        "grade-band-6-8_blk_0009_item_02",
+        "grade-band-6-8_blk_0009_item_03",
+        "grade-band-6-8_blk_0009_item_04",
+        "grade-band-6-8_blk_0009_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 26,
+      "source_position_end": 26,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 1,
+        "Type 2": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-6-8_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to make thoughtful choices by gathering evidence, considering consequences, and reflecting on impacts.",
+      "kud_item_ids": [
+        "grade-band-6-8_blk_0011_item_01",
+        "grade-band-6-8_blk_0011_item_02",
+        "grade-band-6-8_blk_0011_item_03",
+        "grade-band-6-8_blk_0011_item_04",
+        "grade-band-6-8_blk_0011_item_05",
+        "grade-band-6-8_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 33,
+      "source_position_end": 33,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 5,
+        "Type 1": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 6–8",
+        "strand_slug": "grade-band-6-8",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-9-10_cluster_01",
+      "competency_name": "Self-Awareness",
+      "competency_definition": "The ability to recognize emotions, identify personal strengths, and reframe challenges into opportunities for growth.",
+      "kud_item_ids": [
+        "grade-band-9-10_blk_0003_item_01",
+        "grade-band-9-10_blk_0003_item_02",
+        "grade-band-9-10_blk_0003_item_03",
+        "grade-band-9-10_blk_0003_item_04",
+        "grade-band-9-10_blk_0003_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0003"
+      ],
+      "source_position_start": 4,
+      "source_position_end": 4,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 5
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Awareness",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0003_item_01",
+            "blk_0003_item_02",
+            "blk_0003_item_03",
+            "blk_0003_item_04",
+            "blk_0003_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-9-10_cluster_02",
+      "competency_name": "Self-Management",
+      "competency_definition": "The ability to regulate emotions, develop goal-oriented plans, and demonstrate perseverance and self-advocacy.",
+      "kud_item_ids": [
+        "grade-band-9-10_blk_0005_item_01",
+        "grade-band-9-10_blk_0005_item_02",
+        "grade-band-9-10_blk_0005_item_03",
+        "grade-band-9-10_blk_0005_item_04",
+        "grade-band-9-10_blk_0005_item_05",
+        "grade-band-9-10_blk_0005_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0005"
+      ],
+      "source_position_start": 11,
+      "source_position_end": 11,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 4,
+        "Type 3": 2
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Self-Management",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0005_item_01",
+            "blk_0005_item_02",
+            "blk_0005_item_03",
+            "blk_0005_item_04",
+            "blk_0005_item_05",
+            "blk_0005_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-9-10_cluster_03",
+      "competency_name": "Social Awareness",
+      "competency_definition": "A sustained orientation toward understanding diverse perspectives, recognizing injustice, and contributing to community well-being.",
+      "kud_item_ids": [
+        "grade-band-9-10_blk_0007_item_01",
+        "grade-band-9-10_blk_0007_item_02",
+        "grade-band-9-10_blk_0007_item_03",
+        "grade-band-9-10_blk_0007_item_04",
+        "grade-band-9-10_blk_0007_item_05",
+        "grade-band-9-10_blk_0007_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0007"
+      ],
+      "source_position_start": 19,
+      "source_position_end": 19,
+      "dominant_knowledge_type": "Type 3",
+      "knowledge_type_breakdown": {
+        "Type 1": 1,
+        "Type 3": 4,
+        "Type 2": 1
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Social Awareness",
+          "dominant_knowledge_type": "Type 3",
+          "kud_item_ids": [
+            "blk_0007_item_01",
+            "blk_0007_item_02",
+            "blk_0007_item_03",
+            "blk_0007_item_04",
+            "blk_0007_item_05",
+            "blk_0007_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-9-10_cluster_04",
+      "competency_name": "Relationship Skills",
+      "competency_definition": "The ability to build positive relationships, collaborate effectively, and resolve conflicts responsibly.",
+      "kud_item_ids": [
+        "grade-band-9-10_blk_0009_item_01",
+        "grade-band-9-10_blk_0009_item_02",
+        "grade-band-9-10_blk_0009_item_03",
+        "grade-band-9-10_blk_0009_item_04",
+        "grade-band-9-10_blk_0009_item_05"
+      ],
+      "source_block_ids": [
+        "blk_0009"
+      ],
+      "source_position_start": 27,
+      "source_position_end": 27,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 3": 1,
+        "Type 2": 4
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Relationship Skills",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0009_item_01",
+            "blk_0009_item_02",
+            "blk_0009_item_03",
+            "blk_0009_item_04",
+            "blk_0009_item_05"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    },
+    {
+      "cluster_id": "grade-band-9-10_cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "competency_definition": "The ability to make thoughtful decisions by considering consequences, gathering evidence, and applying ethical reasoning.",
+      "kud_item_ids": [
+        "grade-band-9-10_blk_0011_item_01",
+        "grade-band-9-10_blk_0011_item_02",
+        "grade-band-9-10_blk_0011_item_03",
+        "grade-band-9-10_blk_0011_item_04",
+        "grade-band-9-10_blk_0011_item_05",
+        "grade-band-9-10_blk_0011_item_06"
+      ],
+      "source_block_ids": [
+        "blk_0011"
+      ],
+      "source_position_start": 34,
+      "source_position_end": 34,
+      "dominant_knowledge_type": "Type 2",
+      "knowledge_type_breakdown": {
+        "Type 2": 6
+      },
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 2,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        },
+        {
+          "run": 3,
+          "competency_name": "Responsible Decision-Making",
+          "dominant_knowledge_type": "Type 2",
+          "kud_item_ids": [
+            "blk_0011_item_01",
+            "blk_0011_item_02",
+            "blk_0011_item_03",
+            "blk_0011_item_04",
+            "blk_0011_item_05",
+            "blk_0011_item_06"
+          ]
+        }
+      ],
+      "stability_diagnostics": [],
+      "strand": {
+        "strand_name": "GRADE BAND 9–10",
+        "strand_slug": "grade-band-9-10",
+        "detection_confidence": 0.7
+      }
+    }
+  ]
+}

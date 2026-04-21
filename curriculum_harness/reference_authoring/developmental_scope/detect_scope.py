@@ -131,6 +131,12 @@ _CURATED_MAP: dict[str, tuple[str, str]] = {
     # presents terminal outcomes without per-year/per-level decomposition.
     "england_rshe_secondary": ("range_without_bands", "high"),
     "england_nc_ks3_only": ("range_without_bands", "high"),
+    # Multi-band SEL frameworks with explicit grade-band progression.
+    "england_rshe_full": ("explicit_progression", "high"),
+    "casel_sel_grade_band": ("explicit_progression", "high"),
+    "circle_solutions_sel": ("explicit_progression", "high"),
+    # Internal school framework (REAL School Budapest).
+    "internal_school_framework": ("explicit_progression", "high"),
 }
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,918 @@
+{
+  "reference_authoring_version": "0.3.0",
+  "source_slug": "strand-kindergarten-grade-1",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.3,
+  "runs": 3,
+  "lts": [
+    {
+      "lt_id": "cluster_01_lt_01",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Recognizing Emotions and Personal Attributes",
+      "lt_definition": "I can identify basic emotions and describe my interests and strengths.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0003_item_01",
+        "blk_0003_item_02",
+        "blk_0003_item_03"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Personal Emotions and Capabilities",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_02",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Seeking Support When Needed",
+      "lt_definition": "I can recognize when tasks are challenging and ask for appropriate help.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0003_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Personal Emotions and Capabilities",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_01_lt_03",
+      "cluster_id": "cluster_01",
+      "competency_name": "Self-Awareness",
+      "lt_name": "Maintaining Positive Self-Regard",
+      "lt_definition": "The student practises positive self-talk and maintains a constructive internal dialogue.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0003_item_04"
+      ],
+      "prerequisite_lts": [
+        "Recognizing Emotions and Personal Attributes"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Emotions and Personal Attributes",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Recognizing Personal Emotions and Capabilities",
+            "Seeking Support When Needed",
+            "Maintaining Positive Self-Regard"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_01",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Emotional Regulation and Communication",
+      "lt_definition": "I can communicate my emotions and identify strategies to stay calm during challenges.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0005_item_01",
+        "blk_0005_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_02",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Goal Setting and Need Expression",
+      "lt_definition": "I can set short-term goals, identify helpful resources, and express my needs and wants.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0005_item_03",
+        "blk_0005_item_05",
+        "blk_0005_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_02_lt_03",
+      "cluster_id": "cluster_02",
+      "competency_name": "Self-Management",
+      "lt_name": "Initiative and Independence",
+      "lt_definition": "The student shows initiative and independence when making personal choices.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0005_item_04"
+      ],
+      "prerequisite_lts": [
+        "Emotional Regulation and Communication",
+        "Goal Setting and Need Expression"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Emotional Regulation and Communication",
+            "Goal Setting and Need Expression",
+            "Initiative and Independence"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_01",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Understanding Others' Perspectives and Emotions",
+      "lt_definition": "I can recognize that people share common needs while having different feelings and identify how words and actions affect others.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0007_item_01",
+        "blk_0007_item_02",
+        "blk_0007_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Human Commonalities and Differences",
+            "Evaluating Fairness and Impact",
+            "Demonstrating Care and Respect"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_02",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Evaluating Fairness and Expressing Gratitude",
+      "lt_definition": "I can identify when situations are fair or unfair and explain why I am grateful for people or things in my life.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0007_item_03",
+        "blk_0007_item_05"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Human Commonalities and Differences",
+            "Evaluating Fairness and Impact",
+            "Demonstrating Care and Respect"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_03_lt_03",
+      "cluster_id": "cluster_03",
+      "competency_name": "Social Awareness",
+      "lt_name": "Demonstrating Care and Respect",
+      "lt_definition": "The student consistently shows care and respect for others across different situations and interactions.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0007_item_04"
+      ],
+      "prerequisite_lts": [
+        "Understanding Others' Perspectives and Emotions"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Others' Perspectives and Emotions",
+            "Evaluating Fairness and Expressing Gratitude",
+            "Demonstrating Care and Respect"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Understanding Human Commonalities and Differences",
+            "Evaluating Fairness and Impact",
+            "Demonstrating Care and Respect"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_01",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Identifying Collaborative Behaviors",
+      "lt_definition": "I can name the actions of a helpful teammate or collaborative group member.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0009_item_02"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Positive Communication and Collaboration",
+            "Self-Regulation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_02",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Building Positive Relationships",
+      "lt_definition": "The student enacts friendship skills by initiating and responding to communication attempts from others.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0009_item_01",
+        "blk_0009_item_03",
+        "blk_0009_item_04"
+      ],
+      "prerequisite_lts": [
+        "Identifying Collaborative Behaviors"
+      ],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Positive Communication and Collaboration",
+            "Self-Regulation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_04_lt_03",
+      "cluster_id": "cluster_04",
+      "competency_name": "Relationship Skills",
+      "lt_name": "Managing Emotions Constructively",
+      "lt_definition": "The student practises expressing difficult emotions and seeking help without harming others, self, or property.",
+      "knowledge_type": "Type 3",
+      "assessment_route": "multi_informant_observation",
+      "kud_item_ids": [
+        "blk_0009_item_05",
+        "blk_0009_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Building Positive Relationships",
+            "Managing Emotions Constructively"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 2",
+            "Type 3",
+            "Type 3"
+          ],
+          "lt_names": [
+            "Identifying Collaborative Behaviors",
+            "Positive Communication and Collaboration",
+            "Self-Regulation and Help-Seeking"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_01",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Problem-Solving and Self-Reflection",
+      "lt_definition": "I can describe problems, brainstorm solutions with help, and reflect on my actions and behaviors.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0011_item_02",
+        "blk_0011_item_03",
+        "blk_0011_item_04"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Thoughtful Communication and Collaboration"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_02",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Community Support and Safety Knowledge",
+      "lt_definition": "I can identify helpers in school, home, and community and name basic health and safety rules.",
+      "knowledge_type": "Type 1",
+      "assessment_route": "rubric_with_clear_criteria",
+      "kud_item_ids": [
+        "blk_0011_item_05",
+        "blk_0011_item_06"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Thoughtful Communication and Collaboration"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    },
+    {
+      "lt_id": "cluster_05_lt_03",
+      "cluster_id": "cluster_05",
+      "competency_name": "Responsible Decision-Making",
+      "lt_name": "Collaborative Idea Sharing",
+      "lt_definition": "I can share my independent thoughts and ideas with classmates.",
+      "knowledge_type": "Type 2",
+      "assessment_route": "reasoning_quality_rubric",
+      "kud_item_ids": [
+        "blk_0011_item_01"
+      ],
+      "prerequisite_lts": [],
+      "stability_flag": "stable",
+      "per_run_signatures": [
+        {
+          "run": 1,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 2,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Collaborative Idea Sharing"
+          ]
+        },
+        {
+          "run": 3,
+          "lt_count": 3,
+          "kt_multiset": [
+            "Type 1",
+            "Type 2",
+            "Type 2"
+          ],
+          "lt_names": [
+            "Problem-Solving and Self-Reflection",
+            "Community Support and Safety Knowledge",
+            "Thoughtful Communication and Collaboration"
+          ]
+        }
+      ],
+      "stability_diagnostics": []
+    }
+  ],
+  "halted_clusters": []
+}
