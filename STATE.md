@@ -4,6 +4,14 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session CW-3 (Five-framework neutral matrix crosswalk v3)** — 2026-04-21 — head `abf3202 feat: CW-3 five-framework neutral matrix crosswalk v3`.
+
+Applied curriculum-crosswalk skill v2.0 to produce framework-neutral matrix across all five frameworks. 23 themes × 6 bands = 138 matrix rows. 52 rows where REAL = "—" (gap detection working). Confirmed structural REAL gaps: T15 (Personal Identity, A–F), T22 (Growth Mindset, A–F), T16 (Family Diversity, A–F), T18 (Bullying/Anti-Discrimination, A–F), T17 (Online Safety, A–B and D; partial C and E only). Confirmed REAL distinctive strengths: T12 (Wellbeing Science A–F), T13 (Health Evidence Literacy A–F), T14 (Metacognition A–F), T04 (Focused Attention A–F — unique Band F content). 4 theme_grouping_flags. 10 PLC questions in convergence document.
+
+Outputs: `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v3-matrix.md`, `...-matrix.csv`, `...-summary.csv`, `...-convergence.md`. v1 and v2 files retained unchanged.
+
+---
+
 **Session CW-2b (Circle Solutions + CASEL Band F pipeline re-runs; 5-framework crosswalk v2)** — 2026-04-21 — head `740f22e fix: CW-2b complete pipeline runs for Circle Solutions and CASEL; regenerate five-framework crosswalk v2`.
 
 Circle Solutions: full pipeline re-run for all 4 year-level strands after API credit exhaustion in CW-2. 124 KUD items, 104 LTs (v1 manual: 112/48). Band-tagged v2 written. v1 archived to `_manual-archive/`. detect_progression.py fixed: per-strand inventory has `source_slug=strand-year-X` (no "circle-solutions" in slug); added `source_reference` matching on "cowie-myers" to detect correctly.
@@ -223,6 +231,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **5-framework neutral matrix crosswalk v3 — complete (CW-3).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v3-matrix.md` + `.csv` + `summary.csv` + `convergence.md`. 23 themes, 138 matrix rows, 52 REAL gap rows. skill v2.0 applied. Commit `abf3202`.
 - **5-framework crosswalk v2 — complete (CW-2b).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v2.md` + `.csv`. 83 convergent pairs, 14 divergence topics, 5 unique-content clusters, 5 PLC questions. CSV: 83 rows. CASEL Band F and CS pipeline-generated v2 both present. Commit `740f22e`.
 - **CASEL SEL band-tagged artefact v2 — complete (CW-2b).** `docs/reference-corpus/casel-sel-continuum/band-tagged-casel-v2.json`. 203 KUD items + 93 LTs, Bands A–F. Band F: 28 KUD items, 14 LTs (restored after API credit re-run). All required fields, source_voice_preserved=true.
 - **Circle Solutions SEL band-tagged artefact v2 — complete (CW-2b).** `docs/reference-corpus/circle-solutions-sel/band-tagged-circle-solutions-v2.json`. 124 KUD items + 104 LTs, 4 year levels, pipeline-generated. Year 2→Bands A/B (ambig, medium confidence), Year 6→Band C (high), Year 9→Bands D/E (ambig, medium), Year 12→Band F (high). v1 manual archived to `_manual-archive/`.
@@ -271,7 +280,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**CW-3 (if planned) — CASEL × Circle Solutions criterion banks.** Generate criterion banks for `casel-sel-continuum` and `circle-solutions-sel` corpora. Both corpora are now pipeline-generated and have full unified artefacts. CASEL: 93 LTs, 6 bands A–F. Circle Solutions: 104 LTs, 4 year levels (A/B, C, D/E, F).
+**CW-3 complete.** Next: CASEL × Circle Solutions criterion banks (was labelled CW-3 in prior STATE — now CW-4 or next session). Generate criterion banks for `casel-sel-continuum` and `circle-solutions-sel` corpora. Generate criterion banks for `casel-sel-continuum` and `circle-solutions-sel` corpora. Both corpora are now pipeline-generated and have full unified artefacts. CASEL: 93 LTs, 6 bands A–F. Circle Solutions: 104 LTs, 4 year levels (A/B, C, D/E, F).
 
 **REAL-2b (if needed) — Spot-check E/F authored content with REAL School teachers.** The 28 Band E/F cells in band-tagged-real-wellbeing-v1.json are newly authored. Review gate confirmed Do statements; full teacher review of Understand statements and disciplinary warrants has not yet occurred.
 
@@ -297,4 +306,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-21 at end of Session CW-2b (Circle Solutions + CASEL Band F pipeline re-runs; 5-framework crosswalk v2 complete). Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-21 at end of Session CW-3 (five-framework neutral matrix crosswalk v3 complete). Update at end of every session per `docs/process/state-md-discipline.md`.*
