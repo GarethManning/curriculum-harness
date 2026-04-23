@@ -4,6 +4,48 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-7 (LT 4.4 commit + unified data v5 integration)** — 2026-04-23 — COMMITTED.
+
+Committed criterion-bank-v4_1.json and LT_4_4_KUD_v2_20260423.md; rebuilt unified data and index at v5; updated STATE.md.
+
+- **LT 4.4 — Emotional Development & Relationships** — now committed and integrated. 20th LT in the REAL Wellbeing Framework (Competency 4 now has four LTs: 4.1, 4.2, 4.3, 4.4).
+- **criterion-bank-v4_1.json** — committed. 253 criteria, 506 edges, DAG PASS.
+- **LT_4_4_KUD_v2_20260423.md** — committed. KUD v2 incorporating five-persona panel review changes (Band D Know items 4–5 populated; Band E Know item 2 expanded; Band F Know item 1 reframed).
+- **unified-wellbeing-data-v5.json** — committed. 20 LTs, all 253 criteria referenced, 0 orphan criterion refs. LT 4.4 inserted after lt_4_3 in correct C4 competency position.
+- **wellbeing-index-v5.json** — committed. 20 LT entries. lt_4_4 index entry present.
+- **build_unified_wellbeing_v5.py** — committed. Build script for v5 outputs.
+- **Note on LT count:** session brief specified "19 LTs in v5" — this was a counting error. v4 already had 19 LTs; adding lt_4_4 yields 20. The 20 LT count is correct.
+- **Outstanding Competency 4 design commissions (deferred, not blocking):** (1) LT 4.5 — T3 companion LT for dispositional emotional self-management (Claxton panel flag; no T3 assessable content for mood regulation in C4 currently). (2) Emotional activation safeguarding protocol — for scenario tasks involving attraction, rejection, loss; to be produced with safeguarding lead and Circle Solutions programme.
+- **This session did NOT:** apply no_evidence descriptor specificity polish; expand competent descriptor qualitative content; review cross-band strand-based edges; produce safeguarding protocol; author LT 4.5; run panel review on any other artefact.
+
+---
+
+**Session REAL-6b (LT 4.4 criterion bank targeted fix — v4_1)** — 2026-04-23 — NOT COMMITTED.
+
+Applied three panel-flagged fixes to LT 4.4 entries from criterion-bank-v4.json, producing `criterion-bank-v4_1.json`. v4.json unchanged.
+
+- **criterion-bank-v4_1.json** — `docs/reference-corpus/real-wellbeing/criterion-bank-v4_1.json`. 253 criteria (unchanged), 506 total edges (down from 515 — 9 parallel-component edges removed), DAG PASS.
+- **FIX 1 — 9 parallel within-band edges removed.** These edges incorrectly modelled Band parallel-components as sequential prerequisites. Removed: crit_0298→0299, crit_0300→0301, crit_0302→0303, crit_0304→0305, crit_0305→0306, crit_0307→0308, crit_0308→0309, crit_0310→0311, crit_0311→0312. Kept (cross-band and cross-LT): 0299→0300, 0301→0302, 0054→0302, 0303→0304, 0057→0304, 0306→0307, 0309→0310. LT 4.4 edge count: 16→7.
+- **FIX 2 — crit_0310 extending descriptor updated.** New text: "I use three or more frameworks and, for at least one (e.g. attachment theory), distinguish empirical core from contested interpretations and popularised distortions — explaining what each framework illuminates and obscures in this case." (236 chars). criterion_statement unchanged.
+- **FIX 3 — crit_0306 extending descriptor updated.** New text: "I apply one course framework coherently to the experience and consistently distinguish empirical, interpretive, and normative claims throughout — noting which claims I hold most tentatively and why." (198 chars). criterion_statement unchanged.
+- **This session did NOT:** commit; integrate into unified-wellbeing-data or wellbeing-index; apply no_evidence descriptor specificity polish; expand competent descriptor qualitative content; review cross-band strand-based edges; author T3 companion LT; produce safeguarding protocol.
+
+---
+
+**Session REAL-6 (LT 4.4 criterion bank generation)** — 2026-04-23 — NOT COMMITTED (awaiting panel review gate).
+
+Generated criterion bank entries for LT 4.4 — Emotional Development & Relationships — producing `criterion-bank-v4.json`. All three panel requirements honoured. No integration into unified data; no commit. File ready for human review.
+
+- **criterion-bank-v4.json** — `docs/reference-corpus/real-wellbeing/criterion-bank-v4.json`. 253 criteria (238 v3 + 15 new LT 4.4 entries), 515 total edges (499 v3 + 16 new), DAG PASS. criterion-bank-v3.json unchanged (MD5 verified).
+- **15 new LT 4.4 criteria** — IDs `crit_0298`–`crit_0312`. Bands A–F. All Type 2. All descriptors ≤250 chars (validated). Specificity rule applied to every descriptor.
+- **16 new edges** — 14 `within_lt_band` (linear A→B→C→D→E→F chain) + 2 `cross_lt_source_stated` (LT 4.2 Band C `crit_0054` → LT 4.4 Band C `crit_0302`; LT 4.2 Band D `crit_0057` → LT 4.4 Band D `crit_0304`).
+- **Requirement 1 (Band D three-component split) HONOURED.** `crit_0304`: biological explanation accuracy (PFC/amygdala + attraction/rejection/loss neurobiology). `crit_0305`: healthy/unhealthy pattern identification in described relationship. `crit_0306`: course framework application (dual-process, stress-response window, habit formation) with epistemic-status distinction. Three separate descriptor sets.
+- **Requirement 2 (Band F framework set named) HONOURED.** `crit_0310` explicitly names: attachment theory, dual-process models of emotion and cognition, social learning theory, power/context analysis. Competent = ≥2 frameworks; Extending = ≥3 frameworks + framework evaluation.
+- **Requirement 3 (Band F justified position operationalised) HONOURED.** `crit_0312` descriptors explicitly encode all four dimensions: evidentiary fit (competent), alternative explanations (competent), framework transparency (competent), acknowledgement of limits (competent). Extending = all four as integrated argument.
+- **This session did NOT:** commit; integrate into unified-wellbeing-data or wellbeing-index; author the T3 companion LT for Competency 4; produce the emotional-activation safeguarding protocol.
+
+---
+
 **Session REAL-5 (QA phase — Steps 6 and 8 + KUD v3 + unified v4)** — 2026-04-23 — head `aeae1cd fix: LT 7.1 Know layer + prerequisite hardening; LT 1.3 Band D indicator wording; observation exemplar library (23 Apr 2026)`.
 
 Completed QA Step 6 (whole-chart five-persona panel review, all 19 LTs) and QA Step 8 (T3 observation indicator five-persona panel review, six T3 LTs). Panel output: `docs/reference-corpus/real-wellbeing/REAL_Wellbeing_QA_Steps_6_8_20260423.md` (commit `0bc3b49`). Both gates PASS at framework level.
@@ -338,7 +380,19 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**QA phase — REAL wellbeing framework — ALL 10 STEPS COMPLETE.** Step 10 cross-artefact consistency check run 23 April 2026 against v4 artefacts. All 10 checks PASS. Gate closed. v4 artefacts are verified and ready for programme guide and dashboard work.
+**[GATE — COMPLETE] LT 4.4 integration.** criterion-bank-v4_1.json, unified-wellbeing-data-v5.json, wellbeing-index-v5.json all committed (REAL-7, 23 Apr 2026). Gate closed.
+
+**Open commissions for Competency 4 (not blocking other work):**
+- **LT 4.5 — T3 companion LT** (dispositional emotional self-management in practice). Claxton panel flag from REAL-6 review. Design responsibility: Competency 4 team.
+- **Emotional activation safeguarding protocol** for scenario tasks involving attraction, rejection, loss. To be produced with safeguarding lead and Circle Solutions programme.
+- **LT 4.2 unit-plan session** (deferred from QA Step 6): Band D sequencing plan; Band F contested-claim curation protocol. Required before Band D field use.
+
+**Next recommended work:**
+- Programme guide authoring (all 20 LTs, v5 unified data as source).
+- T3 authenticity observation protocol (covering all six T3 LTs — authoring underway; LT 7.2 and LT 8.3 exemplar appendices).
+- Dashboard integration against unified-wellbeing-data-v5.json.
+
+**QA phase — REAL wellbeing framework — ALL 10 STEPS COMPLETE (prior state).** Step 10 cross-artefact consistency check run 23 April 2026 against v4 artefacts. All 10 checks PASS. Gate closed. v4 artefacts are verified and ready for programme guide and dashboard work.
 
 1. ✅ Prompt 1 output review (generic descriptor rewrite).
 2. ✅ Prompt 2 Phase 1 decomposition audit.
@@ -382,4 +436,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-23 — QA Steps 1–10 complete. All 10 Step 10 checks PASS. v4 artefacts verified. KUD v3 current canonical. Criterion bank v3 (238 crits, 499 edges, DAG PASS; `hard_prerequisite` edge type confirmed). QA Step 6 PASS (mean 90.3). QA Step 8 PASS (T3 indicator mean 89.5). v4 artefacts ready for programme guide and dashboard work.*
+*Last updated 2026-04-23 — REAL-7: LT 4.4 committed and integrated. criterion-bank-v4_1.json (253 criteria, 506 edges, DAG PASS). unified-wellbeing-data-v5.json + wellbeing-index-v5.json (20 LTs, all 253 criteria, 0 orphan refs). Next: programme guide authoring; T3 authenticity observation protocol; LT 4.5 and safeguarding protocol commissions.*
