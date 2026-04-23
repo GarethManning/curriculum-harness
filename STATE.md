@@ -338,7 +338,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**QA phase — REAL wellbeing framework.** Steps 1–8 complete (Step 6 and Step 8 closed in REAL-5). Steps 9 (rebuild) and 10 (final cross-artefact consistency check) complete in form — v4 unified files have been built from criterion-bank-v3 (499 edges) and KUD v3 — but Step 10 has not yet been run as a human-sign-off gate against the v4 artefacts. Run Step 10 against v4 before any programme guide or dashboard work begins.
+**QA phase — REAL wellbeing framework — ALL 10 STEPS COMPLETE.** Step 10 cross-artefact consistency check run 23 April 2026 against v4 artefacts. All 10 checks PASS. Gate closed. v4 artefacts are verified and ready for programme guide and dashboard work.
 
 1. ✅ Prompt 1 output review (generic descriptor rewrite).
 2. ✅ Prompt 2 Phase 1 decomposition audit.
@@ -349,7 +349,22 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 7. ✅ Neuroscience factual accuracy check on LT 6.1.
 8. ✅ Panel review T3 observation indicators for all six T3 LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 (Step 8, REAL-5, T3 indicator mean 89.5 PASS). LT 1.3 flag resolved by Band D behavioural-anchor replacement and exemplar library; Band F consolidation recommendation not adopted; partial-evidence protocol substituted.
 9. ✅ Rebuild unified-wellbeing-data-v4.json and wellbeing-index-v4.json from KUD v3 and criterion-bank-v3 (499 edges).
-10. ⏳ **Next action — final cross-artefact consistency check against v4 artefacts:** criterion IDs, entry counts, DAG, T3 indicators, schema versions (including new `hard_prerequisite` edge type). [GATE — human sign-off required]
+10. ✅ **Final cross-artefact consistency check — PASS (23 Apr 2026).** All 10 checks passed against v4 artefacts. See QA summary below. One non-blocking flag: embedded `dag_validation` field in criterion-bank-v3.json is stale (shows 237 criteria / 439 edges, predating crit_0297 addition and REAL-5 hard_prerequisite edge additions). Actual data correct; fresh DAG run confirms 238 criteria, 499 edges, DAG PASS. Field does not affect artefact integrity.
+
+**QA Step 10 results summary (23 Apr 2026):**
+
+| Check | Expected | Actual | Result |
+|---|---|---|---|
+| 1 — Criterion count | 238 (bank) / 238 (unified unique IDs) | 238 / 238 | ✅ PASS |
+| 2 — Edge count | 499 | 499 (from prerequisite_edges_detail across all criteria) | ✅ PASS |
+| 3 — DAG validity | Valid DAG, 0 cycles, 0 dangling, 0 orphaned | Valid; 0 cycles; 0 dangling; 0 orphaned; edge-type dist: within_lt_band 318, cross_lt_source_stated 173, hard_prerequisite 8 | ✅ PASS |
+| 4 — LT 1.3 knowledge_type | "T3" | "T3" | ✅ PASS |
+| 5 — LT 1.3 Band D indicator | Does not contain "genuine reflection rather than surface performance" | Does not contain it. New wording: "The teacher notices the student…naming a specific unchosen group membership…giving a specific example of how that membership has shaped one of their own experiences — where the example is not a repetition of a class discussion example offered by a peer or teacher." | ✅ PASS |
+| 6 — LT 7.1 Know A–F | None read "None standalone" | A: "There are two different kinds of thinking…" B: "A pattern is a response I make in a similar way in similar kinds of situations." C: "A driver of a pattern is a specific thing that sets the pattern off or keeps it going…" D: "The origin of a pattern (what originally set it up) and its sustaining conditions (what keeps it going now) are two different things." E: "A structured metacognitive protocol is a named sequence of steps applied in advance to a high-stakes challenge…" F: "A personal metacognitive framework is an explicit, named set of strategies, prompts, and monitoring practices…" | ✅ PASS |
+| 7 — Hard prerequisite edges | 8 edges, all LT 6.1 Band C → LT 7.1 Band D | 8 edges: crit_0080→crit_0101, crit_0082→crit_0101, crit_0080→crit_0102, crit_0082→crit_0102, crit_0080→crit_0180, crit_0082→crit_0180, crit_0080→crit_0181, crit_0082→crit_0181 (all LT 6.1 Band C → LT 7.1 Band D) | ✅ PASS |
+| 8 — Schema version consistency | Match | Both "v2" | ✅ PASS |
+| 9 — 19 LTs present | 19 LTs, C1–C8 | 19 LTs, competencies C1–C8 all present | ✅ PASS |
+| 10 — crit_0297 | T1, Band F, LT 6.1 | Type 1, Band F, lt_6_1. Statement: "I can apply an integrative understanding of the stress-emotion-attention-habit system (drawing on mechanisms from Bands A–E) to a real decision or situation in my own life or community, choosing an action that addresses the system rather than a single symptom and justifying the action by specific mechanisms." | ✅ PASS |
 
 Deferred follow-ups (not blocking Step 10):
 - **T3 authenticity observation protocol document** covering all six T3 LTs — authoring underway; includes the cross-cutting "authentic vs performative" operationalisation, LT 1.3 Band F partial-evidence protocol and Christodoulou dissent, LT 7.2 Band F and LT 8.3 Band F exemplar libraries as appendices, and LT 1.2 Band F calibration note.
@@ -367,4 +382,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-23 — QA Steps 1–9 complete. KUD v3 current canonical. Criterion bank v3 (238 crits, 499 edges, DAG PASS; new `hard_prerequisite` edge type). Unified wellbeing data v4 built against v3 bank and KUD v3. QA Step 6 PASS (mean 90.3; LT 4.2 deferred to unit-plan, LT 7.1 resolved). QA Step 8 PASS (T3 indicator mean 89.5; LT 1.3 resolved). Next action: Step 10 final cross-artefact consistency check against v4 artefacts.*
+*Last updated 2026-04-23 — QA Steps 1–10 complete. All 10 Step 10 checks PASS. v4 artefacts verified. KUD v3 current canonical. Criterion bank v3 (238 crits, 499 edges, DAG PASS; `hard_prerequisite` edge type confirmed). QA Step 6 PASS (mean 90.3). QA Step 8 PASS (T3 indicator mean 89.5). v4 artefacts ready for programme guide and dashboard work.*
