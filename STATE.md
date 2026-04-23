@@ -4,6 +4,21 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-3 (Unified wellbeing data files)** — 2026-04-23 — head `826d6bb feat: unified wellbeing data files + build script for all 19 LTs`.
+
+Built two machine-readable artefacts from the expanded 19-LT REAL Wellbeing Framework (criterion-bank-v2.json, KUD session files) using a deterministic Python build script.
+
+- `scripts/build_unified_wellbeing.py` — loads criterion-bank-v2.json, hardcoded KUD (know/understand/do) for all 19 LTs from three KUD session files, builds per-(lt_id, band) lookups and emits both output files.
+- `docs/reference-corpus/real-wellbeing/unified-wellbeing-data.json` — full per-LT/per-band data: know, understand, do arrays, criterion_ids, prerequisite_lt_ids, observation_indicators (T3 LTs only).
+- `docs/reference-corpus/real-wellbeing/wellbeing-index.json` — slim one-entry-per-LT index with competency, knowledge_type, compound flag, band_range, summary.
+- KUD source documents (Sessions 1–3, ScopeAndSequence, Critique) also committed.
+
+Step 5 verification: all 5 checks PASS — 19 LTs, all 169 criterion_ids valid, all 6 T3 LTs have observation_indicators in every band, no missing do fields, all 8 competency groups (C1–C8) in index.
+
+LT 1.3 type: treated as T2 (criterion bank primary source; KUD Session 1's T3 label overridden per PROMPT_STANDARDS.md).
+
+---
+
 **Session CW-3 (Five-framework neutral matrix crosswalk v3)** — 2026-04-21 — head `abf3202 feat: CW-3 five-framework neutral matrix crosswalk v3`.
 
 Applied curriculum-crosswalk skill v2.0 to produce framework-neutral matrix across all five frameworks. 23 themes × 6 bands = 138 matrix rows. 52 rows where REAL = "—" (gap detection working). Confirmed structural REAL gaps: T15 (Personal Identity, A–F), T22 (Growth Mindset, A–F), T16 (Family Diversity, A–F), T18 (Bullying/Anti-Discrimination, A–F), T17 (Online Safety, A–B and D; partial C and E only). Confirmed REAL distinctive strengths: T12 (Wellbeing Science A–F), T13 (Health Evidence Literacy A–F), T14 (Metacognition A–F), T04 (Focused Attention A–F — unique Band F content). 4 theme_grouping_flags. 10 PLC questions in convergence document.
@@ -231,6 +246,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **Unified wellbeing data files — complete (REAL-3).** `docs/reference-corpus/real-wellbeing/unified-wellbeing-data.json` (all 19 LTs, full KUD + criterion_ids + observation_indicators per band) and `wellbeing-index.json` (slim LT index). Build script: `scripts/build_unified_wellbeing.py`. Verification: 19 LTs ✓, 169 valid criterion_ids ✓, T3 obs indicators in all bands ✓, no missing do fields ✓, all C1–C8 ✓. Commit `826d6bb`.
 - **5-framework neutral matrix crosswalk v3 — complete (CW-3).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v3-matrix.md` + `.csv` + `summary.csv` + `convergence.md`. 23 themes, 138 matrix rows, 52 REAL gap rows. skill v2.0 applied. Commit `abf3202`.
 - **5-framework crosswalk v2 — complete (CW-2b).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v2.md` + `.csv`. 83 convergent pairs, 14 divergence topics, 5 unique-content clusters, 5 PLC questions. CSV: 83 rows. CASEL Band F and CS pipeline-generated v2 both present. Commit `740f22e`.
 - **CASEL SEL band-tagged artefact v2 — complete (CW-2b).** `docs/reference-corpus/casel-sel-continuum/band-tagged-casel-v2.json`. 203 KUD items + 93 LTs, Bands A–F. Band F: 28 KUD items, 14 LTs (restored after API credit re-run). All required fields, source_voice_preserved=true.
@@ -306,4 +322,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-21 at end of Session CW-3 (five-framework neutral matrix crosswalk v3 complete). Update at end of every session per `docs/process/state-md-discipline.md`.*
+*Last updated 2026-04-23 at end of Session REAL-3 (unified wellbeing data files for all 19 LTs complete). Update at end of every session per `docs/process/state-md-discipline.md`.*
