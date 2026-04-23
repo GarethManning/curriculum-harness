@@ -6,11 +6,17 @@
   "dag_validation": {
     "dag_valid": true,
     "status": "PASS",
-    "total_criteria": 237,
-    "total_edges": 439,
+    "total_criteria": 238,
+    "total_edges": 499,
+    "edge_type_distribution": {
+      "within_lt_band": 318,
+      "cross_lt_source_stated": 173,
+      "hard_prerequisite": 8
+    },
     "cycles": [],
     "self_loops": [],
-    "unresolved_ids": []
+    "unresolved_ids": [],
+    "verified_date": "2026-04-23"
   },
   "strand_summaries": [
     {
