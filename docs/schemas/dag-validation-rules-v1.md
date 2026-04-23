@@ -114,6 +114,26 @@ prerequisite_criterion_ids: ["welsh-cfw-health-wellbeing_crit_0003"]   ← self-
 
 ---
 
+## Rule 6 — `within_lt_band` Edge Semantics by LT Type
+
+**Definition:** The `within_lt_band` edge type carries **two distinct meanings depending on whether the endpoint LTs are T1/T2 (skills) or T3 (dispositions)**. Graph-structural validation does not distinguish these readings — both are simply edges — but semantic review of edge correctness must apply the test appropriate to the LT type.
+
+- **T1 / T2 endpoints — strict skill prerequisite.** An edge A→B where A is Band N and B is Band N+1 asserts that B literally depends on A being in place. Band N+1 cannot be demonstrated without Band N secured first. An edge fails semantic review if the downstream criterion does not require the upstream skill or knowledge.
+
+- **T3 endpoints — developmental staging.** An edge A→B where A is Band N and B is Band N+1 asserts that Band N+1 represents a more mature expression of the same disposition, presupposing the developmental ground of Band N but not requiring Band N to have been evidenced first. Dispositions deepen and integrate across bands; they do not gate on prior-band performance.
+
+**Consequence for validation and review:**
+
+1. Applying the T1/T2 strict-prerequisite test to a T3 staging edge systematically rejects correct edges.
+2. Every T3 LT is required by schema convention to carry an unbroken A→B→C→D→E→F within-band chain. A validator or reviewer that removes T3 staging edges under the T1/T2 test will break this chain — and the DAG may then show T3 Band F criteria as orphans, which is itself a regression (see `v3-edge-removal-log.md` restoration addendum).
+3. If a T3 Band N+1 observable is genuinely unrelated to the Band N developmental ground, the issue is a KUD-chart defect upstream of the edge, not an edge-semantics defect — flag at chart level, not by edge removal.
+
+**Scope of this rule:** Rule 6 is a documentation / semantic-review rule, not a graph-structural halt rule. Rules 1–4 run identically regardless of LT type; Rule 5 computes per-LT pairs and is unaffected. Rule 6 governs how human reviewers and downstream semantic validators interpret existing `within_lt_band` edges, and it binds the convention that T3 within-band chains must remain unbroken.
+
+**Rationale:** Originally codified in `PROMPT_STANDARDS.md` on 2026-04-23 after a review session removed T3 staging edges by applying the T1/T2 test, which required a restoration pass. Propagated here so any schema-reader inspecting validation rules encounters the distinction without having to read the standards document separately.
+
+---
+
 ## Validation execution order
 
 Run in this order per source. Stop on first failure:
@@ -124,7 +144,7 @@ Run in this order per source. Stop on first failure:
 4. Cycle detection (DFS, O(n + e))
 5. Agreement rate calculation (mapping + edge recovery check)
 
-This order prioritises cheap checks first and surfaces structural errors before the more expensive graph traversal.
+This order prioritises cheap checks first and surfaces structural errors before the more expensive graph traversal. Rule 6 (edge-type semantics) is not executed as part of the halt-and-report pipeline — it is a semantic-review rule that governs reviewer and validator interpretation of existing edges.
 
 ---
 

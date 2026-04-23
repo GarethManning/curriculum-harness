@@ -59,6 +59,20 @@ An empty array indicates no prerequisite within the bank. Cross-source prerequis
 
 ---
 
+### Edge type semantics — `within_lt_band`
+
+Prerequisite edges carry an `edge_type` field on `prerequisite_edges_detail`. The `within_lt_band` value has **two distinct meanings depending on the LT type of the edge endpoints**, and applying the wrong reading during review produces spurious removal flags.
+
+- **T1 and T2 LTs:** `within_lt_band` is a **strict skill prerequisite**. Band N+1 cannot be demonstrated without Band N being secured first — the Band N+1 observable requires the Band N capacity as a building block. An edge is semantically correct only if the downstream criterion literally depends on the upstream skill or knowledge being in place.
+
+- **T3 LTs:** `within_lt_band` is **developmental staging**, not a gated task dependency. Band N+1 represents a more mature expression of the same underlying disposition — it presupposes the developmental ground of Band N (the earlier-band dispositional move having become available to the student) but does not require Band N to have been evidenced first in order for Band N+1 evidence to count. Dispositions do not gate on prior-band performance the way skills do; they deepen and integrate across bands.
+
+**Consequence for review:** do not remove a T3 `within_lt_band` edge on the basis that the Band N+1 observable is "achievable without demonstrating Band N". That test applies to T1/T2 strict prerequisites; under T3 developmental-staging semantics, the edge is correct even when each band's observable can in principle be evidenced independently. If a T3 Band N+1 observable is genuinely unrelated to the Band N developmental ground, the issue is a KUD-chart defect upstream of the edge, not an edge-semantics defect — flag at chart level, not by edge removal.
+
+**Rationale:** Every T3 LT is required by schema convention to carry an unbroken A→B→C→D→E→F within-band chain. Removing T3 staging edges under the T1/T2 strict-prerequisite test breaks that chain. The distinction is load-bearing for reviewers, validators, and any downstream tool that inspects edge correctness — a schema-reader must encounter it here rather than relying on separate review-convention documentation. (Originally codified in `PROMPT_STANDARDS.md` on 2026-04-23; propagated here so schema consumers do not miss it.)
+
+---
+
 ### `source_provenance`
 
 **Type:** `string`

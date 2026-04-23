@@ -2,7 +2,7 @@
   "schema_version": "v2",
   "source_slug": "real-wellbeing-2026-04",
   "source_name": "REAL School Budapest — Wellbeing Framework",
-  "total_criteria": 237,
+  "total_criteria": 238,
   "dag_validation": {
     "dag_valid": true,
     "status": "PASS",
@@ -4576,7 +4576,9 @@
       "decomposition_rationale": "Single Band E criterion — the dispositional capability at this band integrates sustained regulation across pressure periods with awareness of one's own state as shaping the group; both are present or absent together.",
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0004",
-        "real-wellbeing-2026-04_crit_0230"
+        "real-wellbeing-2026-04_crit_0230",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4586,6 +4588,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0230",
+          "to": "real-wellbeing-2026-04_crit_0142",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0142",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
           "to": "real-wellbeing-2026-04_crit_0142",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4628,7 +4640,10 @@
       "decomposition_rationale": "Single Band F criterion — authored regulation system and non-directive support of peers in developing theirs are the two faces of a mature regulation disposition; the KUD treats them as a single observational cell.",
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0142",
-        "real-wellbeing-2026-04_crit_0234"
+        "real-wellbeing-2026-04_crit_0234",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4638,6 +4653,21 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0234",
+          "to": "real-wellbeing-2026-04_crit_0143",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0143",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0143",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
           "to": "real-wellbeing-2026-04_crit_0143",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4680,7 +4710,9 @@
       "decomposition_rationale": "Single Band E criterion — group-context repair and naming group dynamics are inseparable at this band in the KUD.",
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0008",
-        "real-wellbeing-2026-04_crit_0230"
+        "real-wellbeing-2026-04_crit_0230",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4690,6 +4722,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0230",
+          "to": "real-wellbeing-2026-04_crit_0144",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0144",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
           "to": "real-wellbeing-2026-04_crit_0144",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4734,7 +4776,11 @@
       "decomposition_rationale": "Regenerated 23 April 2026 (see REAL_Wellbeing_KUD_fixes_applied_20260423.md Step 3b). Single T3 criterion because the Band F Do specifies one unified observable — structural-aware action-adjustment across more than one occasion — which cannot be split without losing the cross-context qualifier.",
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0144",
-        "real-wellbeing-2026-04_crit_0234"
+        "real-wellbeing-2026-04_crit_0234",
+        "real-wellbeing-2026-04_crit_0297",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4744,6 +4790,26 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0234",
+          "to": "real-wellbeing-2026-04_crit_0145",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0297",
+          "to": "real-wellbeing-2026-04_crit_0145",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0145",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0145",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
           "to": "real-wellbeing-2026-04_crit_0145",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4787,7 +4853,11 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0040",
         "real-wellbeing-2026-04_crit_0230",
-        "real-wellbeing-2026-04_crit_0196"
+        "real-wellbeing-2026-04_crit_0196",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229",
+        "real-wellbeing-2026-04_crit_0194",
+        "real-wellbeing-2026-04_crit_0195"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4802,6 +4872,26 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0196",
+          "to": "real-wellbeing-2026-04_crit_0146",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0146",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
+          "to": "real-wellbeing-2026-04_crit_0146",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0194",
+          "to": "real-wellbeing-2026-04_crit_0146",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0195",
           "to": "real-wellbeing-2026-04_crit_0146",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4845,7 +4935,11 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0146",
         "real-wellbeing-2026-04_crit_0234",
-        "real-wellbeing-2026-04_crit_0198"
+        "real-wellbeing-2026-04_crit_0198",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233",
+        "real-wellbeing-2026-04_crit_0197"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4860,6 +4954,26 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0198",
+          "to": "real-wellbeing-2026-04_crit_0147",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0147",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0147",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
+          "to": "real-wellbeing-2026-04_crit_0147",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0197",
           "to": "real-wellbeing-2026-04_crit_0147",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4903,7 +5017,9 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0075",
         "real-wellbeing-2026-04_crit_0230",
-        "real-wellbeing-2026-04_crit_0118"
+        "real-wellbeing-2026-04_crit_0118",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4918,6 +5034,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0118",
+          "to": "real-wellbeing-2026-04_crit_0148",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0148",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
           "to": "real-wellbeing-2026-04_crit_0148",
           "edge_type": "cross_lt_source_stated"
         }
@@ -4963,7 +5089,12 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0148",
         "real-wellbeing-2026-04_crit_0234",
-        "real-wellbeing-2026-04_crit_0212"
+        "real-wellbeing-2026-04_crit_0212",
+        "real-wellbeing-2026-04_crit_0297",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233",
+        "real-wellbeing-2026-04_crit_0213"
       ],
       "prerequisite_edges_detail": [
         {
@@ -4978,6 +5109,31 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0212",
+          "to": "real-wellbeing-2026-04_crit_0149",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0297",
+          "to": "real-wellbeing-2026-04_crit_0149",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0149",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0149",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
+          "to": "real-wellbeing-2026-04_crit_0149",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0213",
           "to": "real-wellbeing-2026-04_crit_0149",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5021,7 +5177,13 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0107",
         "real-wellbeing-2026-04_crit_0224",
-        "real-wellbeing-2026-04_crit_0230"
+        "real-wellbeing-2026-04_crit_0230",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229",
+        "real-wellbeing-2026-04_crit_0220",
+        "real-wellbeing-2026-04_crit_0221",
+        "real-wellbeing-2026-04_crit_0222",
+        "real-wellbeing-2026-04_crit_0223"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5036,6 +5198,36 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0230",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0220",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0221",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0222",
+          "to": "real-wellbeing-2026-04_crit_0150",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0223",
           "to": "real-wellbeing-2026-04_crit_0150",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5079,7 +5271,12 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0150",
         "real-wellbeing-2026-04_crit_0227",
-        "real-wellbeing-2026-04_crit_0234"
+        "real-wellbeing-2026-04_crit_0234",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233",
+        "real-wellbeing-2026-04_crit_0225",
+        "real-wellbeing-2026-04_crit_0226"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5094,6 +5291,31 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0234",
+          "to": "real-wellbeing-2026-04_crit_0151",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0151",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0151",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
+          "to": "real-wellbeing-2026-04_crit_0151",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0225",
+          "to": "real-wellbeing-2026-04_crit_0151",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0226",
           "to": "real-wellbeing-2026-04_crit_0151",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5429,7 +5651,9 @@
         "real-wellbeing-2026-04_crit_0066",
         "real-wellbeing-2026-04_crit_0067",
         "real-wellbeing-2026-04_crit_0068",
-        "real-wellbeing-2026-04_crit_0273"
+        "real-wellbeing-2026-04_crit_0273",
+        "real-wellbeing-2026-04_crit_0271",
+        "real-wellbeing-2026-04_crit_0272"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5459,6 +5683,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0273",
+          "to": "real-wellbeing-2026-04_crit_0166",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0271",
+          "to": "real-wellbeing-2026-04_crit_0166",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0272",
           "to": "real-wellbeing-2026-04_crit_0166",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5505,7 +5739,9 @@
         "real-wellbeing-2026-04_crit_0069",
         "real-wellbeing-2026-04_crit_0070",
         "real-wellbeing-2026-04_crit_0071",
-        "real-wellbeing-2026-04_crit_0276"
+        "real-wellbeing-2026-04_crit_0276",
+        "real-wellbeing-2026-04_crit_0274",
+        "real-wellbeing-2026-04_crit_0275"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5535,6 +5771,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0276",
+          "to": "real-wellbeing-2026-04_crit_0167",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0274",
+          "to": "real-wellbeing-2026-04_crit_0167",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0275",
           "to": "real-wellbeing-2026-04_crit_0167",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5579,7 +5825,9 @@
         "real-wellbeing-2026-04_crit_0167",
         "real-wellbeing-2026-04_crit_0142",
         "real-wellbeing-2026-04_crit_0118",
-        "real-wellbeing-2026-04_crit_0279"
+        "real-wellbeing-2026-04_crit_0279",
+        "real-wellbeing-2026-04_crit_0277",
+        "real-wellbeing-2026-04_crit_0278"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5599,6 +5847,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0279",
+          "to": "real-wellbeing-2026-04_crit_0168",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0277",
+          "to": "real-wellbeing-2026-04_crit_0168",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0278",
           "to": "real-wellbeing-2026-04_crit_0168",
           "edge_type": "cross_lt_source_stated"
         }
@@ -5643,7 +5901,10 @@
         "real-wellbeing-2026-04_crit_0168",
         "real-wellbeing-2026-04_crit_0143",
         "real-wellbeing-2026-04_crit_0212",
-        "real-wellbeing-2026-04_crit_0282"
+        "real-wellbeing-2026-04_crit_0282",
+        "real-wellbeing-2026-04_crit_0213",
+        "real-wellbeing-2026-04_crit_0280",
+        "real-wellbeing-2026-04_crit_0281"
       ],
       "prerequisite_edges_detail": [
         {
@@ -5663,6 +5924,21 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0282",
+          "to": "real-wellbeing-2026-04_crit_0169",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0213",
+          "to": "real-wellbeing-2026-04_crit_0169",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0280",
+          "to": "real-wellbeing-2026-04_crit_0169",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0281",
           "to": "real-wellbeing-2026-04_crit_0169",
           "edge_type": "cross_lt_source_stated"
         }
@@ -8428,7 +8704,9 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0245",
         "real-wellbeing-2026-04_crit_0008",
-        "real-wellbeing-2026-04_crit_0230"
+        "real-wellbeing-2026-04_crit_0230",
+        "real-wellbeing-2026-04_crit_0228",
+        "real-wellbeing-2026-04_crit_0229"
       ],
       "prerequisite_edges_detail": [
         {
@@ -8443,6 +8721,16 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0230",
+          "to": "real-wellbeing-2026-04_crit_0246",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0228",
+          "to": "real-wellbeing-2026-04_crit_0246",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0229",
           "to": "real-wellbeing-2026-04_crit_0246",
           "edge_type": "cross_lt_source_stated"
         }
@@ -8542,7 +8830,10 @@
       "prerequisite_criterion_ids": [
         "real-wellbeing-2026-04_crit_0248",
         "real-wellbeing-2026-04_crit_0008",
-        "real-wellbeing-2026-04_crit_0234"
+        "real-wellbeing-2026-04_crit_0234",
+        "real-wellbeing-2026-04_crit_0231",
+        "real-wellbeing-2026-04_crit_0232",
+        "real-wellbeing-2026-04_crit_0233"
       ],
       "prerequisite_edges_detail": [
         {
@@ -8557,6 +8848,21 @@
         },
         {
           "from": "real-wellbeing-2026-04_crit_0234",
+          "to": "real-wellbeing-2026-04_crit_0249",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0231",
+          "to": "real-wellbeing-2026-04_crit_0249",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0232",
+          "to": "real-wellbeing-2026-04_crit_0249",
+          "edge_type": "cross_lt_source_stated"
+        },
+        {
+          "from": "real-wellbeing-2026-04_crit_0233",
           "to": "real-wellbeing-2026-04_crit_0249",
           "edge_type": "cross_lt_source_stated"
         }
@@ -9784,6 +10090,40 @@
         "Where in the last month did you catch your own ethnocentrism, in-group identification, or a missing intersection in your reading of a situation, without anyone pointing it out to you? Tell me the situation.",
         "When you use words like 'cultural lens' or 'intersectionality', are they doing real work in your thinking right now, or are they labels? Give me an example where they were doing real work."
       ]
+    },
+    {
+      "criterion_id": "real-wellbeing-2026-04_crit_0297",
+      "associated_lt_ids": [
+        "lt_6_1"
+      ],
+      "band": "F",
+      "band_label": "Post-Metal Dragons (ages 15–17)",
+      "lt_type": "Type 1",
+      "strand": "single_strand",
+      "criterion_statement": "I can apply an integrative understanding of the stress-emotion-attention-habit system (drawing on mechanisms from Bands A–E) to a real decision or situation in my own life or community, choosing an action that addresses the system rather than a single symptom and justifying the action by specific mechanisms.",
+      "criterion_label": "Apply integrative wellbeing-science understanding to a real decision",
+      "source_kud_item_ids": [
+        "kud_lt_6_1_F_01"
+      ],
+      "competency_level_descriptors": {
+        "no_evidence": "The student has not produced work that demonstrates applying integrative wellbeing-science understanding to a real decision or situation at Band F.",
+        "emerging": "I describe a decision or situation but do not ground it in specific mechanisms from the stress-emotion-attention-habit system; or I cite mechanisms but do not link them to an observable action I took.",
+        "developing": "I ground an action in one named mechanism but do not integrate across the system or show how the action addresses more than a single symptom.",
+        "competent": "I can apply an integrative understanding of the stress-emotion-attention-habit system to a real decision or situation, using specific mechanisms from Bands A–E to justify the action I chose and how it addresses the system rather than a single symptom.",
+        "extending": "I apply integrative understanding to a real decision, document the action and its effect across the system, and revise the action on the basis of what the system-level response revealed about the mechanisms at play."
+      },
+      "decomposition_rationale": "Anchor review (23 April 2026) identified that existing LT 6.1 Band F criteria (crit_0231–0234) are all articulation-toned—identifying evidence strength or stating a reasoned position—and that no criterion at this band carried the LT definition's 'apply that understanding' move in action-primacy form. This criterion sits alongside crit_0234 as the action-primacy companion to its articulation-primacy gestalt move: 0234 captures the capacity to state a position; 0297 captures the capacity to apply integrative wellbeing-science understanding to a real decision.",
+      "prerequisite_criterion_ids": [
+        "real-wellbeing-2026-04_crit_0234"
+      ],
+      "prerequisite_edges_detail": [
+        {
+          "from": "real-wellbeing-2026-04_crit_0234",
+          "to": "real-wellbeing-2026-04_crit_0297",
+          "edge_type": "within_lt_band"
+        }
+      ],
+      "schema_version": "v2"
     }
   ]
 }
