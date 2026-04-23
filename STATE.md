@@ -4,6 +4,24 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-4 (QA phase — criterion bank v3 + Steps 5 and 7)** — 2026-04-23 — head `a25dd5f fix: rebuild unified data and index against v3 bank post-anchoring fixes (23 Apr 2026)`.
+
+Completed QA Steps 1–5 and Step 7 of the REAL wellbeing QA phase. Regenerated the criterion bank and unified data files against the corrected KUD v2 charts, then fixed anchoring and prerequisite structure issues surfaced during the rebuild.
+
+- `criterion-bank-v3.json` — 238 criteria, 491 edges, DAG PASS. Supersedes v2. Per PROMPT_STANDARDS no-overwriting rule, v2 retained as `criterion-bank-v2.json` and the pre-descriptor-fix intermediate as `criterion-bank-v2-pre-descriptor-fix.json`.
+- `crit_0297` added — LT 6.1 Band F action-primacy T1 criterion. Resolves Band F under-anchoring on the hierarchical-science LT.
+- 49 `cross_lt_source_stated` edges added to resolve Band E/F under-anchoring across LTs 6.1, 5.1, 3.1, 7.1, 8.2.
+- LT 5.1 Band F anchor repointed from `crit_0213` to `crit_0212` (correct mechanism anchor for intercultural register calibration).
+- `PROMPT_STANDARDS.md` — T2/T3 `within_lt_band` semantic distinction documented (commit `844c8af`).
+- Schema docs updated: `docs/schemas/criterion-bank-v1.md` and `docs/schemas/dag-validation-rules-v1.md` now carry Rule 6 on `within_lt_band` edge semantics (commit `a9533d9`).
+- `unified-wellbeing-data-v3.json` and `wellbeing-index-v3.json` built and committed against the v3 bank (commit `a25dd5f`). These are the current unified artefacts. v2 versions retained as historical record.
+- QA Step 5 (prerequisite structure fix): 237 → 200 edges (37 removed) for band-by-band soft-enabler downgrades at early bands; propagated into the v3 bank. Edge-removal log at `docs/reference-corpus/real-wellbeing/v3-edge-removal-log.md`.
+- QA Step 7 (neuroscience factual accuracy check on LT 6.1) — PASS. One note: "stress-emotion-attention-habit system" is curriculum synthesis language, not a named neuroscientific model; footnote recommended in programme guide, no criterion rewrite needed.
+
+Note: LT 1.3 type correction to T3 (was recorded as T2 in error) was applied in a prior session; this entry reflects the current corrected state (section 2 below references it at the earlier REAL-3 entry).
+
+---
+
 **Session REAL-3 (Unified wellbeing data files)** — 2026-04-23 — head `826d6bb feat: unified wellbeing data files + build script for all 19 LTs`.
 
 Built two machine-readable artefacts from the expanded 19-LT REAL Wellbeing Framework (criterion-bank-v2.json, KUD session files) using a deterministic Python build script.
@@ -246,7 +264,11 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
-- **Unified wellbeing data files — complete (REAL-3).** `docs/reference-corpus/real-wellbeing/unified-wellbeing-data.json` (all 19 LTs, full KUD + criterion_ids + observation_indicators per band) and `wellbeing-index.json` (slim LT index). Build script: `scripts/build_unified_wellbeing.py`. Verification: 19 LTs ✓, 169 valid criterion_ids ✓, T3 obs indicators in all bands ✓, no missing do fields ✓, all C1–C8 ✓. Commit `826d6bb`.
+- **Criterion bank v3 — complete (REAL-4).** `docs/reference-corpus/real-wellbeing/criterion-bank-v3.json`. 238 criteria, 491 edges, DAG PASS. Supersedes v2. Incorporates: generic-descriptor rewrite (Prompt 1), approved decomposition splits (Prompt 2), `crit_0297` LT 6.1 Band F action criterion, 49 `cross_lt_source_stated` edges resolving Band E/F under-anchoring across LTs 6.1/5.1/3.1/7.1/8.2, LT 5.1 Band F anchor repointed `crit_0213`→`crit_0212`, band-by-band prerequisite soft-enabler downgrades (Step 5: 237→200 edges, 37 removed). QA Steps 1–5 and Step 7 done; Steps 6 and 8 pending.
+- **Unified wellbeing data v3 — complete (REAL-4).** `docs/reference-corpus/real-wellbeing/unified-wellbeing-data-v3.json` + `wellbeing-index-v3.json`. Built against criterion-bank-v3 and KUD v2 charts. All 19 LTs, full KUD + criterion_ids + observation_indicators per band. v2 versions retained as historical record per no-overwriting rule. Commit `a25dd5f`.
+- **QA Step 7 — neuroscience factual accuracy check on LT 6.1 — PASS (REAL-4).** Web-search-verified against authoritative neuroscience sources (amygdala, prefrontal cortex, HPA axis, neuroplasticity, allostatic load). One note: "stress-emotion-attention-habit system" is curriculum synthesis language, not a named neuroscientific model — footnote recommended in programme guide; no criterion rewrite needed.
+- **Schema docs Rule 6 — within_lt_band edge semantics (REAL-4).** `docs/schemas/criterion-bank-v1.md` and `docs/schemas/dag-validation-rules-v1.md` now carry the T2/T3 `within_lt_band` semantic distinction per `PROMPT_STANDARDS.md` update (commit `844c8af`; schema doc update `a9533d9`).
+- **Unified wellbeing data v2 — superseded by v3 (REAL-3; history).** `docs/reference-corpus/real-wellbeing/unified-wellbeing-data.json` (original Session REAL-3 output). Build script: `scripts/build_unified_wellbeing.py`. Retained as historical record. Commit `826d6bb`.
 - **5-framework neutral matrix crosswalk v3 — complete (CW-3).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v3-matrix.md` + `.csv` + `summary.csv` + `convergence.md`. 23 themes, 138 matrix rows, 52 REAL gap rows. skill v2.0 applied. Commit `abf3202`.
 - **5-framework crosswalk v2 — complete (CW-2b).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v2.md` + `.csv`. 83 convergent pairs, 14 divergence topics, 5 unique-content clusters, 5 PLC questions. CSV: 83 rows. CASEL Band F and CS pipeline-generated v2 both present. Commit `740f22e`.
 - **CASEL SEL band-tagged artefact v2 — complete (CW-2b).** `docs/reference-corpus/casel-sel-continuum/band-tagged-casel-v2.json`. 203 KUD items + 93 LTs, Bands A–F. Band F: 28 KUD items, 14 LTs (restored after API credit re-run). All required fields, source_voice_preserved=true.
@@ -321,4 +343,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-23 — QA step 5 complete. Prerequisite structure fixed band-by-band across all 19 LTs. 237 → 200 edges (37 removed). Awaiting KUD chart panel review (QA step 6).*
+*Last updated 2026-04-23 — QA Steps 1–5 and Step 7 complete. Criterion bank v3 (238 crits, 491 edges, DAG PASS), unified data v3, and schema docs current. Awaiting KUD chart panel review (QA Step 6) and T3 observation indicator panel review (QA Step 8).*
