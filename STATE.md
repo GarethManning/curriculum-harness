@@ -15,7 +15,7 @@ Built two machine-readable artefacts from the expanded 19-LT REAL Wellbeing Fram
 
 Step 5 verification: all 5 checks PASS — 19 LTs, all 169 criterion_ids valid, all 6 T3 LTs have observation_indicators in every band, no missing do fields, all 8 competency groups (C1–C8) in index.
 
-LT 1.3 type: treated as T2 (criterion bank primary source; KUD Session 1's T3 label overridden per PROMPT_STANDARDS.md).
+LT 1.3 type: T3 — Dispositional (corrected 23 April 2026; prior T2 treatment was an error; authoritative source lt-1-3-personal-identity-cultural-self-awareness-v1.md line 17 declares T3; criterion bank T2 entries removed in regeneration session 23 April 2026)
 
 ---
 
