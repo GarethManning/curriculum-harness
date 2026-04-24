@@ -4,6 +4,23 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-10 (Phase 1 — crosswalk v4 refresh against 21-LT framework)** — 2026-04-24 — COMMITTED `8acd20b`.
+
+Phase 1 crosswalk refresh v4 produced. Framework-neutral matrix, summary CSV, and convergence document covering the current 21 REAL LTs against RSHE, Welsh CfW, CASEL, and Circle Solutions. Seven LTs new since v3 integrated (LT 1.3, 4.3, 4.4, 4.5, 8.1, 8.2, 8.3). Three gap changes. 84 LT × framework pairs labelled. v3 preserved as historical record.
+
+- **real-wellbeing-x-all-frameworks-v4-matrix.md** — `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v4-matrix.md`. 403 lines. 23-theme structure inherited from v3. Change log at top documents v3→v4 changes. Skill_flags and theme_grouping_flags updated. New "Per-LT alignment forms" section at bottom (84 pairs).
+- **real-wellbeing-x-all-frameworks-v4-summary.csv** — `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v4-summary.csv`. 24 rows (23 themes + header), 16 columns. Added REAL_primary_LTs and v3_to_v4_change columns.
+- **real-wellbeing-x-all-frameworks-v4-convergence.md** — `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v4-convergence.md`. 232 lines. Five-section structure (convergence / divergence / unique / sequencing / PLC questions) preserved from v3. New convergence subsection for v4-specific content. Bidirectional gap summary added.
+- **Three gap changes:** T15 (Personal Identity) closed by LT 1.3 (A–F); T18 (Bullying/Anti-Discrimination) closed by LT 4.3 (A–F); T17 (Online Safety/Digital Wellbeing) flipped from partial gap to distinctive strength via LT 8.1 + LT 8.2 + LT 8.3 (A–F).
+- **84 LT × framework pairs labelled** using four alignment forms: 19 `aligned-with-reciprocal-treatment`, 42 `partial-alignment`, 0 `reversed`, 23 `absent`. The `reversed` form was available but no pair qualified in this pass; closest candidates classified as `partial-alignment` with grain difference stated.
+- **Spot-check:** Gareth manually verified five randomly-selected alignment statements against their source texts. 5/5 held.
+- **REAL gaps preserved:** T22 (Growth Mindset — LT 7.2 adjacent but not identical), T16 (Family Diversity — out of scope by design), T19 (Physical Activity — PE delivery context), T20 (Nutrition — LT 3.1 brief integration only), T03 Bands A–B, T21 Bands A–B.
+- **Convention changes (documented in change log):** per-LT alignment-form labels (new in v4); bidirectional gap flagging made explicit; blanket *(draft)* markers on Bands E–F dropped post QA Step 6 PASS (LT 4.2 Band D/F teacher-review flag retained).
+- **Current state:** 21 LTs, 269 criteria, 267 unified-data edges. Preflight 12/12 PASS. Crosswalk v4 committed at `8acd20b`.
+- **This session did NOT:** run panel review on v4 artefacts; modify any criterion bank, unified data, KUD, or skill files; modify v3 crosswalk files (preserved as historical record).
+
+---
+
 **Session REAL-9d (Phase 0.3 — panel-review skill v1.0.0 → v1.0.1 deployed to claude-education-skills)** — 2026-04-24 — COMMITTED.
 
 Built and deployed the panel-review skill (v1.0.0, then v1.0.1 cleanup) at `skills/professional-learning/panel-review/SKILL.md` in the claude-education-skills repo. Seven-role depersonalised panel, sequential-isolation mode. Reviews five artefact types: KUD, criterion bank, LT definition, crosswalk, scope-and-sequence (with documented panel-weakness caveat). Gate rule: mean_overall ≥ 88 AND no role mean < 70. Worked example produced mean 88.25 with sceptic at 66.67 — FAIL verdict via the floor rule, validating that the rule catches what it's designed to catch. Skill count 113 → 114. v1.0.1 cleanup removed school-specific references to keep the skill domain-agnostic for the public skills library.
@@ -438,6 +455,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
+- **Crosswalk v4 — complete (REAL-10, `8acd20b`).** `docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v4-{matrix.md, summary.csv, convergence.md}`. Framework-neutral crosswalk against 21 REAL LTs. Three gap changes (T15, T18 closed; T17 flipped to distinctive strength). 84 LT × external-framework alignment pairs labelled. Gareth spot-check 5/5. v3 retained as historical record.
 - **KUD charts v4 — committed (REAL-8a).** `docs/reference-corpus/real-wellbeing/REAL_Wellbeing_KUD_v4_20260424.md`. All band labels corrected to canonical grade-level convention. Content identical to v3. 163,949 bytes. Commit `027b4c1`. v3 retained as historical record.
 - **LT 4.5 KUD v2 — committed (REAL-8a).** `docs/reference-corpus/real-wellbeing/LT_4_5_KUD_v2_20260423.md`. T3 dispositional LT, Bands A–F, 6 quality checks PASS. Commit `027b4c1`.
 - **unified-wellbeing-data-v6.json — committed (REAL-8d).** `docs/reference-corpus/real-wellbeing/unified-wellbeing-data-v6.json`. 21 LTs, 269 criteria, 523 edges. lt_4_5 (T3) inserted after lt_4_4 in C4 competency group. T3 observation_indicators populated from criterion-bank-v5_1.json. All 10 verification checks PASS.
@@ -504,7 +522,13 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**First action next session: Phase 0.3 verification — invoke the panel-review skill on LT 4.5 KUD v2 as a first real-run calibration.** Panel-review skill v1.0.1 is deployed in claude-education-skills; this session confirms it runs correctly against a real REAL Wellbeing artefact and that the gate rule (mean_overall ≥ 88, no role mean < 70) returns a defensible verdict.
+**First action next session: Gareth to decide.** Natural candidates after Phase 1 crosswalk v4 ship:
+- **Programme guide authoring** (all 21 LTs, unified-wellbeing-data-v6.json as source; now gated open by crosswalk v4 + KUD stability)
+- **Safeguarding protocol commission** for LT 4.4 (attraction / rejection / loss scenarios at Band D) and LT 4.5 (emotional-activation in practice)
+- **LT 4.2 Band D/F unit-plan session** (deferred from QA Step 6: Band D sequencing plan; Band F contested-claim curation protocol)
+- **T22 growth-mindset gap decision** (PLC question from v4: author dedicated LT, subsume into LT 7.2, or document out-of-scope)
+
+**Prior first-action carried forward: Phase 0.3 verification — invoke the panel-review skill on LT 4.5 KUD v2 as a first real-run calibration.** Panel-review skill v1.0.1 is deployed in claude-education-skills; this session confirms it runs correctly against a real REAL Wellbeing artefact and that the gate rule (mean_overall ≥ 88, no role mean < 70) returns a defensible verdict. (Ran as commit `ed2c563` between REAL-9d and REAL-10; not yet folded into STATE.md.)
 
 **Deferred — T3 observation protocol extension (reinstated after Phase 0.2 gate is in place).** Add LT 4.5 to `T3_observation_protocol_20260423.md` (currently covers LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 only). LT 4.5 requires a Band D rupture-and-repair section (distinguishing genuine initiation from defensive acknowledgement) and a Band F pattern-articulation section (distinguishing genuine model use from performed articulation).
 
@@ -555,6 +579,7 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ## 6. Open questions
 
+- **Framework-scope decision for T16, T19, T20, T22 (surfaced by crosswalk v4).** For each of T16 (family diversity), T19 (physical activity/movement), T20 (nutrition/food literacy), T22 (growth mindset/self-efficacy) — is REAL's absence a deliberate scope decision, a coverage-elsewhere-in-curriculum assumption, or an unexamined gap? All four are covered by at least one external framework; the answer shapes whether REAL needs a new LT, a documented out-of-scope rationale, or a cross-reference to non-wellbeing curriculum delivery.
 - **LOW confidence tier not seen in any run.** Defined in 4c-1; hasn't fired yet.
 - **Ontario LT halts on large Opus clusters.** Carry-forward from 4b-5. Pick up in 4c-7.
 - **AP US Gov rubric flag rate after 4c-2b gate recalibration.** Not yet re-run.
@@ -562,4 +587,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-24 — REAL-9d: Phase 0.3 shipped — panel-review skill v1.0.0 → v1.0.1 deployed to claude-education-skills (72e2c77 initial; v1.0.1 cleanup follow-up). Seven-role depersonalised panel, sequential-isolation mode, floor+mean gate rule. PROMPT_STANDARDS.md shared-context interim caveat closed. Preflight 12/12 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.3 verification run on LT 4.5 KUD v2.*
+*Last updated 2026-04-24 — REAL-10: Phase 1 crosswalk v4 shipped (commit 8acd20b). Framework-neutral matrix, summary CSV, convergence document across 21 REAL LTs × 4 external frameworks. Three gap changes (T15, T18 closed; T17 flipped to distinctive strength). 84 LT × framework pairs labelled; Gareth spot-check 5/5. Preflight 12/12 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Gareth to decide — programme guide, safeguarding protocol, LT 4.2 unit-plan session, or T22 gap decision.*
