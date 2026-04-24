@@ -4,6 +4,33 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-8b (LT 4.5 criterion bank generation)** — 2026-04-24 — NOT COMMITTED.
+
+Generated 16 T3 criterion bank entries for LT 4.5 — Emotional Self-Management in Practice — producing `criterion-bank-v5.json`. All post-generation verification checks PASS. DAG PASS. File ready for human review before commit and unified-data integration.
+
+- **criterion-bank-v5.json** — `docs/reference-corpus/real-wellbeing/criterion-bank-v5.json`. 269 criteria (253 v4_1 + 16 new), 523 total edges, DAG PASS. criterion-bank-v4_1.json unchanged.
+- **16 new LT 4.5 T3 criteria** — IDs `crit_0313`–`crit_0328`. Bands A–F. All `lt_type: "Type 3"`. All T3 fields (observation_indicators, confusable_behaviours, absence_indicators, conversation_prompts) present and criterion-specific.
+- **Band split:** A×2, B×2, C×2, D×3, E×3, F×4 — matching KUD v2 Check A table. All within-band components are parallel (no edges between co-band components).
+- **17 new edges** — 14 `within_lt_band` (strand-matched developmental staging across bands) + 3 `cross_lt_source_stated` (crit_0306→crit_0320: LT 4.4 Band D framework → LT 4.5 Band D window-aware help-seeking; crit_0306→crit_0324: habit formation → strategy adaptation; crit_0311→crit_0326: LT 4.4 Band F Know item 3 relational repair → LT 4.5 Band F repair initiation).
+- **Cross-LT edge correction:** The session summary said crit_0312→0326. Corrected to crit_0311→0326: kud_lt_4_4_F_know_03 (relational repair) is covered by crit_0311, not crit_0312 (which covers Band F Do only).
+- **Canonical band labels** applied to all 16 new criteria.
+- **comp_4 strand count** updated to 82 (was 66; LT 4.5 adds 16).
+- **This session did NOT:** commit; integrate into unified-wellbeing-data or wellbeing-index; run panel review on LT 4.5; author observation exemplar library for LT 4.5 (required: Band D rupture-and-repair exemplars; Band F pattern-articulation exemplars).
+
+---
+
+**Session REAL-8a (KUD v4 band label correction + commit)** — 2026-04-24 — COMMITTED `027b4c1`.
+
+Corrected all non-canonical band labels across `REAL_Wellbeing_KUD_v3_20260423.md` to canonical grade-level convention, producing `REAL_Wellbeing_KUD_v4_20260424.md`. Committed v4 + LT_4_5_KUD_v2_20260423.md together.
+
+- **REAL_Wellbeing_KUD_v4_20260424.md** — committed. Identical KUD content to v3; band labels corrected throughout. 163,949 bytes. 11/11 post-fix verification checks PASS.
+- **LT_4_5_KUD_v2_20260423.md** — committed. KUD chart for LT 4.5 (Emotional Self-Management in Practice), T3 dispositional, Bands A–F.
+- **Label changes applied:** consolidated index mapping line; band-scope lines with and without Dragon names; LT 4.2 partial B–F scope; LT 8.2 partial C–F scope; Part 1 band statement headers; Dragon-naming footnote; one authoring note age reference.
+- **Canonical convention confirmed:** Band A — Water + Air Dragons — K–2 (approx ages 5–7); B — Earth Dragons — G3–4 (approx ages 8–10); C — Fire Dragons — G5–6 (approx ages 10–12); D — Metal + Light Dragons — G7–8 (approx ages 12–13); E — G9–10; F — G11–12. Metal and Light are both at Band D. Bands E and F have no Dragon names.
+- **This session did NOT:** modify v3 (unchanged); touch any other file; commit STATE.md separately.
+
+---
+
 **Session REAL-7 (LT 4.4 commit + unified data v5 integration)** — 2026-04-23 — COMMITTED.
 
 Committed criterion-bank-v4_1.json and LT_4_4_KUD_v2_20260423.md; rebuilt unified data and index at v5; updated STATE.md.
@@ -320,7 +347,10 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 2. Verified working
 
-- **KUD charts v3 — complete (REAL-5).** `docs/reference-corpus/real-wellbeing/REAL_Wellbeing_KUD_v3_20260423.md`. Current canonical KUD. Changes from v2: LT 7.1 standalone Know layer at all bands A–F (own metacognitive terminology; LT 6.1 neuroscience cross-reference preserved as companion); LT 6.1 Band C → LT 7.1 Band D retyped to hard prerequisite; Claxton dissent recorded in LT 7.1 authoring notes; LT 1.3 Band D observation indicator behavioural-anchor replacement (Christodoulou wording). v2 retained as historical record. Commit `aeae1cd`.
+- **KUD charts v4 — committed (REAL-8a).** `docs/reference-corpus/real-wellbeing/REAL_Wellbeing_KUD_v4_20260424.md`. All band labels corrected to canonical grade-level convention. Content identical to v3. 163,949 bytes. Commit `027b4c1`. v3 retained as historical record.
+- **LT 4.5 KUD v2 — committed (REAL-8a).** `docs/reference-corpus/real-wellbeing/LT_4_5_KUD_v2_20260423.md`. T3 dispositional LT, Bands A–F, 6 quality checks PASS. Commit `027b4c1`.
+- **criterion-bank-v5.json — generated, NOT yet committed (REAL-8b).** `docs/reference-corpus/real-wellbeing/criterion-bank-v5.json`. 269 criteria, 523 edges, DAG PASS. 16 new LT 4.5 T3 entries. Awaiting human review gate before commit.
+- **KUD charts v3 — superseded by v4 (REAL-5; history).** `docs/reference-corpus/real-wellbeing/REAL_Wellbeing_KUD_v3_20260423.md`. Current canonical KUD. Changes from v2: LT 7.1 standalone Know layer at all bands A–F (own metacognitive terminology; LT 6.1 neuroscience cross-reference preserved as companion); LT 6.1 Band C → LT 7.1 Band D retyped to hard prerequisite; Claxton dissent recorded in LT 7.1 authoring notes; LT 1.3 Band D observation indicator behavioural-anchor replacement (Christodoulou wording). v2 retained as historical record. Commit `aeae1cd`.
 - **Criterion bank v3 — complete (REAL-5 edges; REAL-4 base).** `docs/reference-corpus/real-wellbeing/criterion-bank-v3.json`. 238 criteria, **499 edges** (up from 491), DAG PASS. Supersedes v2. REAL-4 base incorporates: generic-descriptor rewrite (Prompt 1), approved decomposition splits (Prompt 2), `crit_0297` LT 6.1 Band F action criterion, 49 `cross_lt_source_stated` edges resolving Band E/F under-anchoring across LTs 6.1/5.1/3.1/7.1/8.2, LT 5.1 Band F anchor repointed `crit_0213`→`crit_0212`, band-by-band prerequisite soft-enabler downgrades (Step 5: 237→200 edges, 37 removed). REAL-5 addition: new `hard_prerequisite` edge type added to schema (8 edges, all LT 6.1 Band C → LT 7.1 Band D; `crit_0080` and `crit_0082` → `crit_0101`, `crit_0102`, `crit_0180`, `crit_0181`). Edge-addition log at `v3-edge-addition-log-lt-6-1-to-7-1-20260423.md`.
 - **QA Step 6 — whole-chart panel review PASS (REAL-5).** Framework mean 90.3. LT 4.2 (86.6) and LT 7.1 (87.8) flagged. LT 7.1 flag resolved in KUD v3. LT 4.2 flag deferred to unit-plan session (chart not structurally broken; Band D sequencing plan and Band F contested-claim curation protocol required before Band D field use). Output: `REAL_Wellbeing_QA_Steps_6_8_20260423.md`.
 - **QA Step 8 — T3 observation indicator panel review PASS (REAL-5).** T3 indicator mean 89.5. LT 1.3 (87.8) flagged. Flag resolved by Band D behavioural-anchor replacement and exemplar library at `LT_1_3_observation_exemplar_library_20260423.md`. Christodoulou Band F four-observation consolidation recommendation not adopted; partial-evidence recording protocol substituted.
@@ -380,17 +410,18 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**[GATE — COMPLETE] LT 4.4 integration.** criterion-bank-v4_1.json, unified-wellbeing-data-v5.json, wellbeing-index-v5.json all committed (REAL-7, 23 Apr 2026). Gate closed.
+**[GATE — REVIEW REQUIRED] LT 4.5 criterion bank.** `criterion-bank-v5.json` generated and DAG-validated. Awaiting human review of LT 4.5 KUD v2 and criterion bank before commit and unified-data integration. First action next session: confirm human review has occurred, then commit v5 bank and rebuild unified-wellbeing-data-v6.
 
 **Open commissions for Competency 4 (not blocking other work):**
-- **LT 4.5 — T3 companion LT** (dispositional emotional self-management in practice). Claxton panel flag from REAL-6 review. Design responsibility: Competency 4 team.
+- **LT 4.5 observation exemplar library** — Band D (rupture-and-repair: distinguishing genuine initiation from defensive acknowledgement) and Band F (pattern articulation as working model: distinguishing genuine model use from performed articulation). Commission flagged in LT 4.5 authoring notes; not yet started.
 - **Emotional activation safeguarding protocol** for scenario tasks involving attraction, rejection, loss. To be produced with safeguarding lead and Circle Solutions programme.
 - **LT 4.2 unit-plan session** (deferred from QA Step 6): Band D sequencing plan; Band F contested-claim curation protocol. Required before Band D field use.
 
-**Next recommended work:**
-- Programme guide authoring (all 20 LTs, v5 unified data as source).
-- T3 authenticity observation protocol (covering all six T3 LTs — authoring underway; LT 7.2 and LT 8.3 exemplar appendices).
-- Dashboard integration against unified-wellbeing-data-v5.json.
+**Recommended next work (once LT 4.5 bank review gate passes):**
+- Commit criterion-bank-v5.json and rebuild unified-wellbeing-data-v6.json (add lt_4_5 entry).
+- T3 observation protocol extension: add LT 4.5 to T3_observation_protocol_20260423.md (currently covers LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 only).
+- Programme guide authoring (all 21 LTs once LT 4.5 integrated, v6 unified data as source).
+- Dashboard integration against unified-wellbeing-data-v6.json.
 
 **QA phase — REAL wellbeing framework — ALL 10 STEPS COMPLETE (prior state).** Step 10 cross-artefact consistency check run 23 April 2026 against v4 artefacts. All 10 checks PASS. Gate closed. v4 artefacts are verified and ready for programme guide and dashboard work.
 
@@ -436,4 +467,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-23 — REAL-7: LT 4.4 committed and integrated. criterion-bank-v4_1.json (253 criteria, 506 edges, DAG PASS). unified-wellbeing-data-v5.json + wellbeing-index-v5.json (20 LTs, all 253 criteria, 0 orphan refs). Next: programme guide authoring; T3 authenticity observation protocol; LT 4.5 and safeguarding protocol commissions.*
+*Last updated 2026-04-24 — REAL-8b: criterion-bank-v5.json generated (269 criteria, 523 edges, DAG PASS). 16 new LT 4.5 T3 criteria (crit_0313–crit_0328). NOT committed — awaiting human review gate. REAL-8a: KUD v4 + LT_4_5_KUD_v2 committed at 027b4c1. Next: human review of LT 4.5 KUD v2 and criterion bank → commit v5 → rebuild unified-wellbeing-data-v6.*
