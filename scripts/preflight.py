@@ -295,6 +295,8 @@ def _scan_py_for_inline_bands(path: Path) -> list[str]:
 
 
 def check_no_inline_band_labels() -> tuple[bool, str]:
+    # Excludes scripts/legacy/ — legacy code preserves historical patterns by design
+    # and is exempt from active-code invariants.
     offences: list[str] = []
     for path in SCRIPTS_DIR.rglob("*.py"):
         if path.name == SELF_NAME:
@@ -302,6 +304,8 @@ def check_no_inline_band_labels() -> tuple[bool, str]:
         if "__pycache__" in path.parts:
             continue
         if path.name == Path(__file__).name:
+            continue
+        if "legacy" in path.parts:
             continue
         offences.extend(_scan_py_for_inline_bands(path))
     if not offences:

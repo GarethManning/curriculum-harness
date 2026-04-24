@@ -4,6 +4,18 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-9b (Phase 0.1C — deprecate generate_real_wellbeing.py to scripts/legacy/)** — 2026-04-24 — COMMITTED.
+
+Deprecated `scripts/generate_real_wellbeing.py` — confirmed legacy by investigation (wrong output path `real-wellbeing-2026-04/` vs live `real-wellbeing/`, schema v1 vs live v2, missing T3 observation fields, not wired to any pipeline, last run REAL-1 2026-04-20). Moved to `scripts/legacy/` with README. Preflight Check 6 scoped to exclude `scripts/legacy/`. Preflight 8/8 PASS.
+
+- **scripts/legacy/generate_real_wellbeing.py** — archived from `scripts/generate_real_wellbeing.py` via `git mv` (history preserved). Archived notice block added after existing docstring. Import of `band_constants` will fail from new location by design — not runnable without path surgery and schema migration.
+- **scripts/legacy/README.md** — explains archival rationale, preflight exemption, and per-file deprecation notes. Documents last run (REAL-1, 2026-04-20) and archive date (REAL-9b, 2026-04-24).
+- **scripts/preflight.py Check 6** — `check_no_inline_band_labels()` now skips any path with `"legacy"` in its parts. Comment added explaining the exemption. Check 6 PASS confirmed.
+- **Current state:** 21 LTs, 269 criteria, 267 unified-data edges. Preflight 8/8 PASS. Commit: (fill after commit).
+- **This session did NOT:** delete the script (archival, not deletion); modify `scripts/build_criterion_bank_v2.py` (still active); add preflight integration checks 9–12 (Phase 0.2 Pass B); touch PROMPT_STANDARDS.md (Phase 0.2 Pass B); attempt to make the legacy script runnable from its new location.
+
+---
+
 **Session REAL-9a (Phase 0.1 + Phase 0.1B — canonical band convention, preflight, bug fixes)** — 2026-04-24 — COMMITTED.
 
 Phase 0.1 (commit cbaaccc) established canonical band convention as single machine-readable source at `band-conventions.json`; `band_constants.py` loader exposes it to all scripts; `preflight.py` runs session-start checks; 11 files reconciled to canonical band labels. Phase 0.1B (this commit) closes two bugs and extends preflight from six to eight checks.
@@ -522,4 +534,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-24 — REAL-9a: Phase 0.1 (cbaaccc) canonical band convention + preflight; Phase 0.1B (this commit) closes two bugs (LT 4.4 E/F age ranges; generate_real_wellbeing BANDS list) and extends preflight to 8 checks. All 8 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.2 — gate criteria and gate-failure procedure in PROMPT_STANDARDS.md.*
+*Last updated 2026-04-24 — REAL-9b: Phase 0.1C — deprecated generate_real_wellbeing.py to scripts/legacy/ with README; preflight Check 6 scoped to exclude legacy/. Preflight 8/8 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.2 — gate criteria and gate-failure procedure in PROMPT_STANDARDS.md.*

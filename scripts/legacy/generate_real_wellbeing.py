@@ -25,6 +25,11 @@ Where PHASE is one of:
     quality       — quality report + readable outputs
 """
 
+# ARCHIVED 2026-04-24 — see scripts/legacy/README.md
+# This script is NOT runnable from this location. The import of band_constants will fail.
+# Restoration requires path surgery and schema migration; do not restore without the work
+# described in scripts/legacy/README.md.
+
 from __future__ import annotations
 
 import asyncio
