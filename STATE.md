@@ -4,6 +4,22 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-9a (Phase 0.1 + Phase 0.1B — canonical band convention, preflight, bug fixes)** — 2026-04-24 — COMMITTED.
+
+Phase 0.1 (commit cbaaccc) established canonical band convention as single machine-readable source at `band-conventions.json`; `band_constants.py` loader exposes it to all scripts; `preflight.py` runs session-start checks; 11 files reconciled to canonical band labels. Phase 0.1B (this commit) closes two bugs and extends preflight from six to eight checks.
+
+- **band-conventions.json** — `docs/reference-corpus/real-wellbeing/band-conventions.json`. Canonical REAL band metadata. Six bands A–F. Bands E and F: grade-only identifiers, no Dragon names, ages_approx null. Phase 0.1, commit cbaaccc.
+- **band_constants.py** — `scripts/band_constants.py`. Loads BAND_META, BAND_LABELS, VALID_BAND_LETTERS from band-conventions.json at import time. Raises ImportError if missing or malformed. Phase 0.1, commit cbaaccc.
+- **preflight.py — extended to 8 checks (Phase 0.1B).** `scripts/preflight.py`. Checks 1–6 from Phase 0.1; Checks 7 (unified data band_label walk) and 8 (band-conventions.json self-check) added in Phase 0.1B. All 8 PASS. Exit 0 on all-pass, 1 on any fail.
+- **LT 4.4 KUD v2 — Band E/F age ranges fixed (Phase 0.1B).** `docs/reference-corpus/real-wellbeing/LT_4_4_KUD_v2_20260423.md`. Non-canonical age ranges "14–16" (Band E) and "16–18" (Band F) removed from Band Statements table and section headers; replaced with canonical grade-level identifiers "G9–10" and "G11–12". Change log entry added.
+- **generate_real_wellbeing.py — BANDS list fixed (Phase 0.1B).** `scripts/generate_real_wellbeing.py`. `BANDS = ["A", "B", "C", "D"]` replaced with `BANDS = sorted(BAND_META.keys())`. Hardcoded `* 4` band-count in diagnostic print replaced with `* len(BANDS)`. Previously would have silently skipped Bands E and F if invoked.
+- **Check 7 (unified data bands)** — walks all band_label fields in unified data JSON, asserts canonical. Unified data has zero band_label fields; PASS with note.
+- **Check 8 (canonical self-check)** — loads band-conventions.json directly, asserts version/source_of_truth/6-band structure. PASS.
+- **Current state (post-Phase 0.1B):** 21 LTs, 269 criteria, 267 unified-data edges (523 criterion-bank edges), all 8 preflight checks PASS.
+- **This session did NOT:** Phase 0.2 (named gate criteria and gate-failure procedure in PROMPT_STANDARDS.md); uk_years field; CASEL/Circle prose fixes; markdown prose in live docs; archived bank versions.
+
+---
+
 **Session REAL-8e (LT 4.5 observation exemplar library — Bands D and F)** — 2026-04-24 — COMMITTED.
 
 Authored observation exemplar library for LT 4.5 — Emotional Self-Management in Practice — covering Band D (three criteria) and Band F (four criteria). Seven exemplar sections, each with authentic observation vignettes, confusable-behaviour anchors, absence indicators, and observer-calibration notes. Bands A, B, C, E deferred to v2.
@@ -448,7 +464,9 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**First action next session: T3 observation protocol extension.** Add LT 4.5 to `T3_observation_protocol_20260423.md` (currently covers LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 only). LT 4.5 requires a Band D rupture-and-repair section (distinguishing genuine initiation from defensive acknowledgement) and a Band F pattern-articulation section (distinguishing genuine model use from performed articulation).
+**First action next session: Phase 0.2 — add named gate criteria and gate-failure procedure to PROMPT_STANDARDS.md.** Define what a gate failure looks like, who is notified, and what the stop condition is. Required before any downstream artefact generation session that invokes a gate.
+
+**Deferred — T3 observation protocol extension (reinstated after Phase 0.2 gate is in place).** Add LT 4.5 to `T3_observation_protocol_20260423.md` (currently covers LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 only). LT 4.5 requires a Band D rupture-and-repair section (distinguishing genuine initiation from defensive acknowledgement) and a Band F pattern-articulation section (distinguishing genuine model use from performed articulation).
 
 **Open commissions for Competency 4 (not blocking other work):**
 - **LT 4.5 observation exemplar library** — Band D (rupture-and-repair: distinguishing genuine initiation from defensive acknowledgement) and Band F (pattern articulation as working model: distinguishing genuine model use from performed articulation). Commission flagged in LT 4.5 authoring notes; not yet started.
@@ -504,4 +522,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-24 — REAL-8e: LT 4.5 exemplar library v1 committed (Bands D and F; seven criteria). REAL-8d: unified-wellbeing-data-v6.json (21 LTs, 269 criteria, 523 edges) and wellbeing-index-v6.json committed. REAL-8c: criterion-bank-v5_1.json committed at 21702f6. REAL-8b: criterion-bank-v5.json committed at d42a6ec. REAL-8a: KUD v4 + LT_4_5_KUD_v2 committed at 027b4c1. Next: Extend T3 observation protocol to include LT 4.5 cross-references (Band D rupture-and-repair; Band F pattern-articulation).*
+*Last updated 2026-04-24 — REAL-9a: Phase 0.1 (cbaaccc) canonical band convention + preflight; Phase 0.1B (this commit) closes two bugs (LT 4.4 E/F age ranges; generate_real_wellbeing BANDS list) and extends preflight to 8 checks. All 8 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.2 — gate criteria and gate-failure procedure in PROMPT_STANDARDS.md.*

@@ -241,7 +241,7 @@ def check_field_derivation(criteria: list[dict]) -> tuple[bool, str]:
     return len(inconsistent) == 0, details
 
 
-# ── Check 6 — no inline BAND_LABELS dicts in scripts ──────────────────────────
+# ── Check 6 — no inline BAND_LABELS dicts in scripts ─────────────────────────
 
 
 def _scan_py_for_inline_bands(path: Path) -> list[str]:
@@ -310,6 +310,102 @@ def check_no_inline_band_labels() -> tuple[bool, str]:
     return False, details
 
 
+# ── Check 7 — unified data internal band consistency ─────────────────────────
+
+
+def _walk_band_labels(obj: object, path: str = "$") -> list[tuple[str, str]]:
+    """Recursively yield (json_path, value) for every 'band_label' key in obj."""
+    found: list[tuple[str, str]] = []
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            new_path = f"{path}.{k}"
+            if k == "band_label":
+                found.append((new_path, v))
+            else:
+                found.extend(_walk_band_labels(v, new_path))
+    elif isinstance(obj, list):
+        for i, item in enumerate(obj):
+            found.extend(_walk_band_labels(item, f"{path}[{i}]"))
+    return found
+
+
+def check_unified_data_bands(unified: dict) -> tuple[bool, str]:
+    canonical = set(BAND_LABELS.values())
+    all_labels = _walk_band_labels(unified)
+    if not all_labels:
+        return True, "no band_label fields present in unified data"
+    compliant = [(p, v) for p, v in all_labels if v in canonical]
+    non_compliant = [(p, v) for p, v in all_labels if v not in canonical]
+    details = (
+        f"{len(all_labels)} found, {len(compliant)} compliant, "
+        f"{len(non_compliant)} non-compliant"
+    )
+    if non_compliant:
+        sample = "; ".join(f"{p}='{v}'" for p, v in non_compliant[:10])
+        details += f". First {min(10, len(non_compliant))}: {sample}"
+    return len(non_compliant) == 0, details
+
+
+# ── Check 8 — band-conventions.json self-check ────────────────────────────────
+
+_BAND_CONVENTIONS_REL = (
+    "docs/reference-corpus/real-wellbeing/band-conventions.json"
+)
+_REQUIRED_BAND_FIELDS = {"band_label", "letter", "dragons", "grades", "ages_approx"}
+_EXPECTED_BAND_KEYS = {"A", "B", "C", "D", "E", "F"}
+
+
+def check_band_conventions_self(repo_root: Path) -> tuple[bool, str]:
+    conventions_path = repo_root / _BAND_CONVENTIONS_REL
+    try:
+        with conventions_path.open("r", encoding="utf-8") as fh:
+            data = json.load(fh)
+    except OSError as exc:
+        return False, f"cannot open band-conventions.json: {exc}"
+    except json.JSONDecodeError as exc:
+        return False, f"band-conventions.json malformed JSON: {exc}"
+
+    issues: list[str] = []
+
+    if "version" not in data or not isinstance(data.get("version"), str):
+        issues.append("missing or non-string 'version' field")
+
+    if "source_of_truth" not in data:
+        issues.append("missing 'source_of_truth' field")
+    else:
+        sot_path = repo_root / data["source_of_truth"]
+        if not sot_path.exists():
+            issues.append(
+                f"source_of_truth path does not exist on disk: {data['source_of_truth']}"
+            )
+
+    bands = data.get("bands")
+    if not isinstance(bands, dict):
+        issues.append("'bands' is missing or not an object")
+    else:
+        actual_keys = set(bands.keys())
+        if actual_keys != _EXPECTED_BAND_KEYS:
+            extra = sorted(actual_keys - _EXPECTED_BAND_KEYS)
+            missing = sorted(_EXPECTED_BAND_KEYS - actual_keys)
+            issues.append(
+                f"'bands' key mismatch — extra: {extra}, missing: {missing}"
+            )
+        for letter, entry in bands.items():
+            if not isinstance(entry, dict):
+                issues.append(f"band '{letter}' is not an object")
+                continue
+            missing_fields = sorted(_REQUIRED_BAND_FIELDS - set(entry.keys()))
+            if missing_fields:
+                issues.append(f"band '{letter}' missing fields: {missing_fields}")
+
+    if not issues:
+        return True, (
+            "band-conventions.json valid — version present, source_of_truth exists, "
+            "6 bands (A–F), all required fields present"
+        )
+    return False, "; ".join(issues)
+
+
 # ── Runner ────────────────────────────────────────────────────────────────────
 
 
@@ -343,6 +439,8 @@ def main(argv: list[str] | None = None) -> int:
     c4_ok, c4 = check_schema_compliance(criteria, lts)
     c5_ok, c5 = check_field_derivation(criteria)
     c6_ok, c6 = check_no_inline_band_labels()
+    c7_ok, c7 = check_unified_data_bands(unified)
+    c8_ok, c8 = check_band_conventions_self(REPO_ROOT)
 
     print(f"Check 1 (band_label compliance):       {_fmt_pass_fail(c1_ok)} — {c1}")
     print(f"Check 2 (LT count):                    {_fmt_pass_fail(c2_ok)} — {c2}")
@@ -350,8 +448,10 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Check 4 (schema compliance):           {_fmt_pass_fail(c4_ok)} — {c4}")
     print(f"Check 5 (field-derivation):            {_fmt_pass_fail(c5_ok)} — {c5}")
     print(f"Check 6 (no inline BAND_LABELS):       {_fmt_pass_fail(c6_ok)} — {c6}")
+    print(f"Check 7 (unified data bands):          {_fmt_pass_fail(c7_ok)} — {c7}")
+    print(f"Check 8 (canonical self-check):        {_fmt_pass_fail(c8_ok)} — {c8}")
     print()
-    overall_ok = all([c1_ok, c2_ok, c3_ok, c4_ok, c5_ok, c6_ok])
+    overall_ok = all([c1_ok, c2_ok, c3_ok, c4_ok, c5_ok, c6_ok, c7_ok, c8_ok])
     print(f"OVERALL: {_fmt_pass_fail(overall_ok)}")
     return 0 if overall_ok else 1
 

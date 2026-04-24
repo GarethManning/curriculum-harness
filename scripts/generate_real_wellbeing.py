@@ -56,7 +56,7 @@ SOURCE_SLUG = "real-wellbeing-2026-04"
 SOURCE_NAME = "REAL School Budapest — Wellbeing Framework"
 SCHEMA_VERSION = "v1"
 
-BANDS = ["A", "B", "C", "D"]
+BANDS = sorted(BAND_META.keys())
 
 # ── Source data ────────────────────────────────────────────────────────────────
 
@@ -774,7 +774,7 @@ def run_all_gate_checks() -> dict:
             }
 
     print(f"  LT gate: {lt_fail_count}/{len(LEARNING_TARGETS)} failures")
-    print(f"  Band gate: {band_fail_count}/{len(LEARNING_TARGETS) * 4} failures")
+    print(f"  Band gate: {band_fail_count}/{len(LEARNING_TARGETS) * len(BANDS)} failures")
 
     return {
         "source_slug": SOURCE_SLUG,
