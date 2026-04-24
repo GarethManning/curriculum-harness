@@ -4,6 +4,22 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-9d (Phase 0.3 — panel-review skill v1.0.0 → v1.0.1 deployed to claude-education-skills)** — 2026-04-24 — COMMITTED.
+
+Built and deployed the panel-review skill (v1.0.0, then v1.0.1 cleanup) at `skills/professional-learning/panel-review/SKILL.md` in the claude-education-skills repo. Seven-role depersonalised panel, sequential-isolation mode. Reviews five artefact types: KUD, criterion bank, LT definition, crosswalk, scope-and-sequence (with documented panel-weakness caveat). Gate rule: mean_overall ≥ 88 AND no role mean < 70. Worked example produced mean 88.25 with sceptic at 66.67 — FAIL verdict via the floor rule, validating that the rule catches what it's designed to catch. Skill count 113 → 114. v1.0.1 cleanup removed school-specific references to keep the skill domain-agnostic for the public skills library.
+
+- **panel-review skill v1.0.0** — `skills/professional-learning/panel-review/SKILL.md` in claude-education-skills repo. Commit `72e2c77`. Seven roles: Lead Curriculum Designer, Assessment Specialist, Pedagogical Theory Expert, Practitioner (classroom teacher), Sceptic, Equity & Inclusion Lens, Subject Expert. Sequential-isolation mode: each role's review conducted in a separate conversational segment to prevent cross-contamination. Five supported artefact types: KUD chart, criterion bank, LT definition, crosswalk, scope-and-sequence.
+- **panel-review skill v1.0.1** — follow-up commit in claude-education-skills removing school-specific references. Removed REAL School Budapest naming from worked examples and prompt text to keep skill domain-agnostic for the public skills library.
+- **Gate rule:** mean_overall ≥ 88 AND no role mean < 70 (floor rule). Both conditions must pass independently.
+- **Worked example result:** mean_overall 88.25, sceptic role 66.67 → FAIL verdict via floor rule. Validates that the floor rule catches role-level failures even when the mean passes.
+- **Panel-weakness caveat documented:** scope-and-sequence reviews are subject to reduced panel validity given the panel's lack of implementation context. Documented in skill.
+- **Skill count:** 113 → 114.
+- **PROMPT_STANDARDS.md interim note closed:** "Interim note on panel mode" section updated to record Phase 0.3 as shipped in sequential-isolation mode. Prior caveat removed as of 24 April 2026.
+- **Current state:** 21 LTs, 269 criteria, 267 unified-data edges. Preflight 12/12 PASS. Panel-review skill deployed, not yet verified against real artefacts.
+- **This session did NOT:** invoke the panel-review skill on any real REAL Wellbeing artefact (Phase 0.3 verification); validate the 88 threshold (Phase 0.5); implement full parallel-API mode; modify any criterion bank, unified data, or KUD files.
+
+---
+
 **Session REAL-9c (Phase 0.2 Pass B — preflight 8→12 checks + PROMPT_STANDARDS gate criteria, specificity rule, gate-failure procedure)** — 2026-04-24 — COMMITTED.
 
 Extended preflight from 8 to 12 checks (criterion-to-LT integrity, LT-to-criterion integrity, orphan detection, criterion-level prerequisite DAG). Added four new sections to PROMPT_STANDARDS.md: preflight session-start discipline, specificity rule, named gate criteria (four gates), gate-failure procedure (three-cycle). Interim notes documented for shared-context panel mode (until Phase 0.3) and 88 threshold (until Phase 0.5).
@@ -488,7 +504,7 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 
 ## 5. Next session
 
-**First action next session: Phase 0.3 — add independent-mode option to panel review skill.** Separate API calls per persona (no shared context) with at least one reviewer on a non-Opus model. Closes the interim note in PROMPT_STANDARDS.md "Named gate criteria" section; until then all "independent-mode panel mean ≥ 88" gate criteria operate under shared-context mode as an explicit interim.
+**First action next session: Phase 0.3 verification — invoke the panel-review skill on LT 4.5 KUD v2 as a first real-run calibration.** Panel-review skill v1.0.1 is deployed in claude-education-skills; this session confirms it runs correctly against a real REAL Wellbeing artefact and that the gate rule (mean_overall ≥ 88, no role mean < 70) returns a defensible verdict.
 
 **Deferred — T3 observation protocol extension (reinstated after Phase 0.2 gate is in place).** Add LT 4.5 to `T3_observation_protocol_20260423.md` (currently covers LTs 1.1, 1.2, 1.3, 3.2, 7.2, 8.3 only). LT 4.5 requires a Band D rupture-and-repair section (distinguishing genuine initiation from defensive acknowledgement) and a Band F pattern-articulation section (distinguishing genuine model use from performed articulation).
 
@@ -546,4 +562,4 @@ cd ~/Github/curriculum-harness && claude --dangerously-skip-permissions --model 
 
 ---
 
-*Last updated 2026-04-24 — REAL-9b: Phase 0.1C — deprecated generate_real_wellbeing.py to scripts/legacy/ with README; preflight Check 6 scoped to exclude legacy/. Preflight 8/8 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.2 — gate criteria and gate-failure procedure in PROMPT_STANDARDS.md.*
+*Last updated 2026-04-24 — REAL-9d: Phase 0.3 shipped — panel-review skill v1.0.0 → v1.0.1 deployed to claude-education-skills (72e2c77 initial; v1.0.1 cleanup follow-up). Seven-role depersonalised panel, sequential-isolation mode, floor+mean gate rule. PROMPT_STANDARDS.md shared-context interim caveat closed. Preflight 12/12 PASS. 21 LTs, 269 criteria, 267 unified-data edges. Next: Phase 0.3 verification run on LT 4.5 KUD v2.*

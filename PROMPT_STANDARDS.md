@@ -99,7 +99,7 @@ Independent-mode panel mean on the artefact ≥ 88. Teacher validation convergen
 
 ### Interim note on panel mode
 
-Until Phase 0.3 ships independent-mode panel review, gate criteria referencing "independent-mode panel mean ≥ 88" operate under shared-context mode as an explicit interim. This interim is unsafe as a long-term state because shared-context personas correlate; panel means under shared context are less meaningful. The interim is accepted on the explicit understanding that Phase 0.3 closes it. This paragraph is removed from PROMPT_STANDARDS.md when Phase 0.3 ships.
+Phase 0.3 has shipped in sequential-isolation mode (claude-education-skills, panel-review skill v1.0.1, commit 72e2c77 + cleanup). Gate criteria referencing panel review now invoke this skill, which executes seven segmented-context role reviews within a single session. This is an improvement on shared-context mode but is not full parallel-API mode — true parallel independence is deferred to a future skill version. The interim caveat from the prior draft is considered closed as of 24 April 2026.
 
 ### Note on the 88 threshold
 
