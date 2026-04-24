@@ -11,7 +11,7 @@ Deprecated `scripts/generate_real_wellbeing.py` — confirmed legacy by investig
 - **scripts/legacy/generate_real_wellbeing.py** — archived from `scripts/generate_real_wellbeing.py` via `git mv` (history preserved). Archived notice block added after existing docstring. Import of `band_constants` will fail from new location by design — not runnable without path surgery and schema migration.
 - **scripts/legacy/README.md** — explains archival rationale, preflight exemption, and per-file deprecation notes. Documents last run (REAL-1, 2026-04-20) and archive date (REAL-9b, 2026-04-24).
 - **scripts/preflight.py Check 6** — `check_no_inline_band_labels()` now skips any path with `"legacy"` in its parts. Comment added explaining the exemption. Check 6 PASS confirmed.
-- **Current state:** 21 LTs, 269 criteria, 267 unified-data edges. Preflight 8/8 PASS. Commit: (fill after commit).
+- **Current state:** 21 LTs, 269 criteria, 267 unified-data edges. Preflight 8/8 PASS. Commit: `6ec0825`.
 - **This session did NOT:** delete the script (archival, not deletion); modify `scripts/build_criterion_bank_v2.py` (still active); add preflight integration checks 9–12 (Phase 0.2 Pass B); touch PROMPT_STANDARDS.md (Phase 0.2 Pass B); attempt to make the legacy script runnable from its new location.
 
 ---
