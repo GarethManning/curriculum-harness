@@ -1,0 +1,2672 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "generated_date": "2026-04-24",
+    "source_file": "docs/reference-corpus/crosswalks/real-wellbeing-x-all-frameworks-v4-matrix.md",
+    "pair_count": 84,
+    "theme_count": 23,
+    "note_bands_covered_external": "bands_covered_external is null for all pairs. The v4 matrix prose does not express external band coverage per LT in a parseable form; null is reported per the Phase 2a gap-handling rule rather than invented."
+  },
+  "pairs": [
+    {
+      "lt_id": "lt_1_1",
+      "lt_name": "Self-Awareness & Regulation",
+      "competency_id": "C1",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE names managing emotions propositionally at EoP and EoS; REAL sequences regulation as practised skill A–F with mechanism-level explanation by D",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_1",
+      "lt_name": "Self-Awareness & Regulation",
+      "competency_id": "C1",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CfW WM2 PS1–PS5 covers self-regulation in strongly parallel progression",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_1",
+      "lt_name": "Self-Awareness & Regulation",
+      "competency_id": "C1",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Self-Management A–F closely parallels LT 1.1",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_1",
+      "lt_name": "Self-Awareness & Regulation",
+      "competency_id": "C1",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CS Dimension 3 Emotional Skills Y2–Y12 closely parallels; CS has equal behavioural specificity",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_2",
+      "lt_name": "Social Awareness & Empathy",
+      "competency_id": "C1",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE names empathy/respect at EoP and EoS but at lower grain; Band C empathy specifically absent in RSHE",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_2",
+      "lt_name": "Social Awareness & Empathy",
+      "competency_id": "C1",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CfW WM2/WM4 empathy progression PS1–PS5 parallels LT 1.2 A–E; Band F systemic-empathy absent in CfW",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_2",
+      "lt_name": "Social Awareness & Empathy",
+      "competency_id": "C1",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Social Awareness A–F closely parallels LT 1.2",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_2",
+      "lt_name": "Social Awareness & Empathy",
+      "competency_id": "C1",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CS Dimension 6 Situational Skills Y2–Y12 closely parallels",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_3",
+      "lt_name": "Personal Identity & Cultural Self-Awareness",
+      "competency_id": "C1",
+      "external_framework": "RSHE",
+      "alignment_form": "absent",
+      "rationale": "RSHE has no identity content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_3",
+      "lt_name": "Personal Identity & Cultural Self-Awareness",
+      "competency_id": "C1",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM4 PS4–PS5 addresses identity-shaped-by-groups at Bands D–E only; Bands A–C and F absent",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_3",
+      "lt_name": "Personal Identity & Cultural Self-Awareness",
+      "competency_id": "C1",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL Self-Awareness A–F covers identity but affirmative rather than interrogative; LT 1.3 orientation is culturally-situated self-awareness rather than strengths identification",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_1_3",
+      "lt_name": "Personal Identity & Cultural Self-Awareness",
+      "competency_id": "C1",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 1 Y2–Y12 covers identity affirmatively; CS Dimension 4 Y2–Y12 covers shared humanity; together they approximate LT 1.3 but neither carries LT 1.3's cultural-lens orientation",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_1",
+      "lt_name": "Focused Attention & Strategy",
+      "competency_id": "C2",
+      "external_framework": "RSHE",
+      "alignment_form": "absent",
+      "rationale": "RSHE has no attention content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_1",
+      "lt_name": "Focused Attention & Strategy",
+      "competency_id": "C2",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM2 PS3–PS4 touches attention awareness; no systematic progression to Band F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_1",
+      "lt_name": "Focused Attention & Strategy",
+      "competency_id": "C2",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL persistence and task-focus content appears at B and E but no Band F attention-audit content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_1",
+      "lt_name": "Focused Attention & Strategy",
+      "competency_id": "C2",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Y9 sustained-practice content touches; no systematic progression",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_2",
+      "lt_name": "Reflective Decision-Making",
+      "competency_id": "C2",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE decision-making content at EoS only — Bands D–E; Bands A–C absent",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_2",
+      "lt_name": "Reflective Decision-Making",
+      "competency_id": "C2",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CfW WM3 PS1–PS5 closely parallels LT 2.2 A–E",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_2",
+      "lt_name": "Reflective Decision-Making",
+      "competency_id": "C2",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Responsible Decision-Making A–F closely parallels",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_2_2",
+      "lt_name": "Reflective Decision-Making",
+      "competency_id": "C2",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimensions 7 and 9 touch decision-making Y2–Y12; less systematic than LT 2.2",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_1",
+      "lt_name": "Health Literacy & Habits",
+      "competency_id": "C3",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE health habits content at EoS only — Bands D–E; Bands A–C absent",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_1",
+      "lt_name": "Health Literacy & Habits",
+      "competency_id": "C3",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM1 PS1–PS5 covers diet and physical health; LT 3.1 Band E–F structural-factors and systems content absent in CfW",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_1",
+      "lt_name": "Health Literacy & Habits",
+      "competency_id": "C3",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no physical health habits content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_1",
+      "lt_name": "Health Literacy & Habits",
+      "competency_id": "C3",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no physical health habits content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_2",
+      "lt_name": "Self-Care & Resilience",
+      "competency_id": "C3",
+      "external_framework": "RSHE",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "RSHE emotional resilience and help-seeking at EoP and EoS closely parallels LT 3.2 A–E; Band F absent in RSHE",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_2",
+      "lt_name": "Self-Care & Resilience",
+      "competency_id": "C3",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CfW WM1 help-seeking and WM2 wellbeing-sustaining closely parallels LT 3.2 A–F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_2",
+      "lt_name": "Self-Care & Resilience",
+      "competency_id": "C3",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL Self-Management A–F covers coping and help-seeking but not framework-construction at Band F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_3_2",
+      "lt_name": "Self-Care & Resilience",
+      "competency_id": "C3",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Y6–Y12 covers resilience strategies; Band F articulated-framework absent in CS",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_1",
+      "lt_name": "Bodies, Boundaries & Consent",
+      "competency_id": "C4",
+      "external_framework": "RSHE",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "RSHE consent, boundaries, power-dynamics content closely parallels LT 4.1 A–E; Band F absent in RSHE",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_1",
+      "lt_name": "Bodies, Boundaries & Consent",
+      "competency_id": "C4",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM5 covers healthy-relationship safety at PS2–PS5; explicit consent framing less developed than RSHE or LT 4.1",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_1",
+      "lt_name": "Bodies, Boundaries & Consent",
+      "competency_id": "C4",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL Relationship Skills A–D addresses assertive communication but consent as explicit construct less developed",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_1",
+      "lt_name": "Bodies, Boundaries & Consent",
+      "competency_id": "C4",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 9 covers assertiveness Y2–Y12; consent as explicit construct less developed",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_2",
+      "lt_name": "Puberty, Health & Safe Choices",
+      "competency_id": "C4",
+      "external_framework": "RSHE",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "RSHE puberty, contraception, STI, sexual-health-services content closely parallels LT 4.2 B–E",
+      "bands_covered_real": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_2",
+      "lt_name": "Puberty, Health & Safe Choices",
+      "competency_id": "C4",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "absent",
+      "rationale": "CfW has no puberty or sexual-health content",
+      "bands_covered_real": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_2",
+      "lt_name": "Puberty, Health & Safe Choices",
+      "competency_id": "C4",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no puberty or sexual-health content",
+      "bands_covered_real": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_2",
+      "lt_name": "Puberty, Health & Safe Choices",
+      "competency_id": "C4",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no puberty or sexual-health content",
+      "bands_covered_real": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_3",
+      "lt_name": "Active Bystander & Anti-Discrimination",
+      "competency_id": "C4",
+      "external_framework": "RSHE",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "RSHE bullying, prejudice, discrimination content at EoP and EoS closely parallels LT 4.3 A–E; RSHE adds legal framing at D and E that LT 4.3 does not adopt",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_3",
+      "lt_name": "Active Bystander & Anti-Discrimination",
+      "competency_id": "C4",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "absent",
+      "rationale": "CfW has no bullying or anti-discrimination content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_3",
+      "lt_name": "Active Bystander & Anti-Discrimination",
+      "competency_id": "C4",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL stereotyping, harmful-social-dynamics, cultural-injustice content at D–F; bystander-response as systematic skill absent in CASEL",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_3",
+      "lt_name": "Active Bystander & Anti-Discrimination",
+      "competency_id": "C4",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 4 shared-humanity, Dimension 11 social-justice content Y6–Y12; bystander reasoning less systematic",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_4",
+      "lt_name": "Emotional Development & Relationships",
+      "competency_id": "C4",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE mind-body and mental-health content at EoS addresses adjacent territory but relational-development framing is absent",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_4",
+      "lt_name": "Emotional Development & Relationships",
+      "competency_id": "C4",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM2 and WM5 touch adjacent territory; biological/psychological explanation of attraction/rejection/loss absent in CfW",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_4",
+      "lt_name": "Emotional Development & Relationships",
+      "competency_id": "C4",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no content on emotional-developmental science applied to relationships",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_4",
+      "lt_name": "Emotional Development & Relationships",
+      "competency_id": "C4",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 2 Y9 covers amygdala-function; the systematic propositional framing of LT 4.4 Bands D–F absent in CS",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_5",
+      "lt_name": "Emotional Self-Management in Practice",
+      "competency_id": "C4",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE manage-emotions content at EoS covers adjacent territory; dispositional/observational framing absent in RSHE",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_5",
+      "lt_name": "Emotional Self-Management in Practice",
+      "competency_id": "C4",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM2 PS3–PS5 covers self-regulation as skill; dispositional-across-contexts observational framing absent in CfW",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_5",
+      "lt_name": "Emotional Self-Management in Practice",
+      "competency_id": "C4",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Self-Management behavioural indicators A–F function similarly to LT 4.5 observation indicators",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_4_5",
+      "lt_name": "Emotional Self-Management in Practice",
+      "competency_id": "C4",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CS Dimension 3 Y2–Y12 observable indicators closely parallel LT 4.5 observation indicators, including behavioural specificity and multi-strategy practice at Y12",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_1",
+      "lt_name": "Interpersonal Skills & Communication",
+      "competency_id": "C5",
+      "external_framework": "RSHE",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "RSHE communicating-respectfully and conflict-management at EoP and EoS closely parallels LT 5.1 A–E",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_1",
+      "lt_name": "Interpersonal Skills & Communication",
+      "competency_id": "C5",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CfW WM5 communication and WM2 emotional-communication closely parallels LT 5.1 A–E",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_1",
+      "lt_name": "Interpersonal Skills & Communication",
+      "competency_id": "C5",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Relationship Skills A–F closely parallels",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_1",
+      "lt_name": "Interpersonal Skills & Communication",
+      "competency_id": "C5",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CS Dimension 5 Interpersonal Skills Y2–Y12 closely parallels",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_2",
+      "lt_name": "Community Engagement & Purpose",
+      "competency_id": "C5",
+      "external_framework": "RSHE",
+      "alignment_form": "absent",
+      "rationale": "RSHE has no community-engagement content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_2",
+      "lt_name": "Community Engagement & Purpose",
+      "competency_id": "C5",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM4 pro-social interaction and advocacy at PS3–PS5 touches; community-project practice absent in CfW",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_2",
+      "lt_name": "Community Engagement & Purpose",
+      "competency_id": "C5",
+      "external_framework": "CASEL",
+      "alignment_form": "aligned-with-reciprocal-treatment",
+      "rationale": "CASEL Social Awareness community-contribution and Responsible Decision-Making civic content C–F parallels LT 5.2 A–F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_5_2",
+      "lt_name": "Community Engagement & Purpose",
+      "competency_id": "C5",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 11 social-justice and Dimension 12 spirituality-meaning content covers purpose; community-project practice less emphasised",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_1",
+      "lt_name": "Brain, Body & Wellbeing Science",
+      "competency_id": "C6",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE mind-body-connection at EoS only — Band D–E; no Band A–C systematic science",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_1",
+      "lt_name": "Brain, Body & Wellbeing Science",
+      "competency_id": "C6",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM1 physical-emotional-connections at PS1–PS5; no systematic neuroscience A–F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_1",
+      "lt_name": "Brain, Body & Wellbeing Science",
+      "competency_id": "C6",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no neuroscience content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_1",
+      "lt_name": "Brain, Body & Wellbeing Science",
+      "competency_id": "C6",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 2 Y9 covers amygdala briefly; no systematic progression A–F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_2",
+      "lt_name": "Health Information Literacy",
+      "competency_id": "C6",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE health-information-access at EoS only — Bands D–E; no Band A–C systematic literacy",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_2",
+      "lt_name": "Health Information Literacy",
+      "competency_id": "C6",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM1 informed-choices content touches health-information literacy; no systematic A–F evidence-evaluation progression",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_2",
+      "lt_name": "Health Information Literacy",
+      "competency_id": "C6",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no health-literacy content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_6_2",
+      "lt_name": "Health Information Literacy",
+      "competency_id": "C6",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no health-literacy content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_1",
+      "lt_name": "Pattern Analysis & Adjustment",
+      "competency_id": "C7",
+      "external_framework": "RSHE",
+      "alignment_form": "absent",
+      "rationale": "RSHE has no metacognition content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_1",
+      "lt_name": "Pattern Analysis & Adjustment",
+      "competency_id": "C7",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM3 reflection-on-experiences and WM4 groups-shape-identity at PS3–PS5 touches metacognition; no structured-protocol content at E–F",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_1",
+      "lt_name": "Pattern Analysis & Adjustment",
+      "competency_id": "C7",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL Self-Awareness and Responsible Decision-Making reflection content A–F is adjacent but less explicit as metacognitive practice",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_1",
+      "lt_name": "Pattern Analysis & Adjustment",
+      "competency_id": "C7",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 1 and Dimension 12 reflection content; no structured protocol",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_2",
+      "lt_name": "Self-Direction in Practice",
+      "competency_id": "C7",
+      "external_framework": "RSHE",
+      "alignment_form": "absent",
+      "rationale": "RSHE has no self-direction dispositional content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_2",
+      "lt_name": "Self-Direction in Practice",
+      "competency_id": "C7",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "partial-alignment",
+      "rationale": "CfW WM2 PS4–PS5 self-awareness and independent attention; no dispositional-across-contexts framing",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_2",
+      "lt_name": "Self-Direction in Practice",
+      "competency_id": "C7",
+      "external_framework": "CASEL",
+      "alignment_form": "partial-alignment",
+      "rationale": "CASEL growth-mindset and perseverance content parallels adjacent territory; observational/dispositional framing less explicit",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_7_2",
+      "lt_name": "Self-Direction in Practice",
+      "competency_id": "C7",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "partial-alignment",
+      "rationale": "CS Dimension 7 Y2–Y12 confidence/initiative parallels; less systematic",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_1",
+      "lt_name": "Information Verification & Media Literacy",
+      "competency_id": "C8",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE online-risks content at EoP and EoS touches adjacent territory; systematic verification-method progression absent in RSHE",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_1",
+      "lt_name": "Information Verification & Media Literacy",
+      "competency_id": "C8",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "absent",
+      "rationale": "CfW has no media-literacy or verification content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_1",
+      "lt_name": "Information Verification & Media Literacy",
+      "competency_id": "C8",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no verification content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_1",
+      "lt_name": "Information Verification & Media Literacy",
+      "competency_id": "C8",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no verification content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_2",
+      "lt_name": "Digital Influence & Psychological Agency",
+      "competency_id": "C8",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE social-media-influence content at EoS touches; systematic persuasive-design analysis absent in RSHE",
+      "bands_covered_real": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_2",
+      "lt_name": "Digital Influence & Psychological Agency",
+      "competency_id": "C8",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "absent",
+      "rationale": "CfW has no digital-influence content",
+      "bands_covered_real": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_2",
+      "lt_name": "Digital Influence & Psychological Agency",
+      "competency_id": "C8",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no digital-influence content",
+      "bands_covered_real": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_2",
+      "lt_name": "Digital Influence & Psychological Agency",
+      "competency_id": "C8",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no digital-influence content",
+      "bands_covered_real": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_3",
+      "lt_name": "Digital Assertiveness & Wellbeing Strategies",
+      "competency_id": "C8",
+      "external_framework": "RSHE",
+      "alignment_form": "partial-alignment",
+      "rationale": "RSHE online-respect and digital-footprints content at EoP and EoS touches; dispositional-across-contexts framing absent",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_3",
+      "lt_name": "Digital Assertiveness & Wellbeing Strategies",
+      "competency_id": "C8",
+      "external_framework": "Welsh CfW",
+      "alignment_form": "absent",
+      "rationale": "CfW has no digital-wellbeing content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_3",
+      "lt_name": "Digital Assertiveness & Wellbeing Strategies",
+      "competency_id": "C8",
+      "external_framework": "CASEL",
+      "alignment_form": "absent",
+      "rationale": "CASEL has no digital-wellbeing content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    },
+    {
+      "lt_id": "lt_8_3",
+      "lt_name": "Digital Assertiveness & Wellbeing Strategies",
+      "competency_id": "C8",
+      "external_framework": "Circle Solutions",
+      "alignment_form": "absent",
+      "rationale": "CS has no digital-wellbeing content",
+      "bands_covered_real": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "bands_covered_external": null
+    }
+  ],
+  "themes": [
+    {
+      "theme_id": "T01",
+      "theme_name": "Emotional Awareness, Vocabulary & Self-Regulation",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 1
+      }
+    },
+    {
+      "theme_id": "T02",
+      "theme_name": "Empathy & Perspective-Taking",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "E": 0,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T03",
+      "theme_name": "Conflict Resolution & Relationship Repair",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "E": 1,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T04",
+      "theme_name": "Focused Attention & Mindfulness",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 1,
+        "E": 3,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T05",
+      "theme_name": "Reflective & Values-Based Decision-Making",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T06",
+      "theme_name": "Physical Health Habits",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 2,
+        "E": 2,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T07",
+      "theme_name": "Self-Care, Help-Seeking & Resilience",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T08",
+      "theme_name": "Bodies, Boundaries & Consent",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 0,
+        "C": 1,
+        "D": 1,
+        "E": 2,
+        "F": 3
+      }
+    },
+    {
+      "theme_id": "T09",
+      "theme_name": "Puberty, Sexual Health & Safe Choices",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "E": 3,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T10",
+      "theme_name": "Interpersonal & Assertive Communication",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 2,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T11",
+      "theme_name": "Community Engagement, Purpose & Civic Action",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": false,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "E": 1,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T12",
+      "theme_name": "Wellbeing Science & Neuroscience Literacy",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 1,
+        "E": 3,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T13",
+      "theme_name": "Health & Evidence Literacy",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 2,
+        "E": 3,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T14",
+      "theme_name": "Metacognition & Self-Directed Learning",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 1,
+        "D": 1,
+        "E": 2,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T15",
+      "theme_name": "Personal Identity & Self-Concept",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 1,
+        "E": 1,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T16",
+      "theme_name": "Family Diversity & Relationship Structures",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 4,
+        "C": 3,
+        "D": 3,
+        "E": 4,
+        "F": 5
+      }
+    },
+    {
+      "theme_id": "T17",
+      "theme_name": "Online Safety & Digital Wellbeing",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "E": 3,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T18",
+      "theme_name": "Bullying, Stereotyping & Anti-Discrimination",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 2,
+        "D": 1,
+        "E": 1,
+        "F": 2
+      }
+    },
+    {
+      "theme_id": "T19",
+      "theme_name": "Physical Activity & Movement",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 4,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T20",
+      "theme_name": "Nutrition & Food Literacy",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 3,
+        "E": 3,
+        "F": 5
+      }
+    },
+    {
+      "theme_id": "T21",
+      "theme_name": "Risk Assessment & Safety",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Circle Solutions": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": false,
+          "F": false
+        }
+      },
+      "gap_count_by_band": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "E": 2,
+        "F": 4
+      }
+    },
+    {
+      "theme_id": "T22",
+      "theme_name": "Growth Mindset & Self-Efficacy",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "CASEL": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "E": 3,
+        "F": 3
+      }
+    },
+    {
+      "theme_id": "T23",
+      "theme_name": "Social Justice, Rights & Advocacy",
+      "coverage_by_framework_by_band": {
+        "REAL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "RSHE": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "Welsh CfW": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": false
+        },
+        "CASEL": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": true,
+          "E": true,
+          "F": true
+        },
+        "Circle Solutions": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "D": true,
+          "E": true,
+          "F": true
+        }
+      },
+      "gap_count_by_band": {
+        "A": 4,
+        "B": 4,
+        "C": 3,
+        "D": 0,
+        "E": 0,
+        "F": 1
+      }
+    }
+  ]
+}

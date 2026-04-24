@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "generated_date": "2026-04-24",
+    "framework_count": 5
+  },
+  "frameworks": [
+    {
+      "framework_id": "REAL",
+      "framework_name": "REAL School Budapest Wellbeing Framework",
+      "framework_description": "The REAL Wellbeing Framework is an internal school curriculum framework developed by REAL School Budapest, covering 7 competencies and 21 learning targets across 6 developmental bands (A–F, Kindergarten through Grade 12). It integrates social-emotional learning, wellbeing science, and dispositional development using a three-type knowledge architecture: T1 (Sequential — propositional knowledge with a fixed learning order), T2 (Horizontal — competency assessed by rubric), and T3 (Dispositional — observed across contexts rather than assessed at a point in time). All content is first-party authored with high confidence.",
+      "source_jurisdiction": "Hungary (Budapest)",
+      "year_published": 2026,
+      "band_mapping": {
+        "A": "K–2 — Water + Air Dragons (approx ages 5–7)",
+        "B": "G3–4 — Earth Dragons (approx ages 8–10)",
+        "C": "G5–6 — Fire Dragons (approx ages 10–12)",
+        "D": "G7–8 — Metal + Light Dragons (approx ages 12–13)",
+        "E": "G9–10",
+        "F": "G11–12"
+      },
+      "source_file_path": "docs/reference-corpus/real-wellbeing/unified-wellbeing-data-v6.json",
+      "confidence": "high",
+      "license_note": "Proprietary — REAL School Budapest internal framework. All rights reserved."
+    },
+    {
+      "framework_id": "RSHE",
+      "framework_name": "UK DfE Statutory Relationships, Sex and Health Education (July 2025)",
+      "framework_description": "The UK Department for Education statutory RSHE programme (July 2025 edition) mandates Relationships Education, Relationships and Sex Education, and Health Education for all state schools in England. It is structured in two developmental phases — End of Primary (KS1–2) and End of Secondary (KS3–4) — which map to REAL Bands A–C and C–E respectively at medium confidence. Band F has no equivalent RSHE content. The framework is primarily propositionally framed with a lower proportion of observational or dispositional content than REAL.",
+      "source_jurisdiction": "England (UK)",
+      "year_published": 2025,
+      "band_mapping": {
+        "End of Primary": "Bands A–C (medium confidence, ambiguous; covers KS1–2, approx ages 5–11)",
+        "End of Secondary": "Bands C–E (medium confidence, ambiguous; covers KS3–4, approx ages 11–16)",
+        "Band F equivalent": "None — RSHE has no post-16 content"
+      },
+      "source_file_path": "docs/reference-corpus/uk-statutory-rshe/band-tagged-rshe-v1.json",
+      "confidence": "medium",
+      "license_note": "Crown Copyright. Open Government Licence v3.0. Source: DfE, July 2025."
+    },
+    {
+      "framework_id": "Welsh CfW",
+      "framework_name": "Welsh Curriculum for Wales — Health and Well-being Area of Learning and Experience",
+      "framework_description": "The Welsh Curriculum for Wales (formally adopted 2022) Health and Well-being Area of Learning and Experience (AoLE) describes learning progressions across five Progression Steps (PS1–PS5), covering ages 3–16. Content is drawn from the Descriptions of Learning per Progression Step (source: hwb.gov.wales). PS1 maps to Band A; PS2 to Bands B–C; PS3 to Bands C–D; PS4 to Bands D–E; PS5 to Bands E–F — all at medium confidence with two-band ambiguity for PS2–PS5. Notable for coverage of physical health and emotional wellbeing, with less systematic treatment of consent and media/digital literacy.",
+      "source_jurisdiction": "Wales (UK)",
+      "year_published": 2022,
+      "band_mapping": {
+        "PS1": "Band A",
+        "PS2": "Bands B–C (ambiguous)",
+        "PS3": "Bands C–D (ambiguous)",
+        "PS4": "Bands D–E (ambiguous)",
+        "PS5": "Bands E–F (ambiguous)"
+      },
+      "source_file_path": "docs/reference-corpus/welsh-cfw-health-wellbeing/band-tagged-cfw-v2.json",
+      "confidence": "medium",
+      "license_note": "Crown Copyright — Welsh Government. © Crown copyright 2022."
+    },
+    {
+      "framework_id": "CASEL",
+      "framework_name": "CASEL SEL Skills Continuum (January 2023)",
+      "framework_description": "The Collaborative for Academic, Social, and Emotional Learning (CASEL) SEL Skills Continuum (January 2023 edition) describes social-emotional learning competencies across five domains (Self-Awareness, Self-Management, Social Awareness, Relationship Skills, Responsible Decision-Making) from Pre-K through Grade 12. Grade bands map cleanly to REAL bands A–F with high confidence, making CASEL the best-aligned external framework overall. It is the most widely-used SEL framework in North American schools and has been adopted internationally.",
+      "source_jurisdiction": "United States (international use)",
+      "year_published": 2023,
+      "band_mapping": {
+        "PK / K-1": "Band A",
+        "G2-3": "Band B",
+        "G4-5": "Band C",
+        "G6-8": "Band D",
+        "G9-10": "Band E",
+        "G11-12": "Band F"
+      },
+      "source_file_path": "docs/reference-corpus/casel-sel-continuum/band-tagged-casel-v2.json",
+      "confidence": "high",
+      "license_note": "© CASEL 2023. Educational use permitted; not for commercial redistribution."
+    },
+    {
+      "framework_id": "Circle Solutions",
+      "framework_name": "Circle Solutions SEL Framework (Cowie & Myers, 2016)",
+      "framework_description": "The Circle Solutions Social and Emotional Learning Framework (Cowie & Myers, 2016) is an evidence-based SEL framework originating in Australia, used internationally. It is organised by Year levels (Y2, Y6, Y9, Y12) and covers twelve dimensions of social-emotional development through circle-based classroom practices. Y2 maps to Bands A–B (ambiguous, medium confidence); Y6 to Band C; Y9 to Bands D–E (ambiguous, medium confidence); Y12 to Band F. It has particularly strong coverage of emotional literacy, relational skills, and social justice themes.",
+      "source_jurisdiction": "Australia (international use)",
+      "year_published": 2016,
+      "band_mapping": {
+        "Year 2": "Bands A–B (ambiguous)",
+        "Year 6": "Band C",
+        "Year 9": "Bands D–E (ambiguous)",
+        "Year 12": "Band F"
+      },
+      "source_file_path": "docs/reference-corpus/circle-solutions-sel/band-tagged-circle-solutions-v2.json",
+      "confidence": "medium",
+      "license_note": "© Cowie & Myers 2016. Academic publication; educational use permitted."
+    }
+  ]
+}
