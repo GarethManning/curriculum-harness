@@ -186,3 +186,76 @@
 
 §51
 **LT 5.1 Band F Know — cross-cultural communication variables (verbatim).** "Cross-cultural communication variables: high-context vs. low-context cultures (indirectness vs. directness); hierarchy norms; formality conventions; relationship-first vs. task-first conversation structures."
+
+---
+
+## Batch 3 LT descriptions and key band content
+
+§52
+**LT 5.2 description (verbatim).** Contribute meaningfully to communities, act with others on real needs, reflect on impact, and develop a personal sense of purpose over time.
+
+§53
+**LT 5.2 Band C Do (verbatim observation indicator).** "The teacher notices the student, across at least one D2R project cycle, identifying a real school need unprompted, contributing to a team proposal, and following through on their share of the work to completion."
+
+§54
+**LT 5.2 Band D Do (verbatim observation indicator).** "The teacher notices the student, through their Light Dragon capstone or extended D2R work, collaborating substantively with team members different from themselves (background, perspective, skill), engaging with evidence of whether their project made a difference, and articulating why the work matters to them personally — in Reflection 360 or unprompted conversation."
+
+§55
+**LT 5.2 Band E Do (verbatim observation indicator).** "The teacher or mentor notices the student leading a sustained initiative (beyond a single project cycle) addressing a genuine need, navigating specific institutional and relational obstacles as they arise, and articulating — in Reflection 360 or unprompted — both the impact of what was achieved and the limits that institutional context imposed."
+
+§56
+**LT 5.2 Band F Do (verbatim observation indicator).** "The teacher or mentor notices — across Reflection 360 and the preceding two years of engagement — that the student's post-school choices (path, community involvement, roles) trace specifically to prior sustained engagement, and that when asked about purpose the student points to that engagement with specificity rather than to abstracted articulation."
+
+§57
+**LT 6.1 description (verbatim).** Explain stress, emotion, attention, and habit mechanisms using accurate vocabulary, and evaluate claims about brain and wellbeing interventions.
+
+§58
+**LT 6.1 Band B Know — fight-flight-freeze and habit loop (verbatim).** "The fight-flight-freeze response: when the brain detects a threat, the heart beats faster, breathing quickens, muscles tense, and the body prepares to defend, escape, or stay still." "The amygdala is a brain region that detects threat and triggers this response." "Habits run on a three-part loop: cue (what triggers the habit), routine (what I do), reward (what my brain gets out of it)."
+
+§59
+**LT 6.1 Band D Know — neuroscience vocabulary and HPA axis (verbatim).** "Core neuroscience vocabulary: amygdala, prefrontal cortex, hippocampus, basal ganglia, hypothalamus, pituitary, adrenal glands, cortisol, dopamine, autonomic nervous system (sympathetic and parasympathetic branches)." "The HPA axis: when threat is detected, the hypothalamus signals the pituitary, which signals the adrenal glands to release cortisol — mobilising energy and downregulating non-essential functions." "System interactions: sustained stress narrows attention; narrowed attention shapes which habits are triggered; habits in turn shape mood and stress-response baseline — these don't operate independently."
+
+§60
+**LT 6.1 Band F Do (verbatim).** "I can construct a rubric-assessed critical essay on a contested claim in wellbeing science that identifies where the evidence is strong, where it is uncertain, where popular accounts have oversimplified or misrepresented research, and states my reasoned position with specific evidence."
+
+§61
+**LT 6.2 description (verbatim).** Evaluate health information for trustworthiness, evidence quality, and bias using progressively more sophisticated analytical criteria across bands.
+
+§62
+**LT 6.2 Band C Know — evidence types and bias indicators (verbatim).** "Types of evidence used in health claims: anecdote (one person's story — weakest for generalising); correlation (two things appearing together — does not establish cause); controlled study (compares a group receiving a treatment with a matched group that does not — strongest of these three)." "Common bias indicators: financial interest (the claim-maker profits from the claim); ideological stake; selective data; undisclosed conflicts of interest."
+
+§63
+**LT 6.2 Band D Know — evidence hierarchy (verbatim).** "Evidence hierarchy in health research: systematic reviews of randomised controlled trials (strongest) > single RCT > cohort study > case-control study > cross-sectional study > expert opinion > anecdote (weakest)."
+
+§64
+**LT 6.2 Band F Do (verbatim).** "I can complete a rubric-assessed analysis that reads and interprets a provided systematic review or meta-analysis at an introductory level (identifying PICO, risk-of-bias findings, pooled effect, and GRADE rating), traces how a named policy recommendation or guideline was derived from an evidence base, and evaluates whether that guideline is well-supported, weakly-supported, or contested."
+
+§65
+**LT 7.2 description (verbatim).** Consistently direct own thinking and learning — noticing, analysing, and adjusting patterns without external prompting across time and contexts.
+
+§66
+**LT 7.2 Band D Do (verbatim observation indicator).** "The teacher notices the student articulating a specific adjustment they have made to their thinking or behaviour and describing its effect across more than one domain, without prompting. In novel or challenging situations, the student applies a self-awareness strategy without an adult prompt. The student makes connections between wellbeing learning and behaviour in other contexts unprompted, on multiple occasions."
+
+§67
+**LT 8.2 description (verbatim).** Identify how digital products shape attention and behaviour, analyse personal effects, and justify reasoned responses to persuasive design systems.
+
+§68
+**LT 8.2 Band C Know — persuasive design vocabulary (verbatim).** "Persuasive design is a general term for features built into digital products deliberately to keep people using them or returning to them — not an accident, not a free service, but engineered for a business purpose." "Named persuasive-design features: infinite scroll; pull-to-refresh; autoplay; notifications; streaks and daily rewards." "Variable reward: when a reward comes at unpredictable intervals rather than on a fixed schedule, the brain anticipates it more strongly — because the uncertainty itself triggers dopamine."
+
+§69
+**LT 8.2 Band E Know — algorithms, attention economy, surveillance capitalism (verbatim).** "Recommendation algorithms are optimised for engagement metrics (time on platform, clicks, reactions, shares), not accuracy, wellbeing, or diversity of viewpoint." "The attention economy business model: the product is free to the user; the user's attention is sold to advertisers; therefore the platform's financial incentive is aligned with maximising attention captured, not with maximising user benefit." "Surveillance capitalism names the specific way personal behavioural data is extracted, processed, and sold as a commodity — not an incidental side effect but the core product for the platform."
+
+§70
+**LT 8.2 Band F Do (verbatim).** "I can complete a rubric-assessed written analysis that evaluates the cumulative effect of persuasive design across a sustained period on my attention, relationships, and identity — drawing on my own evidence, compares my analysis against at least two recognised pieces of research on digital wellbeing, including at least one that contests a claim I find sympathetic, and articulates a reasoned personal position."
+
+§71
+**LT 8.3 description (verbatim).** Maintain healthy digital boundaries, communicate assertively online, and sustain wellbeing-supporting practices across platforms and contexts over time.
+
+§72
+**LT 8.3 Band D Do (verbatim observation indicator).** "The student maintains their stated digital boundaries under social pressure — friends pushing them to re-join a chat, return to a game, check a notification — on more than one observed occasion. The student uses assertive communication in difficult digital interactions without escalating into harshness, abandoning the conversation, or capitulating against their stated position."
+
+§73
+**LT 8.3 Band F Do (verbatim observation indicator).** "The student treats their digital life as an expression of their values — what they engage with, what they create, what they refuse — and can articulate this stance when asked, without turning it into a public performance. The student supports peers navigating digital pressure, conflict, or harm, without taking over the situation, without shaming the peer for being in it, and with authentic respect."
+
+§74
+**LT 8.3 Band B Do (verbatim observation indicator).** "The child exits digital content they recognise as unkind, distressing, or inappropriate for them, without needing an adult to direct them, on most observed occasions. The child uses simple assertive language in digital communication — 'I don't want to', 'please stop', 'I'm going to tell an adult' — when a peer behaves unkindly online."
