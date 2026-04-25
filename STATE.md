@@ -4,6 +4,43 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session REAL-14 (Stop 5: 8 Level 3 themes drafted, panel-validated, committed; post-Theme-8 sweep complete)** — 2026-04-25 — COMMITTED across 13 commits; pushed. Model: opus 4.7.
+
+Stop 5 drafting complete. Eight Level 3 theme treatments at ~600 words each (~4,830w total prose) drafted under per-theme cadence — draft → four-check audit → theme-level audits → voice read-through → panel review → commit only after explicit panel sign-off. Cumulative panel scores ranged 88 to 90.5, mean ~88.97.
+
+- **Eight themes drafted, audited, panel-signed-off, committed.**
+  - Theme 1 — emotional regulation, 617w, panel 88/88, `70c784e`
+  - Theme 2 — digital wellbeing, 600w, panel 88.25/88, `090f0a7`
+  - Theme 3 — identity and self-concept across contexts, 583w, panel 88.75/88, `224cdd0`
+  - Theme 4 — active-bystander skills and anti-discrimination, 584w, panel 88.5/88, `32ef823`
+  - Theme 5 — learning to learn, 589w, panel 89/88, `12985f4`
+  - Theme 6 — what kind of learning each framework names, 618w, panel 90.5/88, `fdfd19d`
+  - Theme 7 — how progress gets seen, and by whom, 596w, panel 89.25/88, `83778d1`
+  - Theme 8 — equity and the social surround, 595w, panel 89/88, `ddda77d`
+
+- **Standing infrastructure built.** `scripts/comparison_content_audit.py` (four-check suite) and `docs/comparison-content/audit-policy.md` (operational verbatim definition) — both committed in REAL-14 baseline cleanup pass before Stop 5 drafting began. The audit-policy.md operational verbatim definition is the standing compliance bar for any source-quoting work in `docs/comparison-content/`. The audit script is a hard-block gate before commit; panel review is the human-judgement layer above it.
+
+- **Stop 5 baseline cleanup pre-cursor (committed before Theme 1 drafting began):** preflight Check 6 fix (`ff25720`) → audit-policy.md (`45e3329`) → audit script (`6793e50`) → rshe-pilot-extracts.md §37 + §38 source extension (`336a147`) → 11 card prose corrections + 6 absence-log entries + 1 cross-artefact resolution (`eadfc41`) → STATE carry-forward note (`ba53b49`).
+
+- **Post-Theme-8 sweep (this session, after Theme 8 commit):**
+  - Extended `CITATION_RE`, `PARA_IDS_RE`, and `PARA_HEADER_RE` in audit script to support sub-numbered paragraph IDs (`§N[a-z]?` like `§15a`, `§15b`). Type changed from int to string throughout. `DOCUMENTED_BUNDLE_EQUIVALENCES` updated to use string IDs. Tested: 7 sub-numbered paragraphs (rshe-foreword §15a–§15g) now load as distinct paragraphs. No false positives or false negatives on the existing corpus under regex extension. Audit script commit: `84a019b`.
+  - Bucket A audit-script enhancement: `quote_matches_source` now accepts trailing-punctuation tolerance (period/comma/semicolon/colon at end of quote may be part of the citing prose's punctuation rather than the source). Cleared 3 cog-briefs failures. Same commit `84a019b`.
+  - audit-policy.md updated to document both new normalisations (trailing-punctuation tolerance under Accepted; sub-numbered citation handling in a new "Citation-tag format" section). Change-log entry dated 2026-04-25 (post-Theme-8 sweep). Commit: `5dc12de`.
+  - Bucket C real-defect fixes: Theme 7 citation `§15` → `§15b` (umbrella-vs-sub-clause correction after regex extension); 5 cog-briefs prose corrections to remove rhetorical/label-style quotes that fail the strict source-quote policy. Commit: `e2e39b4`.
+  - Architectural-finding entry added to `absence-claims-log.md` for REAL's no-structural-parental-role observation surfaced by Theme 7. New section format ("Architectural findings — distinct from absence-claims") to keep clear separation from per-LT × external-framework absence claims. Commit: `70fbb50`.
+  - Final audit state: `--scope all` (31 artefacts, 272 source paragraphs, 373 citation refs, 204 quoted spans) all four checks PASS. Cumulative state: opening trigrams ≥4 = none; connective signatures "CASEL covers" 3x and "REAL covers" 3x — watch state to carry forward into any future comparison-content additions.
+
+- **Decisions recorded:**
+  - `ABSENCE_PATTERNS` regex left as-is (not extended). Extending it risks false positives that would distort the absence-log discipline. Panel review handles human-reviewable substance that the regex doesn't catch (precedent set in Theme 5).
+  - Sub-numbered citation regex extended in this sweep. Existing carry-forward defects in `centre-of-gravity-briefs.md` and `level-1-essay.md` cleared.
+
+- **This session did NOT:**
+  - Distribute the comparison content to `~/Github/rwf-site-claude/content/comparison/` or `~/Github/rwf-site-codex/content/comparison/`. Distribution is a separate handoff to a fresh session because it touches different repos. Pending Gareth's sign-off on the post-Theme-8 sweep results.
+  - Modify any harness or framework artefacts (criterion bank, KUD, unified data, skills).
+  - Modify Theme 1–6 or Theme 8 content (post-sweep edits limited to Theme 7 citation fix only).
+
+---
+
 **Session REAL-13 (Comparison content — Batch 3, 18 cards drafted; awaiting panel review)** — 2026-04-25 — UNCOMMITTED. Model: opus 4.7.
 
 Batch 3 of comparison-content Stop 4 drafted (18 cards: LTs 5.2, 6.1, 6.2, 7.2, 8.2, 8.3) including both committed reciprocity cards. Per-LT audit cadence held: each trio audited before the next was drafted, three trios needed in-flight word-count or 4-gram fixes during drafting, all six trios clean before final cumulative audit. Full cumulative audit across all 63 cards passes on all seven dimensions. Awaiting panel review before commit — will commit after sign-off following the Batch 2 pattern.
@@ -578,11 +615,13 @@ Pass 2 truncation pattern: Fixed by scaling `max_tokens = min(8192, max(4096, le
 - **Phase 3 consolidation collapse on felvételi.** Observable only in a Phase 3 run output.
 - **AP US Gov rubric flag rate after gate recalibration.** Not yet re-run.
 - **Reference-authoring gate pass rates for Welsh CfW / Common Core under a fresh re-run.** Not re-verified since 4c-1.
-- **Pre-existing quote-to-source defects in `centre-of-gravity-briefs.md` (6) and `level-1-essay.md` (1).** Detected by the new four-check audit suite (`scripts/comparison_content_audit.py`) when run at `--scope all` after Stop 5 baseline cleanup. These artefacts were drafted before the audit suite existed; their failures were not part of the cleared 63-card baseline. **To be cleared in a single sweep after Theme 8 drafting, before final Stop 5 commit.** Not blocking per-theme commits — Theme 1 onwards committed under `--scope themes` PASS plus `--scope cards` carry-forward PASS.
+- ~~Pre-existing quote-to-source defects in `centre-of-gravity-briefs.md` (6) and `level-1-essay.md` (1). Detected by the new four-check audit suite (`scripts/comparison_content_audit.py`) when run at `--scope all` after Stop 5 baseline cleanup. To be cleared in a single sweep after Theme 8 drafting.~~ **RESOLVED in REAL-14 post-Theme-8 sweep.** All cleared via combination of audit-script enhancement (sub-numbered citation regex `84a019b` + trailing-punctuation tolerance) and prose corrections (`e2e39b4`). Final `--scope all` state: PASS across all four checks.
 
 ## 5. Next session
 
-**First action next session: panel review of Batch 3 (18 cards), then commit.** Batch 3 drafted (REAL-13) — six trios for LTs 5.2, 6.1, 6.2, 7.2, 8.2, 8.3, including both committed reciprocity cards (LT 5.2 × CASEL equity-civic; LT 7.2 × CfW deepening-progression). All seven audits clean across all 63 cards. Panel review covers: (a) all six trios on cross-framework fairness, methodological rigour, writing craft, and parent-reader accessibility; (b) the two reciprocity cards specifically — does each land the distinction plainly without retreating from the reciprocity claim; (c) the QUALIFIED absence claims (8 of 11 in Batch 3) — are scope refinements precise. If panel passes (≥88 mean, no role mean <70), commit Batch 3 + STATE update following the Batch 2 pattern. Then Stop 5 (8 Level 3 themes at ~600w each; ~5,000w total). Distribution to `~/Github/rwf-site-claude/content/comparison/` and `~/Github/rwf-site-codex/content/comparison/` is a separate copy step after Stop 5 approval.
+**First action next session: distribution of comparison-content to `~/Github/rwf-site-claude/content/comparison/` and `~/Github/rwf-site-codex/content/comparison/`.** Stop 5 drafting + post-Theme-8 sweep complete and committed (REAL-14); the eight themes plus all 63 cards plus level-1-essay are panel-validated and audit-clean (`--scope all` PASS across all four checks). Distribution is a separate handoff to a fresh session because it touches different repos. The session brief should: (a) copy comparison content into both site repos preserving citation tags and audit-trail integrity; (b) run the audit script against the copied content to confirm no defects introduced in transit; (c) verify rendering on both Vercel preview deployments; (d) report which build is stronger or how to merge.
+
+**Carry-forward connective-signature watch state (for any future comparison-content additions):** "CASEL covers" 3x and "REAL covers" 3x — one more occurrence of either triggers rewrite. Cumulative opening trigrams ≥4 = none (highest 3x).
 
 **Then (Gareth to decide), parallel non-comparison tracks remain available:**
 - **Programme guide authoring** (all 21 LTs, unified-wellbeing-data-v6.json as source; gated open by crosswalk v4 + KUD stability)
