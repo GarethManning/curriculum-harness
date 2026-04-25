@@ -174,3 +174,12 @@
 
 §35
 **Item 9 (verbatim).** "How stereotypes, in particular stereotypes based on sex, gender reassignment, race, religion, sexual orientation or disability, can cause damage (e.g. how they might normalise non-consensual behaviour or encourage prejudice). Pupils should be equipped to recognise misogyny and other forms of prejudice."
+
+---
+
+## Primary — Respectful, kind relationships (relevant to LT 1.3) — late capture
+
+§36
+**Item 8 (verbatim, primary "Respectful, kind relationships" topic).** "The importance of self-respect and how this links to their own happiness. Pupils should have opportunities to think about how they foster their own self-esteem and build a strong sense of their own identity, including through developing skills and interests."
+
+*Capture note:* added during Batch 3 citation-verification pass (commit following `7f0dae3`). Quote cited in lt-1-3 × RSHE since Batch 1 but the underlying paragraph hadn't been extracted into this corpus until now. Source: `docs/run-snapshots/uk-statutory-rshe/content.txt` lines 105–107 (Primary, "Respectful, kind relationships" topic, item 8).
