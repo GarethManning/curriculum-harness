@@ -88,9 +88,10 @@ For every card making a claim about absence in an external framework, the per-ba
 
 ### LT 5.2 × RSHE — "doesn't develop community engagement as a sustained curriculum thread" → QUALIFIED
 - **Search terms:** community, civic, volunteer, service, citizenship, engagement, participation
-- **Corpora:** rshe-pilot-extracts.md, rshe-foreword.md, rshe-strand-introductions.md
-- **Hits:** §11 lists "community participation and volunteering or acts of kindness" among the ingredients of mental wellbeing in the secondary mental-wellbeing topic; §1 foreword references generic "moral, social, mental and physical development". Zero hits on civic/community engagement as a developmental thread or curriculum strand.
-- **Verdict:** QUALIFIED. Card explicitly names the §11 mention ("RSHE lists 'community participation and volunteering or acts of kindness' among the ingredients of mental wellbeing"), then qualifies the absence to the "as a sustained curriculum thread" scope.
+- **Corpora:** rshe-pilot-extracts.md, rshe-foreword.md, rshe-strand-introductions.md, run-snapshots/uk-statutory-rshe/content.txt
+- **Hits:** Secondary "Mental wellbeing" item 2 lists "physical activity, sleep, time outdoors, community participation and volunteering or acts of kindness for mental wellbeing and happiness" — extracted as §38 in the late-capture pass during Stop 5 baseline audit; §1 foreword references generic "moral, social, mental and physical development". Zero hits on civic/community engagement as a developmental thread or curriculum strand.
+- **Verdict:** QUALIFIED. Card explicitly names the §38 mention ("RSHE lists 'community participation and volunteering or acts of kindness' among the ingredients of mental wellbeing"), then qualifies the absence to the "as a sustained curriculum thread" scope.
+- **Citation correction note:** the original card-Batch-3 claim cited §11 in error; §11 is the secondary mental-wellbeing item 1 ("How to talk about their emotions accurately and sensitively"). The correct paragraph for the quoted phrase is §38, captured in the rshe-pilot-extracts.md late-capture pass during Stop 5 baseline audit.
 
 ### LT 6.1 × RSHE — "doesn't develop neuroscience vocabulary at mechanism level" → QUALIFIED
 - **Search terms:** brain, amygdala, cortex, neuroscience, neural, dopamine, cortisol, HPA, neuroplasticity, mechanism
@@ -154,10 +155,55 @@ For every card making a claim about absence in an external framework, the per-ba
 
 ---
 
+## Late-capture entries from Stop 5 baseline audit (6 cards)
+
+The Stop 5 baseline audit detected 6 absence-claim sections present in the existing 63-card corpus that did not have entries in this log. Each is logged here. Two are reciprocity cards (REAL-as-absent rather than external-framework-as-absent) — log entries note the search direction explicitly.
+
+### LT 1.2 × CfW — "What CfW doesn't reach is REAL's Band F observation: students adjusting how they respond to someone whose experience is being shaped by structural or systemic factors" → CLEAN
+- **Search terms:** structural, systemic, social factors, social location, power, oppression, inequality, structural factors, group-level
+- **Corpora:** cfw-pilot-extracts.md, cfw-what-matters.md, cfw-four-purposes.md, cfw-rse-statutory-principles.md
+- **Hits:** WM4 §22 references "rules, norms and behaviours of different groups" influencing learners; PS4 §23 frames how "values, attitudes and identity are shaped by the groups and social influences" learners interact with. These touch group/influence territory but stop short of structural/systemic-factors framing applied to a specific other person's experience.
+- **Verdict:** CLEAN. The absence claim is scoped to a Band F observation in REAL — students adjusting their empathic response based on structural/systemic factors shaping another person's experience. CfW's WM4 social-influences arc covers proximal group influence on the learner; the structural-factors-applied-to-another-person move is genuinely absent.
+
+### LT 4.1 × CASEL — "explicit consent as an analytical construct doesn't appear" → CLEAN
+- **Search terms:** consent, bodily autonomy, freely given, agreement, no means no, withhold consent, sexual consent
+- **Corpora:** casel-pilot-extracts.md, casel-framework-definition.md, casel-equity-transformative-sel.md
+- **Hits:** zero across all three corpora.
+- **Verdict:** CLEAN. CASEL's five competencies frame interpersonal interactions through "positive and respectful communication" and "resolving conflicts" but do not name consent as an analytical construct.
+
+### LT 4.3 × RSHE — "REAL adds a Band F move RSHE doesn't reach: students analyse a real bystander success or failure and propose conditions that would change the next outcome" → CLEAN
+- **Search terms:** bystander, analyse, retrospective, conditions, outcome, propose, change, intervene, after-action
+- **Corpora:** rshe-pilot-extracts.md, rshe-foreword.md, rshe-strand-introductions.md, run-snapshots/uk-statutory-rshe/content.txt
+- **Hits:** §33 names "the responsibilities of bystanders to report bullying and how and where to get help" — bystander-as-reporter, not bystander-as-analyst-of-conditions. Zero hits on retrospective bystander analysis or proposing conditions for changed outcomes.
+- **Verdict:** CLEAN. RSHE's bystander framing is reporting-and-help-seeking; the analysis-and-conditions-proposal move at REAL Band F is genuinely absent.
+
+### LT 4.4 × RSHE — "RSHE doesn't reach that explanatory framing" (mechanism-level emotional development science) → QUALIFIED
+- **Search terms:** dual-process, attachment, neurobiology, dopamine, neural, brain mechanism, neuroscience, emotional development theory
+- **Corpora:** rshe-pilot-extracts.md, rshe-foreword.md, rshe-strand-introductions.md, run-snapshots/uk-statutory-rshe/content.txt
+- **Hits:** §14 secondary "the facts about puberty, the changing adolescent body, including brain development" — names brain development but does not specify dual-process accounts, attachment theory, or the neurobiology of attraction/rejection/loss. Zero hits on attachment, dual-process, dopamine, or mechanism-level emotional development.
+- **Verdict:** QUALIFIED. Card opens by naming RSHE's secondary mental-wellbeing content, then locates REAL's addition at "the science" — dual-process accounts, stress-response window, neurobiology of attraction/rejection/loss. The §14 brain-development reference is acknowledged in the LT 6.1 × RSHE entry above; here the absence claim is scoped to mechanism-level emotional development specifically.
+
+### LT 5.2 × CASEL — "REAL's LT 5.2 ... doesn't develop the civic-equity lens — naming structural injustice as a framework-level concern — that CASEL builds in here" → CLEAN (reciprocity claim about REAL)
+- **Search direction:** REAL-as-absent. Verifies that REAL framework does not foreground civic-equity / structural injustice as a framework-level commitment.
+- **Search terms:** structural injustice, civic equity, transformative, justice-oriented, equity as framework-level, equity, anti-oppression
+- **Corpora:** real-framework-overview.md, plus REAL framework documents in docs/reference-corpus/real-wellbeing/
+- **Hits:** REAL's LT 4.3 (Active Bystander & Anti-Discrimination) covers anti-discrimination at the LT level; LT 5.2 (Community Engagement & Purpose) covers community engagement. Zero hits on equity or structural injustice as a framework-level commitment in the REAL framework overview or unified data file.
+- **Verdict:** CLEAN. The reciprocity claim is precise: CASEL's Transformative SEL elevates equity and justice-oriented engagement to framework level; REAL specifies adjacent content at the LT level but does not foreground equity as a framework-level structural commitment. Card explicitly names this as something REAL doesn't do that CASEL builds in.
+
+### LT 7.2 × CfW — "REAL's LT 7.2 has a Bands A–F arc but doesn't name spiral-revisit at the framework level" → CLEAN (reciprocity claim about REAL)
+- **Search direction:** REAL-as-absent. Verifies that REAL does not name spiral-revisit as a framework-level progression structure.
+- **Search terms:** spiral, revisit, deepening, spiral curriculum, reapply, return to, same construct
+- **Corpora:** real-framework-overview.md, plus REAL framework documents in docs/reference-corpus/real-wellbeing/
+- **Hits:** REAL framework overview describes bands A–F as carrying distinct content per band; §10 confirms bands have specific Know/Understand/Do entries that change between bands. No naming of spiral-revisit, deepening-revisit, or returning-to-the-same-construct as a framework-level structural feature.
+- **Verdict:** CLEAN. CfW's deepening-progression is an explicit framework-level commitment ("each phase represents the building blocks of progression… consolidating and strengthening the same dispositions, knowledge and skills and applying them in new and relevant contexts" [cfw-rse-statutory-principles §11]); REAL bands carry distinct content rather than revisiting one construct.
+
+---
+
 ## Process going forward
 
-For Batch 3:
-- Every card claiming absence runs this search before being committed.
+For Batch 3 and Stop 5 onward:
+- Every card or theme claiming absence runs this search before being committed.
 - Results recorded here in the same format.
 - If a search returns hits, the card is QUALIFIED (claim refined to acknowledge what's there) or RETRACTED (claim wrong, card rewritten).
+- For reciprocity claims (REAL-as-absent), the search direction reverses: REAL framework documents are searched to verify the absence.
 - The audit report at the end of each batch lists the new absence-claim verifications.
