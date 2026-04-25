@@ -143,3 +143,46 @@
 
 §38
 **LT 3.1 Band F Know (verbatim).** "Sustainable behaviour change operates at the systems level — environmental design, social norms, policy, availability of resources — as much as the individual level."
+
+---
+
+## Batch 2 LT descriptions and key band content
+
+§39
+**LT 3.2 description (verbatim).** Notice early warning signs, apply self-care responses, maintain them under pressure, and build a personal resilience framework over time.
+
+§40
+**LT 3.2 Band F Do (verbatim observation indicator).** "The teacher or mentor notices the student articulating — in a Reflection 360 conversation or spontaneous reflection — their personal resilience framework: non-negotiable self-care commitments, early-warning signals, recovery protocols, and how this framework has developed across the years."
+
+§41
+**LT 4.1 description (verbatim).** Recognise and respect bodily autonomy, apply consent principles across everyday, sexual, and online contexts, and analyse power dynamics.
+
+§42
+**LT 4.1 Band B Know (verbatim).** "Consent means clear, freely-given agreement to what is happening — a 'yes' that is not a result of pressure, confusion, or fear of what will happen if the answer is 'no'."
+
+§43
+**LT 4.1 Band D Know (verbatim).** "Power imbalance occurs when one person has more age, status, role authority, peer-group standing, or control over outcomes than the other — and those imbalances affect how freely a 'yes' or 'no' can be given."
+
+§44
+**LT 4.1 Band F Know — consent myths to correct (verbatim).** "Myths commonly requiring correction in consent education include: 'silence means yes'; 'if they didn't say no, it was consent'; 'once given, always given'; 'clothing or drinking signals consent'; 'asking for consent kills the mood.'"
+
+§45
+**LT 4.3 description (verbatim).** Identify discrimination and targeted harm, assess safe bystander responses, and justify reasoning about when and how to act or seek help.
+
+§46
+**LT 4.3 Band D Do (verbatim).** "I can complete a written analytical task on a bystander scenario that identifies the forms of discrimination present, names the specific group and power dynamics at play, and justifies a proposed response based on safety, proportionality, and what the targeted person is likely to need."
+
+§47
+**LT 4.3 Band F Do (verbatim).** "I can construct a written or presented analysis of a real bystander success or failure (self-selected, my own or another's), evaluate what made effective intervention possible or impossible in that specific context, and propose specific group, school, or community-level conditions that would change the outcome next time."
+
+§48
+**LT 4.5 description (verbatim).** I can manage my own emotional activation in practice — noticing it as it arises, using regulation strategies I have been taught, seeking support when I recognise I am overwhelmed, and repairing relationships after conflict — consistently across contexts and with decreasing reliance on adult scaffolding over time.
+
+§49
+**LT 4.5 Band D Do (verbatim observation indicator).** "The teacher notices the student, across multiple emotional situations over the observation window, using taught regulation strategies in practice (not only naming or explaining them); seeking support from a trusted adult when they recognise they are approaching or exceeding their stress-response window."
+
+§50
+**LT 5.1 description (verbatim).** Communicate clearly across contexts — including disagreement — by listening actively, calibrating language to the situation, and facilitating when needed.
+
+§51
+**LT 5.1 Band F Know — cross-cultural communication variables (verbatim).** "Cross-cultural communication variables: high-context vs. low-context cultures (indirectness vs. directness); hierarchy norms; formality conventions; relationship-first vs. task-first conversation structures."

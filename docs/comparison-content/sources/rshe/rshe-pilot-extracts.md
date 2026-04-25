@@ -145,3 +145,32 @@
 
 §28
 **Item 3 (verbatim, partial).** "The physical and psychological risks associated with alcohol consumption. What constitutes low risk alcohol consumption in adulthood, and the legal age of sale for alcohol in England. Understanding how to increase personal safety while drinking alcohol, including how to decrease the risks of having a drink spiked or of poisoning from potentially fatal substances such as methanol."
+
+---
+
+## Primary — Being Safe (relevant to LT 4.1)
+
+§29
+**Item 3 (verbatim).** "That each person's body belongs to them, and the differences between appropriate and inappropriate or unsafe contact, including physical contact."
+
+§30
+**Item 5 (verbatim).** "How to recognise when a relationship is harmful or dangerous, including skills for recognising who to trust and who not to trust."
+
+§31
+**Item 6 (verbatim).** "How to report abuse, concerns about something seen online or experienced in real life, or feelings of being unsafe or feeling bad about any adult and the vocabulary and confidence needed to do so."
+
+---
+
+## Secondary — Respectful relationships (relevant to LT 4.1, LT 4.3, LT 5.1)
+
+§32
+**Item 5 (verbatim).** "The practical steps pupils can take and skills they can develop to support respectful and kind relationships. This includes skills for communicating respectfully within relationships and with strangers, including in situations of conflict."
+
+§33
+**Item 6 (verbatim).** "The different types of bullying (including online bullying), the impact of bullying, the responsibilities of bystanders to report bullying and how and where to get help."
+
+§34
+**Item 8 (verbatim).** "The role of consent, including in romantic and sexual relationships. Pupils should understand that ethical behaviour goes beyond consent and involves kindness, care, attention to the needs and vulnerabilities of the other person, as well as an awareness of power dynamics. Pupils should understand that just because someone says yes to doing something, that doesn't automatically make it ethically ok."
+
+§35
+**Item 9 (verbatim).** "How stereotypes, in particular stereotypes based on sex, gender reassignment, race, religion, sexual orientation or disability, can cause damage (e.g. how they might normalise non-consensual behaviour or encourage prejudice). Pupils should be equipped to recognise misogyny and other forms of prejudice."

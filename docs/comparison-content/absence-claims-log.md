@@ -70,6 +70,18 @@ For every card making a claim about absence in an external framework, the per-ba
 
 ---
 
+---
+
+## Batch 2 absence claims (1 new card)
+
+### LT 4.3 × CfW — "Bullying isn't named within Health and Well-being" → REFINED
+- **Search terms:** bullying, bully, harassment, anti-discrimination, discrimination
+- **Corpora:** source-ps-descriptions.md (H&W AoLE), cfw-what-matters.md, cfw-rse-statutory-principles.md, cfw-pilot-extracts.md, cfw-four-purposes.md
+- **Hits:** 2 hits on "bullying" + 1 hit on "discrimination" — all in `cfw-rse-statutory-principles.md` (the separate RSE Code section), specifically §4 ("help reduce all bullying, including homophobic, biphobic and transphobic bullying") and §7 (Empowerment-safety-respect strand of RSE: "protect learners from all forms of discrimination, violence, abuse and neglect"). Zero hits in the H&W AoLE What Matters statements (the originally-intended scope of the claim).
+- **Verdict:** QUALIFIED. Original draft "Bullying as a named topic doesn't appear in CfW" rewritten to "Bullying isn't named within Health and Well-being; it appears in the separate RSE Code as something RSE can help reduce [cfw-rse-statutory-principles §4]." Card now precisely names which scope of CfW lacks bullying-as-named-topic.
+
+---
+
 ## Process going forward
 
 For Batch 2 and Batch 3:

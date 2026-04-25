@@ -107,3 +107,29 @@
 
 §22
 **Self-Management (verbatim).** "Practice various coping skills to process thoughts and manage stressful situations." "Reframe a challenging situation into a positive learning opportunity for growth."
+
+---
+
+## Relationship Skills extracts
+
+### Grade Band 4–5
+
+§23
+**Relationship Skills (verbatim).** "Demonstrate positive and respectful communication through word choice, and body language." "Practice resolving conflicts with peers independently and/or with adult support." "Approach conflict resolution with an open mind."
+
+### Grade Band 6–8
+
+§24
+**Relationship Skills (verbatim).** "Demonstrate positive communication skills, including interactions on social and digital media, and reflect on the potential impact on their reputation and relationships." "Identify the roles of individuals in conflict and activate the steps of a conflict resolution process to manage disagreements and maintain safety and seek support when needed."
+
+### Grade Band 9–10
+
+§25
+**Relationship Skills (verbatim).** "Develop strategies for collaborating with others by valuing and encouraging different and diverse perspectives and abilities." "Demonstrate personal responsibility in reaching resolution and identify and access positive support when needed in a conflict situation or crisis (i.e. counselor, trusted adults, security)."
+
+---
+
+## Social Awareness — Grade Band 9–10 (relevant to LT 4.3)
+
+§26
+**Social Awareness (verbatim).** "Recognize and describe unfairness and injustice in many forms including attitudes, speech, behaviors, policies, practices, and laws." "Practice empathizing with others' thoughts, perspectives, and emotions, even when they are different from their own."
