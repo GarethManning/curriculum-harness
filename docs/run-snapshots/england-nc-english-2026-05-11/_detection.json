@@ -1,0 +1,9 @@
+{
+  "confidence": "high",
+  "is_supported_now": true,
+  "rationale": "Deterministic override \u2014 gov.uk .govspeak container is html_nested_dom even though it does not trip the conservative heuristic (no <details>, div_count < 1500). Pattern mirrors run_gov_uk_nc_maths_ks3.py.",
+  "signals": {
+    "override_source": "run_gov_uk_nc_english_ks1_to_ks3"
+  },
+  "source_type": "html_nested_dom"
+}

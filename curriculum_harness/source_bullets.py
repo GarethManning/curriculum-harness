@@ -156,6 +156,23 @@ _MARKER_BULLET_RE = re.compile(
     r"^\s*(?:[•·▪■▫◦○●]|\*|[-–—+])\s+(?P<text>.+?)\s*$"
 )
 
+# Header introducing a statutory "Pupils should be taught to:" list.
+# The England NC (gov.uk) emits bullet items as plain lines after this
+# header — no bullet marker, no trailing period. See adjacent-mechanism
+# #12 (doc pending) for the taught_to_item detector rationale.
+_TAUGHT_TO_HEADER_RE = re.compile(
+    r"pupils\s+should\s+be\s+taught\s+to\s*:", re.IGNORECASE
+)
+
+# Major section breaks that end a taught_to block. These are section/stage
+# headings, not sub-headers within the list.
+_TAUGHT_TO_BLOCK_END_RE = re.compile(
+    r"^(?:key\s+stage|lower\s+key\s+stage|upper\s+key\s+stage|"
+    r"year\s+\d|years?\s+\d|notes?\s+and\s+guidance|"
+    r"statutory\s+requirements|appendix|programme\s+of\s+study)",
+    re.IGNORECASE,
+)
+
 # Code + lowercase-verb rule. We require the first character of the
 # description to be a lowercase letter so that section headers ("A1.
 # Application: ...", "Strand A. New France...") do not match — only
@@ -179,6 +196,7 @@ BULLET_TYPES = (
     "cross_grade",
     "front_matter",
     "other",
+    "taught_to_item",
 )
 
 # Lowercase header-token substrings that mark a bullet's parent section
@@ -280,7 +298,11 @@ def classify_bullet_type(
             if g in {"1", "2", "3", "4", "5", "6", "8"}:
                 return "cross_grade"
 
-    # 4. numbered_outcome detector → specific_expectation (structural).
+    # 4a. taught_to_item detector → specific_expectation (statutory list item).
+    if detector == "taught_to_item":
+        return "specific_expectation"
+
+    # 4b. numbered_outcome detector → specific_expectation (structural).
     if detector == "numbered_outcome":
         return "specific_expectation"
 
@@ -352,6 +374,9 @@ def extract_source_bullets(
             }
         )
 
+    in_taught_to_block = False
+    taught_to_header = ""
+
     for idx, raw_line in enumerate(raw_text.splitlines()):
         line_no = idx + 1
         line = raw_line.strip()
@@ -372,6 +397,35 @@ def extract_source_bullets(
             # carry a verb phrase of meaningful length.
             if len(text) >= _MIN_NUMBERED_OUTCOME_TEXT_CHARS:
                 push(f"{code} {text}", "numbered_outcome", line_no)
+                continue
+
+        # taught_to_item detector — handles England NC "Pupils should be
+        # taught to:" lists where items are plain lines without markers or
+        # trailing periods. Entered when a taught-to header is detected;
+        # exited on major section breaks (Key Stage, Year N headings, Notes).
+        if _TAUGHT_TO_HEADER_RE.search(line):
+            in_taught_to_block = True
+            taught_to_header = line.rstrip(":").strip()
+            in_block = False  # taught_to takes priority over topic_statement
+            block_header = ""
+            continue
+
+        if in_taught_to_block:
+            # Major section heading ends the block.
+            if _TAUGHT_TO_BLOCK_END_RE.match(line):
+                in_taught_to_block = False
+                taught_to_header = ""
+            # Sub-headers (short lines ending with ":") update the label
+            # but don't end the block — they introduce sub-categories
+            # (e.g. "spell:", "name the letters:").
+            elif line.endswith(":") and len(line) <= _MAX_HEADER_CHARS:
+                taught_to_header = line.rstrip(":").strip()
+            # Long prose paragraphs end the block.
+            elif len(line) > 400:
+                in_taught_to_block = False
+                taught_to_header = ""
+            elif _MIN_BULLET_CHARS <= len(line) <= _MAX_TOPIC_BULLET_CHARS:
+                push(line, "taught_to_item", line_no, header=taught_to_header)
                 continue
 
         # Section header that introduces a topic-statement block.

@@ -345,11 +345,34 @@ async def phase3_kud(state: DecomposerState) -> dict[str, Any]:
         )
         user_content = [{"type": "text", "text": instruction}]
     else:
+        # For national_framework profiles, add an explicit strand-preservation
+        # instruction. Without it, the strand_aggregated branch collapses
+        # distinct statutory strands (e.g. Comprehension into Reading Analysis,
+        # Composition into Writing Craft) — a documented failure mode for
+        # multi-strand national curricula.
+        strand_preservation = ""
+        if str(profile.get("document_family") or "").strip().lower() == "national_framework":
+            strand_labels = [
+                s.get("label") for s in (arch.get("strands") or [])
+                if s.get("lane") in ("hierarchical", "horizontal_analytical")
+                and s.get("label")
+            ]
+            if strand_labels:
+                strand_list = "\n".join(f"  - {lbl}" for lbl in strand_labels)
+                strand_preservation = (
+                    "\n\nSTRAND-PRESERVATION RULE: The architecture identifies these distinct "
+                    "skill strands — each must produce at least one do_skills KUD item:\n"
+                    f"{strand_list}\n"
+                    "Do NOT merge different strands into a single KUD item. "
+                    "Treat each strand as a separate output category even if the curriculum "
+                    "text interleaves them. Every statutory strand must be represented."
+                )
         instruction = (
             f"Invoke `{TOOL_NAME}` using the curriculum text and this architecture diagnosis:\n"
             f"{arch_text}\n\n"
             "After tool results, reply with ONLY a JSON object for know, understand, do_skills, "
-            "do_dispositions arrays (items with content, knowledge_type, assessment_route, notes)."
+            f"do_dispositions arrays (items with content, knowledge_type, assessment_route, notes)."
+            f"{strand_preservation}"
         )
         user_content = [
             {"type": "text", "text": instruction},

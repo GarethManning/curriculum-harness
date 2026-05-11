@@ -4,6 +4,25 @@ Live state register. Updated at the end of every Claude Code session. Distinct f
 
 ## 1. Last session
 
+**Session England-NC-English-v2 (Phase 1 fix + full v2 re-run for England NC English KS1–KS3)** — 2026-05-11 — COMMITTED. Model: sonnet-4.6.
+
+England NC English KS1–KS3 v2 run completed. Primary objective met: Comprehension and Composition are now distinct competency groups. The foundational Phase 1 extraction failure (v1: 53 guidance-note bullets via tag-stripper) was resolved by adding `HtmlNestedDomScope` Phase 0 extraction and a new `provided_text_file` source type.
+
+- **Three permanent pipeline improvements (affect all future runs):**
+  - `curriculum_harness/phases/phase1_ingestion.py`: `provided_text_file` source type — reads pre-extracted text from a local file, bypasses HTTP fetch
+  - `curriculum_harness/phases/phase3_kud.py`: Strand-preservation instruction for `national_framework` profiles in `strand_aggregated` branch — prevents consolidation bias collapsing distinct strands
+  - `curriculum_harness/source_bullets.py`: `taught_to_item` detector for England NC's "Pupils should be taught to:" list format (plain-line items with no bullet markers)
+- **Phase 0 extraction script:** `scripts/phase0/run_gov_uk_nc_english_ks1_to_ks3.py` — extracts via `HtmlNestedDomScope(.govspeak)`; output `docs/run-snapshots/england-nc-english-2026-05-11/content_v2.txt` (79,859 chars)
+- **v2 run results:** 26 LTs (11 T1, 11 T2, 4 T3) across 7 competency groups; 320 source bullets (vs 53 in v1); SOURCE_FAITHFULNESS_FAIL 19/26 (73%, improved from 100%); 2 successful regenerations (first ever for this document)
+- **v2 competency groups:** Spelling and Transcription (7), Reading Comprehension and Analysis (7), Reading Enjoyment and Motivation (4), Phonics and Word Reading (3), Writing Composition and Craft (2), Spoken Language and Communication (2), Grammar and Punctuation Knowledge (1)
+- **NC strand coverage:** 5 of 7 statutory strands distinctly covered; VGP regressed to 1 LT (was 2 in v1); Handwriting still inside Spelling group
+- **Gate verdict:** Conditionally passes Gate 1. Foundational Phase 1 defect fixed. Usable for crosswalk at REAL School band grain with VGP supplementation caveat and manual reclassification of 2 misclassified Comprehension LTs. Does not require v3 re-run.
+- **Configs:** `configs/england_nc_english_ks1_to_ks3_2026_05_11_v2.json` and v1 config (both committed)
+- **Analysis:** `outputs/england-nc-english-2026-05-11/england_nc_english_ks1_to_ks3_2026_05_11_v2_analysis_v1.md`
+- **This session did NOT:** run the England NC English crosswalk against REAL School Budapest; supplement VGP LTs manually; reclassify the 2 misclassified Comprehension LTs; proceed to any REAL wellbeing track work.
+
+---
+
 **Session REAL-14 (Stop 5: 8 Level 3 themes drafted, panel-validated, committed; post-Theme-8 sweep complete)** — 2026-04-25 — COMMITTED across 13 commits; pushed. Model: opus 4.7.
 
 Stop 5 drafting complete. Eight Level 3 theme treatments at ~600 words each (~4,830w total prose) drafted under per-theme cadence — draft → four-check audit → theme-level audits → voice read-through → panel review → commit only after explicit panel sign-off. Cumulative panel scores ranged 88 to 90.5, mean ~88.97.

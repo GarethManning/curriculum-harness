@@ -1,0 +1,73 @@
+{
+  "configVersion": "1.0",
+  "runId": "england_nc_english_ks1_to_ks3_2026_05_11_v2",
+  "source": {
+    "type": "provided_text_file",
+    "file_path": "docs/run-snapshots/england-nc-english-2026-05-11/content_v2.txt",
+    "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+    "subject": "English",
+    "grade": "KS1-KS3 (Years 1-9)",
+    "jurisdiction": "England (Department for Education) — National Curriculum, statutory programmes of study",
+    "year": "2014",
+    "pages": "full document — KS1 through KS3 inclusive; KS4 out of scope; two statutory appendices (Spelling, VGP) pre-fetched and documented in docs/run-snapshots/england-nc-english-2026-05-11/combined_source_v1.md"
+  },
+  "curriculumProfile": {
+    "document_family": "national_framework",
+    "level_model": "multi_level_progression",
+    "scoping_strategy": "full_document",
+    "assessment_signals": {
+      "has_assessment_objectives": false,
+      "has_command_words": false,
+      "has_mark_scheme": false,
+      "format": "statutory programmes of study — hierarchical: Key Stages (KS1/KS2/KS3) with year-group subdivisions (Y1, Y2, Y3-4, Y5-6, Y7-9) and strand-level bullet expectations across seven strands: spoken language, word reading, comprehension, transcription/spelling, transcription/handwriting, composition, vocabulary/grammar/punctuation"
+    },
+    "output_conventions": {
+      "lt_statement_format": "i_can",
+      "recommended_adjacent_radius": 1
+    }
+  },
+  "outputPath": "outputs/england-nc-english-2026-05-11/",
+  "checkpointDb": "checkpoints/england_nc_english_ks1_to_ks3_2026_05_11_v2.db",
+  "ltConstraints": {
+    "maxWords": 25,
+    "singleConstructOnly": true,
+    "noEmbeddedExamples": true,
+    "iCanFormat": true
+  },
+  "mcpServer": {
+    "url": "https://mcp-server-sigma-sooty.vercel.app/mcp",
+    "name": "claude-education-skills"
+  },
+  "outputStructure": {
+    "type": "grade_based",
+    "levels": [
+      {
+        "id": "ks1",
+        "label": "KS1 (Y1-2)",
+        "age_range": "5-7",
+        "cognitive_demand": "concrete"
+      },
+      {
+        "id": "lower_ks2",
+        "label": "Lower KS2 (Y3-4)",
+        "age_range": "7-9",
+        "cognitive_demand": "concrete"
+      },
+      {
+        "id": "upper_ks2",
+        "label": "Upper KS2 (Y5-6)",
+        "age_range": "9-11",
+        "cognitive_demand": "transitional"
+      },
+      {
+        "id": "ks3",
+        "label": "KS3 (Y7-9)",
+        "age_range": "11-14",
+        "cognitive_demand": "formal"
+      }
+    ],
+    "input_level_id": "ks3",
+    "generate_adjacent": false,
+    "adjacent_count": 0
+  }
+}

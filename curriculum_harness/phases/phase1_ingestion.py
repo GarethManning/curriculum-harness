@@ -5,10 +5,13 @@ from __future__ import annotations
 import html as html_stdlib
 import io
 import re
+from pathlib import Path
 from typing import Any
 
 import httpx
 from pypdf import PdfReader
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 from curriculum_harness._anthropic import get_async_client, haiku_stream_text
 from curriculum_harness.source_bullets import extract_source_bullets
@@ -507,55 +510,83 @@ async def phase1_ingestion(state: DecomposerState) -> dict[str, Any]:
     grade = str(src.get("grade") or "")
     jurisdiction = str(src.get("jurisdiction") or "")
 
-    if not url:
-        errs.append("phase1: missing source URL")
-        return {
-            "current_phase": "phase1:error",
-            "errors": errs,
-            "curriculum_profile": {},
-            "curriculum_classification_notes": "",
-        }
+    # provided_text_file: read pre-extracted text from a local file instead
+    # of fetching a URL. Supports gov.uk / other sources where the standard
+    # tag-stripping HTML extractor misses nested <ul><li> statutory content
+    # (see docs on Phase 1 extraction failure for England NC English v1).
+    if src_type == "provided_text_file":
+        file_path_raw = str(src.get("file_path") or "")
+        if not file_path_raw:
+            errs.append("phase1: provided_text_file requires 'file_path' in source config")
+            return {
+                "current_phase": "phase1:error",
+                "errors": errs,
+                "curriculum_profile": {},
+                "curriculum_classification_notes": "",
+            }
+        fp = Path(file_path_raw)
+        if not fp.is_absolute():
+            fp = _REPO_ROOT / fp
+        if not fp.exists():
+            errs.append(f"phase1: provided_text_file not found: {fp}")
+            return {
+                "current_phase": "phase1:error",
+                "errors": errs,
+                "curriculum_profile": {},
+                "curriculum_classification_notes": "",
+            }
+        curriculum_bits: list[str] = [fp.read_text(encoding="utf-8")]
+        url = str(fp)
+    else:
+        if not url:
+            errs.append("phase1: missing source URL")
+            return {
+                "current_phase": "phase1:error",
+                "errors": errs,
+                "curriculum_profile": {},
+                "curriculum_classification_notes": "",
+            }
 
-    curriculum_bits: list[str] = []
-    try:
-        body, content_type = await _fetch_bytes(url)
-        ct_low = (content_type or "").lower()
-        wants_pdf = bool(
-            "pdf" in ct_low
-            or url.lower().endswith(".pdf")
-            or src_type == "pdf_url",
-        )
-        raw_piece = ""
-        if "text/html" in ct_low or _looks_like_html(body):
-            raw_piece = _extract_html_text(body)
-        elif wants_pdf:
-            try:
-                raw_piece = _extract_pdf_text(body)
-            except Exception as exc:
-                errs.append(f"phase1: PDF extract failed: {exc}")
-                raw_piece = ""
-                if "pdf" not in ct_low and _looks_like_html(body):
-                    raw_piece = _extract_html_text(body)
-                    errs.append("phase1: treating response as HTML after PDF failure")
-            if len(raw_piece.strip()) < 120 and _looks_like_html(body):
-                fallback = _extract_html_text(body)
-                if len(fallback.strip()) > len(raw_piece.strip()):
-                    if raw_piece.strip():
-                        errs.append("phase1: PDF text thin; preferring HTML text extraction")
-                    raw_piece = fallback
-        else:
-            raw_piece = body.decode("utf-8", errors="replace")
-        curriculum_bits.append(raw_piece)
-    except Exception as exc:
-        errs.append(f"phase1: fetch/extract failed: {exc}")
-        return {
-            "current_phase": "phase1:error",
-            "errors": errs,
-            "raw_curriculum": "",
-            "curriculum_metadata": {},
-            "curriculum_profile": {},
-            "curriculum_classification_notes": "",
-        }
+        curriculum_bits = []
+        try:
+            body, content_type = await _fetch_bytes(url)
+            ct_low = (content_type or "").lower()
+            wants_pdf = bool(
+                "pdf" in ct_low
+                or url.lower().endswith(".pdf")
+                or src_type == "pdf_url",
+            )
+            raw_piece = ""
+            if "text/html" in ct_low or _looks_like_html(body):
+                raw_piece = _extract_html_text(body)
+            elif wants_pdf:
+                try:
+                    raw_piece = _extract_pdf_text(body)
+                except Exception as exc:
+                    errs.append(f"phase1: PDF extract failed: {exc}")
+                    raw_piece = ""
+                    if "pdf" not in ct_low and _looks_like_html(body):
+                        raw_piece = _extract_html_text(body)
+                        errs.append("phase1: treating response as HTML after PDF failure")
+                if len(raw_piece.strip()) < 120 and _looks_like_html(body):
+                    fallback = _extract_html_text(body)
+                    if len(fallback.strip()) > len(raw_piece.strip()):
+                        if raw_piece.strip():
+                            errs.append("phase1: PDF text thin; preferring HTML text extraction")
+                        raw_piece = fallback
+            else:
+                raw_piece = body.decode("utf-8", errors="replace")
+            curriculum_bits.append(raw_piece)
+        except Exception as exc:
+            errs.append(f"phase1: fetch/extract failed: {exc}")
+            return {
+                "current_phase": "phase1:error",
+                "errors": errs,
+                "raw_curriculum": "",
+                "curriculum_metadata": {},
+                "curriculum_profile": {},
+                "curriculum_classification_notes": "",
+            }
 
     full_text = "\n\n".join(curriculum_bits).strip()
     if not full_text:
